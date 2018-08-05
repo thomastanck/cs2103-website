@@ -6,7 +6,7 @@
       <p><span class="activity-desc">Admin info to read:<span></span></span>
       </p>
       <div class="indented">
-        <panel src="/website-base\admin\project-w11-v13._include_.html#main" type="default" no-close="" expandable="true" fragment="main">
+        <panel src="/cs2103-website\admin\project-w11-v13._include_.html#main" type="default" no-close="" expandable="true" fragment="main">
           <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: v1.3 [week 11] <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -20,7 +20,7 @@
     </div>
   </div>
 </panel>
-<panel type="seamless" popup-url="/website-base/schedule/week11/outcomes.html" expanded="" no-close="">
+<panel type="seamless" popup-url="/cs2103-website/schedule/week11/outcomes.html" expanded="" no-close="">
   <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
   <div class="indented">
     <p><span class="activity-desc">Requirements</span></p>
@@ -59,7 +59,7 @@
                       <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by
                         the number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly,
                         a piece can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
-                      <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
+                      <img src="/cs2103-website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
                       <p></p>
                       <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
                     </tip-box>
@@ -81,7 +81,7 @@
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
                                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
                               </ul>
-                              <img src="/website-base/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
+                              <img src="/cs2103-website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
                               <p></p>
                               <div slot="answer">
                                 <p>(a)</p>
@@ -160,11 +160,11 @@
                         <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
                       </ul>
                       <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
-                      <img src="/website-base/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
+                      <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
                       <p></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
-                        <img src="/website-base/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
+                        <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
                         <p></p>
                         <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
                       </tip-box>
@@ -202,7 +202,7 @@
                     <div>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
-                        <img src="/website-base/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+                        <img src="/cs2103-website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
                         <p></p>
                         <p>Now, assume the system has two additional views used in parallel by different users:</p>
                         <ul>
@@ -210,7 +210,7 @@
                           <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
                         </ul>
                         <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
-                        <img src="/website-base/book/designPatterns/observer/what/images/studentListUI.png" height="180">
+                        <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
                         <p></p>
                         <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example
                           of the type of problem addressed by the Observer pattern.</p>
@@ -221,7 +221,7 @@
                       <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
                       <p><strong>Solution</strong></p>
                       <p>Force the communication through an interface known to both parties.</p>
-                      <img src="/website-base/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
+                      <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
                       <p></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span>Here is the Observer pattern applied to the student management system.</p>
@@ -261,7 +261,7 @@ studentList.addUi(statusUi);
                         <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
                       </tip-box>
                       <p>Here is the generic description of the observer pattern:</p>
-                      <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
+                      <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
                       <p></p>
                       <ul>
                         <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen
@@ -279,13 +279,13 @@ studentList.addUi(statusUi);
                               <question has-input="true">
                                 <p>Explain how polymorphism is used in the Observer pattern.</p>
                                 <div slot="answer">
-                                  <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
+                                  <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
                                   <p></p>
                                   <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general
                                     type called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior
                                     based on its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
                                   <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p>
-                                  <img src="/website-base/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
+                                  <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
                                   <p></p>
                                 </div>
                               </question>
@@ -352,7 +352,7 @@ studentList.addUi(statusUi);
                       <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p>
-                        <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
+                        <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
                         <p></p>
                         <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the
                           librarian realized that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the librarian
@@ -361,7 +361,7 @@ studentList.addUi(statusUi);
                       <p><strong>Anti-pattern</strong></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Refer to the same Library example given above.</p>
-                        <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+                        <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
                         <p></p>
                         <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution is
                           problematic because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new classes.</p>
@@ -370,14 +370,14 @@ studentList.addUi(statusUi);
                       <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Given below is how the pattern is applied to the Library example:</p>
-                        <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
+                        <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
                         <p></p>
                         <p><span class="fas fa-cube"></span> Here's a more generic example:</p>
-                        <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
+                        <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
                         <p></p>
                       </tip-box>
                       <p>The general solution:</p>
-                      <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
+                      <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
                       <p></p>
                       <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’ are
                         not class names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
@@ -533,28 +533,28 @@ studentList.addUi(statusUi);
                         of items use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
                       <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
                       <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
                       <p></p>
                       <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
                       <p></p>
                       <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
                       <p></p>
                       <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
                       <p></p>
                       <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
                       <p></p>
                       <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
                       <p></p>
                       <p>As UI consists of multiple views, the MVC pattern is applied here.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
                       <p></p>
                       <p>Some views need to be updated when the data change; apply the Observer pattern here.</p>
-                      <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+                      <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
                       <p></p>
                       <p>In addition, the Singleton pattern can be applied to the façade class.</p>
                     </tip-box>
@@ -1291,7 +1291,7 @@ studentList.addUi(statusUi);
             <div>
               <div>
                 <p>
-                  <panel src="/website-base\book\testCaseDesign\combiningTestInputs\heuristicValid\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case%%"></panel>
+                  <panel src="/cs2103-website\book\testCaseDesign\combiningTestInputs\heuristicValid\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case%%"></panel>
                 </p>
               </div>
               <p></p>
@@ -1917,7 +1917,7 @@ studentList.addUi(statusUi);
                     <div>
                       <p><strong>The <em>sequential model</em>, also called the <em>waterfall</em> model, models software development as a linear process</strong>, in which the project is seen as progressing steadily in one direction through the development
                         stages. The name <em>waterfall</em> stems from how the model is drawn to look like a waterfall (see below).</p>
-                      <img src="/website-base/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
+                      <img src="/cs2103-website/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
                       <p></p>
                       <p><strong>When one stage of the process is completed, it should produce some artifacts to be used in the next stage.</strong> For example, upon completion of the requirement stage a comprehensive list of requirements is produced that
                         will see no further modifications. A strict application of the sequential model would require each stage to be completed before starting the next.</p>
@@ -1959,7 +1959,7 @@ studentList.addUi(statusUi);
                     <div>
                       <p><strong>The iterative model (sometimes called <em>iterative</em> and <em>incremental</em>) advocates having several <em>iterations</em> of SDLC.</strong> Each of the iterations could potentially go through all the development stages,
                         from requirement gathering to testing &amp; deployment. Roughly, it appears to be similar to several cycles of the sequential model.</p>
-                      <img src="/website-base/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
+                      <img src="/cs2103-website/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
                       <p></p>
                       <p><strong>In this model, each of the iterations produces a new version of the product.</strong> Feedback on the version can then be fed to the next iteration. Taking the Minesweeper game as an example, the iterative model will deliver
                         a fully playable version from the early iterations. However, the first iteration will have primitive functionality, for example, a clumsy text based UI, fixed board size, limited randomization etc. These functionalities will then
@@ -2100,7 +2100,7 @@ studentList.addUi(statusUi);
                       <p><strong>A key principle of Scrum is its recognition that during a project the customers can change their minds about what they want and need</strong> (often called requirements churn), and that unpredicted challenges cannot be easily
                         addressed in a traditional predictive or planned manner. As such, Scrum adopts an empirical approach—accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team’s ability to deliver
                         quickly and respond to emerging requirements.</p>
-                      <img src="/website-base/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
+                      <img src="/cs2103-website/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
                       <p></p>
                     </tip-box>
                     <p><strong><em>Daily Scrum</em> is another key scrum practice</strong>. The description below was adapted from <a href="https://www.mountaingoatsoftware.com/agile/scrum/meetings/daily-scrum">https://www.mountaingoatsoftware.com</a> (emphasis
@@ -2163,7 +2163,7 @@ studentList.addUi(statusUi);
                         Programmers are able to courageously respond to changing requirements and technology.</p>
                       <p><strong>XP has a set of simple rules.</strong> XP is a lot like a jig saw puzzle with many small pieces. Individually the pieces make no sense, but when combined together a complete picture can be seen. This flow chart shows how
                         Extreme Programming's rules work together.</p>
-                      <img src="/website-base/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
+                      <img src="/cs2103-website/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
                       <p></p>
                     </tip-box>
                     <p><strong><em>Pair programming, CRC cards, project velocity</em>, and <em>standup meetings</em> are some interesting topics related to XP.</strong> Refer to <a href="http://extremeprogramming.org">extremeprogramming.org</a> to find out
@@ -2272,7 +2272,7 @@ studentList.addUi(statusUi);
                         </td>
                       </tr>
                     </table>
-                    <img src="/website-base/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
+                    <img src="/cs2103-website/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
                     <p></p>
                     <p>Given above is a visualization of a project done using the Unified process (source: Wikipedia). As the diagram shows, a phase can consist of several iterations. Each vertical column (labeled “I1” “E1”, “E2”, “C1”, etc.) represents
                       a single iteration. Each of the iterations consists of a set of ‘workflows’ such as ‘Business modeling’, ‘Requirements’, ‘Analysis &amp; Design’ etc. The shaded region indicates the amount of resource and effort spent on a particular
@@ -2338,7 +2338,7 @@ studentList.addUi(statusUi);
                     </tip-box>
                     <p><strong>CMMI defines five maturity levels for a process and provides criteria to determine if the process of an organization is at a certain maturity level.</strong> The diagram below [taken from Wikipedia] gives an overview of the
                       five levels.</p>
-                    <img src="/website-base/book/processModels/more/cmmi/images/diagram.png" height="250">
+                    <img src="/cs2103-website/book/processModels/more/cmmi/images/diagram.png" height="250">
                     <p></p>
                   </div>
                   <div></div>
@@ -2547,7 +2547,7 @@ studentList.addUi(statusUi);
         <div>
           <p>Covered by:</p>
           <p>
-            <panel src="/website-base\admin\project-w11-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.3%%" no-close="" fragment="main"></panel>
+            <panel src="/cs2103-website\admin\project-w11-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.3%%" no-close="" fragment="main"></panel>
           </p>
         </div>
       </panel>
@@ -2669,11 +2669,11 @@ studentList.addUi(statusUi);
                         <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
                       </ul>
                       <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
-                      <img src="/website-base/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
+                      <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
                       <p></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
-                        <img src="/website-base/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
+                        <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
                         <p></p>
                         <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
                       </tip-box>
@@ -2717,7 +2717,7 @@ studentList.addUi(statusUi);
                     <div>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
-                        <img src="/website-base/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
+                        <img src="/cs2103-website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
                         <p></p>
                         <p>Now, assume the system has two additional views used in parallel by different users:</p>
                         <ul>
@@ -2725,7 +2725,7 @@ studentList.addUi(statusUi);
                           <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
                         </ul>
                         <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
-                        <img src="/website-base/book/designPatterns/observer/what/images/studentListUI.png" height="180">
+                        <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
                         <p></p>
                         <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example
                           of the type of problem addressed by the Observer pattern.</p>
@@ -2736,7 +2736,7 @@ studentList.addUi(statusUi);
                       <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
                       <p><strong>Solution</strong></p>
                       <p>Force the communication through an interface known to both parties.</p>
-                      <img src="/website-base/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
+                      <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
                       <p></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span>Here is the Observer pattern applied to the student management system.</p>
@@ -2776,7 +2776,7 @@ studentList.addUi(statusUi);
                         <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
                       </tip-box>
                       <p>Here is the generic description of the observer pattern:</p>
-                      <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
+                      <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
                       <p></p>
                       <ul>
                         <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen
@@ -2794,13 +2794,13 @@ studentList.addUi(statusUi);
                               <question has-input="true">
                                 <p>Explain how polymorphism is used in the Observer pattern.</p>
                                 <div slot="answer">
-                                  <img src="/website-base/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
+                                  <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
                                   <p></p>
                                   <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general
                                     type called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior
                                     based on its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
                                   <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p>
-                                  <img src="/website-base/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
+                                  <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
                                   <p></p>
                                 </div>
                               </question>
@@ -2876,7 +2876,7 @@ studentList.addUi(statusUi);
                         <p>Representing the objects mentioned previously as a single class would be problematic because it results in duplication of data which can lead to inconsistencies in data (if some of the duplicates are not updated consistently).</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Take for example the problem of representing books in a library. Assume that there could be multiple copies of the same title, bearing the same ISBN number, but different serial numbers.</p>
-                          <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
+                          <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/book.png" height="200">
                           <p></p>
                           <p>The above solution requires common information to be duplicated by all instances. This will not only waste storage space, but also creates a consistency problem. Suppose that after creating several copies of the same title, the
                             librarian realized that the author name was wrongly spelt. To correct this mistake, the system needs to go through every copy of the same title to make the correction. Also, if a new copy of the title is added later on, the
@@ -2885,7 +2885,7 @@ studentList.addUi(statusUi);
                         <p><strong>Anti-pattern</strong></p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Refer to the same Library example given above.</p>
-                          <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
+                          <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookFriends.png" height="240">
                           <p></p>
                           <p>The design above segregates the common and unique information into a class hierarchy. Each book title is represented by a separate class with common data (i.e. Name, Author, ISBN) hard-coded in the class itself. This solution
                             is problematic because each book title is represented as a class, resulting in thousands of classes (one for each title). Every time the library buys new books, the source code of the system will have to be updated with new
@@ -2895,14 +2895,14 @@ studentList.addUi(statusUi);
                         <p>Let a copy of an entity (e.g. a copy of a book)be represented by two objects instead of one, separating the common and unique information into two classes to avoid duplication.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Given below is how the pattern is applied to the Library example:</p>
-                          <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
+                          <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/bookTitleBookCopy.png" height="260">
                           <p></p>
                           <p><span class="fas fa-cube"></span> Here's a more generic example:</p>
-                          <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
+                          <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/beforeAfter.png" height="370">
                           <p></p>
                         </tip-box>
                         <p>The general solution:</p>
-                        <img src="/website-base/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
+                        <img src="/cs2103-website/book/designPatterns/abstractionOccurrence/what/images/abstractionOccurrence.png" height="40">
                         <p></p>
                         <p>The <code>&lt;&lt; Abstraction &gt;&gt;</code> class should hold all common information, and the unique information should be kept by the <code>&lt;&lt; Occurrence &gt;&gt;</code> class. Note that ‘Abstraction’ and ‘Occurrence’
                           are not class names, but roles played by each class. Think of this diagram as a <em>meta-model</em> (i.e. a ‘model of a model’) of the <code>BookTitle-BookCopy</code> class diagram given above.</p>
@@ -3071,28 +3071,28 @@ studentList.addUi(statusUi);
                             of items use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
                           <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
                           <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
                           <p></p>
                           <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
                           <p></p>
                           <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
                           <p></p>
                           <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
                           <p></p>
                           <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
                           <p></p>
                           <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
                           <p></p>
                           <p>As UI consists of multiple views, the MVC pattern is applied here.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
                           <p></p>
                           <p>Some views need to be updated when the data change; apply the Observer pattern here.</p>
-                          <img src="/website-base/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
+                          <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
                           <p></p>
                           <p>In addition, the Singleton pattern can be applied to the façade class.</p>
                         </tip-box>
@@ -3675,7 +3675,7 @@ studentList.addUi(statusUi);
                     <div>
                       <p><strong>The <em>sequential model</em>, also called the <em>waterfall</em> model, models software development as a linear process</strong>, in which the project is seen as progressing steadily in one direction through the development
                         stages. The name <em>waterfall</em> stems from how the model is drawn to look like a waterfall (see below).</p>
-                      <img src="/website-base/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
+                      <img src="/cs2103-website/book/processModels/introduction/sequentialModels/images/diagram.png" height="180">
                       <p></p>
                       <p><strong>When one stage of the process is completed, it should produce some artifacts to be used in the next stage.</strong> For example, upon completion of the requirement stage a comprehensive list of requirements is produced that
                         will see no further modifications. A strict application of the sequential model would require each stage to be completed before starting the next.</p>
@@ -3722,7 +3722,7 @@ studentList.addUi(statusUi);
                     <div>
                       <p><strong>The iterative model (sometimes called <em>iterative</em> and <em>incremental</em>) advocates having several <em>iterations</em> of SDLC.</strong> Each of the iterations could potentially go through all the development stages,
                         from requirement gathering to testing &amp; deployment. Roughly, it appears to be similar to several cycles of the sequential model.</p>
-                      <img src="/website-base/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
+                      <img src="/cs2103-website/book/processModels/introduction/iterativeModels/images/diagram.png" height="300">
                       <p></p>
                       <p><strong>In this model, each of the iterations produces a new version of the product.</strong> Feedback on the version can then be fed to the next iteration. Taking the Minesweeper game as an example, the iterative model will deliver
                         a fully playable version from the early iterations. However, the first iteration will have primitive functionality, for example, a clumsy text based UI, fixed board size, limited randomization etc. These functionalities will then
@@ -3871,7 +3871,7 @@ studentList.addUi(statusUi);
                           <p><strong>A key principle of Scrum is its recognition that during a project the customers can change their minds about what they want and need</strong> (often called requirements churn), and that unpredicted challenges cannot be
                             easily addressed in a traditional predictive or planned manner. As such, Scrum adopts an empirical approach—accepting that the problem cannot be fully understood or defined, focusing instead on maximizing the team’s ability
                             to deliver quickly and respond to emerging requirements.</p>
-                          <img src="/website-base/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
+                          <img src="/cs2103-website/book/processModels/exampleProcessModels/scrum/images/diagram.png" height="250">
                           <p></p>
                         </tip-box>
                         <p><strong><em>Daily Scrum</em> is another key scrum practice</strong>. The description below was adapted from <a href="https://www.mountaingoatsoftware.com/agile/scrum/meetings/daily-scrum">https://www.mountaingoatsoftware.com</a>                          (emphasis added):</p>
@@ -3940,7 +3940,7 @@ studentList.addUi(statusUi);
                             Extreme Programmers are able to courageously respond to changing requirements and technology.</p>
                           <p><strong>XP has a set of simple rules.</strong> XP is a lot like a jig saw puzzle with many small pieces. Individually the pieces make no sense, but when combined together a complete picture can be seen. This flow chart shows
                             how Extreme Programming's rules work together.</p>
-                          <img src="/website-base/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
+                          <img src="/cs2103-website/book/processModels/exampleProcessModels/xp/images/diagram.png" height="200">
                           <p></p>
                         </tip-box>
                         <p><strong><em>Pair programming, CRC cards, project velocity</em>, and <em>standup meetings</em> are some interesting topics related to XP.</strong> Refer to <a href="http://extremeprogramming.org">extremeprogramming.org</a> to find
@@ -4056,7 +4056,7 @@ studentList.addUi(statusUi);
                             </td>
                           </tr>
                         </table>
-                        <img src="/website-base/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
+                        <img src="/cs2103-website/book/processModels/exampleProcessModels/unifiedProcess/images/diagram.png" height="280">
                         <p></p>
                         <p>Given above is a visualization of a project done using the Unified process (source: Wikipedia). As the diagram shows, a phase can consist of several iterations. Each vertical column (labeled “I1” “E1”, “E2”, “C1”, etc.) represents
                           a single iteration. Each of the iterations consists of a set of ‘workflows’ such as ‘Business modeling’, ‘Requirements’, ‘Analysis &amp; Design’ etc. The shaded region indicates the amount of resource and effort spent on a particular
@@ -4110,7 +4110,7 @@ studentList.addUi(statusUi);
             <div>
               <p>Covered by:</p>
               <p>
-                <panel src="/website-base\admin\project-w11-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.3%%" no-close="" fragment="main"></panel>
+                <panel src="/cs2103-website\admin\project-w11-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.3%%" no-close="" fragment="main"></panel>
               </p>
             </div>
           </div>
@@ -4123,7 +4123,7 @@ studentList.addUi(statusUi);
   <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 11</span>
   <div class="indented">
     <div>
-      <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L11.pptx">slides</a>]</p>
+      <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1819S1/slides/L11.pptx">slides</a>]</p>
     </div>
   </div>
 </panel>

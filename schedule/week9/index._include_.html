@@ -6,7 +6,7 @@
       <p><span class="activity-desc">Admin info to read:<span></span></span>
       </p>
       <div class="indented">
-        <panel src="/website-base\admin\project-w09-v12._include_.html#main" type="default" no-close="" expandable="true" fragment="main">
+        <panel src="/cs2103-website\admin\project-w09-v12._include_.html#main" type="default" no-close="" expandable="true" fragment="main">
           <span slot="header" class="card-title"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: v1.2 [week 9] <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -20,7 +20,7 @@
     </div>
   </div>
 </panel>
-<panel type="seamless" popup-url="/website-base/schedule/week9/outcomes.html" expanded="" no-close="">
+<panel type="seamless" popup-url="/cs2103-website/schedule/week9/outcomes.html" expanded="" no-close="">
   <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
   <div class="indented">
     <p><span class="activity-desc">Design</span></p>
@@ -55,7 +55,7 @@
                     <div>
                       <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
                       <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                      <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                      <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                       <p></p>
                       <p>Before jumping into coding, you may want to find out things such as,</p>
                       <ul>
@@ -78,8 +78,8 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
-                  <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
+                  <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
+                  <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
                 </p>
               </div>
               <p></p>
@@ -112,7 +112,7 @@
                             <div>
                               <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
                               <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                              <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                              <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                               <p></p>
                               <p>Before jumping into coding, you may want to find out things such as,</p>
                               <ul>
@@ -127,32 +127,32 @@
                         </div>
                       </div>
                     </modal>
-                    <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                    <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                     <p></p>
                     <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
                     <tip-box>
-                      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                      <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
                       <p></p>
                       <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
                     </tip-box>
                     <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic, the
                       <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
                     <tip-box>
-                      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                      <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
                       <p></p>
                       <p>W = Width of the minefield; H = Height of the minefield</p>
                     </tip-box>
                     <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br> The
                       <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
                     <tip-box>
-                      <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                      <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
                     <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
                     <tip-box>
-                      <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                      <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
                     <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
                     <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
                     <tip-box>
-                      <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                      <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
                       <p></p>
                       <p></p>
                     </tip-box>
@@ -187,8 +187,8 @@
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Intermediate%%"></panel>
-                    <panel src="/website-base\book\modeling\modelingStructures\classDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Intermediate%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Intermediate%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Intermediate%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -209,8 +209,8 @@
                         <div>
                           <div>
                             <p>
-                              <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
-                              <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
+                              <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
+                              <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
                             </p>
                           </div>
                           <p></p>
@@ -243,7 +243,7 @@
                                         <div>
                                           <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
                                           <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                                          <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                          <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                                           <p></p>
                                           <p>Before jumping into coding, you may want to find out things such as,</p>
                                           <ul>
@@ -258,32 +258,32 @@
                                     </div>
                                   </div>
                                 </modal>
-                                <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                                 <p></p>
                                 <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
                                   <p></p>
                                   <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
                                 </tip-box>
                                 <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game
                                   logic, the <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
                                   <p></p>
                                   <p>W = Width of the minefield; H = Height of the minefield</p>
                                 </tip-box>
                                 <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br>                                  The <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
                                 <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method
                                   is called.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
                                 <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
                                 <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
                                   <p></p>
                                   <p></p>
                                 </tip-box>
@@ -303,9 +303,9 @@
                         </div>
                       </modal>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
                         <p></p>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
                       <p>This interaction adds the following methods to the <code>Logic</code> class</p>
                       <ul>
                         <li><code>clearCellAt(int x, int y)</code></li>
@@ -320,26 +320,26 @@
                         each cell or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
                       <p>Here is the updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
                       <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>                        operation. We can model it like this:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
                       <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
                         <p></p>
                       </tip-box>
                       <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
                         <p></p>
                       </tip-box>
                       <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
                       <p>The updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
                       <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
                       <ol>
                         <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
@@ -347,19 +347,19 @@
                       </ol>
                       <p>Here’s the SD for option 1.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
                       <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
                       <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
                       <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
                       <p>Updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
                       <tip-box>
                         <p>💡 When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations
                           are required by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
@@ -392,7 +392,7 @@
             <div>
               <div>
                 <p>
-                  <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
+                  <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
                 </p>
               </div>
               <p></p>
@@ -409,7 +409,7 @@
                     <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class object
                       is expected.</p>
                     <tip-box>
-                      <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
+                      <img src="/cs2103-website/book/oop/inheritance/substitutability/images/staff.png" height="80">
                       <p></p>
                       <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is
                         expected, it can be substituted by an object of any of its subclasses.</p>
@@ -462,7 +462,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <div>
                         <div>
                           <p>
-                            <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What%%"></panel>
+                            <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP → Inheritance → What%%"></panel>
                           </p>
                         </div>
                         <p></p>
@@ -701,7 +701,7 @@ Ben is a student
                                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which methods override?">
                                       <question>
                                         <p>Which of these methods override another method? <span class="dimmed"><code>A</code> is the parent class. <code>B</code> inherits <code>A</code>.</span></p>
-                                        <img src="/website-base/book/oop/inheritance/overriding/images/overriding.png" height="220">
+                                        <img src="/cs2103-website/book/oop/inheritance/overriding/images/overriding.png" height="220">
                                         <p></p>
                                         <ul class="task-list">
                                           <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
@@ -880,8 +880,8 @@ void calculateGrade (String matric) { ... }
           <div>
             <div>
               <p>
-                <panel src="/website-base\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Substitutability%%"></panel>
-                <panel src="/website-base\book\oop\inheritance\dynamicAndStaticBinding\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%"></panel>
+                <panel src="/cs2103-website\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Substitutability%%"></panel>
+                <panel src="/cs2103-website\book\oop\inheritance\dynamicAndStaticBinding\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%"></panel>
               </p>
             </div>
             <p></p>
@@ -1211,7 +1211,7 @@ void calculateGrade (String matric) { ... }
                       <div>
                         <div>
                           <p>
-                            <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
+                            <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
                           </p>
                         </div>
                         <p></p>
@@ -1228,7 +1228,7 @@ void calculateGrade (String matric) { ... }
                               <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent
                                 class object is expected.</p>
                               <tip-box>
-                                <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
+                                <img src="/cs2103-website/book/oop/inheritance/substitutability/images/staff.png" height="80">
                                 <p></p>
                                 <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass
                                   is expected, it can be substituted by an object of any of its subclasses.</p>
@@ -1249,7 +1249,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     </modal>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code>                        method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-                      <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                      <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                       <p></p>
                       <p>Now consider the following:</p>
                       <ul>
@@ -1266,7 +1266,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <panel type="seamless" header="%%Another example%%">
                         <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does
                           not accept a <code>height</code> that is different from the <code>width</code>.</p>
-                        <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+                        <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                         <p></p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
@@ -1367,7 +1367,7 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-                      <img src="/website-base/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+                      <img src="/cs2103-website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
                       <p></p>
                     </tip-box>
                   </div>
@@ -1402,7 +1402,7 @@ AcademicStaff academicStaff = staff; // Not OK
                     </ol>
                     <tip-box>
                       <p>Example:</p>
-                      <img src="/website-base/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
+                      <img src="/cs2103-website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
                       <p></p>
                       <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee interface
                         (note that inheritance is a dependency).</p>
@@ -1511,7 +1511,7 @@ AcademicStaff academicStaff = staff; // Not OK
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
+                    <panel src="/cs2103-website\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -1528,7 +1528,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <p>Consider two classes, <code>Account</code> and <code>Guarantor</code>, with an association as shown in the following diagram:</p>
                       <tip-box>
                         <p>Example:</p>
-                        <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
+                        <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantor.png" height="50">
                         <p></p>
                         <p>Here, the association is compulsory i.e. an <code>Account</code> object should always be linked to a <code>Guarantor</code>. One way to implement this is to simply use a reference variable, like this:</p>
                         <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -1576,7 +1576,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                                   <li>restricts the maximum number of Accounts to 8</li>
                                   <li>avoids adding duplicate Accounts</li>
                                 </ul>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/managerAccount.jpg" height="55">
                                 <p></p>
                                 <div slot="answer">
                                   <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
@@ -1608,7 +1608,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                               <question has-input="true">
                                 <p>Implement the classes defensively with appropriate references and operations to establish the association among the classes. Follow the defensive coding approach. Let the <code>Marriage</code> class handle setting/removal
                                   of reference.</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/manMarriageWoman.jpg" height="55">
                                 <p></p>
                                 <div slot="answer">
                                   <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Marriage</span> </span>{
@@ -1666,7 +1666,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                             <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Immutable `Account` class">
                               <question has-input="true">
                                 <p>Give a suitable defensive implementation to the <code>Account</code> class in the following class diagram. Note that “{immutable}” means once the association is formed, it cannot be changed.</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/accountGuarantorImmutable.png" height="80">
                                 <p></p>
                                 <div slot="answer">
                                   <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
@@ -1688,7 +1688,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                           <div>
                             <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this defensive?">
                               <question>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/compulsoryAssociations/images/countryCity.png" height="45">
                                 <p></p>
                                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">City</span></span>{
     Country country;
@@ -1726,7 +1726,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
+                    <panel src="/cs2103-website\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -1742,7 +1742,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                     <div>
                       <p>Consider the association given below. A defensive implementation requires to ensure a <code>MinedCell</code> cannot exist without a <code>Mine</code> and vice versa which requires simultaneous object creation. However, Java can only
                         create one object at a time. Given below are two alternatives implementations, both of which violate the multiplicity for a short period of time.</p>
-                      <img src="/website-base/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
+                      <img src="/cs2103-website/book/errorHandling/defensiveProgramming/1to1Associations/images/minedCell.png" height="50">
                       <p></p>
                       <p>Option 1:</p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinedCell</span> </span>{
@@ -1786,7 +1786,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
+                    <panel src="/cs2103-website\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -1801,7 +1801,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
                   <div id="main">
                     <div>
                       <p>A bidirectional association in the design (shown in (a)) is usually emulated at code level using two variables (as shown in (b)).</p>
-                      <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
+                      <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWoman.png" height="140">
                       <p></p>
                       <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> </span>{
     Woman girlfriend;
@@ -1835,7 +1835,7 @@ jean.setBoyfriend(yong);
 </code></pre>
                       <p>Now James' girlfriend is Jean, while Jean's boyfriend is not James. This situation results as the code was not defensive enough to stop this &quot;love triangle&quot;. In such a situation, we say that <em>the referential integrity has been violated</em>.
                         It simply means <em>there is an inconsistency in object references</em>.</p>
-                      <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
+                      <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/woman.png" height="50">
                       <p></p>
                       <p>One way to prevent this situation is to implement the two classes as shown below. Note how the referential integrity is maintained.</p>
                       <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Woman</span> </span>{
@@ -1891,7 +1891,7 @@ jean.setBoyfriend(yong);
                                   <p>Feature ID: multiplayer<br> Description: A minefield is divided into mine regions. Each region is assigned to a single player. Players can swap regions. To win the game, all regions must be cleared.</p>
                                 </tip-box>
                                 <p>Given below is an extract from our class diagram.</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/playerRegion.png" height="100">
                                 <p></p>
                                 <p>Minimally, this can be implemented like this.</p>
                                 <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Player</span></span>{
@@ -1999,7 +1999,7 @@ r1.setPlayer(p2);
                               <question has-input="true">
                                 <p>Implement this bidirectional association. Note that the <code>Bank</code> uses <code>accNumber</code> attribute to uniquely identify an <code>Account</code> object. Assume the <code>Bank</code> class is responsible for
                                   maintaining the links between objects.</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg" height="60">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/bankAccount.jpg" height="60">
                                 <p></p>
                                 <div slot="answer">
                                   <p>The code below contains a method in the <code>Bank</code> class to create an account; the bank field in the new account is thereby filled by the bank creating it.</p>
@@ -2064,15 +2064,15 @@ r1.setPlayer(p2);
     }
 }
 </code></pre>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
                                 <p></p>
                                 <p>(b) In terms of maintaining referential integrity in the implementation, what is the difference between the following two diagrams?</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/teacherStudent.png" height="80">
                                 <p></p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/manWomanAssoc.png" height="60">
                                 <p></p>
                                 <p>(c) Show a defensive implementation of the <code>remove(Member m)</code> of the <code>Club</code> class given below.</p>
-                                <img src="/website-base/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
+                                <img src="/cs2103-website/book/errorHandling/defensiveProgramming/referentialIntegrity/images/clubMember.png" height="60">
                                 <p></p>
                                 <div slot="answer">
                                   <p>(a) Yes. Each links is mutable and unidirectional. A simple reference variable is suitable to hold the link.</p>
@@ -2127,7 +2127,7 @@ r1.setPlayer(p2);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
+                    <panel src="/cs2103-website\book\errorHandling\defensiveProgramming\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Implementation → Error Handling → Defensive Programming → What%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -3183,7 +3183,7 @@ r1.setPlayer(p2);
                   <tip-box>
                     <p><span class="fas fa-cube"></span>Consider the two architecture diagrams of the same software given below. Because <code>Diagram 2</code> uses double headed arrows, the important fact that GUI has a bi-directional dependency with the
                       Logic component is no longer captured.</p>
-                    <img src="/website-base/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
+                    <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190">
                     <p></p>
                   </tip-box>
                 </div>
@@ -3204,7 +3204,7 @@ r1.setPlayer(p2);
         <div>
           <p>Covered by:</p>
           <p>
-            <panel src="/website-base\admin\project-w09-v12._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.2%%" fragment="main"></panel>
+            <panel src="/cs2103-website\admin\project-w09-v12._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.2%%" fragment="main"></panel>
           </p>
         </div>
       </panel>
@@ -3240,7 +3240,7 @@ r1.setPlayer(p2);
           <li>What are two types of developer documentation?</li>
           <li>Given an architecture diagram for a new software, how would you go about defining the API of each component?</li>
           <li>What’s the problem with the architecture diagram on the right?<br>
-            <img src="/website-base/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
+            <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
         </ol>
       </div>
       <br>
@@ -3257,8 +3257,8 @@ r1.setPlayer(p2);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
-                    <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -3291,7 +3291,7 @@ r1.setPlayer(p2);
                               <div>
                                 <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
                                 <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                                <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                                 <p></p>
                                 <p>Before jumping into coding, you may want to find out things such as,</p>
                                 <ul>
@@ -3306,32 +3306,32 @@ r1.setPlayer(p2);
                           </div>
                         </div>
                       </modal>
-                      <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                      <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                       <p></p>
                       <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
                         <p></p>
                         <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
                       </tip-box>
                       <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game logic,
                         the <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
                         <p></p>
                         <p>W = Width of the minefield; H = Height of the minefield</p>
                       </tip-box>
                       <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br> The
                         <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
                       <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method is called.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
                       <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
                       <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
                         <p></p>
                         <p></p>
                       </tip-box>
@@ -3371,8 +3371,8 @@ r1.setPlayer(p2);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Intermediate%%"></panel>
-                    <panel src="/website-base\book\modeling\modelingStructures\classDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Intermediate%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Intermediate%%"></panel>
+                    <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Intermediate%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -3393,8 +3393,8 @@ r1.setPlayer(p2);
                         <div>
                           <div>
                             <p>
-                              <panel src="/website-base\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
-                              <panel src="/website-base\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
+                              <panel src="/cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Behaviors → Sequence Diagrams → Basic%%"></panel>
+                              <panel src="/cs2103-website\book\modeling\modelingStructures\classDiagramsBasic\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Modeling → Modeling Structures → Class Diagrams → Basic%%"></panel>
                             </p>
                           </div>
                           <p></p>
@@ -3427,7 +3427,7 @@ r1.setPlayer(p2);
                                         <div>
                                           <p><strong>You can use models to analyze and design a software before you start coding.</strong></p>
                                           <p>Suppose You are planning to implement a simple minesweeper game that has a text based UI and a GUI. Given below is a possible OOP design for the game.</p>
-                                          <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                          <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                                           <p></p>
                                           <p>Before jumping into coding, you may want to find out things such as,</p>
                                           <ul>
@@ -3442,32 +3442,32 @@ r1.setPlayer(p2);
                                     </div>
                                   </div>
                                 </modal>
-                                <img src="/website-base/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
+                                <img src="/cs2103-website/book/modeling/modelingASolution/introduction/images/textLogicMinefieldCell.png" height="50">
                                 <p></p>
                                 <p>Let us start by modelling a sample interaction between the person playing the game and the TextUi object.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerText.png" height="300">
                                   <p></p>
                                   <p><code>newgame</code> and <code>clear x y</code> represent commands typed by the <code>Player</code> on the <code>TextUi</code>.</p>
                                 </tip-box>
                                 <p>How does the <code>TextUi</code> object carry out the requests it has received from player? It would need to interact with other objects of the system. Because the <code>Logic</code> class is the one that controls the game
                                   logic, the <code>TextUi</code> needs to collaborate with <code>Logic</code> to fulfill the <code>newgame</code> request. Let us extend the model to capture that interaction.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLogic.png" height="280">
                                   <p></p>
                                   <p>W = Width of the minefield; H = Height of the minefield</p>
                                 </tip-box>
                                 <p>The above diagram assumes that <code>W</code> and <code>H</code> are the only information <code>TextUi</code> requires to display the minefield to the <code>Player</code>. Note that there could be other ways of doing this.<br>                                  The <code>Logic</code> methods we conceptualized in our modelling so far are:</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/textLogicMinefieldCell.png" height="115"></tip-box>
                                 <p>Now, let us look at what other objects and interactions are needed to support the <code>newGame()</code> operation. It is likely that a new <code>Minefield</code> object is created when the <code>newGame()</code> method
                                   is called.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/logicMinefield.png" height="150"></tip-box>
                                 <p>Note that the behavior of the <code>Minefield</code> constructor has been abstracted away. It can be designed at a later stage.</p>
                                 <p>Given below are the interactions between the player and the Text UI for the whole game.</p>
                                 <tip-box>
-                                  <img src="/website-base/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
+                                  <img src="/cs2103-website/book/modeling/modelingASolution/basic/images/playerTextLoop.png" height="300">
                                   <p></p>
                                   <p></p>
                                 </tip-box>
@@ -3487,9 +3487,9 @@ r1.setPlayer(p2);
                         </div>
                       </modal>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/playerTextLogicRef.png" height="250">
                         <p></p>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicSd.png" height="210"></tip-box>
                       <p>This interaction adds the following methods to the <code>Logic</code> class</p>
                       <ul>
                         <li><code>clearCellAt(int x, int y)</code></li>
@@ -3504,26 +3504,26 @@ r1.setPlayer(p2);
                         each cell or the entire Minefield can be passed directly to <code>TextUi</code>.</p>
                       <p>Here is the updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCell.png" height="200"></tip-box>
                       <p>The above is for the case when Actor <code>Player</code> interacts with the system using a text UI. Additional operations (if any) required for the GUI can be discovered similarly. Suppose <code>Logic</code> supports a <code>reset()</code>                        operation. We can model it like this:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldReset.png" height="100"></tip-box>
                       <p>Our current model assumes that the <code>Minefield</code> object has enough information (i.e. H, W, and mine locations) to create itself.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldNewGame.png" height="85">
                         <p></p>
                       </tip-box>
                       <p>An alternative is to have a <code>ConfigGenerator</code> object that generates a string containing the minefield information as shown below.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicConfigGenerator.png" height="170">
                         <p></p>
                       </tip-box>
                       <p>In addition, <code>getWidth()</code>, <code>getHeight()</code>, <code>markCellAt(x,y)</code> and <code>clearCellAt(x,y)</code> can be handled like this.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldFunctions.png" height="180"></tip-box>
                       <p>The updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/textLogicMinefieldCellConfigGenerator.png" height="250"></tip-box>
                       <p>How is <code>getGameState()</code> operation supported? Given below are two ways (there could be other ways):</p>
                       <ol>
                         <li><code>Minefield</code> class knows the state of the game at any time. <code>Logic</code> class retrieves it from the <code>Minefield</code> class as and when required.</li>
@@ -3531,19 +3531,19 @@ r1.setPlayer(p2);
                       </ol>
                       <p>Here’s the SD for option 1.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldGetGameState.png" height="180"></tip-box>
                       <p>Here’s the SD for option 2. Here, assume that the game state is updated after every mark/clear action.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicMinefieldUpdateState.png" height="250"></tip-box>
                       <p>It is now time to explore what happens inside the <code>Minefield</code> constructor? One way is to design it as follows.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/minefieldCellAlt.png" height="200"></tip-box>
                       <p>Now let us assume that <code>Minesweeper</code> supports a ‘timing’ feature.</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/logicTimerOpt.png" height="130"></tip-box>
                       <p>Updated class diagram:</p>
                       <tip-box>
-                        <img src="/website-base/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
+                        <img src="/cs2103-website/book/modeling/modelingASolution/intermediate/images/fullClassDiagram.png" height="250"></tip-box>
                       <tip-box>
                         <p>💡 When designing components, it is not necessary to draw elaborate UML diagrams capturing all details of the design. They can be done as rough sketches. For example, draw sequence diagrams only when you are not sure which operations
                           are required by each class, or when you want to verify that your class structure can indeed support the required operations.</p>
@@ -3574,8 +3574,8 @@ r1.setPlayer(p2);
               <div>
                 <div>
                   <p>
-                    <panel src="/website-base\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Substitutability%%"></panel>
-                    <panel src="/website-base\book\oop\inheritance\dynamicAndStaticBinding\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%"></panel>
+                    <panel src="/cs2103-website\book\oop\inheritance\substitutability\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Substitutability%%"></panel>
+                    <panel src="/cs2103-website\book\oop\inheritance\dynamicAndStaticBinding\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → Dynamic and Static Binding%%"></panel>
                   </p>
                 </div>
                 <p></p>
@@ -3805,7 +3805,7 @@ r1.setPlayer(p2);
                           <div>
                             <div>
                               <p>
-                                <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
+                                <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
                               </p>
                             </div>
                             <p></p>
@@ -3822,7 +3822,7 @@ r1.setPlayer(p2);
                                   <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent
                                     class object is expected.</p>
                                   <tip-box>
-                                    <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
+                                    <img src="/cs2103-website/book/oop/inheritance/substitutability/images/staff.png" height="80">
                                     <p></p>
                                     <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the
                                       superclass is expected, it can be substituted by an object of any of its subclasses.</p>
@@ -3844,7 +3844,7 @@ AcademicStaff academicStaff = staff; // Not OK
                         <tip-box>
                           <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the
                             <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-                          <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                          <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                           <p></p>
                           <p>Now consider the following:</p>
                           <ul>
@@ -3861,7 +3861,7 @@ AcademicStaff academicStaff = staff; // Not OK
                           <panel type="seamless" header="%%Another example%%">
                             <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does
                               not accept a <code>height</code> that is different from the <code>width</code>.</p>
-                            <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+                            <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                             <p></p>
                             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
@@ -4591,7 +4591,7 @@ AcademicStaff academicStaff = staff; // Not OK
             <div>
               <p>Covered by:</p>
               <p>
-                <panel src="/website-base\admin\project-w09-v12._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.2%%" fragment="main"></panel>
+                <panel src="/cs2103-website\admin\project-w09-v12._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → v1.2%%" fragment="main"></panel>
               </p>
             </div>
           </div>
@@ -4604,7 +4604,7 @@ AcademicStaff academicStaff = staff; // Not OK
   <span slot="header" class="card-title activity-type"><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lecture 9</span>
   <div class="indented">
     <div>
-      <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S2/slides/L9.pptx">slides</a>]</p>
+      <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1819S1/slides/L9.pptx">slides</a>]</p>
     </div>
   </div>
 </panel>

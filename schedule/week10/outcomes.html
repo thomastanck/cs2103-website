@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="..\..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\markbind.css">
     
-    <link rel="stylesheet" href="/website-base/css/main.css">
-<link rel="stylesheet" href="/website-base/css/schedule.css">
-    <link rel="icon" href="/website-base/favicon.ico">
+    <link rel="stylesheet" href="/cs2103-website/css/main.css">
+<link rel="stylesheet" href="/cs2103-website/css/schedule.css">
+    <link rel="icon" href="/cs2103-website/favicon.ico">
 </head>
 <body>
 <div id="app">
@@ -251,7 +251,7 @@
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code>                                    class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without
                                     having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
-                                  <img src="/website-base/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
+                                  <img src="/cs2103-website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
                                   <p></p>
                                 </tip-box>
                                 <tip-box>
@@ -316,7 +316,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                   <div>
                                     <div>
                                       <p>
-                                        <panel src="/website-base\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
+                                        <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Object Oriented Programming → Inheritance → What%%"></panel>
                                       </p>
                                     </div>
                                     <p></p>
@@ -333,7 +333,7 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                                           <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where
                                             a parent class object is expected.</p>
                                           <tip-box>
-                                            <img src="/website-base/book/oop/inheritance/substitutability/images/staff.png" height="80">
+                                            <img src="/cs2103-website/book/oop/inheritance/substitutability/images/staff.png" height="80">
                                             <p></p>
                                             <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object
                                               of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
@@ -355,7 +355,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                 <tip-box>
                                   <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states
                                     that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-                                  <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
+                                  <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
                                   <p></p>
                                   <p>Now consider the following:</p>
                                   <ul>
@@ -371,7 +371,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                   <panel type="seamless" header="%%Another example%%">
                                     <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because
                                       it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
-                                    <img src="/website-base/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
+                                    <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
                                     <p></p>
                                     <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
     ...
@@ -463,7 +463,7 @@ AcademicStaff academicStaff = staff; // Not OK
     }
 }
 </code></pre>
-                                  <img src="/website-base/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
+                                  <img src="/cs2103-website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
                                   <p></p>
                                 </tip-box>
                               </div>
@@ -493,7 +493,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                 </ol>
                                 <tip-box>
                                   <p>Example:</p>
-                                  <img src="/website-base/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
+                                  <img src="/cs2103-website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
                                   <p></p>
                                   <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the
                                     Payee interface (note that inheritance is a dependency).</p>
@@ -728,17 +728,17 @@ AcademicStaff academicStaff = staff; // Not OK
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430"></tip-box>
                       <p>The most basic activity diagram is simply a linear sequence of actions.</p>
                       <p>
-                        <panel src="/website-base\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths"
+                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths"
                           expanded=""></panel>
                       </p>
                       <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
                       <p>
-                        <panel src="/website-base\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths"
+                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths"
                           expanded=""></panel>
                       </p>
                       <p>In some workflows, multiple paths happen in parallel.</p>
                       <p>
-                        <panel src="/website-base\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths"
+                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths"
                           expanded=""></panel>
                       </p>
                     </div>
@@ -755,7 +755,7 @@ AcademicStaff academicStaff = staff; // Not OK
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
                                   <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
                                 </ul>
-                                <img src="/website-base/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                                <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
                                 <p></p>
                                 <div slot="answer">
                                   <p>(iv)</p>
@@ -800,10 +800,10 @@ AcademicStaff academicStaff = staff; // Not OK
                       <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
-                        <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
+                        <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
                         <p></p>
                         <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
-                        <img src="/website-base/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
+                        <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
                         <p></p>
                       </tip-box>
                     </div>
@@ -834,7 +834,7 @@ AcademicStaff academicStaff = staff; // Not OK
                       <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> A simple example of a swimlane diagram:</p>
-                        <img src="/website-base/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
+                        <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
                         <p></p>
                       </tip-box>
                     </div>
@@ -1024,7 +1024,7 @@ AcademicStaff academicStaff = staff; // Not OK
                           method to access the <em>single instance</em>.</p>
                         <tip-box>
                           <p>Example:</p>
-                          <img src="/website-base/book/designPatterns/singleton/what/images/singleton.png" height="130">
+                          <img src="/cs2103-website/book/designPatterns/singleton/what/images/singleton.png" height="130">
                           <p></p>
                         </tip-box>
                       </div>
@@ -1189,7 +1189,7 @@ AcademicStaff academicStaff = staff; // Not OK
                         <p>Components need to access functionality deep inside other components.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The <code>UI</code> component of a <code>Library</code> system might want to access functionality of the <code>Book</code> class contained inside the <code>Logic</code> component.</p>
-                          <img src="/website-base/book/designPatterns/facade/what/images/textBook.png" height="120">
+                          <img src="/cs2103-website/book/designPatterns/facade/what/images/textBook.png" height="120">
                           <p></p>
                         </tip-box>
                         <p><strong>Problem</strong></p>
@@ -1199,7 +1199,7 @@ AcademicStaff academicStaff = staff; // Not OK
                           <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
                         <tip-box>
                           <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
-                          <img src="/website-base/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+                          <img src="/cs2103-website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
                           <p></p>
                         </tip-box>
                       </div>
@@ -1210,7 +1210,7 @@ AcademicStaff academicStaff = staff; // Not OK
                               <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this Facade?">
                                 <question>
                                   <p>Does the design below likely to use the Facade pattern?</p>
-                                  <img src="/website-base/book/designPatterns/facade/what/images/textStorage.png" height="150">
+                                  <img src="/cs2103-website/book/designPatterns/facade/what/images/textStorage.png" height="150">
                                   <p></p>
                                   <ul radio-group="ac766" class="radio-list">
                                     <li class="radio-list-item"><label><input class="radio-list-input" name="ac766" type="radio"> True</label></li>
@@ -1266,11 +1266,11 @@ AcademicStaff academicStaff = staff; // Not OK
                         <tip-box>
                           <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code>                            object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed,
                             each <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
-                          <img src="/website-base/book/designPatterns/command/what/images/commandCreator.png" height="150">
+                          <img src="/cs2103-website/book/designPatterns/command/what/images/commandCreator.png" height="150">
                           <p></p>
                         </tip-box>
                         <p>The general form of the solution is as follows.</p>
-                        <img src="/website-base/book/designPatterns/command/what/images/clientInvoker.png" height="200">
+                        <img src="/cs2103-website/book/designPatterns/command/what/images/clientInvoker.png" height="200">
                         <p></p>
                         <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all
                           commands as a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code>                          will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code>                          of the command (
@@ -2693,7 +2693,7 @@ Enter side 1:
           <div>
             <p>Covered by:</p>
             <p>
-              <panel src="/website-base\admin\project-w10-mid-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → mid-v1.3%%" fragment="main"></panel>
+              <panel src="/cs2103-website\admin\project-w10-mid-v13._include_.html#main" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → mid-v1.3%%" fragment="main"></panel>
             </p>
           </div>
         </panel>
@@ -2705,7 +2705,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 03:23:08 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 05:28:16 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -2714,7 +2714,7 @@ Enter side 1:
 <script src="..\..\markbind\js\polyfill.min.js"></script>
 <script src="..\..\markbind\js\bootstrap-vue.min.js"></script>
 <script>
-    const baseUrl = '/website-base'
+    const baseUrl = '/cs2103-website'
 </script>
 <script src="..\..\markbind\js\setup.js"></script>
 </html>
