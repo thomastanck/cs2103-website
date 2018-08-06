@@ -907,8 +907,8 @@
             </p>
             <p>Accordingly, the module project is structured to resemble an intermediate stage of a non-trivial real-life software project. In this project you will,</p>
             <ol>
-              <li>conceptualize and implement enhancements to a given product,</li>
-              <li>and have it ready to be continued by future developers.</li>
+              <li>conceptualize and implement enhancements to a given product, and,</li>
+              <li>have it ready to be continued by future developers.</li>
             </ol>
           </div>
         </div>
@@ -925,7 +925,7 @@
           </div>
           <div>
             <p>In this semester, we are going to enhance <a href="https://se-edu.github.io/addressbook-level4/">an AddressBook application</a>.</p>
-            <img src="https://github.com/nus-cs2103-AY1819S1/addressbook-level4/raw/master/docs/images/Ui.png" width="600">
+            <img src="https://github.com/se-edu/addressbook-level4/raw/master/docs/images/Ui.png" width="600">
             <p></p>
             <p>This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
             <p>
@@ -986,7 +986,7 @@
               <p>For either direction, you need to define a target user profile and a value proposition:</p>
               <ul>
                 <li>
-                  <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103/T instructors.</span><br><br>                    ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                  <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you to narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103/T instructors.</span><br><br>                    ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
                     <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103/T instructors only, such as the ability to navigate to a student's project on GitHub</span>                    💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
                   <panel header="Why the need to narrow down the user profile?" minimized="">
                     <ul>
@@ -996,12 +996,9 @@
                       </li>
                     </ul>
                   </panel>
-                </li>
+                  <br></li>
+                <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
               </ul>
-
-              <li>
-                <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</p>
-              </li>
             </div>
             <span id="individual-expectations">
 <p><span class="fas fa-user"></span> <strong>Individually</strong>, each student is expected to,</p>
@@ -1176,9 +1173,9 @@
                   <span class="dimmed"><strong>Reason:</strong> For you to practice using OOP in a non-trivial project.</span></p>
               </li>
               <li>
-                <p><strong>Constraint-No-DBSM</strong>: Do not use a
+                <p><strong>Constraint-No-DBMS</strong>: Do not use a
                   <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br>
-                  <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103/T module learning outcomes; learning DBMS-related LOs will have to be left to database modules or level 3 project modules.</span></p>
+                  <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103/T module learning outcomes; covering DBMS-related LOs will have to be left to database modules or level 3 project modules.</span></p>
               </li>
               <li>
                 <p><strong>Constraint-Platform-Independent</strong>: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries
@@ -1192,7 +1189,7 @@
               <li>
                 <p><strong>Constraint-External-Software</strong>: The use of third-party frameworks/libraries is allowed but only if they,</p>
                 <ul>
-                  <li>are free.</li>
+                  <li>are free, open-source, and have permissive license terms <span class="dimmed">(E.g., trial version of libraries that require purchase after N days are not allowed)</span>.</li>
                   <li>do not require any installation by the user of your software.</li>
                   <li>do not violate other constraints.</li>
                 </ul>
@@ -1284,7 +1281,7 @@
                   <tr>
                     <td><strong>3</strong></td>
                     <td>inception</td>
-                    <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
+                    <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, problem addressed, optimize or morph?)</span></span>
                     </td>
                   </tr>
                   <tr>
@@ -1359,7 +1356,7 @@
             <div id="title"></div>
             <div id="body">
               <tip-box>
-                <p>Overview: <span>decide on a overall project direction <span class="dimmed">(user profile, optimize or morph?, problem addressed)</span></span>
+                <p>Overview: <span>decide on a overall project direction <span class="dimmed">(user profile, problem addressed, optimize or morph?)</span></span>
                 </p>
               </tip-box>
               <p>This is a good time to analyze requirements with a view to conceptualizing the next version of the product (i.e. v2.0).</p>
@@ -1420,7 +1417,7 @@
                   <p>For either direction, you need to define a target user profile and a value proposition:</p>
                   <ul>
                     <li>
-                      <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103/T instructors.</span><br><br>                        ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                      <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you to narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103/T instructors.</span><br><br>                        ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
                         <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103/T instructors only, such as the ability to navigate to a student's project on GitHub</span>                        💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
                       <panel header="Why the need to narrow down the user profile?" minimized="">
                         <ul>
@@ -1430,12 +1427,9 @@
                           </li>
                         </ul>
                       </panel>
-                    </li>
+                      <br></li>
+                    <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
                   </ul>
-
-                  <li>
-                    <p><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</p>
-                  </li>
                 </div>
               </modal>
             </div>
@@ -2782,7 +2776,7 @@ method 2 ...
 </code></pre>
                       </li>
                       <li>
-                        <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                        <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
                       </li>
                       <li>
                         <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
@@ -3074,7 +3068,7 @@ method 2 ...
 </code></pre>
                     </li>
                     <li>
-                      <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                      <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
                     </li>
                     <li>
                       <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
@@ -4053,7 +4047,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                 <span id="code-quality-tips">
 <ul>
 <li>
-<p>Ensure your code has at least some evidence of these (see <a href="../se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+<p>Ensure your code has at least some evidence of these (see <a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
 <ul>
 <li>logging</li>
 <li>exceptions</li>
@@ -4064,13 +4058,13 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                 can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
                 </li>
                 <li>
-                  <p>Ensure <a href="../se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
+                  <p>Ensure <a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
                 </li>
                 <li>
                   <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
                 </li>
                 <li>
-                  <p>In addition, tyr to apply as many of the
+                  <p>In addition, try to apply as many of the
                     <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
                 </li>
                 </ul>
@@ -5780,7 +5774,7 @@ compact(input);
             </panel>
             <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
               <p>Evaluates: How good is your Quality Assurance?</p>
-              <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 <a href="#deliverable-practical-exam">Practical Exam</a>, 4. bugs found during PE.</p>
+              <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 <a href="/cs2103-website/admin/index-flat.html#deliverable-practical-exam">Practical Exam</a>, 4. bugs found during PE.</p>
               <panel type="seamless" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Deliverables → Practical Exam%%" class="embedding" minimized="">
                 <div>
                   <p><strong>Objectives:</strong></p>
@@ -6056,7 +6050,7 @@ compact(input);
                   <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
                 </ul>
                 <p><strong>B. Team-based tasks</strong>:</p>
-                <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="#scope-example-team-tasks">team-based tasks</a></span></p>
+                <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="/cs2103-website/admin/index-flat.html#scope-example-team-tasks">team-based tasks</a></span></p>
                 <p>Based on: peer evaluations and tutor observations</p>
                 <p>
                   <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" type="seamless" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks" class="embedding"
@@ -6295,7 +6289,7 @@ method 2 ...
 </code></pre>
                   </li>
                   <li>
-                    <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                    <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
                   </li>
                   <li>
                     <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
@@ -6966,7 +6960,7 @@ method 2 ...
 </code></pre>
                       </li>
                       <li>
-                        <p><strong>For code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
+                        <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
                       </li>
                       <li>
                         <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
@@ -7869,7 +7863,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 05 Aug 2018 06:52:17 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 06 Aug 2018 12:09:46 GMT</small></div>
 </footer>
 </div>
 </body>
