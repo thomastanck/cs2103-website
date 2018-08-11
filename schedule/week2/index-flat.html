@@ -65,7 +65,7 @@
         <p><span class="activity-desc">Admin info to read:<span></span></span>
         </p>
         <div class="indented">
-          <panel src="/cs2103-website\admin\appendixB-policies._include_.html#policy-techHelp" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="policy-techHelp">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix B (Policies) → Policy on tech help <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -73,17 +73,219 @@
               </span>
               </span>
               </span>
+              <div>
+                <h3 id="policy-on-tech-help">Policy on tech help <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <p><strong>Do not expect your tutor to code or debug for you</strong>. We strongly discourage tutors from giving technical help directly to their own teams because we want to train you in troubleshooting tech problems yourselves. Allowing
+                      direct tech help from tutors transfers the troubleshooting responsibility to tutors.</p>
+                    <p><strong>It is ok to ask for help from classmates even for assignments</strong>, even from other teams, as long as you don't copy from others and submit as your own. It doesn't matter who is helping you as long as you are learning from
+                      it.</p>
+                    <p><strong>We encourage you to give tech help to each other</strong>, but do it in a way that the other person learns from it.</p>
+                    <p><span class="flat"><span class="dimmed">Related: [<a href="#admin-appendixD-help-anchor">Admin: Appendix D: Getting Help</a>]</span></span>
+                      <panel src="/cs2103-website\admin\appendixD-help._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix D: How to get Help in CS2103/T" class="embedding" minimized="" fragment="main"></panel>
+                    </p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\tools._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Tools <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <img src="/cs2103-website/admin/images/toolsList.png" style="width: 700px">
+                <p><strong>Collaboration platform</strong>: You are <mark><em>required to</em> use GitHub</mark> as the hosting and collaboration platform of your project (i.e., to hold the Code repository, Issue Tracker, etc.). See <a href="/cs2103-website/admin/index.html#admin-appendixE-github">Appendix E</a>                  for more info on how to setup and use GitHub for your project.</p>
+                <div id="communication">
+                  <p><strong>Communication</strong>: Keeping a record of communications among your team can help you, and us, in many ways. We encourage you to do at least some of the project communication in written medium (e.g., GitHub Issue Tracker) to
+                    practice how to communicate technical things in written form.</p>
+                  <ul>
+                    <li>Instead of the IVLE forum, we encourage you to <mark>post your questions/suggestions in this <a href="https://github.com/nus-cs2103-AY1819S1/forum/issues">github/nus-cs2103-AY1819S1/forum</a></mark>.</li>
+                    <li>Alternatively, you can post in our slack channel <a href="https://nus-cs2103-ay1819s1.slack.com">https://nus-cs2103-ay1819s1.slack.com</a>. We encourage you all to <mark>join the slack channel</mark> (you'll need to use an email address
+                      ending in <code>@nus.edu.sg</code>, <code>@comp.nus.edu.sg</code>, <code>@u.nus.edu.sg</code> or <code>@u.nus.edu</code> to join this channel).</li>
+                    <li>Note that slack is useful for quick chats while issue tracker is useful for longer-running conversations.</li>
+                    <li>You are encouraged to use channels with a wider audience (common channel in slack, GitHub issue tracker) for module-related communication as much as possible, rather than private channels such as private slack/FB messages or direct
+                      emails. <span class="dimmed">Rationale: more classmates can benefit from the discussions</span>.</li>
+                  </ul>
+                </div>
+                <p><strong>IDE</strong>: You are recommended to use <a href="https://www.jetbrains.com/idea/">Intellij IDEA</a> for module-related programming work. You may use the community edition (free) or the ultimate edition (free for students). While
+                  the use of Intellij is not compulsory, note that module materials are optimized for Intellij. Use other IDEs at your own risk.</p>
+                <p><strong>Revision control</strong>: You are <mark><em>required to</em> use Git</mark>. Other revision control software are not allowed.<br> The recommended GUI client for Git is <a href="https://www.sourcetreeapp.com/">SourceTree</a> (which
+                  comes bundled with Git), but you may use any other, or none.</p>
+                <p><strong>Collating code</strong>: To extract out code written by each person, we use a custom-built tool called Collate.</p>
+                <panel header="More info on the Collate tool">
+                  <div>Collate is a tool for collating code written by different developers.
+                    <p>Steps to use Collate:</p>
+                    <ol>
+                      <li>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate/releases">Collate Tool project</a></li>
+                      <li>Annotate your code to indicate who wrote which part of the code (instructions given below)</li>
+                      <li>Run the Collate tool to collate code written by each person into separate files (instructions given below)</li>
+                    </ol>
+                    <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
+                    <ul>
+                      <li>
+                        <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code>                          tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
+                        <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+                      </li>
+                      <li>
+                        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours
+                          can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
+                        <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+                      </li>
+                      <li>
+                        <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
+                        <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+                      </li>
+                      <li>
+                        <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                          <span class="fas fa-arrow-down"></span></p>
+                        <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+                        <p>👍<span class="fas fa-arrow-down"></span></p>
+                        <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+                      </li>
+                    </ul>
+                    <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate</h4>
+                    <ul>
+                      <li>
+                        <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
+                      </li>
+                      <li>
+                        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>                          but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+                        <ul>
+                          <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+                          <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+                          <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+                          <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive
+                          code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you notice
+                          a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+                      </li>
+                      <li>
+                        <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+                        <ul>
+                          <li>Create a folder called <code>{project root}/unused</code></li>
+                          <li>Move unused files (or copies of files containing unused code) to that folder</li>
+                          <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
+                          </li>
+                        </ul>
+                        <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+                        <p>Please put a comment in the code to explain why it was not used.</p>
+                      </li>
+                      <li>
+                        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
+                        </p>
+                        <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+                      </li>
+                      <li>
+                        <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
+                      </li>
+                      <li>
+                        <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
+                      </li>
+                    </ul>
+                    <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
+                    <p>You need to put the collated code in the following folders</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Code Type</th>
+                            <th>Folder</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>functional code</td>
+                            <td><code>collated/functional</code></td>
+                          </tr>
+                          <tr>
+                            <td>test code</td>
+                            <td><code>collated/test</code></td>
+                          </tr>
+                          <tr>
+                            <td>unused code</td>
+                            <td><code>collated/unused</code></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
+                    <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+                    <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+                    <p>The output should be something like the structure given below.</p>
+                    <pre class="hljs"><code>collated/
+    functional/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+        ravikumarreused.md
+    test/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+    unused/
+        johndoe.md
+</code></pre>
+                    <ul>
+                      <li>
+                        <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+                      </li>
+                      <li>
+                        <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </panel>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\project-overview._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: Overview <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -91,9 +293,20 @@
               </span>
               </span>
               </span>
+              <div>
+                <p>The high-level learning outcome of the project (and to a large degree, the entire module):</p>
+                <p>
+                  <tip-box> <span class="fas fa-trophy"></span> Can contribute production quality SE work to a small/medium software project </tip-box>
+                </p>
+                <p>Accordingly, the module project is structured to resemble an intermediate stage of a non-trivial real-life software project. In this project you will,</p>
+                <ol>
+                  <li>conceptualize and implement enhancements to a given product, and,</li>
+                  <li>have it ready to be continued by future developers.</li>
+                </ol>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\project-product._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: The product <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -101,9 +314,47 @@
               </span>
               </span>
               </span>
+              <div>
+                <p>In this semester, we are going to enhance <a href="https://se-edu.github.io/addressbook-level4/">an AddressBook application</a>.</p>
+                <img src="https://github.com/se-edu/addressbook-level4/raw/master/docs/images/Ui.png" width="600">
+                <p></p>
+                <p>This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
+                <div class="flat">
+                  <div>
+                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectProduct-constraintCli">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Contstraints → More info about the 'CLI app' requirement</trigger>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span>
+                    </p>
+                  </div>
+                </div>
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Contstraints → More info about the 'CLI app' requirement  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+                  id="modal:projectProduct-constraintCli">
+                
+                  <div>
+                    <ul>
+                      <li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click
+                        the minimize button), but the primary input should be command-driven.
+                        <ul>
+                          <li>Mouse actions should have keyboard alternatives.</li>
+                          <li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.</li>
+                          <li>
+                            <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over
+                            <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+                          <li>❗️ While we don't prohibit
+                            <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </modal>
+                <p>
+                  <panel src="/cs2103-website\admin\project-constraints._include_.html#constraint-cli" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Contstraints → More info about the 'CLI app' requirement  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+                    class="embedding" minimized="" fragment="constraint-cli"></panel>
+                </p>
+                <p></p>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\project-scope._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: Scope <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -111,9 +362,188 @@
               </span>
               </span>
               </span>
+              <div>
+                <div id="project-direction">
+                  In general, each team is expected to take one of these two directions:
+                  <ul>
+                    <li>
+                      <p><strong>[Direction 1]  <em>Optimize</em></strong> AddressBook for a more specific target user group:</p>
+                      <panel header="<span class='fas fa-cube'></span> Examples for the _optimize_ direction" minimized="">
+                        <p>An AddressBook,</p>
+                        <ul>
+                          <li>for users in a specific profession <span class="dimmed"> e.g. doctors, salesmen, teachers, etc.</span></li>
+                          <li>based on the nature/scale of contacts <span class="dimmed"> e.g. huge number of contacts (for HR admins, user group admins), mostly incomplete contacts, highly volatile contact details, contacts become inactive after a specific period (e.g. contract employees)</span></li>
+                          <li>based on what users do with the contacts <span class="dimmed"> e.g. organize group events, share info, do business, do analytics</span></li>
+                        </ul>
+                        <p></p>
+                      </panel>
+                      <p></p>
+                    </li>
+                    <li>
+                      <p><strong>[Direction 2] <em>Morph</em></strong> AddressBook into a different product: Given that AddressBook is a generic app that manages a type of elements (i.e. contacts), you can use it as a starting point to create an app that
+                        manages something else.<br> ❗️ This is a high-risk high-reward option because morphing requires extra work but a morphed product may earn more marks than an optimized product of similar complexity.</p>
+                      <panel header="<span class='fas fa-cube'></span> Examples for the _morph_ direction" minimized="">
+                        <p>An app to manage,</p>
+                        <ul>
+                          <li>Bookmarks of websites</li>
+                          <li>Tasks/Schedule</li>
+                          <li>Location info</li>
+                          <li>Thing to memorize i.e. flash cards, trivia</li>
+                          <li>Forum posts, news feeds, Social media feeds</li>
+                          <li>Online projects or issue trackers that the user is interested in</li>
+                          <li>Emails, possibly from different accounts</li>
+                          <li>Multiple types of related things <span class="dimmed"> e.g. Contacts and Tasks (if Tasks are allocated to Contacts)</span></li>
+                        </ul>
+                        <p></p>
+                      </panel>
+                      <p></p>
+                    </li>
+                  </ul>
+                  <p>For either direction, you need to define a target user profile and a value proposition:</p>
+                  <ul>
+                    <li>
+                      <p><strong>Target user profile</strong>: Define a very specific target user profile. <br> 💡 We require you to narrow down the target user profile <span class="dimmed"> as opposed to trying to make it as general as possible. Here is an example direction of narrowing down target user: anybody → teachers → university teachers → tech savvy university teachers → CS2103/T instructors.</span><br><br>                        ❗️ Be careful not to contradict given project constraints when defining the user profile <span class="dimmed"> e.g. the target user should still prefer typing over mouse actions</span>.<br><br>
+                        <strong>It is expected that your product will be optimized for the chosen target users</strong> <span class="dimmed">i.e., add features that are especially/only applicable for target users (to make the app especially attractive to them). w.r.t. the example above, there can be features that are applicable to CS2103/T instructors only, such as the ability to navigate to a student's project on GitHub</span>                        💡 Your project will be graded based on how well the features match the target user profile and how well the features fit-together.</p>
+                      <panel header="Why the need to narrow down the user profile?" minimized="">
+                        <ul>
+                          <li>It is an opportunity to exercise your product design skills because optimizing the product to a very specific target user requires good product design skills.</li>
+                          <li>It minimizes the overlap between features of different teams which can cause plagiarism issues. Furthermore, higher the number of other teams having the same features, less impressive your work becomes especially if others have
+                            done a better job of implementing that feature.
+                          </li>
+                        </ul>
+                      </panel>
+                      <br></li>
+                    <li><strong>Value proposition</strong>: Define a clear <em>value proposition</em> <span class="dimmed">(what problem does the product solve? how does it make the the user's life easier?)</span> that matches the target user profile.</li>
+                  </ul>
+                </div>
+                <span id="individual-expectations">
+<p><span class="fas fa-user"></span> <strong>Individually</strong>, each student is expected to,</p>
+                <ol>
+                  <li>
+                    <p><strong>Contribute <mark>one enhancement</mark> to the product</strong><br> Each enhancement should be stand-alone but,</p>
+                    <ul>
+                      <li>it should be end-user visible and end-user testable.</li>
+                      <li>should fit with the rest of the software (and the target user profile),</li>
+                      <li>and should have the consent of the team members.</li>
+                    </ul>
+                    <panel header="<span class='fas fa-cube'></span> Examples of suitable enhancements" minimized="">
+                      <ol>
+                        <li>Add a new feature</li>
+                        <li>Enhance an existing features in a major way <span class="dimmed">e.g. make the command syntax more user friendly and closer to natural language</span></li>
+                        <li>A major redesign of the GUI <span class="dimmed">e.g. make it work like a chat application (note: chat is a form of CLI)</span></li>
+                        <li>Integrate with online services <span class="dimmed">e.g. Google contacts, Facebook, GitHub, etc.</span></li>
+                      </ol>
+                      <p></p>
+                    </panel>
+                    <p></p>
+                    <panel header="<span class='fas fa-cube'></span> Enhancements vs Grade: Examples" minimized="">
+                      <p>Here are some examples of different major enhancements and the grade the student is likely to earn for the relevant parts of the project grade.</p>
+                      <ul>
+                        <li>Example 1 (Expected grade: <code>A</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">Add support for undo/redo</a></li>
+                        <li>Example 2 (Expected grade: <code>B</code>) : <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">Add support for viewing history</a></li>
+                      </ul>
+                      <p></p>
+                    </panel>
+                    <p></p>
+                    <p>In the initial stages of the project you are recommended to add minor enhancements in order to get familiar with the project. These minor enhancements are unlikely to earn marks. You are advised not to spend a lot of effort on minor
+                      enhancements.</p>
+                    <panel header="<span class='fas fa-cube'></span> Examples of minor enhancements" minimized="">
+                      <p>Here is a non-exhaustive list of minor enhancements:</p>
+                      <ol>
+                        <li>Support different themes for the Look &amp; Feel <span class="dimmed"> dark, light, etc.</span></li>
+                        <li>Support more fields <span class="dimmed"> e.g. Birthday</span></li>
+                        <li>Load a different page instead of the default Google search page <span class="dimmed"> e.g. Google Maps page or Twitter page</span></li>
+                        <li>Sort items</li>
+                        <li>Multiple panels <span class="dimmed"> e.g. an additional panel to show recently accessed items</span></li>
+                        <li>Marking some items as favorites</li>
+                        <li>Ability to search by labels</li>
+                        <li>Ability to specify colors for labels</li>
+                      </ol>
+                      <p></p>
+                    </panel>
+                    <p></p>
+                  </li>
+                  <li>
+                    <p><strong>Recommended: contribute to all aspects of the project</strong>: e.g. write backend code, frontend code, test code, user documentation, and developer documentation. If you limit yourself to certain aspects only, you will lose
+                      marks allocated for the aspects you did not do.<br> In particular, <mark>you are required to divide work based on features rather than components</mark>:</p>
+                    <ul>
+                      <li>By the
+                        <tooltip content="i.e. by `v1.4`">end of this project</tooltip> each team member is expected to have implemented an enhancement end-to-end, doing required changes in <em>almost all</em> components. <span class="dimmed"> Reason: to encourage you to learn all components of the software, instead of limiting yourself to just one/few components</span>.</li>
+                      <li>Nevertheless, you are <mark>still expected to divide the components of the product among team members</mark> so that each team member is <em>in charge</em> of one or more components. While others will be modifying those components
+                        as necessary for the features they are implementing, your role as the <em>in charge</em> of a component is to guide others modifying that component <span class="dimmed">(reason: you are supposed to be the most knowledgeable about that component)</span>                        and protect that component from degrading <span class="dimmed"> e.g., you can review others' changes to your component and suggest possible changes</span>.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Do a share of team-tasks</strong>: These are the tasks that <em>someone</em> in the team has to do. Marks allocated to team-tasks will be divided among team members based on how much each member contributed to those tasks.
+                      <span id="scope-example-team-tasks"></span></p>
+                    <panel header="<span class='fas fa-cube'></span> Examples of team-tasks" minimized="">
+                      <span id="example-team-tasks">
+<p>Here is a non-exhaustive list of team-tasks:</p>
+<ol>
+<li>Necessary general code enhancements e.g.,
+<ol>
+<li>Work related to renaming the product</li>
+<li>Work related to changing the product icon</li>
+<li>Morphing the product into a different product</li></ol></li>
+<li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+<li>Maintaining the issue tracker</li>
+<li>Release management</li>
+<li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                  <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                </ol>
+                </span>
+                <p></p>
+                </panel>
+                <p></p>
+                </li>
+                <li>
+                  <p><strong>Share roles and responsibilities of the project</strong>.</p>
+                  <span id="roles">
+<p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                  <panel header="<span class='fas fa-cube'></span> Recommended roles and responsibilities" minimized="">
+                    <p>This is a non-exhaustive list; you may define additional roles.</p>
+                    <ul>
+                      <li><em>Team lead</em>: Responsible for overall project coordination.</li>
+                      <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+                      <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+                      <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+                      <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+                      <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+                      <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+                      <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
+                      <li><em>In charge of[Component XYZ]</em>: <span class="dimmed">e.g. In charge of <code>Model</code>, <code>UI</code>, <code>Storage</code>, etc.</span> If you are in charge of a component, you are expected to know that component well,
+                        and review changes done to that component in v1.3-v1.4.</li>
+                    </ul>
+                  </panel>
+                  <p></p>
+                  <p>Please make sure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>.
+                  </p>
+                  </span>
+                </li>
+                <li>
+                  <p><mark>Write <strong>~300-500 LoC of code</strong>, on average.</mark></p>
+                </li>
+                </ol>
+                </span>
+                <span id="team-expectations">
+<p><span class="fas fa-users"></span> <strong>As a team</strong>, you are expected to work together to,</p>
+                <ol>
+                  <li><strong>Preserve product integrity</strong>: i.e.
+                    <ol>
+                      <li>Enhancements added fit together to form a cohesive product.</li>
+                      <li>Documentation follows a consistent style and presents a cohesive picture to the reader.</li>
+                      <li>Final project demo presents a cohesive picture to the audience.</li>
+                    </ol>
+                  </li>
+                  <li><strong>Maintain product quality</strong>: i.e. prevent breaking other parts of the product as it evolves. Note that bugs local to a specific feature will be counted against the author of that feature. However, if a new enhancement breaks
+                    the entire product, the whole team will have to share the penalty.</li>
+                  <li><strong>Manage the project smoothly</strong>: i.e. ensure workflow, code maintenance, integration, releases, etc. are done smoothly.</li>
+                </ol>
+                </span>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\project-constraints._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: Constraints <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -121,9 +551,74 @@
               </span>
               </span>
               </span>
+              <div>
+                <p>Your project should comply with the following constraints.
+                  <span class="dimmed"><strong>Reason</strong>: to increase comparability among projects and to maximize applicability of module learning outcomes in the project.</span></p>
+                <ul>
+                  <li>
+                    <p><strong>Constraint-Morph</strong>: The final product should be a result of morphing the given code base. i.e. enhance and/or evolve the given code to arrive at the new software. However, you are allowed to replace all existing code
+                      with new code, as long as it is done incrementally. <span class="dimmed">e.g. one feature/component at a time</span><br>
+                      <span class="dimmed"><strong>Reason:</strong> To ensure your code has a decent quality level from the start.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-Incremental</strong>: The product needs to be developed incrementally over the project duration. While it is fine to do less in some weeks and more in other weeks, a reasonably consistent delivery rate is expected.
+                      For example, it is not acceptable to do the entire project over the recess week and do almost nothing for the remainder of the semester. <span class="dimmed">Reasons: 1. To simulate a real project where you have to work on a code base over a long period, possibly with breaks in the middle. 2. To learn how to deliver big features in small increments.</span></p>
+                  </li>
+                </ul>
+                <span id="constraint-cli">
+<ul>
+<li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven.
+<ul>
+<li>Mouse actions should have keyboard alternatives.</li>
+<li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.</li>
+<li><tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+                <li>❗️ While we don't prohibit
+                  <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
+                </ul>
+                </li>
+                </ul>
+                </span>
+                <ul>
+                  <li>
+                    <p><strong>Constraint-Human-Editable-File</strong>: The data should be stored locally and should be in a human editable text file.<br>
+                      <span class="dimmed"><strong>Reason:</strong> To allow advanced users to manipulate the data by editing the data file.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-OO</strong>: The software should follow the Object-oriented paradigm.<br>
+                      <span class="dimmed"><strong>Reason:</strong> For you to practice using OOP in a non-trivial project.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-No-DBMS</strong>: Do not use a
+                      <tooltip content="Database Management System e.g., MySQL">DBMS</tooltip> to store data.<br>
+                      <span class="dimmed"><strong>Reason:</strong> Using a DBMS to store data will reduce the room to apply OOP techniques to manage data. It is true that most real world systems use a DBMS, but given the small size of this project, we need to optimize it for CS2103/T module learning outcomes; covering DBMS-related LOs will have to be left to database modules or level 3 project modules.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-Platform-Independent</strong>: The software should work on the Windows, Linux, and OS-X platforms. Even if you are unable to manually test the app on all three platforms, consciously avoid using OS-dependent libraries
+                      and OS-specific features.<br>
+                      <span class="dimmed"><strong>Reason:</strong> Peer testers should be able to use any of these platforms.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-No-Installer</strong>: The software should work without requiring an installer. Having an optional installer is OK as long as the portable (non-installed) version has all the critical functionality.<br>
+                      <span class="dimmed"><strong>Reason:</strong> We do not want to install all your projects on our testing machines when we test them for grading.</span></p>
+                  </li>
+                  <li>
+                    <p><strong>Constraint-External-Software</strong>: The use of third-party frameworks/libraries is allowed but only if they,</p>
+                    <ul>
+                      <li>are free, open-source, and have permissive license terms <span class="dimmed">(E.g., trial version of libraries that require purchase after N days are not allowed)</span>.</li>
+                      <li>do not require any installation by the user of your software.</li>
+                      <li>do not violate other constraints.</li>
+                    </ul>
+                    <p>and is subjected to prior approval by the teaching team.<br>
+                      <span class="dimmed"><strong>Reason:</strong> We will not allow third-party software that can interfere with the learning objectives of the module.</span></p>
+                    <p>Please <mark>post in the <a href="https://github.com/nus-cs2103-AY1819S1/forum/issues">forum</a> your request to use a third-party libraries</mark> <em>before</em> you start using the library. Once a specific library has been approved
+                      for one team, other teams may use it without requesting permission again.<br>
+                      <span class="dimmed"><strong>Reason:</strong> The whole class should know which external software are used by others so that they can do the same if they wish to.</span></p>
+                  </li>
+                </ul>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\project-timeline._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: Timeline <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -131,38 +626,230 @@
               </span>
               </span>
               </span>
+              <div>
+                <p><a href="images/timeline.png"><img src="/cs2103-website/admin/images/timeline.png" width="100%"></a></p>
+                <p>To expedite your project implementation, you will be given some sample code (AddressBook-Level1 to AddressBook-Level4, shown as <code>AB1</code> to <code>AB4</code> in the diagram above). You can use <code>AB1</code> to <code>AB3</code>                  to ramp up your tech skills in preparation for the project. <code>AB4</code> is to be used as the basis for your project.</p>
+                <p><code>AB4</code> is the version you will use as the starting point for your final project. Some of the work you do in <code>AB1</code> to <code>AB3</code> can be ported over to <code>AB4</code> and can be used to claim credit in the final
+                  project.</p>
+                <p>Given below is the high-level timeline of the project.</p>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Week</th>
+                        <th>Stage</th>
+                        <th>Activities</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>3</strong></td>
+                        <td>inception</td>
+                        <td><span id="inception-overview">decide on a overall project direction <span class="dimmed">(user profile, problem addressed, optimize or morph?)</span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>4</strong></td>
+                        <td>mid-v1.0</td>
+                        <td><span id="mid-v10-overview">decide on requirements <span class="dimmed">(user stories, use cases, non-functional requirements)</span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><strong>5</strong></td>
+                        <td>v1.0</td>
+                        <td><span id="v10-overview">conceptualize product and document it as a user guide(draft), draft a rough project plan</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>6</strong></td>
+                        <td>mid-v1.1</td>
+                        <td><span id="mid-v11-overview">set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>7</strong></td>
+                        <td>v1.1</td>
+                        <td><span id="v11-overview">update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>8</strong></td>
+                        <td>mid-v1.2</td>
+                        <td><span id="mid-v12-overview">adjust project schedule/rigor as needed, complete repo set up, start proper milestone management</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>9</strong></td>
+                        <td>v1.2</td>
+                        <td><span id="v12-overview">move code towards v2.0 in small steps, start documenting design/implementation details in DG</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>10</strong></td>
+                        <td>mid-v1.3</td>
+                        <td><span id="mid-v13-overview">continue to enhance features</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>11</strong></td>
+                        <td>v1.3</td>
+                        <td><span id="v13-overview">release as a jar file, release updated user guide, peer-test released products, verify code authorship</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>12</strong></td>
+                        <td>mid-v1.4</td>
+                        <td><span id="mid-v14-overview">tweak as per peer-testing results, draft Project Portfolio Page, practice product demo</span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>13</strong></td>
+                        <td>v1.4</td>
+                        <td><span id="v14-overview">final tweaks to docs/product, release product, demo product, test/evaluate peer products</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>More details of each stage is provided elsewhere is this website.</p>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixA-principles._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> A: Module Principles <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <p>These are some of the main principles underlying the module structure.</p>
+                <tip-box type="important">
+                  The product is you, NOT what you build.
+                </tip-box>
+                <p>The software product you build is a side effect only. You are the product of this module. This means,</p>
+                <ul>
+                  <li>We may not take the most efficient route to building the software product. <strong>We take the route that allows you to learn the most</strong>.</li>
+                  <li>Building a software product that is unique, creative, and shiny is not our priority (although we try to do a bit of that too). <strong>Learning to take pride in, and discovering the joy of, high quality software engineering work is our priority</strong>.</li>
+                </ul>
+                <p>Following from that, we evaluate you on not just how much you've done, but also, how well you've done those things. Here are some of the aspects in which we focus on:</p>
+                <table class="table table-bordered" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p><strong>We appreciate ...</strong></p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p><strong>But we value more ...</strong></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to deal with low-level details</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to abstract over details, generalize, see the big picture</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>A drive to learn latest and greatest technologies</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to make the best of given tools</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to find problems that interest you and solve them</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to solve the given problem to the best of your ability</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to burn the midnight oil to meet a deadline</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to schedule work so that the need for 'last minute heroics' is minimal</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>Preference to do things you like or things you are good at</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to buckle down and deliver on important things that you don't necessarily like or aren't good at</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to deliver desired end results</p>
+                      </td>
+                      <td colspan="1" rowspan="1">
+                        <p>Ability to deliver in a way that shows how well you delivered (i.e. visibility of your work)</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><strong>We learn together, NOT compete against each other.</strong></p>
+                <p>You are not in a competition. Our grading is not forced on a bell curve.</p>
+                <p>Learn from each other. That is why we open-source your submissions.</p>
+                <p>Teach each other, even those in other teams. Those who do it well can become tutors next time.</p>
+                <p><strong>Continuously engage, NOT last minute heroics.</strong></p>
+                <p>We want to train you to do software engineering in a steady and repeatable manner that does not require 'last minute heroics'.</p>
+                <p>In this module, last minute heroics will not earn you a good project grade, and last minute mugging will not earn you a good exam grade.</p>
+                <p><strong>Where you reach at the end matters, NOT what you knew at the beginning.</strong></p>
+                <p>When you start the module, some others in the class may appear to know a lot more than you. Don't let that worry you. The final grade depends on what you know at the end, not what you knew to begin with. All marks allocated to intermediate
+                  deliverables are within the reach of everyone in the class irrespective of their prior knowledge.</p>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-separateWebsite" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-separateWebsite">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why you force me to visit a separate website instead of using IVLE? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="why-you-force-me-to-visit-a-separate-website-instead-of-using-ivle">Why you force me to visit a separate website instead of using IVLE? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <img src="/cs2103-website/admin/images/Forces me to visit a separate website.png" width="655" height="271">
+                    <p>We have a separate website because some of the module information does not fit into the structure imposed by IVLE.</p>
+                    <p>On a related note, keep in mind that 'hunting and gathering' of relevant information is one of the skills you need to survive 'in the wild'. Do not always expect all relevant materials to appear 'magically' in some kind of 'work bin'.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-slideFormat" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-slideFormat">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why slides are not detailed? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="why-slides-are-not-detailed">Why slides are not detailed? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <img src="/cs2103-website/admin/images/slides not detailed enough.png" width="733" height="221">
+                    <p>Slides are not meant to be documents to print and study for exams. Their purpose is to support the lecture delivery and keep you engaged during the lecture. That's why our slides are less detailed and more visual.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-selfStudy" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-selfStudy">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why so much self-study? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="why-so-much-self-study">Why so much self-study? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <img src="/cs2103-website/admin/images/so much self study.png" width="763" height="307">
+                    <p>Self-study is a critical survival skill in SE industry. Lectures will show you the way, but absorbing content is to be done at your own pace, by yourself. In this module, we still tell you what content to study and also pass most of
+                      the content to you. After you graduate, you have to decide what to study and find your own content too.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
         </div>
@@ -535,7 +1222,7 @@
               <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
               <div>
                 <p><strong>Acceptable</strong>: Any Java project set up in Intellij.</p>
-                <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#set-up-a-project-in-an-ide-lo-idesetup">AddressBook - Level1 : LO-IdeSetup</a></p>
+                <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#set-up-a-project-in-an-ide-code-lo-idesetup-code">AddressBook - Level1 : LO-IdeSetup</a></p>
                 <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
               </div>
             </panel>
@@ -583,7 +1270,7 @@
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Use Intellij basic code navigation features to navigate the code of any java project.</p>
-                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#navigate-code-efficiently-lo-codenavigation">AddressBook - Level1 : LO-CodeNavigation</a></p>
+                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#navigate-code-efficiently-code-lo-codenavigation-code">AddressBook - Level1 : LO-CodeNavigation</a></p>
                   <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                 </div>
             </panel>
@@ -662,7 +1349,7 @@
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Some code that you have written that uses some Java Collection classes.</p>
-                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-collections-lo-collections">AddressBook - Level1 : LO-Collections</a></p>
+                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-collections-code-lo-collections-code">AddressBook - Level1 : LO-Collections</a></p>
                   <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
                 </div>
             </panel>
@@ -899,7 +1586,7 @@ Number of keys after clearing: 0
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Some code that you have written that uses the varargs feature.</p>
-                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-lo-varargss">AddressBook - Level1 : LO-Varargs</a></p>
+                  <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-code-lo-varargs-code">AddressBook - Level1 : LO-Varargs</a></p>
                   <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
                 </div>
             </panel>
@@ -1248,7 +1935,7 @@ Invalid command format: add
                   <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
-                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
+                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#automate-cli-testing-code-lo-automatedclitesting-code">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
                     <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                   </div>
               </panel>
@@ -2200,7 +2887,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <div class="indented">
                     <div>
                       <p><strong>Acceptable</strong>: Any Java project set up in Intellij.</p>
-                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#set-up-a-project-in-an-ide-lo-idesetup">AddressBook - Level1 : LO-IdeSetup</a></p>
+                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#set-up-a-project-in-an-ide-code-lo-idesetup-code">AddressBook - Level1 : LO-IdeSetup</a></p>
                       <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                     </div>
                   </div>
@@ -2253,7 +2940,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                 <div class="indented">
                   <div>
                     <p><strong>Acceptable</strong>: Use Intellij basic code navigation features to navigate the code of any java project.</p>
-                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#navigate-code-efficiently-lo-codenavigation">AddressBook - Level1 : LO-CodeNavigation</a></p>
+                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#navigate-code-efficiently-code-lo-codenavigation-code">AddressBook - Level1 : LO-CodeNavigation</a></p>
                     <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                   </div>
                 </div>
@@ -2334,7 +3021,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <div class="indented">
                     <div>
                       <p><strong>Acceptable</strong>: Some code that you have written that uses some Java Collection classes.</p>
-                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-collections-lo-collections">AddressBook - Level1 : LO-Collections</a></p>
+                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-collections-code-lo-collections-code">AddressBook - Level1 : LO-Collections</a></p>
                       <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
                     </div>
                   </div>
@@ -2379,7 +3066,7 @@ Date:   Wed Jul 5 16:06:28 2017 +0800
                   <div class="indented">
                     <div>
                       <p><strong>Acceptable</strong>: Some code that you have written that uses the varargs feature.</p>
-                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-lo-varargss">AddressBook - Level1 : LO-Varargs</a></p>
+                      <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#use-varargs-code-lo-varargs-code">AddressBook - Level1 : LO-Varargs</a></p>
                       <p><strong>Submission</strong>: Show your code to the tutor during the tutorial.</p>
                     </div>
                   </div>
@@ -2678,7 +3365,7 @@ Invalid command format: add
                 <div class="indented">
                   <div>
                     <p><strong>Acceptable</strong>: Any project where you use the I/O redirection method to test a CLI.</p>
-                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#automate-cli-testing-lo-automatedclitesting">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
+                    <p><strong>Suggested</strong>: Do the exercise given in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc#automate-cli-testing-code-lo-automatedclitesting-code">AddressBook - Level1 : LO-AutomatedCliTesting</a></p>
                     <p><strong>Submission</strong>: Demo the test during the tutorial.</p>
                   </div>
                 </div>
@@ -3116,7 +3803,7 @@ nothing to commit (create/copy files and use &quot;git add&quot; to track)
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 09 Aug 2018 15:38:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
 </footer>
 </div>
 </body>

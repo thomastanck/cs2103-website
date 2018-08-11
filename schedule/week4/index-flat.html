@@ -65,13 +65,39 @@
         <p><span class="activity-desc">Admin info to read:<span></span></span>
         </p>
         <div class="indented">
-          <panel src="/cs2103-website\admin\appendixB-policies._include_.html#policy-plagiarism" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="policy-plagiarism">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix B (Policies) → Policy on plagiarism <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
+            <div>
+              <h3 id="policy-on-plagiarism">Policy on plagiarism <small><small><span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+              </h3>
+              <div class="indented">
+                <div>
+                  <p><strong>We encourage sharing, but you should share with everyone in the class</strong>, not just a selected group. That is,</p>
+                  <ul>
+                    <li>You are not allowed to share individual assignments with classmates directly.</li>
+                    <li>You are not allowed to share project-related things with other teams directly.</li>
+                  </ul>
+                  <p><strong>You can even reuse each other's work</strong> subject to the 'reuse policy' given below.</p>
+                  <p>If you submit code (or adopt ideas) taken from elsewhere, you need to comply with our reuse policy.</p>
+                  <p>Detection:</p>
+                  <ul>
+                    <li>Detecting plagiarism in code is quite easy. You are not fooling anyone by reordering code or renaming methods/variables.</li>
+                    <li>As all your work is publicly visible on GitHub, sooner or later somebody will notice the plagiarism.</li>
+                  </ul>
+                  <p>Penalties:</p>
+                  <ul>
+                    <li>For submissions not affecting marks: We make a record of cases of plagiarism but we do not take further action. Such plagiarism does not disadvantage other students. Therefore, we prefer to spend all available resources on helping
+                      honest students to do better rather than to chase after dishonest students. If you think you gain something by plagiarizing, go ahead and do it. It's your choice and it's your loss.</li>
+                    <li>For the final project/exam: Any case of claiming others' work as yours will be reported to the university for disciplinary action.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixB-policies._include_.html#policy-reuse" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="policy-reuse">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix B (Policies) → Policy on reuse <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -79,9 +105,332 @@
               </span>
               </span>
               </span>
+              <div>
+                <h3 id="policy-on-reuse">Policy on reuse <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <p><strong>Reuse is encouraged. However, note that reuse has its own costs</strong> (such as the learning curve, additional complexity, usage restrictions, and unknown bugs). Furthermore, you will not be given credit for work done by
+                      others. Rather, you will be given credit for using work done by others.</p>
+                    <ul>
+                      <li>You are allowed to reuse work from your classmates, subject to following conditions:
+                        <ul>
+                          <li>The work has been published by us or the authors.</li>
+                          <li>You clearly give credit to the original author(s).</li>
+                        </ul>
+                      </li>
+                      <li>You are allowed to reuse work from external sources, subject to following conditions:
+                        <ul>
+                          <li>The work comes from a source of 'good standing' (such as an established open source project). This means you cannot reuse code written by an outside 'friend'.</li>
+                          <li>You clearly give credit to the original author. Acknowledge use of third party resources clearly e.g. in the welcome message, splash screen (if any) or under the 'about' menu. If you are open about reuse, you are less likely
+                            to get into trouble if you unintentionally reused something copyrighted.</li>
+                          <li>You do not violate the license under which the work has been released. Please  <strong>do not use 3rd-party images/audio</strong> in your software unless they have been specifically released to be used freely. Just because you
+                            found it in the Internet does not mean it is free for reuse.</li>
+                          <li><mark>Always get permission from us before you reuse</mark> third-party libraries. Please post your 'request to use 3rd party library' in our GitHub forum. That way, the whole class get to see what libraries are being used by
+                            others.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <tip-box>
+                      <h4 id="giving-credit-for-reused-work">Giving credit for reused work</h4>
+                      <p>Given below are how to give credit for things you reuse from elsewhere. These requirements are specific to this module <span class="dimmed"> i.e., not applicable outside the module (outside the module you should follow the rules specified by your employer and the license of the reused work)</span></p>
+                      <p>If you <strong>used a third party library</strong>:</p>
+                      <ul>
+                        <li>Mention in the <code>README.adoc</code> (under the <em>Acknowledgements</em> section)</li>
+                        <li>mention in the
+                          <trigger trigger="click" for="modal:reusePolicy-ppp">Project Portfolio Page</trigger> if the library has a significant relevance to the features you implemented</li>
+                      </ul>
+                      <p>If you <strong>reused code snippets found on the Internet</strong> <span class="dimmed"> e.g. from StackOverflow answers</span> or<br>
+                        <strong>referred code in another software</strong> or<br>
+                        <strong>referred project code by current/past student</strong>:</p>
+                      <ul>
+                        <li>If you read the code to understand the approach and implemented it yourself, mention it as a comment<br>
+                          <span class="fas fa-cube"></span> Example:
+                          <pre><code class="hljs java"><span class="hljs-comment">//Solution below adapted from https://stackoverflow.com/a/16252290</span>
+{Your implmentation of the reused solution here ...}
+</code></pre>
+                        </li>
+                        <li>If you copy-pasted a non-trivial code block (possibly with minor modifications <span class="dimmed"> renaming, layout changes, changes to comments, etc.</span>), also mark the code block as reused code (using
+                          <trigger trigger="click"
+                            for="modal:reusePolicy-collateSyntax">Collate Tool Syntax</trigger>)<br> Format:
+                          <pre><code class="hljs java"><span class="hljs-comment">//@@author {yourGithubUsername}-reused</span>
+<span class="hljs-comment">//{Info about the source...}</span>
+
+{<span class="hljs-function">Reused <span class="hljs-title">code</span> <span class="hljs-params">(possibly with minor modifications)</span> here ...}
+
+<span class="hljs-comment">//@@author</span>
+</span></code></pre>
+                          <span class="fas fa-cube"></span> Example of reusing a code snippet (with minor modifications):
+                          <pre><code class="hljs java">persons = getList()
+<span class="hljs-comment">//@@author johndoe-reused</span>
+<span class="hljs-comment">//Reused from https://stackoverflow.com/a/34646172 with minor modifications</span>
+Collections.sort(persons, <span class="hljs-keyword">new</span> Comparator&lt;CustomData&gt;() {
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(CustomData lhs, CustomData rhs)</span> </span>{
+        <span class="hljs-keyword">return</span> lhs.customInt &gt; rhs.customInt ? -<span class="hljs-number">1</span> : (lhs.customInt &lt; rhs.customInt) ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;
+    }
+});
+<span class="hljs-comment">//@@author</span>
+<span class="hljs-keyword">return</span> persons;
+</code></pre>
+                        </li>
+                      </ul>
+                    </tip-box>
+                    <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project mid-v1.3 → Collate Tool" id="modal:reusePolicy-collateSyntax">
+                    
+                      <div>Collate is a tool for collating code written by different developers.
+                        <p>Steps to use Collate:</p>
+                        <ol>
+                          <li>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate/releases">Collate Tool project</a></li>
+                          <li>Annotate your code to indicate who wrote which part of the code (instructions given below)</li>
+                          <li>Run the Collate tool to collate code written by each person into separate files (instructions given below)</li>
+                        </ol>
+                        <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
+                        <ul>
+                          <li>
+                            <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br> The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code>                              tag or the end of the file (whichever comes first) will be considered as was written by that author. Here is a sample code file:</p>
+                            <pre class="hljs"><code>//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author sarahkhoo
+method 3 ...
+//@@author johndoe
+method 4 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours
+                              can add the GitHub username to the empty tag later. Here is a sample code with an empty <code>author</code> tag:</p>
+                            <pre class="hljs"><code>method 0 ...
+//@@author johndoe
+method 1 ...
+method 2 ...
+//@@author
+method 3 ...
+method 4 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br> Here is an example code from an xml/fxml file.</p>
+                            <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
+&lt;textbox&gt;
+  &lt;label&gt;...&lt;/label&gt;
+  &lt;input&gt;...&lt;/input&gt;
+&lt;/textbox&gt;
+...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br> 👎
+                              <span class="fas fa-arrow-down"></span></p>
+                            <pre class="hljs"><code>/**
+  * Returns true if ...
+  * @@author johndoe
+  */
+</code></pre>
+                            <p>👍<span class="fas fa-arrow-down"></span></p>
+                            <pre class="hljs"><code>//@@author johndoe
+/**
+  * Returns true if ...
+  */
+</code></pre>
+                          </li>
+                        </ul>
+                        <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate</h4>
+                        <ul>
+                          <li>
+                            <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
+                          </li>
+                          <li>
+                            <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong>                              but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
+                            <ul>
+                              <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+                              <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+                              <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from
+                                somewhere.</li>
+                              <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive
+                              code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br> Individual members are responsible for making sure their own collated files contain the correct content.<br> If you
+                              notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
+                          </li>
+                          <li>
+                            <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+                            <ul>
+                              <li>Create a folder called <code>{project root}/unused</code></li>
+                              <li>Move unused files (or copies of files containing unused code) to that folder</li>
+                              <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>) e.g.
+                              </li>
+                            </ul>
+                            <pre class="hljs"><code>//@@author johndoe-unused
+method 1 ...
+method 2 ...
+</code></pre>
+                            <p>Please put a comment in the code to explain why it was not used.</p>
+                          </li>
+                          <li>
+                            <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>) e.g.
+                            </p>
+                            <pre class="hljs"><code>//@@author johndoe-reused
+method 1 ...
+method 2 ...
+</code></pre>
+                          </li>
+                          <li>
+                            <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
+                          </li>
+                          <li>
+                            <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
+                          </li>
+                        </ul>
+                        <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
+                        <p>You need to put the collated code in the following folders</p>
+                        <div class="table-responsive">
+                          <table class="markbind-table table table-bordered table-striped">
+                            <thead>
+                              <tr>
+                                <th>Code Type</th>
+                                <th>Folder</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>functional code</td>
+                                <td><code>collated/functional</code></td>
+                              </tr>
+                              <tr>
+                                <td>test code</td>
+                                <td><code>collated/test</code></td>
+                              </tr>
+                              <tr>
+                                <td>unused code</td>
+                                <td><code>collated/unused</code></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
+                        <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
+                        <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
+
+java -jar Collate-TUI.jar collate from src/test to collated/test include java
+
+java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
+</code></pre>
+                        <p>The output should be something like the structure given below.</p>
+                        <pre class="hljs"><code>collated/
+    functional/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+        ravikumarreused.md
+    test/
+        johndoe.md
+        sarahkhoo.md
+        ravikumar.md
+    unused/
+        johndoe.md
+</code></pre>
+                        <ul>
+                          <li>
+                            <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
+                          </li>
+                          <li>
+                            <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </modal>
+                    <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Project Portfolio Page" id="modal:reusePolicy-ppp">
+                    
+                      <div>
+                        <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
+                        <ul>
+                          <li>
+                            <p><strong>Objective:</strong></p>
+                            <ul>
+                              <li>For you to use <span class="dimmed"> (e.g. in your resume)</span> as a well-documented data point of your SE experience</li>
+                              <li>For us to use as a data point to evaluate your,
+                                <ul>
+                                  <li>contributions to the project</li>
+                                  <li>your documentation skills</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p><strong>What to include:</strong></p>
+                            <ul>
+                              <li>Main things to include:
+                                <ul>
+                                  <li>links to collated code</li>
+                                  <li>features you implemented <span class="dimmed"> (include relevant extracts from the user guide and the developer guide)</span></li>
+                                  <li>features you propose to implement in future <span class="dimmed"> (include relevant extracts from the user guide and the developer guide if applicable)</span><br> Note: the purpose of allowing you to include <em>proposed</em>                                    features is to provide you more flexibility to show your documentation skills. <span class="dimmed"> e.g. you can bring in a proposed feature just to give you an opportunity to use a UML diagram type not used by the actual features.</span></li>
+                                  <li>other significant contributions to the project <span class="dimmed"> e.g. tweaks to existing features, setting up project tools</span></li>
+                                </ul>
+                              </li>
+                              <li>Other things you can include:
+                                <ul>
+                                  <li>Evidence of helping others <span class="dimmed"> e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
+                                  <li>Evidence of technical leadership <span class="dimmed"> e.g. offering features for others to reuse, evidence of those features being reused by others</span></li>
+                                </ul>
+                              </li>
+                              <li>If you plan to use the PPP in your Resume, you can also include your SE work outside of the module (will not be graded)</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p><strong>Format</strong>:</p>
+                            <ul>
+                              <li>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note:
+                                the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot
+                                of spacing around content.
+                                <div class="table-responsive">
+                                  <table class="markbind-table table table-bordered table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th>Content</th>
+                                        <th>Limit</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Description in point form</td>
+                                        <td>0.5-1</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Extracts from the User Guide</td>
+                                        <td>1-3</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Extracts from the Developer Guide</td>
+                                        <td>3-6</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Total</td>
+                                        <td>5-10</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </li>
+                              <li><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>.</li>
+                              <li>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP.
+                                Follow the example in the <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/team/johndoe.html">sample</a>.</li>
+                              <li><mark>❗️ It is assumed that all contents in the PPP were written primarily by you.</mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>,
+                                clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </modal>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixB-policies._include_.html#policy-outsiderHelp" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="policy-outsiderHelp">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix B (Policies) → Policy on help from outsiders <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -89,9 +438,19 @@
               </span>
               </span>
               </span>
+              <div>
+                <h3 id="policy-on-help-from-outsiders">Policy on help from outsiders <small><small><span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <p>In general, you are <strong>not allowed to involve outsiders</strong> in your project except your team members and the teaching team. However, It is OK to give your product to others for the purpose of getting voluntary user feedback.
+                      It is also OK to learn from others as long as they don't do your project work themselves.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\exams._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Exams <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -99,22 +458,121 @@
               </span>
               </span>
               </span>
+              <div>
+                <p>There is no midterm.</p>
+                <p>The final exam has two parts:</p>
+                <ul>
+                  <li>Part 1: MCQ questions (1 hour, 20 marks)</li>
+                  <li>Part 2: Essay questions (1 hour, 20 marks)</li>
+                </ul>
+                <p>Both papers will be given to you at the start but you need to <strong>answer Part 1 first</strong> (i.e. MCQ paper). It will be <strong>collected 1 hour after the exam start time</strong> (even if arrived late for the exam). You are free
+                  to start part 2 early if you finish Part 1 early.</p>
+                <h2 id="final-exam-part-1-mcq">Final Exam: Part 1 (MCQ)</h2>
+                <p>Each MCQ question gives you a statement to evaluate.</p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> An example statement</p>
+                  <blockquote>
+                    <p>Testing is a Q&amp;A activity</p>
+                  </blockquote>
+                </tip-box>
+                <p>Unless stated otherwise, the meaning of answer options are<br>
+                  <strong>A.</strong> <code>True</code><br>
+                  <strong>B.</strong> Option not used<br>
+                  <strong>C.</strong> <code>Question unclear</code> (in this case, write down your doubt in the question paper)<br>
+                  <strong>D.</strong> Option not used<br>
+                  <strong>E.</strong> <code>False</code></p>
+                <p>Number of questions: 100</p>
+                <div class="full-mode">
+                  <p>Note that you have <strong>slightly more than ½ minute for each question</strong>, which means you need to go through the questions fairly quickly.</p>
+                </div>
+                <p>Given the fast pace required by the paper, to be fair to all students, <strong>you will not be allowed to clarify doubts about questions</strong> (in Part 1) by talking to invigilators.</p>
+                <ul>
+                  <li>If a question is not clear, you can choose option C and write your doubt in the exam paper, near the unclear question.</li>
+                  <li>If your doubt is justified (e.g. there is a typo in the question) or if many students found the question to be unclear, the examiner may decide to omit that question from grading.</li>
+                </ul>
+                <p><strong>Questions in Part 1 are confidential.</strong> You are not allowed to reveal Part 1 content to anyone after the exam. All pages of the assessment paper are to be returned at the end of the exam.</p>
+                <div class="full-mode">
+                  You will be given OCR forms to indicate your answers for Part 1. As each OCR form can accommodate only 50 answers, you will be given 2 OCR forms. **Indicate your student number in both OCR forms**.
+                </div>
+                <p>To save space, we use the following notation in MCQ question.
+                  <strong>[<ins>x</ins> | y | <ins>z</ins>] means ‘x and z, but not y’</strong></p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> SE is [boring | <ins>useful</ins> | <ins>fun</ins>] means <em>SE is not boring</em> AND <em>SE is useful</em> AND <em>SE is fun</em>.</p>
+                  <p><span class="fas fa-cube"></span> Consider the following statement:</p>
+                  <ul>
+                    <li>IDEs can help with [<ins>writing</ins> | debugging | <ins>testing</ins>] code.</li>
+                  </ul>
+                  <p>The correct response for it is <code>False</code> because IDEs can help with all three of the given options, not just writing and testing.</p>
+                </tip-box>
+                <p>Some questions will use <ins>underlines</ins> or <mark>highlighting</mark> to draw your attention to a specific part of the question. That is because those parts are highly relevant to the answer and we don’t want you to miss the relevance
+                  of that part.</p>
+                <tip-box>
+                  <p><span class="fas fa-cube"></span> Consider the statement below:</p>
+                  <blockquote>
+                    <p>Technique ABC <ins>can</ins> be used to generate more test cases.</p>
+                  </blockquote>
+                  <p>The word <ins>can</ins> is underlined because the decision you need to make is whether the ABC <em>can or cannot</em> be used to generate more test cases; the decision is not whether ABC can be used to generate <em>more or better</em>                    test cases.</p>
+                </tip-box>
+                <p>Markers such as the one given below appears at left margin of the paper to <strong>indicate where the question corresponds to a new column in the OCR form</strong>. E.g. questions 11, 21, 31, etc. (a column has 10 questions). Such markers
+                  can help you to detect if you missed a question in the previous 10 questions. You can safely ignore those markers if you are not interested in making use of that additional hint.</p>
+                <p><img src="/cs2103-website/admin/images/columnMarker.png"><br></p>
+                <p>Some questions have tags e.g., the question below has a tag <strong><code>JAVA</code></strong>. These <strong>tags provide additional context about the question</strong>. In the example below, the tag indicates that the code given in the
+                  question is Java code.</p>
+                <p><img src="/cs2103-website/admin/images/contextTag.png"><br></p>
+                <p><strong>The paper is open-book</strong>: you may bring any printed or written materials to the exam in hard copy format. However, given the fast pace required by Part 1, you will not have time left to refer notes during that part of the
+                  exam.</p>
+                <p>💡 <strong>Mark the OCR form as you go</strong>, rather than planning to transfer your answers to the OCR form near the end. <span class="dimmed"> Reason: Given there are 100 questions, it will be hard to estimate how much time you need to mass-transfer all answers to OCR forms.</span></p>
+                <p>💡 <strong>Write the answer in the exam paper as well</strong> as marking it in the OCR form. <span class="dimmed"> Reason: It will reduce the chance of missing a question. Furthermore, in case you missed a question, it will help you correct the OCR form quickly.</span></p>
+                <p>💡 We have tried to <strong>avoid deliberately misleading/tricky questions</strong>. If a question seems to take a very long time to figure out, you are probably over-thinking it.</p>
+                <box type="success">
+                  <p>You will be given a practice exam paper to familiarize yourself with this slightly unusual exam format.
+                  </p>
+                </box>
+                <h2 id="final-exam-part-2-essay">Final Exam: Part 2 (Essay)</h2>
+                <p>Unlike in part 1, <strong>you can ask invigilators for clarifications</strong> if you found a question to be unclear in part 2.</p>
+                <p>Yes, <strong>you may use pencils</strong> when answering part 2.</p>
+                <div class="full-mode">
+                  <p>[<a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202.pdf">Sample paper</a>] [
+                    <a href="http://www.comp.nus.edu.sg/~cs2103/AY1718S1/files/Practice%20Exam%20Paper%20-%20Part%202%20(answers).pdf">Answers to the sample paper</a>]</p>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-noLaptop" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-noLaptop">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → What if I don’t carry around a laptop? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="what-if-i-dont-carry-around-a-laptop">What if I don’t carry around a laptop? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <p>If you do not have a laptop or prefer not to bring the laptop, it is up to you to show your work to the tutor in some way (e.g. by connecting to your home PC remotely), <em>without</em> requiring extra time/effort from the tutor or
+                      team members.</p>
+                    <p><span class="dimmed">Reason: As you enjoy the benefits of not bring the laptop; you (not others) should bear the cost too.</span></p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixB-policies._include_.html#policy-publishingSubmissions" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="policy-publishingSubmissions">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix B (Policies) → Policy on publishing submissions <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="policy-on-publishing-submissions">Policy on publishing submissions <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <p>The source code are publicly available and are available for reuse by others without any restrictions. <br> Is publishing submissions unfair to the team? We don't think so. If you were the first to think of something your peers are
+                      willing to adopt later, that means you are already ahead of them and they are unlikely to earn more marks by adopting your ideas.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
         </div>
@@ -842,7 +1300,7 @@
               <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
               <div>
                 <p><strong>Acceptable</strong>: Using user stories in any past project.</p>
-                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-user-stories-lo-userstories">Addressbook-Level3: LO-UesrStories</a>]</p>
+                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#utilize-user-stories-code-lo-userstories-code">Addressbook-Level3: LO-UesrStories</a>]</p>
                 <div>
                   <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
                   <p>
@@ -1852,7 +2310,7 @@
                 <hr style="border-top: dashed 1px; border-color:grey">
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
-                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases">Addressbook-Level3: LO-UseCases</a>]</p>
+                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#utilize-use-cases-code-lo-usecases-code">Addressbook-Level3: LO-UseCases</a>]</p>
                   <div>
                     <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
                     <p>
@@ -3405,7 +3863,7 @@
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
-                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
+                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
                   <div>
                     <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
                     <p>
@@ -3578,7 +4036,7 @@
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Some code you wrote that involves exception handling.</p>
-                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions">addressbook-level2: LO-Exceptions</a>].</p>
+                  <p><strong>Suggested</strong>: Do the exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#handle-exceptions-code-lo-exceptions-code">addressbook-level2: LO-Exceptions</a>.</p>
                   <div>
                     <p><strong>Submission</strong>:</p>
                     <ul>
@@ -3723,7 +4181,7 @@
                 <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                 <div>
                   <p><strong>Acceptable</strong>: Any code you have written that uses Java enumerations.</p>
-                  <p><strong>Suggested</strong>: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/#use-enums-lo-enums">AddressBook-Level1: LO-Enums</a></p>
+                  <p><strong>Suggested</strong>: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code">AddressBook-Level1: LO-Enums</a></p>
                   <p><strong>Submission</strong>: Show your code during tutorial</p>
                 </div>
             </panel>
@@ -4281,7 +4739,7 @@ This repo can be used to practice creating PRs.
                   <div class="indented">
                     <div>
                       <p><strong>Acceptable</strong>: Using user stories in any past project.</p>
-                      <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-user-stories-lo-userstories">Addressbook-Level3: LO-UesrStories</a>]</p>
+                      <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#utilize-user-stories-code-lo-userstories-code">Addressbook-Level3: LO-UesrStories</a>]</p>
                       <div>
                         <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
                         <p>
@@ -4955,7 +5413,7 @@ This repo can be used to practice creating PRs.
                 </p>
                 <div class="indented">
                   <div>
-                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/doc/LearningOutcomes.md#utilize-use-cases-lo-usecases">Addressbook-Level3: LO-UseCases</a>]</p>
+                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3/blob/master/docs/LearningOutcomes.adoc#utilize-use-cases-code-lo-usecases-code">Addressbook-Level3: LO-UseCases</a>]</p>
                     <div>
                       <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3">Addressbook-Level3</a>. <mark>Remember to use team ID</mark> (e.g. <em>W09-2</em>) in your PR name.</p>
                       <p>
@@ -5859,7 +6317,7 @@ This repo can be used to practice creating PRs.
                 <div class="indented">
                   <div>
                     <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
-                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#follow-the-single-responsibility-principle-lo-srp">Addressbook-Level2: LO-SRP</a>]</p>
+                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
                     <div>
                       <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
                       <p>
@@ -5951,7 +6409,7 @@ This repo can be used to practice creating PRs.
                 <div class="indented">
                   <div>
                     <p><strong>Acceptable</strong>: Some code you wrote that involves exception handling.</p>
-                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/doc/LearningOutcomes.md#handle-exceptions-lo-exceptions">addressbook-level2: LO-Exceptions</a>].</p>
+                    <p><strong>Suggested</strong>: Do the exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#handle-exceptions-code-lo-exceptions-code">addressbook-level2: LO-Exceptions</a>.</p>
                     <div>
                       <p><strong>Submission</strong>:</p>
                       <ul>
@@ -6080,7 +6538,7 @@ This repo can be used to practice creating PRs.
                   <div class="indented">
                     <div>
                       <p><strong>Acceptable</strong>: Any code you have written that uses Java enumerations.</p>
-                      <p><strong>Suggested</strong>: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/#use-enums-lo-enums">AddressBook-Level1: LO-Enums</a></p>
+                      <p><strong>Suggested</strong>: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code">AddressBook-Level1: LO-Enums</a></p>
                       <p><strong>Submission</strong>: Show your code during tutorial</p>
                     </div>
                   </div>
@@ -6505,7 +6963,7 @@ Enter command: exit
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 09 Aug 2018 15:38:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
 </footer>
 </div>
 </body>

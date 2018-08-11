@@ -29,7 +29,7 @@
     <div id="flex-body">
   <div id="site-nav">
     <ul style="list-style-type: none; margin-left:-1em">
-      <li style="margin-top: 10px"><a href="moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
+      <li style="margin-top: 10px"><a href="moduleOverview.html">CS2103/T Software Engineering</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span class="fas fa-star"></span></span>
         </span>
       </li>
       <li style="margin-top: 10px"><a href="usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span class="fas fa-star"></span></span>
@@ -182,9 +182,36 @@
           <img src="https://github.com/se-edu/addressbook-level4/raw/master/docs/images/Ui.png" width="600">
           <p></p>
           <p>This product is meant for users who can type fast, and prefer typing over mouse/voice commands. Therefore, <mark>Command Line Interface (CLI) is the primary mode of input.</mark></p>
+          <div class="flat">
+            <div>
+              <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectProduct-constraintCli">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Contstraints → More info about the 'CLI app' requirement</trigger>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span>
+              </p>
+            </div>
+          </div>
+          <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Contstraints → More info about the 'CLI app' requirement  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+            id="modal:projectProduct-constraintCli">
+          
+            <div>
+              <ul>
+                <li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the
+                  minimize button), but the primary input should be command-driven.
+                  <ul>
+                    <li>Mouse actions should have keyboard alternatives.</li>
+                    <li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.</li>
+                    <li>
+                      <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over
+                      <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span></li>
+                    <li>❗️ While we don't prohibit
+                      <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </modal>
           <p>
-            <panel src="/cs2103-website\admin\project-constraints._include_.html#constraint-cli" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Admin: Project Contstraints: More info about the 'CLI app' requirement" class="embedding"
-              minimized="" fragment="constraint-cli"></panel>
+            <panel src="/cs2103-website\admin\project-constraints._include_.html#constraint-cli" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Contstraints → More info about the 'CLI app' requirement  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+              class="embedding" minimized="" fragment="constraint-cli"></panel>
           </p>
           <p></p>
         </div>
@@ -201,7 +228,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 09 Aug 2018 15:38:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
 </footer>
 </div>
 </body>

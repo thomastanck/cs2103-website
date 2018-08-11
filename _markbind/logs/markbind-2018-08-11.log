@@ -1,0 +1,112 @@
+2018-08-11T02:09:58.902Z - info: Website generation started at 10:09:46
+2018-08-11T02:10:16.815Z - info: Building assets...
+2018-08-11T02:10:33.057Z - info: Assets built
+2018-08-11T02:10:33.057Z - info: Generating pages...
+2018-08-11T02:12:18.669Z - info: Pages built
+2018-08-11T02:12:19.307Z - info: Site data built
+2018-08-11T02:12:19.307Z - info: Website generation complete! Total build time: 152.882s
+2018-08-11T02:12:19.325Z - info: Generate Site durationMs=152900
+2018-08-11T02:12:19.861Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T02:12:19.862Z - info: Press CTRL+C to stop ...
+2018-08-11T02:39:07.143Z - info: [10:39:07] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\textbooks.md
+2018-08-11T02:39:08.147Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\textbooks.md
+2018-08-11T02:39:08.151Z - info: Rebuilding 7 pages
+2018-08-11T02:39:34.500Z - info: Pages rebuilt
+2018-08-11T02:39:34.540Z - info: Site data built
+2018-08-11T02:40:22.413Z - info: [10:40:22] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\textbooks.md
+2018-08-11T02:40:23.414Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\textbooks.md
+2018-08-11T02:40:23.417Z - info: Rebuilding 7 pages
+2018-08-11T02:40:48.215Z - info: Pages rebuilt
+2018-08-11T02:40:48.253Z - info: Site data built
+2018-08-11T02:41:09.863Z - info: [10:41:09] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T02:41:10.872Z - info: Assets built
+2018-08-11T02:42:01.430Z - info: Website generation started at 10:41:56
+2018-08-11T02:42:09.935Z - info: Building assets...
+2018-08-11T02:42:23.182Z - info: Assets built
+2018-08-11T02:42:23.183Z - info: Generating pages...
+2018-08-11T02:43:51.687Z - info: Pages built
+2018-08-11T02:43:52.128Z - info: Site data built
+2018-08-11T02:43:52.128Z - info: Website generation complete! Total build time: 115.152s
+2018-08-11T02:43:52.138Z - info: Generate Site durationMs=115162
+2018-08-11T02:43:52.600Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T02:43:52.601Z - info: Press CTRL+C to stop ...
+2018-08-11T02:47:27.933Z - info: [10:47:27] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T02:47:28.950Z - info: Assets built
+2018-08-11T03:00:35.052Z - info: [11:00:35] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T03:00:36.071Z - info: Assets built
+2018-08-11T03:02:32.397Z - info: [11:02:32] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T03:02:33.411Z - info: Assets built
+2018-08-11T03:02:59.356Z - info: Website generation started at 11:02:56
+2018-08-11T03:03:04.955Z - info: Building assets...
+2018-08-11T03:03:13.404Z - info: Assets built
+2018-08-11T03:03:13.404Z - info: Generating pages...
+2018-08-11T03:04:55.417Z - info: Pages built
+2018-08-11T03:04:55.584Z - info: Site data built
+2018-08-11T03:04:55.584Z - info: Website generation complete! Total build time: 118.783s
+2018-08-11T03:04:55.594Z - info: Generate Site durationMs=118792
+2018-08-11T03:04:55.936Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T03:04:55.936Z - info: Press CTRL+C to stop ...
+2018-08-11T03:06:18.215Z - info: [11:06:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T03:06:19.236Z - info: Assets built
+2018-08-11T03:06:44.912Z - info: [11:06:44] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T03:06:45.928Z - info: Assets built
+2018-08-11T03:07:24.741Z - info: Website generation started at 11:07:21
+2018-08-11T03:07:27.534Z - info: Building assets...
+2018-08-11T03:07:30.478Z - info: Assets built
+2018-08-11T03:07:30.479Z - info: Generating pages...
+2018-08-11T03:09:00.779Z - info: Pages built
+2018-08-11T03:09:00.983Z - info: Site data built
+2018-08-11T03:09:00.983Z - info: Website generation complete! Total build time: 99.473s
+2018-08-11T03:09:00.992Z - info: Generate Site durationMs=99482
+2018-08-11T03:09:01.333Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T03:09:01.333Z - info: Press CTRL+C to stop ...
+2018-08-11T03:10:01.173Z - info: [11:10:01] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\macros.njk
+2018-08-11T03:10:02.196Z - info: Assets built
+2018-08-11T03:10:29.673Z - info: Website generation started at 11:10:26
+2018-08-11T03:10:31.620Z - info: Building assets...
+2018-08-11T03:10:37.399Z - info: Assets built
+2018-08-11T03:10:37.400Z - info: Generating pages...
+2018-08-11T03:14:46.263Z - info: Website generation started at 11:14:44
+2018-08-11T03:14:48.909Z - info: Building assets...
+2018-08-11T03:14:51.723Z - info: Assets built
+2018-08-11T03:14:51.724Z - info: Generating pages...
+2018-08-11T03:14:52.051Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at dom.map (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:345:28)
+    at Array.map (<anonymous>)
+    at DomHandler.htmlparser.DomHandler [as _callback] (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:342:25)
+    at DomHandler._handleCallback.DomHandler.onerror (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:52:8)
+    at DomHandler.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\domhandler\index.js:46:7)
+    at Parser.onend (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:310:32)
+    at Tokenizer._finish (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Tokenizer.js:853:12)
+    at Tokenizer.end (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Tokenizer.js:844:25)
+    at Parser.end (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\htmlparser2\lib\Parser.js:338:18)
+2018-08-11T03:15:51.298Z - info: Website generation started at 11:15:49
+2018-08-11T03:15:53.647Z - info: Building assets...
+2018-08-11T03:15:56.909Z - info: Assets built
+2018-08-11T03:15:56.910Z - info: Generating pages...
+2018-08-11T03:17:23.201Z - info: Pages built
+2018-08-11T03:17:23.459Z - info: Site data built
+2018-08-11T03:17:23.459Z - info: Website generation complete! Total build time: 93.671s
+2018-08-11T03:17:23.468Z - info: Generate Site durationMs=93680
+2018-08-11T03:17:23.847Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T03:17:23.847Z - info: Press CTRL+C to stop ...
+2018-08-11T03:21:46.482Z - info: Website generation started at 11:21:44
+2018-08-11T03:21:48.358Z - info: Building assets...
+2018-08-11T03:21:55.259Z - info: Assets built
+2018-08-11T03:21:55.260Z - info: Generating pages...
+2018-08-11T03:23:22.761Z - info: Pages built
+2018-08-11T03:23:22.911Z - info: Site data built
+2018-08-11T03:23:22.911Z - info: Website generation complete! Total build time: 98.8s
+2018-08-11T03:23:22.920Z - info: Generate Site durationMs=98808
+2018-08-11T03:23:23.238Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-11T03:23:23.238Z - info: Press CTRL+C to stop ...
+2018-08-11T03:33:27.342Z - info: Website generation started at 11:33:24
+2018-08-11T03:33:29.226Z - info: Building assets...

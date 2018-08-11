@@ -65,7 +65,7 @@
         <p><span class="activity-desc">Admin info to read:<span></span></span>
         </p>
         <div class="indented">
-          <panel src="/cs2103-website\admin\project-w07-v11._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project: v1.1 [week 7] <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -73,22 +73,213 @@
               </span>
               </span>
               </span>
+              <div>
+                <div id="title"></div>
+                <div id="body">
+                  <tip-box>
+                    <p>Overview: <span>update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base</span></p>
+                  </tip-box>
+                  <p><strong>v1.1 Summary of Milestone</strong></p>
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Milestone</th>
+                          <th>Minimum acceptable performance to consider as 'reached'</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="fas fa-users"></span> Team org/repo set up</td>
+                          <td>as stated</td>
+                        </tr>
+                        <tr>
+                          <td><span class="fas fa-users"></span> Project plan formalized</td>
+                          <td>as stated</td>
+                        </tr>
+                        <tr>
+                          <td><span class="fas fa-user"></span> Have done some enhancement to the code</td>
+                          <td>at least attempted to enhance the code of a component, even if you did not fully succeed</td>
+                        </tr>
+                        <tr>
+                          <td><span class="fas fa-users"></span> All project documents updated as required</td>
+                          <td>updated docs are merged to the master branch</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>
+                    <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Reminder: Reaching individual and team milestones are considered for
+                    <trigger trigger="click" for="modal:v11-projectMgtGrading">grading the <em>project management</em> component</trigger> of your project grade.</p>
+                  <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Project Management" id="modal:v11-projectMgtGrading">
+                  
+                    <div>
+                      <p><strong>A. Process:</strong></p>
+                      <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
+                      <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
+                      <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                      <p>Other criteria:</p>
+                      <ul>
+                        <li>Good use of GitHub milestones</li>
+                        <li>Good use of GitHub release mechanism</li>
+                        <li>Good version control, based on the repo</li>
+                        <li>Reasonable attempt to use the forking workflow</li>
+                        <li>Good task definition, assignment and tracking, based on the issue tracker</li>
+                        <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
+                        <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
+                      </ul>
+                      <p><strong>B. Team-based tasks</strong>:</p>
+                      <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="/cs2103-website/admin/index-flat.html#scope-example-team-tasks">team-based tasks</a></span></p>
+                      <p>Based on: peer evaluations and tutor observations</p>
+                      <div class="flat">
+                        <div>
+                          <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-exmapleTeamTasks">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope → Examples of team tasks</trigger>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span>
+                          </p>
+                        </div>
+                      </div>
+                      <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+                        id="modal:projectAssessment-exmapleTeamTasks">
+                      
+                        <div>
+                          <p>Here is a non-exhaustive list of team-tasks:</p>
+                          <ol>
+                            <li>Necessary general code enhancements e.g.,
+                              <ol>
+                                <li>Work related to renaming the product</li>
+                                <li>Work related to changing the product icon</li>
+                                <li>Morphing the product into a different product</li>
+                              </ol>
+                            </li>
+                            <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
+                            <li>Maintaining the issue tracker</li>
+                            <li>Release management</li>
+                            <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                            <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
+                          </ol>
+                        </div>
+                      </modal>
+                      <p>
+                        <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>"
+                          class="embedding" minimized="" fragment="example-team-tasks"></panel>
+                      </p>
+                    </div>
+                  </modal>
+                  <div id="documentation">
+                    <h3 id="v11-project-management">v1.1 Project Management</h3>
+                    <ul>
+                      <li>
+                        <p><span class="fas fa-users"></span> Fix any errors in org/repo set up <span class="dimmed"> (e.g. wrong repo name)</span>.</p>
+                      </li>
+                      <li>
+                        <p>When all changes intended for v1.1 is merged to the master branch, use <code>git tag</code> feature to tag the current version as <code>v1.1</code></p>
+                      </li>
+                      <li>
+                        <p>Start tracking your project schedule using GitHub issue tracker and milestones. More instructions coming soon.</p>
+                      </li>
+                    </ul>
+                    <h3 id="v11-documentation">v1.1 Documentation</h3>
+                    <ul>
+                      <li>
+                        <p>Update User Guide, Developer Guide, README, and About Us pages as described earlier.</p>
+                        <p><strong>Submission</strong>: merge your changes to the master branch of your repo.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="product">
+                    <h3 id="v11-product">v1.1 Product</h3>
+                    <ul>
+                      <li>Each member should try to add some enhancements that are in line with the vision for v2.0. Preferably, these <mark>should be <tooltip content="should go beyond the component you are in charge of"><em>global-impact</em></tooltip> enhancements</mark>,
+                        touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code">some guidance on how to implement a new feature end-to-end</a>.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixF-teamworkIssues._include_.html#main" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="main">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> F: Handling teamwork issues <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <p>If your team is facing difficulties due to differences in skill/motivation /availability among team members,</p>
+                <ul>
+                  <li>
+                    <p><strong>First, do not expect everyone to have the same skill/motivation level as you.</strong> It is fine if someone wants to do less and have low expectations from the module. That doesn't mean that person is a bad person. Everyone
+                      is entitled to have their own priorities.</p>
+                  </li>
+                  <li>
+                    <p><strong>Second, don't give up.</strong> It is unfortunate that your team ended up in this situation, but you can turn it into a good learning opportunity. You don't get an opportunity to save a sinking team every day 😃</p>
+                  </li>
+                  <li>
+                    <p><strong>Third, if you care about your grade and willing to work for it, you need to take initiative</strong> to turn the situation around or else the whole team is going to suffer. Don't hesitate to take charge if the situation calls
+                      for it. By doing so, you'll be doing a favor for your team. Be professional, kind, and courteous to the team members, but also be firm and assertive. It is your grade that is at stake. Don't worry about making a bad situation worse.
+                      You won't know until you try.</p>
+                  </li>
+                  <li>
+                    <p><strong>Finally, don't feel angry or 'wronged'.</strong> Teamwork problems are not uncommon in this module and we know how to grade so that you will not be penalized for others' low contribution. We can use Git to find exactly what
+                      others did. It's not your responsibility to get others to contribute.</p>
+                  </li>
+                </ul>
+                <p>Given below are some suggestions you can adopt if the project work is not going smooth due to team issues. Note that the below measures can result in some team members doing more work than others and earning better project grades than
+                  others. It is still better than sinking the whole team together.</p>
+                <ul>
+                  <li>
+                    <p><strong>Redistribute the work</strong>: Stronger programmers in the team should take over the critical parts of the code.</p>
+                  </li>
+                  <li>
+                    <p><strong>Enforce stricter integration workflow</strong>: Appoint an integrator (typically, the strongest programmer). His/her job is to maintain the integrated version of the code. He/she should not accept any code that breaks the existing
+                      product or is not up to the acceptable quality standard. It is up to others to submit acceptable code to the integrator. Note that if the integrator rejected your code unreasonably, you can still earn marks for that code. You are
+                      allowed to submit such 'rejected' code for grading. They can earn marks based on the quality of the code.</p>
+                  </li>
+                </ul>
+                <p><strong>If you have very unreliable or totally disengaged team members</strong> :</p>
+                <ul>
+                  <li>Re-allocate to others any mission-critical work allocated to that person so that such team members cannot bring down the entire team.</li>
+                  <li>However, do not leave out such team members from project communications. Always keep them in the loop so that they can contribute any time they wish to.</li>
+                  <li>Furthermore, evaluate them sincerely and fairly during peer evaluations so that they do get the grade their work deserves, no more, no less.</li>
+                  <li>Be courteous to such team members too. Some folks have genuine problems that prevent them from contributing more although they may not be able tell you the reasons. Just do your best for the project and assume everyone else is doing
+                    their best too, although their best may be lower than yours.</li>
+                </ul>
+              </div>
           </panel>
           <p></p>
-          <panel src="/cs2103-website\admin\appendixC-faq._include_.html#admin-faq-favoriteTool" type="dark" no-close="" expanded="" no-switch="" expandable="false" fragment="admin-faq-favoriteTool">
+          <panel type="dark" no-close="" expanded="" no-switch="" expandable="false">
             <span slot="header" class="card-title"><span class="text-white"> Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix C (FAQs) → Why I’m not allowed to use my favorite tool/framework/language etc.? <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
+              <div>
+                <h3 id="why-im-not-allowed-to-use-my-favorite-toolframeworklanguage-etc">Why I’m not allowed to use my favorite tool/framework/language etc.? <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small>
+                </h3>
+                <div class="indented">
+                  <div>
+                    <img src="/cs2103-website/admin/images/I'm not allowed to use my favorite tool.png" width="750" height="287">
+                    <p>We have chosen a basic set of tools after considering ease of learning, availability, typical-ness, popularity, migration path to other tools, etc. There are many reasons for limiting your choices:</p>
+                    <p>Pedagogical reasons:</p>
+                    <ul>
+                      <li><strong>Sometimes 'good enough', not necessarily the best, tools are a better fit for beginners</strong>: Most bleeding edge, most specialized, or most sophisticated tools are not suitable for a beginner course. After mastering our
+                        toolset, you will find it easy to upgrade to such high-end tools by yourself. We do expect you to eventually (after this module) migrate to better tools and, having learned more than one tool, to attain a more general understanding
+                        about a family of tools.</li>
+                      <li><strong>We want you to learn to thrive under given conditions</strong>: As a professional Software Engineer, you must learn to be productive in any given tool environment, rather than insist on using your preferred tools. It is usually
+                        in small companies doing less important work that you get to chose your own toolset. Bigger companies working on mature products often impose some choices on developers, such as the project management tool, code repository, IDE,
+                        language etc. For example, Google used SVN as their revision control software until very recently, long after SVN fell out of popularity among developers. Sometimes this is due to cost reasons (tool licensing cost), and sometimes
+                        due to legacy reasons (because the tool is already entrenched in their code base).<br> While programming in school is often a solo sport, programming in the industry is a team sport. As we are training you to become professional
+                        software engineers, it is important to get over the psychological hurdle of needing to satisfy individual preferences and get used to making the best of a given environment.</li>
+                    </ul>
+                    <p>Practical reasons:</p>
+                    <ul>
+                      <li>Some of the LOs are tightly coupled to tools. Allowing more tools means tutors need to learn more tools, which increases their workload.</li>
+                      <li>We provide learning resources for tools. e.g. 'Git guides'. Allowing more tools means we need to produce more resources.</li>
+                      <li>When all students use the same tool, the collective expertise of the tool is more, increasing the opportunities for you to learn from each others.</li>
+                    </ul>
+                    <p>Meanwhile, feel free to share with peers your experience of using other tools.</p>
+                  </div>
+                </div>
+              </div>
           </panel>
           <p></p>
         </div>
@@ -3227,7 +3418,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 09 Aug 2018 15:38:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
 </footer>
 </div>
 </body>
