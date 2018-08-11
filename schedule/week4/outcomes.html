@@ -465,14 +465,14 @@
                     </div>
                     <div id="main">
                       <div>
-                        <div v-closeable="" alt="focus group photo">
+                        <div v-closeable="" alt="focus group photo" class="non-printable">
                           <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
                             <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
                         </div>
                         <p></p>
                         <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product,
                           advertisement, etc.</p>
-                        <panel type="seamless">
+                        <panel type="seamless" class="non-printable">
                           <span slot="header"><span><span class="dimmed"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary">tangential</span></span>
                           </span>
                           </span>
@@ -522,12 +522,12 @@
                               <p></p>
                             </p>
                           </panel>
-                          <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless">
+                          <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded="">
                             <p><img src="/cs2103-website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220">
                               <p></p>
                             </p>
                           </panel>
-                          <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless">
+                          <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded="">
                             <img src="/cs2103-website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
                             <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
                           </panel>
@@ -671,16 +671,16 @@
                     <p></p>
                     <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
                       Trello, Google Docs, ...) to manage user stories digitally.</p>
-                    <panel header="%%User stories in use%%" expanded="">
+                    <panel header="%%User stories in use%%" class="non-printable" expanded="">
                       <panel header="With sticky notes" type="seamless" expanded="">
                         <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                         <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
                       </panel>
-                      <panel header="With paper" type="seamless">
+                      <panel header="With paper" type="seamless" expanded="">
                         <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                         <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
                       </panel>
-                      <panel header="With software" type="seamless">
+                      <panel header="With software" type="seamless" expanded="">
                         <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                         <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
                       </panel>
@@ -2582,7 +2582,7 @@
                                   <blockquote>
                                     <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                                   </blockquote>
-                                  <p>Interacting objects in the scenario: <code>Tom</code>, <code>SE Text Book</code> (<code>Book</code> for short), <code>Text</code>, (possibly) <code>Highlighter</code></p>
+                                  <p>Interacting objects in the scenario: <code>Tom</code>, <code>SE Textbook</code> (<code>Book</code> for short), <code>Text</code>, (possibly) <code>Highlighter</code></p>
                                   <p>💡 objects usually match nouns in the description</p>
                                   <blockquote>
                                     <p>[2]Every object has both state (data) and behavior (operations on data).</p>
@@ -2700,7 +2700,7 @@
                         <blockquote>
                           <p>[1] Object Oriented Programming (OOP) views the world as a network of interacting objects.</p>
                         </blockquote>
-                        <p>Interacting objects in the scenario: <code>Tom</code>, <code>SE Text Book</code> (<code>Book</code> for short), <code>Text</code>, (possibly) <code>Highlighter</code></p>
+                        <p>Interacting objects in the scenario: <code>Tom</code>, <code>SE Textbook</code> (<code>Book</code> for short), <code>Text</code>, (possibly) <code>Highlighter</code></p>
                         <p>💡 objects usually match nouns in the description</p>
                         <blockquote>
                           <p>[2]Every object has both state (data) and behavior (operations on data).</p>
@@ -4008,7 +4008,7 @@ This repo can be used to practice creating PRs.
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 11:17:53 GMT</small></div>
 </footer>
 </div>
 </body>

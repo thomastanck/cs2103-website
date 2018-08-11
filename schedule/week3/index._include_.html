@@ -5018,7 +5018,10 @@ send()
                     <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
                     <ul>
                       <li>
-                        <p>👎 <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
+                        <p>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font> -- <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
                           This approach is not recommended due to these reasons.</p>
                         <ul>
                           <li>Incurs extra effort when inserting and removing the print statements.</li>
@@ -5027,7 +5030,10 @@ send()
                         </ul>
                       </li>
                       <li>
-                        <p>👎 <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these
+                        <p>
+                          <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                            </span>
+                          </font> -- <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these
                           reasons:</p>
                         <ul>
                           <li>It is difficult, time consuming, and error-prone technique.</li>
@@ -5035,7 +5041,10 @@ send()
                         </ul>
                       </li>
                       <li>
-                        <p>👍 <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
+                        <p>
+                          <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                            </span>
+                          </font> -- <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
                       </li>
                     </ul>
                   </div>
@@ -5153,7 +5162,7 @@ send()
                     <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. If there is a remote repo that you want to push to but you do not have write access to it, you can fork the remote repo, which gives you your own remote
                       repo that you can push to.</p>
                     <p><strong>A <mark><em>pull request</em></mark> is mechanism for contributing code to a remote repo.</strong> It is a formal request sent to the maintainers of the repo asking them to pull your new code to their repo.</p>
-                    <div v-closeable="" alt="slideshow: remote repo scenario">
+                    <div v-closeable="" alt="slideshow: remote repo scenario" class="non-printable">
                       <p>Here is a scenario that includes all the concepts introduced above (click on the slide to advance the animation):</p>
                       <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212290&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
                           mozallowfullscreen="" allowfullscreen></iframe></div>

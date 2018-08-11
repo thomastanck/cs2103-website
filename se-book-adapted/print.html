@@ -2277,14 +2277,14 @@ void calculateGrade (String matric) { ... }
         </h4>
         <div class="indented-less">
           <div>
-            <div v-closeable="" alt="focus group photo">
+            <div v-closeable="" alt="focus group photo" class="non-printable">
               <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
                 <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
             </div>
             <p></p>
             <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
               etc.</p>
-            <panel type="seamless">
+            <panel type="seamless" class="non-printable">
               <span slot="header"><span><span class="dimmed"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary">tangential</span></span>
               </span>
               </span>
@@ -2320,12 +2320,12 @@ void calculateGrade (String matric) { ... }
                   <p></p>
                 </p>
               </panel>
-              <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless">
+              <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded="">
                 <p><img src="/cs2103-website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220">
                   <p></p>
                 </p>
               </panel>
-              <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless">
+              <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded="">
                 <img src="/cs2103-website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
                 <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
               </panel>
@@ -2453,16 +2453,16 @@ void calculateGrade (String matric) { ... }
             <p></p>
             <p><strong>We can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, we can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>,
               Trello, Google Docs, ...) to manage user stories digitally.</p>
-            <panel header="%%User stories in use%%" expanded="">
+            <panel header="%%User stories in use%%" class="non-printable" expanded="">
               <panel header="With sticky notes" type="seamless" expanded="">
                 <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
                 <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
               </panel>
-              <panel header="With paper" type="seamless">
+              <panel header="With paper" type="seamless" expanded="">
                 <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
                 <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
               </panel>
-              <panel header="With software" type="seamless">
+              <panel header="With software" type="seamless" expanded="">
                 <img src="/cs2103-website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
                 <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
               </panel>
@@ -4813,7 +4813,10 @@ studentList.addUi(statusUi);
             <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
             <ul>
               <li>
-                <p>👎 <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font> -- <strong>By inserting temporary print statements</strong>: This is an ad-hoc approach in which print statements are inserted in the program to print information relevant to debugging, such as variable values. e.g. <code>Exiting process() method, x is 5.347</code>.
                   This approach is not recommended due to these reasons.</p>
                 <ul>
                   <li>Incurs extra effort when inserting and removing the print statements.</li>
@@ -4822,14 +4825,20 @@ studentList.addUi(statusUi);
                 </ul>
               </li>
               <li>
-                <p>👎 <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these reasons:</p>
+                <p>
+                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                    </span>
+                  </font> -- <strong>By manually tracing through the code</strong>: Otherwise known as ‘eye-balling’, this approach doesn't have the cons of the previous approach, but it too is not recommended (other than as a 'quick try') due to these reasons:</p>
                 <ul>
                   <li>It is difficult, time consuming, and error-prone technique.</li>
                   <li>If you didn't spot the error while writing code, you might not spot the error when reading code too.</li>
                 </ul>
               </li>
               <li>
-                <p>👍 <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
+                <p>
+                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong>
+                    </span>
+                  </font> -- <strong>Using a debugger</strong>: A debugger tool allows you to pause the execution, then step through one statement at a time while examining the internal state if necessary. Most IDEs come with an inbuilt debugger. <strong>This is the recommended approach for debugging</strong>.</p>
               </li>
             </ul>
           </div>
@@ -6876,8 +6885,10 @@ send()
             <div v-closeable="" alt="blackbox photo">
               <tip-box>
                 <p>💡 <strong>A log file is like the <tooltip content="flight data recorder">black box</tooltip> of an airplane</strong>; they don't prevent problems but they can be helpful in understanding what went wrong after the fact.</p>
-                <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
-                  <sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
+                <div class="non-printable">
+                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG" width="250"><br>
+                    <sub>source:<a href="https://upload.wikimedia.org/wikipedia/commons/5/5b/Flight_data_recorder_displayed_at_HAL_Museum_7893.JPG">https://commons.wikimedia.org</a></sub></p>
+                </div>
               </tip-box>
             </div>
           </div>
@@ -7075,7 +7086,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
               <p><span class="fas fa-cube"></span> A <em><tooltip content="it compiles and runs but does not produce any useful output">walking skeleton</tooltip></em> can be written first. This can be done by one developer, possibly the one in charge of
                 integration. After that, all developers can flesh out the skeleton in parallel, adding one feature at a time. After each feature is done, simply integrate the new code to the main system.</p>
             </tip-box>
-            <div v-closeable="" alt="slideshow: comparison">
+            <div v-closeable="" alt="slideshow: comparison" class="non-printable">
               <p>Here is an animation that compares the two approaches:</p>
               <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212312&authkey=AHtrsZMwQmNcyAE&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
                   mozallowfullscreen="" allowfullscreen></iframe></div>
@@ -7098,7 +7109,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
               <p>Big-bang is not recommended because it will uncover too many problems at the same time which could make debugging and bug-fixing more complex than when problems are uncovered incrementally.</p>
             </tip-box>
             <p><strong><em>Incremental integration</em>: integrate few components at a time.</strong> This approach is better than the big-bang integration because it surfaces integration problems in a more manageable way.</p>
-            <div v-closeable="" alt="slideshow: comparison">
+            <div v-closeable="" alt="slideshow: comparison" class="non-printable">
               <p>Here is an animation that compares the two approaches:</p>
               <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212315&authkey=AG4cur5IrM7vr7M&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen=""
                   mozallowfullscreen="" allowfullscreen></iframe></div>
@@ -7390,10 +7401,6 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
         </div>
       </div>
     </div>
-    <div>
-      <h2 id="cloud-computing">Cloud Computing</h2>
-    </div>
-    <div class="indented-less"></div>
     <p style="page-break-after: always;">&nbsp;</p>
     <h1 id="section-quality-assurance"><strong>SECTION: QUALITY ASSURANCE</strong></h1>
     <div id="title">
@@ -7556,7 +7563,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
         <div class="indented-less">
           <div>
             <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-            <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> An introduction to Formal Methods">
+            <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> An introduction to Formal Methods" class="non-printable">
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
               <p></p>
@@ -8411,7 +8418,7 @@ Invalid command format: add
                 </li>
                 <li>
                   <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
-                  <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> demo video of autoamted testing of a Web application">
+                  <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> demo video of automated testing of a Web application" class="non-printable">
                     <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
                     <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   </panel>
@@ -8475,7 +8482,7 @@ Invalid command format: add
             <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
             <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
 
-            <div v-closeable="" alt="Test Coverage in Intellij">
+            <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
               <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
             </div>
@@ -8635,10 +8642,6 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </div>
     </div>
-    <div>
-      <h2 id="tdd">TDD</h2>
-    </div>
-    <div class="indented-less"></div>
     <p style="page-break-after: always;">&nbsp;</p>
     <div id="title">
       <div>
@@ -10203,332 +10206,6 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </div>
     </div>
-    <div>
-      <h2 id="recap">Recap</h2>
-    </div>
-    <div class="indented-less">
-      <div class="indented-less">
-        <h4 id="exercises">Exercises <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <div>
-              <div id="extras">
-                <div>
-                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Matric numbers">
-                        <question has-input="true">
-                          <p>Assume students are given matriculation number according to the following format:</p>
-                          <p>[Faculty Alphabet] [Gender Alphabet] [Serial Number] [Check Alphabet]</p>
-                          <p>E.g. CF1234X</p>
-                          <p>The valid value(s) for each part of the matriculation number is given below:</p>
-                          <p><strong>Faculty Alphabet:</strong></p>
-                          <ul>
-                            <li>Single capital alphabet</li>
-                            <li>Only 'C' to 'G' are valid</li>
-                          </ul>
-                          <p><strong>Gender Alphabet:</strong></p>
-                          <ul>
-                            <li>Single capital alphabet</li>
-                            <li>Either 'F' or 'M' only</li>
-                          </ul>
-                          <p><strong>Serial Number:</strong></p>
-                          <ul>
-                            <li>4-digits number</li>
-                            <li>From 1000 to 9999 only</li>
-                          </ul>
-                          <p><strong>Check Alphabet:</strong></p>
-                          <ul>
-                            <li>Single capital alphabet</li>
-                            <li>Only 'K', 'H', 'S', 'X' and 'Z' are valid</li>
-                          </ul>
-                          <p>Assume you are testing the operation isValidMatric(String matric):boolen. Identify equivalence partitions and boundary values for the matriculation number.</p>
-                          <div slot="answer">
-                            <p>String length: (less than 7 characters), (7 characters), (more than 7 characters)</p>
-                            <p>For those with 7 characters,</p>
-                            <ul>
-                              <li>[Faculty Alphabet]: (‘C’, ‘G’), (‘c’, ‘g’), (any other character)</li>
-                              <li>[Gender Alphabet]: (‘F’, ‘M’), (‘f’, ‘m’), (any other character)</li>
-                              <li>[Serial Number]: (1000-9999), (0000-0999), (any other 4- characters string)</li>
-                              <li>[Check Alphabet]: ('K', 'H', 'S', ‘X’, 'Z'), ('k', 'h', ’s’, ‘x’, 'z'), (any other character)</li>
-                            </ul>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> isValidDate">
-                        <question has-input="true">
-                          <p>Identify a set of equivalence partitions for testing isValidDate(String date) method. The method checks if the parameter date is a day that falls in the period 1880/01/01 to 2030/12/31 (both inclusive). The date is given in the
-                            format yyyy/mm/dd.</p>
-                          <div slot="answer">
-                            <p><strong>Initial partitions</strong>: [null] [10 characters long] [shorter than 10 characters] [longer than 10 characters]</p>
-                            <p>For 10-character strings:</p>
-                            <ul>
-                              <li>c1-c4: [not an integer] [less than 1880] [1880-2030 excluding leap years] [leap years within 1880-2030 period] [2030-9999]</li>
-                              <li>c5: [‘/’] [not ‘/’]</li>
-                              <li>c6-c7: [not an integer] [less than 1] [2] [31-day months: 1,3,5, 7,8, 10,12] [30-day months: 4,6,9,11] [13-99]</li>
-                              <li>c8: [‘/’] [ not ‘/’]</li>
-                              <li>c9-c10: [not an integer] [less than 1] [1-28] [29] [30] [31] [more than 31]</li>
-                            </ul>
-                            <p>In practice, we often use ‘trusted’ library functions (e.g. those that come with the Java JDK or .NET framework) to convert strings into dates. In such cases, our testing need not be as thorough as those suggested by the above
-                              analysis. However, this kind of thorough testing is required if you are the person implementing such a trusted component.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Dispatch resources">
-                        <question has-input="true">
-                          <p>Given below is the overview of the method dispatch(Resource, Task), from an emergency management system (e.g. a system used by those who handle emergency calls from the public about incidents such as fires, possible burglaries,
-                            domestic disturbances, etc.). A task might need multiple resources of multiple types. For example, the task ‘fire at Clementi MRT’ might need two fire engines and one ambulance.</p>
-                          <ul>
-                            <li>dispatch(Resource r, Task t):void</li>
-                            <li>Overview: This method dispatches the Resource r to the Task t. Since this can dispatch only one resource, it needs to be used multiple times should the task need multiple resources.</li>
-                          </ul>
-                          <p>Imagine you are designing test cases to test the method dispatch(Resource,Task). Taking into account equivalence partitions and boundary values, which different inputs will you combine to test the method?</p>
-                          <div slot="answer">
-                            <table class="table">
-                              <tr>
-                                <th>Test input for r</th>
-                                <th>Test input for t</th>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <ul>
-                                    <li>A resource required by the task</li>
-                                    <li>A resource not required by the task</li>
-                                    <li>A resource already dispatched for another task</li>
-                                    <li>null</li>
-                                  </ul>
-                                </td>
-                                <td>
-                                  <ul>
-                                    <li>A fully dispatched task</li>
-                                    <li>A task requiring one more resource</li>
-                                    <li>A task with no resource dispatched</li>
-                                  </ul>
-                                  Considering the resource types required
-                                  <ul>
-                                    <li>A task requiring only one type of resources</li>
-                                    <li>A task requiring multiple types of resource</li>
-                                    <li>null</li>
-                                  </ul>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> transferTable">
-                        <question has-input="true">
-                          <p>Given below is an operation description taken from a restaurant booking system. Use equivalence partitions and boundary value analysis technique to design a set of test cases for it.</p>
-                          <ul>
-                            <li>boolean transferTable (Booking b, Table t)</li>
-                            <li>Description: Used to transfer a Booking b to Table t, if t has enough room.</li>
-                            <li>Preconditions: t has room for b , b.getTable() != t</li>
-                            <li>Postconditions: b.getTable() == t</li>
-                          </ul>
-                          <div slot="answer">
-                            <p><strong>Equivalence partitions</strong></p>
-                            <ul>
-                              <li>
-                                <p>Booking:</p>
-                                <ul>
-                                  <li>Invalid: null, not null and b.getTable==t</li>
-                                  <li>Valid: not null and b.getTable != t</li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Table:</p>
-                                <ul>
-                                  <li>Invalid: null, not vacant, vacant but doesn’t have enough room,</li>
-                                  <li>Valid: vacant and has enough room.</li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <p><strong>Boundary values:</strong></p>
-                            <ul>
-                              <li>
-                                <p>Booking:</p>
-                                <ul>
-                                  <li>Invalid: null, not null and b.getTable==t</li>
-                                  <li>Valid:not null and b.getTable != t</li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Table:</p>
-                                <ul>
-                                  <li>Invalid: null, not vacant, (booking size == table size + 1)</li>
-                                  <li>Valid: (booking size == table size), (booking size == table size-1)</li>
-                                </ul>
-                              </li>
-                            </ul>
-                            <p><strong>Test cases:</strong></p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Test case</th>
-                                    <th style="text-align:center">Booking</th>
-                                    <th style="text-align:center">Table</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">null</td>
-                                    <td style="text-align:center">Any valid</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">not null and b.getTable==t</td>
-                                    <td style="text-align:center">Any valid</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">Any valid</td>
-                                    <td style="text-align:center">null</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">Any valid</td>
-                                    <td style="text-align:center">not vacant</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5</td>
-                                    <td style="text-align:center">Any valid</td>
-                                    <td style="text-align:center">(booking size == table size + 1)</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6</td>
-                                    <td style="text-align:center">Any valid</td>
-                                    <td style="text-align:center">(booking size == table size)</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">7</td>
-                                    <td style="text-align:center">Any valid</td>
-                                    <td style="text-align:center">(booking size == table size - 1)</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>Note: We can use Bookings of different sizes for different test cases so that we increase the chance of finding bugs. If there is a minimum and maximum booking size, we should include them in those test cases.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> add(Item)">
-                        <question has-input="true">
-                          <p>Assume you are testing the add(Item) method specified below.</p>
-                          <img src="/cs2103-website/book/testCaseDesign/summary/exercises/images/itemList.png" height="100">
-                          <p></p>
-                          <p>Assume i to be the Item being added.</p>
-                          <p><strong>Preconditions:</strong></p>
-                          <ul>
-                            <li>i != null [throws InvalidItemException if i == null ]</li>
-                            <li>contains(i) == false [throws DuplicateItemException if contains(i) == true]</li>
-                            <li>count() &lt; 10 [throws ListFullException if count() == 10]</li>
-                          </ul>
-                          <p><strong>Postconditions:</strong></p>
-                          <ul>
-                            <li>contains(i) == true;</li>
-                            <li>new count() == old count()+1</li>
-                          </ul>
-                          <p><strong>Invariants:</strong> (an “invariant” is true before and after the method invocation).</p>
-                          <ul>
-                            <li>0 &lt; = count() &lt; = 10</li>
-                          </ul>
-                          <p>(a) What are the equivalence partitions relevant to testing the add(Item) method?</p>
-                          <p>(b) What are the boundary and non-boundary values you will use to test the add(Item) method?</p>
-                          <p>(c) Design a set of test cases to test the add(Item) method by considering the equivalence partitions and boundary values from your answers to (a) and (b) above.</p>
-                          <div slot="answer">
-                            <p>(a)</p>
-                            <p>i: i != null, i == null list: contains(i)==true, contains(i)==false, count() &lt; 10, count() == 10 list == null should NOT be considered.</p>
-                            <p>(b)</p>
-                            <p>list: count() == 0, count() == 9, count() == 10; count() == [1|2|3|4|5|6|7|8] (1 preferred)</p>
-                            <p>(c)</p>
-                            <img src="/cs2103-website/book/testCaseDesign/summary/exercises/images/count.png" height="250">
-                            <p></p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> setWife">
-                        <question has-input="true">
-                          <p>Use equivalence partitions and boundary values to choose test inputs for testing the setWife operation in the Man class.</p>
-                          <img src="/cs2103-website/book/testCaseDesign/summary/exercises/images/manWoman.png" height="90">
-                          <p></p>
-                          <div slot="answer">
-                            <img src="/cs2103-website/book/testCaseDesign/summary/exercises/images/manWomanPartitions.png" height="300">
-                            <p></p>
-                            <p>Partitioning ‘married’ as ‘to same woman’ and ‘to different woman’ seems redundant at first. Arguments for having it:</p>
-                            <ul>
-                              <li>The behavior (e.g. the error message shown) may be different in those two situations.</li>
-                              <li>The ‘to same woman’ partition has a risk of misunderstanding between developer and user. For example, the developer might think it is OK to ignore the request while the users might expect to see an error message.</li>
-                            </ul>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Pre-Release Game">
-                        <question>
-                          <p>If you download a pre-release version of a new game (executable file) to do a test drive and submit bug reports, you would be doing</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. white-box exploratory testing</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. gray-box beta testing</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. black-box exploratory testing</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. black-box scripted testing</li>
-                          </ul>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. white-box exploratory testing</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. gray-box beta testing</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> c. black-box exploratory testing</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. black-box scripted testing</li>
-                            </ul>
-                            <p>Explanation: Since it is an executable only, you are unlikely to have a knowledge of its internal workings. Therefore, your testing is most likely to be black-box testing. A ‘test drive’ sounds like exploratory testing rather
-                              than scripted testing.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> True or False?">
-                        <question>
-                          <p>We can apply equivalence partitioning technique in white-box fashion.</p>
-                          <ul class="task-list">
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. True</li>
-                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                          </ul>
-                          <div slot="answer">
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. True</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. False</li>
-                            </ul>
-                            <p>Explanation: In fact, when we know about how the SUT is implemented, we can make more informed decisions about partitioning test input into equivalence partitions. White-box equivalence partitioning is less speculative than
-                              black-box equivalence partitioning.</p>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </panel>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <p style="page-break-after: always;">&nbsp;</p>
     <h1 id="section-project-management"><strong>SECTION: PROJECT MANAGEMENT</strong></h1>
     <div id="title">
@@ -10685,7 +10362,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             <p><strong>A <mark><em>fork</em></mark> is a remote copy of a remote repo</strong>. If there is a remote repo that you want to push to but you do not have write access to it, you can fork the remote repo, which gives you your own remote repo
               that you can push to.</p>
             <p><strong>A <mark><em>pull request</em></mark> is mechanism for contributing code to a remote repo.</strong> It is a formal request sent to the maintainers of the repo asking them to pull your new code to their repo.</p>
-            <div v-closeable="" alt="slideshow: remote repo scenario">
+            <div v-closeable="" alt="slideshow: remote repo scenario" class="non-printable">
               <p>Here is a scenario that includes all the concepts introduced above (click on the slide to advance the animation):</p>
               <div class="block-embed block-embed-service-powerpoint"><iframe type="text/html" src="https://onedrive.live.com/embed?cid=A5AF047C4CAD67AB&resid=A5AF047C4CAD67AB%212290&authkey=&em=2&action=embedview&wdAr=1.3333333333333333" frameborder="0" width="610" height="481" webkitallowfullscreen="" mozallowfullscreen=""
                   allowfullscreen></iframe></div>
@@ -10904,8 +10581,13 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 <table class="markbind-table table table-bordered table-striped">
                   <thead>
                     <tr>
-                      <th>👎 Not good</th>
-                      <th>👍 Better</th>
+                      <th>
+                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong>
+                          </span>
+                        </font>
+                      </th>
+                      <th><span class="text-success"><span class="fas fa-thumbs-up"></span> Better </span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -11220,32 +10902,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
               </ul>
               <p>...</p>
               <p>The daily scrum meeting is not used as a problem-solving or issue resolution meeting. <strong>Issues that are raised are taken offline and usually dealt with by the relevant subgroup immediately after the meeting.</strong></p>
-              <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Intro to Scrum in Under 10 Minutes">
+              <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Intro to Scrum in Under 10 Minutes" class="non-printable">
                 <p><sub>(This is not an endorsement of the product mentioned in the video)</sub></p>
                 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/XU0llRltyFM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               </panel>
             </tip-box>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h2 id="more-5">More</h2>
-    </div>
-    <div class="indented-less"></div>
-    <div>
-      <h2 id="summary">Summary</h2>
-    </div>
-    <div class="indented-less">
-      <div class="indented-less">
-        <h4 id="recap-2">Recap <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <p>This section has some exercise that cover multiple topics related to SDLC process models.</p>
           </div>
         </div>
       </div>
@@ -12286,121 +11947,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h1 id="intellij-idea">Intellij IDEA</h1>
       </div>
     </div>
-    <div class="indented-less">
-      <div class="indented-less">
-        <h4 id="project-setup">Project Setup <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <h5 id="running-intellij-idea-for-the-first-time">Running Intellij IDEA for the First Time</h5>
-            <tabs>
-            
-              <tab header="<span class='far fa-file-alt'></span>">
-                <ul>
-                  <li><a href="https://www.jetbrains.com/help/idea/creating-running-and-packaging-your-first-java-application.html">[Intellij Official Tutorial] <strong>Creating, Running and Packaging Your First Java Application</strong></a></li>
-                </ul>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-            
-              <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span>">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/c0efB_CKOYo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                <p>A little bit more detailed explanation <span class="dimmed">(from CodeLaunch)</span> with some additional info at the end.</p>
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/S764o0mAXhg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                <p>
-                  <hr>
-                </p>
-              </tab>
-            </tabs>
-            <h5 id="importing-a-project-to-intellij-idea">Importing a Project to Intellij IDEA</h5>
-            <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/WIYTktB1bT4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="code-navigation">Code Navigation <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <p>Some useful navigation shortcuts:</p>
-            <ol>
-              <li>Quickly locate a file by name.</li>
-              <li>Go to the definition of a method from where it is used.</li>
-              <li>Go back to the previous location.</li>
-              <li>View the documentation of a method from where the method is being used, without navigating to the method itself.</li>
-              <li>Find where a method/field is being used.</li>
-            </ol>
-            <panel header="Intellij IDEA Code Navigation (Basics)" alt="basics" expanded="">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/f885wy42IcM" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            </panel>
-            <panel header="Intellij IDEA Code Navigation (Advanced)" alt="basics">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/IiHZPvmVICg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            </panel>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="productivity-shortcuts">Productivity Shortcuts <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <div v-closeable="" alt="video: Intellij shortcuts">
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KsVWdGOnHZU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/EvXpgL2iho4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="debugging-basic">Debugging: Basic <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <div v-closeable="" alt="video: debugging in Intellij">
-              <p>This video (from LaunchCode) gives a pretty good explanation of how to use the Intellij IDEA debugger.</p>
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/1bCgzjatcr4" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            </div>
-            <ul>
-              <li><a href="https://www.jetbrains.com/help/idea/debugger-basics.html">Intellij IDEA Documentation: Debugging Basics</a> - Can be used as a reference document when you want to recall how to use a debugging feature.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="indented-less">
-        <h4 id="refactoring-2">Refactoring <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
-        <div class="indented-less">
-          <div>
-            <div v-closeable="" alt="Videos: Automated refactoring using IDE">
-              <p>This video explains how to automate the 'Extract parameter' refactoring using Intellij IDEA. Most other refactorings available works similarly. i.e. <code>select the code to refactor</code> → <code>find the refactoring in the context menu</code>                or <code>use the keyboard shortcut</code>.</p>
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/fg3Q5pt4E80" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-              <p>Here's another video explaining how to change a method signature as part of refactoring.</p>
-              <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/p6Tsw_3cXow" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-            </div>
-            <p></p>
-            <ul>
-              <li><a href="https://www.jetbrains.com/help/idea/introduction-to-refactoring.html">Introduction to Refactoring (in Intellij IDEA)</a> : An article on refactorings available in Intellij IDEA.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="indented-less"></div>
     <p style="page-break-after: always;">&nbsp;</p>
     <div id="title">
       <div>
@@ -12416,7 +11963,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </h4>
         <div class="indented-less">
           <div>
-            <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%">
+            <panel header="%%<span class='fas fa-paperclip'></span> Git Overview%%" class="non-printable">
               <p>Soon you are going to take your first step in using Git. If you would like to see a quick overview of the full Git landscape before jumping in, watch the video below.</p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/v40b3ExbM0c" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
               <p></p>
@@ -13520,7 +13067,7 @@ git pull origin master
         <div class="indented-less">
           <div>
             <p><span class="dimmed">Adapted (with permissions) from <a href="http://code.makery.ch/library/javafx-8-tutorial/">Marco Jakob's JavaFX 8 tutorial</a>.</span></p>
-            <panel header="**Part 1: Scene Builder**">
+            <panel header="**Part 1: Scene Builder**" minimized="">
               <div>
                 <h1 id="javafx-8-tutorial-part-1-scene-builder">JavaFx 8 Tutorial - Part 1: Scene Builder</h1>
                 <h2 id="introduction-33">Introduction</h2>
@@ -13841,7 +13388,7 @@ git pull origin master
                 <p><code>fx:controller=&quot;seedu.address.view.PersonOverview&quot;</code></p>
               </div>
             </panel>
-            <panel header="**Part 2: Model and TableView**">
+            <panel header="**Part 2: Model and TableView**" minimized="">
               <div>
                 <h1 id="javafx-8-tutorial-part-2-model-and-tableview">JavaFx 8 tutorial - Part 2: Model and TableView</h1>
                 <h2 id="introduction-34">Introduction</h2>
@@ -14217,7 +13764,7 @@ git pull origin master
         </h4>
         <div class="indented-less">
           <div>
-            <div v-closeable="" alt="Junit tutorial video">
+            <div v-closeable="" alt="Junit tutorial video" class="non-printable">
               <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
               <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
             </div>
@@ -14657,7 +14204,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 11:17:53 GMT</small></div>
 </footer>
 </div>
 </body>

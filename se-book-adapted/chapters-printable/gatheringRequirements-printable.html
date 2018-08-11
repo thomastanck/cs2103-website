@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS2103/T Website - Text Book Chapter [Printable] : Gathering Requirements</title>
+    <title>CS2103/T Website - Textbook Chapter [Printable] : Gathering Requirements</title>
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\bootstrap-vue.min.css">
     <link rel="stylesheet" href="..\..\markbind\css\font-awesome.min.css" >
@@ -20,6 +20,7 @@
 <div id="app">
     <div id="content-wrapper">
   <link rel="stylesheet" href="/cs2103-website/book/css/textbook.css">
+  <link rel="stylesheet" href="/cs2103-website/book/css/print.css">
   <div class="website-content">
     <div id="title">
       <div>
@@ -101,14 +102,14 @@
         </h4>
         <div class="indented-less">
           <div>
-            <div v-closeable="" alt="focus group photo">
+            <div v-closeable="" alt="focus group photo" class="non-printable">
               <p><img src="https://media.defense.gov/2012/Apr/11/2000162334/670/394/0/120403-F-PR861-011.JPG" width="400"><br>
                 <sub>[<a href="http://www.hanscom.af.mil/News/Article-Display/Article/380048/caring-for-people-forum-identifies-issues/">source</a>]</sub></p>
             </div>
             <p></p>
             <p><strong>Focus groups are a kind of informal interview within an interactive group setting.</strong> A group of people (e.g. potential users, beta testers) are asked about their understanding of a specific issue, process, product, advertisement,
               etc.</p>
-            <panel type="seamless">
+            <panel type="seamless" class="non-printable">
               <span slot="header"><span><span class="dimmed"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>: How do focus groups work? - Hector Lanz <span class="badge badge-pill badge-secondary">tangential</span></span>
               </span>
               </span>
@@ -144,12 +145,12 @@
                   <p></p>
                 </p>
               </panel>
-              <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless">
+              <panel header="<span class='fas fa-cube'></span> A simple GUI prototype for the same Minesweeper, created using Powerpoint:" type="seamless" expanded="">
                 <p><img src="/cs2103-website/book/gatheringRequirements/prototyping/images/guiPrototypeMinesweeper.jpg" height="220">
                   <p></p>
                 </p>
               </panel>
-              <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless">
+              <panel header="<span class='fas fa-cube'></span> A prototype for a mobile app, created using the UI prototyping tool Balsmiq:" type="seamless" expanded="">
                 <img src="/cs2103-website/book/gatheringRequirements/prototyping/images/balsamiqPrototypeGUI.jpg" height="450">
                 <p><span class="dimmed"><sup>[source: <a href="http://balsamiq.com/products/mockups">http://balsamiq.com/products/mockups</a>]</sup></span></p>
               </panel>
@@ -181,7 +182,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 03:33:33 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 11 Aug 2018 11:17:53 GMT</small></div>
 </footer>
 </div>
 </body>
