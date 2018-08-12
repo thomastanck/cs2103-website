@@ -402,20 +402,6 @@
                 etc.). Therefore, we can have a class called <code>Person</code> containing instructions on how to create <code>Person</code> objects and use that class to instantiate objects <code>Adam</code>, <code>Beth</code>, <code>Charlie</code>,
                 and <code>Daisy</code>. Similarly, we need classes <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> classes to instantiate one each of <code>AgeList</code>, <code>Calculator</code>, and <code>Main</code> objects.</p>
             </tip-box>
-            <h5 id="implementing-classes"><big>Implementing Classes</big></h5>
-            <p>Given below are some resources on how to implement classes:</p>
-            <div class="alt-java">
-              <ul>
-                <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html">Classes, methods, variables</a> – Start from the linked page and follow the next few steps in the tutorial</li>
-              </ul>
-            </div>
-            <div class="alt-python">
-              <div>
-                <ul>
-                  <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#classes">Python Programming Basics: OOP: Classes</a> - Basics of writing classes using Python</li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -431,7 +417,7 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
             </tip-box>
-            <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Such <strong>variables whose value is shared by all instances of a class are called <mark><em>class level attributes</em></mark></strong>.</p>
+            <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class. Such <strong>variables whose value is shared by all instances of a class are called <mark><em>class-level attributes</em></mark></strong>.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
             </tip-box>
@@ -446,18 +432,6 @@
             </tip-box>
             <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code> to
               identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
-            <h5 id="implementing-class-level-members"><big>Implementing class-level members</big></h5>
-            <p>Some resources to learn how to implement class-level members:</p>
-            <div class="alt-java">
-              <ul>
-                <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html">Oracle’s official Java tutorial on class-level members</a></li>
-              </ul>
-            </div>
-            <div class="alt-python">
-              <ul>
-                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#class-level-members">Python Programming Basics: OOP: Class-Level Members</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -890,22 +864,6 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.</p>
             </tip-box>
-            <h5 id="implementing-inheritance"><big>Implementing inheritance</big></h5>
-            <div class="alt-java">
-              <p>To learn how to implement inheritance in Java, you can follow [<a href="https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html">Oracle’s Java Tutorials: Inheritance</a>]</p>
-              <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> A very beginner-friendly video about implementing Java inheritance.">
-                <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/9JpNY-XAseg" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                <p></p>
-              </panel>
-              <p></p>
-              <p>💡 Java requires all classes to have a parent class. If you do not specify a parent class, Java automatically assigns the <code>Object</code> class as the parent class.</p>
-            </div>
-            <div class="alt-python">
-              <ul>
-                <li><a href="https://nus-te3201.github.io/website/programming/toc/oop.html#inheritance">Python Programming Basics: OOP: Inheritance</a></li>
-              </ul>
-              <p>💡 Python automatically assigns the <code>object</code> class as the parent class.</p>
-            </div>
           </div>
         </div>
       </div>
@@ -982,45 +940,6 @@
                             <li><code>calculate(int): void</code></li>
                           </ul>
                         </tip-box>
-                        <h5 id="implementing-overloading"><big>Implementing overloading</big></h5>
-                        <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                        <div class="alt-java">
-                          <div>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                                Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-    Account () {
-        ...
-    }
-    
-    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
-        ...
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
-        ...
-    }
-}
-</code></pre>
-                            </tip-box>
-                            <p><span class="fas fa-paperclip"></span> Resources:</p>
-                            <ul>
-                              <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic
-                                <mark><em>type promotion</em></mark>.</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="alt-python">
-                          <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                        </div>
                       </div>
                       <div></div>
                     </div>
@@ -1028,109 +947,6 @@
                 </div>
               </modal>
             </tip-box>
-            <h5 id="implementing-overriding"><big>Implementing overriding</big></h5>
-            <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-            <div class="alt-java">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-                  <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EvaluationReport</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-meta">@Override</span>  <span class="hljs-comment">// this annotation is optional</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing evaluation report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportMain</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
-        Report report = <span class="hljs-keyword">new</span> Report();
-        report.print(); <span class="hljs-comment">// prints "Printing report"</span>
-
-        EvaluationReport evaluationReport = <span class="hljs-keyword">new</span> EvaluationReport();
-        evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
-    }
-}
-</code></pre>
-                </tip-box>
-                <p><span class="fas fa-paperclip"></span> Resources:</p>
-                <ul>
-                  <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="alt-python">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    self.name = name
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(<span class="hljs-string">'My name is'</span>, self.name)
-    
-</code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom">  <br><br></td>
-                    
-                      <td valign="bottom">
-                        <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
-    self.name = name
-    self.matric = matric
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.name, <span class="hljs-string">'is a student'</span>)
-</code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                  <table>
-                    <tr>
-                    
-                      <td>
-                        <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
-amy.print_info()
-
-ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
-ben.print_info()
-</code></pre>
-                        <p></p>
-                      </td>
-                    
-                      <td valign="bottom"> → <br><br></td>
-                    
-                      <td valign="bottom">
-                        <pre class="hljs"><code>My name is Amy
-Ben is a student
-</code></pre>
-                        <p></p>
-                      </td>
-                    </tr>
-                  </table>
-                  <p></p>
-                </tip-box>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1185,44 +1001,6 @@ Ben is a student
                 <li><code>calculate(int): void</code></li>
               </ul>
             </tip-box>
-            <h5 id="implementing-overloading-2"><big>Implementing overloading</big></h5>
-            <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-            <div class="alt-java">
-              <div>
-                <tip-box>
-                  <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                    Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-    Account () {
-        ...
-    }
-    
-    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
-        ...
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
-        ...
-    }
-}
-</code></pre>
-                </tip-box>
-                <p><span class="fas fa-paperclip"></span> Resources:</p>
-                <ul>
-                  <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="alt-python">
-              <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-            </div>
           </div>
         </div>
       </div>
@@ -1249,63 +1027,6 @@ Ben is a student
             <tip-box>
               <p><span class="fas fa-cube"></span> In the example above, <code>AcademicStaff</code> <em>is a</em> <code>SalariedStaff</code>. An <code>AcademicStaff</code> object can be used anywhere a <code>SalariedStaff</code> object is expected e.g. <code>SalariedStaff ss = new AcademicStaff()</code>.</p>
             </tip-box>
-            <h5 id="implementing-interfaces"><big>Implementing interfaces</big></h5>
-            <p><strong>Java allows multiple inheritance among interfaces. A Java class can <em>implement</em> multiple interfaces</strong> (and inherit from one class).</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The design below is allowed by Java. <span class="dimmed">In case you are not familiar with UML notation used: solid lines indicate normal inheritance; dashed lines indicate interface inheritance; the triangle points to pare parent.</span></p>
-              <img src="/cs2103-website/book/oop/inheritance/interfaces/images/studentStaff.png" height="250">
-              <p></p>
-              <ol>
-                <li><code>Staff</code> interface inherits (note the solid lines) the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
-                <li><code>TA</code> class implements both <code>Student</code> interface and the <code>Staff</code> interface.</li>
-                <li>Because of point 1 above, <code>TA</code> class has to implement all methods in the interfaces <code>TaxPayer</code> and <code>Citizen</code>.</li>
-                <li>Because of points 1,2,3, a <code>TA</code> <em>is a</em> <code>Staff</code>, <em>is a</em> <code>TaxPayer</code> and <em>is a</em> <code>Citizen</code>.</li>
-              </ol>
-            </tip-box>
-            <p><strong>Java uses the <code>interface</code> keyword to declare interfaces and <code>implements</code> keyword to indicate that a class implements a given interface.</strong> Inheritance among interfaces uses the <code>extends</code> keyword,
-              just like inheritance among classes.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> The code for the example design given in the previous example:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">TaxPayer</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">payTax</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Citizen</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">vote</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Staff</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Citizen</span>, <span class="hljs-title">TaxPayer</span></span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">work</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Student</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">learn</span><span class="hljs-params">()</span></span>;
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TA</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Student</span>, <span class="hljs-title">Staff</span></span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">payTax</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">vote</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">work</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">learn</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
-            </tip-box>
             <p></p>
           </div>
         </div>
@@ -1329,31 +1050,6 @@ Ben is a student
               <p><span class="fas fa-cube"></span> The <code>Account</code> class has an abstract method (<code>addInterest()</code>).</p>
             </tip-box>
             <p><strong>A class that has an abstract method becomes an abstract class</strong>. Evan a class that does not have any abstract method can be declared as an abstract class. Abstract classes cannot be instantiated.</p>
-            <h5 id="implementing-abstract-classes"><big>Implementing abstract classes</big></h5>
-            <p><strong>Use the <code>abstract</code> keyword to identify abstract classes/methods.</strong></p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Partial code below gives an example of how to declare abstract classes/methods. The <code>addInterest()</code> method in the <code>Account</code> class is abstract and therefore the <code>Account</code>                class itself is abstract. The <code>CurrentAccount</code> class need not be abstract because it overrides the abstract method inherited from the parent class.</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-    
-    <span class="hljs-keyword">int</span> number;
-    
-    <span class="hljs-function"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addInterest</span><span class="hljs-params">()</span></span>;
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">close</span><span class="hljs-params">()</span></span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CurrentAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addInterest</span><span class="hljs-params">()</span> </span>{
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
-            </tip-box>
-            <p>In Java, if a class contains an abstract method, the class itself should be an abstract class <span class="dimmed"> i.e. if any methods of the class is 'incomplete', the class itself is 'incomplete'</span>.</p>
           </div>
         </div>
       </div>
@@ -1375,9 +1071,9 @@ Ben is a student
               <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
               <p>But the following code is not valid <span class="dimmed"> because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-              <pre class="hljs"><code>Staff staff;
+              <pre><code class="hljs java">Staff staff;
 ...
-AcademicStaff academicStaff = staff; // Not OK
+AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 </code></pre>
             </tip-box>
           </div>
@@ -1486,45 +1182,6 @@ AcademicStaff academicStaff = staff; // Not OK
                                       <li><code>calculate(int): void</code></li>
                                     </ul>
                                   </tip-box>
-                                  <h5 id="implementing-overloading-3"><big>Implementing overloading</big></h5>
-                                  <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                                  <div class="alt-java">
-                                    <div>
-                                      <tip-box>
-                                        <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                                          Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-    Account () {
-        ...
-    }
-    
-    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
-        ...
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
-        ...
-    }
-}
-</code></pre>
-                                      </tip-box>
-                                      <p><span class="fas fa-paperclip"></span> Resources:</p>
-                                      <ul>
-                                        <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related
-                                          topic <mark><em>type promotion</em></mark>.</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <div class="alt-python">
-                                    <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                                  </div>
                                 </div>
                                 <div></div>
                               </div>
@@ -1532,109 +1189,6 @@ AcademicStaff academicStaff = staff; // Not OK
                           </div>
                         </modal>
                       </tip-box>
-                      <h5 id="implementing-overriding-2"><big>Implementing overriding</big></h5>
-                      <p><strong>To override a method inherited from an ancestor class, simply re-implement the method in the target class.</strong></p>
-                      <div class="alt-java">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-                            <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EvaluationReport</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-meta">@Override</span>  <span class="hljs-comment">// this annotation is optional</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing evaluation report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportMain</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
-        Report report = <span class="hljs-keyword">new</span> Report();
-        report.print(); <span class="hljs-comment">// prints "Printing report"</span>
-
-        EvaluationReport evaluationReport = <span class="hljs-keyword">new</span> EvaluationReport();
-        evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
-    }
-}
-</code></pre>
-                          </tip-box>
-                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                          <ul>
-                            <li><a href="https://www.tutorialspoint.com/java/java_overriding.htm">Java - Overriding</a> -- a tutorial by <a href="http://tutorialspoint.com">tutorialspoint.com</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="alt-python">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> In the example below, <code>Student</code> class overrides the <code>print_info</code> method of its parent class <code>Person</code>:</p>
-                            <table>
-                              <tr>
-                              
-                                <td>
-                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name)</span>:</span>
-    self.name = name
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(<span class="hljs-string">'My name is'</span>, self.name)
-    
-</code></pre>
-                                  <p></p>
-                                </td>
-                              
-                                <td valign="bottom">  <br><br></td>
-                              
-                                <td valign="bottom">
-                                  <pre><code class="hljs python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Student</span><span class="hljs-params">(Person)</span>:</span>
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name, matric)</span>:</span>
-    self.name = name
-    self.matric = matric
-    
-  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">print_info</span><span class="hljs-params">(self)</span>:</span>
-    print(self.name, <span class="hljs-string">'is a student'</span>)
-</code></pre>
-                                  <p></p>
-                                </td>
-                              </tr>
-                            </table>
-                            <table>
-                              <tr>
-                              
-                                <td>
-                                  <pre><code class="hljs python">amy = Person(<span class="hljs-string">'Amy'</span>)
-amy.print_info()
-
-ben = Student(<span class="hljs-string">'Ben'</span>, <span class="hljs-string">'A12345'</span>)
-ben.print_info()
-</code></pre>
-                                  <p></p>
-                                </td>
-                              
-                                <td valign="bottom"> → <br><br></td>
-                              
-                                <td valign="bottom">
-                                  <pre class="hljs"><code>My name is Amy
-Ben is a student
-</code></pre>
-                                  <p></p>
-                                </td>
-                              </tr>
-                            </table>
-                            <p></p>
-                          </tip-box>
-                        </div>
-                      </div>
                     </div>
                     <div>
                       <div>
@@ -1742,44 +1296,6 @@ Ben is a student
                           <li><code>calculate(int): void</code></li>
                         </ul>
                       </tip-box>
-                      <h5 id="implementing-overloading-4"><big>Implementing overloading</big></h5>
-                      <p>An operation can be overloaded inside the same class or in sub/super classes.</p>
-                      <div class="alt-java">
-                        <div>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> The constructor of the <code>Account</code> class below is <em>overloaded</em> because there are two constructors with different signatures: <code>()</code> and <code>(String, String, double)</code>.
-                              Furthermore, the <code>save</code> method in the <code>Account</code> class is overloaded in the child class <code>SavingAccount</code>.</p>
-                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
-    Account () {
-        ...
-    }
-    
-    Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
-        ...
-    }
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(<span class="hljs-keyword">int</span> amount)</span></span>{
-        ...
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SavingAccount</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Account</span></span>{
-    
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">save</span><span class="hljs-params">(Double amount)</span></span>{
-        ...
-    }
-}
-</code></pre>
-                          </tip-box>
-                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                          <ul>
-                            <li><a href="https://www.javatpoint.com/method-overloading-in-java"><strong>Method Overloading in Java</strong></a> a tutorial from <a href="http://javapoint.com">javapoint.com</a>. Also mentions the topic of a related topic <mark><em>type promotion</em></mark>.</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="alt-python">
-                        <div><span>❗️ Python does not have direct support for method overloading.</span></div>
-                      </div>
                     </div>
                     <div></div>
                   </div>
@@ -1789,10 +1305,12 @@ Ben is a student
             <tip-box>
               <p><span class="fas fa-cube"></span> Note how the constructor is overloaded in the class below. The method call <code>new Account()</code> is bound to the first constructor at compile time.</p>
               <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span> </span>{
+
     Account () {
         <span class="hljs-comment">// Signature: ()</span>
         ...
     }
+
     Account (String name, String number, <span class="hljs-keyword">double</span> balance) {
         <span class="hljs-comment">// Signature: (String, String, double)</span>
         ...
@@ -1800,8 +1318,8 @@ Ben is a student
 }
 </code></pre>
               <p><span class="fas fa-cube"></span> Similarly, the <code>calcuateGrade</code> method is overloaded in the code below and a method call <code>calculateGrade(&quot;A1213232&quot;)</code> is bound to the second implementation, at compile time.</p>
-              <pre class="hljs"><code>void calculateGrade (int[] averages) { ... }
-void calculateGrade (String matric) { ... }
+              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(<span class="hljs-keyword">int</span>[] averages)</span> </span>{ ... }
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">calculateGrade</span> <span class="hljs-params">(String matric)</span> </span>{ ... }
 </code></pre>
             </tip-box>
           </div>
@@ -1832,8 +1350,8 @@ void calculateGrade (String matric) { ... }
               executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing the classes in the <code>Payroll</code>              system.</p>
             <p>Here is the implementation of the <code>adjustSalary(int)</code> operation.</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
-    ArrayList&lt; Admin &gt; admins;
-    ArrayList&lt; Academic &gt; academics;
+    ArrayList&lt;Admin&gt; admins;
+    ArrayList&lt;Academic&gt; academics;
     <span class="hljs-comment">// ...</span>
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
@@ -1849,7 +1367,7 @@ void calculateGrade (String matric) { ... }
             <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot; from this method?
               Here is such an implementation of <code>adjustSalary(int)</code>:</p>
             <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll2</span> </span>{
-    ArrayList&lt; Staff &gt; staff;
+    ArrayList&lt;Staff&gt; staff;
     <span class="hljs-comment">// ...</span>
 
     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
@@ -1861,7 +1379,7 @@ void calculateGrade (String matric) { ... }
 </code></pre>
             <p>Notice the following:</p>
             <ul>
-              <li>Only one data structure <code>ArrayList&lt; Staff &gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
+              <li>Only one data structure <code>ArrayList&lt;Staff&gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
               <li>Only one loop</li>
               <li>Outcome of the <code>s.adjustSalary(byPercent)</code> method call depends on whether <code>s</code> is an <code>Academic</code> or <code>Admin</code> object</li>
             </ul>
@@ -1894,133 +1412,6 @@ void calculateGrade (String matric) { ... }
               <li><strong>Dynamic binding</strong>: Calls to overridden methods are bound to the implementation of the actual object's class dynamically during the runtime. That is how the polymorphic code can call the method of the parent class and yet execute
                 the implementation of the child class.</li>
             </ul>
-            <h5 id="implementing-polymorphism"><big>Implementing polymorphism</big></h5>
-            <p><strong>We can use inheritance to achieve polymorphism</strong>.</p>
-            <tip-box>
-              <p><span class="fas fa-cube"></span> Continuing with the example given in [
-                <trigger trigger="click" for="modal:oopImpl-polymorphism"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> OOP → Polymorphism → Introduction </trigger>], given below is the minimum code for <code>Staff</code>, <code>Admin</code>, and <code>Academic</code> classes that achieves
-                the desired polymorphism.</p>
-              <modal large="" title="" id="modal:oopImpl-polymorphism">
-              
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Polymorphism →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="what-7">What</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <tip-box type="primary">
-                          <div>
-                            <p><strong>Polymorphism</strong>:</p>
-                            <blockquote>
-                              <p>The ability of different objects to respond, each in its own way, to identical messages is called polymorphism. <sub>-- <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/OOP_ObjC/">Object-Oriented Programming with Objective-C</a>, Apple</sub></p>
-                            </blockquote>
-                          </div>
-                        </tip-box>
-                        <p>Take the example of writing a payroll application for a university to facilitate payroll processing of university staff. Suppose an <code>adjustSalary(int)</code> operation adjusts the salaries of all staff members. This operation
-                          will be executed whenever the university initiates a salary adjustment for its staff. However, the adjustment formula is different for different staff categories, say admin and academic. Here is one possible way of designing
-                          the classes in the <code>Payroll</code> system.</p>
-                        <p>Here is the implementation of the <code>adjustSalary(int)</code> operation.</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll1</span> </span>{
-    ArrayList&lt; Admin &gt; admins;
-    ArrayList&lt; Academic &gt; academics;
-    <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
-        <span class="hljs-keyword">for</span> (Admin ad: admins) {
-            ad.adjustSalary(byPercent);
-        }
-        <span class="hljs-keyword">for</span> (Academic ac: academics) {
-            ac.adjustSalary(byPercent);
-        }
-    }
-}
-</code></pre>
-                        <p>Note how processing is similar for the two staff types. It is as if the type of staff members is irrelevant to how they are processed inside this operation! If that is the case, can the staff type be &quot;abstracted away&quot;
-                          from this method? Here is such an implementation of <code>adjustSalary(int)</code>:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll2</span> </span>{
-    ArrayList&lt; Staff &gt; staff;
-    <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
-        <span class="hljs-keyword">for</span> (Staff s: staff) {
-            s.adjustSalary(byPercent);
-        }
-    }
-}
-</code></pre>
-                        <p>Notice the following:</p>
-                        <ul>
-                          <li>Only one data structure <code>ArrayList&lt; Staff &gt;</code>. It contains both <code>Admin</code> and <code>Academic</code> objects but treats them as <code>Staff</code> objects</li>
-                          <li>Only one loop</li>
-                          <li>Outcome of the <code>s.adjustSalary(byPercent)</code> method call depends on whether <code>s</code> is an <code>Academic</code> or <code>Admin</code> object</li>
-                        </ul>
-                        <p>The above code is better in several ways:</p>
-                        <ul>
-                          <li>It is shorter.</li>
-                          <li>It is simpler.</li>
-                          <li>It is more flexible (this code will remain the same even if more staff types are added).</li>
-                        </ul>
-                        <p>This does not mean we are getting rid of the <code>Academic</code> and <code>Admin</code> classes completely and replacing them with a more general class called <code>Staff</code>. Rather, this part of the code “treats” both <code>Admin</code>                          and <code>Academic</code> objects as one type called <code>Staff</code>.</p>
-                        <p>For example, <code>ArrayList</code> staff contains both <code>Admin</code> and <code>Academic</code> objects although it treats all of them as <code>Staff</code> objects. However, when the <code>adjustSalary(int)</code> operation
-                          of these objects is called, the resulting salary adjustment will be different for <code>Admin</code> objects and <code>Academic</code> objects. Therefore, different types of objects are treated as a single general type, but yet
-                          each type of object exhibits a different kind of behavior. This is called <em>polymorphism</em> (literally, it means “ability to take many forms”). In this example, an object that is perceived as type <code>Staff</code> can be
-                          an <code>Admin</code> object or an <code>Academic</code> object.</p>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-              </modal>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Staff</span> </span>{
-    String name;
-    <span class="hljs-keyword">double</span> salary;
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> percent)</span> </span>{
-        <span class="hljs-comment">// do nothing</span>
-    }
-}
-
-<span class="hljs-comment">//------------------------------------------</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Admin</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Staff</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> percent)</span> </span>{
-        salary = salary * percent;
-    }
-}
-
-<span class="hljs-comment">//------------------------------------------</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Academic</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Staff</span> </span>{
-
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> percent)</span> </span>{
-        salary = salary * percent * <span class="hljs-number">2</span>;
-    }
-}
-
-<span class="hljs-comment">//------------------------------------------</span>
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
-    ArrayList&lt; Staff &gt; staff;
-    <span class="hljs-comment">// ...</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{
-        <span class="hljs-keyword">for</span> (Staff s: staff) {
-            s.adjustSalary(byPercent);
-        }
-    }
-}
-</code></pre>
-            </tip-box>
           </div>
         </div>
       </div>
@@ -2363,7 +1754,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-8">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-7">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -2388,7 +1779,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-9">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-8">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3073,7 +2464,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-10">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-9">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3101,7 +2492,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-11">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-10">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3204,7 +2595,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-12">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-11">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3235,7 +2626,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-13">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-12">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3273,7 +2664,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-14">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-13">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3345,7 +2736,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-15">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-14">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3396,7 +2787,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-16">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-15">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -3425,7 +2816,7 @@ void calculateGrade (String matric) { ... }
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-17">What</h4>
+                    <h4 id="what-16">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3996,7 +3387,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-18">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-17">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4130,7 +3521,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="introduction-11">Introduction</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-19">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-18">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4155,7 +3546,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="n-tier-architectural-style">N-tier Architectural Style</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-20">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-19">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4178,7 +3569,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="client-server-architectural-style">Client-server Architectural Style</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-21">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-20">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4200,7 +3591,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="transaction-processing-architectural-style">Transaction Processing Architectural Style</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-22">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-21">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4223,7 +3614,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="service-oriented-architectural-style">Service-oriented Architectural Style</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-23">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-22">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4249,7 +3640,7 @@ void calculateGrade (String matric) { ... }
         <h3 id="event-driven-architectural-style">Event-driven Architectural Style</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-24">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-23">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4297,7 +3688,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-25">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-24">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4363,7 +3754,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-26">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-25">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4460,7 +3851,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-27">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-26">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4493,7 +3884,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-28">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-27">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4530,7 +3921,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-29">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-28">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4568,7 +3959,7 @@ void calculateGrade (String matric) { ... }
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-30">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-29">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4770,7 +4161,7 @@ studentList.addUi(statusUi);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-31">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-30">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -4803,7 +4194,7 @@ studentList.addUi(statusUi);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-32">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-31">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -5375,7 +4766,7 @@ displayResult();
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-33">What</h4>
+                    <h4 id="what-32">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -6193,7 +5584,7 @@ compact(input);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-34">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-33">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6399,7 +5790,7 @@ send()
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-35">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-34">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6452,7 +5843,7 @@ send()
         <h3 id="guideline-go-top-down-not-bottom-up">Guideline: Go Top-down, Not Bottom-up</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-36">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-35">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6519,7 +5910,7 @@ send()
         <h3 id="guideline-aim-for-comprehensibility">Guideline: Aim for Comprehensibility</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-37">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-36">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6557,7 +5948,7 @@ send()
         <h3 id="guideline-document-minimally-but-sufficiently">Guideline: Document Minimally, but Sufficiently</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-38">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-37">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6594,7 +5985,7 @@ send()
         <h3 id="javadoc">JavaDoc</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-39">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-38">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6662,7 +6053,7 @@ send()
         <h3 id="asciidoc">AsciiDoc</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-40">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-39">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6685,7 +6076,7 @@ send()
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-41">What <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+        <h4 id="what-40">What <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6705,7 +6096,7 @@ send()
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-42">What <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+        <h4 id="what-41">What <span class="badge badge-light"><small><small><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6745,17 +6136,6 @@ send()
             <p><strong>Exception objects can propagate up the function call hierarchy until it is dealt with.</strong> Usually, an exception thrown by a function is caught by the caller function. If the called function does not know how to deal with the
               exception it caught, it can throw/raise the Exception object to its own caller. If none of the callers is prepared to deal with the exception, the exceptions can propagate through the
               <tooltip content="the hieararchy of function calls">function call stack</tooltip> until it is received by the main function and thrown to the runtime, thus halting the system.</p>
-            <tip-box>
-              <div class="alt-java">
-                <p><span class="fas fa-cube"></span> In the code given below, <code>processArray</code> can potentially throw an <code>InvalidInputException</code>. Because of that, <code>processInput</code> method invokes <code>processArray</code> method
-                  inside a <code>try{ }</code> block and has a <code>catch{ }</code> block to specify what to do if the exception is actually thrown.</p>
-                <img src="/cs2103-website/book/errorHandling/exceptions/how/images/processInput.png" width="400">
-                <p></p>
-              </div>
-              <div class="alt-python">
-                <p><span class="fas fa-cube"></span> In the code given below, <code>process_array</code> function can potentially raise a <code>ValueError</code> exception. Because of that, <code>process_input</code> function invokes <code>process_array</code>                  function inside a <code>try</code> clause and has a <code>except</code> clause to specify what to do if the exception is actually raised.</p>
-                <img src="/cs2103-website/book/errorHandling/exceptions/how/images/example-python.png" width="400"></div>
-            </tip-box>
             <p>Advantages of exception handling in this way:</p>
             <ul>
               <li>The ability to propagate error information through the call stack.</li>
@@ -6782,7 +6162,7 @@ send()
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-43">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-42">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6872,7 +6252,7 @@ send()
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-44">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-43">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -6936,7 +6316,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-45">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-44">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7051,7 +6431,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-46">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-45">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7123,7 +6503,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-47">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-46">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7191,7 +6571,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-48">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-47">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7230,7 +6610,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-49">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-48">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7254,7 +6634,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-50">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-49">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7301,7 +6681,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-51">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-50">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7370,7 +6750,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-52">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-51">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7413,7 +6793,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-53">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-52">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7449,7 +6829,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-54">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-53">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7522,7 +6902,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-55">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-54">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7555,7 +6935,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-56">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-55">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7593,7 +6973,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-57">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-56">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7679,7 +7059,7 @@ a.setGuarantor(<span class="hljs-keyword">null</span>);
         <h3 id="unit-testing">Unit Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-58">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-57">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7846,7 +7226,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="integration-testing">Integration Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-59">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-58">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7894,7 +7274,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="system-testing">System Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-60">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-59">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7931,7 +7311,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="alpha-and-beta-testing">Alpha and Beta Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-61">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-60">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7950,7 +7330,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="dogfooding">Dogfooding</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-62">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-61">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -7967,7 +7347,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="developer-testing">Developer Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-63">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-62">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8010,7 +7390,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="exploratory-vs-scripted-testing">Exploratory vs Scripted Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-64">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-63">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8082,7 +7462,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="acceptance-testing">Acceptance Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-65">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-64">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8177,7 +7557,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="regression-testing">Regression Testing</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-66">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-65">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8196,7 +7576,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-67">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-66">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8434,7 +7814,7 @@ Invalid command format: add
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-68">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-67">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8495,7 +7875,7 @@ Invalid command format: add
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-69">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-68">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8653,7 +8033,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-70">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-69">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8773,7 +8153,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-71">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-70">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -8962,7 +8342,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-72">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-71">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -10116,7 +9496,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-73">What</h4>
+                    <h4 id="what-72">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -10215,7 +9595,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-74">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-73">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -10734,7 +10114,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-75">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-74">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -10926,7 +10306,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="introduction-28">Introduction</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-76">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-75">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -10946,7 +10326,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="classes-2">Classes</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-77">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-76">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -11070,7 +10450,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="associations-2">Associations</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-78">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-77">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -11343,7 +10723,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="enumerations-2">Enumerations</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-79">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-78">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -11363,7 +10743,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
     </div>
     <div class="indented-less">
       <div>
-        <h3 id="class-level-members-2">Class Level Members</h3>
+        <h3 id="class-level-members-2">Class-Level Members</h3>
       </div>
       <div class="indented-less">
         <h4 id="class-level-members-3">Class-Level Members <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
@@ -11493,7 +10873,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         <h3 id="abstract-classes-2">Abstract Classes</h3>
       </div>
       <div class="indented-less">
-        <h4 id="what-80">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+        <h4 id="what-79">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -11774,7 +11154,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="what-81">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+        <h4 id="what-80">What <span class="badge badge-light"><small><small><font color="Crimson"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
             aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
           </small>
           </span>
@@ -13901,9 +13281,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                         <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
 </code></pre>
                         <p>But the following code is not valid <span class="dimmed"> because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of  type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-                        <pre class="hljs"><code>Staff staff;
+                        <pre><code class="hljs java">Staff staff;
 ...
-AcademicStaff academicStaff = staff; // Not OK
+AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 </code></pre>
                       </tip-box>
                     </div>
@@ -14006,7 +13386,7 @@ AcademicStaff academicStaff = staff; // Not OK
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-82">What</h4>
+                    <h4 id="what-81">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -14035,7 +13415,7 @@ AcademicStaff academicStaff = staff; // Not OK
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-83">What</h4>
+                    <h4 id="what-82">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -14128,7 +13508,7 @@ AcademicStaff academicStaff = staff; // Not OK
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-84">What</h4>
+                    <h4 id="what-83">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -14204,7 +13584,7 @@ AcademicStaff academicStaff = staff; // Not OK
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 12 Aug 2018 03:37:53 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 12 Aug 2018 15:56:43 GMT</small></div>
 </footer>
 </div>
 </body>
