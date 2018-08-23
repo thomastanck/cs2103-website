@@ -140,7 +140,7 @@
             <li><a href="/cs2103-website/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
             <li><a href="/cs2103-website/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
             <dropdown text="Links" class="nav-link">
-              <li><a href="https://github.com/nus-cs2103-AY1819S1/cs2103-website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+              <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
               <li><a href="https://nus-cs2103-ay1819s1.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
               <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
               <li><a href="https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
@@ -2698,7 +2698,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                     <p><strong>A. Process:</strong></p>
                     <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                     <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                     <p>Other criteria:</p>
                     <ul>
                       <li>Good use of GitHub milestones</li>
@@ -2814,7 +2814,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
                       <p>You can create your GitHub account after receiving your team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
                       <ul>
                         <li>One team member (e.g. team leader) should create an organization with the following details:</li>
-                        <li><mark>Organization name : <code>AY1819S1JAN2018-TEAM_ID</code></mark>. e.g.  <code>AY1819S1JAN2018-W09-B3</code></li>
+                        <li><mark>Organization name : <code>CS2103-AY1819S1-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S1-W12-1</code></li>
                         <li>Plan:  Open Source ($0/month)</li>
                         <li>After that, the same person can add members to the organization:</li>
                         <li>Create a team called <code>developers</code> to your organization.</li>
@@ -3397,7 +3397,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                     <p><strong>A. Process:</strong></p>
                     <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                     <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                     <p>Other criteria:</p>
                     <ul>
                       <li>Good use of GitHub milestones</li>
@@ -3533,8 +3533,9 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                         <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                         <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
                           decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
-                          code because the code has low testability.</li>
+                        <li>Applying
+                          <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the
+                          functional code because the code has low testability.</li>
                       </ul>
                     </div>
                   </modal>
@@ -4486,7 +4487,8 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                     <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                     <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide
                       to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                    <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
+                    <li>Applying
+                      <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
                       code because the code has low testability.</li>
                   </ul>
                 </div>
@@ -7432,13 +7434,13 @@ compact(input);
               <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
                 <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
                 <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
-                <p>❗️ Feature that fit well with the other features will earn more marks.</p>
+                <p>💡 Feature that fit well with the other features will earn more marks.</p>
               </panel>
               <panel header="2. **Implementation** %%[<span class='fas fa-user'></span> 15 marks]%%" expanded="">
                 <p>Evaluates:</p>
                 <p><strong>A. Code quality/quantity:</strong></p>
                 <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
-                <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+                <p>Based on: an inspection of the parts of the code you claim as written by you.</p>
                 <panel header=":bulb: Tips: how to score high for code quality" no-close="">
                   <span id="code-quality-tips">
 <ul>
@@ -9168,7 +9170,7 @@ compact(input);
                   <p></p>
                 </panel>
                 <p></p>
-                <p><strong>B. Depth and completeness of the major feature</strong></p>
+                <p><strong>B. Depth and completeness of your feature</strong></p>
               </panel>
               <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
                 <p>Evaluates: How good is your Quality Assurance?</p>
@@ -9430,7 +9432,8 @@ compact(input);
                       <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                       <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
                         decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                      <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
+                      <li>Applying
+                        <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
                         code because the code has low testability.</li>
                     </ul>
                   </div>
@@ -9449,7 +9452,7 @@ compact(input);
                   <p><strong>A. Process:</strong></p>
                   <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                   <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                  <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                  <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                   <p>Other criteria:</p>
                   <ul>
                     <li>Good use of GitHub milestones</li>
@@ -9541,8 +9544,10 @@ compact(input);
               <span id="extra-requirements">
 <p><strong>Extra Requirements:</strong> [considered for participation marks]</p>
 <ul>
-<li>❗️ Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark></li>
-<li>💡 TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2103/T is a big class. This profile helps us to remember you better, even after the module is over.</span></li>
+<li><font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big>
+              </font> Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark></li>
+              <li>💡 TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a
+                <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2103/T is a big class. This profile helps us to remember you better, even after the module is over.</span></li>
               </ul>
               <modal title="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
               
@@ -9577,7 +9582,7 @@ compact(input);
                   <li><strong>Meticulousness</strong>:
                     <ul>
                       <li>Rarely overlooks submission requirements.</li>
-                      <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                      <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                     </ul>
                   </li>
                   <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -9595,10 +9600,7 @@ compact(input);
 <ul>
 <li>Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.</li>
 <li>The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. <code>Thanks for all the hard work!</code> and negative ratings (e.g. <code>Equal share - 40%</code>) to the same team member is not being honest.</li>
-<li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span>
-              <p>The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members and another team. The quality and accuracy of your evaluation will affect your grade and your evaluations
-                will be considered as a data point in determining the grade of the team members.</p>
-              <img src="/cs2103-website/admin/images/peer evaluations.png" width="600px"></div>
+<li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span></div>
           </div>
         </div>
         <br>
@@ -9881,7 +9883,7 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                       <li><strong>Meticulousness</strong>:
                         <ul>
                           <li>Rarely overlooks submission requirements.</li>
-                          <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                          <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                         </ul>
                       </li>
                       <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -10014,13 +10016,13 @@ java -jar Collate-TUI.jar collate from unused to collated/unused include java, f
                 <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
                   <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
                   <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
-                  <p>❗️ Feature that fit well with the other features will earn more marks.</p>
+                  <p>💡 Feature that fit well with the other features will earn more marks.</p>
                 </panel>
                 <panel header="2. **Implementation** %%[<span class='fas fa-user'></span> 15 marks]%%" expanded="">
                   <p>Evaluates:</p>
                   <p><strong>A. Code quality/quantity:</strong></p>
                   <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
-                  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+                  <p>Based on: an inspection of the parts of the code you claim as written by you.</p>
                   <panel header=":bulb: Tips: how to score high for code quality" no-close="">
                     <span id="code-quality-tips">
 <ul>
@@ -11751,7 +11753,7 @@ compact(input);
                     <p></p>
                   </panel>
                   <p></p>
-                  <p><strong>B. Depth and completeness of the major feature</strong></p>
+                  <p><strong>B. Depth and completeness of your feature</strong></p>
                 </panel>
                 <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
                   <p>Evaluates: How good is your Quality Assurance?</p>
@@ -12013,8 +12015,9 @@ compact(input);
                         <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                         <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
                           decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
-                          code because the code has low testability.</li>
+                        <li>Applying
+                          <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the
+                          functional code because the code has low testability.</li>
                       </ul>
                     </div>
                   </panel>
@@ -12032,7 +12035,7 @@ compact(input);
                     <p><strong>A. Process:</strong></p>
                     <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                     <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                     <p>Other criteria:</p>
                     <ul>
                       <li>Good use of GitHub milestones</li>
@@ -12243,7 +12246,7 @@ compact(input);
                   <li><strong>Meticulousness</strong>:
                     <ul>
                       <li>Rarely overlooks submission requirements.</li>
-                      <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                      <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                     </ul>
                   </li>
                   <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -13430,7 +13433,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
               <p>You can create your GitHub account after receiving your team ID. Here are the instructions (<mark>please follow the organization/repo name format closely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
               <ul>
                 <li>One team member (e.g. team leader) should create an organization with the following details:</li>
-                <li><mark>Organization name : <code>AY1819S1JAN2018-TEAM_ID</code></mark>. e.g.  <code>AY1819S1JAN2018-W09-B3</code></li>
+                <li><mark>Organization name : <code>CS2103-AY1819S1-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S1-W12-1</code></li>
                 <li>Plan:  Open Source ($0/month)</li>
                 <li>After that, the same person can add members to the organization:</li>
                 <li>Create a team called <code>developers</code> to your organization.</li>
@@ -13665,7 +13668,7 @@ What kind of questions are suitable to discuss with the tutor? Consider these tw
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Fri, 17 Aug 2018 14:53:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 23 Aug 2018 09:05:53 GMT</small></div>
 </footer>
 </div>
 </body>

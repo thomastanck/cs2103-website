@@ -38,7 +38,7 @@
       <li><a href="/cs2103-website/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
       <li><a href="/cs2103-website/admin/index-flat.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
       <dropdown text="Links" class="nav-link">
-        <li><a href="https://github.com/nus-cs2103-AY1819S1/cs2103-website/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+        <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
         <li><a href="https://nus-cs2103-ay1819s1.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
         <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
         <li><a href="https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true" target="_blank" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
@@ -116,7 +116,7 @@
                       <p><strong>A. Process:</strong></p>
                       <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                       <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                      <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                      <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                       <p>Other criteria:</p>
                       <ul>
                         <li>Good use of GitHub milestones</li>
@@ -1019,220 +1019,11 @@
         <p><span class="activity-desc">Implementation</span></p>
         <div class="indented">
           <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.4</code> <strong>Can follow a simple style guide</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              </span>
-              <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>
-                  </span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Introduction →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="basic">Basic</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <blockquote>
-                            <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
-                          </blockquote>
-                          <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to
-                            tolerate.</p>
-                          <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
-                            <div slot="content">
-                              Code being used in an actual product with actual users
-                            </div>
-                          </popover>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </div>
-              </panel>
-              <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                  </span>
-                  </span>
-                  </span>
-                  </span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="introduction">Introduction</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
-                          <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location
-                            of opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that
-                            standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-                          <tip-box type="tip">
-                            <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-                          </tip-box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
-                                  <question>
-                                    <p>What is the recommended approach regarding coding standards?</p>
-                                    <ul radio-group="5c5a1" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>c</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                                  <question has-input="">
-                                    <p>What is the aim of using a coding standard? How does it help?</p>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-                  <div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                        <question has-input="">
-                          <p>What is the aim of using a coding standard? How does it help?</p>
-                        </question>
-                      </panel>
-                    </div>
-                  </div>
-              </panel>
-              <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>
-                  </span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="basic-2">Basic</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p>Some coding standards you can adopt:</p>
-                          <ul>
-                            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
-                            <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-                  <div>
-                    <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
-                    <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in
-                      local copy of addressbook-level1 code base. Commit after each fix.</p>
-                    <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
-                  </div>
-              </panel>
-              <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                <span
-                  class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  </span>
-                  </span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="intermediate">Intermediate</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Unsuitable variable name">
-                                  <question>
-                                    <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                    <ul radio-group="1c05d" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>b</p>
-                                      <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr style="border-top: dashed 1px; border-color:grey">
-                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-                  <div>
-                    <p>Similar to [Can follow simple mechanical style rules] above, but also fix violations of <em>intermediate</em> style rules.</p>
-                  </div>
-              </panel>
-          </panel>
-          <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.5</code> <strong>Can improve code readability</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <span slot="header" class="card-title"><span><code>W7.4</code> <strong>Can improve code readability</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <panel type="danger" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of readability</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of readability</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <div>
@@ -1244,7 +1035,7 @@
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="introduction-2">Introduction</h4>
+                    <h4 id="introduction">Introduction</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1374,7 +1165,7 @@
               </div>
             </panel>
             <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span>
               <span
                 class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1401,7 +1192,7 @@
                 </div>
             </panel>
             <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span>
               <span
                 class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1436,7 +1227,7 @@
                 </div>
             </panel>
             <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions
               </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1521,7 +1312,7 @@ is_urgent = type_code == URGENT
               </div>
             </panel>
             <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span>
               <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1640,7 +1431,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span>
               <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1679,7 +1470,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure code logically </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure code logically </span>
               <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1706,7 +1497,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5h</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not 'trip up' reader </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4h</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not 'trip up' reader </span>
               <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1738,7 +1529,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5i</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice kissing </span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4i</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice kissing </span>
               <span
                 class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1771,7 +1562,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                 </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5j</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid premature optimizations
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4j</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid premature optimizations
               </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1810,7 +1601,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5k</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4k</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1903,7 +1694,7 @@ displayResult();
                 </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5l</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the happy path prominent
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4l</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the happy path prominent
               </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -1981,7 +1772,7 @@ exit();
             </panel>
           </panel>
           <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.6</code> <strong>Can use good naming</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><code>W7.5</code> <strong>Can use good naming</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -1989,7 +1780,7 @@ exit();
               </span>
               </span>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
                   class="glyphicon glyphicon-star" aria-hidden="true"></span>
                   </span>
@@ -2005,7 +1796,7 @@ exit();
                     </p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="introduction-3">Introduction</h4>
+                        <h4 id="introduction-2">Introduction</h4>
                       </div>
                       <div id="main">
                         <div>
@@ -2020,7 +1811,7 @@ exit();
                   </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs
                 for actions </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2104,7 +1895,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span>
                 <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2129,7 +1920,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name to explain </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name to explain </span>
                 <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2251,7 +2042,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too long, not too short
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too long, not too short
                 </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2276,7 +2067,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid misleading names </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid misleading names </span>
                 <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2368,7 +2159,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               </panel>
           </panel>
           <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.7</code> <strong>Can avoid unsafe coding practices</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><code>W7.6</code> <strong>Can avoid unsafe coding practices</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -2376,7 +2167,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               </span>
               </span>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone shortcuts</span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone shortcuts</span>
                 <span
                   class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
@@ -2391,7 +2182,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                     </p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="introduction-4">Introduction</h4>
+                        <h4 id="introduction-3">Introduction</h4>
                       </div>
                       <div id="main">
                         <div>
@@ -2403,7 +2194,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                   </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use the default branch </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: use the default branch </span>
                 <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2450,7 +2241,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't recycle variables or
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't recycle variables or
                 parameters </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2503,7 +2294,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid empty catch blocks </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid empty catch blocks </span>
                 <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2529,7 +2320,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete dead code </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete dead code </span>
                 <span
                   class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   </span>
@@ -2558,7 +2349,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                   </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise scope of variables
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise scope of variables
                 </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2592,7 +2383,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise code duplication
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.6g</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise code duplication
                 </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2655,7 +2446,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               </panel>
           </panel>
           <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.8</code> <strong>Can write good code comments</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><code>W7.7</code> <strong>Can write good code comments</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -2663,7 +2454,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
               </span>
               </span>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span>
                 <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2677,7 +2468,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                   </p>
                   <div id="title-and-body">
                     <div>
-                      <h4 id="introduction-5">Introduction</h4>
+                      <h4 id="introduction-4">Introduction</h4>
                     </div>
                     <div id="main">
                       <div>
@@ -2692,7 +2483,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious
                 </span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2729,7 +2520,7 @@ trimInput();
                 </div>
               </panel>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span>
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7c</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span>
                 <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2803,7 +2594,7 @@ trimInput();
                 </div>
               </panel>
               <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.8d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain what and why, not
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.7d</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain what and why, not
                 how </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
@@ -2868,7 +2659,7 @@ compact(input);
         <p><span class="activity-desc">🅿️ Project</span></p>
         <div class="indented">
           <panel no-close="" expanded="" no-switch="" expandable="false">
-            <span slot="header" class="card-title"><span><code>W7.9</code> <strong>Can do small changes to an existing software</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <span slot="header" class="card-title"><span><code>W7.8</code> <strong>Can do small changes to an existing software</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -3207,192 +2998,7 @@ compact(input);
               </div>
             </panel>
             <panel type="seamless" expanded="">
-              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span>
-              <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              </span>
-              <div class="indented">
-                <panel minimized="">
-                  <span slot="header" class="card-title">Details of the LO</span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="introduction-6">Introduction</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
-                          <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location
-                            of opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that
-                            standard is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
-                          <tip-box type="tip">
-                            <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
-                          </tip-box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
-                                  <question>
-                                    <p>What is the recommended approach regarding coding standards?</p>
-                                    <ul radio-group="5c5a1" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>c</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                                  <question has-input="">
-                                    <p>What is the aim of using a coding standard? How does it help?</p>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </panel><br><br>
-                <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-                </p>
-                <div class="indented">
-                  <div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
-                        <question has-input="">
-                          <p>What is the aim of using a coding standard? How does it help?</p>
-                        </question>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </panel>
-            <panel type="seamless" expanded="">
-              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span>
-              <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div class="indented">
-                <panel minimized="">
-                  <span slot="header" class="card-title">Details of the LO</span>
-                  <div>
-                    <div></div>
-                    <p></p>
-                    <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                      </span>
-                    </p>
-                    <div id="title-and-body">
-                      <div>
-                        <h4 id="basic-3">Basic</h4>
-                      </div>
-                      <div id="main">
-                        <div>
-                          <p>Some coding standards you can adopt:</p>
-                          <ul>
-                            <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
-                            <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </div>
-                </panel><br><br>
-                <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-                </p>
-                <div class="indented">
-                  <div>
-                    <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
-                    <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in
-                      local copy of addressbook-level1 code base. Commit after each fix.</p>
-                    <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
-                  </div>
-                </div>
-              </div>
-            </panel>
-            <panel type="seamless" expanded="">
-              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span>
-              <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <div class="indented">
-                  <panel minimized="">
-                    <span slot="header" class="card-title">Details of the LO</span>
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
-</span></strong>
-                        </span>
-                      </p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="intermediate-2">Intermediate</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Unsuitable variable name">
-                                    <question>
-                                      <p>According to the given Java coding standard, which one of these is not a good name?</p>
-                                      <ul radio-group="1c05d" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>b</p>
-                                        <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel><br><br>
-                  <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-                  </p>
-                  <div class="indented">
-                    <div>
-                      <p>Similar to [Can follow simple mechanical style rules] above, but also fix violations of <em>intermediate</em> style rules.</p>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="seamless" expanded="">
-              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.9</code></span></big> Can do small changes to an existing software <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.8</code></span></big> Can do small changes to an existing software <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
               <div class="indented">
@@ -3417,7 +3023,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Fri, 17 Aug 2018 14:53:36 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Thu, 23 Aug 2018 09:05:53 GMT</small></div>
 </footer>
 </div>
 </body>

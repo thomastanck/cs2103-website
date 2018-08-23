@@ -19,13 +19,13 @@
               <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
                 <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
                 <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
-                <p>❗️ Feature that fit well with the other features will earn more marks.</p>
+                <p>💡 Feature that fit well with the other features will earn more marks.</p>
               </panel>
               <panel header="2. **Implementation** %%[<span class='fas fa-user'></span> 15 marks]%%" expanded="">
                 <p>Evaluates:</p>
                 <p><strong>A. Code quality/quantity:</strong></p>
                 <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
-                <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+                <p>Based on: an inspection of the parts of the code you claim as written by you.</p>
                 <panel header=":bulb: Tips: how to score high for code quality" no-close="">
                   <span id="code-quality-tips">
 <ul>
@@ -1755,7 +1755,7 @@ compact(input);
                   <p></p>
                 </panel>
                 <p></p>
-                <p><strong>B. Depth and completeness of the major feature</strong></p>
+                <p><strong>B. Depth and completeness of your feature</strong></p>
               </panel>
               <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
                 <p>Evaluates: How good is your Quality Assurance?</p>
@@ -2017,7 +2017,8 @@ compact(input);
                       <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                       <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
                         decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                      <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
+                      <li>Applying
+                        <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
                         code because the code has low testability.</li>
                     </ul>
                   </div>
@@ -2036,7 +2037,7 @@ compact(input);
                   <p><strong>A. Process:</strong></p>
                   <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                   <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                  <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                  <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                   <p>Other criteria:</p>
                   <ul>
                     <li>Good use of GitHub milestones</li>
@@ -2121,8 +2122,10 @@ compact(input);
               <span id="extra-requirements">
 <p><strong>Extra Requirements:</strong> [considered for participation marks]</p>
 <ul>
-<li>❗️ Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark></li>
-<li>💡 TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2103/T is a big class. This profile helps us to remember you better, even after the module is over.</span></li>
+<li><font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big>
+              </font> Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark></li>
+              <li>💡 TEAMMATES normally allows students to access it without using Google login. In this module, we encourage (but not require) you to login to TEAMMATES using your Google account and complete your profile with a
+                <trigger trigger="click" for="modal:peerEvaluations-suitablePhoto">suitable profile photo</trigger>. <span class="dimmed">Reason: CS2103/T is a big class. This profile helps us to remember you better, even after the module is over.</span></li>
               </ul>
               <modal title="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables → Website (extract)%%" id="modal:peerEvaluations-suitablePhoto">
               
@@ -2157,7 +2160,7 @@ compact(input);
                   <li><strong>Meticulousness</strong>:
                     <ul>
                       <li>Rarely overlooks submission requirements.</li>
-                      <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                      <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                     </ul>
                   </li>
                   <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -2175,10 +2178,7 @@ compact(input);
 <ul>
 <li>Assume you are giving feedback to a colleague, not a friend. Keep the tone of your feedback reasonably professional. Do not use offensive language or slang.</li>
 <li>The feedback should be honest and consistent. Giving positive qualitative feedback (e.g. <code>Thanks for all the hard work!</code> and negative ratings (e.g. <code>Equal share - 40%</code>) to the same team member is not being honest.</li>
-<li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span>
-              <p>The final peer evaluation (in week 13) is graded. In that peer-evaluation you will be asked to evaluate the work of your team members and another team. The quality and accuracy of your evaluation will affect your grade and your evaluations
-                will be considered as a data point in determining the grade of the team members.</p>
-              <img src="/cs2103-website/admin/images/peer evaluations.png" width="600px"></div>
+<li>State your expectations early. All too often students give positive/neutral feedback early (hoping that the team member will improve later) and trash the team member in the final evaluation (because the he/she did not improve as expected). However, this could be confusing to the recipient. It is better to give negative feedback early so that the team member gets a clear signal that he/she needs to improve.</li></ul></span></div>
         </panel>
         <p></p>
         <panel type="default" no-close="" expandable="true">
@@ -2254,7 +2254,7 @@ compact(input);
                       <li><strong>Meticulousness</strong>:
                         <ul>
                           <li>Rarely overlooks submission requirements.</li>
-                          <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                          <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                         </ul>
                       </li>
                       <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -2387,13 +2387,13 @@ compact(input);
                 <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
                   <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
                   <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
-                  <p>❗️ Feature that fit well with the other features will earn more marks.</p>
+                  <p>💡 Feature that fit well with the other features will earn more marks.</p>
                 </panel>
                 <panel header="2. **Implementation** %%[<span class='fas fa-user'></span> 15 marks]%%" expanded="">
                   <p>Evaluates:</p>
                   <p><strong>A. Code quality/quantity:</strong></p>
                   <p>How good your implementation is, in terms of the quality and the quantity of the code you have written yourself.</p>
-                  <p>Based on: an inspection of the collated code (submitted in your <code>/collated/*.md</code> files).</p>
+                  <p>Based on: an inspection of the parts of the code you claim as written by you.</p>
                   <panel header=":bulb: Tips: how to score high for code quality" no-close="">
                     <span id="code-quality-tips">
 <ul>
@@ -4124,7 +4124,7 @@ compact(input);
                     <p></p>
                   </panel>
                   <p></p>
-                  <p><strong>B. Depth and completeness of the major feature</strong></p>
+                  <p><strong>B. Depth and completeness of your feature</strong></p>
                 </panel>
                 <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
                   <p>Evaluates: How good is your Quality Assurance?</p>
@@ -4386,8 +4386,9 @@ compact(input);
                         <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                         <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can
                           decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                        <li>Applying TDD is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional
-                          code because the code has low testability.</li>
+                        <li>Applying
+                          <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the
+                          functional code because the code has low testability.</li>
                       </ul>
                     </div>
                   </panel>
@@ -4405,7 +4406,7 @@ compact(input);
                     <p><strong>A. Process:</strong></p>
                     <p>Evaluates: How well you did in project management related aspects of the project, as an individual and as a team</p>
                     <p>Based on: Supervisor observations of project milestones and GitHub data.</p>
-                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
+                    <p>Milestones <mark>need to be reached the midnight before of the tutorial</mark> for it to be counted as achieved. To get a good grade for this aspect, achieve recommended weekly progress in at least 6/10 weeks.</p>
                     <p>Other criteria:</p>
                     <ul>
                       <li>Good use of GitHub milestones</li>
@@ -4520,7 +4521,7 @@ compact(input);
                   <li><strong>Meticulousness</strong>:
                     <ul>
                       <li>Rarely overlooks submission requirements.</li>
-                      <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                      <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                     </ul>
                   </li>
                   <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -4582,7 +4583,7 @@ compact(input);
 <panel type="seamless" popup-url="/cs2103-website/schedule/week3/outcomes.html" expanded="" no-close="">
   <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
   <div class="indented">
-    <p><span class="activity-desc">Refactoring</span></p>
+    <p><span class="activity-desc">Implementation</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
         <span slot="header" class="card-title"><span><code>W3.1</code> <strong>Can refactor code at a basic level</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -4987,10 +4988,6 @@ send()
               </div>
           </panel>
       </panel>
-    </div>
-    <p></p>
-    <p><span class="activity-desc">IDEs</span></p>
-    <div class="indented">
       <panel no-close="" expandable="true">
         <span slot="header" class="card-title"><span><code>W3.2</code> <strong>Can use intermediate level features of an IDE</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
@@ -5125,16 +5122,224 @@ send()
             </div>
         </panel>
       </panel>
+      <panel no-close="" expandable="true">
+        <span slot="header" class="card-title"><span><code>W3.3</code> <strong>Can follow a simple style guide</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span
+          class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </span>
+          </span>
+          </span>
+          </span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the importance of code quality</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Introduction →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="basic-13">Basic</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <blockquote>
+                        <p>Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live. <sub>-- Martin Golding</sub></p>
+                      </blockquote>
+                      <p><strong><trigger for="pop:production-code">Production code</trigger> needs to be of high quality</strong>. Given how the world is becoming increasingly dependent of software, poor quality code is something we cannot afford to tolerate.</p>
+                      <popover id="pop:production-code" title="<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> Production Code" placement="top">
+                        <div slot="content">
+                          Code being used in an actual product with actual users
+                        </div>
+                      </popover>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+          </panel>
+          <panel type="warning" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </span>
+              </span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="introduction-13">Introduction</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                      <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of
+                        opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard
+                        is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+                      <tip-box type="tip">
+                        <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
+                              <question>
+                                <p>What is the recommended approach regarding coding standards?</p>
+                                <ul radio-group="5c5a1" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>c</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                              <question has-input="">
+                                <p>What is the aim of using a coding standard? How does it help?</p>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <div>
+                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                    <question has-input="">
+                      <p>What is the aim of using a coding standard? How does it help?</p>
+                    </question>
+                  </panel>
+                </div>
+              </div>
+          </panel>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="basic-14">Basic</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Some coding standards you can adopt:</p>
+                      <ul>
+                        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
+                        <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
+                      </ul>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
+                <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in local
+                  copy of addressbook-level1 code base. Commit after each fix.</p>
+                <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
+              </div>
+          </panel>
+          <panel type="success" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="intermediate-11">Intermediate</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Unsuitable variable name">
+                              <question>
+                                <p>According to the given Java coding standard, which one of these is not a good name?</p>
+                                <ul radio-group="1c05d" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>b</p>
+                                  <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p>Similar to [Can follow simple mechanical style rules] above, but also fix violations of <em>intermediate</em> style rules.</p>
+              </div>
+          </panel>
+      </panel>
     </div>
     <p></p>
     <p><span class="activity-desc">Revision Control</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W3.3</code> <strong>Can communicate with a remote repo</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W3.4</code> <strong>Can communicate with a remote repo</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain remote repositories</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain remote repositories</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -5174,7 +5379,7 @@ send()
             </div>
         </panel>
         <panel type="danger" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can clone a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can clone a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -5229,7 +5434,7 @@ send()
           </div>
         </panel>
         <panel type="danger" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can pull changes from a repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can pull changes from a repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -5352,7 +5557,7 @@ send()
           </div>
         </panel>
         <panel type="danger" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can push to a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can push to a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -5422,7 +5627,7 @@ send()
         </panel>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W3.4</code> <strong>Can traverse Git history</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span slot="header" class="card-title"><span><code>W3.5</code> <strong>Can traverse Git history</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span
           class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </span>
@@ -5430,7 +5635,7 @@ send()
           </span>
           </span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain using history</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain using history</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -5470,7 +5675,7 @@ send()
               </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can load a specific version of a Git repo</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can load a specific version of a Git repo</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -5653,7 +5858,7 @@ index 15b57f7..17f4528 100644
               </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can tag commits using Git</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can tag commits using Git</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -5714,7 +5919,7 @@ index 15b57f7..17f4528 100644
               </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to stash files</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to stash files</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -5767,7 +5972,7 @@ index 15b57f7..17f4528 100644
     <p><span class="activity-desc">Documentation</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W3.5</code> <strong>Can use some common documentation tools</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span slot="header" class="card-title"><span><code>W3.6</code> <strong>Can use some common documentation tools</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span
           class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </span>
@@ -5777,7 +5982,7 @@ index 15b57f7..17f4528 100644
           <br>
           <p><span class="dimmed"><strong>Javadoc</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain JavaDoc</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain JavaDoc</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -5839,7 +6044,7 @@ index 15b57f7..17f4528 100644
               </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can write Javadoc comments</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can write Javadoc comments</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -5857,7 +6062,10 @@ index 15b57f7..17f4528 100644
                   </div>
                   <div id="main">
                     <div>
-                      <p>{to add}</p>
+                      <ul>
+                        <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm">A short tutorial on writing JavaDoc comments</a> <span class="dimmed">-- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></span></li>
+                        <li><a href="http://www.oracle.com/technetwork/articles/java/index-137868.html">A more detailed description</a> <span class="dimmed">--from Oracle</span></li>
+                      </ul>
                     </div>
                     <div></div>
                   </div>
@@ -5867,7 +6075,7 @@ index 15b57f7..17f4528 100644
           <br>
           <p><span class="dimmed"><strong>Markdown</strong></span></p>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Markdown</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Markdown</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -5893,7 +6101,7 @@ index 15b57f7..17f4528 100644
               </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can write documents in Markdown format</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can write documents in Markdown format</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -5911,7 +6119,9 @@ index 15b57f7..17f4528 100644
                   </div>
                   <div id="main">
                     <div>
-                      <p>...</p>
+                      <ul>
+                        <li><a href="https://guides.github.com/features/mastering-markdown/">A tutorial on <em>Mastering Markdown</em></a> <span class="dimmed">--from GitHub</span></li>
+                      </ul>
                     </div>
                     <div></div>
                   </div>
@@ -5921,7 +6131,7 @@ index 15b57f7..17f4528 100644
           <br>
           <p><span class="dimmed"><strong>AsciiDoc</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain AsciiDoc</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W3.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain AsciiDoc</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -5942,6 +6152,9 @@ index 15b57f7..17f4528 100644
                   <div id="main">
                     <div>
                       <p>AsciiDoc is similar to Markdown but has more powerful (but also more complex) syntax.</p>
+                      <ul>
+                        <li><a href="https://asciidoctor.org/docs/asciidoc-writers-guide/">AsciiDoc Writers Guide</a> <span class="dimmed">--from <a href="http://Asciidoctor.org">Asciidoctor.org</a></span></li>
+                      </ul>
                     </div>
                     <div></div>
                   </div>
@@ -5954,7 +6167,7 @@ index 15b57f7..17f4528 100644
     <p><span class="activity-desc">🅿️ Project</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W3.6</code> <strong>Can define the target of a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W3.7</code> <strong>Can define the target of a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <div>
@@ -5965,7 +6178,7 @@ index 15b57f7..17f4528 100644
         </div>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W3.7</code> <strong>Can work with a 1KLoC code base</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W3.8</code> <strong>Can work with a 1KLoC code base</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <div>
@@ -6024,7 +6237,7 @@ index 15b57f7..17f4528 100644
                     <li><strong>Meticulousness</strong>:
                       <ul>
                         <li>Rarely overlooks submission requirements.</li>
-                        <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                        <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                       </ul>
                     </li>
                     <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
@@ -6602,7 +6815,192 @@ send()
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can clone a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for following a standard</span>
+          <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          </span>
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="introduction-14">Introduction</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
+                      <p><strong>The aim of a coding standard is to make the entire code base look like it was written by one person</strong>. A coding standard is usually specific to a programming language and specifies guidelines such as the location of
+                        opening and closing braces, indentation styles and naming styles (e.g. whether to use Hungarian style, Pascal casing, Camel casing, etc.). It is important that the whole team/company use the same coding standard and that standard
+                        is not generally inconsistent with typical industry practices. <span class="dimmed">If a company's coding standards is very different from what is used typically in the industry, new recruits will take longer to get used to the company's coding style.</span></p>
+                      <tip-box type="tip">
+                        <p>IDEs can help to enforce some parts of a coding standard e.g. indentation rules.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> What is the recommended approach regarding coding standards?">
+                              <question>
+                                <p>What is the recommended approach regarding coding standards?</p>
+                                <ul radio-group="5c5a1" class="radio-list">
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> a. Each developer should find a suitable coding standard and follow it in their coding.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> b. A developer should understand the importance of following a coding standard. However, there is no need to follow one.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> c. A developer should find out the coding standards currently used by the project and follow that closely.</label></li>
+                                  <li class="radio-list-item"><label><input class="radio-list-input" name="5c5a1" type="radio"> d. Coding standards are lame. Real programmers develop their own individual styles.</label></li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>c</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                              <question has-input="">
+                                <p>What is the aim of using a coding standard? How does it help?</p>
+                              </question>
+                            </panel>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <div>
+                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> What is the aim? What is the value?">
+                    <question has-input="">
+                      <p>What is the aim of using a coding standard? How does it help?</p>
+                    </question>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can follow simple mechanical style rules</span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="basic-15">Basic</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>Some coding standards you can adopt:</p>
+                      <ul>
+                        <li><a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html"><strong>Java</strong> coding standard -- by OSS-Generic</a></li>
+                        <li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 <strong>Python</strong> Style Guide -- by Python.org</a></li>
+                      </ul>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <p><strong>Acceptable</strong>: Evidence of following a coding standard in any project.</p>
+                <p><strong>Suggested</strong>: Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a>. Identify and fix any violations of <em>basic</em> style rules in local
+                  copy of addressbook-level1 code base. Commit after each fix.</p>
+                <p><strong>Submission</strong>: Show the relevant commits during the tutorial.</p>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can follow intermediate style rules</span>
+          <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Implementation → Code Quality → Style →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="intermediate-12">Intermediate</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p>Go through the <a href="https://oss-generic.github.io/process/codingStandards/CodingStandard-Java.html">provided Java coding standard</a> and learn the <em>intermediate</em> style rules.</p>
+                      </div>
+                      <div>
+                        <div>
+                          <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Unsuitable variable name">
+                                <question>
+                                  <p>According to the given Java coding standard, which one of these is not a good name?</p>
+                                  <ul radio-group="1c05d" class="radio-list">
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> a. integer variable name: totalPeople</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> b. boolean variable name: checkWeight</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> c. method name (returns integer): getPeopleCount</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> d. method name (returns boolean): isValidAddress</label></li>
+                                    <li class="radio-list-item"><label><input class="radio-list-input" name="1c05d" type="radio"> e. String variable name: description</label></li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>b</p>
+                                    <p>Explanation: checkWeight is an action. Naming variables as actions makes the code harder to follow. isWeightValid may be a better name.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <p>Similar to [Can follow simple mechanical style rules] above, but also fix violations of <em>intermediate</em> style rules.</p>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can clone a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
@@ -6664,7 +7062,7 @@ send()
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can pull changes from a repo</span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can pull changes from a repo</span>
           <span
             class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -6796,7 +7194,7 @@ send()
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can push to a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can push to a remote repo</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
@@ -6872,7 +7270,7 @@ send()
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can load a specific version of a Git repo</span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can load a specific version of a Git repo</span>
           <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
@@ -7060,7 +7458,7 @@ index 15b57f7..17f4528 100644
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can tag commits using Git</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can tag commits using Git</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -7128,7 +7526,7 @@ index 15b57f7..17f4528 100644
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to stash files</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to stash files</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -7183,7 +7581,7 @@ index 15b57f7..17f4528 100644
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.6</code></span></big> Can define the target of a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.7</code></span></big> Can define the target of a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
@@ -7196,7 +7594,7 @@ index 15b57f7..17f4528 100644
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.7</code></span></big> Can work with a 1KLoC code base <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W3.8</code></span></big> Can work with a 1KLoC code base <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
@@ -7256,7 +7654,7 @@ index 15b57f7..17f4528 100644
                         <li><strong>Meticulousness</strong>:
                           <ul>
                             <li>Rarely overlooks submission requirements.</li>
-                            <li>Rarely misses compulsory module activities such as completing the TEAMMATES profile or peer review.</li>
+                            <li>Rarely misses compulsory module activities such as pre-module survey.</li>
                           </ul>
                         </li>
                         <li><strong>Teamwork</strong>: How willing are you to act as part of a team, contribute to team-level tasks, adhere to team decisions, etc.</li>
