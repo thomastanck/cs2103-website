@@ -1577,6 +1577,77 @@ System.out.println(s1.equalsIgnoreCase(s2)); <span class="hljs-comment">//true</
                 <li><code>endsWith</code>: checks if one string has the other as a substring at the <em>end</em> e.g., <code>Crab</code> and <code>ab</code></li>
               </ul>
             </div>
+            <h5 id="printing-special-characters-line-breaks-tabs">Printing special characters (line breaks, tabs, ...)</h5>
+            <div class="indented">
+              <p>You can embed a special character <span class="dimmed">e.g., line break, tab, backspace, etc.</span> in a string using an <em>escape sequence</em>.</p>
+              <div class="table-responsive">
+                <table class="markbind-table table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Escape sequence</th>
+                      <th>meaning</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>\n</code></td>
+                      <td>newline character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\t</code></td>
+                      <td>tab character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\b</code></td>
+                      <td>backspace character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\f</code></td>
+                      <td>form feed character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\r</code></td>
+                      <td>carriage return character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\&quot;</code></td>
+                      <td>&quot; (double quote) character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\'</code></td>
+                      <td>' (single quote) character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\\</code></td>
+                      <td>\ (back slash) character</td>
+                    </tr>
+                    <tr>
+                      <td><code>\uDDDD</code></td>
+                      <td>character from the Unicode character set, by specifying the Unicode as four hex digits in the place of <code>DDDD</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <box>
+                <p><span class="fas fa-cube"></span> An example of using escape sequences to printing some special characters.</p>
+                <pre><code class="hljs java">System.out.println(<span class="hljs-string">"First line\nSecond \"line\""</span>);
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>First line
+Second &quot;line&quot;
+</code></pre>
+              </box>
+              <p>💡 As the behavior of the <code>\n</code> depends on the platform, the recommended way to print a line break is using the <code>System.lineSeparator()</code> as it works the same in all platforms.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Using <code>System.lineSeparator()</code> to print a line break.</p>
+                <pre><code class="hljs java">System.out.println(<span class="hljs-string">"First line"</span> + System.lineSeparator() + <span class="hljs-string">"Second line"</span>);
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>First line
+Second line
+</code></pre>
+              </box>
+            </div>
             <h5 id="string-formatting">String formatting</h5>
             <div class="indented">
               <p>Sometimes programs need to create strings that are formatted a certain way. <code>String.format</code> takes a format specifier followed by a sequence of values and returns a new string formatted as specified.</p>
@@ -1722,7 +1793,7 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
         <div class="indented-less">
           <div>
             <p>Given below is an extract from the <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small>, with slight adaptations.</p>
-            <blockquote>
+            <div class="indented">
               <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
                 </span> <strong>A class that is derived from another class is called a <em>subclass</em></strong> (also a <em>derived</em> class, <em>extended</em> class, or <em>child</em> class). The class from which the subclass is derived is called a <em>superclass</em>                (also a <em>base</em> class or a <em>parent</em> class).</p>
               <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-success"><span class="fas fa-equals"></span></span>
@@ -1735,14 +1806,14 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
               <p><span style="opacity: 0.5"> <span class="badge badge-pill badge-danger"><span class="fas fa-not-equal"></span></span>
                 </span> <strong>The <code>java.lang.Object</code> class defines and implements behavior common to all classes</strong>—including the ones that you write. In the Java platform, many classes derive directly from <code>Object</code>, other classes
                 derive from some of those classes, and so on, forming a hierarchy of classes.</p>
-              <p>Here is the sample code for a possible implementation of a Bicycle class that was presented in the Classes and Objects lesson:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
+              <p><strong>The keyword <code>extends</code> indicates one class inheriting from another.</strong></p>
+              <box>
+                <p><span class="fas fa-cube"></span> Here is the sample code for a possible implementation of a <code>Bicycle class</code> and a <code>MountainBike</code> class that is a subclass of the <code>Bicycle</code>:</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bicycle</span> </span>{
 
-    <span class="hljs-comment">// the Bicycle class has two fields</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> gear;
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> speed;
 
-    <span class="hljs-comment">// the Bicycle class has one constructor</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Bicycle</span><span class="hljs-params">(<span class="hljs-keyword">int</span> startSpeed, <span class="hljs-keyword">int</span> startGear)</span> </span>{
         gear = startGear;
         speed = startSpeed;
@@ -1762,9 +1833,7 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
 
 }
 </code></pre>
-              <p>The keyword <code>extends</code> indicates one class inheriting from another.</p>
-              <p>A class declaration for a MountainBike class that is a subclass of Bicycle might look like this:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MountainBike</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bicycle</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MountainBike</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Bicycle</span> </span>{
 
     <span class="hljs-comment">// the MountainBike subclass adds one field</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> seatHeight;
@@ -1781,20 +1850,22 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
     }
 }
 </code></pre>
-              <p><code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and a method to set it. Except for the constructor, it is as if you had written a new <code>MountainBike</code>                class entirely from scratch, with four fields and five methods. However, you didn't have to do all the work. This would be especially valuable if the methods in the <code>Bicycle</code> class were complex and had taken substantial time
-                to debug.</p>
+              </box>
+              <p><strong>A subclass inherits all the fields and methods of the superclass.</strong> In the example above, <code>MountainBike</code> inherits all the fields and methods of <code>Bicycle</code> and adds the field <code>seatHeight</code> and
+                a method to set it.</p>
               <h5 id="accessing-superclass-members">Accessing Superclass Members</h5>
-              <p>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword super. You can also use super to refer to a hidden field (although hiding fields is discouraged). Consider this
-                class, Superclass:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
+              <p><strong>If your method overrides one of its superclass's methods, you can invoke the overridden method through the use of the keyword <code>super</code>.</strong> You can also use <code>super</code> to refer to a
+                <tooltip content="when both the superclass and the subclass use the same variable name, the superclass variables is said to be _hidden/shadowed_ by the subclass variable">hidden field</tooltip> (although hiding fields is discouraged).</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Consider this class, <code>Superclass</code> and a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Superclass</span> </span>{
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printMethod</span><span class="hljs-params">()</span> </span>{
         System.out.println(<span class="hljs-string">"Printed in Superclass."</span>);
     }
 }
 </code></pre>
-              <p>Here is a subclass, called <code>Subclass</code>, that overrides <code>printMethod()</code>:</p>
-              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subclass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Superclass</span> </span>{
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Subclass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Superclass</span> </span>{
 
     <span class="hljs-comment">// overrides printMethod in Superclass</span>
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printMethod</span><span class="hljs-params">()</span> </span>{
@@ -1807,139 +1878,122 @@ System.out.printf(<span class="hljs-string">"Hello %s, age %d\n"</span>, name, a
     }
 }
 </code></pre>
-              <p>Within <code>Subclass</code>, the simple name <code>printMethod()</code> refers to the one declared in <code>Subclass</code>, which overrides the one in <code>Superclass</code>. So, to refer to <code>printMethod()</code> inherited from <code>Superclass</code>,
-                <code>Subclass</code> must use a qualified name, using super as shown. Compiling and executing <code>Subclass</code> prints the following:</p>
-              <pre class="hljs"><code>Printed in Superclass.
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>Printed in Superclass.
 Printed in Subclass
 </code></pre>
-            </blockquote>
-            <panel type="seamless" header="<span class='fas fa-cube'></span> Another example of method overriding">
-              <p>A simple example where the <code>Report#print()</code> method is overridden by <code>EvaluationReport#print()</code> method:</p>
-              <pre><code class="hljs java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EvaluationReport</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Report</span></span>{
-
-    <span class="hljs-meta">@Override</span>  <span class="hljs-comment">// this annotation is optional</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>{
-        System.out.println(<span class="hljs-string">"Printing evaluation report"</span>);
-    }
-
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReportMain</span></span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
-        Report report = <span class="hljs-keyword">new</span> Report();
-        report.print(); <span class="hljs-comment">// prints "Printing report"</span>
-
-        EvaluationReport evaluationReport = <span class="hljs-keyword">new</span> EvaluationReport();
-        evaluationReport.print(); <span class="hljs-comment">// prints "Printing evaluation report"</span>
-    }
-}
-</code></pre>
-              <p><span class="fas fa-arrow-down"></span></p>
-              <pre class="hljs"><code>Printing report
-Printing evaluation report
-</code></pre>
-            </panel>
-            <blockquote>
+                <p>Within <code>Subclass</code>, the simple name <code>printMethod()</code> refers to the one declared in <code>Subclass</code>, which overrides the one in <code>Superclass</code>. So, to refer to <code>printMethod()</code> inherited from
+                  <code>Superclass</code>, <code>Subclass</code> must use a qualified name, using super as shown. Compiling and executing <code>Subclass</code> prints the following:</p>
+              </box>
               <h5 id="subclass-constructors">Subclass Constructors</h5>
-              <p>The following example illustrates how to use the <code>super</code> keyword to invoke a superclass's constructor. Recall from the <code>Bicycle</code> example that <code>MountainBike</code> is a subclass of <code>Bicycle</code>. Here is
-                the <code>MountainBike</code> (subclass) constructor that calls the superclass constructor and then adds initialization code of its own:</p>
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MountainBike</span><span class="hljs-params">(<span class="hljs-keyword">int</span> startHeight, <span class="hljs-keyword">int</span> startSpeed, <span class="hljs-keyword">int</span> startGear)</span> </span>{
+              <p><strong>A subclass constructor can invoke the superclass constructor.</strong> Invocation of a superclass constructor must be the first line in the subclass constructor. The syntax for calling a superclass constructor is <code>super();</code>                or <code>super(parameter list);</code> With <code>super()</code>, the superclass no-argument constructor is called. With <code>super(parameter list)</code>, the superclass constructor with a matching parameter list is called.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> The following example illustrates how to use the <code>super</code> keyword to invoke a superclass's constructor. Recall from the <code>Bicycle</code> example that <code>MountainBike</code> is a subclass
+                  of <code>Bicycle</code>. Here is the <code>MountainBike</code> (subclass) constructor that calls the superclass constructor and then adds initialization code of its own:</p>
+                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MountainBike</span><span class="hljs-params">(<span class="hljs-keyword">int</span> startHeight, <span class="hljs-keyword">int</span> startSpeed, <span class="hljs-keyword">int</span> startGear)</span> </span>{
     <span class="hljs-keyword">super</span>(startSpeed, startGear);
     seatHeight = startHeight;
 }
 </code></pre>
-              <p>Invocation of a superclass constructor must be the first line in the subclass constructor. The syntax for calling a superclass constructor is <code>super();</code> or <code>super(parameter list);</code></p>
-              <p>With <code>super()</code>, the superclass no-argument constructor is called. With <code>super(parameter list)</code>, the superclass constructor with a matching parameter list is called.</p>
-              <p>Note: If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the super class does not have a no-argument constructor, you
-                will get a compile-time error. Object does have such a constructor, so if Object is the only superclass, there is no problem.</p>
-              <p>If a subclass constructor invokes a constructor of its superclass, either explicitly or implicitly, you might think that there will be a whole chain of constructors called, all the way back to the constructor of <code>Object</code>. In fact,
-                this is the case. It is called constructor chaining, and you need to be aware of it when there is a long line of class descent.</p>
+              </box>
+              <p>Note: If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. If the superclass does not have a no-argument constructor, you will
+                get a compile-time error. <code>Object</code> does have such a constructor, so if <code>Object</code> is the only superclass, there is no problem.</p>
               <h5 id="access-modifiers">Access Modifiers</h5>
-              <p>Access level modifiers determine whether other classes can use a particular field or invoke a particular method. There are two levels of access control:</p>
-              <ul>
-                <li>At the top level—<code>public</code>, or <em>package-private</em> (no explicit modifier).</li>
-                <li>At the member level—<code>public</code>, <code>private</code>, <code>protected</code>, or <em>package-private</em> (no explicit modifier).</li>
-              </ul>
-              <p>A class may be declared with the modifier <code>public</code>, in which case that class is visible to all classes everywhere. If a class has no modifier (the default, also known as <em>package-private</em>), it is visible only within its
-                own package (packages are named groups of related classes — you will learn about them in a later lesson.)</p>
-              <p>At the member level, you can also use the <code>public</code> modifier or no modifier (<em>package-private</em>) just as with top-level classes, and with the same meaning. For members, there are two additional access modifiers: <code>private</code>                and <code>protected</code>. The <code>private</code> modifier specifies that the member can only be accessed in its own class. The <code>protected</code> modifier specifies that the member can only be accessed within its own package (as
-                with package-private) and, in addition, by a subclass of its class in another package.</p>
+              <p><strong>Access level modifiers determine whether other classes can use a particular field or invoke a particular method.</strong></p>
+              <p>There are two levels of access control:</p>
+              <ol>
+                <li>
+                  <p><strong>At the class level—<code>public</code>, or <em>package-private</em> (no explicit modifier)</strong>:<br></p>
+                  <ul>
+                    <li><code>public</code>: the class is visible to all classes everywhere</li>
+                    <li>no modifier (the default, also known as <em>package-private</em>): it is visible only within its own package (packages are named groups of related classes)<br><br></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>At the member level—<code>public</code>, <code>private</code>, <code>protected</code>, or <em>package-private</em> (no explicit modifier)</strong>:<br> At this level, you can also use the <code>public</code> modifier or no modifier
+                    (<em>package-private</em>) just as with top-level classes, and with the same meaning. In addition, you can use <code>private</code> and <code>protected</code>.</p>
+                  <ul>
+                    <li><code>private</code>: the member can only be accessed in its own class</li>
+                    <li><code>protected</code>: the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package</li>
+                  </ul>
+                </li>
+              </ol>
               <p>The following table shows the access to members permitted by each modifier.</p>
-              <div class="table-responsive">
-                <table class="markbind-table table table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th>Modifier</th>
-                      <th>Class</th>
-                      <th>Package</th>
-                      <th>Subclass</th>
-                      <th>World</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>public</td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>protected</td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>no modifier</td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>private</td>
-                      <td><span style="color:green"><span class="fas fa-check"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                      <td><span style="color:red"><span class="fas fa-times"></span></span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="indented">
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Modifier</th>
+                        <th>
+                          <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
+                        </th>
+                        <th>
+                          <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
+                        </th>
+                        <th>
+                          <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
+                        </th>
+                        <th>
+                          <tooltip content="whether all classes have access to the member">World</tooltip>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>public</td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>protected</td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>no modifier</td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>private</td>
+                        <td><span style="color:green"><span class="fas fa-check"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                        <td><span style="color:red"><span class="fas fa-times"></span></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-              <p>The first data column indicates whether the class itself has access to the member defined by the access level. As you can see, a class always has access to its own members. The second column indicates whether classes in the same package
-                as the class (regardless of their parentage) have access to the member. The third column indicates whether subclasses of the class declared outside this package have access to the member. The fourth column indicates whether all classes
-                have access to the member.</p>
-              <p>Access levels affect you in two ways. First, when you use classes that come from another source, such as the classes in the Java platform, access levels determine which members of those classes your own classes can use. Second, when you
-                write a class, you need to decide what access level every member variable and every method in your class should have.</p>
-            </blockquote>
+              <p>Access levels affect you in two ways:</p>
+              <ol>
+                <li>When you use classes that come from another source, such as the classes in the Java platform, access levels determine which members of those classes your own classes can use.</li>
+                <li>When you write a class, you need to decide what access level every member variable and every method in your class should have.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
@@ -1951,53 +2005,102 @@ Printing evaluation report
         </h4>
         <div class="indented-less">
           <div>
+            <p>As you know, all Java objects inherit from the <code>Object</code> class. Let us look at some of the useful methods in the <code>Object</code> class that can be used by other classes.</p>
             <h5 id="the-tostring-method">The <code>toString</code> method</h5>
             <div class="indented">
-              <p>Suppose you defined a class called <code>Time</code>, to represent a moment in time. If you create a <code>Time</code> object and display it with println:</p>
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-    Time time = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">59.9</span>);
-    System.out.println(time);
+              <p><strong>Every class inherits a <code>toString</code> method from the <code>Object</code> class that is used by Java to get a string representation of the object</strong> <span class="dimmed">e.g., for printing</span>. By default it simply
+                returns the type of the object and its address (in hexadecimal).</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Suppose you defined a class called <code>Time</code>, to represent a moment in time. If you create a <code>Time</code> object and display it with println:</p>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+    <span class="hljs-keyword">int</span> hours;
+    <span class="hljs-keyword">int</span> minutes;
+    <span class="hljs-keyword">int</span> seconds;
+
+    Time(<span class="hljs-keyword">int</span> hours, <span class="hljs-keyword">int</span> minutes, <span class="hljs-keyword">int</span> seconds) {
+        <span class="hljs-keyword">this</span>.hours = hours;
+        <span class="hljs-keyword">this</span>.minutes = minutes;
+        <span class="hljs-keyword">this</span>.seconds = seconds;
+    }
 }
 </code></pre>
-              <p>The output will look something like: <code>Time@80cc7c0</code></p>
-              <p>When Java displays the value of an object type, it displays the name of the type and the address of the object (in hexadecimal).</p>
-              <p><strong>Every object type has a method called <code>toString</code> that returns a string representation of the object.</strong> By default it simply displays the type of the object and its address, but you can override this behavior by
-                providing your own toString <a href="http://method.To">method.To</a> display <code>Time</code> objects in a way that is more meaningful to users (e.g., to display the hour, minute, and second), you can override that method in the <code>Time</code>                class. Reason: when you display an object using <code>print</code> or <code>println</code>, Java invokes the object’s <code>toString</code> method.</p>
-              <p>For example, here is a toString method for Time:</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Override</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">return</span> String.format(<span class="hljs-string">"%02d:%02d:%04.1f\n"</span>,
-        <span class="hljs-keyword">this</span>.hour, <span class="hljs-keyword">this</span>.minute, <span class="hljs-keyword">this</span>.second);
+                <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+ System.out.println(t);
+</code></pre>
+                <p><span class="fas fa-arrow-right"></span> <code>Time@80cc7c0</code> <span class="dimmed">(the address part can vary)</span></p>
+              </box>
+              <p><strong>You can override the <code>toString</code> method in your classes</strong> to provide more meaningful string representation of the objects of that class.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Here's an example of overriding the <code>toString</code> method of the <code>Time</code> class:</p>
+                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span></span>{
+
+   <span class="hljs-comment">//...</span>
+
+   <span class="hljs-meta">@Override</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
+       <span class="hljs-keyword">return</span> String.format(<span class="hljs-string">"%02d:%02d:%02d\n"</span>, <span class="hljs-keyword">this</span>.hours, <span class="hljs-keyword">this</span>.minutes, <span class="hljs-keyword">this</span>.seconds);
+   }
 }
 </code></pre>
+                <pre><code class="hljs java"> Time t = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+ System.out.println(t);
+</code></pre>
+                <p><span class="fas fa-arrow-right"></span> <code>05:20:13</code></p>
+              </box>
               <p>💡 <code>@Override</code> is an optional annotation you can use to indicate that the method is overriding a method from the parent class.</p>
             </div>
             <h5 id="the-equals-method">The <code>equals</code> method</h5>
             <div class="indented">
-              <p>We have seen two ways to check whether values are equal: the <code>==</code> operator and the <code>equals</code> method. With objects you can use either one, but they are not the same.</p>
+              <p><strong>There two ways to check whether values are equal: the <code>==</code> operator and the <code>equals</code> method. With objects you can use either one, but they are not the same.</strong></p>
               <ul>
                 <li>The <code>==</code> operator checks whether objects are identical; that is, whether they are the same object.</li>
                 <li>The <code>equals</code> method checks whether they are equivalent; that is, whether they have the same value.</li>
               </ul>
-              <p>The definition of identity is always the same, so the <code>==</code> operator always does the same thing. But the definition of equivalence is different for different objects, so objects can define their own <code>equals</code> methods.
-                Consider the following variables:</p>
-              <pre><code class="hljs java">Time time1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0.0</span>);
+              <p>The definition of identity is always the same, so the <code>==</code> operator always does the same thing.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Consider the following variables:</p>
+                <pre><code class="hljs java">Time time1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
 Time time2 = time1;
-Time time3 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0.0</span>);
+Time time3 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">9</span>, <span class="hljs-number">30</span>, <span class="hljs-number">0</span>);
 </code></pre>
-              <ul>
-                <li>The assignment operator copies references, so <code>time1</code> and <code>time2</code> refer to the same object. Because they are identical, <code>time1 == time2</code> is <code>true</code>.</li>
-                <li>But <code>time1</code> and <code>time3</code> refer to different objects. Because they are not identical, <code>time1 == time3</code> is <code>false</code>.</li>
-              </ul>
-              <p>By default, the <code>equals</code> method does the same thing as <code>==</code>. For <code>Time</code> objects, that’s probably not what we want. For example, <code>time1</code> and <code>time3</code> represent the same time of day, so
-                we should consider them equivalent. We can overrid the <code>equals</code> method of the <code>Time</code> class (inherited from the <code>Object</code> class) to provide an <code>equals</code> method that implements this notion of equivalence:</p>
-              <pre><code class="hljs java"><span class="hljs-meta">@Override</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Time that)</span> </span>{
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hour == that.hour
-        &amp;&amp; <span class="hljs-keyword">this</span>.minute == that.minute
-        &amp;&amp; <span class="hljs-keyword">this</span>.second == that.second;
+                <ul>
+                  <li>The assignment operator copies references, so <code>time1</code> and <code>time2</code> refer to the same object. Because they are identical, <code>time1 == time2</code> is <code>true</code>.</li>
+                  <li>But <code>time1</code> and <code>time3</code> refer to different objects. Because they are not identical, <code>time1 == time3</code> is <code>false</code>.</li>
+                </ul>
+              </box>
+              <p>By default, the <code>equals</code> method inherited from the <code>Object</code> class does the same thing as <code>==</code>. <strong>As the definition of equivalence is different for different classes, you can override the <code>equals</code> method to define your own criteria for equivalence</strong>                of objects of your class.</p>
+              <box>
+                <p><span class="fas fa-cube"></span> Here's how you can override the <code>equals</code> method of the <code>Time</code> class to provide an <code>equals</code> method that considers two <code>Time</code> objects equivalent as long as they
+                  represent the same time of the day:</p>
+                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Time</span> </span>{
+    <span class="hljs-keyword">int</span> hours;
+    <span class="hljs-keyword">int</span> minutes;
+    <span class="hljs-keyword">int</span> seconds;
+
+    <span class="hljs-comment">// ...</span>
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span> </span>{
+        Time other = (Time) o;
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.hours == other.hours
+                &amp;&amp; <span class="hljs-keyword">this</span>.minutes == other.minutes
+                &amp;&amp; <span class="hljs-keyword">this</span>.seconds == other.seconds;
+    }
 }
 </code></pre>
+                <pre><code class="hljs java">Time t1 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+Time t2 = <span class="hljs-keyword">new</span> Time(<span class="hljs-number">5</span>, <span class="hljs-number">20</span>, <span class="hljs-number">13</span>);
+System.out.println(t1 == t2);
+System.out.println(t1.equals(t2));
+</code></pre>
+                <p><span class="fas fa-arrow-down"></span></p>
+                <pre class="hljs"><code>false
+true
+</code></pre>
+                <p>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Note that a proper <code>equals</code> method implementation is more complex than the example above. See the article <a href="https://www.sitepoint.com/implement-javas-equals-method-correctly/"><em>How to Implement Java’s equals Method Correctly</em> by Nicolai Parlog</a>                  for a detailed explanation before you implement your own <code>equals</code> method.
+                </p>
+              </box>
             </div>
           </div>
         </div>
@@ -2740,7 +2843,7 @@ Number of keys after clearing: 0
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Fri, 24 Aug 2018 14:24:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 27 Aug 2018 12:04:50 GMT</small></div>
 </footer>
 </div>
 </body>

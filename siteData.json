@@ -676,6 +676,7 @@
         "accessing-substrings": "Accessing substrings",
         "searching-within-strings": "Searching within strings",
         "comparing-strings": "Comparing Strings",
+        "printing-special-characters-line-breaks-tabs": "Printing special characters (line breaks, tabs, ...)",
         "string-formatting": "String formatting",
         "some-useful-classes": "Some Useful Classes",
         "inheritance-basic": "Inheritance (Basic)",
