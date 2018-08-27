@@ -1,20 +1,22 @@
-2018-08-13T04:40:38.858Z - info: Website generation started at 12:40:24
-2018-08-13T04:41:05.939Z - info: Building assets...
-2018-08-13T04:41:26.614Z - info: Assets built
-2018-08-13T04:41:26.614Z - info: Generating pages...
-2018-08-13T04:43:18.758Z - info: Pages built
-2018-08-13T04:43:19.371Z - info: Site data built
-2018-08-13T04:43:19.371Z - info: Website generation complete! Total build time: 175.052s
-2018-08-13T04:43:19.390Z - info: Generate Site durationMs=175069
-2018-08-13T04:43:19.913Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-08-13T04:43:19.913Z - info: Press CTRL+C to stop ...
-2018-08-13T04:49:22.589Z - info: Website generation started at 12:49:17
-2018-08-13T04:49:28.916Z - info: Building assets...
-2018-08-13T04:49:41.848Z - info: Assets built
-2018-08-13T04:49:41.848Z - info: Generating pages...
-2018-08-13T04:51:18.789Z - info: Pages built
-2018-08-13T04:51:19.043Z - info: Site data built
-2018-08-13T04:51:19.043Z - info: Website generation complete! Total build time: 121.601s
-2018-08-13T04:51:19.043Z - info: Build success!
-2018-08-13T04:51:19.044Z - info: Generate Site durationMs=121601
-2018-08-13T04:52:29.048Z - info: Deployed!
+2018-08-12T16:12:56.171Z - info: Website generation started at 00:12:53
+2018-08-12T16:12:57.508Z - info: Building assets...
+2018-08-12T16:12:59.389Z - info: Assets built
+2018-08-12T16:12:59.389Z - info: Generating pages...
+2018-08-12T16:14:21.524Z - info: Pages built
+2018-08-12T16:14:21.593Z - info: Site data built
+2018-08-12T16:14:21.593Z - info: Website generation complete! Total build time: 88.106s
+2018-08-12T16:14:21.605Z - info: Generate Site durationMs=88118
+2018-08-12T16:14:21.640Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-12T16:14:21.641Z - info: Press CTRL+C to stop ...
+2018-08-12T16:16:23.112Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w12-mid-v14.md
+2018-08-12T16:16:23.124Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w04-mid-v10.md
+2018-08-12T16:16:23.136Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md
+2018-08-12T16:16:23.152Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md
+2018-08-12T16:16:23.164Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w09-v12.md
+2018-08-12T16:16:23.168Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w07-v11.md
+2018-08-12T16:16:23.168Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w11-v13.md
+2018-08-12T16:16:23.176Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md
+2018-08-12T16:16:23.184Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-08-12T16:16:23.201Z - info: [00:16:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-08-12T16:16:24.121Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w12-mid-v14.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w04-mid-v10.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w09-v12.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w07-v11.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w11-v13.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-08-12T16:16:24.153Z - info: Rebuilding 32 pages
