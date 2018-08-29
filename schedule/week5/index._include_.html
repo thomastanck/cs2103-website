@@ -110,23 +110,26 @@
       </panel>
     </div>
     <p></p>
-    <p><span class="activity-desc">Implementation</span></p>
+    <p><span class="activity-desc">Design</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.2</code> <strong>Can implement inheritance</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+        <span slot="header" class="card-title"><span><code>W5.2</code> <strong>Can explain models</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
           aria-hidden="true"></span></span>
         </span>
         </span>
-        <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the meaning of inheritance</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+        </span>
+        <panel type="warning" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain models</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
-            class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
             </span>
             </span>
             <div>
               <div></div>
               <p></p>
-              <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
+              <p><span class="dimmed"><strong><span>Design → Modelling → Introduction →
 </span></strong>
                 </span>
               </p>
@@ -136,62 +139,466 @@
                 </div>
                 <div id="main">
                   <div>
-                    <p><strong>The OOP concept <em>Inheritance</em> allows you to define a new class based on an existing class.</strong></p>
+                    <p><strong>A <em>model</em> is a representation of something else.</strong></p>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> For example, you can use inheritance to define an <code>EvaluationReport</code> class based on an existing <code>Report</code> class so that the <code>EvaluationReport</code> class does not have
-                        to duplicate code that is already implemented in the <code>Report</code> class. The <code>EvaluationReport</code> can inherit the <code>wordCount</code> attribute and the <code>print()</code> method from the <em>base class</em>                        <code>Report</code>.</p>
+                      <p><span class="fas fa-cube"></span> A
+                        <trigger trigger="click" for="modal:modellingIntro-classDiagram">class diagram</trigger> is a model that represents a software design.</p>
                     </tip-box>
-                    <ul>
-                      <li>Other names for Base class: <em>Parent</em> class, <em>Super</em> class</li>
-                      <li>Other names for Derived class: <em>Child</em> class, <em>Sub</em> class, <em>Extended</em> class</li>
-                    </ul>
-                    <p><strong>A super class is said to be <em>more general</em> than the sub class.</strong> Conversely, a sub class is said to be more <em>specialized</em> than the super class.</p>
-                    <p><strong>Applying inheritance on a group of similar classes can result in the common parts among classes being extracted into more general classes.</strong></p>
+                    <modal large="" title="Class diagrams" id="modal:modellingIntro-classDiagram">
+                      <p>A <em>class diagram</em> is a diagram drawn using the UML modelling notation.<br>
+                        <span class="fas fa-cube"></span> An example class diagram:<br></p>
+                      <img src="/cs2103-website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="600"></modal>
+                    <p><strong>A <em>model</em> provides a simpler view of a complex entity because a model captures only a selected aspect.</strong> This omission of some aspects implies models are
+                      <trigger trigger="click" for="modal:modellingIntro-abstraction">abstractions</trigger>.</p>
+                    <modal large="" title="%%Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>%%" id="modal:modellingIntro-abstraction">
+                    
+                      <div>
+                        <div></div>
+                        <p></p>
+                        <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
+</span></strong>
+                          </span>
+                        </p>
+                        <div id="title-and-body">
+                          <div>
+                            <h4 id="what-2">What</h4>
+                          </div>
+                          <div id="main">
+                            <div>
+                              <tip-box type="definition">
+                                <div>
+                                  <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or
+                                    irrelevant to that aspect).</p>
+                                </div>
+                              </tip-box>
+                              <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture
+                                only details that are relevant to the current perspective or the task at hand.</p>
+                              <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>.
+                                  These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
+                              </tip-box>
+                              <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
+                              </tip-box>
+                              <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
+                              <tip-box>
+                                <p><span class="fas fa-cube"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+                                <p><span class="fas fa-cube"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction
+                                  <code>MOV</code>.</p>
+                              </tip-box>
+                            </div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </modal>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> <code>Man</code> and <code>Woman</code> behaves the same way for certain things. However, the two classes cannot be simply replaced with a more general class <code>Person</code> because of the need
-                        to distinguish between <code>Man</code> and <code>Woman</code> for certain other things. A solution is to add the <code>Person</code> class as a super class (to contain the code common to men and woment) and let <code>Man</code>                        and <code>Woman</code> inherit from <code>Person</code> class.</p>
+                      <p><span class="fas fa-cube"></span> A class diagram captures the structure of the software design but not the behavior.</p>
                     </tip-box>
-                    <p><strong>Inheritance implies the derived class can be considered as a <em>sub-type</em> of the base class (and the base class is a <em>super-type</em> of the derived class), resulting in an <em>is a</em> relationship.</strong></p>
-                    <p><span class="dimmed"><span class="fas fa-info-circle"></span> Inheritance does not necessarily mean a sub-type relationship exists. However, the two often go hand-in-hand. For simplicity, at this point let us assume inheritance implies
-                      a sub-type relationship.</span>
-                    </p>
+                    <p><strong>Multiple models of the same entity may be needed to capture it fully.</strong></p>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> To continue the previous example,</p>
-                      <ul>
-                        <li><code>Woman</code> <em>is a</em> <code>Person</code></li>
-                        <li><code>Man</code> <em>is a</em> <code>Person</code></li>
-                      </ul>
+                      <p><span class="fas fa-cube"></span> In addition to a class diagram (or even multiple class diagrams), a number of other diagrams may be needed to capture various interesting aspects of the software.</p>
                     </tip-box>
-                    <p><strong>Inheritance relationships through a chain of classes can result in inheritance <em>hierarchies</em> (aka inheritance <em>trees</em>).</strong></p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="info" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how models are used</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Introduction →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="how">How</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>In software development, models are useful in several ways:</strong></p>
+                    <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> Two inheritance hierarchies/trees are given below. <span class="dimmed">Note that the triangle points to the parent class.</span> Observe how the <code>Parrot</code> <em>is a</em> <code>Bird</code>                        as well as it <em>is an</em> <code>Animal</code>.</p>
-                      <img src="/cs2103-website/book/oop/inheritance/what/images/inheritanceTreesExamples.png" width="500">
-                      <p></p>
+                      <p><span class="fas fa-cube"></span> Some examples of using models for analysis:</p>
+                      <ol>
+                        <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
+                        <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
+                      </ol>
                     </tip-box>
-                    <p><strong><em>Multiple Inheritance</em> is when a class inherits <em>directly</em> from multiple classes.</strong> Multiple inheritance among classes is allowed in some languages (e.g., Python, C++) but not in other languages (e.g.,
-                      Java, C#).</p>
+                    <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> The <code>Honey</code> class inherits from the <code>Food</code> class <em>and</em> the <code>Medicine</code> class <span class="dimmed">because honey can be consumed as a food as well as a medicine (in some oriental medicine practices)</span>.
-                        Similarly, a <code>Car</code> is an <code>Vehicle</code>, an <code>Asset</code> and a <code>Liability</code>.</p>
-                      <img src="/cs2103-website/book/oop/inheritance/what/images/multipleInheritanceExamples.png" width="440"></tip-box>
+                      <p><span class="fas fa-cube"></span> Some examples of using models to communicate:</p>
+                      <ol>
+                        <li>We can use an
+                          <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
+                        <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
+                        <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
+                      </ol>
+                    </tip-box>
+                    <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                      <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
+                      <div>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Some example architecture diagrams:</p>
+                          <tabs>
+                          
+                            <tab header="TEAMMATES">
+                              <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          
+                            <tab header="se-edu/addressbook-level4">
+                              <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          
+                            <tab header="Example 1">
+                              <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                                <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          
+                            <tab header="Example 2">
+                              <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                                <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          
+                            <tab header="Example 3">
+                              <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                                <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                              <p>
+                                <hr>
+                              </p>
+                            </tab>
+                          </tabs>
+                        </tip-box>
+                      </div>
+                    </modal>
+                    <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Some examples of using models to as blueprints:</p>
+                      <ol>
+                        <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
+                        <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
+                      </ol>
+                    </tip-box>
+                    <tip-box>
+
+                      <panel type="seamless">
+                        <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary">tangential</span></span>
+                        <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploit models as blueprints.</strong> MDD uses models as primary engineering
+                          artifacts when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can even
+                          involve manual translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to generate
+                          code from models and maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise, but it
+                          is still an emerging technology</p>
+                        <p>Further reading:</p>
+                        <ul>
+                          <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
+                          <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
+                        </ul>
+                      </panel>
+                    </tip-box>
                   </div>
                   <div>
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which statements are correct">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about models">
                             <question>
-                              <p>Which of these are correct?</p>
+                              <p>Choose the correct statements about models.</p>
                               <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Super class is more general than the sub class.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Child class is more specialized than the parent class.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A class can inherit behavior from its ancestor classes (ancestor classes = classes above it in the inheritance hierarchy).</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Code reuse can be one benefit of inheritance.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. A change to the super class will not affect its sub classes.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
                               </ul>
                               <div slot="answer">
-                                <p>(a) (b) (c) (d)</p>
-                                <p>Explanation: (e) is incorrect. Because sub classes inherit behavior from the super class, any changes to the super class could affect sub classes.</p>
+                                <p>(a) (b) (c) (e)</p>
+                                <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project">
+                            <question>
+                              <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
+                              <div slot="hint">
+                                <p>Can models be useful in evaluating the design quality of a software written by students?</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <div>
+                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project">
+                  <question>
+                    <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
+                    <div slot="hint">
+                      <p>Can models be useful in evaluating the design quality of a software written by students?</p>
+                    </div>
+                  </question>
+                </panel>
+              </div>
+            </div>
+        </panel>
+      </panel>
+      <panel no-close="" expandable="true">
+        <span slot="header" class="card-title"><span><code>W5.3</code> <strong>Can explain basic object/class structures</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <panel type="danger" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain structure modelling of OO solutions</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/cs2103-website\book\oop\classes\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Design → OOP → Classes → Basic%%"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="oo-structures">OO Structures</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>An OO solution is basically a network of objects interacting with each other. Therefore, <strong>it is useful to be able to model how the relevant objects are 'networked' together</strong> inside a software <span class="dimmed"> i.e. how the objects are connected together</span>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Given below is an illustration of some objects and how they are connected together. <span class="dimmed"> Note: the diagram uses an ad-hoc notation.</span></p>
+                    <p><img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc.png" width="500"></p>
+                    <p></p>
+                    <p></p>
+                  </tip-box>
+                  <p>Note that these <strong>object structures within the same software can change over time</strong>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Given below is how the object structure in the previous example could have looked like at a different time.</p>
+                    <p><img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/objectsAdHoc2.png" width="500"></p>
+                    <p></p>
+                    <p></p>
+                  </tip-box>
+                  <p>However, object structures do not change at random; they change based on a set of rules, as was decided by the designer of that software. Those <strong>rules that object structures need to follow can be illustrated as a <em>class structure</em></strong>                    <span class="dimmed"> i.e. a structure that exists among the relevant classes</span>.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Here is a class structure (drawn using an ad-hoc notation) that matches the object structures given in the previous two examples. For example, note how this class structure does not allow any connection
+                      between <code>Genre</code> objects and <code>Author</code> objects, a rule followed by the two object structures above.</p>
+                    <p><img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/classesAdHoc.png" width="500"></p>
+                    <p></p>
+                    <p></p>
+                  </tip-box>
+                  <p>UML <em>Object Diagrams</em> are used to model object structures and UML <em>Class Diagrams</em> are used to model class structures of an OO solution.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Here is an object diagram for the above example:</p>
+                    <p><img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" width="500">
+                      <p><span class="fas fa-cube"></span> And here is the class diagram for it:</p>
+                    </p>
+                    <p><img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/classDiagram.png" width="500"></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="danger" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can use basic-level class diagrams</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div>
+              <p>
+                <panel src="/cs2103-website\book\oop\classes\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Design → OOP → Classes → Basic%%"></panel>
+              </p>
+            </div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="class-diagrams-basics">Class Diagrams (Basics)</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+                  <p>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classes\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Classes → What"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Classes" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classLevelMembers\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Class-Level Members → What"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Class-Level Members" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → What"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Associations" fragment="main"></panel>
+                  </p>
+                  <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> An example class diagram showing associations between classes.</p>
+                    <p></p><img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPersonMinimal.png" width="450">
+                    <p></p>
+                  </tip-box>
+                  <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
+                  <p>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\labels\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Labels"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Labels" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\roles\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Roles"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Roles" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\multiplicity\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Multiplicity"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Multiplicity" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\navigability\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Navigability"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Navigability" fragment="main"></panel>
+                  </p>
+                  <tip-box>
+                    <p><span class="fas fa-cube"></span> Here is the same class diagram shown earlier but with some additional information included:</p>
+                    <p></p><img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+                    <p></p>
+                  </tip-box>
+                </div>
+                <div>
+                  <div>
+                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which association notations are shown?">
+                          <question>
+                            <p>Which association notatations are shown in this diagram?</p>
+                            <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
+                            <p></p>
+                            <ul class="task-list">
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
+                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
+                            </ul>
+                            <div slot="answer">
+                              <p>(a) (b) (c) (d)</p>
+                              <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+                          <question>
+                            <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                            <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                            <p></p>
+                          </question>
+                        </panel>
+                      </div>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+          <div>
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+                <question>
+                  <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                  <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                </question>
+              </panel>
+            </div>
+          </div>
+        </panel>
+        <panel type="warning" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span
+            class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            </span>
+            </span>
+            </span>
+            </span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → UML →
+</span></strong>
+                </span>
+              </p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="object-vs-class-diagrams">Object vs Class Diagrams</h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Compared to the notation for a class diagrams, object diagrams differ in the following ways:</p>
+                    <ul>
+                      <li>Shows objects instead of classes:
+                        <ul>
+                          <li>Instance name may be shown</li>
+                          <li>There is a <code>:</code> before the class name</li>
+                          <li>Instance and class names are underlined</li>
+                        </ul>
+                      </li>
+                      <li>Methods are omitted</li>
+                      <li>Multiplicities are omitted</li>
+                    </ul>
+                    <p>Furthermore, <strong>multiple object diagrams can correspond to a single class diagram</strong>.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Both object diagrams are derived from the same class diagram shown earlier. In other words, each of these object diagrams shows ‘an instance of’ the same class diagram.</p>
+                      <img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudentAdmin.png" height="85">
+                      <p></p>
+                      <img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/professorStudent.png" height="150">
+                      <p></p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which class diagrams match object diagram?">
+                            <question>
+                              <p>Which of these class diagrams match the given object diagram?</p>
+                              <img src="/cs2103-website/book/uml/miscellaneous/objectVsClassDiagrams/images/exerciseDiagram.png" height="330">
+                              <p></p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b</li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a) (b)</p>
+                                <p>Explanation: Both class diagrams allow one <code>Unit</code> object to be linked to one <code>Item</code> object.</p>
                               </div>
                             </question>
                           </panel>
@@ -205,79 +612,82 @@
         </panel>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.3</code> <strong>Can implement class-level members</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-          aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W5.4</code> <strong>Can explain single responsibility principle</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
-        <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain class-level members</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+        <panel type="info" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
-            class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
               <div></div>
               <p></p>
-              <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Classes →
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
                 </span>
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="class-level-members">Class-Level Members</h4>
+                  <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
                 </div>
                 <div id="main">
                   <div>
-                    <p>While all objects of a class has the same attributes, each object has its own copy of the attribute value.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> All <code>Person</code> objects have the <code>Name</code> attribute but the value of that attribute varies between <code>Person</code> objects.</p>
+                    <tip-box type="primary">
+                      <div>
+                        <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                      </div>
                     </tip-box>
-                    <p>However, some attributes are not suitable to be maintained by individual objects. Instead, they should be maintained centrally, shared by all objects of the class. They are like ‘global variables’ but attached to a specific class.
-                      Such <strong>variables whose value is shared by all instances of a class are called <mark><em>class-level attributes</em></mark></strong>.</p>
+                    <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
                     <tip-box>
-                      <p><span class="fas fa-cube"></span> The attribute <code>totalPersons</code> should be maintained centrally and shared by all <code>Person</code> objects rather than copied at each <code>Person</code> object.</p>
+                      <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when
+                        the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
                     </tip-box>
-                    <p>Similarly, when a normal method is being called, a message is being sent to the receiving object and the result may depend on the receiving object.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Sending the <code>getName()</code> message to <code>Adam</code> object results in the response <code>&quot;Adam&quot;</code> while sending the same message to the <code>Beth</code> object gets the
-                        response <code>&quot;Beth&quot;</code>.</p>
-                    </tip-box>
-                    <p>However, there can be methods related to a specific class but not suitable for sending message to a specific object of that class. Such <strong>methods that are called using the class instead of a specific instance are called <mark><em>class-level methods</em></mark></strong>.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> The method <code>getTotalPersons()</code> is not suitable to send to a specific <code>Person</code> object <span class="dimmed">because a specific object of the <code>Person</code> class should not know about the total number of <code>Person</code> objects</span>.</p>
-                    </tip-box>
-                    <p><strong>Class-level attributes and methods are collectively called <mark><em>class-level members</em></mark></strong> (also called <em>static members</em> sometimes because some programming languages use the keyword <code>static</code>                      to identify class-level members). <strong>They are to be accessed using the class name rather than an instance of the class</strong>.</p>
                   </div>
                   <div>
                     <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Suitable as a class-level variables">
-                            <question>
-                              <p>Which of these are suitable as class-level variables?</p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. system: multi-player Pac Man game, Class: <code>Player</code>, variable: <code>totalScore</code></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. system: eLearning system, class: <code>Course</code>, variable: <code>totalStudents</code></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. system: ToDo manager, class: <code>Task</code>, variable: <code>totalPendingTasks</code></li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. system: any, class: <code>ArrayList</code>, variable: <code>total</code> (i.e., total items in a given <code>ArrayList</code> object)</li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(c)</p>
-                                <p>Explanation: <code>totalPendingTasks</code> should not be managed by individual <code>Task</code> objects and therefore suitable to be maintained as a class-level variable. The other variables should be managed at instance
-                                  level as their value varies from instance to instance. e.g., <code>totalStudents</code> for one <code>Course</code> object will differ from <code>totalStudents</code> of another.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
+                      <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                        <ul>
+                          <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                          <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                          <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                        </ul>
                       </panel>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+              <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+              <div>
+                <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                <p>
+                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                    fragment="tutorial-pr-instructions"></panel>
+                </p>
+              </div>
+            </div>
         </panel>
+      </panel>
+    </div>
+    <p></p>
+    <p><span class="activity-desc">Implementation</span></p>
+    <div class="indented">
+      <panel no-close="" expandable="true">
+        <span slot="header" class="card-title"><span><code>W5.5</code> <strong>Can implement polymorphism</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+          aria-hidden="true"></span></span>
+        </span>
+        </span>
+        <br>
+        <p><span class="dimmed"><strong>Method Overriding</strong></span></p>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overloading</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overloading</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -344,22 +754,8 @@
               </div>
             </div>
         </panel>
-      </panel>
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.4</code> <strong>Can implement overloading</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-          aria-hidden="true"></span></span>
-        </span>
-        </span>
-      </panel>
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.5</code> <strong>Can implement polymorphism</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
-          aria-hidden="true"></span></span>
-        </span>
-        </span>
-        <br>
-        <p><span class="dimmed"><strong>Method Overriding</strong></span></p>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overriding</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain method overriding</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -511,7 +907,7 @@
         <br>
         <p><span class="dimmed"><strong>Polymorphism</strong></span></p>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain OOP polymorphism</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain OOP polymorphism</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -525,7 +921,7 @@
               </p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-2">What</h4>
+                  <h4 id="what-3">What</h4>
                 </div>
                 <div id="main">
                   <div>
@@ -594,7 +990,7 @@
         <br>
         <p><span class="dimmed"><strong>Abstract Classes</strong></span></p>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can implement abstract classes</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can implement abstract classes</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -655,7 +1051,7 @@
         <br>
         <p><span class="dimmed"><strong>Interfaces</strong></span></p>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain interfaces</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain interfaces</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -699,309 +1095,10 @@
       </panel>
     </div>
     <p></p>
-    <p><span class="activity-desc">Quality Assurance</span></p>
-    <div class="indented">
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.6</code> <strong>Can use simple JUnit tests</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        <span
-          class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </span>
-          </span>
-          </span>
-          </span>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain developer testing</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="what-3">What</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for early developer testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="why">Why</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
-                      <ul>
-                        <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may
-                          also be due to multiple inter-related bugs.</li>
-                        <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
-                        <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
-                        <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
-                      </ul>
-                      <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
-                      <blockquote>
-                        <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
-                      </blockquote>
-                      <img src="/cs2103-website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
-                      <p></p>
-                      <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> implications of developers testing their own code">
-                              <question has-input="true">
-                                <p>Discuss pros and cons of developers testing their own code.</p>
-                                <div slot="answer">
-                                  <p>Pros:</p>
-                                  <ul>
-                                    <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
-                                    <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
-                                    <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
-                                    <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
-                                  </ul>
-                                  <p>Cons:</p>
-                                  <ul>
-                                    <li>A developer may unconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
-                                    <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
-                                    <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
-                                    <li>A developer may lack the testing expertise.</li>
-                                  </ul>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Cost of bug fixing over time">
-                              <question>
-                                <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                                <ul radio-group="37242" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>False. The cost goes up over time.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Why early testing?">
-                              <question has-input="true">
-                                <p>Explain why early testing by developers is important.</p>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr style="border-top: dashed 1px; border-color:grey">
-              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-              <div>
-                <div>
-                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Why early testing?">
-                    <question has-input="true">
-                      <p>Explain why early testing by developers is important.</p>
-                    </question>
-                  </panel>
-                </div>
-              </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test drivers</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="test-automation-using-test-drivers">Test Automation Using Test Drivers</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>A test driver is the code that ‘drives’ the <tooltip content="Software Under Test">SUT</tooltip> for the purpose of testing</strong> i.e. invoking the SUT with test inputs and verifying the behavior is as expected.</p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> <code>PayrollTest</code> ‘drives’ the <code>PayRoll</code> class by sending it test inputs and verifies if the output is as expected.</p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestDriver</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
-
-        <span class="hljs-comment">//test setup</span>
-        Payroll p = <span class="hljs-keyword">new</span> Payroll();
-
-        <span class="hljs-comment">//test case 1</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-        <span class="hljs-comment">// automatically verify the response</span>
-        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">6400</span>) {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 1 failed "</span>);
-        }
-
-        <span class="hljs-comment">//test case 2</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-        <span class="hljs-keyword">if</span> (p.totalSalary() != <span class="hljs-number">2300</span>) {
-            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Error(<span class="hljs-string">"case 2 failed "</span>);
-        }
-
-        <span class="hljs-comment">//more tests...</span>
-
-        System.out.println(<span class="hljs-string">"All tests passed"</span>);
-    }
-}
-</code></pre>
-                      </tip-box>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test automation tools</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Automation →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="test-automation-tools">Test Automation Tools</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>JUnit is a tool for automated testing of Java programs.</strong> Similar tools are available for other languages.</p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> This an automated test for a <code>Payroll</code> class, written using JUnit libraries.</p>
-                        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PayrollTestJUnit</span> </span>{
-
-    <span class="hljs-meta">@Test</span>
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">testTotalSalary</span><span class="hljs-params">()</span></span>{
-        Payroll p = <span class="hljs-keyword">new</span> Payroll();
-
-        <span class="hljs-comment">//test case 1</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-        assertEquals(p.totalSalary(), <span class="hljs-number">6400</span>);
-
-        <span class="hljs-comment">//test case 2</span>
-        p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-        assertEquals(p.totalSalary(), <span class="hljs-number">2300</span>);
-
-        <span class="hljs-comment">//more tests...</span>
-    }
-}
-</code></pre>
-                      </tip-box>
-                      <p>Most modern IDEs has integrated support for testing tools. The figure below shows the JUnit output when running some JUnit tests using the Eclipse IDE.</p>
-                      <img src="/cs2103-website/book/testing/testAutomation/tools/images/junit.png" height="190">
-                      <p></p>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-          </panel>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can use simple JUnit tests</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span
-              class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              </span>
-              </span>
-              </span>
-              </span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Tools → JUnit →
-</span></strong>
-                  </span>
-                </p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="junit-basic">JUnit: Basic</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <div v-closeable="" alt="Junit tutorial video" class="non-printable">
-                        <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                          <ul>
-                            <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
-                            <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
-                            <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                              ]</li>
-                          </ul>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr style="border-top: dashed 1px; border-color:grey">
-              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-              <div>
-                <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
-                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#use-junit-to-implement-unit-tests-code-lo-junit-code">Addressbook-Level2: LO-JUnit</a>]</p>
-                <div>
-                  <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
-                  <p>
-                    <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
-                      fragment="tutorial-pr-instructions"></panel>
-                  </p>
-                </div>
-              </div>
-          </panel>
-      </panel>
-    </div>
-    <p></p>
     <p><span class="activity-desc">Project Management</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.7</code> <strong>Can use GitHub PRs in a workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span slot="header" class="card-title"><span><code>W5.6</code> <strong>Can use GitHub PRs in a workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span
           class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </span>
@@ -1009,7 +1106,7 @@
           </span>
           </span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to resolve merge conflicts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to resolve merge conflicts</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -1090,7 +1187,7 @@ white
               </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can review and merge PRs on GitHub</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can review and merge PRs on GitHub</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -1235,7 +1332,7 @@ git pull origin master
           </panel>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.8</code> <strong>Can follow Forking Workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        <span slot="header" class="card-title"><span><code>W5.7</code> <strong>Can follow Forking Workflow</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
         <span
           class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </span>
@@ -1243,7 +1340,7 @@ git pull origin master
           </span>
           </span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain forking workflow</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain forking workflow</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -1292,7 +1389,7 @@ git pull origin master
               </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can follow Forking Workflow</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can follow Forking Workflow</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1373,7 +1470,7 @@ git pull origin master
               </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRCS vs CRCS</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1407,7 +1504,7 @@ git pull origin master
               </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain feature branch flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain feature branch flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1448,7 +1545,7 @@ git pull origin master
               </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.8e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain centralized flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.7e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain centralized flow</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1491,7 +1588,7 @@ git pull origin master
     <p><span class="activity-desc">🅿️ Project</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.9</code> <strong>Can work with a 2KLoC code base</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W5.8</code> <strong>Can work with a 2KLoC code base</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <div>
@@ -1550,7 +1647,7 @@ git pull origin master
         </div>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W5.10</code> <strong>Can conceptualize a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+        <span slot="header" class="card-title"><span><code>W5.9</code> <strong>Can conceptualize a product</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
         </span>
         </span>
         <div>
@@ -1568,7 +1665,49 @@ git pull origin master
   <span slot="header" class="card-title activity-type"><span class="fas fa-chalkboard-teacher"></span> Tutorial 5</span>
   <div class="indented">
     <div>
-      <div></div>
+      <div>
+        <p><strong>Suggested question to discuss:</strong></p>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+            <question>
+              <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+              <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+              <p></p>
+            </question>
+          </panel>
+        </div>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Object Diagrams for Class Diagram">
+            <question>
+              <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+              <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+              <p></p>
+              <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+              <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+              <ol>
+                <li>
+                  <p>There are no persons.</p>
+                </li>
+                <li>
+                  <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                </li>
+                <li>
+                  <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                </li>
+                <li>
+                  <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                </li>
+                <li>
+                  <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                </li>
+              </ol>
+              <div slot="hint">
+                <p>After step 2, the diagram should be like this:</p>
+                <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+            </question>
+          </panel>
+        </div>
+      </div>
       <br>
       <panel type="seamless" header="##### Evidence for weekly LOs %%(for reference)%%">
         <panel type="seamless" expanded="">
@@ -1586,86 +1725,260 @@ git pull origin master
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for early developer testing</span>
-          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how models are used</span>
+          <span
+            class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            </span>
+            </span>
+            <div class="indented">
+              <panel minimized="">
+                <span slot="header" class="card-title">Details of the LO</span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Design → Modelling → Introduction →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="how-2">How</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>In software development, models are useful in several ways:</strong></p>
+                        <p>a) <strong>To analyze a complex entity related to software development.</strong></p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Some examples of using models for analysis:</p>
+                          <ol>
+                            <li>Models of the problem domain (i.e. the environment in which the software is expected to solve a problem) can be built to aid the understanding of the problem to be solved.</li>
+                            <li>When planning a software solution, models can be created to figure out how the solution is to be built. An architecture diagram is such a model.</li>
+                          </ol>
+                        </tip-box>
+                        <p>b) <strong>To communicate information among stakeholders.</strong> Models can be used as a visual aid in discussions and documentations.</p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Some examples of using models to communicate:</p>
+                          <ol>
+                            <li>We can use an
+                              <trigger trigger="click" for="modal:modelingIntro-archiDiagrams">architecture diagram</trigger> to explain the high-level design of the software to developers.</li>
+                            <li>A business analyst can use a use case diagram to explain to the customer the functionality of the system.</li>
+                            <li>A class diagram can be reverse-engineered from code so as to help explain the design of a component to a new developer.</li>
+                          </ol>
+                        </tip-box>
+                        <modal large="" title="Architecture Diagrams" id="modal:modelingIntro-archiDiagrams">
+                          <p>An <em>architecture diagram</em> depicts the high-level design of a software.</p>
+                          <div>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Some example architecture diagrams:</p>
+                              <tabs>
+                              
+                                <tab header="TEAMMATES">
+                                  <p><img src="https://github.com/TEAMMATES/teammates/raw/master/docs/images/highlevelArchitecture.png" width="700"><br></p>
+                                  <p>
+                                    <hr>
+                                  </p>
+                                </tab>
+                              
+                                <tab header="se-edu/addressbook-level4">
+                                  <p><img src="https://se-edu.github.io/addressbook-level4/images/Architecture.png" width="700"><br></p>
+                                  <p>
+                                    <hr>
+                                  </p>
+                                </tab>
+                              
+                                <tab header="Example 1">
+                                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Accelerator_Architecture.png" width="700"><br>
+                                    <sub><a href="https://commons.wikimedia.org/wiki/File:Accelerator_Architecture.png">source: https://commons.wikimedia.org</a></sub></p>
+                                  <p>
+                                    <hr>
+                                  </p>
+                                </tab>
+                              
+                                <tab header="Example 2">
+                                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png" width="700"><br>
+                                    <sub><a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Firefox_OS_Architecture_diagram.png">source: https://commons.wikimedia.org</a></sub></p>
+                                  <p>
+                                    <hr>
+                                  </p>
+                                </tab>
+                              
+                                <tab header="Example 3">
+                                  <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg" width="700"><br>
+                                    <sub><a href="https://upload.wikimedia.org/wikipedia/commons/0/06/SOA_Metamodel.svg">source: https://commons.wikimedia.org</a></sub></p>
+                                  <p>
+                                    <hr>
+                                  </p>
+                                </tab>
+                              </tabs>
+                            </tip-box>
+                          </div>
+                        </modal>
+                        <p>c) <strong>As a blueprint for creating software.</strong> Models can be used as instructions for building software.</p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> Some examples of using models to as blueprints:</p>
+                          <ol>
+                            <li>A senior developer draws a class diagram to propose a design for an OOP software and passes it to a junior programmer to implement.</li>
+                            <li>A software tool allows users to draw UML models using its interface and the tool automatically generates the code based on the model.</li>
+                          </ol>
+                        </tip-box>
+                        <tip-box>
+
+                          <panel type="seamless">
+                            <span slot="header" class="card-title">Model Driven Development <span class="badge badge-pill badge-secondary">tangential</span></span>
+                            <p><strong><em>Model-driven development (MDD)</em>, also called <em>Model-driven engineering</em>, is an approach to software development that strives to exploit models as blueprints.</strong> MDD uses models as primary engineering
+                              artifacts when developing software. That is, the system is first created in the form of models. After that, the models are converted to code using code-generation techniques (usually, automated or semi-automated, but can
+                              even involve manual translation from model to code). MDD requires the use of a very expressive modeling notation (graphical or otherwise), often specific to a given problem domain. It also requires sophisticated tools to
+                              generate code from models and maintain the link between models and the code. One advantage of MDD is that the same model can be used to create software for different platforms and different languages. MDD has a lot of promise,
+                              but it is still an emerging technology</p>
+                            <p>Further reading:</p>
+                            <ul>
+                              <li><a href="https://martinfowler.com/bliki/ModelDrivenSoftwareDevelopment.html">Martin Fowler's view on MDD</a> - TLDR: he is sceptical</li>
+                              <li><a href="http://www.theenterprisearchitect.eu/blog/2009/03/31/5-types-of-model-driven-software-development/">5 types of Model Driven Software Development</a> - A more optimistic view, although an old article</li>
+                            </ul>
+                          </panel>
+                        </tip-box>
+                      </div>
+                      <div>
+                        <div>
+                          <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about models">
+                                <question>
+                                  <p>Choose the correct statements about models.</p>
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Models are abstractions.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Models can be used for communication.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Models can be used for analysis of a problem.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Generating models from code is useless.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Models can be used as blueprints for generating code.</li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p>(a) (b) (c) (e)</p>
+                                    <p>Explanation: Models generated from code can be used for understanding, analysing, and communicating about the code.</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project">
+                                <question>
+                                  <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
+                                  <div slot="hint">
+                                    <p>Can models be useful in evaluating the design quality of a software written by students?</p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                          </panel>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </panel><br><br>
+              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+              </p>
+              <div class="indented">
+                <div>
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain usage of models in a class project">
+                      <question>
+                        <p>Explain how models (e.g. UML diagrams) can be used in a class project.</p>
+                        <div slot="hint">
+                          <p>Can models be useful in evaluating the design quality of a software written by students?</p>
+                        </div>
+                      </question>
+                    </panel>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can use basic-level class diagrams</span>
+          <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
               <div>
-                <div></div>
+                <div>
+                  <p>
+                    <panel src="/cs2103-website\book\oop\classes\what\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%Design → OOP → Classes → Basic%%"></panel>
+                  </p>
+                </div>
                 <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Developer Testing →
+                <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
 </span></strong>
                   </span>
                 </p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="why-2">Why</h4>
+                    <h4 id="class-diagrams-basics-2">Class Diagrams (Basics)</h4>
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>Delaying testing until the full product is complete has a number of disadvantages:</strong></p>
-                      <ul>
-                        <li><strong>Locating the cause of such a test case failure is difficult due to a large search space;</strong> in a large system, the search space could be millions of lines of code, written by hundreds of developers! The failure may
-                          also be due to multiple inter-related bugs.</li>
-                        <li><strong>Fixing a bug found during such testing could result in major rework</strong>, especially if the bug originated during the design or during requirements specification <span class="dimmed">i.e. a faulty design or faulty requirements</span>.</li>
-                        <li><strong>One bug might 'hide' other bugs</strong>, which could emerge only after the first bug is fixed.</li>
-                        <li><strong>The delivery may have to be delayed</strong> if too many bugs were found during testing.</li>
-                      </ul>
-                      <p><strong>Therefore, it is better to do early testing</strong>, as hinted by the popular rule of thumb given below, also illustrated by the graph below it.</p>
-                      <blockquote>
-                        <p>The earlier a bug is found, the easier and cheaper to have it fixed.</p>
-                      </blockquote>
-                      <img src="/cs2103-website/book/testing/testingTypes/developerTesting/why/images/diagram.png" height="180">
-                      <p></p>
-                      <p>Such early testing of partially developed software is usually, and by necessity, done by the developers themselves i.e. developer testing.</p>
+                      <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+                      <p>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classes\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Classes → What"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Classes" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classLevelMembers\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Class-Level Members → What"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Class-Level Members" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → What"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Associations" fragment="main"></panel>
+                      </p>
+                      <p>The most basic class diagram is a bunch of classes with some solid lines among them to represent associations, such as this one.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> An example class diagram showing associations between classes.</p>
+                        <p></p><img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPersonMinimal.png" width="450">
+                        <p></p>
+                      </tip-box>
+                      <p>In addition, <strong>associations can show additional decorations such as <em>association labels</em>, <em>association roles</em>, <em>multiplicity</em> and <em>navigability</em></strong> to add more information to a class diagram.</p>
+                      <p>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\labels\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Labels"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Labels" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\roles\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Roles"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Roles" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\multiplicity\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Multiplicity"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Multiplicity" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\navigability\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → Navigability"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Navigability" fragment="main"></panel>
+                      </p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Here is the same class diagram shown earlier but with some additional information included:</p>
+                        <p></p><img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/ageListCalculatorPerson.png" width="450">
+                        <p></p>
+                      </tip-box>
                     </div>
                     <div>
                       <div>
                         <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                           <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> implications of developers testing their own code">
-                              <question has-input="true">
-                                <p>Discuss pros and cons of developers testing their own code.</p>
-                                <div slot="answer">
-                                  <p>Pros:</p>
-                                  <ul>
-                                    <li>Can be done early (the earlier we find a bug, the cheaper it is to fix).</li>
-                                    <li>Can be done at lower levels, for examples, at operation and class level (testers usually test the system at UI level).</li>
-                                    <li>It is possible to do more thorough testing because developers know the expected external behavior as well as the internal structure of the component.</li>
-                                    <li>It forces developers to take responsibility for their own work (they cannot claim that &quot;testing is the job of the testers&quot;).</li>
-                                  </ul>
-                                  <p>Cons:</p>
-                                  <ul>
-                                    <li>A developer may unconsciously test only situations that he knows to work (i.e. test it too 'gently').</li>
-                                    <li>A developer may be blind to his own mistakes (if he did not consider a certain combination of input while writing code, it is possible for him to miss it again during testing).</li>
-                                    <li>A developer may have misunderstood what the SUT is supposed to do in the first place.</li>
-                                    <li>A developer may lack the testing expertise.</li>
-                                  </ul>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Cost of bug fixing over time">
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which association notations are shown?">
                               <question>
-                                <p>The cost of fixing a bug goes down as we reach the product release.</p>
-                                <ul radio-group="37242" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="37242" type="radio"> False</label></li>
+                                <p>Which association notatations are shown in this diagram?</p>
+                                <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
+                                <p></p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
                                 </ul>
                                 <div slot="answer">
-                                  <p>False. The cost goes up over time.</p>
+                                  <p>(a) (b) (c) (d)</p>
+                                  <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Why early testing?">
-                              <question has-input="true">
-                                <p>Explain why early testing by developers is important.</p>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+                              <question>
+                                <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                                <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                                <p></p>
                               </question>
                             </panel>
                           </div>
@@ -1681,9 +1994,11 @@ git pull origin master
             <div class="indented">
               <div>
                 <div>
-                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Why early testing?">
-                    <question has-input="true">
-                      <p>Explain why early testing by developers is important.</p>
+                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+                    <question>
+                      <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                      <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                      <p></p>
                     </question>
                   </panel>
                 </div>
@@ -1692,68 +2007,71 @@ git pull origin master
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can use simple JUnit tests</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </span>
-            </span>
-            </span>
-            </span>
-            <div class="indented">
-              <panel minimized="">
-                <span slot="header" class="card-title">Details of the LO</span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → JUnit →
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span>
+          <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Supplmentary → Principles →
 </span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="junit-basic-2">JUnit: Basic</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <div v-closeable="" alt="Junit tutorial video" class="non-printable">
-                          <p>JUnit 4 with IntelliJ: A quick introduction <sub>-- by DrBFraser</sub></p>
-                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/Bld3644bIAo" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                            <ul>
-                              <li><a href="http://junit.sourceforge.net/doc/cookbook/cookbook.htm">JUnit cookbook</a> - a short tutorial from JUnit creators</li>
-                              <li><a href="http://www.vogella.com/articles/JUnit/article.html">JUnit tutorial</a> - a more detailed tutorial from a developer Lars Vogel</li>
-                              <li>How to test private methods in Java? [ <a href="http://stackoverflow.com/questions/34571/whats-the-proper-way-to-test-a-class-with-private-methods-using-junit">short answer</a> ] [ <a href="http://www.artima.com/suiterunner/private.html">long answer</a>                                ]</li>
-                            </ul>
-                          </panel>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </panel><br><br>
-              <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
-              </p>
-              <div class="indented">
-                <div>
-                  <p><strong>Acceptable</strong>: Evidence of having written JUnit tests in some project.</p>
-                  <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#use-junit-to-implement-unit-tests-code-lo-junit-code">Addressbook-Level2: LO-JUnit</a>]</p>
+                  </span>
+                </p>
+                <div id="title-and-body">
                   <div>
-                    <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Only clean PRs</mark> (i.e. free of unrelated code modifications) will be accepted.</p>
-                    <p>
-                      <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
-                        fragment="tutorial-pr-instructions"></panel>
-                    </p>
+                    <h4 id="single-responsibility-principle-2">Single Responsibility Principle</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                        </div>
+                      </tip-box>
+                      <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when
+                          the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                          <ul>
+                            <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                            <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                            <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+                <div>
+                  <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                  <p>
+                    <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                      fragment="tutorial-pr-instructions"></panel>
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to resolve merge conflicts</span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Git to resolve merge conflicts</span>
           <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
@@ -1839,7 +2157,7 @@ white
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can review and merge PRs on GitHub</span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can review and merge PRs on GitHub</span>
           <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
@@ -1988,7 +2306,7 @@ git pull origin master
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can follow Forking Workflow</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can follow Forking Workflow</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
@@ -2076,7 +2394,7 @@ git pull origin master
             </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.9</code></span></big> Can work with a 2KLoC code base <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.8</code></span></big> Can work with a 2KLoC code base <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
@@ -2137,7 +2455,7 @@ git pull origin master
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.10</code></span></big> Can conceptualize a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.9</code></span></big> Can conceptualize a product <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div class="indented">
