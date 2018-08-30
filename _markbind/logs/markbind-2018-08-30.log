@@ -1,0 +1,21 @@
+2018-08-29T16:02:34.823Z - info: Website generation started at 00:02:32
+2018-08-29T16:02:36.082Z - info: Building assets...
+2018-08-29T16:02:38.000Z - info: Assets built
+2018-08-29T16:02:38.001Z - info: Generating pages...
+2018-08-29T16:04:12.563Z - info: Pages built
+2018-08-29T16:04:12.631Z - info: Site data built
+2018-08-29T16:04:12.631Z - info: Website generation complete! Total build time: 100.16s
+2018-08-29T16:04:12.644Z - info: Generate Site durationMs=100173
+2018-08-29T16:04:12.665Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-29T16:04:12.666Z - info: Press CTRL+C to stop ...
+2018-08-29T16:05:36.060Z - info: Website generation started at 00:05:33
+2018-08-29T16:05:37.391Z - info: Building assets...
+2018-08-29T16:05:39.474Z - info: Assets built
+2018-08-29T16:05:39.475Z - info: Generating pages...
+2018-08-29T16:07:21.327Z - info: Pages built
+2018-08-29T16:07:21.394Z - info: Site data built
+2018-08-29T16:07:21.394Z - info: Website generation complete! Total build time: 107.743s
+2018-08-29T16:07:21.395Z - info: Build success!
+2018-08-29T16:07:21.395Z - info: Generate Site durationMs=107744
+2018-08-30T00:37:45.695Z - info: Website generation started at 08:37:41
+2018-08-30T00:37:50.710Z - info: Building assets...
