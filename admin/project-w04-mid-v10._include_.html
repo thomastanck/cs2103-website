@@ -308,11 +308,192 @@
         </div>
       </modal>
       <div class="indented-level3">
+        <box>
+          <p>💡 Recommended: <strong>You can use GitHub issue tracker to manage user stories</strong>, but for that you need to set up your team's GitHub organization, project fork, and issue tracker first. Instructions for doing those steps are in the panel
+            below.</p>
+          <panel header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: GitHub (extract)%%">
+            <div>
+              <h2 id="organization-setup">Organization setup</h2>
+              <p>The instructions below are for setting up a GitHub organization for your team.</p>
+              <p>You can create your GitHub organization (for your team) after receiving your team ID. Here are the instructions (<mark>please follow the organization/repo name format precisely because we use scripts to download your code. If the names are not as expected, our scripts will not work</mark>):</p>
+              <ul>
+                <li>One team member (e.g. team leader) should create an organization with the following details:</li>
+                <li><mark>Organization name : <code>CS2103-AY1819S1-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S1-W12-1</code></li>
+                <li>Plan:  Open Source ($0/month)</li>
+                <li>After that, the same person can add members to the organization:</li>
+                <li>Create a team called <code>developers</code> to your organization.</li>
+                <li>Add your team members to the developers team.</li>
+              </ul>
+            </div>
+            <div>
+              <h2 id="repo-setup">Repo setup</h2>
+              <p>Only one team member:</p>
+              <ol>
+                <li>Fork <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4">Address Book Level 4</a> to your team org.</li>
+                <li><mark>Rename the forked repo as <code>main</code></mark>. This repo is to be used as the repo for your project.</li>
+                <li>Ensure your team members have the desired level of access to your team repo.</li>
+              </ol>
+              <p>All team members:</p>
+              <ol>
+                <li>Go to the <code>main</code> repo (created above) and click on the <code>watch</code> button to subscribe to activities of the repo</li>
+                <li>Fork the <code>main</code> repo to your personal GitHub account.</li>
+                <li>Clone the fork to your Computer.</li>
+                <li>Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
+              </ol>
+              <p>Note that some of our download scripts depend on the following folder paths. Please do not alter those paths in your project.</p>
+              <ul>
+                <li><code>/src/main</code></li>
+                <li><code>/src/test</code></li>
+                <li><code>/docs</code></li>
+              </ul>
+            </div>
+            <div>
+              <h2 id="issue-tracker-setup">Issue tracker setup</h2>
+              <p>We recommend you configure the issue tracker of the <code>main</code> repo as follows:</p>
+              <ul>
+                <li>Delete existing labels and add the following labels.<br> 💡 <strong>Issue type</strong> labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.</li>
+              </ul>
+              <tip-box>
+                <p><strong>Issue type</strong> labels:</p>
+                <ul>
+                  <li><code>type.epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
+                  <li><code>type.story</code> : A user story</li>
+                  <li><code>type.enhancement</code>: An enhancement to an existing story</li>
+                  <li><code>type.task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
+                  <li><code>type.bug</code> : A bug</li>
+                </ul>
+              </tip-box>
+              <tip-box>
+                <p><strong>Status</strong> labels:</p>
+                <ul>
+                  <li><code>status.ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.
+                  </li>
+                </ul>
+              </tip-box>
+
+              <tip-box>
+                <p><strong>Priority</strong> labels:</p>
+                <ul>
+                  <li><code>priority.high</code> : Must do</li>
+                  <li><code>priority.medium</code> : Nice to have</li>
+                  <li><code>priority.low</code> : Unlikely to do</li>
+                </ul>
+              </tip-box>
+              <span id="bug-severity">
+<tip-box>
+<p><strong>Bug Severity</strong> labels:</p>
+<ul>
+<li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+<li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+<li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></tip-box></span>
+              <ul>
+                <li>
+                  <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>,</p>
+                </li>
+                <li>
+                  <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
+              <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to reflect
+                the current status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+              <h3 id="using-issues">Using Issues:</h3>
+              <p><big><strong>During the initial stages:</strong></big></p>
+              <ul>
+                <li>
+                  <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
+                    <span class="dimmed">e.g.</span> <code>Title: As a user I can add a deadline</code><br>
+                    <code>Description: ... so that I can keep track of my deadlines</code></p>
+                </li>
+                <li>
+                  <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
+                </li>
+              </ul>
+              <p><big><strong>From milestone v1.1:</strong></big></p>
+              <ul>
+                <li>
+                  <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
+                  <ul>
+                    <li><span class="dimmed">👍 Good: Update class diagram in the project manual for v1.4</span></li>
+                    <li><span class="dimmed">👎 Bad (reasons: not a one-person task, not small enough): Write the project manual</span></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Write a descriptive title for the issue.</strong> <span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+                </li>
+                <li>
+                  <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+                  <ul>
+                    <li><code>Implementing parser</code>  <span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
+                    <li><code>Implementing parser support for adding of floating tasks</code> <span class="dimmed">: appropriate size.</span></li>
+                  </ul>
+                </li>
+                <li>
+                  <p><strong>Do not track things taken for granted.</strong> <span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+                </li>
+                <li>
+                  <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A
+                    minimal description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
+                </li>
+                <li>
+                  <p><strong>Assign tasks to team members using the <code>assignees</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
+                </li>
+                <li>
+                  <p><strong>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</strong></p>
+                </li>
+              </ul>
+              <div id="using-milestones">
+                <h3 id="using-milestones">Using Milestones:</h3>
+                <p>We recommend you do the following from milestone v1.1:</p>
+                <ul>
+                  <li>
+                    <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+                  </li>
+                  <li>
+                    <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
+                  </li>
+                  <li>
+                    <p>Note that you can change the milestone plan along the way as necessary.</p>
+                  </li>
+                </ul>
+                <p><strong>Wrapping up a Milestone</strong>:<br>
+                  <mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
+                <ul>
+                  <li>
+                    <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>
+                  </li>
+                  <li>
+                    <p>All tests passing on Travis for the version tagged above.</p>
+                  </li>
+                  <li>
+                    <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
+                      <img src="/cs2103-website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
+                  </li>
+                  <li>
+                    <p>Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
+                      <img src="/cs2103-website/admin/images/closingMilestones.png" width="700"></p>
+                  </li>
+                  <li>
+                    <p>Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial).</p>
+                  </li>
+                  <li>
+                    <p>Optionally, future milestones are revised based on what you experienced in the current milestone <span class="dimmed"> e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
+                  </li>
+                  <li>
+                    <p>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </panel>
+        </box>
         <panel header="<span class='fas fa-cube'></span> User Story examples (from a different product)" minimized="">
-          <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code><br>
-            <code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code><br>
-            <code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code><br>
-            <code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code><br>
+          <p><code>As a user I can add a task by specifying a task description only, so that I can record tasks that need to be done ‘some day’.</code>
+            <code>As a user I can find upcoming tasks, so that I can decide what needs to be done soon.</code>
+            <code>As a user I can delete a task, so that I can get rid of tasks that I no longer care to track.</code>
+            <code>As a new user I can view more information about a particular command, so that I can learn how to use various commands.</code>
             <code>As an advanced user I can use shorter versions of a command, so that type a command faster.</code></p>
         </panel>
       </div>
