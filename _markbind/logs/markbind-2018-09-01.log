@@ -1,0 +1,22 @@
+2018-09-01T08:04:09.587Z - info: Website generation started at 16:03:54
+2018-09-01T08:04:48.355Z - info: Building assets...
+2018-09-01T08:05:02.200Z - info: Assets built
+2018-09-01T08:05:02.201Z - info: Generating pages...
+2018-09-01T08:06:55.462Z - info: Pages built
+2018-09-01T08:06:56.072Z - info: Site data built
+2018-09-01T08:06:56.072Z - info: Website generation complete! Total build time: 181.973s
+2018-09-01T08:06:56.105Z - info: Generate Site durationMs=182006
+2018-09-01T08:06:56.996Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-01T08:06:56.996Z - info: Press CTRL+C to stop ...
+2018-09-01T08:21:11.070Z - info: [16:21:11] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-09-01T08:21:12.076Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-09-01T08:21:12.088Z - info: Rebuilding 25 pages
+2018-09-01T08:21:58.877Z - info: Pages rebuilt
+2018-09-01T08:21:58.911Z - info: Site data built
+2018-09-01T08:25:34.605Z - info: [16:25:34] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-09-01T08:25:35.607Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-09-01T08:25:35.615Z - info: Rebuilding 25 pages
+2018-09-01T08:26:20.016Z - info: Pages rebuilt
+2018-09-01T08:26:20.041Z - info: Site data built
+2018-09-01T08:33:17.610Z - info: Website generation started at 16:33:15
+2018-09-01T08:33:35.565Z - info: Building assets...
