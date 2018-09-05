@@ -2366,7 +2366,7 @@ This repo can be used to practice creating PRs.
       <p><span class="activity-desc">OOP</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W4.5</code> <strong>Can explaine basic OOP concepts</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+          <span slot="header" class="card-title"><span><code>W4.5</code> <strong>Can explain basic OOP concepts</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
@@ -3701,7 +3701,7 @@ This repo can be used to practice creating PRs.
                       </box>
                       <p>You can <strong>use a <code>finally</code> block to specify code that is guaranteed to execute with or without the exception.</strong> This is the right place to close files, recover resources, and otherwise clean up after the code
                         enclosed in the <code>try</code> block.</p>
-                      <p><span class="fas fa-cube"></span> The <code>writeList()</code> method below has a <code>finally</code> block that will run</p>
+                      <p><span class="fas fa-cube"></span> The <code>writeList()</code> method below has a <code>finally</code> block:</p>
                       <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeList</span><span class="hljs-params">()</span> </span>{
     print(<span class="hljs-string">"starting method"</span>);
     <span class="hljs-keyword">try</span> {
@@ -3795,7 +3795,106 @@ This repo can be used to practice creating PRs.
                       </box>
                       <p><strong>Java comes with a collection of <a href="https://www.geeksforgeeks.org/built-exceptions-java-examples/">built-in exception classes</a></strong> that you can use. When they are not enough, <strong>it is possible to <a href="https://www.javatpoint.com/custom-exception">create your own exception classes</a></strong>.</p>
                     </div>
-                    <div></div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> parse rectangle descriptor">
+                                <question>
+                                  <p>The <code>Main</code> class below parses a string descriptor of a rectangle of the format <code>&quot;WIDTHxHEIGHT&quot;</code> <span class="dimmed">e.g., <code>&quot;3x4&quot;</code></span> and prints the area of the
+                                    rectangle.</p>
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
+        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
+        System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> </span>{
+        <span class="hljs-comment">//<span class="hljs-doctag">TODO:</span> modify the code below</span>
+        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);
+        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        printArea(<span class="hljs-string">"3x4"</span>);
+        printArea(<span class="hljs-string">"5x5"</span>);
+    }
+}
+</code></pre>
+                                  <p><span class="fas fa-arrow-down"></span></p>
+                                  <pre class="hljs"><code>3x4=12
+5x5=25
+</code></pre>
+                                  <ol>
+                                    <li>
+                                      <p>Update the code of <code>printArea</code> to print an error message if <code>WIDTH</code> and/or <code>HEIGHT</code> are not numbers <span class="dimmed">e.g., <code>&quot;Ax4&quot;</code></span><br> 💡 <code>calculateArea</code>                                        will throw the unchecked exception <code>NumberFormatException</code> if the code tries to parse a non-number to an integer.</p>
+                                    </li>
+                                    <li>
+                                      <p>Update the code of <code>printArea</code> to print an error message if the descriptor is missing <code>WIDTH</code> and/or <code>HEIGHT</code> <span class="dimmed">e.g., <code>&quot;x4&quot;</code></span><br> 💡 <code>calculateArea</code>                                        will throw the unchecked exception <code>IndexOutOfBoundsException</code> if one or both dimensions are missing.</p>
+                                    </li>
+                                    <li>
+                                      <p>Update the code of <code>calculateArea</code> to throw the checked exception <code>IllegalShapeException</code> if there are more than 2 dimensions <span class="dimmed">e.g., <code>&quot;5x4x3&quot;</code></span>                                        and update the <code>printArea</code> to print an error message for those cases. Here is the code for the <code>IllegalShapeException.java</code></p>
+                                    </li>
+                                  </ol>
+                                  <div class="indented-level2">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">IllegalShapeException</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Exception</span> </span>{
+  <span class="hljs-comment">//no other code needed</span>
+}
+</code></pre>
+                                  </div>
+                                  <p>Here is the expected behavior after you have done the above changes:</p>
+                                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-comment">//...</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        printArea(<span class="hljs-string">"3x4"</span>);
+        printArea(<span class="hljs-string">"3xy"</span>);
+        printArea(<span class="hljs-string">"3x"</span>);
+        printArea(<span class="hljs-string">"3"</span>);
+        printArea(<span class="hljs-string">"3x4x5"</span>);
+    }
+}
+</code></pre>
+                                  <p><span class="fas fa-arrow-down"></span></p>
+                                  <pre class="hljs"><code>3x4=12
+WIDTH or HEIGHT is not a number: 3xy
+WIDTH or HEIGHT is missing: 3x
+WIDTH or HEIGHT is missing: 3
+Too many dimensions: 3x4x5
+</code></pre>
+                                  <panel type="seamless" header="Partial solution">
+                                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printArea</span><span class="hljs-params">(String descriptor)</span></span>{
+        <span class="hljs-keyword">try</span> {
+            System.out.println(descriptor + <span class="hljs-string">"="</span> + calculateArea(descriptor));
+        } <span class="hljs-keyword">catch</span> (NumberFormatException e) {
+            System.out.println(<span class="hljs-string">"WIDTH or HEIGHT is not a number: "</span> + descriptor);
+        } <span class="hljs-comment">// add more catch blocks here</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">calculateArea</span><span class="hljs-params">(String descriptor)</span> <span class="hljs-keyword">throws</span> IllegalShapeException </span>{
+        String[] dimensions = descriptor.split(<span class="hljs-string">"x"</span>);
+
+        <span class="hljs-comment">//throw IllegalShapeException here if dimensions.length &gt; 2</span>
+
+        <span class="hljs-keyword">return</span> Integer.parseInt(dimensions[<span class="hljs-number">0</span>]) * Integer.parseInt(dimensions[<span class="hljs-number">1</span>]);
+    }
+
+
+}
+</code></pre>
+                                  </panel>
+                                </question>
+                              </panel>
+                            </div>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -4156,7 +4255,7 @@ This repo can be used to practice creating PRs.
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 03 Sep 2018 03:06:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 06:41:59 GMT</small></div>
 </footer>
 </div>
 </body>

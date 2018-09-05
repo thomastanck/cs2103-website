@@ -1,0 +1,33 @@
+2018-09-05T06:22:47.919Z - info: Website generation started at 14:22:35
+2018-09-05T06:23:15.006Z - info: Building assets...
+2018-09-05T06:23:28.992Z - info: Assets built
+2018-09-05T06:23:28.992Z - info: Generating pages...
+2018-09-05T06:25:11.504Z - info: Pages built
+2018-09-05T06:25:12.097Z - info: Site data built
+2018-09-05T06:25:12.097Z - info: Website generation complete! Total build time: 156.519s
+2018-09-05T06:25:12.128Z - info: Generate Site durationMs=156550
+2018-09-05T06:25:12.628Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-05T06:25:12.628Z - info: Press CTRL+C to stop ...
+2018-09-05T06:26:55.023Z - info: Website generation started at 14:26:53
+2018-09-05T06:26:56.760Z - info: Building assets...
+2018-09-05T06:27:00.231Z - info: Assets built
+2018-09-05T06:27:00.231Z - info: Generating pages...
+2018-09-05T06:28:24.346Z - info: Pages built
+2018-09-05T06:28:24.487Z - info: Site data built
+2018-09-05T06:28:24.487Z - info: Website generation complete! Total build time: 90.727s
+2018-09-05T06:28:24.502Z - info: Generate Site durationMs=90742
+2018-09-05T06:28:24.846Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-05T06:28:24.846Z - info: Press CTRL+C to stop ...
+2018-09-05T06:34:40.054Z - info: [14:34:40] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\_markbind\variables.md
+2018-09-05T06:34:41.067Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\_markbind\variables.md
+2018-09-05T06:34:41.192Z - warn: Rebuilding all pages as variables file was changed
+2018-09-05T06:34:41.208Z - info: Rebuilding 146 pages
+2018-09-05T06:35:26.044Z - info: [14:35:26] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-05T06:36:05.083Z - info: Pages rebuilt
+2018-09-05T06:36:05.115Z - info: Site data built
+2018-09-05T06:36:05.426Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-05T06:36:05.427Z - info: Rebuilding 2 pages
+2018-09-05T06:36:22.670Z - info: Pages rebuilt
+2018-09-05T06:36:22.685Z - info: Site data built
+2018-09-05T06:41:53.851Z - info: Website generation started at 14:41:50
+2018-09-05T06:41:56.183Z - info: Building assets...
