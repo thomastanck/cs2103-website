@@ -717,44 +717,77 @@
                 <div>
                   <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                     <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Identify Classes and Objects">
-                        <question>
-                          <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
-                          <tip-box>
-                            A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.
-                          </tip-box>
-                          <div slot="answer">
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Class</th>
-                                    <th>Objects</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><code>Customer</code></td>
-                                    <td><code>john</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>Book</code></td>
-                                    <td><code>LoTR</code>, <code>GoT</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>Cheque</code></td>
-                                    <td><code>checqueJohnGave</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>Cashier</code></td>
-                                    <td><code>peter</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Identify Classes and Objects">
+                          <question>
+                            <p>Consider the following scenario. If you were to simulate this in an OOP program, what are the classes and the objects you would use?</p>
+                            <tip-box>
+                              A customer (name: John) gave a cheque to the Cashier (name: Peter) to pay for the LoTR and GoT books he bought.
+                            </tip-box>
+                            <div slot="answer">
+                              <div class="table-responsive">
+                                <table class="markbind-table table table-bordered table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th>Class</th>
+                                      <th>Objects</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><code>Customer</code></td>
+                                      <td><code>john</code></td>
+                                    </tr>
+                                    <tr>
+                                      <td><code>Book</code></td>
+                                      <td><code>LoTR</code>, <code>GoT</code></td>
+                                    </tr>
+                                    <tr>
+                                      <td><code>Cheque</code></td>
+                                      <td><code>checqueJohnGave</code></td>
+                                    </tr>
+                                    <tr>
+                                      <td><code>Cashier</code></td>
+                                      <td><code>peter</code></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
                             </div>
-                          </div>
-                        </question>
-                      </panel>
+                          </question>
+                        </panel>
+                      </div>
+                      <div>
+                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Classes for CityConnect app">
+                          <question has-input="true">
+                            <p>Assume you are writing a CLI program called <strong><code>CityConnect</code></strong> for storing and querying distances between cities. The behavior is as follows:</p>
+                            <pre class="hljs"><code>Welcome to CityConnect!
+
+Enter command: addroute Clementi BuonaVista 12
+Route from Clementi to BuonaVista with distance 12km added
+
+Enter command: getdistance Clementi BuonaVista
+Distance from Clementi to BuonaVista is 12
+
+Enter command: getdistance Clementi JurongWest
+No route exists from Clementi to JurongWest!
+
+Enter command: addroute Clementi JurongWest 24
+Route from Clementi to JurongWest with distance 24km added
+
+Enter command: getdistance Clementi JurongWest
+Distance from Clementi to JurongWest is 24
+
+Enter command: exit
+
+</code></pre>
+                            <p>What classes would you have in your code if you write your program based on the OOP paradigm?</p>
+                            <div slot="hint">
+                              <p>One class you can have is <code>Route</code></p>
+                            </div>
+                          </question>
+                        </panel>
+                      </div>
                     </div>
                   </panel>
                 </div>
@@ -885,7 +918,7 @@
                 <tip-box>
                   <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code>                    class.</p>
                 </tip-box>
-                <h5 id="implementing-associations"><big>Implementing associations</big></h5>
+                <h5 id="implementing-associations">Implementing associations</h5>
                 <p><strong>We use instance level variables to implement associations.</strong></p>
               </div>
               <div></div>
@@ -930,7 +963,7 @@
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The navigability of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code>                      object and vice versa.</p>
                   </tip-box>
-                  <h5 id="implementing-multiplicity"><big>Implementing multiplicity</big></h5>
+                  <h5 id="implementing-multiplicity">Implementing multiplicity</h5>
                   <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
@@ -1089,7 +1122,7 @@
                   <tip-box>
                     <p><span class="fas fa-cube"></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
                   </tip-box>
-                  <h5 id="implementing-dependencies"><big>Implementing dependencies</big></h5>
+                  <h5 id="implementing-dependencies">Implementing dependencies</h5>
                   <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
@@ -1164,7 +1197,7 @@
                   <tip-box>
                     <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code>                      object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
                   </tip-box>
-                  <h5 id="implementing-composition"><big>Implementing composition</big></h5>
+                  <h5 id="implementing-composition">Implementing composition</h5>
                   <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of
                     the ‘whole’ object.</p>
                   <tip-box>
@@ -1219,7 +1252,7 @@
                   <tip-box>
                     <p><span class="fas fa-cube"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
                   </tip-box>
-                  <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
+                  <h5 id="implementing-aggregation">Implementing aggregation</h5>
                   <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the leader
@@ -1282,7 +1315,7 @@
                     <p><span class="fas fa-cube"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association
                       rather than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
                   </tip-box>
-                  <h5 id="implementing-association-classes"><big>Implementing association classes</big></h5>
+                  <h5 id="implementing-association-classes">Implementing association classes</h5>
                   <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> In the code below, the <code>Transaction</code> class is an association class that represent a transaction between a <code>Person</code> who is the seller and another <code>Person</code> who is the
@@ -2200,7 +2233,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 06:41:59 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 11:46:32 GMT</small></div>
 </footer>
 </div>
 </body>

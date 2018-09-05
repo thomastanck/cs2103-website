@@ -430,7 +430,7 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> In our example, as some <code>Course</code> objects can have associations with some <code>Student</code> objects, we can view it as an association between the <code>Course</code> class and the <code>Student</code>                class.</p>
             </tip-box>
-            <h5 id="implementing-associations"><big>Implementing associations</big></h5>
+            <h5 id="implementing-associations">Implementing associations</h5>
             <p><strong>We use instance level variables to implement associations.</strong></p>
           </div>
         </div>
@@ -460,7 +460,7 @@
               <p><span class="fas fa-cube"></span> The navigability of the association between <code>Course</code> objects and <code>Student</code> objects tells you how many <code>Course</code> objects can be associated with one <code>Student</code> object
                 and vice versa.</p>
             </tip-box>
-            <h5 id="implementing-multiplicity"><big>Implementing multiplicity</big></h5>
+            <h5 id="implementing-multiplicity">Implementing multiplicity</h5>
             <p><strong>A normal instance-level variable gives us a <code>0..1</code> multiplicity</strong> (also called <em>optional associations</em>) because a variable can hold a reference to a single object or <code>null</code>.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> In the code below, the <code>Logic</code> class has a variable that can hold <code>0..1</code> <span class="dimmed">i.e., zero or one</span> <code>Minefield</code> objects.</p>
@@ -611,7 +611,7 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> A <code>Course</code> object can have a dependency on a <code>Registrar</code> object to obtain the maximum number of students it can support.</p>
             </tip-box>
-            <h5 id="implementing-dependencies"><big>Implementing dependencies</big></h5>
+            <h5 id="implementing-dependencies">Implementing dependencies</h5>
             <p>Dependencies result from interactions between objects that do not result in a long-term link between the said objects.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> In the code below, <code>Foo</code> has a dependency on <code>Bar</code> but it is not an association because it is only a
@@ -679,7 +679,7 @@
               <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code> object
                 <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
             </tip-box>
-            <h5 id="implementing-composition"><big>Implementing composition</big></h5>
+            <h5 id="implementing-composition">Implementing composition</h5>
             <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients of the ‘whole’
               object.</p>
             <tip-box>
@@ -726,7 +726,7 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
             </tip-box>
-            <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
+            <h5 id="implementing-aggregation">Implementing aggregation</h5>
             <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the leader
@@ -1422,7 +1422,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 06:41:59 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 11:46:32 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -788,7 +788,7 @@
                       <tip-box>
                         <p><span class="fas fa-cube"></span> The ‘sub-folder’ association between <code>Folder</code> objects is a composition type association. That means if the <code>Folder</code> object <code>foo</code> is a sub folder of <code>Folder</code>                          object <code>bar</code>, <code>bar</code> cannot be a sub-folder of <code>foo</code>.</p>
                       </tip-box>
-                      <h5 id="implementing-composition"><big>Implementing composition</big></h5>
+                      <h5 id="implementing-composition">Implementing composition</h5>
                       <p><strong>Composition too is implemented using a normal variable.</strong> If correctly implemented, the ‘part’ object will be deleted when the ‘whole’ object is deleted. Ideally, the ‘part’ object may not even be visible to clients
                         of the ‘whole’ object.</p>
                       <tip-box>
@@ -855,7 +855,7 @@
                       <tip-box>
                         <p><span class="fas fa-cube"></span> <code>SportsClub</code> acts as a <em>container</em> for <code>Person</code> objects. <code>Person</code> objects can survive without a <code>SportsClub</code> object.</p>
                       </tip-box>
-                      <h5 id="implementing-aggregation"><strong>Implementing aggregation</strong></h5>
+                      <h5 id="implementing-aggregation">Implementing aggregation</h5>
                       <p>Implementation is similar to that of composition except the <em>containee</em> object can exist even after the <em>container</em> object is deleted.</p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> In the code below, there is an aggregation association between the <code>Team</code> class and the <code>Person</code> in that a <code>Team</code> contains <code>Person</code> a object who is the
@@ -901,13 +901,77 @@
           </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.6</code> <strong>Can use logging</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+          <span slot="header" class="card-title"><span><code>W6.6</code> <strong>Can explain single responsibility principle</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
+            aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span
+              class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <tip-box type="primary">
+                        <div>
+                          <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                        </div>
+                      </tip-box>
+                      <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                      <tip-box>
+                        <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when
+                          the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                      </tip-box>
+                    </div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                          <ul>
+                            <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                            <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                            <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                          </ul>
+                        </panel>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="border-top: dashed 1px; border-color:grey">
+              <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+              <div>
+                <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+                <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+                <div>
+                  <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                  <p>
+                    <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                      fragment="tutorial-pr-instructions"></panel>
+                  </p>
+                </div>
+              </div>
+          </panel>
+        </panel>
+        <panel no-close="" expandable="true">
+          <span slot="header" class="card-title"><span><code>W6.7</code> <strong>Can use logging</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
             aria-hidden="true"></span></span>
           </span>
           </span>
           </span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain logging</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain logging</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span>
               </span>
@@ -968,7 +1032,7 @@
               </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can use logging</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can use logging</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1045,7 +1109,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.7</code> <strong>Can use assertions</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><code>W6.8</code> <strong>Can use assertions</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1053,7 +1117,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </span>
             </span>
             <panel type="warning" expanded="" no-close="" epxandable="true">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain assertions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain assertions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 </span>
@@ -1092,7 +1156,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                 </div>
             </panel>
             <panel type="info" expanded="" no-close="" epxandable="true">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can use assertions</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.8b</code></span></big> <span><span class="fas fa-trophy"></span> Can use assertions</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1164,7 +1228,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
                 </div>
             </panel>
             <panel type="info" expanded="" no-close="" epxandable="true">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.7c</code></span></big> <span><span class="fas fa-trophy"></span> Can use assertions optimally</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.8c</code></span></big> <span><span class="fas fa-trophy"></span> Can use assertions optimally</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1253,12 +1317,12 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.8</code> <strong>Can use Java8 streams</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
+          <span slot="header" class="card-title"><span><code>W6.9</code> <strong>Can use Java8 streams</strong> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education"
             aria-hidden="true"></span></span>
           </span>
           </span>
           <panel type="default" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.8a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java8 streams</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.9a</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java8 streams</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span>
             <span
               class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -1322,7 +1386,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
           </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.9</code> <strong>Can use JavaFX to build a simple GUI</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><code>W6.10</code> <strong>Can use JavaFX to build a simple GUI</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -1330,7 +1394,7 @@ logger.log(Level.INFO, <span class="hljs-string">"end of processing"</span>);
             </span>
             </span>
             <panel type="warning" expanded="" no-close="" epxandable="true">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.9a</code></span></big> <span><span class="fas fa-trophy"></span> Can use JavaFX to build a simple GUI</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.10a</code></span></big> <span><span class="fas fa-trophy"></span> Can use JavaFX to build a simple GUI</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 </span>
@@ -2095,11 +2159,11 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
       <p><span class="activity-desc">Project Management</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.10</code> <strong>Can explain continuous integration and continuous deployment</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><code>W6.11</code> <strong>Can explain continuous integration and continuous deployment</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <panel type="danger" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.10a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain integration</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.11a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain integration</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -2123,7 +2187,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
             </div>
           </panel>
           <panel type="danger" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.10b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain build automation tools</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.11b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain build automation tools</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
             </span>
             </span>
             <div>
@@ -2205,7 +2269,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.10c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain continuous integration and continuous deployment</span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W6.11c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain continuous integration and continuous deployment</span>
             <span
               class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
@@ -2263,7 +2327,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
       <p><span class="activity-desc">🅿️ Project</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W6.11</code> <strong>Can contribute to project documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          <span slot="header" class="card-title"><span><code>W6.12</code> <strong>Can contribute to project documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
           </span>
           </span>
           <div>
@@ -2281,7 +2345,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 06:41:59 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 05 Sep 2018 11:46:32 GMT</small></div>
 </footer>
 </div>
 </body>
