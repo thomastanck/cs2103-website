@@ -458,12 +458,19 @@
               </div>
               <div id="main">
                 <div>
-                  <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+                  <p>
+                    <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\introduction\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Introduction → What"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/ClassDiagrams" fragment="main"></panel>
+                  </p>
+                  <p><strong>Classes form the basis of class diagrams.</strong></p>
                   <p>
                     <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classes\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Classes → What"
                       alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Classes" fragment="main"></panel>
                     <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classLevelMembers\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Class-Level Members → What"
                       alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Class-Level Members" fragment="main"></panel>
+                  </p>
+                  <p><strong><em>Associations</em> are the main connections among the classes in a class diagram.</strong></p>
+                  <p>
                     <panel type="seamless" src="/cs2103-website\book\oop\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Associations → What"
                       alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Associations" fragment="main"></panel>
                     <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → What"
@@ -547,8 +554,77 @@
             </div>
           </div>
         </panel>
+        <panel type="danger" expanded="" no-close="" epxandable="true">
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain object diagrams</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div>
+            <div></div>
+            <p></p>
+            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+              </span>
+            </p>
+            <div id="title-and-body">
+              <div>
+                <h4 id="object-diagrams">Object Diagrams</h4>
+              </div>
+              <div id="main">
+                <div>
+                  <p>
+                    <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\introduction\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Introduction"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Object Diagrams" fragment="main"></panel>
+                  </p>
+                  <p><strong>Object diagrams can be used to complement class diagrams.</strong> For example, you can use object diagrams to model different object structures that can result from a design represented by a given class diagram.</p>
+                  <p>
+                    <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\objects\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Objects"
+                      alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OD/Objects" fragment="main"></panel>
+                    <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\associations\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Associations" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OD/Associations"
+                      fragment="main"></panel>
+                  </p>
+                </div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <hr style="border-top: dashed 1px; border-color:grey">
+          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+          <div>
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Object Diagrams for Class Diagram">
+                <question>
+                  <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+                  <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                  <p></p>
+                  <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                  <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+                  <ol>
+                    <li>
+                      <p>There are no persons.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                    </li>
+                    <li>
+                      <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                    </li>
+                    <li>
+                      <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                    </li>
+                  </ol>
+                  <div slot="hint">
+                    <p>After step 2, the diagram should be like this:</p>
+                    <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
+                </question>
+              </panel>
+            </div>
+          </div>
+        </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W5.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between class diagrams and object diagrams</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           <span
             class="glyphicon glyphicon-star" aria-hidden="true"></span>
             </span>
@@ -2787,12 +2863,19 @@ git pull origin master
                   </div>
                   <div id="main">
                     <div>
-                      <p><strong>Classes form the basis of class diagrams. <em>Associations</em> among objects/classes play an important role in an OO solution.</strong></p>
+                      <p>
+                        <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\introduction\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Introduction → What"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/ClassDiagrams" fragment="main"></panel>
+                      </p>
+                      <p><strong>Classes form the basis of class diagrams.</strong></p>
                       <p>
                         <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classes\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Classes → What"
                           alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Classes" fragment="main"></panel>
                         <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\classLevelMembers\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Class-Level Members → What"
                           alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Class-Level Members" fragment="main"></panel>
+                      </p>
+                      <p><strong><em>Associations</em> are the main connections among the classes in a class diagram.</strong></p>
+                      <p>
                         <panel type="seamless" src="/cs2103-website\book\oop\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Associations → What"
                           alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OOP/Associations" fragment="main"></panel>
                         <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associations\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Associations → What"
@@ -2873,6 +2956,82 @@ git pull origin master
                       <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
                       <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
                       <p></p>
+                    </question>
+                  </panel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </panel>
+        <panel type="seamless" expanded="">
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W5.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain object diagrams</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+          </span>
+          </span>
+          <div class="indented">
+            <panel minimized="">
+              <span slot="header" class="card-title">Details of the LO</span>
+              <div>
+                <div></div>
+                <p></p>
+                <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+</span></strong>
+                  </span>
+                </p>
+                <div id="title-and-body">
+                  <div>
+                    <h4 id="object-diagrams-2">Object Diagrams</h4>
+                  </div>
+                  <div id="main">
+                    <div>
+                      <p>
+                        <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\introduction\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Introduction"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Object Diagrams" fragment="main"></panel>
+                      </p>
+                      <p><strong>Object diagrams can be used to complement class diagrams.</strong> For example, you can use object diagrams to model different object structures that can result from a design represented by a given class diagram.</p>
+                      <p>
+                        <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\objects\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Objects"
+                          alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OD/Objects" fragment="main"></panel>
+                        <panel type="seamless" src="/cs2103-website\book\uml\objectDiagrams\associations\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Object Diagrams → Associations" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> OD/Associations"
+                          fragment="main"></panel>
+                      </p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </panel><br><br>
+            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+            </p>
+            <div class="indented">
+              <div>
+                <div>
+                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Object Diagrams for Class Diagram">
+                    <question>
+                      <p>Suppose we wrote a program to follow the class structure given in this class diagram:</p>
+                      <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                      <p></p>
+                      <p>Draw object diagrams to represent the object structures after each of these steps below. Assume that we are trying to minimize the number of total objects.</p>
+                      <p>i.e. apply step 1 → [diagram 1] → apply step 2 on diagarm 1 → [diagarm 2] and so on.</p>
+                      <ol>
+                        <li>
+                          <p>There are no persons.</p>
+                        </li>
+                        <li>
+                          <p><code>Alfred</code> is the Guardian of <code>Bruce</code>.</p>
+                        </li>
+                        <li>
+                          <p><code>Bruce</code>'s contact number is the same as <code>Alfred</code>'s.</p>
+                        </li>
+                        <li>
+                          <p><code>Alfred</code> is also the guardian of another person. That person lists <code>Alfred</code>s home address as his home address as well as office address.</p>
+                        </li>
+                        <li>
+                          <p><code>Alfred</code> has a an office address at <code>Wayne Industries</code> building which is different from his home address (i.e. <code>Bat Cave</code>).</p>
+                        </li>
+                      </ol>
+                      <div slot="hint">
+                        <p>After step 2, the diagram should be like this:</p>
+                        <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600"></div>
                     </question>
                   </panel>
                 </div>
