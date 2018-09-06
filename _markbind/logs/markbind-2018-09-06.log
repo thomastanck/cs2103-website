@@ -1892,3 +1892,33 @@ Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\m
 2018-09-06T06:41:29.299Z - info: Press CTRL+C to stop ...
 2018-09-06T06:54:26.663Z - info: Website generation started at 14:54:22
 2018-09-06T06:54:37.376Z - info: Building assets...
+2018-09-06T06:54:50.512Z - info: Assets built
+2018-09-06T06:54:50.512Z - info: Generating pages...
+2018-09-06T06:56:30.921Z - info: Pages built
+2018-09-06T06:56:31.504Z - info: Site data built
+2018-09-06T06:56:31.504Z - info: Website generation complete! Total build time: 129.501s
+2018-09-06T06:56:31.504Z - info: Build success!
+2018-09-06T06:56:31.504Z - info: Generate Site durationMs=129501
+2018-09-06T06:57:48.651Z - info: Deployed!
+2018-09-06T08:03:45.542Z - info: Website generation started at 16:03:41
+2018-09-06T08:04:01.280Z - info: Building assets...
+2018-09-06T08:04:19.474Z - info: Assets built
+2018-09-06T08:04:19.475Z - info: Generating pages...
+2018-09-06T08:05:59.093Z - info: Pages built
+2018-09-06T08:05:59.698Z - info: Site data built
+2018-09-06T08:05:59.698Z - info: Website generation complete! Total build time: 137.817s
+2018-09-06T08:05:59.719Z - info: Generate Site durationMs=137838
+2018-09-06T08:06:00.207Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-06T08:06:00.207Z - info: Press CTRL+C to stop ...
+2018-09-06T08:17:29.939Z - info: Website generation started at 16:17:28
+2018-09-06T08:17:32.107Z - info: Building assets...
+2018-09-06T08:17:37.800Z - info: Assets built
+2018-09-06T08:17:37.801Z - info: Generating pages...
+2018-09-06T08:19:16.414Z - info: Pages built
+2018-09-06T08:19:16.951Z - info: Site data built
+2018-09-06T08:19:16.951Z - info: Website generation complete! Total build time: 108.504s
+2018-09-06T08:19:16.960Z - info: Generate Site durationMs=108513
+2018-09-06T08:19:17.419Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-06T08:19:17.419Z - info: Press CTRL+C to stop ...
+2018-09-06T08:22:06.651Z - info: Website generation started at 16:22:05
+2018-09-06T08:22:08.446Z - info: Building assets...
