@@ -1922,3 +1922,11 @@ Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\m
 2018-09-06T08:19:17.419Z - info: Press CTRL+C to stop ...
 2018-09-06T08:22:06.651Z - info: Website generation started at 16:22:05
 2018-09-06T08:22:08.446Z - info: Building assets...
+2018-09-06T08:22:11.692Z - info: Assets built
+2018-09-06T08:22:11.693Z - info: Generating pages...
+2018-09-06T08:23:41.608Z - info: Pages built
+2018-09-06T08:23:41.741Z - info: Site data built
+2018-09-06T08:23:41.741Z - info: Website generation complete! Total build time: 96.4s
+2018-09-06T08:23:41.741Z - info: Build success!
+2018-09-06T08:23:41.741Z - info: Generate Site durationMs=96400
+2018-09-06T08:24:49.925Z - info: Deployed!
