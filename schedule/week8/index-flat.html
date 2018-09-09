@@ -760,7 +760,7 @@ What%%"></panel>
                   </div>
               </panel>
               <br>
-              <p><span class="dimmed"><strong>SoC and OCP</strong></span></p>
+              <p><span class="dimmed"><strong>Some other principles</strong></span></p>
               <panel type="warning" expanded="" no-close="" no-switch="" epxandable="false">
                 <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain separation of concerns principle</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                 <span
@@ -1061,6 +1061,64 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                   <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
                   <div>
                     <p>Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).</p>
+                  </div>
+              </panel>
+              <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
+                <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <span
+                  class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  </span>
+                  </span>
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <tip-box type="primary">
+                            <div>
+                              <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                            </div>
+                          </tip-box>
+                          <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as
+                              when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                          </tip-box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                              <ul>
+                                <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                                <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                                <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                              </ul>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr style="border-top: dashed 1px; border-color:grey">
+                  <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+                  <div>
+                    <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+                    <div>
+                      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                      <p>
+                        <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                          fragment="tutorial-pr-instructions"></panel>
+                      </p>
+                    </div>
                   </div>
               </panel>
           </panel>
@@ -3763,6 +3821,70 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
               </div>
             </panel>
             <panel type="seamless" expanded="">
+              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W8.1i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span>
+              <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <div class="indented">
+                <panel minimized="">
+                  <span slot="header" class="card-title">Details of the LO</span>
+                  <div>
+                    <div></div>
+                    <p></p>
+                    <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+</span></strong>
+                      </span>
+                    </p>
+                    <div id="title-and-body">
+                      <div>
+                        <h4 id="single-responsibility-principle-2">Single Responsibility Principle</h4>
+                      </div>
+                      <div id="main">
+                        <div>
+                          <tip-box type="primary">
+                            <div>
+                              <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                            </div>
+                          </tip-box>
+                          <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as
+                              when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                          </tip-box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                              <ul>
+                                <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                                <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a> by Patkos Csaba</li>
+                                <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                              </ul>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </panel><br><br>
+                <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span>
+                </p>
+                <div class="indented">
+                  <div>
+                    <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+                    <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+                    <div>
+                      <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                      <p>
+                        <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%"
+                          fragment="tutorial-pr-instructions"></panel>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </panel>
+            <panel type="seamless" expanded="">
               <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W8.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the meaning of association
               classes</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
@@ -5092,7 +5214,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sat, 08 Sep 2018 06:37:51 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 09 Sep 2018 16:08:38 GMT</small></div>
 </footer>
 </div>
 </body>
