@@ -6536,145 +6536,253 @@ Wednesday =&gt; 2
           <panel type="seamless" header="#### Access Modifiers" expanded="">
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain access modifiers</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p><strong>Access level modifiers determine whether other classes can use a particular field or invoke a particular method.</strong></p>
-                  <p>There are two levels of access control:</p>
-                  <ol>
-                    <li>
-                      <p><strong>At the class level</strong>:</p>
-                      <ul>
-                        <li><strong><code>public</code></strong>: the class is visible to all classes everywhere</li>
-                        <li><strong>no modifier (the default, also known as <em>package-private</em>)</strong>: it is visible only within its own package<br><br></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p><strong>At the member level</strong>:</p>
-                      <ul>
-                        <li><strong><code>public</code></strong> or <strong>no modifier (<em>package-private</em>)</strong>: same meaning as when used with top-level classes</li>
-                        <li><strong><code>private</code></strong>: the member can only be accessed in its own class</li>
-                        <li><strong><code>protected</code></strong>: the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package</li>
-                      </ul>
-                    </li>
-                  </ol>
-                  <p>The following table shows the access to members permitted by each modifier.</p>
-                  <div class="indented">
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>Modifier</th>
-                            <th>
-                              <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
-                            </th>
-                            <th>
-                              <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
-                            </th>
-                            <th>
-                              <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
-                            </th>
-                            <th>
-                              <tooltip content="whether all classes have access to the member">World</tooltip>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><code>public</code></td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>protected</code></td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>no modifier</td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><code>private</code></td>
-                            <td><span style="color:green"><span class="fas fa-check"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                            <td><span style="color:red"><span class="fas fa-times"></span></span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain access modifiers</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong>Access level modifiers determine whether other classes can use a particular field or invoke a particular method.</strong></p>
+                <p>There are two levels of access control:</p>
+                <ol>
+                  <li>
+                    <p><strong>At the class level</strong>:</p>
+                    <ul>
+                      <li><strong><code>public</code></strong>: the class is visible to all classes everywhere</li>
+                      <li><strong>no modifier (the default, also known as <em>package-private</em>)</strong>: it is visible only within its own package<br><br></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>At the member level</strong>:</p>
+                    <ul>
+                      <li><strong><code>public</code></strong> or <strong>no modifier (<em>package-private</em>)</strong>: same meaning as when used with top-level classes</li>
+                      <li><strong><code>private</code></strong>: the member can only be accessed in its own class</li>
+                      <li><strong><code>protected</code></strong>: the member can only be accessed within its own package (as with package-private) and, in addition, by a subclass of its class in another package</li>
+                    </ul>
+                  </li>
+                </ol>
+                <p>The following table shows the access to members permitted by each modifier.</p>
+                <div class="indented">
+                  <div class="table-responsive">
+                    <table class="markbind-table table table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th>Modifier</th>
+                          <th>
+                            <tooltip content="whether the class itself has access to the member defined by the access level">Class</tooltip>
+                          </th>
+                          <th>
+                            <tooltip content="whether classes in the same package as the class (regardless of their parentage) have access to the member">Package</tooltip>
+                          </th>
+                          <th>
+                            <tooltip content="whether subclasses of the class declared outside this package have access to the member">Subclass</tooltip>
+                          </th>
+                          <th>
+                            <tooltip content="whether all classes have access to the member">World</tooltip>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>public</code></td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>protected</code></td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>no modifier</td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><code>private</code></td>
+                          <td><span style="color:green"><span class="fas fa-check"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                          <td><span style="color:red"><span class="fas fa-times"></span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
-                  <p>Access levels affect you in two ways:</p>
-                  <ol>
-                    <li>When you use classes that come from another source, such as the classes in the Java platform, access levels determine which members of those classes your own classes can use.</li>
-                    <li>When you write a class, you need to decide what access level every member variable and every method in your class should have.</li>
-                  </ol>
                 </div>
-                <div></div>
+                <p>Access levels affect you in two ways:</p>
+                <ol>
+                  <li>When you use classes that come from another source, such as the classes in the Java platform, access levels determine which members of those classes your own classes can use.</li>
+                  <li>When you write a class, you need to decide what access level every member variable and every method in your class should have.</li>
+                </ol>
+              </div>
+              <div></div>
             </div>
           </panel>
           <panel type="seamless" header="#### Constants" expanded="">
             <div class="indented">
               <span class="badge badge-light">
-  <span><span class="dimmed"><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-              <span
-                class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span>
-                </span>
-                </span>
-                <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java constants</span>
-                </span>
-                </span>
-                </span>
-                <p></p>
-                <div>
-                  <p>Java does not directly support constants. The convention is to use a <code>static</code> <code>final</code> variable where a constant is needed. The <code>static</code> modifier causes the variable to be available without instantiating
-                    an object. The <code>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
-                  <box>
-                    <p><span class="fas fa-cube"></span> Here is an example of a constant named <code>MAX_BALANCE</code> which can be accessed as <code>Account.MAX_BALANCE</code>.</p>
-                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java constants</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p>Java does not directly support constants. The convention is to use a <code>static</code> <code>final</code> variable where a constant is needed. The <code>static</code> modifier causes the variable to be available without instantiating
+                  an object. The <code>final</code> modifier causes the variable to be unchangeable. Java constants are normally declared in ALL CAPS separated by underscores.</p>
+                <box>
+                  <p><span class="fas fa-cube"></span> Here is an example of a constant named <code>MAX_BALANCE</code> which can be accessed as <code>Account.MAX_BALANCE</code>.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Account</span></span>{
 
   <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> MAX_BALANCE = <span class="hljs-number">1000000.0</span>;
 
 }
 </code></pre>
-                    <p><span class="fas fa-cube"></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code>Math.PI</code></a> is an example constant that comes with Java.</p>
-                  </box>
-                </div>
-                <div></div>
+                  <p><span class="fas fa-cube"></span> <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Math.html#PI"><code>Math.PI</code></a> is an example constant that comes with Java.</p>
+                </box>
+              </div>
+              <div></div>
+            </div>
+          </panel>
+          <panel type="seamless" header="#### Casting" expanded="">
+            <div class="indented">
+              <span class="badge badge-light">
+  <span><span class="dimmed"><font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star"
+                aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></span>
+              </span>
+              </span>
+              <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java casting</span>
+              </span>
+              </span>
+              </span>
+              <p></p>
+              <div>
+                <p><strong><mark><em>Casting</em></mark> is the action of converting from one type to another</strong>. You can use the <code>(newType)</code> syntax to cast a value to a new type.</p>
+                <p><strong>When you cast a primitive value to another type, there may be a loss of precision.</strong></p>
+                <box>
+                  <p><span class="fas fa-cube"></span> The code below cast a <code>double</code> value to an <code>int</code> value and cast it back to a <code>double</code>. Note the loss of precision.</p>
+                  <pre><code class="hljs java"><span class="hljs-keyword">double</span> d = <span class="hljs-number">5.3</span>;
+System.out.println(<span class="hljs-string">"Before casting to an int: "</span> + d);
+<span class="hljs-keyword">int</span> i = (<span class="hljs-keyword">int</span>)d; <span class="hljs-comment">// cast d to an int</span>
+System.out.println(<span class="hljs-string">"After casting to an int: "</span> + i);
+d = (<span class="hljs-keyword">double</span>)i; <span class="hljs-comment">// cast i back to a double</span>
+System.out.println(<span class="hljs-string">"After casting back a double: "</span> + d);
+</code></pre>
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre class="hljs"><code>Before casting to an int: 5.3
+After casting to an int: 5
+After casting back a double: 5.0
+</code></pre>
+                </box>
+                <p><strong><mark><em>Downcasting</em></mark> is when you cast an object reference from a superclass to a subclass.</strong></p>
+                <box>
+                  <p><span class="fas fa-cube"></span> Assume the following class hierarchy:</p>
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span></span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span></span>{
+        System.out.println(<span class="hljs-string">"I'm an animal"</span>);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Cat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">"I'm a Cat"</span>);
+    }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DomesticCat</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Cat</span></span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">"I'm a DomesticCat"</span>);
+    }
+}
+</code></pre>
+                  <p>The <code>foo</code> method below downcasts an <code>Animal</code> object to its subclasses.</p>
+                  <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Animal a)</span></span>{
+    a.speak();
+    Cat c = (Cat)a; <span class="hljs-comment">// downcast a to a Cat</span>
+    c.speak();
+    DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">// downcast a to a DomesticCat</span>
+    dc.speak();
+}
+</code></pre>
+                </box>
+                <p><strong><mark><em>Upcasting</em></mark> is when you cast an object reference from a subclass to a superclass.</strong> However, upcasting is done automatically by the compiler even if you do not specify it explicitly.</p>
+                <box>
+                  <p><span class="fas fa-cube"></span> This example upcasts a <code>Cat</code> object to its superclass <code>Animal</code>:</p>
+                  <pre><code class="hljs java">Cat c = <span class="hljs-keyword">new</span> Cat();
+Animal a1 = (Animal)c; <span class="hljs-comment">//upcasting c to the Animal class</span>
+Animal a2 = c; <span class="hljs-comment">//upcasting is implicit</span>
+
+</code></pre>
+                </box>
+                <p>Note that due to polymorphism, the behavior of the object will reflect the actual type of the object irrespective of the type of the variable holding a reference to it.</p>
+                <box>
+                  <p><span class="fas fa-cube"></span> The call to the <code>speak()</code> method in the code below always executes the <code>speak()</code> method of the <code>DomesticCat</code> class because the actual type of the object remains <code>DomesticCat</code>                    although the reference to it is being downcast/upcast to various other types.</p>
+                  <pre><code class="hljs java">Animal a = <span class="hljs-keyword">new</span> DomesticCat(); <span class="hljs-comment">//implicit upcast</span>
+a.speak();
+Cat c = (Cat)a; <span class="hljs-comment">//downcast</span>
+c.speak();
+DomesticCat dc = (DomesticCat)a; <span class="hljs-comment">//downcast</span>
+dc.speak();
+</code></pre>
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre class="hljs"><code>I'm a DomesticCat
+I'm a DomesticCat
+I'm a DomesticCat
+</code></pre>
+                </box>
+                <p><strong>Casting to an incompatible type can result in a <code>ClassCastException</code> at runtime.</strong></p>
+                <box>
+                  <p><span class="fas fa-cube"></span> This code will cause a <code>ClassCastException</code>:</p>
+                  <pre><code class="hljs java">Object o = <span class="hljs-keyword">new</span> Animal();
+Integer x = (Integer)o;
+</code></pre>
+                  <p><span class="fas fa-arrow-down"></span></p>
+                  <pre class="hljs"><code>Exception in thread &quot;main&quot; java.lang.ClassCastException: misc.casting.Animal cannot be cast to java.lang.Integer
+	at misc.casting.CastingExamples.main(CastingExamples.java:14)
+</code></pre>
+                </box>
+                <p>You can use the <code>instanceof</code> operator to check if a cast is safe to perform.</p>
+                <box>
+                  <p><span class="fas fa-cube"></span> This code checks if the object <code>a</code> is an instance of the <code>Cat</code> class before casting it to a <code>Cat</code>.</p>
+                  <pre><code class="hljs java">Cat c;
+<span class="hljs-keyword">if</span> (a <span class="hljs-keyword">instanceof</span> Cat){
+    c = (Cat)a;
+}
+</code></pre>
+                </box>
+              </div>
+              <div></div>
             </div>
           </panel>
         </panel>
@@ -6685,7 +6793,7 @@ Wednesday =&gt; 2
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 10 Sep 2018 08:56:02 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 10 Sep 2018 15:40:21 GMT</small></div>
 </footer>
 </div>
 </body>
