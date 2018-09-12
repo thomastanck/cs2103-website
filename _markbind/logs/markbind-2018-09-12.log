@@ -1,0 +1,42 @@
+2018-09-12T05:46:24.460Z - info: Website generation started at 13:46:08
+2018-09-12T05:47:01.632Z - info: Building assets...
+2018-09-12T05:47:31.936Z - info: Assets built
+2018-09-12T05:47:31.936Z - info: Generating pages...
+2018-09-12T05:49:19.912Z - info: Pages built
+2018-09-12T05:49:20.492Z - info: Site data built
+2018-09-12T05:49:20.492Z - info: Website generation complete! Total build time: 191.706s
+2018-09-12T05:49:20.492Z - info: Generate Site durationMs=191706
+2018-09-12T05:49:21.198Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-12T05:49:21.199Z - info: Press CTRL+C to stop ...
+2018-09-12T05:55:22.307Z - info: [13:55:22] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:55:23.323Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:55:23.323Z - info: Rebuilding 6 pages
+2018-09-12T05:55:28.611Z - info: [13:55:28] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:55:49.117Z - info: Pages rebuilt
+2018-09-12T05:55:49.204Z - info: Site data built
+2018-09-12T05:55:49.475Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:55:49.477Z - info: Rebuilding 6 pages
+2018-09-12T05:56:15.629Z - info: Pages rebuilt
+2018-09-12T05:56:15.648Z - info: Site data built
+2018-09-12T05:57:37.938Z - info: [13:57:37] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:57:38.948Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:57:38.948Z - info: Rebuilding 6 pages
+2018-09-12T05:58:04.332Z - info: Pages rebuilt
+2018-09-12T05:58:04.361Z - info: Site data built
+2018-09-12T05:58:19.484Z - info: [13:58:19] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:58:20.501Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\useCases\details\extensions.md
+2018-09-12T05:58:20.501Z - info: Rebuilding 6 pages
+2018-09-12T05:58:45.609Z - info: Pages rebuilt
+2018-09-12T05:58:45.633Z - info: Site data built
+2018-09-12T06:47:15.604Z - info: Website generation started at 14:47:08
+2018-09-12T06:47:51.857Z - info: Building assets...
+2018-09-12T06:48:24.623Z - info: Assets built
+2018-09-12T06:48:24.623Z - info: Generating pages...
+2018-09-12T06:50:17.788Z - info: Pages built
+2018-09-12T06:50:18.351Z - info: Site data built
+2018-09-12T06:50:18.351Z - info: Website generation complete! Total build time: 189.384s
+2018-09-12T06:50:18.398Z - info: Generate Site durationMs=189431
+2018-09-12T06:50:19.027Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-12T06:50:19.027Z - info: Press CTRL+C to stop ...
+2018-09-12T06:52:06.349Z - info: Website generation started at 14:52:01
+2018-09-12T06:52:09.147Z - info: Building assets...

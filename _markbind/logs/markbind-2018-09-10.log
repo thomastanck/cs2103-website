@@ -1,12 +1,51 @@
-2018-09-09T16:08:31.703Z - info: Website generation started at 00:08:28
-2018-09-09T16:08:34.142Z - info: Building assets...
-2018-09-09T16:08:38.098Z - info: Assets built
-2018-09-09T16:08:38.098Z - info: Generating pages...
-2018-09-09T16:10:17.147Z - info: Pages built
-2018-09-09T16:10:17.225Z - info: Site data built
-2018-09-09T16:10:17.225Z - info: Website generation complete! Total build time: 108.487s
-2018-09-09T16:10:17.225Z - info: Build success!
-2018-09-09T16:10:17.225Z - info: Generate Site durationMs=108487
-2018-09-09T16:11:17.204Z - info: Deployed!
-2018-09-10T15:40:18.644Z - info: Website generation started at 23:40:17
-2018-09-10T15:40:20.350Z - info: Building assets...
+2018-09-10T07:34:18.520Z - info: Website generation started at 15:34:08
+2018-09-10T07:34:42.326Z - info: Building assets...
+2018-09-10T07:35:03.703Z - info: Assets built
+2018-09-10T07:35:03.703Z - info: Generating pages...
+2018-09-10T07:36:50.523Z - info: Pages built
+2018-09-10T07:36:51.158Z - info: Site data built
+2018-09-10T07:36:51.158Z - info: Website generation complete! Total build time: 163.041s
+2018-09-10T07:36:51.158Z - info: Generate Site durationMs=163041
+2018-09-10T07:36:51.760Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-10T07:36:51.760Z - info: Press CTRL+C to stop ...
+2018-09-10T07:46:09.993Z - info: [15:46:09] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\uml\classDiagrams\combine\basic\q-essay-objectDiagramsForClassDiagram.md
+2018-09-10T07:46:11.010Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\uml\classDiagrams\combine\basic\q-essay-objectDiagramsForClassDiagram.md
+2018-09-10T07:46:11.010Z - info: Rebuilding 6 pages
+2018-09-10T07:46:36.003Z - info: Pages rebuilt
+2018-09-10T07:46:36.014Z - info: Site data built
+2018-09-10T07:47:20.644Z - info: [15:47:20] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\uml\classDiagrams\combine\basic\q-essay-objectDiagramsForClassDiagram.md
+2018-09-10T07:47:21.659Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\uml\classDiagrams\combine\basic\q-essay-objectDiagramsForClassDiagram.md
+2018-09-10T07:47:21.659Z - info: Rebuilding 6 pages
+2018-09-10T07:47:45.459Z - info: Pages rebuilt
+2018-09-10T07:47:45.476Z - info: Site data built
+2018-09-10T07:48:23.545Z - info: [15:48:23] Reload for file add: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\ppt40FE.tmp
+2018-09-10T07:48:23.675Z - info: [15:48:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\ppt40FE.tmp
+2018-09-10T07:48:23.895Z - info: [15:48:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\objectDiagramsForClassDiagramExtra.pptx
+2018-09-10T07:48:23.901Z - info: [15:48:23] Reload for file add: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\EFB6CCBF.tmp
+2018-09-10T07:48:23.995Z - info: [15:48:23] Reload for file deletion: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\ppt40FE.tmp
+2018-09-10T07:48:24.040Z - info: [15:48:24] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\objectDiagramsForClassDiagramExtra.pptx
+2018-09-10T07:48:24.264Z - info: [15:48:24] Reload for file deletion: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\EFB6CCBF.tmp
+2018-09-10T07:48:24.548Z - info: Assets built
+2018-09-10T07:48:24.997Z - info: Assets removed
+2018-09-10T07:48:32.582Z - info: [15:48:32] Reload for file deletion: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\combine\~$objectDiagramsForClassDiagramExtra.pptx
+2018-09-10T07:48:33.589Z - info: Assets removed
+2018-09-10T08:04:28.226Z - info: Website generation started at 16:04:23
+2018-09-10T08:04:41.456Z - info: Building assets...
+2018-09-10T08:04:54.544Z - info: Assets built
+2018-09-10T08:04:54.544Z - info: Generating pages...
+2018-09-10T08:06:30.452Z - info: Pages built
+2018-09-10T08:06:31.874Z - info: Site data built
+2018-09-10T08:06:31.876Z - info: Website generation complete! Total build time: 128.568s
+2018-09-10T08:06:31.876Z - info: Build success!
+2018-09-10T08:06:31.876Z - info: Generate Site durationMs=128569
+2018-09-10T08:08:14.589Z - info: Deployed!
+2018-09-10T08:55:48.881Z - info: Website generation started at 16:55:46
+2018-09-10T08:55:52.358Z - info: Building assets...
+2018-09-10T08:56:02.932Z - info: Assets built
+2018-09-10T08:56:02.932Z - info: Generating pages...
+2018-09-10T08:57:53.137Z - info: Pages built
+2018-09-10T08:57:53.756Z - info: Site data built
+2018-09-10T08:57:53.756Z - info: Website generation complete! Total build time: 127.524s
+2018-09-10T08:57:53.756Z - info: Build success!
+2018-09-10T08:57:53.756Z - info: Generate Site durationMs=127524
+2018-09-10T08:59:06.537Z - info: Deployed!
