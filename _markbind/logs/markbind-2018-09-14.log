@@ -46,3 +46,33 @@
 2018-09-14T03:21:50.066Z - info: Press CTRL+C to stop ...
 2018-09-14T03:25:04.972Z - info: Website generation started at 11:25:00
 2018-09-14T03:25:07.333Z - info: Building assets...
+2018-09-14T03:25:10.547Z - info: Assets built
+2018-09-14T03:25:10.548Z - info: Generating pages...
+2018-09-14T03:26:39.749Z - info: Pages built
+2018-09-14T03:26:39.921Z - info: Site data built
+2018-09-14T03:26:39.921Z - info: Website generation complete! Total build time: 99.773s
+2018-09-14T03:26:39.921Z - info: Build success!
+2018-09-14T03:26:39.921Z - info: Generate Site durationMs=99773
+2018-09-14T03:28:07.472Z - info: Deployed!
+2018-09-14T11:14:32.678Z - info: Website generation started at 19:14:18
+2018-09-14T11:15:51.977Z - info: Building assets...
+2018-09-14T11:16:11.276Z - info: Assets built
+2018-09-14T11:16:11.276Z - info: Generating pages...
+2018-09-14T11:18:05.865Z - info: Pages built
+2018-09-14T11:18:06.520Z - info: Site data built
+2018-09-14T11:18:06.520Z - info: Website generation complete! Total build time: 227.767s
+2018-09-14T11:18:06.521Z - info: Generate Site durationMs=227768
+2018-09-14T11:18:07.013Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-14T11:18:07.013Z - info: Press CTRL+C to stop ...
+2018-09-14T11:19:45.867Z - info: [19:19:45] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\revisionControl\what\text.md
+2018-09-14T11:19:46.873Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\revisionControl\what\text.md
+2018-09-14T11:19:46.877Z - info: Rebuilding 7 pages
+2018-09-14T11:20:06.948Z - info: [19:20:06] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-14T11:20:15.673Z - info: Pages rebuilt
+2018-09-14T11:20:15.687Z - info: Site data built
+2018-09-14T11:20:15.935Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-14T11:20:15.935Z - info: Rebuilding 2 pages
+2018-09-14T11:20:36.857Z - info: Pages rebuilt
+2018-09-14T11:20:36.882Z - info: Site data built
+2018-09-14T11:29:44.458Z - info: Website generation started at 19:29:38
+2018-09-14T11:30:01.260Z - info: Building assets...
