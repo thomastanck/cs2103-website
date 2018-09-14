@@ -1,0 +1,48 @@
+2018-09-14T02:48:48.678Z - info: Website generation started at 10:47:57
+2018-09-14T02:49:43.148Z - info: Building assets...
+2018-09-14T02:50:07.759Z - info: Assets built
+2018-09-14T02:50:07.759Z - info: Generating pages...
+2018-09-14T02:52:13.473Z - info: Pages built
+2018-09-14T02:52:14.408Z - info: Site data built
+2018-09-14T02:52:14.408Z - info: Website generation complete! Total build time: 257.266s
+2018-09-14T02:52:14.420Z - info: Generate Site durationMs=257278
+2018-09-14T02:52:14.958Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-14T02:52:14.958Z - info: Press CTRL+C to stop ...
+2018-09-14T02:54:53.755Z - info: [10:54:53] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md
+2018-09-14T02:54:53.755Z - info: [10:54:53] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md
+2018-09-14T02:54:54.771Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md
+2018-09-14T02:54:54.771Z - info: Rebuilding 5 pages
+2018-09-14T02:55:22.916Z - info: Pages rebuilt
+2018-09-14T02:55:22.941Z - info: Site data built
+2018-09-14T03:04:17.512Z - info: Website generation started at 11:04:13
+2018-09-14T03:04:21.355Z - info: Building assets...
+2018-09-14T03:04:25.073Z - info: Assets built
+2018-09-14T03:04:25.074Z - info: Generating pages...
+2018-09-14T03:05:56.385Z - info: Pages built
+2018-09-14T03:05:56.615Z - info: Site data built
+2018-09-14T03:05:56.615Z - info: Website generation complete! Total build time: 103.006s
+2018-09-14T03:05:56.615Z - info: Generate Site durationMs=103006
+2018-09-14T03:05:56.971Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-14T03:05:56.971Z - info: Press CTRL+C to stop ...
+2018-09-14T03:07:31.522Z - info: [11:07:31] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-14T03:07:32.537Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-14T03:07:32.539Z - info: Rebuilding 2 pages
+2018-09-14T03:07:53.509Z - info: Pages rebuilt
+2018-09-14T03:07:53.540Z - info: Site data built
+2018-09-14T03:18:55.730Z - info: [11:18:55] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md
+2018-09-14T03:18:56.746Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md
+2018-09-14T03:18:56.746Z - info: Rebuilding 3 pages
+2018-09-14T03:19:20.900Z - info: Pages rebuilt
+2018-09-14T03:19:20.915Z - info: Site data built
+2018-09-14T03:20:03.715Z - info: Website generation started at 11:20:01
+2018-09-14T03:20:06.222Z - info: Building assets...
+2018-09-14T03:20:10.077Z - info: Assets built
+2018-09-14T03:20:10.078Z - info: Generating pages...
+2018-09-14T03:21:49.522Z - info: Pages built
+2018-09-14T03:21:49.705Z - info: Site data built
+2018-09-14T03:21:49.705Z - info: Website generation complete! Total build time: 108.525s
+2018-09-14T03:21:49.714Z - info: Generate Site durationMs=108534
+2018-09-14T03:21:50.066Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-14T03:21:50.066Z - info: Press CTRL+C to stop ...
+2018-09-14T03:25:04.972Z - info: Website generation started at 11:25:00
+2018-09-14T03:25:07.333Z - info: Building assets...
