@@ -3223,3 +3223,90 @@ Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\
 2018-09-17T06:24:27.511Z - info: Press CTRL+C to stop ...
 2018-09-17T06:27:18.517Z - info: Website generation started at 14:27:15
 2018-09-17T06:27:22.407Z - info: Building assets...
+2018-09-17T06:27:26.091Z - info: Assets built
+2018-09-17T06:27:26.092Z - info: Generating pages...
+2018-09-17T06:29:02.022Z - info: Pages built
+2018-09-17T06:29:02.183Z - info: Site data built
+2018-09-17T06:29:02.184Z - info: Website generation complete! Total build time: 106.423s
+2018-09-17T06:29:02.184Z - info: Build success!
+2018-09-17T06:29:02.184Z - info: Generate Site durationMs=106423
+2018-09-17T06:30:43.053Z - info: Deployed!
+2018-09-17T07:00:22.101Z - info: Website generation started at 15:00:13
+2018-09-17T07:00:55.842Z - info: Building assets...
+2018-09-17T07:01:19.903Z - info: Assets built
+2018-09-17T07:01:19.905Z - info: Generating pages...
+2018-09-17T07:03:35.029Z - info: Pages built
+2018-09-17T07:03:35.700Z - info: Site data built
+2018-09-17T07:03:35.700Z - info: Website generation complete! Total build time: 202.47s
+2018-09-17T07:03:35.732Z - info: Generate Site durationMs=202502
+2018-09-17T07:03:38.611Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-17T07:03:38.611Z - info: Press CTRL+C to stop ...
+2018-09-17T07:08:10.596Z - info: [15:08:10] Reload for file add: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\modelling\modellingStructures\classDiagramsIntermediate\~$a-classDiagramForItemEtc.pptx
+2018-09-17T07:08:10.649Z - info: [15:08:10] Reload for file add: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\modelling\modellingStructures\classDiagramsIntermediate\a-classDiagramForItemEtc.pptx
+2018-09-17T07:08:10.683Z - info: [15:08:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\modelling\modellingStructures\classDiagramsIntermediate\a-classDiagramForItemEtc.pptx
+2018-09-17T07:08:10.987Z - info: [15:08:10] Reload for file deletion: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\uml\classDiagrams\introduction\what\~$classDiagramExample1.pptx
+2018-09-17T07:08:11.598Z - info: Assets built
+2018-09-17T07:08:11.990Z - info: Assets removed
+2018-09-17T07:45:18.935Z - info: [15:45:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\q-drawClassDiagramForItemEtc.md
+2018-09-17T07:45:19.942Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\q-drawClassDiagramForItemEtc.md
+2018-09-17T07:45:19.952Z - info: Rebuilding 7 pages
+2018-09-17T07:45:25.766Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header-flat.md
+2018-09-17T07:45:25.766Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\policies.fr
+2018-09-17T07:45:25.766Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\text.md
+2018-09-17T07:45:25.767Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\text.md
+2018-09-17T07:45:25.767Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\modeling.md
+2018-09-17T07:45:25.767Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\lecture.md
+2018-09-17T07:45:25.855Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-09-17T07:45:25.856Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-09-17T07:45:25.856Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\exercises.md
+2018-09-17T07:45:25.856Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\q-explainMachineSequenceDiagram.md
+2018-09-17T07:45:25.857Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\q-essay-drawSequenceDiagramForPerson.md
+2018-09-17T07:45:25.857Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md
+2018-09-17T07:45:25.857Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\errorHandling.md
+2018-09-17T07:45:25.857Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\javaTools.md
+2018-09-17T07:45:25.857Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md
+2018-09-17T07:45:25.858Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\oop.md
+2018-09-17T07:45:25.858Z - info: [15:45:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\junit.md
+2018-09-17T07:45:28.076Z - info: Assets built
+2018-09-17T07:45:49.725Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\tutorials.md
+2018-09-17T07:45:49.921Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week1\lecture.md
+2018-09-17T07:45:49.922Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\cppToJava.md
+2018-09-17T07:45:49.922Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\tutorial-cs2103.md
+2018-09-17T07:45:49.923Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\tutorial-cs2103.md
+2018-09-17T07:45:49.930Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\tutorial-cs2103.md
+2018-09-17T07:45:49.931Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\lecture.md
+2018-09-17T07:45:49.931Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week12\lecture.md
+2018-09-17T07:45:49.932Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md
+2018-09-17T07:45:49.932Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\participation.md
+2018-09-17T07:45:49.932Z - info: [15:45:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\lectures.md
+2018-09-17T07:45:50.011Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\refactoring.md
+2018-09-17T07:45:50.012Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\codeQuality.md
+2018-09-17T07:45:50.012Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\specifyingRequirements.md
+2018-09-17T07:45:50.012Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\lecture.md
+2018-09-17T07:45:50.012Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md
+2018-09-17T07:45:50.012Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md
+2018-09-17T07:45:50.013Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\modelling\modellingStructures\classDiagramsIntermediate\a-classDiagramForItemEtc.pptx
+2018-09-17T07:45:50.013Z - info: [15:45:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md
+2018-09-17T07:45:52.176Z - info: Assets built
+2018-09-17T07:45:57.038Z - info: [15:45:57] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w03-inception.md
+2018-09-17T07:45:57.101Z - info: [15:45:57] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md
+2018-09-17T07:45:58.855Z - info: Pages rebuilt
+2018-09-17T07:45:58.874Z - info: Site data built
+2018-09-17T07:45:59.085Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header-flat.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\classDiagramsIntermediate\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\modeling.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\exercises.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\q-explainMachineSequenceDiagram.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\sequenceDiagramsBasic\q-essay-drawSequenceDiagramForPerson.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\errorHandling.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\javaTools.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\oop.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\junit.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\tutorials.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week1\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\cppToJava.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week12\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\participation.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\lectures.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\refactoring.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\codeQuality.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\specifyingRequirements.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w03-inception.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md
+2018-09-17T07:45:59.097Z - info: Rebuilding 52 pages
+2018-09-17T07:46:58.971Z - info: Pages rebuilt
+2018-09-17T07:46:58.994Z - info: Site data built
+2018-09-17T07:57:03.699Z - info: [15:57:03] Reload for file deletion: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\diagrams\modelling\modellingStructures\classDiagramsIntermediate\~$a-classDiagramForItemEtc.pptx
+2018-09-17T07:57:04.701Z - info: Assets removed
+2018-09-17T08:03:02.564Z - info: Website generation started at 16:02:53
+2018-09-17T08:03:24.866Z - info: Building assets...
+2018-09-17T08:03:52.572Z - info: Assets built
+2018-09-17T08:03:52.573Z - info: Generating pages...
+2018-09-17T08:05:57.170Z - info: Pages built
+2018-09-17T08:05:57.779Z - info: Site data built
+2018-09-17T08:05:57.779Z - info: Website generation complete! Total build time: 183.803s
+2018-09-17T08:05:57.798Z - info: Generate Site durationMs=183821
+2018-09-17T08:05:58.504Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-17T08:05:58.504Z - info: Press CTRL+C to stop ...
+2018-09-17T08:08:16.037Z - info: Website generation started at 16:08:12
+2018-09-17T08:08:28.857Z - info: Building assets...
