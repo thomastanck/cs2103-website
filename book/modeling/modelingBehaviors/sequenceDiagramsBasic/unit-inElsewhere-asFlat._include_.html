@@ -33,11 +33,21 @@
       <div>
         <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
           <div>
-            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
-              <question>
-                <div>
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram about Machine">
+                <question>
+                  <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
+                  <img src="/cs2103-website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
+              </panel>
+            </div>
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+                <question>
                   <p>Consider the code below:</p>
-                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                  <div class="row">
+                  
+                    <div class="col-sm-7">
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -46,8 +56,12 @@
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                      <p></p>
+                    </div>
+                  
+                    <div class="col-sm-5">
+                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -59,23 +73,26 @@
     }
 }
 </code></pre>
+                      <p></p>
+                    </div>
+                  </div>
                   <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
                   <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                </div>
-              </question>
-            </panel>
-          </div>
-          <div>
-            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
-              <question>
-                <p>Find notation mistakes in the sequence diagram below:</p>
-                <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
-            </panel>
+                </question>
+              </panel>
+            </div>
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
+                <question>
+                  <p>Find notation mistakes in the sequence diagram below:</p>
+                  <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
+              </panel>
+            </div>
           </div>
         </panel>
       </div>

@@ -444,32 +444,60 @@
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which association notations are shown?">
-                            <question>
-                              <p>Which association notatations are shown in this diagram?</p>
-                              <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
-                              <p></p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(a) (b) (c) (d)</p>
-                                <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
-                            <question>
-                              <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
-                              <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
-                              <p></p>
-                            </question>
-                          </panel>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which association notations are shown?">
+                              <question>
+                                <p>Which association notatations are shown in this diagram?</p>
+                                <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsIntermediate/images/professorStudent.png" height="100">
+                                <p></p>
+                                <ul class="task-list">
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. association labels</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. association roles</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. association multiplicity</li>
+                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. class names</li>
+                                </ul>
+                                <div slot="answer">
+                                  <p>(a) (b) (c) (d)</p>
+                                  <p>Explanation: '1’ is a <em>multiplicity</em>, ‘mentored by’ is a <em>label</em>, and ‘mentor’ is a <em>role</em>.</p>
+                                </div>
+                              </question>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Class Diagram">
+                              <question>
+                                <p>Explain the associations, navigabilities, and multiplicities in the class diagram below:</p>
+                                <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="400">
+                                <p></p>
+                              </question>
+                            </panel>
+                          </div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Class Diagram for Box etc.">
+                              <question>
+                                <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">private</span> Item spareItem;
+    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
+    <span class="hljs-keyword">private</span> Box outerBox;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
+}
+</code></pre>
+                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+    Box box; <span class="hljs-comment">// the box for which this is the lid</span>
+}
+</code></pre>
+                              </question>
+                            </panel>
+                          </div>
                         </div>
                       </panel>
                     </div>
@@ -520,7 +548,48 @@
                         fragment="main"></panel>
                     </p>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <div>
+                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Class Diagram for Box etc.">
+                              <question>
+                                <p>This question is based on the following question from another topic:</p>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw Class Diagram for Box etc.">
+                                    <question>
+                                      <p>Draw a class diagram for the code below. Show the attributes, methods, associations, navigabilities, and multiplicities in the class diagram below:</p>
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span> </span>{
+    <span class="hljs-keyword">private</span> Item[] parts = <span class="hljs-keyword">new</span> Item[<span class="hljs-number">10</span>];
+    <span class="hljs-keyword">private</span> Item spareItem;
+    <span class="hljs-keyword">private</span> Lid lid; <span class="hljs-comment">// lid of this box</span>
+    <span class="hljs-keyword">private</span> Box outerBox;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">open</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> totalItems;
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Lid</span> </span>{
+    Box box; <span class="hljs-comment">// the box for which this is the lid</span>
+}
+</code></pre>
+                                    </question>
+                                  </panel>
+                                </div>
+                                <p>Draw an object diagram to match the code. Include objects of all three classes in your object diagram.</p>
+                              </question>
+                            </panel>
+                          </div>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2546,7 +2615,7 @@ git pull origin master
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Sun, 16 Sep 2018 03:32:00 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 17 Sep 2018 06:27:26 GMT</small></div>
 </footer>
 </div>
 </body>

@@ -271,7 +271,119 @@
                         </p>
                       </div>
                     </div>
-                    <div></div>
+                    <div>
+                      <div>
+                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                          <div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statements about class diagram.">
+                                <question>
+                                  <p>Which of these statements match the class diagram?</p>
+                                  <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsIntermediate/images/mismatch.png" height="290">
+                                  <p></p>
+                                  <ul class="task-list">
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A <code>Snake</code> must belong to at least one <code>Board</code>.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. A <code>SnakeHeadSquare</code> can contain only one <code>Snake</code> head.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. A <code>Square</code> can contain a <code>Snake</code> head.</li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A <code>Snake</code> head can be in more than one <code>SnakeHeadSquare</code></li>
+                                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. The <code>Board</code> has exactly 5 <code>Snake</code>s.</li>
+                                  </ul>
+                                  <div slot="answer">
+                                    <p><s>(a)</s>(b)(c)(d)(e)</p>
+                                    <p>Explanation:</p>
+                                    <p>(a) does not match because a <code>Snake</code> may or may not belong to a <code>Board</code> (multiplicity is <code>0..1</code>)<br> (b) matches the diagram because the multiplicity given in <code>1</code><br> (c)
+                                      matches the diagram because <code>SnakeHeadSquare</code> is a <code>Square</code> (due to inheritance)<br> (d) matches the diagram because the multiplicity given is <code>*</code><br> (e) matches the diagram because
+                                      the multiplicity given in <code>5</code><br></p>
+                                  </div>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain notations in the class diagram">
+                                <question>
+                                  <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
+                                  <img src="https://se-edu.github.io/addressbook-level2/images/mainClassDiagram.png" width="750"></question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Class Diagram for Item etc.">
+                                <question>
+                                  <p>Consider the code below:</p>
+                                  <div class="row">
+                                    <div class="col-sm-6">
+                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">private</span> Review review;
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
+        String name, Rating rating)</span></span>{
+
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                                    </div>
+                                    <div class="col-sm-6">
+                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+    GOOD, OK, POOR
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
+        <span class="hljs-keyword">this</span>.rating = rating;
+    }
+}
+</code></pre>
+                                      <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
+    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> items.size();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
+        <span class="hljs-comment">// ...</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(StockItem s)</span> </span>{
+        items.add(s);
+    }
+}
+</code></pre>
+                                    </div>
+                                  </div>
+                                  <p>(a) Draw a class diagram to represent the code below<br> (b) Draw an object diagram to represent the situation where the Inventory has one item with a name <code>spanner</code> and a review of <code>POOR</code> rating.</p>
+                                </question>
+                              </panel>
+                            </div>
+                          </div>
+                        </panel>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -329,11 +441,21 @@
                       <div>
                         <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                           <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
-                              <question>
-                                <div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram about Machine">
+                                <question>
+                                  <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
+                                  <img src="/cs2103-website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+                                <question>
                                   <p>Consider the code below:</p>
-                                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                                  <div class="row">
+                                  
+                                    <div class="col-sm-7">
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -342,8 +464,12 @@
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                                      <p></p>
+                                    </div>
+                                  
+                                    <div class="col-sm-5">
+                                      <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -355,23 +481,26 @@
     }
 }
 </code></pre>
+                                      <p></p>
+                                    </div>
+                                  </div>
                                   <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
                                   <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
-                              <question>
-                                <p>Find notation mistakes in the sequence diagram below:</p>
-                                <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
-                            </panel>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
+                                <question>
+                                  <p>Find notation mistakes in the sequence diagram below:</p>
+                                  <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
+                              </panel>
+                            </div>
                           </div>
                         </panel>
                       </div>
@@ -385,9 +514,11 @@
                 <div>
                   <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
                     <question>
-                      <div>
-                        <p>Consider the code below:</p>
-                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                      <p>Consider the code below:</p>
+                      <div class="row">
+                      
+                        <div class="col-sm-7">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -396,8 +527,12 @@
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                          <p></p>
+                        </div>
+                      
+                        <div class="col-sm-5">
+                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -409,14 +544,16 @@
     }
 }
 </code></pre>
-                        <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                        <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                          <p></p>
+                        </div>
+                      </div>
+                      <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                      <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                      </div>
                     </question>
                   </panel>
                 </div>
@@ -1989,12 +2126,104 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
   <div class="indented">
     <div>
       <div>
-        <p><strong>An activity to do during tutorial:</strong><br></p>
-        <div class="row">
-          <div class="col-sm-6">
-            <div>
+        <p><strong>Questions to do during tutorial:</strong><br></p>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain notations in the class diagram">
+            <question>
+              <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
+              <img src="https://se-edu.github.io/addressbook-level2/images/mainClassDiagram.png" width="750"></question>
+          </panel>
+        </div>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram about Machine">
+            <question>
+              <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
+              <img src="/cs2103-website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
+          </panel>
+        </div>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Class Diagram for Item etc.">
+            <question>
               <p>Consider the code below:</p>
-              <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+              <div class="row">
+                <div class="col-sm-6">
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">private</span> Review review;
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
+        String name, Rating rating)</span></span>{
+
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                </div>
+                <div class="col-sm-6">
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+    GOOD, OK, POOR
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
+        <span class="hljs-keyword">this</span>.rating = rating;
+    }
+}
+</code></pre>
+                  <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
+    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> items.size();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
+        <span class="hljs-comment">// ...</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(StockItem s)</span> </span>{
+        items.add(s);
+    }
+}
+</code></pre>
+                </div>
+              </div>
+              <p>(a) Draw a class diagram to represent the code below<br> (b) Draw an object diagram to represent the situation where the Inventory has one item with a name <code>spanner</code> and a review of <code>POOR</code> rating.</p>
+            </question>
+          </panel>
+        </div>
+        <div>
+          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+            <question>
+              <p>Consider the code below:</p>
+              <div class="row">
+              
+                <div class="col-sm-7">
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -2003,8 +2232,12 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                  <p></p>
+                </div>
+              
+                <div class="col-sm-5">
+                  <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -2016,25 +2249,18 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
     }
 }
 </code></pre>
+                  <p></p>
+                </div>
+              </div>
               <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
               <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-            </div>
-            <p>After that, draw a class diagram to match the code. Then, draw an object diagram to show the state of the objects after the code has executed one loop.</p>
-          </div>
-          <div class="col-sm-6">
-            &nbsp;
-            <box>
-              <p>Here are some sample diagrams to use as references:<br>
-                <img src="/cs2103-website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="350">
-                <img src="/cs2103-website/book/modeling/modelingStructures/classDiagramsBasic/images/typicalClasssStructure.png" width="350"><br><br>
-                <img src="/cs2103-website/book/modeling/modelingStructures/ooStructures/images/objectDiagram.png" width="350"><br></p>
-            </box>
-          </div>
+            </question>
+          </panel>
         </div>
       </div>
       <br>
@@ -2085,11 +2311,21 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
                         <div>
                           <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                             <div>
-                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
-                                <question>
-                                  <div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain Sequence Diagram about Machine">
+                                  <question>
+                                    <p>Explain in your own words the interactions illustrated by this Sequence Diagram:</p>
+                                    <img src="/cs2103-website/book/uml/sequenceDiagrams/introduction/images/Machine.png" width="500"></question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
+                                  <question>
                                     <p>Consider the code below:</p>
-                                    <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                                    <div class="row">
+                                    
+                                      <div class="col-sm-7">
+                                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -2098,8 +2334,12 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                                        <p></p>
+                                      </div>
+                                    
+                                      <div class="col-sm-5">
+                                        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -2111,23 +2351,26 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
     }
 }
 </code></pre>
+                                        <p></p>
+                                      </div>
+                                    </div>
                                     <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
                                     <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                                  </div>
-                                </question>
-                              </panel>
-                            </div>
-                            <div>
-                              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
-                                <question>
-                                  <p>Find notation mistakes in the sequence diagram below:</p>
-                                  <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
-                              </panel>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Find notation errors in sequence diagram">
+                                  <question>
+                                    <p>Find notation mistakes in the sequence diagram below:</p>
+                                    <img src="/cs2103-website/book/modeling/modelingBehaviors/sequenceDiagramsBasic/images/notationMistakes.png" width="500"></question>
+                                </panel>
+                              </div>
                             </div>
                           </panel>
                         </div>
@@ -2143,9 +2386,11 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
                   <div>
                     <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Sequence Diagram for code snippet">
                       <question>
-                        <div>
-                          <p>Consider the code below:</p>
-                          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
+                        <p>Consider the code below:</p>
+                        <div class="row">
+                        
+                          <div class="col-sm-7">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{
     Tag tag;
     String name;
 
@@ -2154,8 +2399,12 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
         tag = <span class="hljs-keyword">new</span> Tag(tagName);
     }
 }
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
+</code></pre>
+                            <p></p>
+                          </div>
+                        
+                          <div class="col-sm-5">
+                            <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{
     Tag(String value){
         <span class="hljs-comment">//...</span>
     }
@@ -2167,14 +2416,16 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
     }
 }
 </code></pre>
-                          <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-                          <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+                            <p></p>
+                          </div>
+                        </div>
+                        <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                        <pre><code class="hljs java">PersonList personList = <span class="hljs-keyword">new</span> PersonList();
 <span class="hljs-keyword">while</span> (hasRoom){
-    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>);
     personList.addPerson(p);
 }
 </code></pre>
-                        </div>
                       </question>
                     </panel>
                   </div>
