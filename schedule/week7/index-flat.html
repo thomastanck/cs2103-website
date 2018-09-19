@@ -76,7 +76,7 @@
               <div>
                 <div id="title"></div>
                 <div id="body">
-                  <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Update UG and DG in the repo, update project plan in repo, attempt to do global-impact changes to the code base.</span></span>
+                  <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Update UG and DG in the repo, attempt to do global-impact changes to the code base.</span></span>
                   </p>
                   <p><strong>v1.1 Summary of Milestone</strong></p>
                   <div class="table-responsive">
@@ -90,10 +90,6 @@
                       <tbody>
                         <tr>
                           <td><span class="fas fa-users"></span> Team org/repo set up</td>
-                          <td>as stated</td>
-                        </tr>
-                        <tr>
-                          <td><span class="fas fa-users"></span> Project plan formalized</td>
                           <td>as stated</td>
                         </tr>
                         <tr>
@@ -172,9 +168,6 @@
                       </li>
                       <li>
                         <p>When all changes intended for v1.1 is merged to the master branch, use <code>git tag</code> feature to tag the current version as <code>v1.1</code></p>
-                      </li>
-                      <li>
-                        <p>Start tracking your project schedule using GitHub issue tracker and milestones. More instructions coming soon.</p>
                       </li>
                     </ul>
                     <h3 id="v11-documentation">v1.1 Documentation</h3>
@@ -324,8 +317,8 @@
                           <tip-box>
                             <p><span class="fas fa-cube"></span> n-tier style, client-server style, event-driven style, transaction processing style, service-oriented style, pipes-and-filters style, message-driven style, broker style, ...</p>
                           </tip-box>
-                          <modal title="" id="modal:archiStyles-buildingArchitectures">
-                            <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg"><br>
+                          <modal large="" title="Building Architecture Styles" id="modal:archiStyles-buildingArchitectures">
+                            <p><img src="https://inspectapedia.com/exterior/ArchitectureStyles.jpg" width="600"><br>
                               <sub>source: <a href="https://inspectapedia.com">https://inspectapedia.com</a></sub></p>
                           </modal>
                         </div>
@@ -422,11 +415,11 @@
                       <div id="main">
                         <div>
                           <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                            This architectural style is often used in GUIs.</p>
-                          <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                          <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
                           <tip-box>
                             <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can
                               be transmitted to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
-                            <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+                            <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" width="450"></tip-box>
                         </div>
                         <div></div>
                       </div>
@@ -581,7 +574,7 @@
                                   <question has-input="true">
                                     <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly
                                       before any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
-                                    <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
+                                    <p>Comment on how each of the following architectural styles could be potentially useful when designing the architecture for this game.</p>
                                     <ol>
                                       <li>Client-server</li>
                                       <li>Transaction-processing</li>
@@ -707,202 +700,13 @@
             </span>
             </span>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with object deletion</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
                 </span>
                 <div>
                   <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="object-deletion">Object Deletion</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <p><strong>UML uses an <code>X</code> at the end of the lifeline of an object to show it's deletion.</strong></p>
-                        <tip-box>
-                          <p>💡 Although object deletion is not that important in languages such as Java that support automatic memory management, you can still show object deletion in UML diagrams to indicate the point at which the object ceases to be used.</p>
-                        </tip-box>
-                        <p>Notation:</p>
-                        <img src="/cs2103-website/book/uml/sequenceDiagrams/objectDeletion/images/notation.png" height="100">
-                        <p></p>
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> Note how the diagrams shows the deletion of the <code>Minefield</code> object</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/objectDeletion/images/logicMinefield.png" height="120">
-                          <p></p>
-                        </tip-box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with self invocation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="self-invocation">Self Invocation</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <p><strong>UML can show a method of an object calling another of its own methods.</strong></p>
-                        <p>Notation:</p>
-                        <img src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/notation.png" height="120">
-                        <p></p>
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> The <code>markCellAt(...)</code> method of a <code>Logic</code> object is calling its own <code>updateState(...)</code> method.</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/logic.png" height="100">
-                          <p></p>
-                          <p><span class="fas fa-cube"></span> In this variation, the <code>Book#write()</code> method is calling the <code>Chapter#getText()</code> method which in turn does a <em>call back</em> by calling the <code>getAuthor()</code> method
-                            of the calling object.</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/selfInvocation/images/callBack.png" height="150">
-                          <p></p>
-                        </tip-box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with alternative paths</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="alternative-paths">Alternative Paths</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <p><strong>UML uses <code>alt</code> frames to indicate alternative paths.</strong></p>
-                        <p>Notation:</p>
-                        <img src="/cs2103-website/book/uml/sequenceDiagrams/alternativePaths/images/notation.png" height="100">
-                        <p></p>
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> <code>Minefield</code> calls the <code>Cell#setMine</code> if the cell is supposed to be a mined cell, and calls the <code>Cell:setMineCount(...)</code> method otherwise.</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/alternativePaths/images/minefieldCell.png" height="180">
-                          <p></p>
-                        </tip-box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with optional paths</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="optional-paths">Optional Paths</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <p><strong>UML uses <code>opt</code> frames to indicate optional paths.</strong></p>
-                        <p>Notation:</p>
-                        <img src="/cs2103-website/book/uml/sequenceDiagrams/optionalPaths/images/notation.png" height="50">
-                        <p></p>
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> <code>Logic#markCellAt(...)</code> calls <code>Timer#start()</code> only if it is the first move of the player.</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/optionalPaths/images/logicTimer.png" height="150">
-                          <p></p>
-                        </tip-box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div></div>
-                  <p></p>
-                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
-</span></strong>
-                    </span>
-                  </p>
-                  <div id="title-and-body">
-                    <div>
-                      <h4 id="reference-frames">Reference Frames</h4>
-                    </div>
-                    <div id="main">
-                      <div>
-                        <p><strong>UML uses <em>ref frame</em> to allow a segment of the interaction to be omitted and shown as a separate sequence diagram.</strong> Reference frames help us to break complicated sequence diagrams into multiple parts or simply
-                          to omit details we are not interested in showing.</p>
-                        <p>Notation:</p>
-                        <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
-                        <p></p>
-                        <tip-box>
-                          <p><span class="fas fa-cube"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
-                          <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
-                          <p></p>
-                          <p>Those details are shown in a separate sequence diagram given below.<br>
-                            <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
-                          <p></p>
-                        </tip-box>
-                      </div>
-                      <div></div>
-                    </div>
-                  </div>
-                </div>
-            </panel>
-            <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span
-                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                </span>
-                </span>
-                <div>
-                  <div>
-                    <p>
-                      <panel src="/cs2103-website\book\uml\sequenceDiagrams\referenceFrames\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%"></panel>
-                      <panel src="/cs2103-website\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%"></panel>
-                      <panel src="/cs2103-website\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%"></panel>
-                      <panel src="/cs2103-website\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%"></panel>
-                      <panel src="/cs2103-website\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%"></panel>
-                    </p>
-                  </div>
                   <p></p>
                   <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
 </span></strong>
@@ -913,7 +717,18 @@
                       <h4 id="sequence-diagrams-intermediate">Sequence Diagrams - Intermediate</h4>
                     </div>
                     <div id="main">
-                      <div></div>
+                      <div>
+                        <p>
+                          <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Deletion"
+                            alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Deletion" fragment="main"></panel>
+                          <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Self-Invocation"
+                            alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Self-Invocation" fragment="main"></panel>
+                          <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Alternative Paths"
+                            alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Alternative" fragment="main"></panel>
+                          <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Optional Paths"
+                            alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Optional" fragment="main"></panel>
+                        </p>
+                      </div>
                       <div>
                         <div>
                           <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
@@ -971,13 +786,51 @@
                   </div>
                   <p></p>
                   <ol>
-                    <li>Explain the sequence diagrams given [<a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
-                    <li>Add more sequence diagrams to project documentation (to be done in future weeks)</li>
+                    <li>Ability to explain the sequence diagrams given [<a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
+                    <li>Ability to add more sequence diagrams to project documentation (to be done in future weeks)</li>
                   </ol>
                 </div>
             </panel>
             <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3g</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with reference frames</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span
+                class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                </span>
+                </span>
+                <div>
+                  <div></div>
+                  <p></p>
+                  <p><span class="dimmed"><strong><span>Tools → UML → Sequence Diagrams →
+</span></strong>
+                    </span>
+                  </p>
+                  <div id="title-and-body">
+                    <div>
+                      <h4 id="reference-frames">Reference Frames</h4>
+                    </div>
+                    <div id="main">
+                      <div>
+                        <p><strong>UML uses <em>ref frame</em> to allow a segment of the interaction to be omitted and shown as a separate sequence diagram.</strong> Reference frames help us to break complicated sequence diagrams into multiple parts or simply
+                          to omit details we are not interested in showing.</p>
+                        <p>Notation:</p>
+                        <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/notation.png" height="100">
+                        <p></p>
+                        <tip-box>
+                          <p><span class="fas fa-cube"></span> The details of the <code>get minefield appearance</code> interactions have been omitted from the diagram.</p>
+                          <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/playerTextLogic.png" height="250">
+                          <p></p>
+                          <p>Those details are shown in a separate sequence diagram given below.<br>
+                            <img src="/cs2103-website/book/uml/sequenceDiagrams/referenceFrames/images/textLogic.png" height="170"></p>
+                          <p></p>
+                        </tip-box>
+                      </div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+            </panel>
+            <panel type="success" expanded="" no-close="" no-switch="" epxandable="false">
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can interpret sequence diagrams with parallel paths</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -1601,7 +1454,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
               </div>
             </panel>
             <panel type="info" expanded="" no-close="" no-switch="" epxandable="false">
-              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4k</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: slap hard </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W7.4k</code></span></big> <span><span class="fas fa-trophy"></span> Can improve code quality using technique: SLAP hard </span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
               <span
                 class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                 </span>
@@ -2691,11 +2544,8 @@ compact(input);
             </div>
             <p></p>
             <ol>
-              <li>What is the profile of the target user of your product?. Describe the problem you are solving for that target user. Give some representative must-have user stories for your product that are not already present in
-                <tooltip content="AddressBook-Level4">AB4</tooltip>.</li>
               <li>What’s the use of assertions?</li>
               <li>Demonstrate an assertion failure using Intellij.</li>
-              <li>What is a multi-level design? How is it used in AB4?</li>
               <li>What is an API? How is it used in AB4?</li>
               <li>Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
               <li>Explain what Gradle is. How is it used in AB4?</li>
@@ -2727,11 +2577,11 @@ compact(input);
                       <div id="main">
                         <div>
                           <p><strong><em>Event-driven</em> style controls the flow of the application by detecting <tooltip content="An event is a notable occurrence that happens inside or outside the software, such as the user clicking a button, a timer running out, minimizing a window, etc.">events</tooltip> from event <em>emitters</em> and communicating those events to interested event <em>consumers</em> .</strong>                            This architectural style is often used in GUIs.</p>
-                          <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" height="120">
+                          <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDriven.png" width="450">
                           <tip-box>
                             <p><span class="fas fa-cube"></span> When the ‘button clicked’ event occurs in a GUI, that event can be transmitted to components that are interested in reacting to that event. Similarly, events detected at a Printer port can
                               be transmitted to components related to operating the Printer. The same event can be sent to multiple consumers too.</p>
-                            <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" height="150"></tip-box>
+                            <img src="/cs2103-website/book/architecture/architecturalStyles/eventDriven/what/images/eventDrivenExamples.png" width="450"></tip-box>
                         </div>
                         <div></div>
                       </div>
@@ -2781,7 +2631,7 @@ compact(input);
                                   <question has-input="true">
                                     <p>Assume you are designing a multiplayer version of the Minesweeper game where any number of players can play the same Minefield. Players use their own PCs to play the game. A player scores by deducing a cell correctly
                                       before any of the other players do. Once a cell is correctly deduced, it appears as either marked or cleared for all players.</p>
-                                    <p>Comment on how each of the following architectural styles (these architectural styles are patterns too) could be potentially useful when designing the architecture for this game.</p>
+                                    <p>Comment on how each of the following architectural styles could be potentially useful when designing the architecture for this game.</p>
                                     <ol>
                                       <li>Client-server</li>
                                       <li>Transaction-processing</li>
@@ -2903,7 +2753,7 @@ compact(input);
                 </div>
             </panel>
             <panel type="seamless" expanded="">
-              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span>
+              <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W7.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can draw intermediate-level sequence diagrams</span>
               <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
               </span>
               </span>
@@ -2911,15 +2761,7 @@ compact(input);
                 <panel minimized="">
                   <span slot="header" class="card-title">Details of the LO</span>
                   <div>
-                    <div>
-                      <p>
-                        <panel src="/cs2103-website\book\uml\sequenceDiagrams\referenceFrames\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Reference Frames%%"></panel>
-                        <panel src="/cs2103-website\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Object Deletion%%"></panel>
-                        <panel src="/cs2103-website\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML :→ Sequence Diagrams → Self-Invocation%%"></panel>
-                        <panel src="/cs2103-website\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Alternative Paths%%"></panel>
-                        <panel src="/cs2103-website\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> %%UML → Sequence Diagrams → Optional Paths%%"></panel>
-                      </p>
-                    </div>
+                    <div></div>
                     <p></p>
                     <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
 </span></strong>
@@ -2930,7 +2772,18 @@ compact(input);
                         <h4 id="sequence-diagrams-intermediate-2">Sequence Diagrams - Intermediate</h4>
                       </div>
                       <div id="main">
-                        <div></div>
+                        <div>
+                          <p>
+                            <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\objectDeletion\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Object Deletion"
+                              alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Deletion" fragment="main"></panel>
+                            <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\selfInvocation\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Self-Invocation"
+                              alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Self-Invocation" fragment="main"></panel>
+                            <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\alternativePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Alternative Paths"
+                              alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Alternative" fragment="main"></panel>
+                            <panel type="seamless" src="/cs2103-website\book\uml\sequenceDiagrams\optionalPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Sequence Diagrams → Optional Paths"
+                              alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/SD/Optional" fragment="main"></panel>
+                          </p>
+                        </div>
                         <div>
                           <div>
                             <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
@@ -2990,8 +2843,8 @@ compact(input);
                     </div>
                     <p></p>
                     <ol>
-                      <li>Explain the sequence diagrams given [<a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
-                      <li>Add more sequence diagrams to project documentation (to be done in future weeks)</li>
+                      <li>Ability to explain the sequence diagrams given [<a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/DeveloperGuide.html">AddressBook Level4: Developer Guide</a>]</li>
+                      <li>Ability to add more sequence diagrams to project documentation (to be done in future weeks)</li>
                     </ol>
                   </div>
                 </div>
@@ -3023,7 +2876,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 19 Sep 2018 05:43:09 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Wed, 19 Sep 2018 15:23:47 GMT</small></div>
 </footer>
 </div>
 </body>
