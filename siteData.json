@@ -257,7 +257,8 @@
         "deliverable-product-website": "Deliverable: Product Website",
         "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
         "deliverable-demo": "Deliverable: Demo",
-        "deliverable-practical-exam": "Deliverable: Practical Exam"
+        "deliverable-practical-exam": "Deliverable: Practical Exam",
+        "notes-for-those-using-ab-2-or-ab-3-for-the-project": "Notes for Those Using AB-2 or AB-3 for the Project"
       },
       "title": "Admin: Project: Deliverables",
       "footer": "footer.md",
