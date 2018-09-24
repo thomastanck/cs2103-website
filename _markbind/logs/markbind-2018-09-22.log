@@ -1628,3 +1628,11 @@
 2018-09-22T11:00:13.181Z - info: Rebuilding 65 pages
 2018-09-22T11:03:03.559Z - info: Website generation started at 19:02:53
 2018-09-22T11:03:43.846Z - info: Building assets...
+2018-09-22T11:04:01.498Z - info: Assets built
+2018-09-22T11:04:01.500Z - info: Generating pages...
+2018-09-22T11:05:37.097Z - info: Pages built
+2018-09-22T11:05:37.698Z - info: Site data built
+2018-09-22T11:05:37.698Z - info: Website generation complete! Total build time: 164.284s
+2018-09-22T11:05:37.698Z - info: Build success!
+2018-09-22T11:05:37.699Z - info: Generate Site durationMs=164285
+2018-09-22T11:07:20.001Z - info: Deployed!

@@ -14,33 +14,37 @@
             <div>
               <div id="title"></div>
               <div id="body">
-                <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Adjust project schedule/rigor as needed, complete repo set up, start proper milestone management.</span></span>
+                <p class="lead" style="color: purple"><span><span class="far fa-calendar-check"></span> <span>Adjust project schedule/rigor as needed, start proper milestone management.</span></span>
                 </p>
                 <div id="product">
                   <p><strong><big>Project Management:</big></strong></p>
+                  <box>
+                    <p>💡 <strong>You are free to adjust <em>process rigor</em> and <em>project plan</em> at any future time in the project</strong>, starting from v1.2. If you are not sure if a certain adjustment is allowed, you can check with the teaching
+                      team first.
+                    </p>
+                  </box>
                   <ul>
                     <li>
-                      <p><strong>Complete the repo set up.</strong></p>
-                      <ul>
-                        <li>Fix any errors in org/repo set up <span class="dimmed"> (e.g. wrong repo name)</span>.</li>
-                        <li>Set up <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation">auto-publishing of docs</a> if you haven't done so already</li>
-                      </ul>
+                      <p><strong>Switch to AB-3 or AB-2 if AB-4 is not working out for you</strong>. There is no explicit penalty for switching to a lower level AB. All projects are evaluated based on the same yardstick irrespective of on which AB it is
+                        based. As an AB is given to you as a 'free' head-start, a lower level AB gives you a shorter head-start, which means your final product is likely to be less functional than those from teams using AB-4 unless you progress faster
+                        than them. Nevertheless, you should switch to AB2/3 if you feel you can learn more from the project that way, as our goal is to maximize learning, not features.<br> If your team wants to stay with AB-4 but you want to switch to
+                        a lower level AB, let the us know so that we can work something out for you.</p>
                     </li>
                     <li>
-                      <p><strong>Adjust project rigor to suit your team's pace</strong>, as explained below. Note that you are free to do similar adjustments at any future time in the project.</p>
+                      <p><strong>Adjust process rigor to suit your team's pace</strong>, as explained below.</p>
                       <ul>
                         <li>
-                          <p>Automated tests have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.</p>
-                          <p>It is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated test coverage you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances
-                            if tests are slowing you down too much. There is no direct penalty for removing GUI tests.</p>
-                          <p>Also note
+                          <p><strong>Automated tests</strong> have benefits, but they can be a pain to write/maintain; GUI tests are especially hard to maintain because their behavior can sometimes depend on things such as the OS, resolution etc.<br> It
+                            is OK to get rid of some of the troublesome tests and rely more on manual testing instead. The less automated tests you have, the higher the risk of regressions; but it may be an acceptable trade-off under the circumstances
+                            if tests are slowing you down too much.<br> There is no direct penalty for removing GUI tests. Also note
                             <trigger trigger="click" for="modal:v12-testingExpectations">our expectation on test code</trigger>.</p>
                         </li>
                         <li>
-                          <p>You can also reduce the rigor of checkstyle checks to expedite PR processing.</p>
+                          <p><strong>Automated checks</strong>: You can also reduce the rigor of checkstyle checks to expedite PR processing.</p>
                         </li>
                         <li>
-                          <p>Another thing you can do is to switch to a simpler workflow if the forking workflow is slowing you down.</p>
+                          <p><strong>Workflow</strong>: While <em>forking workflow</em> is the safest, it is also rather heavy. You an switch to a simpler workflow if the forking workflow is slowing you down. Refer the textbook to find more about alternative
+                            workflows: <em>branching workflow</em>, <em>centralized workflow</em>.</p>
                         </li>
                       </ul>
                     </li>
@@ -62,40 +66,81 @@
                   </modal>
                   <ul>
                     <li>
-                      <p><strong>Adjust project plan if necessary</strong>, as explained below. Note that you are free to do similar adjustments at any future time in the project.</p>
-                      <ul>
-                        <li>Now that you have a some idea about the code base, revisit the feature release plan and adjust it if necessary. The adjustment can be done using GitHub issue tracker.</li>
-                      </ul>
+                      <p><strong>Adjust project plan if necessary</strong>. Now that you have a some idea about the code base, revisit the feature release plan and adjust it if necessary.</p>
                     </li>
                     <li>
-                      <p><strong>Start proper milestone management</strong></p>
-                      <ul>
-                        <li>
-                          <p>Formalize the project plan in GitHub. More info to be added.</p>
-                        </li>
-                        <li>
-                          <p>Start tracking your project schedule using GitHub issue tracker and milestones.</p>
-                        </li>
-                        <li>
-                          <p>
-                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Starting from the upcoming milestone, <mark>there are additional requirements to follow</mark> regarding how you <strong>use GitHub to manage your milestones</strong>,
-                            as described in
-                            <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</p>
-                        </li>
-                      </ul>
+                      <p><strong>Set up the issue tracker</strong> as described in
+                        <trigger trigger="click" for="modal:v12-issueTracker">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Issue Tracker Setup]</trigger>, if you haven't done so already. Update it to reflect the current project plan.</p>
                     </li>
                     <li>
-                      <p>As before, you are <em>recommended</em> (but not required) to <strong>follow the forking workflow</strong> when evolving the product.</p>
+                      <p><strong>Start proper schedule tracking and milestone management</strong></p>
+                      <ul>
+                        <li>
+                          <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Starting from the upcoming milestone, <mark>there are additional requirements to follow</mark> regarding how you <strong>use GitHub to manage your milestones</strong>,
+                          as described in
+                          <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</li>
+                      </ul>
                     </li>
                   </ul>
+                  <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Github: Setting Up Issue Tracker" id="modal:v12-issueTracker">
+                  
+                    <div>
+                      <h2 id="issue-tracker-setup">Issue tracker setup</h2>
+                      <p>We recommend you configure the issue tracker of the <code>main</code> repo as follows:</p>
+                      <ul>
+                        <li>Delete existing labels and add the following labels.<br> 💡 <strong>Issue type</strong> labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.</li>
+                      </ul>
+                      <tip-box>
+                        <p><strong>Issue type</strong> labels:</p>
+                        <ul>
+                          <li><code>type.Epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
+                          <li><code>type.Story</code> : A user story</li>
+                          <li><code>type.Enhancement</code>: An enhancement to an existing story</li>
+                          <li><code>type.Task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
+                          <li><code>type.Bug</code> : A bug</li>
+                        </ul>
+                      </tip-box>
+                      <tip-box>
+                        <p><strong>Status</strong> labels:</p>
+                        <ul>
+                          <li><code>status.Ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.
+                          </li>
+                        </ul>
+                      </tip-box>
+
+                      <tip-box>
+                        <p><strong>Priority</strong> labels:</p>
+                        <ul>
+                          <li><code>priority.High</code> : Must do</li>
+                          <li><code>priority.Medium</code> : Nice to have</li>
+                          <li><code>priority.Low</code> : Unlikely to do</li>
+                        </ul>
+                      </tip-box>
+                      <span id="bug-severity">
+<tip-box>
+<p><strong>Bug Severity</strong> labels:</p>
+<ul>
+<li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+<li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+<li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li></ul></tip-box></span>
+                      <ul>
+                        <li>
+                          <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>,</p>
+                        </li>
+                        <li>
+                          <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </modal>
                   <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Github: Project Schedule Tracking" id="modal:v12-projectTracking">
                   
                     <div>
                       <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
                       <p>In general, use the issue tracker (Milestones, Issues, PRs, Tags, Releases, and Labels) for assigning, scheduling, and tracking <em>all</em> noteworthy project tasks, including user stories. Update the issue tracker regularly to
-                        reflect the current status of the project. You can also use GitHub's new <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
+                        reflect the current status of the project. You can also use GitHub's <a href="https://www.youtube.com/watch?v=C6MGKHkNtxU">Projects feature</a> to manage the project, but keep it linked to the issue tracker as much as you can.</p>
                       <h3 id="using-issues">Using Issues:</h3>
-                      <p><big><strong>During the initial stages:</strong></big></p>
+                      <p><big><strong>During the initial stages</strong></big> (latest by the start of v1.2):</p>
                       <ul>
                         <li>
                           <p><strong>Record each of the user stories you plan to deliver as an issue in the issue tracker.</strong>
@@ -105,8 +150,11 @@
                         <li>
                           <p><strong>Assign the <code>type.*</code> and <code>priority.*</code> labels to those issues.</strong></p>
                         </li>
+                        <li>
+                          <p><strong>Formalize the project plan</strong> by assigning relevant issues to the corresponding milestone.</p>
+                        </li>
                       </ul>
-                      <p><big><strong>From milestone v1.1:</strong></big></p>
+                      <p><big><strong>From milestone v1.2:</strong></big></p>
                       <ul>
                         <li>
                           <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
@@ -114,17 +162,18 @@
                             <li><span class="dimmed"><span class="fas fa-thumbs-up"></span> Good: <code>Update class diagram in the project manual for v1.4</code></span>
                             </li>
                             <li><span class="dimmed"><span class="fas fa-thumbs-down"></span> Bad (reasons: not a one-person task, not small enough): <code>Write the project manual</code></span>
-                            </li>
+                              <br><br></li>
                           </ul>
                         </li>
                         <li>
-                          <p><strong>Write a descriptive title for the issue.</strong> <span class="dimmed">e.g. Add support for the 'undo' command to the parser.</span></p>
+                          <p><strong>Write a descriptive title for the issue.</strong> <span class="dimmed">e.g. <code>Add support for the 'undo' command to the parser</code></span></p>
                         </li>
                         <li>
                           <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
                           <ul>
                             <li><code>Implementing parser</code>  <span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
-                            <li><code>Implementing parser support for adding of floating tasks</code> <span class="dimmed">: appropriate size.</span></li>
+                            <li><code>Implementing parser support for adding of floating tasks</code> <span class="dimmed">: appropriate size.</span>
+                              <br><br></li>
                           </ul>
                         </li>
                         <li>
@@ -143,7 +192,7 @@
                       </ul>
                       <div id="using-milestones">
                         <h3 id="using-milestones">Using Milestones:</h3>
-                        <p>We recommend you do the following from milestone v1.1:</p>
+                        <p>We recommend you do the following from milestone v1.2:</p>
                         <ul>
                           <li>
                             <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
@@ -159,13 +208,13 @@
                           <mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
                         <ul>
                           <li>
-                            <p>A working product tagged with the correct tag (e.g. v1.2) is pushed to the main repo.</p>
+                            <p>A working product tagged with the correct tag (e.g. <code>v1.2</code>) is pushed to the main repo.</p>
                           </li>
                           <li>
                             <p>All tests passing on Travis for the version tagged above.</p>
                           </li>
                           <li>
-                            <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone.<br>
+                            <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
                               <img src="/cs2103-website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
                           </li>
                           <li>
@@ -179,7 +228,7 @@
                             <p>Optionally, future milestones are revised based on what you experienced in the current milestone <span class="dimmed"> e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
                           </li>
                           <li>
-                            <p>Doing a 'release' on GitHub is optional for v1.1 and v1.2 but compulsory from v1.3.</p>
+                            <p>Doing a 'release' on GitHub is optional for v1.2 but compulsory from v1.3.</p>
                           </li>
                         </ul>
                       </div>
@@ -3002,7 +3051,11 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <div>
         <p><strong>Questions to discuss during tutorial:</strong></p>
         <ol>
-          <li>Which architecture styles are used by AB4?</li>
+          <li>What’s the use of assertions?</li>
+          <li>Demonstrate an assertion failure using Intellij.</li>
+          <li>Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
+          <li>Explain what Gradle is. How is it used in AB4?</li>
+          <li>Explain what Travis is. How is it used in AB4?</li>
           <li>Any example of using a very high-level abstraction in the project?</li>
           <li>What is coupling?
             <ol>
