@@ -24,29 +24,25 @@
   <div class="website-content">
     <div id="title">
       <div>
-        <h1 id="test-case-design">Test Case Design</h1>
+        <h1 id="test-case-design">Test Case Design<a class="fa fa-anchor" href="#test-case-design"></a></h1>
       </div>
     </div>
     <div>
       <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
     </div>
     <div>
-      <h2 id="introduction">Introduction</h2>
+      <h2 id="introduction">Introduction<a class="fa fa-anchor" href="#introduction"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what"></a></h4>
         <div class="indented-less">
           <div>
-            <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number
-              of test cases.</p>
+            <p><strong>Except for trivial <tooltip content="Software Under Test">SUTs</tooltip>, <tooltip content="testing all possible cases">exhaustive testing</tooltip> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
             <tip-box>
-              <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a
-                <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
+              <p><span class="fas fa-cube"></span> Consider the test cases for adding a string object to a <tooltip content="Java: `ArrayList`,<br>Python: `list`">collection</tooltip>:</p>
               <ul>
                 <li>Add an item to an empty collection.</li>
                 <li>Add an item when there is one item in the collection.</li>
@@ -64,7 +60,7 @@
                 <sub>--Edsger Dijkstra</sub></p>
             </blockquote>
             <div id="e-and-e">
-              <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                In particular:</p>
+              <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
               <ul>
                 <li>
                   <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
@@ -73,19 +69,15 @@
                   <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                 </li>
               </ul>
-              <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques
-                that can help us improve E&amp;E of testing.</p>
+              <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-            </small>
-            </span>
-        </h4>
+        <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#positive-vs-negative-test-cases"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
@@ -100,11 +92,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#black-box-vs-glass-box"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
@@ -116,29 +106,25 @@
                 <p><strong><em>White-box</em> (aka <em>glass-box or structured or implementation-based</em>) approach</strong>: test cases are designed based on what is known about the SUT’s implementation, i.e. the code.</p>
               </li>
               <li>
-                <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than
-                  1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
+                <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
               </li>
             </ul>
             <panel type="seamless" header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> %%Black-box and white-box testing%%">
               <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
               <tabs>
-              
-                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box vs White-box testing">
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box vs White-box testing">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   <p>
                     <hr>
                   </p>
                 </tab>
-              
-                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box testing example">
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> Black-box testing example">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   <p>
                     <hr>
                   </p>
                 </tab>
-              
-                <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> White-box testing example">
+                  <tab header="<span class='glyphicon glyphicon-facetime-video' aria-hidden='true'></span> White-box testing example">
                   <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
                   <p>
                     <hr>
@@ -151,15 +137,13 @@
       </div>
     </div>
     <div>
-      <h2 id="equivalence-partitions">Equivalence Partitions</h2>
+      <h2 id="equivalence-partitions">Equivalence Partitions<a class="fa fa-anchor" href="#equivalence-partitions"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-2">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-2"></a></h4>
         <div class="indented-less">
           <div>
             <p>Consider the testing of the following operation.</p>
@@ -168,8 +152,7 @@
                 <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
               </div>
             </tip-box>
-            <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce
-              the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
+            <p>It is inefficient and impractical to test this method for all integer values <code>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code>233</code> failed to produce the correct result, the input <code>234</code> is likely to fail too; there is no need to test both.</p>
             <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
               <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
             <tip-box type="definition">
@@ -186,17 +169,14 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="basic">Basic <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="basic">Basic <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#basic"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Equivalence partitions (EPs) are usually derived from the specifications of the SUT.</strong></p>
             <tip-box>
-              <p><span class="fas fa-cube"></span> These could be EPs for the
-                <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
+              <p><span class="fas fa-cube"></span> These could be EPs for the <trigger for="pop:epBasic-isValidMonth">isValidMonth</trigger> example:</p>
               <ul>
                 <li>[MIN_INT ... 0] : <strong>below</strong> the range that produces <code>true</code></li>
                 <li>[1 … 12] : the range that produces <code>true</code></li>
@@ -204,8 +184,7 @@
               </ul>
             </tip-box>
             <popover id="pop:epBasic-isValidMonth" title="`isValidMonth`" placement="top">
-            
-              <div slot="content">
+                <div slot="content">
                 <div>
                   <p><code>isValidMonth(m)</code> : returns <code>true</code> if <code>m</code> (and <code>int</code>) is in the range [1..12]</p>
                 </div>
@@ -238,11 +217,9 @@
             </tip-box>
             <p>Some inputs have only a small number of possible values and a potentially unique behavior for each value. In those cases we have to consider each value as a partition by itself.</p>
             <tip-box>
-              <p><span class="fas fa-cube"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In
-                this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
+              <p><span class="fas fa-cube"></span> Consider the method <code>showStatusMessage(GameStatus s): String</code> that returns a unique <code>String</code> for each of the possible value of s (<code>GameStatus</code> is an <code>enum</code>). In this case, each possible value for <code>s</code> will have to be considered as a partition.</p>
             </tip-box>
-            <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT
-              to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
+            <p>Note that the EP technique is merely a heuristic and not an exact science, especially when applied manually (as opposed to using an automated program analysis tool to derive EPs). The partitions derived depend on how one ‘speculates’ the SUT to behave internally. Applying EP under a glass-box or gray-box approach can yield more precise partitions.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> Consider the method EPs given above for the <code>isValidMonth</code>. A different tester might use these EPs instead:</p>
               <ul>
@@ -259,7 +236,8 @@
                 </tr>
                 <tr>
                   <td>
-                    <p><code>isValidFlag(String s): boolean</code><br> Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
+                    <p><code>isValidFlag(String s): boolean</code><br>
+                      Returns <code>true</code> if s is one of [<code>&quot;F&quot;</code>, <code>&quot;T&quot;</code>, <code>&quot;D&quot;</code>]. The comparison is case-sensitive.</p>
                   </td>
                   <td>
                     <p>[<code>&quot;F&quot;</code>] [<code>&quot;T&quot;</code>] [<code>&quot;D&quot;</code>] [<code>&quot;f&quot;</code>, <code>&quot;t&quot;</code>, <code>&quot;d&quot;</code>] [any other string][null]</p>
@@ -267,7 +245,9 @@
                 </tr>
                 <tr>
                   <td>
-                    <p><code>squareRoot(String s): int</code><br> Pre-conditions: s represents a positive integer<br> Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
+                    <p><code>squareRoot(String s): int</code><br>
+                      Pre-conditions: s represents a positive integer<br>
+                      Returns the square root of <code>s</code> if the square root is an integer; returns <code>0</code> otherwise.</p>
                   </td>
                   <td>
                     <p>[<code>s</code> is not a valid number] [<code>s</code> is a negative integer] [<code>s</code> has an integer square root] [<code>s</code> does not have an integer square root]</p>
@@ -279,11 +259,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="intermediate">Intermediate <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="intermediate">Intermediate <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#intermediate"></a></h4>
         <div class="indented-less">
           <div>
             <p>When deciding EPs of OOP methods, we need to identify EPs of all data participants that can potentially influence the behaviour of the method, such as,</p>
@@ -315,10 +293,8 @@
             <tip-box>
               <p><span class="fas fa-cube"></span> Consider a simple Minesweeper app. What are the EPs for the <code>newGame()</code> method of the <code>Logic</code> component?</p>
               <p>As <code>newGame()</code> does not have any parameters, the only obvious participant is the <code>Logic</code> object itself.</p>
-              <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant
-                of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
-              <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently
-                based on the game state. Therefore, the equivalence partitions are:</p>
+              <p>Note that if the glass-box or the grey-box approach is used, other associated objects that are involved in the method might also be included as participants. For example, <code>Minefield</code> object can be considered as another participant of the <code>newGame()</code> method. Here, the black-box approach is assumed.</p>
+              <p>Next, let us identify equivalence partitions for each participant. Will the <code>newGame()</code> method behave differently for different <code>Logic</code> objects? If yes, how will it differ? In this case, yes, it might behave differently based on the game state. Therefore, the equivalence partitions are:</p>
               <ul>
                 <li><code>PRE_GAME</code> : before the game starts, minefield does not exist yet</li>
                 <li><code>READY</code> : a new minefield has been created and waiting for player’s first move</li>
@@ -340,19 +316,16 @@
       </div>
     </div>
     <div>
-      <h2 id="boundary-value-analysis">Boundary Value Analysis</h2>
+      <h2 id="boundary-value-analysis">Boundary Value Analysis<a class="fa fa-anchor" href="#boundary-value-analysis"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-3">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-3">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-3"></a></h4>
         <div class="indented-less">
           <div>
-            <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end
-              points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
+            <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> <code>markCellAt(int x, int y)</code> operation could contain code such as if <code>(x &gt; 0 &amp;&amp; x &lt;= (W-1))</code> which involves boundaries of x’s equivalence partitions.</p>
             </tip-box>
@@ -362,15 +335,12 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="how">How <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="how">How <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#how"></a></h4>
         <div class="indented-less">
           <div>
-            <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such
-              as the cost of each test case.</p>
+            <p><strong>Typically, we choose three values around the boundary to test: one value from the boundary, one value just below the boundary, and one value just above the boundary.</strong> The number of values to pick depends on other factors, such as the cost of each test case.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> Some examples:</p>
               <table class="table">
@@ -405,11 +375,14 @@
                 </tr>
                 <tr>
                   <td>
-                    <p>[prime numbers]<br> [“F”]
-                      <br> [“A”, “D”, “X”]</p>
+                    <p>[prime numbers]<br>
+                      [“F”]<br>
+                      [“A”, “D”, “X”]</p>
                   </td>
                   <td>
-                    <p>No specific boundary<br> No specific boundary<br> No specific boundary</p>
+                    <p>No specific boundary<br>
+                      No specific boundary<br>
+                      No specific boundary</p>
                   </td>
                 </tr>
                 <tr>
@@ -428,15 +401,13 @@
       </div>
     </div>
     <div>
-      <h2 id="combining-test-inputs">Combining Test Inputs</h2>
+      <h2 id="combining-test-inputs">Combining Test Inputs<a class="fa fa-anchor" href="#combining-test-inputs"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="why">Why <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="why">Why <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#why"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
@@ -481,18 +452,14 @@
                 </table>
               </div>
             </tip-box>
-            <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective)
-              but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
+            <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective) but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
           </div>
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="test-input-combination-strategies">Test Input Combination Strategies <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font>
-          <span
-            class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-            </small>
-            </span>
-        </h4>
+        <h4 id="test-input-combination-strategies">Test Input Combination Strategies <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#test-input-combination-strategies"></a></h4>
         <div class="indented-less">
           <div>
             <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
@@ -610,8 +577,7 @@
               </div>
               <p>VV/IV = Any Valid Value / Any Invalid Value</p>
             </tip-box>
-            <p><strong>all pairs</strong>: This strategy creates test cases so that for any given pair of inputs, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting factors.
-              The resulting number of test cases is lower than the &quot;all combinations&quot; strategy, but higher than the &quot;at least once&quot; approach.</p>
+            <p><strong>all pairs</strong>: This strategy creates test cases so that for any given pair of inputs, all combinations between them are tested. It is based on the observations that a bug is rarely the result of more than two interacting factors. The resulting number of test cases is lower than the &quot;all combinations&quot; strategy, but higher than the &quot;at least once&quot; approach.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
               <panel type="seamless" header="see steps">
@@ -636,8 +602,7 @@
                     </tbody>
                   </table>
                 </div>
-                <p>These values can generate
-                  <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
+                <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
                 <p>Next, let's consider p1 and p3.</p>
                 <div class="table-responsive">
                   <table class="markbind-table table table-bordered table-striped">
@@ -659,8 +624,7 @@
                     </tbody>
                   </table>
                 </div>
-                <p>These values can generate
-                  <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
+                <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
                 <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
                 <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
               </panel>
@@ -793,13 +757,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case">Heuristic: Each Valid Input at Least Once in a Positive Test Case <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-            </small>
-            </span>
-        </h4>
+        <h4 id="heuristic-each-valid-input-at-least-once-in-a-positive-test-case">Heuristic: Each Valid Input at Least Once in a Positive Test Case <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#heuristic-each-valid-input-at-least-once-in-a-positive-test-case"></a></h4>
         <div class="indented-less">
           <div>
             <p>Consider the following scenario.</p>
@@ -905,10 +865,8 @@
                 </table>
               </div>
             </tip-box>
-            <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that can
-              produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
-            <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test
-              case. Here are the updated test cases after applying that heuristic.</p>
+            <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
+            <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test case. Here are the updated test cases after applying that heuristic.</p>
             <tip-box>
               <div id="heuristic-valid-test-case">
                 <div class="table-responsive">
@@ -962,17 +920,12 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case">Heuristic: No More Than One Invalid Input In A Test Case <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          <span
-            class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-            </small>
-            </span>
-        </h4>
+        <h4 id="heuristic-no-more-than-one-invalid-input-in-a-test-case">Heuristic: No More Than One Invalid Input In A Test Case <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#heuristic-no-more-than-one-invalid-input-in-a-test-case"></a></h4>
         <div class="indented-less">
           <div>
-            <p>Consider the
-              <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
+            <p>Consider the <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
             <modal large="" title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
               <div>
                 <div class="table-responsive">
@@ -1022,8 +975,7 @@
                 <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
               </div>
             </modal>
-            <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error
-              message “invalid fruit”.</p>
+            <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices? Answer: No. Reason: <code>-1</code> -- the only input that is a negative price – is in a test case that produces the error message “invalid fruit”.</p>
             <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, we get the following test cases.</p>
             <tip-box>
               <div class="table-responsive">
@@ -1082,11 +1034,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="mix">Mix <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="mix">Mix <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#mix"></a></h4>
         <div class="indented-less">
           <div>
             <p>Consider the calculateGrade scenario given below:</p>
@@ -1178,8 +1128,7 @@
               </div>
               <p>VV/IV = Any Valid or Invalid Value, Err Msg = Error Message</p>
             </tip-box>
-            <p>Next, let’s apply the ‘each valid input at least once in a positive test case’ heuristic. Test case 5 has a valid value for <code>projectGrade=F</code> that doesn't appear in any other positive test case. Let's replace test case 5 with 5.1
-              and 5.2 to rectify that.</p>
+            <p>Next, let’s apply the ‘each valid input at least once in a positive test case’ heuristic. Test case 5 has a valid value for <code>projectGrade=F</code> that doesn't appear in any other positive test case. Let's replace test case 5 with 5.1 and 5.2 to rectify that.</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V2</strong></p>
               <div class="table-responsive">
@@ -1348,8 +1297,7 @@
                 </table>
               </div>
             </tip-box>
-            <p>Next, let us assume that there is a dependency between the inputs <code>examScore</code> and <code>isAbsent</code> such that an absent student can only have <code>examScore=0</code>. To cater for the hidden invalid case arising from this,
-              we can add a new test case where <code>isAbsent=true</code> and <code>examScore!=0</code>. In addition, test cases 3-6.2 should have <code>isAbsent=false</code> so that the input remains valid.</p>
+            <p>Next, let us assume that there is a dependency between the inputs <code>examScore</code> and <code>isAbsent</code> such that an absent student can only have <code>examScore=0</code>. To cater for the hidden invalid case arising from this, we can add a new test case where <code>isAbsent=true</code> and <code>examScore!=0</code>. In addition, test cases 3-6.2 should have <code>isAbsent=false</code> so that the input remains valid.</p>
             <tip-box>
               <p><strong>Test cases for calculateGrade V4</strong></p>
               <div class="table-responsive">
@@ -1454,27 +1402,20 @@
       </div>
     </div>
     <div>
-      <h2 id="more">More</h2>
+      <h2 id="more">More<a class="fa fa-anchor" href="#more"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="testing-based-on-use-cases">Testing Based on Use Cases <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="testing-based-on-use-cases">Testing Based on Use Cases <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#testing-based-on-use-cases"></a></h4>
         <div class="indented-less">
           <div>
-            <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases
-              do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary
-              values. The combinations of these could result in one use case producing many test cases.</p>
-            <p>To increase
-              <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a
-              <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
+            <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
+            <p>To increase <trigger trigger="click" for="modal:usebaseBased-EandE">E&amp;E of testing</trigger>, high-priority use cases are given more attention. For example, a <trigger trigger="click" for="modal:usecaseBased-scripted">scripted approach</trigger> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
             <modal large="" title="Quality Assurance → Test Case Design → Introduction → (extract) E&E of testing" id="modal:usebaseBased-EandE">
-            
-              <div>
-                <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong>                  In particular:</p>
+                <div>
+                <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed"> e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
                 <ul>
                   <li>
                     <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
@@ -1483,22 +1424,18 @@
                     <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
                   </li>
                 </ul>
-                <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design
-                  techniques that can help us improve E&amp;E of testing.</p>
+                <p><strong>For testing to be <tooltip content="Efficient and Effective">E&amp;E</tooltip>, each new test we add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
               </div>
             </modal>
             <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:usecaseBased-scripted">
-            
-              <div>
+                <div>
                 <div></div>
                 <p></p>
                 <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
-</span></strong>
-                  </span>
-                </p>
+                      </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-4">What</h4>
+                    <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4>
                   </div>
                   <div id="main">
                     <div>
@@ -1511,15 +1448,12 @@
                           <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
                         </li>
                       </ol>
-                      <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’
-                        <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called
-                        <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends
-                        to conduct more tests for those operations where more faults are found.</p>
+                      <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <trigger trigger="click" for="modal:exploratoryWhat-bach-et-explained">[source: bach-et-explained]</trigger> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
                         <blockquote>
-                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon. But before that, let us give a good test run to feature y because users can still use the product if
-                            feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
+                          <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; we need to look at them soon.
+                            But before that, let us give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, we have a major problem and this has to be made known to the development team sooner rather than later...”</p>
                         </blockquote>
                       </tip-box>
                       <tip-box>
@@ -1527,8 +1461,7 @@
                       </tip-box>
                       <modal id="modal:exploratoryWhat-bach-et-explained" title="bach-et-explained <span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span>">
                         <div>
-                          <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry
-                            thought leader in software testing).</p>
+                          <p><a href="http://www.satisfice.com/articles/et-article.pdf"><strong>Exploratory Testing Explained</strong></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
                       </modal>
                     </div>
@@ -1593,7 +1526,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 24 Sep 2018 15:55:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Sun, 30 Sep 2018 14:23:52 GMT</small></div>
 </footer>
 </div>
 </body>

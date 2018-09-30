@@ -24,22 +24,20 @@
   <div class="website-content">
     <div id="title">
       <div>
-        <h1 id="software-design-patterns">Software Design Patterns</h1>
+        <h1 id="software-design-patterns">Software Design Patterns<a class="fa fa-anchor" href="#software-design-patterns"></a></h1>
       </div>
     </div>
     <div>
       <p><small><span class="dimmed"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> This is a <strong>printer-friendly</strong> version. It omits exercises, optional topics (i.e., four-star topics), and other extra content such as learning outcomes.</span></small></p>
     </div>
     <div>
-      <h2 id="introduction">Introduction</h2>
+      <h2 id="introduction">Introduction<a class="fa fa-anchor" href="#introduction"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what"></a></h4>
         <div class="indented-less">
           <div>
             <tip-box type="definition">
@@ -71,16 +69,14 @@
                 </table>
               </div>
             </tip-box>
-            <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>              by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
+            <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, **a term popularized by the seminal book <em>Design Patterns: Elements of Reusable Object-Oriented Software</em> by the so-called <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot;** (GoF) book written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides</a></p>
           </div>
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="format">Format <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="format">Format <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#format"></a></h4>
         <div class="indented-less">
           <div>
             <p>The common format to describe a pattern consists of the following components:</p>
@@ -97,15 +93,13 @@
       </div>
     </div>
     <div>
-      <h2 id="singleton-pattern">Singleton Pattern</h2>
+      <h2 id="singleton-pattern">Singleton Pattern<a class="fa fa-anchor" href="#singleton-pattern"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-2">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-2">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-2"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Context</strong></p>
@@ -113,8 +107,7 @@
             <p><strong>Problem</strong></p>
             <p>A normal class can be instantiated multiple times by invoking the constructor.</p>
             <p><strong>Solution</strong></p>
-            <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level method to
-              access the <em>single instance</em>.</p>
+            <p>Make the constructor of the singleton class <code>private</code>, <span class="dimmed"> because a <code>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code>public</code> class-level method to access the <em>single instance</em>.</p>
             <tip-box>
               <p>Example:</p>
               <img src="/cs2103-website/book/designPatterns/singleton/what/images/singleton.png" height="130">
@@ -124,11 +117,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="implementation">Implementation <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="implementation">Implementation <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#implementation"></a></h4>
         <div class="indented-less">
           <div>
             <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
@@ -151,8 +142,7 @@
             <ul>
               <li>The constructor is <code>private</code>, which prevents instantiation from outside the class.</li>
               <li>The single instance of the singleton class is maintained by a <code>private</code> class-level variable.</li>
-              <li>Access to this object is provided by a <code>public</code> class-level operation <code>getInstance()</code> which instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this operation
-                return the single instance of the class.</li>
+              <li>Access to this object is provided by a <code>public</code> class-level operation <code>getInstance()</code> which instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</li>
             </ul>
             <p>If <code>Logic</code> was not a Singleton class, an object is created like this:</p>
             <pre><code class="hljs java">Logic m = <span class="hljs-keyword">new</span> Logic();
@@ -164,11 +154,9 @@
         </div>
       </div>
       <div class="indented-less">
-        <h4 id="evaluation">Evaluation <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="evaluation">Evaluation <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#evaluation"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Pros:</strong></p>
@@ -183,26 +171,23 @@
               <li>In testing, it is difficult to replace Singleton objects with stubs (static methods cannot be overridden)</li>
               <li>In testing, singleton objects carry data from one test to another even when we want each test to be independent of the others.</li>
             </ul>
-            <p>Given there are some significant cons, it is recommended that you apply the Singleton pattern when, in addition to requiring only one instance of a class, there is a risk of creating multiple objects by mistake, and creating such multiple
-              objects has real negative consequences.</p>
+            <p>Given there are some significant cons, it is recommended that you apply the Singleton pattern when, in addition to requiring only one instance of a class, there is a risk of creating multiple objects by mistake, and creating such multiple objects has real negative consequences.</p>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <h2 id="abstraction-occurrence-pattern">Abstraction Occurrence Pattern</h2>
+      <h2 id="abstraction-occurrence-pattern">Abstraction Occurrence Pattern<a class="fa fa-anchor" href="#abstraction-occurrence-pattern"></a></h2>
     </div>
     <div class="indented-less"></div>
     <div>
-      <h2 id="facade-pattern">Facade Pattern</h2>
+      <h2 id="facade-pattern">Facade Pattern<a class="fa fa-anchor" href="#facade-pattern"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-3">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-3">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-3"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Context</strong></p>
@@ -213,10 +198,9 @@
               <p></p>
             </tip-box>
             <p><strong>Problem</strong></p>
-            <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g.  the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
+            <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed"> e.g. the <code>UI</code> component should access the functionality of the <code>Logic</code> component without knowing that it contained a <code>Book</code> class within it.</span></p>
             <p><strong>Solution</strong></p>
-            <p>Include a
-              <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+            <p>Include a <tooltip content="a French word that means 'front of a building'">Façade</tooltip> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
             <tip-box>
               <p><span class="fas fa-cube"></span> The following class diagram applies the Façade pattern to the <code>Library System</code> example. The <code>LibraryLogic</code> class is the Facade class.</p>
               <img src="/cs2103-website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
@@ -227,15 +211,13 @@
       </div>
     </div>
     <div>
-      <h2 id="command-pattern">Command Pattern</h2>
+      <h2 id="command-pattern">Command Pattern<a class="fa fa-anchor" href="#command-pattern"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-4">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-4">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-4"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Context</strong></p>
@@ -246,33 +228,26 @@
             <p>The essential element of this pattern is to have a general <code>&lt;&lt; Command &gt;&gt;</code> object that can be passed around, stored, executed, etc without knowing the type of command (i.e. via polymorphism).</p>
             <p>Let us examine an example application of the pattern first:</p>
             <tip-box>
-              <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object.
-                The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code>                object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
+              <p><span class="fas fa-cube"></span> In the example solution below, the <code>CommandCreator</code> creates <code>List</code>, <code>Sort</code>, and <code>Reset Command</code> objects and adds them to the <code>CommandQueue</code> object. The <code>CommandQueue</code> object treats them all as <code>Command</code> objects and performs the execute/undo operation on each of them without knowledge of the specific <code>Command</code> type. When executed, each <code>Command</code> object will access the <code>DataStore</code> object to carry out its task. The <code>Command</code> class can also be an abstract class or an interface.</p>
               <img src="/cs2103-website/book/designPatterns/command/what/images/commandCreator.png" height="150">
               <p></p>
             </tip-box>
             <p>The general form of the solution is as follows.</p>
             <img src="/cs2103-website/book/designPatterns/command/what/images/clientInvoker.png" height="200">
             <p></p>
-            <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all commands as
-              a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> will
-              store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of the command
-              (
-              <tooltip content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt; Invoker &gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
+            <p>The <code>&lt;&lt; Client &gt;&gt;</code> creates a <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object, and passes it to the <code>&lt;&lt; Invoker &gt;&gt;</code>. The <code>&lt;&lt; Invoker &gt;&gt;</code> object treats all commands as a general <code>&lt;&lt; Command &gt;&gt;</code> type. <code>&lt;&lt; Invoker &gt;&gt;</code> issues a request by calling <code>execute()</code> on the command. If a command is undoable, <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> will store the state for undoing the command prior to invoking <code>execute()</code>. In addition, the <code>&lt;&lt; ConcreteCommand &gt;&gt;</code> object may have to be linked to any <code>&lt;&lt; Receiver &gt;&gt;</code> of the command (<tooltip content="the object the command will operate on, in case different commands operate on different objects">?</tooltip>) before it is passed to the <code>&lt;&lt; Invoker &gt;&gt;</code>. Note that an application of the command pattern does not have to follow the structure given above.</p>
           </div>
         </div>
       </div>
     </div>
     <div>
-      <h2 id="model-view-controller-mvc-pattern">Model View Controller (MVC) Pattern</h2>
+      <h2 id="model-view-controller-mvc-pattern">Model View Controller (MVC) Pattern<a class="fa fa-anchor" href="#model-view-controller-mvc-pattern"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-5">What <span class="badge badge-light"><small><small><font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty"
-            aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-5">What <span class="badge badge-light"><small><small>
+                <font color="DarkOrange"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-5"></a></h4>
         <div class="indented-less">
           <div>
             <p><strong>Context</strong></p>
@@ -302,15 +277,13 @@
       </div>
     </div>
     <div>
-      <h2 id="observer-pattern">Observer Pattern</h2>
+      <h2 id="observer-pattern">Observer Pattern<a class="fa fa-anchor" href="#observer-pattern"></a></h2>
     </div>
     <div class="indented-less">
       <div class="indented-less">
-        <h4 id="what-6">What <span class="badge badge-light"><small><small><font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star"
-            aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span></small>
-          </small>
-          </span>
-        </h4>
+        <h4 id="what-6">What <span class="badge badge-light"><small><small>
+                <font color="DodgerBlue"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></font><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+              </small></small></span><a class="fa fa-anchor" href="#what-6"></a></h4>
         <div class="indented-less">
           <div>
             <tip-box>
@@ -325,8 +298,7 @@
               <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
               <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
               <p></p>
-              <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type
-                of problem addressed by the Observer pattern.</p>
+              <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of problem addressed by the Observer pattern.</p>
             </tip-box>
             <p><strong>Context</strong></p>
             <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
@@ -377,11 +349,9 @@ studentList.addUi(statusUi);
             <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
             <p></p>
             <ul>
-              <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes
-                of) the <code>&lt;&lt; Observable &gt;&gt;</code> object.</li>
+              <li><code>&lt;&lt; Observer &gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt; Observable &gt;&gt;</code>. Any number of <code>&lt;&lt; Observer &gt;&gt;</code> objects can observe (i.e. listen to changes of) the <code>&lt;&lt; Observable &gt;&gt;</code> object.</li>
               <li>The <code>&lt;&lt; Observable &gt;&gt;</code> maintains a list of <code>&lt;&lt; Observer &gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt; Observer &gt;&gt;</code> to the list of <code>&lt;&lt; Observer &gt;&gt;s</code>.</li>
-              <li>Whenever there is a change in the <code>&lt;&lt; Observable &gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt; Observer &gt;&gt;s</code> in the
-                list.</li>
+              <li>Whenever there is a change in the <code>&lt;&lt; Observable &gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt; Observer &gt;&gt;s</code> in the list.</li>
             </ul>
             <p>In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
           </div>
@@ -389,7 +359,7 @@ studentList.addUi(statusUi);
       </div>
     </div>
     <div>
-      <h2 id="more">More</h2>
+      <h2 id="more">More<a class="fa fa-anchor" href="#more"></a></h2>
     </div>
     <div class="indented-less"></div>
   </div>
@@ -397,7 +367,7 @@ studentList.addUi(statusUi);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.12.0</a> at Mon, 24 Sep 2018 15:55:23 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Sun, 30 Sep 2018 14:23:52 GMT</small></div>
 </footer>
 </div>
 </body>
