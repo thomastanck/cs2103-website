@@ -403,3 +403,13 @@
 2018-10-01T07:13:11.643Z - info: [15:13:11] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\_markbind\head\adminHead.md
 2018-10-01T08:10:10.795Z - info: Website generation started at 16:09:59
 2018-10-01T08:10:49.921Z - info: Building assets...
+2018-10-01T08:11:07.461Z - info: Assets built
+2018-10-01T08:11:07.463Z - info: Generating pages...
+2018-10-01T08:12:35.089Z - info: Pages built
+2018-10-01T08:12:35.969Z - info: Site data built
+2018-10-01T08:12:35.969Z - info: Website generation complete! Total build time: 156.412s
+2018-10-01T08:12:35.970Z - info: Build success!
+2018-10-01T08:12:35.970Z - info: Generate Site durationMs=156413
+2018-10-01T08:13:57.169Z - info: Deployed!
+2018-10-01T08:37:01.354Z - info: Website generation started at 16:36:55
+2018-10-01T08:37:25.358Z - info: Building assets...
