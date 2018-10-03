@@ -82,7 +82,8 @@
                           <li><strong>
                               <trigger trigger="click" for="modal:v10-setuporg">Set up the team org</trigger> and <trigger trigger="click" for="modal:v10-setuprepo">team repo</trigger>
                             </strong> for your team if you haven't done that already.</li>
-                          <li><strong>Set up <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><em>auto-publishing</em> of docs</a></strong></li>
+                          <li><a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
+                          <li><strong>Set up <a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><em>auto-publishing</em> of docs</a></strong>. When set up correctly, your project website should be available via the URL <code>https://nus-cs2103-ay1819s1-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s1-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
                           <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4">nus-cs2103-AY1819S1/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[T09-2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
                         </ul>
                       </li>
@@ -261,10 +262,24 @@
                       <li>
                         <p><strong>README.adoc</strong> page: Update it to match your project.</p>
                         <ul>
-                          <li>Add a UI mockup of your intended final product.<br>
-                            Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same <code>height x width</code> proportions as the original one. <span class="dimmed">Reason: when we compile these images from all teams into one page (<a href="https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/projectList.html">example</a>), yours should not look out of place.</span></li>
-                          <li>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark> (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code> link and related pages.</li>
-                          <li>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></li>
+                          <li>
+                            <p>Add a UI mockup of your intended final product.<br>
+                              Note that the <mark>image of the UI should be <code>docs/images/Ui.png</code></mark> so that it can be downloaded by our scripts. Limit the file to contain one screenshot/mockup only and ensure the new image is roughly the same <code>height x width</code> proportions as the original one. <span class="dimmed">Reason: when we compile these images from all teams into one page (<a href="https://nus-cs2103-ay1819s1.github.io/cs2103-website/admin/projectList.html">example</a>), yours should not look out of place.</span></p>
+                          </li>
+                          <li>
+                            <p>The original <code>README.adoc</code> file (which doubles as the landing page of your project website) is written to read like the introduction to an SE learning/teaching resource. You should <mark>restructure this page to look like the home page of a real product</mark> (not a school project) targeting real users <span class="dimmed"> e.g. remove references to addressbook-level3, Learning Outcomes etc. mention target users, add a marketing blurb etc.</span> On a related note, also remove <code>Learning Outcomes</code> link and related pages.</p>
+                          </li>
+                          <li>
+                            <p>Update the link of the Travis <em>build status badge</em> (<img src="https://travis-ci.org/se-edu/addressbook-level4.svg?branch=master" alt="Build Status">) so that it reflects the build status of your team repo.<br>
+                              For the other badges,</p>
+                            <ul>
+                              <li>either set up the respective tool for your project (AB-4 Developer Guide has instructions on how to set up AppVeyor and Coveralls) and update the badges accordingly,</li>
+                              <li>or remove the badge.</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p>Acknowledge the original source of the code i.e. AddressBook-Level4 project created by SE-EDU initiative at <code>https://github.com/se-edu/</code></p>
+                          </li>
                         </ul>
                       </li>
                       <li>
