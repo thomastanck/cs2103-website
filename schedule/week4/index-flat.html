@@ -3353,7 +3353,7 @@ Enter command: exit
                       <p>The concept of <strong><em>Objects</em> in OOP is an <trigger trigger="click" for="modal:objectsAsAbstractions-abstraction">abstraction</trigger> mechanism because it allows us to abstract away the lower level details and work with bigger granularity entities</strong> i.e. ignore details of data formats and the method implementation details and work at the level of objects.</p>
                       <modal large="" title="Definition: Abstraction" id="modal:objectsAsAbstractions-abstraction">
                           <div>
-                          <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to that aspect).</p>
+                          <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                         </div>
                       </modal>
                       <tip-box>
@@ -4404,11 +4404,11 @@ Too many dimensions: 3x4x5
 
     <span class="hljs-comment">//test case 1</span>
     p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>, <span class="hljs-string">"E002"</span>});
-    assertEquals(p.totalSalary(), <span class="hljs-number">6400</span>);
+    assertEquals(<span class="hljs-number">6400</span>, p.totalSalary());
 
     <span class="hljs-comment">//test case 2</span>
     p.setEmployees(<span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"E001"</span>});
-    assertEquals(p.totalSalary(), <span class="hljs-number">2300</span>);
+    assertEquals(<span class="hljs-number">2300</span>, p.totalSalary());
 
     <span class="hljs-comment">//more tests...</span>
 }
@@ -6782,7 +6782,7 @@ Green indicates low priority
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 03 Oct 2018 07:16:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Fri, 05 Oct 2018 04:18:27 GMT</small></div>
 </footer>
 </div>
 </body>

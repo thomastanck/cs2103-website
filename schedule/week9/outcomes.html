@@ -1766,213 +1766,9 @@ r1.setPlayer(p2);
       <p><span class="activity-desc">Quality Assurance</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can use intermediate-level testing techniques</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain testability</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Introduction →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="testability">Testability<a class="fa fa-anchor" href="#testability"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher the testability, the easier it is to achieve a better quality software.</p>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
+          <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can explain some QA techniques complementary to testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test coverage</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
-                    <p>Here are some examples of different coverage criteria:</p>
-                    <ul>
-                      <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
-                      <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
-                      <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
-                      <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
-                    </ul>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
-                      <p>For 100% branch or decision coverage, two test cases are required:</p>
-                      <ul>
-                        <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                        <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                      </ul>
-                      <p>For 100% condition coverage, three test cases are required</p>
-                      <ul>
-                        <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                        <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                        <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
-                      </ul>
-                    </tip-box>
-                    <ul>
-                      <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
-                      <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> highest intensity coverage">
-                            <question>
-                              <p>Which of these gives us the highest intensity of testing?</p>
-                              <ul radio-group="3db75" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(b)</p>
-                                <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer left them out by mistake.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Explain what is test coverage and how it can be useful.</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how test coverage works</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
-                    <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
-
-                    <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
-                      <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
-                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                    </div>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Measure test coverage in your project.</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Tools → JUnit →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="junit-intermediate">JUnit: Intermediate<a class="fa fa-anchor" href="#junit-intermediate"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>Some intermediate JUnit techniques that may be useful:</p>
-                    <ul>
-                      <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
-                      <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
-                      <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
-                      <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
-                    </ul>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Use the mentioned features in the project.</p>
-            </div>
-          </panel>
-          <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain TDD</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test-Driven Development →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> When do we write tests in TDD?">
-                            <question>
-                              <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
-                              <ul radio-group="d75ae" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> False</label></li>
-                              </ul>
-                              <p>B) Testing tools such as Junit require us to follow TDD.</p>
-                              <ul radio-group="b90f5" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> False</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>A) False</p>
-                                <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
-                                <p>B) False</p>
-                                <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </panel>
-        </panel>
-        <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.5</code> <strong>Can explain some QA techniques complementary to testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software quality assurance</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software quality assurance</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1980,7 +1776,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4>
+                  <h4 id="what-2">What<a class="fa fa-anchor" href="#what-2"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1993,7 +1789,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2052,7 +1848,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2060,7 +1856,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4>
+                  <h4 id="what-3">What<a class="fa fa-anchor" href="#what-3"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2132,7 +1928,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2140,7 +1936,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4>
+                  <h4 id="what-4">What<a class="fa fa-anchor" href="#what-4"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2172,7 +1968,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain formal verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain formal verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2180,7 +1976,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4>
+                  <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2232,11 +2028,11 @@ r1.setPlayer(p2);
       <p><span class="activity-desc">Documentation</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.6</code> <strong>Can apply best practices when writing developer documents</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W9.5</code> <strong>Can apply best practices when writing developer documents</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <br>
           <p><span class="dimmed"><strong>Type of Developer Docs</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2244,7 +2040,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-8">What<a class="fa fa-anchor" href="#what-8"></a></h4>
+                  <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2313,7 +2109,7 @@ r1.setPlayer(p2);
           <br>
           <p><span class="dimmed"><strong>Guideline: Aim for Comprehensibility</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for comprehensibility in documents</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for comprehensibility in documents</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2321,7 +2117,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-9">What<a class="fa fa-anchor" href="#what-9"></a></h4>
+                  <h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2333,7 +2129,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2341,7 +2137,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="how-3">How<a class="fa fa-anchor" href="#how-3"></a></h4>
+                  <h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2389,7 +2185,7 @@ r1.setPlayer(p2);
           <br>
           <p><span class="dimmed"><strong>Guideline: Describe Top-Down</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between top-down and bottom up documentation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between top-down and bottom up documentation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2397,7 +2193,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-10">What<a class="fa fa-anchor" href="#what-10"></a></h4>
+                  <h4 id="what-8">What<a class="fa fa-anchor" href="#what-8"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2409,7 +2205,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2434,7 +2230,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2442,7 +2238,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="how-4">How<a class="fa fa-anchor" href="#how-4"></a></h4>
+                  <h4 id="how-3">How<a class="fa fa-anchor" href="#how-3"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2489,7 +2285,7 @@ r1.setPlayer(p2);
           <br>
           <p><span class="dimmed"><strong>Guideline: Minimal but Sufficient</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain documentation should be minimal yet sufficient</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain documentation should be minimal yet sufficient</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2497,7 +2293,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-11">What<a class="fa fa-anchor" href="#what-11"></a></h4>
+                  <h4 id="what-9">What<a class="fa fa-anchor" href="#what-9"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2513,7 +2309,7 @@ r1.setPlayer(p2);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6h</code></span></big> <span><span class="fas fa-trophy"></span> Can write minimal yet sufficient documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5h</code></span></big> <span><span class="fas fa-trophy"></span> Can write minimal yet sufficient documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2521,7 +2317,7 @@ r1.setPlayer(p2);
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="how-5">How<a class="fa fa-anchor" href="#how-5"></a></h4>
+                  <h4 id="how-4">How<a class="fa fa-anchor" href="#how-4"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -2536,7 +2332,7 @@ r1.setPlayer(p2);
           <br>
           <p><span class="dimmed"><strong>Drawing Architecture Diagrams</strong></span></p>
           <panel type="danger" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6i</code></span></big> <span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5i</code></span></big> <span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2574,7 +2370,7 @@ r1.setPlayer(p2);
       <p><span class="activity-desc">🅿️ Project</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.7</code> <strong>Can write developer documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W9.6</code> <strong>Can write developer documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <p>Covered by:</p>
             <p>
@@ -2590,7 +2386,7 @@ r1.setPlayer(p2);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 03 Oct 2018 07:16:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Fri, 05 Oct 2018 04:18:27 GMT</small></div>
 </footer>
 </div>
 </body>

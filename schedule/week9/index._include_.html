@@ -30,12 +30,70 @@
                       <td>some text and some diagrams added to the developer guide (at least in a PR), comprising at least one page worth of content</td>
                     </tr>
                     <tr>
+                      <td><span class="fas fa-users"></span> Issue tracker set up</td>
+                      <td>As explained in <trigger trigger="click" for="modal:v12-issueTrackerSetup">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Issue Tracker Setup]</trigger>.</td>
+                    </tr>
+                    <tr>
                       <td><span class="fas fa-users"></span> v1.2 managed using GitHub features (issue tracker, milestones, etc.)</td>
-                      <td>A new version git tagged <code>v1.2</code> is in your repo.<br> There is evidence of an attempt (even if not completely successful) to use GitHub features as described in <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
+                      <td>Milestone v1.2 managed as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
+              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: GitHub: Project Issue Tracker Setup" id="modal:v12-issueTrackerSetup">
+                  <div>
+                  <h2 id="issue-tracker-setup">Issue tracker setup</h2>
+                  <p>We recommend you configure the issue tracker of the <code>main</code> repo as follows:</p>
+                  <ul>
+                    <li>Delete existing labels and add the following labels.<br>
+                      💡 <strong>Issue type</strong> labels are useful from the beginning of the project. The other labels are needed only when you start implementing the features.</li>
+                  </ul>
+                  <tip-box>
+                    <p><strong>Issue type</strong> labels:</p>
+                    <ul>
+                      <li><code>type.Epic</code> : A big feature which can be broken down into smaller stories e.g. search</li>
+                      <li><code>type.Story</code> : A user story</li>
+                      <li><code>type.Enhancement</code>: An enhancement to an existing story</li>
+                      <li><code>type.Task</code> : Something that needs to be done, but not a story, bug, or an epic. e.g. Move testing code into a new folder)</li>
+                      <li><code>type.Bug</code> : A bug</li>
+                    </ul>
+                  </tip-box>
+                  <tip-box>
+                    <p><strong>Status</strong> labels:</p>
+                    <ul>
+                      <li><code>status.Ongoing</code> : The issue is currently being worked on. note: remove this label before closing an issue.
+                      </li>
+                    </ul>
+                  </tip-box>
+
+                  <tip-box>
+                    <p><strong>Priority</strong> labels:</p>
+                    <ul>
+                      <li><code>priority.High</code> : Must do</li>
+                      <li><code>priority.Medium</code> : Nice to have</li>
+                      <li><code>priority.Low</code> : Unlikely to do</li>
+                    </ul>
+                  </tip-box>
+                  <span id="bug-severity">
+                    <tip-box>
+                      <p><strong>Bug Severity</strong> labels:</p>
+                      <ul>
+                        <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
+                        <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
+                        <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
+                      </ul>
+                    </tip-box>
+                  </span>
+                  <ul>
+                    <li>
+                      <p>Create following milestones : <code>v1.0</code>, <code>v1.1</code>, <code>v1.2</code>, <code>v1.3</code>, <code>v1.4</code>,</p>
+                    </li>
+                    <li>
+                      <p>You may configure other project settings as you wish. e.g. more labels, more milestones</p>
+                    </li>
+                  </ul>
+                </div>
+              </modal>
               <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: GitHub: Project Schedule Tracking" id="modal:v12-projectTracking">
                   <div>
                   <h2 id="project-schedule-tracking">Project Schedule Tracking</h2>
@@ -58,261 +116,85 @@
                   <p><big><strong>From milestone v1.2:</strong></big></p>
                   <ul>
                     <li>
-                      <p><strong>When you start implementing a story, break it down to tasks.</strong> Define reasonable sized, standalone tasks. A task should be able to done by one person, in a few hours. <span class="dimmed">e.g.</span></p>
+                      <p><strong>Define project tasks as issues</strong>. When you start implementing a user story (or a feature), break it down to smaller tasks if necessary. Define reasonable sized, standalone tasks. <mark>Create issues for each</mark> of those tasks so that they can be tracked.<span class="dimmed">e.g.</span></p>
                       <ul>
-                        <li><span class="dimmed"><span class="fas fa-thumbs-up"></span> Good: <code>Update class diagram in the project manual for v1.4</code></span></li>
-                        <li><span class="dimmed"><span class="fas fa-thumbs-down"></span> Bad (reasons: not a one-person task, not small enough): <code>Write the project manual</code></span>
-                          <br><br></li>
+                        <li>
+                          <p>A typical task should be able to done by one person, in a few hours.</p>
+                          <ul>
+                            <li><span class="dimmed"><span class="fas fa-thumbs-down"></span> Bad (reasons: not a one-person task, not small enough): <code>Write the Developer Guide</code></span></li>
+                            <li><span class="dimmed"><span class="fas fa-thumbs-up"></span> Good: <code>Update class diagram in the Developer Guide for v1.4</code></span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p>There is no need to break things into VERY small tasks. Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
+                          <ul>
+                            <li><span class="dimmed"><span class="fas fa-thumbs-down"></span> Bad:<code>Implementing parser</code> (reason: too big).</span></li>
+                            <li><span class="dimmed"><span class="fas fa-thumbs-up"></span> Good:<code>Implementing parser support for adding of floating tasks</code></span></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p>Do not track things taken for granted. <span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
+                        </li>
+                        <li>
+                          <p>Write a descriptive title for the issue. <span class="dimmed">e.g. <code>Add support for the 'undo' command to the parser</code></span></p>
+                          <ul>
+                            <li>Omit redundant details. In some cases, the issue title is enough to describe the task. In that case, no need to repeat it in the issue description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.<br><br></li>
+                          </ul>
+                        </li>
                       </ul>
                     </li>
                     <li>
-                      <p><strong>Write a descriptive title for the issue.</strong> <span class="dimmed">e.g. <code>Add support for the 'undo' command to the parser</code></span></p>
+                      <p><strong>Assign tasks (i.e., issues) to the corresponding team members using the <code>assignees</code> field.</strong> <mark>Normally, there should be some ongoing tasks and some pending tasks against each team member at any point</mark>.</p>
                     </li>
                     <li>
-                      <p><strong>There is no need to break things into VERY small tasks.</strong> Keep them as big as possible, but they should be no bigger than what you are going to assign a single person to do within a week. <span class="dimmed">eg.,</span></p>
-                      <ul>
-                        <li><code>Implementing parser</code>  <span class="dimmed">: too big because it cannot be done by a single person in a week.</span></li>
-                        <li><code>Implementing parser support for adding of floating tasks</code> <span class="dimmed">: appropriate size.</span>
-                          <br><br></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p><strong>Do not track things taken for granted.</strong> <span class="dimmed">e.g., <code>push code to repo</code> should not be a task to track. In the example given under the previous point, it is taken for granted that the owner will also (a) test the code and (b) push to the repo when it is ready. Those two need not be tracked as separate tasks.</span></p>
-                    </li>
-                    <li>
-                      <p><strong>Omit redundant details.</strong> In some cases, the summary/title is enough to describe the task. In that case, no need to repeat it in the description. There is no need for well-crafted and detailed descriptions for tasks. A minimal description is enough. Similarly, labels such as <code>priority</code> can be omitted if you think they don't help you.</p>
-                    </li>
-                    <li>
-                      <p><strong>Assign tasks to team members using the <code>assignees</code> field.</strong> At any point, there should be some ongoing tasks and some pending tasks against each team member.</p>
-                    </li>
-                    <li>
-                      <p><strong>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</strong></p>
+                      <p>Optionally, you can use <code>status.ongoing</code> label to indicate issues currently ongoing.</p>
                     </li>
                   </ul>
                   <div id="using-milestones">
                     <h3 id="using-milestones">Using Milestones:</h3>
-                    <p>We recommend you do the following from milestone v1.2:</p>
+                    <p>We recommend you do proper milestone management starting from v1.2. <mark>Given below are the conditions to satisfy for a milestone to be considered properly managed</mark>:</p>
+                    <p><strong>Planning a Milestone</strong>:<br></p>
                     <ul>
                       <li>
-                        <p>Use <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones.</p>
+                        <p><strong>Issues assigned to the milestone, team members assigned to issues</strong>: Used <a href="https://help.github.com/articles/about-milestones/">GitHub milestones</a> to indicate which issues are to be handled for which milestone by assigning issues to suitable milestones. Also make sure those issues are assigned to team members. <span class="dimmed">Note that you can change the milestone plan along the way as necessary.</span></p>
                       </li>
                       <li>
-                        <p>Set the deadlines for milestones (in GitHub). Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</p>
-                      </li>
-                      <li>
-                        <p>Note that you can change the milestone plan along the way as necessary.</p>
+                        <p><strong>Deadline set for the milestones</strong> (in the GitHub milestone). <span class="dimmed">Your internal milestones can be set earlier than the deadlines we have set, to give you a buffer.</span></p>
                       </li>
                     </ul>
-                    <p><strong>Wrapping up a Milestone</strong>:<br>
-                      <mark>Here are the conditions to satisfy for a milestone to be considered properly wrapped up</mark>:</p>
+                    <p><strong>Wrapping up a Milestone</strong>:<br></p>
                     <ul>
                       <li>
-                        <p>A working product tagged with the correct tag (e.g. <code>v1.2</code>) is pushed to the main repo.</p>
+                        <p><strong>A working product tagged</strong> with the correct tag (e.g. <code>v1.2</code>) and is pushed to the main repo<br>
+                          or a <strong>product <em>release</em> done on GitHub</strong>. A product release is optional for v1.2 but required from from v1.3. Click <a href="https://github.com/se-edu/addressbook-level4/releases/">here</a> to see an example release.</p>
                       </li>
                       <li>
-                        <p>All tests passing on Travis for the version tagged above.</p>
+                        <p><strong>All tests passing</strong> on Travis for the version tagged/released.</p>
                       </li>
                       <li>
-                        <p>Milestone updated to match the product i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
+                        <p><strong>Milestone updated to match the product</strong> i.e. all issues completed and PRs merged for the milestone should be assigned to the milestone. Incomplete issues/PRs should be moved to a future milestone.<br>
                           <img src="/cs2103-website/admin/images/assigningIssuesToMilestones.png" width="700"></p>
                       </li>
                       <li>
-                        <p>Milestone closed. If there are incomplete issues or unmerged PRs in the milestone, move them to a future milestone.<br>
+                        <p><strong>Milestone closed.</strong><br>
                           <img src="/cs2103-website/admin/images/closingMilestones.png" width="700"></p>
                       </li>
                       <li>
-                        <p>Optionally, issues for the next milestone are assigned to team members (this is not compulsory to do <em>before</em> the tutorial, but we recommend you to do it soon after the tutorial).</p>
-                      </li>
-                      <li>
-                        <p>Optionally, future milestones are revised based on what you experienced in the current milestone <span class="dimmed"> e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
-                      </li>
-                      <li>
-                        <p>Doing a 'release' on GitHub is optional for v1.2 but compulsory from v1.3.</p>
+                        <p><strong>If necessary, future milestones are revised</strong> based on what you experienced in the current milestone <span class="dimmed"> e.g. if you could not finish all issues assigned to the current milestone, it is a sign that you overestimated how much you can do in a week, which means you might want to reduce the issues assigned to future milestones to match that observation</span>.</p>
                       </li>
                     </ul>
+                    <p></p>
                   </div>
                 </div>
               </modal>
               <h3 id="v12-project-management">v1.2 Project Management</h3>
               <ul>
-                <li><span class="fas fa-users"></span> Manage, and close, the v1.2 milestone using GitHub.</li>
+                <li><span class="fas fa-users"></span> Manage the milestone v1.2 as explained in <trigger trigger="click" for="modal:v12-projectTracking">[Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Appendix E: GitHub: Project Schedule Tracking]</trigger>.</li>
               </ul>
               <h3 id="v12-product">v1.2 Product</h3>
               <ul>
-                <li><span class="fas fa-user"></span> Merge some code into master (in the team repo).</li>
+                <li><span class="fas fa-user"></span> Merge some code into the <code>master</code> branch of your team repo.</li>
               </ul>
-              <tip-box>
-                <p>💡 We use a tool called <em>Collate</em> to extract out code written by each member in your final project submission. The tool requires you to annotate code with special tags to mark code written by you. Adding those annotations is usually done at v1.3 but you are welcome to start early.</p>
-                <panel header="**How to collate code for grading**" no-close="">
-                  <div>Collate is a tool for collating code written by different developers.
-                    <p>Steps to use Collate:</p>
-                    <ol>
-                      <li>Download <code>Collate-TUI.jar</code> from the <a href="https://github.com/se-edu/collate/releases">Collate Tool project</a></li>
-                      <li>Annotate your code to indicate who wrote which part of the code (instructions given below)</li>
-                      <li>Run the Collate tool to collate code written by each person into separate files (instructions given below)</li>
-                    </ol>
-                    <h4 id="annotating-code-to-indicate-authorship">Annotating code to indicate authorship</h4>
-                    <ul>
-                      <li>
-                        <p>Mark your code with a <code>//@@author {yourGithubUsername}</code>. Note the double <code>@</code>.<br>
-                          The <code>//@@author</code> tag should appear only at the beginning of the code you wrote. The code up to the next <code>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
-                          Here is a sample code file:</p>
-                        <pre class="hljs"><code>//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author sarahkhoo
-method 3 ...
-//@@author johndoe
-method 4 ...
-</code></pre>
-                      </li>
-                      <li>
-                        <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
-                          Here is a sample code with an empty <code>author</code> tag:</p>
-                        <pre class="hljs"><code>method 0 ...
-//@@author johndoe
-method 1 ...
-method 2 ...
-//@@author
-method 3 ...
-method 4 ...
-</code></pre>
-                      </li>
-                      <li>
-                        <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
-                          Here is an example code from an xml/fxml file.</p>
-                        <pre class="hljs"><code>&lt;!-- @@author sereneWong --&gt;
-&lt;textbox&gt;
-  &lt;label&gt;...&lt;/label&gt;
-  &lt;input&gt;...&lt;/input&gt;
-&lt;/textbox&gt;
-...
-</code></pre>
-                      </li>
-                      <li>
-                        <p><strong>Do not put the <code>//@@author</code> inside java header comments</strong> as only the content below that tag will be collated.<br>
-                          👎<span class="fas fa-arrow-down"></span></p>
-                        <pre class="hljs"><code>/**
-  * Returns true if ...
-  * @@author johndoe
-  */
-</code></pre>
-                        <p>👍<span class="fas fa-arrow-down"></span></p>
-                        <pre class="hljs"><code>//@@author johndoe
-/**
-  * Returns true if ...
-  */
-</code></pre>
-                      </li>
-                    </ul>
-                    <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate</h4>
-                    <ul>
-                      <li>
-                        <p><strong>Annotate both functional and test code but not documentation files.</strong></p>
-                      </li>
-                      <li>
-                        <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed"> e.g., a class, a sequence of methods, a method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement%%.</p>
-                        <ul>
-                          <li>If an enhancement required you to do tiny changes in many places, there is no need to collate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
-                          <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
-                          <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
-                          <li>💡 GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><strong>Do not try to boost the length of your collated files using dubious means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.<br>
-                          Individual members are responsible for making sure their own collated files contain the correct content.<br>
-                          If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
-                      </li>
-                      <li>
-                        <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
-                        <ul>
-                          <li>Create a folder called <code>{project root}/unused</code></li>
-                          <li>Move unused files (or copies of files containing unused code) to that folder</li>
-                          <li>use <code>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code>unused</code>)
-                            e.g.</li>
-                        </ul>
-                        <pre class="hljs"><code>//@@author johndoe-unused
-method 1 ...
-method 2 ...
-</code></pre>
-                        <p>Please put a comment in the code to explain why it was not used.</p>
-                      </li>
-                      <li>
-                        <p><strong>If you reused code from elsewhere,</strong> mark such code as <code>//@@author {yourGithubUsername}-reused</code> (note the suffix <code>reused</code>)
-                          e.g.</p>
-                        <pre class="hljs"><code>//@@author johndoe-reused
-method 1 ...
-method 2 ...
-</code></pre>
-                      </li>
-                      <li>
-                        <p><strong>For code generated by the IDE/framework,</strong> it should not be annotated as your own.</p>
-                      </li>
-                      <li>
-                        <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These can be left out of collated code but can be mentioned in the Project Portfolio page if you want to claim credit for them.</p>
-                      </li>
-                    </ul>
-                    <h4 id="collating-the-annotated-code">Collating the annotated code</h4>
-                    <p>You need to put the collated code in the following folders</p>
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>Code Type</th>
-                            <th>Folder</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>functional code</td>
-                            <td><code>collated/functional</code></td>
-                          </tr>
-                          <tr>
-                            <td>test code</td>
-                            <td><code>collated/test</code></td>
-                          </tr>
-                          <tr>
-                            <td>unused code</td>
-                            <td><code>collated/unused</code></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <p>Refer to <a href="https://github.com/se-edu/collate/blob/master/docs/User-Guide.md">Collate Tool's user guide</a> to find how to run the tool over the annotated code.</p>
-                    <p>Given below are DOS sample commands you can put in a batch file and run it to collate the code.</p>
-                    <pre class="hljs"><code>java -jar Collate-TUI.jar collate from src/main to collated/functional include java, fxml, css
-
-java -jar Collate-TUI.jar collate from src/test to collated/test include java
-
-java -jar Collate-TUI.jar collate from unused to collated/unused include java, fxml, css
-</code></pre>
-                    <p>The output should be something like the structure given below.</p>
-                    <pre class="hljs"><code>collated/
-    functional/
-        johndoe.md
-        sarahkhoo.md
-        ravikumar.md
-        ravikumarreused.md
-    test/
-        johndoe.md
-        sarahkhoo.md
-        ravikumar.md
-    unused/
-        johndoe.md
-</code></pre>
-                    <ul>
-                      <li>
-                        <p>After running the collate tool, you are recommended to look through the generated <strong>.md</strong> files to ensure all your code has been extracted correctly.</p>
-                      </li>
-                      <li>
-                        <p><mark>Push the *.md files created to a folder called /collated</mark> in your repo.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </panel>
-                <p></p>
-              </tip-box>
               <h3 id="v12-documentation">v1.2 Documentation</h3>
               <ul>
                 <li>
@@ -2089,213 +1971,9 @@ r1.setPlayer(p2);
     <p><span class="activity-desc">Quality Assurance</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can use intermediate-level testing techniques</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-        <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain testability</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Introduction →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="testability">Testability</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher the testability, the easier it is to achieve a better quality software.</p>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </panel>
+        <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can explain some QA techniques complementary to testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test coverage</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="what-2">What</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
-                  <p>Here are some examples of different coverage criteria:</p>
-                  <ul>
-                    <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
-                    <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
-                    <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
-                    <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
-                  </ul>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
-                    <p>For 100% branch or decision coverage, two test cases are required:</p>
-                    <ul>
-                      <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                      <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                    </ul>
-                    <p>For 100% condition coverage, three test cases are required</p>
-                    <ul>
-                      <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                      <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                      <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
-                    </ul>
-                  </tip-box>
-                  <ul>
-                    <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
-                    <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
-                  </ul>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> highest intensity coverage">
-                          <question>
-                            <p>Which of these gives us the highest intensity of testing?</p>
-                            <ul radio-group="3db75" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(b)</p>
-                              <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer left them out by mistake.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
-            <p>Explain what is test coverage and how it can be useful.</p>
-          </div>
-        </panel>
-        <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how test coverage works</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="how-2">How</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
-                  <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
-
-                  <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
-                    <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
-                    <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                  </div>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
-            <p>Measure test coverage in your project.</p>
-          </div>
-        </panel>
-        <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → JUnit →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="junit-intermediate">JUnit: Intermediate</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p>Some intermediate JUnit techniques that may be useful:</p>
-                  <ul>
-                    <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
-                    <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
-                    <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
-                    <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
-                  </ul>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
-            <p>Use the mentioned features in the project.</p>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain TDD</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test-Driven Development →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="what-3">What</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> When do we write tests in TDD?">
-                          <question>
-                            <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
-                            <ul radio-group="d75ae" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> False</label></li>
-                            </ul>
-                            <p>B) Testing tools such as Junit require us to follow TDD.</p>
-                            <ul radio-group="b90f5" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> False</label></li>
-                            </ul>
-                            <div slot="answer">
-                              <p>A) False</p>
-                              <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
-                              <p>B) False</p>
-                              <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </panel>
-      </panel>
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W9.5</code> <strong>Can explain some QA techniques complementary to testing</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-        <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software quality assurance</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software quality assurance</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2303,7 +1981,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-4">What</h4>
+                <h4 id="what-2">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2316,7 +1994,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2375,7 +2053,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2383,7 +2061,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-5">What</h4>
+                <h4 id="what-3">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2455,7 +2133,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2463,7 +2141,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-6">What</h4>
+                <h4 id="what-4">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2495,7 +2173,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain formal verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain formal verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2503,7 +2181,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-7">What</h4>
+                <h4 id="what-5">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2555,11 +2233,11 @@ r1.setPlayer(p2);
     <p><span class="activity-desc">Documentation</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W9.6</code> <strong>Can apply best practices when writing developer documents</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W9.5</code> <strong>Can apply best practices when writing developer documents</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
         <br>
         <p><span class="dimmed"><strong>Type of Developer Docs</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2567,7 +2245,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-8">What</h4>
+                <h4 id="what-6">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2636,7 +2314,7 @@ r1.setPlayer(p2);
         <br>
         <p><span class="dimmed"><strong>Guideline: Aim for Comprehensibility</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for comprehensibility in documents</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for comprehensibility in documents</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2644,7 +2322,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-9">What</h4>
+                <h4 id="what-7">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2656,7 +2334,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2664,7 +2342,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="how-3">How</h4>
+                <h4 id="how-2">How</h4>
               </div>
               <div id="main">
                 <div>
@@ -2712,7 +2390,7 @@ r1.setPlayer(p2);
         <br>
         <p><span class="dimmed"><strong>Guideline: Describe Top-Down</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between top-down and bottom up documentation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can distinguish between top-down and bottom up documentation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2720,7 +2398,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-10">What</h4>
+                <h4 id="what-8">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2732,7 +2410,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2757,7 +2435,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2765,7 +2443,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="how-4">How</h4>
+                <h4 id="how-3">How</h4>
               </div>
               <div id="main">
                 <div>
@@ -2812,7 +2490,7 @@ r1.setPlayer(p2);
         <br>
         <p><span class="dimmed"><strong>Guideline: Minimal but Sufficient</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain documentation should be minimal yet sufficient</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain documentation should be minimal yet sufficient</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2820,7 +2498,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="what-11">What</h4>
+                <h4 id="what-9">What</h4>
               </div>
               <div id="main">
                 <div>
@@ -2836,7 +2514,7 @@ r1.setPlayer(p2);
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6h</code></span></big> <span><span class="fas fa-trophy"></span> Can write minimal yet sufficient documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5h</code></span></big> <span><span class="fas fa-trophy"></span> Can write minimal yet sufficient documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2844,7 +2522,7 @@ r1.setPlayer(p2);
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
-                <h4 id="how-5">How</h4>
+                <h4 id="how-4">How</h4>
               </div>
               <div id="main">
                 <div>
@@ -2859,7 +2537,7 @@ r1.setPlayer(p2);
         <br>
         <p><span class="dimmed"><strong>Drawing Architecture Diagrams</strong></span></p>
         <panel type="danger" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.6i</code></span></big> <span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.5i</code></span></big> <span><span class="fas fa-trophy"></span> Can draw an architecture diagram</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2897,7 +2575,7 @@ r1.setPlayer(p2);
     <p><span class="activity-desc">🅿️ Project</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W9.7</code> <strong>Can write developer documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W9.6</code> <strong>Can write developer documentation</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
         <div>
           <p>Covered by:</p>
           <p>
@@ -3250,7 +2928,7 @@ r1.setPlayer(p2);
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="how-6">How</h4>
+                    <h4 id="how-5">How</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3433,159 +3111,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test coverage</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-          <div class="indented">
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="what-12">What</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
-                      <p>Here are some examples of different coverage criteria:</p>
-                      <ul>
-                        <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
-                        <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
-                        <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
-                        <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
-                      </ul>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
-                        <p>For 100% branch or decision coverage, two test cases are required:</p>
-                        <ul>
-                          <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                          <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                        </ul>
-                        <p>For 100% condition coverage, three test cases are required</p>
-                        <ul>
-                          <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
-                          <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
-                          <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
-                        </ul>
-                      </tip-box>
-                      <ul>
-                        <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
-                        <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> highest intensity coverage">
-                              <question>
-                                <p>Which of these gives us the highest intensity of testing?</p>
-                                <ul radio-group="3db75" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>(b)</p>
-                                  <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer left them out by mistake.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
-            <div class="indented">
-              <div>
-                <p>Explain what is test coverage and how it can be useful.</p>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how test coverage works</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div class="indented">
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="how-7">How</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
-                      <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
-
-                      <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
-                        <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                      </div>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
-            <div class="indented">
-              <div>
-                <p>Measure test coverage in your project.</p>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div class="indented">
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Tools → JUnit →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="junit-intermediate-2">JUnit: Intermediate</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Some intermediate JUnit techniques that may be useful:</p>
-                      <ul>
-                        <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
-                        <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
-                        <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
-                        <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
-                      </ul>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
-            <div class="indented">
-              <div>
-                <p>Use the mentioned features in the project.</p>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain validation and verification</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3650,7 +3176,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain code reviews</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3661,7 +3187,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-13">What</h4>
+                    <h4 id="what-10">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3736,7 +3262,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain static analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3747,7 +3273,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-14">What</h4>
+                    <h4 id="what-11">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3782,7 +3308,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the two types of developer docs</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3793,7 +3319,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="what-15">What</h4>
+                    <h4 id="what-12">What</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3863,7 +3389,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can write reasonably comprehensible developer documents</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3874,7 +3400,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="how-8">How</h4>
+                    <h4 id="how-6">How</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -3923,7 +3449,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the advantages of top-down documentation</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3954,7 +3480,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can write documentation in a top-down manner</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3965,7 +3491,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
-                    <h4 id="how-9">How</h4>
+                    <h4 id="how-7">How</h4>
                   </div>
                   <div id="main">
                     <div>
@@ -4013,7 +3539,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.7</code></span></big> Can write developer documentation <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W9.6</code></span></big> Can write developer documentation <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <div>
               <p>Covered by:</p>

@@ -51,15 +51,15 @@
                   <div>
                     <tip-box type="definition">
                       <div>
-                        <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to that aspect).</p>
+                        <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                       </div>
                     </tip-box>
-                    <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details that are relevant to the current perspective or the task at hand.</p>
-                    <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                    <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
+                    <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <mark><em>data abstraction</em></mark>.</strong></p>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                     </tip-box>
-                    <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                    <p><strong><mark><em>Control abstraction</em></mark> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                     <tip-box>
                       <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
                     </tip-box>
@@ -309,7 +309,7 @@
                     <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other unrelated things.</p>
                     <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
                     <ul>
-                      <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                      <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
                       <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
                       <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
                     </ul>
@@ -344,7 +344,7 @@ What%%"></panel>
                   <div>
                     <p><strong>Cohesion can be present in many forms</strong>. Some examples:</p>
                     <ul>
-                      <li>Code related to a single concept is kept together, e.g. the Student component handles everything related to students.</li>
+                      <li>Code related to a single concept is kept together, e.g. the <code>Student</code> component handles everything related to students.</li>
                       <li>Code that is invoked close together in time is kept together, e.g. all code related to initializing the system is kept together.</li>
                       <li>Code that manipulates the same data structure is kept together, e.g. the <code>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li>
                     </ul>
@@ -420,8 +420,123 @@ What%%"></panel>
           </panel>
           <br>
           <p><span class="dimmed"><strong>Some other principles</strong></span></p>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <tip-box type="primary">
+                      <div>
+                        <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
+                      </div>
+                    </tip-box>
+                    <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
+                        <ul>
+                          <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
+                          <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
+                            by Patkos Csaba</li>
+                          <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
+                        </ul>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
+              <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
+              <div>
+                <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
+                <p>
+                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"></panel>
+                </p>
+              </div>
+            </div>
+          </panel>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1h</code></span></big> <span><span class="fas fa-trophy"></span> Can explain open-closed principle (OCP)</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>The Open-Close Principle aims to make a code entity easy to adapt and reuse without needing to modify the code entity itself.</strong></p>
+                    <tip-box type="definition">
+                      <div>
+                        <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
+                      </div>
+                    </tip-box>
+                    <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
+                      <img src="/cs2103-website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
+                      <p></p>
+                    </tip-box>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
+                      <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
+ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
+</code></pre>
+                    </tip-box>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
+                            <question>
+                              <p>Which of these is closest to the meaning of the open-closed principle?</p>
+                              <ul radio-group="6906e" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a)</p>
+                                <p>Explanation: Please refer the handout for the definition of OCP.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p>Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).</p>
+            </div>
+          </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain separation of concerns principle</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain separation of concerns principle</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -582,7 +697,7 @@ What%%"></panel>
                               <p><strong><em>Cohesion</em> is a measure of how strongly-related and focused the various responsibilities of a component are.</strong> A highly-cohesive component keeps related functionalities together while keeping out all other unrelated things.</p>
                               <p><strong>Higher cohesion is better.</strong> Disadvantages of low cohesion (aka <em>weak</em> cohesion):</p>
                               <ul>
-                                <li>Impedes the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
+                                <li>Lowers the understandability of modules as it is difficult to express module functionalities at a higher level.</li>
                                 <li>Lowers maintainability because a module can be modified due to unrelated causes <span class="dimmed"> (reason: the module contains code unrelated to each other)</span> or many many modules may need to be modified to achieve a small change in behavior <span class="dimmed"> (reason: because the code realated to that change is not localized to a single module)</span>.</li>
                                 <li>Lowers reusability of modules because they do not represent logical units of functionality.</li>
                               </ul>
@@ -622,121 +737,6 @@ What%%"></panel>
             <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
             <div>
               <p>Explain SoC with examples from AddressBook-Level4 (or your own project).</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1h</code></span></big> <span><span class="fas fa-trophy"></span> Can explain open-closed principle (OCP)</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>While it is possible to isolate the functionalities of a software system into modules, there is no way to remove interaction between modules. When modules interact with each other, coupling naturally increases. Consequently, it is harder to localize any changes to the software system. The Open-Close Principle aims to alleviate this problem.</p>
-                    <tip-box type="definition">
-                      <div>
-                        <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
-                      </div>
-                    </tip-box>
-                    <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
-                      <img src="/cs2103-website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
-                      <p></p>
-                    </tip-box>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
-                      <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
-ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
-</code></pre>
-                    </tip-box>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
-                            <question>
-                              <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                              <ul radio-group="6906e" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(a)</p>
-                                <p>Explanation: Please refer the handout for the definition of OCP.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Identify where OCP is applied (or applicable) in AddressBook-Level4 (or your own project).</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.1i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain single responsibility principle</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <tip-box type="primary">
-                      <div>
-                        <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
-                      </div>
-                    </tip-box>
-                    <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
-                    </tip-box>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
-                        <ul>
-                          <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
-                          <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
-                            by Patkos Csaba</li>
-                          <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
-                        </ul>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p><strong>Acceptable</strong>: Evidence of having used SRP in some project.</p>
-              <p><strong>Suggested</strong>: Do the exercise in [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2/blob/master/docs/LearningOutcomes.adoc#follow-the-single-responsibility-principle-code-lo-srp-code">Addressbook-Level2: LO-SRP</a>]</p>
-              <div>
-                <p><strong>Submission</strong>: Create a PR against <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2">Addressbook-Level2</a>. <mark>Try to make a <em>clean</em> PR</mark> (i.e. free of unrelated code modifications).</p>
-                <p>
-                  <panel src="/cs2103-website\admin\appendixE-gitHub._include_.html#tutorial-pr-instructions" header="%%Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Appendix E: Using GitHub Project Hosting → Submitting Pull Requests as evidence of an LO%%" fragment="tutorial-pr-instructions"></panel>
-                </p>
-              </div>
             </div>
           </panel>
         </panel>
@@ -957,6 +957,9 @@ ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt
                     <tip-box>
                       <p><span class="fas fa-cube"></span> A <code>Man</code> class and a <code>Woman</code> class is linked with a ‘married to’ association and there is a need to store the date of marriage. However, that data is related to the association rather than specifically owned by either the <code>Man</code> object or the <code>Woman</code> object. In such situations, an additional association class can be introduced, e.g. a <code>Marriage</code> class, to store such information.</p>
                     </tip-box>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\classDiagrams\associationClasses\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Class Diagrams → Association Classes → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AssociationClasses" fragment="main"></panel>
+                    </p>
                     <h5 id="implementing-association-classes">Implementing association classes<a class="fa fa-anchor" href="#implementing-association-classes"></a></h5>
                     <p>There is no special way to implement an association class. It can be implemented as a normal class that has variables to represent the endpoint of the association it represents.</p>
                     <tip-box>
@@ -1997,14 +2000,218 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
         </panel>
+        <panel no-close="" expandable="true">
+          <span slot="header" class="card-title"><span><code>W8.5</code> <strong>Can use intermediate-level testing techniques</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain testability</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Introduction →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="testability">Testability<a class="fa fa-anchor" href="#testability"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong><em>Testability</em> is an indication of how easy it is to test an SUT.</strong> As testability depends a lot on the design and implementation. You should try to increase the testability when you design and implement a software. The higher the testability, the easier it is to achieve a better quality software.</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </panel>
+          <panel type="warning" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test coverage</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-13">What<a class="fa fa-anchor" href="#what-13"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
+                    <p>Here are some examples of different coverage criteria:</p>
+                    <ul>
+                      <li><strong>Function/method coverage</strong> : based on functions executed <span class="dimmed"> e.g., testing executed 90 out of 100 functions</span>.</li>
+                      <li><strong>Statement coverage</strong> : based on the number of line of code executed <span class="dimmed"> e.g., testing executed 23k out of 25k LOC</span>.</li>
+                      <li><strong>Decision/branch coverage</strong> : based on the decision points exercised <span class="dimmed"> e.g., an <code>if</code> statement evaluated to both <code>true</code> and <code>false</code> with separate test cases during testing is considered 'covered'</span>.</li>
+                      <li><strong>Condition coverage</strong> : based on the boolean sub-expressions, each evaluated to both true and false with different test cases. Condition coverage is not the same as the decision coverage.</li>
+                    </ul>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> <code>if(x &gt; 2 &amp;&amp; x &lt; 44)</code> is considered one decision point but two conditions.</p>
+                      <p>For 100% branch or decision coverage, two test cases are required:</p>
+                      <ul>
+                        <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                        <li><code>(x &gt; 2 &amp;&amp; x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+                      </ul>
+                      <p>For 100% condition coverage, three test cases are required</p>
+                      <ul>
+                        <li><code>(x &gt; 2) == true</code> , <code>(x &lt; 44) == true</code> : [e.g. <code>x == 4</code>]</li>
+                        <li><code>(x &lt; 44) == false</code> : [e.g. <code>x == 100</code>]</li>
+                        <li><code>(x &gt; 2) == false</code> : [e.g. <code>x == 0</code>]</li>
+                      </ul>
+                    </tip-box>
+                    <ul>
+                      <li><strong>Path coverage</strong> measures coverage in terms of possible paths through a given part of the code executed. 100% path coverage means all possible paths have been executed. A commonly used notation for path analysis is called the <em>Control Flow Graph (CFG)</em>.</li>
+                      <li><strong>Entry/exit coverage</strong> measures coverage in terms of possible <em>calls to</em> and <em>exits</em> from the operations in the SUT.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> highest intensity coverage">
+                            <question>
+                              <p>Which of these gives us the highest intensity of testing?</p>
+                              <ul radio-group="3db75" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> a. 100% statement coverage</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> b. 100% path coverage</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> c. 100% branch coverage</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="3db75" type="radio"> d. 100% condition coverage</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(b)</p>
+                                <p>Explanation: 100% path coverage implies all possible execution paths through the SUT have been tested. This is essentially ‘exhaustive testing’. While this is very hard to achieve for a non-trivial SUT, it technically gives us the highest intensity of testing. If all tests pass at 100% path coverage, the SUT code can be considered ‘bug free’. However, note that path coverage does not include paths that are missing from the code altogether because the programmer left them out by mistake.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p>Explain what is test coverage and how it can be useful.</p>
+            </div>
+          </panel>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how test coverage works</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test Coverage →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="how-5">How<a class="fa fa-anchor" href="#how-5"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Measuring coverage is often done using <em>coverage analysis tools</em>.</strong> Most IDEs have inbuilt support for measuring test coverage, or at least have plugins that can measure test coverage.</p>
+                    <p><strong>Coverage analysis can be useful in improving the quality of testing</strong> <span class="dimmed"> e.g., if a set of test cases does not achieve 100% branch coverage, more test cases can be added to cover missed branches</span>.</p>
+
+                    <div v-closeable="" alt="Test Coverage in Intellij" class="non-printable">
+                      <p><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Measuring code coverage in Intellij IDEA</p>
+                      <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/yNYzZvyA2ik" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p>Measure test coverage in your project.</p>
+            </div>
+          </panel>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate features of JUnit</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Tools → JUnit →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="junit-intermediate">JUnit: Intermediate<a class="fa fa-anchor" href="#junit-intermediate"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>Some intermediate JUnit techniques that may be useful:</p>
+                    <ul>
+                      <li><strong>It is possible for a <a href="https://github.com/junit-team/junit4/wiki/Exception-testing">JUnit test case to verify if the SUT throws the right exception</a></strong>.</li>
+                      <li><strong><a href="https://github.com/junit-team/junit4/wiki/Rules">JUnit <em>Rules</em></a> are a way to add additional behavior to a test.</strong> e.g. to make a test case use a temporary folder for storing files needed for (or generated by) the test.</li>
+                      <li><strong>It is possible to <a href="https://www.mkyong.com/unittest/junit-4-tutorial-1-basic-usage/">write methods thar are automatically run before/after a test method/class</a></strong>. These are useful to do pre/post cleanups for example.</li>
+                      <li><strong><a href="http://www.artima.com/suiterunner/private.html">Testing private methods is possible, although not always necessray</a></strong></li>
+                    </ul>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p>Use the mentioned features in the project.</p>
+            </div>
+          </panel>
+          <panel type="success" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain TDD</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Test-Driven Development →
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="what-14">What<a class="fa fa-anchor" href="#what-14"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Test-Driven Development(TDD)_ advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> When do we write tests in TDD?">
+                            <question>
+                              <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
+                              <ul radio-group="d75ae" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="d75ae" type="radio"> False</label></li>
+                              </ul>
+                              <p>B) Testing tools such as Junit require us to follow TDD.</p>
+                              <ul radio-group="b90f5" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="b90f5" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>A) False</p>
+                                <p>Explanation: No, not <em>all</em>. We proceed in small steps, writing tests and functional code in tandem, but writing the test before we write the corresponding functional code.</p>
+                                <p>B) False</p>
+                                <p>Explanation: They can be used for TDD, but they can be used without TDD too.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
       </div>
       <p></p>
       <p><span class="activity-desc">Project Management</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W8.5</code> <strong>Can use basic scheduling and tracking tools</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W8.6</code> <strong>Can use basic scheduling and tracking tools</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain milestones</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain milestones</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2060,7 +2267,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain buffers</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain buffers</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2086,7 +2293,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain issue trackers</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain issue trackers</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2119,7 +2326,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain work breakdown structures</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain work breakdown structures</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2316,7 +2523,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain GANTT charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain GANTT charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2342,7 +2549,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain PERT charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain PERT charts</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2381,7 +2588,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.5g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain common team structures</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W8.6g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain common team structures</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -2443,7 +2650,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
       <p><span class="activity-desc">🅿️ Project</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W8.6</code> <strong>Can plan/track project schedule</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W8.7</code> <strong>Can plan/track project schedule</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <p>Covered by:</p>
             <p>
@@ -2459,7 +2666,7 @@ String name = logic.getName(<span class="hljs-number">23</span>);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 03 Oct 2018 07:16:57 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Fri, 05 Oct 2018 04:18:27 GMT</small></div>
 </footer>
 </div>
 </body>

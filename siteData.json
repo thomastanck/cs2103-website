@@ -84,11 +84,11 @@
         "submitting-pull-requests-as-evidence-of-an-lo": "Submitting Pull Requests as evidence of an LO",
         "organization-setup": "Organization setup",
         "repo-setup": "Repo setup",
+        "workflow": "Workflow",
         "issue-tracker-setup": "Issue tracker setup",
         "project-schedule-tracking": "Project Schedule Tracking",
         "using-issues": "Using Issues:",
-        "using-milestones": "Using Milestones:",
-        "workflow": "Workflow"
+        "using-milestones": "Using Milestones:"
       },
       "title": "Admin: E: Using GitHub",
       "footer": "footer.md",

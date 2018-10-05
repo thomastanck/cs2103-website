@@ -678,15 +678,15 @@ displayResult();
                                                 <div>
                                                   <tip-box type="definition">
                                                     <div>
-                                                      <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity (or an aspect) we are interested in, and suppressing the more complex details below that level (or irrelevant to that aspect).</p>
+                                                      <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                                                     </div>
                                                   </tip-box>
-                                                  <p>Most programs are written to solve complex problems involving large amounts of intricate details. It is impossible to deal with all these details at the same time. The guiding principle of abstraction stipulates that we capture only details that are relevant to the current perspective or the task at hand.</p>
-                                                  <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <em>data abstraction</em>.</strong></p>
+                                                  <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
+                                                  <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <mark><em>data abstraction</em></mark>.</strong></p>
                                                   <tip-box>
                                                     <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
                                                   </tip-box>
-                                                  <p><strong><em>Control abstraction</em> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
+                                                  <p><strong><mark><em>Control abstraction</em></mark> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
                                                   <tip-box>
                                                     <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
                                                   </tip-box>
@@ -1073,6 +1073,9 @@ exit();
                                       </p>
                                       <p></p>
                                       <div>
+                                        <blockquote>
+                                          <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
+                                        </blockquote>
                                         <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
                                         <tip-box>
                                           <p>Examples:</p>
