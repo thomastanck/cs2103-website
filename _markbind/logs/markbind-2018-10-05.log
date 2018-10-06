@@ -10,3 +10,26 @@
 2018-10-05T03:38:23.998Z - info: Press CTRL+C to stop ...
 2018-10-05T04:18:21.033Z - info: Website generation started at 12:18:18
 2018-10-05T04:18:23.544Z - info: Building assets...
+2018-10-05T04:18:27.196Z - info: Assets built
+2018-10-05T04:18:27.196Z - info: Generating pages...
+2018-10-05T04:19:47.309Z - info: Pages built
+2018-10-05T04:19:48.184Z - info: Site data built
+2018-10-05T04:19:48.184Z - info: Website generation complete! Total build time: 89.832s
+2018-10-05T04:19:48.184Z - info: Build success!
+2018-10-05T04:19:48.184Z - info: Generate Site durationMs=89832
+2018-10-05T04:21:25.677Z - info: Deployed!
+2018-10-05T04:36:44.029Z - info: Website generation started at 12:36:41
+2018-10-05T04:36:55.036Z - info: Building assets...
+2018-10-05T04:37:00.907Z - info: Assets built
+2018-10-05T04:37:00.908Z - info: Generating pages...
+2018-10-05T04:38:35.629Z - info: Pages built
+2018-10-05T04:38:36.417Z - info: Site data built
+2018-10-05T04:38:36.417Z - info: Website generation complete! Total build time: 114.798s
+2018-10-05T04:38:36.433Z - info: Generate Site durationMs=114814
+2018-10-05T04:38:36.899Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-05T04:38:36.899Z - info: Press CTRL+C to stop ...
+2018-10-05T04:39:48.979Z - info: [12:39:48] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\singleResponsibilityPrinciple\text.md
+2018-10-05T04:39:49.996Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\singleResponsibilityPrinciple\text.md
+2018-10-05T04:39:49.996Z - info: Rebuilding 10 pages
+2018-10-05T04:40:20.441Z - info: Pages rebuilt
+2018-10-05T04:40:20.458Z - info: Site data built
