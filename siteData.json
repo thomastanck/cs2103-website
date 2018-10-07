@@ -722,7 +722,7 @@
         "instance-members": "Instance Members",
         "passing-objects": "Passing Objects",
         "garbage-collection": "Garbage Collection",
-        "packages": "packages",
+        "importing": "importing",
         "new-operator": "new operator",
         "null-and-nullpointerexception": "null and NullPointerException",
         "java-objects": "Java Objects",

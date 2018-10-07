@@ -1,0 +1,57 @@
+2018-09-13T13:58:44.158Z - info: Website generation started at 21:58:41
+2018-09-13T13:58:47.668Z - info: Building assets...
+2018-09-13T13:58:49.819Z - info: Assets built
+2018-09-13T13:58:49.819Z - info: Generating pages...
+2018-09-13T13:59:02.827Z - error:  Error: No such file: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\oop\classes\enumerations\q-essay-defineWeekDays.md
+Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\oop.md
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:136:21)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-09-13T14:03:37.073Z - info: Website generation started at 22:03:35
+2018-09-13T14:03:38.569Z - info: Building assets...
+2018-09-13T14:03:40.688Z - info: Assets built
+2018-09-13T14:03:40.688Z - info: Generating pages...
+2018-09-13T14:05:11.494Z - info: Pages built
+2018-09-13T14:05:11.558Z - info: Site data built
+2018-09-13T14:05:11.558Z - info: Website generation complete! Total build time: 96.554s
+2018-09-13T14:05:11.570Z - info: Generate Site durationMs=96566
+2018-09-13T14:05:11.602Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-13T14:05:11.602Z - info: Press CTRL+C to stop ...
+2018-09-13T14:07:17.335Z - info: [22:07:17] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md
+2018-09-13T14:07:18.346Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md
+2018-09-13T14:07:18.386Z - info: Rebuilding 25 pages
+2018-09-13T14:08:06.278Z - info: Pages rebuilt
+2018-09-13T14:08:06.316Z - info: Site data built
+2018-09-13T15:06:51.444Z - info: Website generation started at 23:06:48
+2018-09-13T15:06:54.896Z - info: Building assets...
+2018-09-13T15:06:56.987Z - info: Assets built
+2018-09-13T15:06:56.987Z - info: Generating pages...
+2018-09-13T15:08:37.985Z - info: Pages built
+2018-09-13T15:08:38.075Z - info: Site data built
+2018-09-13T15:08:38.075Z - info: Website generation complete! Total build time: 109.299s
+2018-09-13T15:08:38.076Z - info: Build success!
+2018-09-13T15:08:38.077Z - info: Generate Site durationMs=109300
+2018-09-13T15:09:17.701Z - info: Deployed!
+2018-09-13T15:14:54.185Z - info: Website generation started at 23:14:51
+2018-09-13T15:14:55.366Z - info: Building assets...
+2018-09-13T15:14:57.329Z - info: Assets built
+2018-09-13T15:14:57.329Z - info: Generating pages...
+2018-09-13T15:16:16.170Z - info: Pages built
+2018-09-13T15:16:16.232Z - info: Site data built
+2018-09-13T15:16:16.232Z - info: Website generation complete! Total build time: 84.799s
+2018-09-13T15:16:16.248Z - info: Generate Site durationMs=84815
+2018-09-13T15:16:16.264Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-09-13T15:16:16.264Z - info: Press CTRL+C to stop ...
