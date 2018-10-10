@@ -42,744 +42,14 @@
 <panel type="seamless" popup-url="/cs2103-website/schedule/week10/outcomes.html" expanded="" no-close="">
   <span slot="header" class="card-title activity-type"><span class="fas fa-trophy"></span> Outcomes</span>
   <div class="indented">
-    <p><span class="activity-desc">SE</span></p>
-    <div class="indented">
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.1</code> <strong>Can explain SE principles</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-        <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Law of Demeter</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="law-of-demeter">Law of Demeter</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <tip-box type="definition">
-                    <div>
-                      <p><strong>Law of Demeter (LoD)</strong>:</p>
-                      <ul>
-                        <li>An object should have limited knowledge of another object.</li>
-                        <li>An object should only interact with objects that are closely related to it.</li>
-                      </ul>
-                      <p>Also known as</p>
-                      <ul>
-                        <li>Don’t talk to strangers.</li>
-                        <li>Principle of least knowledge</li>
-                      </ul>
-                    </div>
-                  </tip-box>
-                  <p>More concretely, a method <code>m</code> of an object <code>O</code> should invoke only the methods of the following kinds of objects:</p>
-                  <ul>
-                    <li>The object <code>O</code> itself</li>
-                    <li>Objects passed as parameters of <code>m</code></li>
-                    <li>Objects created/instantiated in <code>m</code></li>
-                    <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
-                  </ul>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
-                    <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g = b.getGoo();
-    g.doSomething();
-}
-</code></pre>
-                  </tip-box>
-                  <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
-                    <p><span class="fas fa-cube"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
-                  </tip-box>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD">
-                          <question has-input="true">
-                            <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
-                            <div slot="answer">
-                              <p>Let us take the <code>Logic</code> class as an example. Assume that it has the following operation.</p>
-                              <p><code>setMinefield(Minefiled mf):void</code></p>
-                              <p>Consider the following that can happen inside this operation.</p>
-                              <ul>
-                                <li><code>mf.init();</code>: this does not violate LoD since LoD allows calling operations of parameters received.</li>
-                                <li><code>mf.getCell(1,3).clear();</code>: //this violates LoD because <code>Logic</code> is handling <code>Cell</code> objects deep inside <code>Minefield</code>. Instead, it should be <code>mf.clearCellAt(1,3);</code></li>
-                                <li><code>timer.start();</code>: //this does not violate LoD because <code>timer</code> appears to be an internal component (i.e. a variable) of <code>Logic</code> itself.</li>
-                                <li><code>Cell c = new Cell();</code> <code>c.init();</code>: // this does not violate LoD because <code>c</code> was created inside the operation.</li>
-                              </ul>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> LoD violation?">
-                          <question>
-                            <p>This violates Law of Demeter.</p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g =  <span class="hljs-keyword">new</span> Goo();
-    g.doSomething();
-}
-</code></pre>
-                            <ul radio-group="3cf8e" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> True</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> False</label></li>
-                            </ul>
-                            <div slot="answer">
-                              <p>False</p>
-                              <p>Explanation: The line <code>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Odd one out">
-                          <question>
-                            <p>Pick the odd one out.</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Law of Demeter.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Don’t add people to a late project.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Don’t talk to strangers.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Principle of least knowledge.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Coupling.</li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(b)</p>
-                              <p>Explanation: Law of Demeter, which aims to reduce coupling, is also known as ‘Don’t talk to strangers’ and ‘Principle of least knowledge’.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
-            <p>Identify places where LoD is followed/violated in your project.</p>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain SOLID Principles</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="solid-principles">SOLID Principles</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p>The five OOP principles given below are known as <em>SOLID Principles</em> (an acronym made up of the first letter of each principle):</p>
-                  <panel type="seamless" header="**S**ingle Responsibility Principle (SRP)">
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="single-responsibility-principle">Single Responsibility Principle</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <tip-box type="primary">
-                              <div>
-                                <p><strong>Single Responsibility Principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
-                              </div>
-                            </tip-box>
-                            <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> Consider a <code>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p>
-                            </tip-box>
-                            <blockquote>
-                              <p><span class="fas fa-quote-left"></span> Gather together the things that change for the same reasons. Separate those things that change for different reasons. <sub>―<em>Agile Software Development, Principles, Patterns, and Practices</em> by Robert C. Martin</sub></p>
-                            </blockquote>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-paperclip'></span>  Resources" expanded="">
-                                <ul>
-                                  <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
-                                  <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
-                                    by Patkos Csaba</li>
-                                  <li><a href="https://drive.google.com/file/d/0ByOwmqah_nuGNHEtcU5OekdDMkk/view">A book chapter on SRP</a> - A book chapter on SRP, written by the father of the principle itself Robert C Martin.</li>
-                                </ul>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" header="**O**pen-Closed Principle (OCP)">
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="open-closed-principle">Open-Closed Principle</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <p><strong>The Open-Close Principle aims to make a code entity easy to adapt and reuse without needing to modify the code entity itself.</strong></p>
-                            <tip-box type="definition">
-                              <div>
-                                <p><strong>Open-Closed Principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
-                              </div>
-                            </tip-box>
-                            <p>In object-oriented programming, OCP can be achieved in various ways. This often requires separating the <em>specification (i.e. interface)</em> of a module from its <em>implementation</em>.</p>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> In the design given below, the behavior of the <code>CommandQueue</code> class can be altered by adding more concrete <code>Command</code> subclasses. For example, by including a <code>Delete</code> class alongside <code>List</code>, <code>Sort</code>, and <code>Reset</code>, the <code>CommandQueue</code> can now perform delete commands without modifying its code at all. That is, its behavior was extended without having to modify its code. Hence, it was open to extensions, but closed to modification.</p>
-                              <img src="/cs2103-website/book/principles/openClosedPrinciple/images/commandQueue.png" height="170">
-                              <p></p>
-                            </tip-box>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> The behavior of a Java generic class can be altered by passing it a different class as a parameter. In the code below, the <code>ArrayList</code> class behaves as a container of <code>Students</code> in one instance and as a container of <code>Admin</code> objects in the other instance, without having to change its code. That is, the behavior of the <code>ArrayList</code> class is extended without modifying its code.</p>
-                              <pre><code class="hljs java">ArrayList students = <span class="hljs-keyword">new</span> ArrayList&lt; Student &gt;();
-ArrayList admins = <span class="hljs-keyword">new</span> ArrayList&lt; Admin &gt;();  	
-</code></pre>
-                            </tip-box>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Meaning of OCP">
-                                    <question>
-                                      <p>Which of these is closest to the meaning of the open-closed principle?</p>
-                                      <ul radio-group="6906e" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> a. We should be able to change a software module’s behavior without modifying its code.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> b. A software module should remain open to modification as long as possible.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> c. A software module should be open to modification and closed to extension.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="6906e" type="radio"> d. Open source software rocks. Closed source software sucks.</label></li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>(a)</p>
-                                        <p>Explanation: Please refer the handout for the definition of OCP.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" header="**L**iskov Substitution Principle (LSP)">
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="liskov-substitution-principle">Liskov Substitution Principle</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <tip-box type="definition">
-                              <div>
-                                <p><strong>Liskov Substitution Principle (LSP)</strong>: Derived classes must be substitutable for their base classes. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a></sub></p>
-                              </div>
-                            </tip-box>
-                            <p>LSP sounds same as <trigger large="" trigger="click" for="modal:lsp-substitutability">substitutability</trigger> but it goes beyond substitutability; <strong>LSP implies that a subclass should not be more restrictive than the behavior specified by the superclass.</strong> As we know, Java has language support for substitutability. However, if LSP is not followed, substituting a subclass object for a superclass object can break the functionality of the code.</p>
-                            <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:lsp-substitutability">
-                                <div>
-                                <div>
-                                  <p>
-                                    <panel src="/cs2103-website\book\oop\inheritance\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Paradigms → Object Oriented Programming → Inheritance → What%%"></panel>
-                                  </p>
-                                </div>
-                                <p></p>
-                                <p><span class="dimmed"><strong><span>Paradigms → Object Oriented Programming → Inheritance →
-                                      </span></strong></span></p>
-                                <div id="title-and-body">
-                                  <div>
-                                    <h4 id="substitutability">Substitutability</h4>
-                                  </div>
-                                  <div id="main">
-                                    <div>
-                                      <p><strong>Every instance of a subclass is an instance of the superclass, but not vice-versa.</strong> As a result, inheritance allows <em>substitutability</em> : the ability to substitute a child class object where a parent class object is expected.</p>
-                                      <tip-box>
-                                        <img src="/cs2103-website/book/oop/inheritance/substitutability/images/staff.png" height="80">
-                                        <p></p>
-                                        <p><span class="fas fa-cube"></span> an <code>Academic</code> is an instance of a <code>Staff</code>, but a <code>Staff</code> is not necessarily an instance of an <code>Academic</code>. i.e. wherever an object of the superclass is expected, it can be substituted by an object of any of its subclasses.</p>
-                                        <p>The following code is valid because an <code>AcademicStaff</code> object is substitutable as a <code>Staff</code> object.</p>
-                                        <pre><code class="hljs java">Staff staff = <span class="hljs-keyword">new</span> AcademicStaff (); <span class="hljs-comment">// OK</span>
-</code></pre>
-                                        <p>But the following code is not valid <span class="dimmed"> because <code>staff</code> is declared as a <code>Staff</code> type and therefore its value may or may not be of type <code>AcademicStaff</code>, which is the type expected by variable <code>academicStaff</code>.</span></p>
-                                        <pre><code class="hljs java">Staff staff;
-...
-AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
-</code></pre>
-                                      </tip-box>
-                                    </div>
-                                    <div></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </modal>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> Suppose the <code>Payroll</code> class depends on the <code>adjustMySalary(int percent)</code> method of the <code>Staff</code> class. Furthermore, the <code>Staff</code> class states that the <code>adjustMySalary</code> method will work for all positive percent values. Both <code>Admin</code> and <code>Academic</code> classes override the <code>adjustMySalary</code> method.</p>
-                              <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/payroll.png" height="200">
-                              <p></p>
-                              <p>Now consider the following:</p>
-                              <ul>
-                                <li><code>Admin#adjustMySalary</code> method works for both negative and positive percent values.</li>
-                                <li><code>Academic#adjustMySalary</code> method works for percent values <code>1..100</code> only.</li>
-                              </ul>
-                              <p>In the above scenario,</p>
-                              <ul>
-                                <li><code>Admin</code> class follows LSP because it fulfills <code>Payroll</code>’s expectation of <code>Staff</code> objects (i.e. it works for all positive values). Substituting <code>Admin</code> objects for Staff objects will not break the <code>Payroll</code> class functionality.</li>
-                                <li><code>Academic</code> class violates LSP because it will not work for percent values over <code>100</code> as expected by the <code>Payroll</code> class. Substituting <code>Academic</code> objects for <code>Staff</code> objects can potentially break the <code>Payroll</code> class functionality.</li>
-                              </ul>
-                              <panel type="seamless" header="%%Another example%%">
-                                <p><span class="fas fa-cube"></span> The <code>Rectangle#resize()</code> can take any integers for <code>height</code> and <code>width</code>. This contract is violated by the subclass <code>Square#resize()</code> because it does not accept a <code>height</code> that is different from the <code>width</code>.</p>
-                                <img src="/cs2103-website/book/principles/liskovSubstitutionPrinciple/images/rectangleSquare.png" height="120">
-                                <p></p>
-                                <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rectangle</span> </span>{
-    ...
-    <span class="hljs-comment">/** sets the size to given height and width*/</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
-        ...
-    }
-}
-
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Square</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Rectangle</span> </span>{
-    
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> height, <span class="hljs-keyword">int</span> width)</span></span>{
-        <span class="hljs-keyword">if</span> (height != width) {
-            <span class="hljs-comment">//error</span>
-       }
-    }
-}
-</code></pre>
-                                <p>Now consider the following method that is written to work with the <code>Rectangle</code> class.</p>
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">makeSameSize</span><span class="hljs-params">(Rectangle original, Rectangle toResize)</span></span>{
-    toResize.resize(original.getHeight(), original.getWidth());
-}
-</code></pre>
-                                <p>This code will fail if it is called as <code>maekSameSize(new Rectangle(12,8), new Square(4, 4))</code> That is, <code>Square</code> class is not substitutable for the <code>Rectangle</code> class.</p>
-                              </panel>
-                            </tip-box>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Is this LSP?">
-                                    <question>
-                                      <p>If a subclass imposes more restrictive conditions than its parent class, it violates Liskov Substitution Principle.</p>
-                                      <ul radio-group="55ada" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> True</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="55ada" type="radio"> False</label></li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>True.</p>
-                                        <p>Explanation: If the subclass is more restrictive than the parent class, code that worked with the parent class may not work with the child class. Hence, the substitutability does not exist and LSP has been violated.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" header="**I**nterface Segregation Principle (ISP)">
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="interface-segregation-principle">Interface Segregation Principle</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <tip-box type="definition">
-                              <div>
-                                <p><strong>Interface Segregation Principle (ISP)</strong>: No client should be forced to depend on methods it does not use.</p>
-                              </div>
-                            </tip-box>
-                            <tip-box>
-                              <p><span class="fas fa-cube"></span> The <code>Payroll</code> class should not depend on the <code>AdminStaff</code> class because it does not use the <code>arrangeMeeting()</code> method. Instead, it should depend on the <code>SalariedStaff</code> interface.</p>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
-    <span class="hljs-comment">//...    </span>
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(AdminStaff adminStaff)</span></span>{ <span class="hljs-comment">//violates ISP</span>
-        <span class="hljs-comment">//...</span>
-    }
-
-}
-</code></pre>
-                              <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Payroll</span> </span>{
-    <span class="hljs-comment">//...    </span>
-    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalaries</span><span class="hljs-params">(SalariedStaff staff)</span></span>{ <span class="hljs-comment">//does not violate ISP</span>
-        <span class="hljs-comment">//...</span>
-    }
-}
-</code></pre>
-                              <img src="/cs2103-website/book/principles/interfaceSegregationPrinciple/images/payroll.png" height="200">
-                              <p></p>
-                            </tip-box>
-                          </div>
-                          <div></div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" header="**D**ependency Inversion Principle (DIP)">
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="dependency-inversion-principle">Dependency Inversion Principle</h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <p>The <em>Dependency Inversion Principle</em> states that,</p>
-                            <ol>
-                              <li>High-level modules should not depend on low-level modules. Both should depend on abstractions.</li>
-                              <li>Abstractions should not depend on details. Details should depend on abstractions.</li>
-                            </ol>
-                            <tip-box>
-                              <p>Example:</p>
-                              <img src="/cs2103-website/book/principles/dependencyInversionPrinciple/images/payrollEmployee.png" height="130">
-                              <p></p>
-                              <p>In design (a), the higher level class <code>Payroll</code> depends on the lower level class <code>Employee</code>, a violation of DIP. In design (b), both <code>Payroll</code> and <code>Employee</code> depends on the Payee interface (note that inheritance is a dependency).</p>
-                              <p>Design (b) is more flexible (and less coupled) because now the <code>Payroll</code> class need not change when the <code>Employee</code> class changes.</p>
-                            </tip-box>
-                          </div>
-                          <div>
-                            <div>
-                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which of these statements is true about the Dependency Inversion Principle.">
-                                    <question>
-                                      <p>Which of these statements is true about the Dependency Inversion Principle.</p>
-                                      <ul class="task-list">
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
-                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <ul class="task-list">
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" checked type="checkbox"> a. It can complicate the design/implementation by introducing extra abstractions, but it has some benefits.</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. It is often used during testing, to replace dependencies with mocks.</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. It reduces dependencies in a design.</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. It advocates making higher level classes to depend on lower level classes.</li>
-                                        </ul>
-                                        <p>Explanation: Replacing dependencies with mocks is Dependency Injection, not DIP. DIP does not reduce dependencies, rather, it changes the direction of dependencies. Yes, it can introduce extra abstractions but often the benefit can outweigh the extra complications.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain YAGNI principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="yagni-principle">YAGNI Principle</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <tip-box type="definition">
-                    <div>
-                      <p><strong>YAGNI (You Aren't Gonna Need It!) Principle</strong>: Do not add code simply because ‘you might need it in the future’.</p>
-                    </div>
-                  </tip-box>
-                  <p>The principle says that some capability we presume our software needs in the future should not be built now because the chances are &quot;you aren't gonna need it&quot;. The rationale is that we do not have perfect information about the future and therefore some of the extra work we do to fulfill a potential future need might go to waste when some of our predictions fail to materialize.</p>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-paperclip'></span> Resources" expanded="">
-                      <ul>
-                        <li><a href="https://martinfowler.com/bliki/Yagni.html"><strong>Yagni</strong></a> -- A detailed article explaining YAGNI, written by Martin Fowler.</li>
-                      </ul>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRY principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="dry-principle">DRY Principle</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <tip-box type="definition">
-                    <div>
-                      <p><strong>DRY (Don't Repeat Yourself) Principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
-                    </div>
-                  </tip-box>
-                  <p>This principle guards against duplication of information.</p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                    <p><span class="fas fa-cube"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
-                  </tip-box>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Brooks' law</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="brooks-law">Brooks' Law</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <tip-box type="definition">
-                    <div>
-                      <p><strong>Brooks' Law</strong>: Adding people to a late project will make it later. -- Fred Brooks (author of <em>The Mythical Man-Month</em>)</p>
-                    </div>
-                  </tip-box>
-                  <p>Explanation: The additional communication overhead will outweigh the benefit of adding extra manpower, especially if done near to a deadline.</p>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Brook’s Law vs school project">
-                          <question has-input="true">
-                            <p>Do the Brook’s Law apply to a school project? Justify.</p>
-                            <div slot="answer">
-                              <p>Yes. Adding a new student to a project team can result in a slow-down of the project for a short period. This is because the new member needs time to learn the project and existing members will have to spend time helping the new guy get up to speed. If the project is already behind schedule and near a deadline, this could delay the delivery even further.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is related to Brook's law">
-                          <question>
-                            <p>Which one of these (all attributed to Fred Brooks, the author of the famous SE book <em>The Mythical Man-Month</em>), is called the Brook’s law?</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. All programmers are optimists.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Good judgement comes from experience, and experience comes from bad judgement.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The bearing of a child takes nine months, no matter how many women are assigned.</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Adding more manpower to an already late project makes it even later.</li>
-                            </ul>
-                            <div slot="answer">
-                              <p>(d)</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </panel>
-      </panel>
-    </div>
-    <p></p>
-    <p><span class="activity-desc">Requirements</span></p>
-    <div class="indented">
-      <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.2</code> <strong>Can use activity diagrams</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-        <br>
-        <p><span class="dimmed"><strong>Basic notations</strong></span></p>
-        <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can use activity diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="activity-diagrams">Activity Diagrams</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
-                  <tip-box>
-                    <p>Some examples in which a certain workflow is relevant to software project:</p>
-                    <p><span class="fas fa-cube"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
-                    <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
-                  </tip-box>
-                  <p>Understanding such workflows is important for the success of the software project. <strong>
-                      <trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. 
-                    </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-                  <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
-                    <div>
-                      <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                    </div>
-                  </modal>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430">
-                  </tip-box>
-                  <p>The most basic activity diagram is simply a linear sequence of actions.</p>
-                  <p>
-                    <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
-                  </p>
-                  <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
-                  <p>
-                    <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
-                  </p>
-                  <p>In some workflows, multiple paths happen in parallel.</p>
-                  <p>
-                    <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
-                  </p>
-                </div>
-                <div>
-                  <div>
-                    <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                      <div>
-                        <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
-                          <question>
-                            <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                            <ul class="task-list">
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                              <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
-                            </ul>
-                            <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                            <p></p>
-                            <div slot="answer">
-                              <p>(iv)</p>
-                              <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
-                            </div>
-                          </question>
-                        </panel>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr style="border-top: dashed 1px; border-color:grey">
-          <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-          <div>
-            <p>Use activity diagram to model workflows in the project.</p>
-          </div>
-        </panel>
-        <br>
-        <p><span class="dimmed"><strong>Intermediate notations</strong></span></p>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can use rakes in activity diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="rakes">Rakes</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong>The rake notation is used to indicate that a part of the activity is given as a separate diagram.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> Here is the AD for a game of ‘Snakes and Ladders’.</p>
-                    <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/rakes/images/snakesAndLadders.png" height="230">
-                    <p></p>
-                    <p>The <em>rake</em> symbol (in the <code>Move piece</code> action above) is used to show that the action is described in another subsidiary activity diagram elsewhere. That diagram is given below.</p>
-                    <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/rakes/images/movePiece.png" height="230">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="success" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain swimlanes in activity diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div>
-            <div></div>
-            <p></p>
-            <p><span class="dimmed"><strong><span>Tools → UML → Activity Diagrams →
-                  </span></strong></span></p>
-            <div id="title-and-body">
-              <div>
-                <h4 id="swimlanes">Swimlanes</h4>
-              </div>
-              <div id="main">
-                <div>
-                  <p><strong>It is possible to <em>partition</em> an activity diagram to show who is doing which action. Such partitioned activity diagrams are sometime called <em>swimlane diagrams</em>.</strong></p>
-                  <tip-box>
-                    <p><span class="fas fa-cube"></span> A simple example of a swimlane diagram:</p>
-                    <img src="/cs2103-website/book/uml/activityDiagrams/basicNotations/swimlanes/images/diagram.png" height="220">
-                    <p></p>
-                  </tip-box>
-                </div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-        </panel>
-      </panel>
-    </div>
-    <p></p>
     <p><span class="activity-desc">Design</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.3</code> <strong>Can use some basic design patterns</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.1</code> <strong>Can use some basic design patterns</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
         <br>
         <p><span class="dimmed"><strong>Introduction</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -849,7 +119,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns format</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns format</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -899,7 +169,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Singleton pattern</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -955,7 +225,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1007,7 +277,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1046,7 +316,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Facade pattern</strong></span></p>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1110,7 +380,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Command pattern</strong></span></p>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1155,11 +425,11 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     <p><span class="activity-desc">Implementation</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.4</code> <strong>Can get reuse benefits from frameworks, libraries, and platforms</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.2</code> <strong>Can get reuse benefits from frameworks, libraries, and platforms</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
         <br>
         <p><span class="dimmed"><strong>Reuse</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software reuse</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software reuse</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1179,7 +449,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1242,7 +512,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Libraries</strong></span></p>
         <panel type="danger" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain libraries</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain libraries</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1277,7 +547,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can make use of a library</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2d</code></span></big> <span><span class="fas fa-trophy"></span> Can make use of a library</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1310,7 +580,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Frameworks</strong></span></p>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain frameworks</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain frameworks</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1365,7 +635,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4f</code></span></big> <span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2f</code></span></big> <span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1443,7 +713,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
         <br>
         <p><span class="dimmed"><strong>Platforms</strong></span></p>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain platforms</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain platforms</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1488,9 +758,9 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
     <p><span class="activity-desc">Quality Assurance</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.5</code> <strong>Can explain test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.3</code> <strong>Can explain test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1621,7 +891,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1717,7 +987,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the choice between exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the choice between exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1769,7 +1039,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain positive and negative test cases</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain positive and negative test cases</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1801,7 +1071,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1860,7 +1130,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test case design for use case based testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test case design for use case based testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -1991,9 +1261,9 @@ Enter side 1:
         </panel>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.6</code> <strong>Can use EP for test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.4</code> <strong>Can use EP for test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.6a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain equivalence partitions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain equivalence partitions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2031,7 +1301,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for pure functions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for pure functions</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2167,7 +1437,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for OOP methods</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for OOP methods</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2239,9 +1509,9 @@ Enter side 1:
         </panel>
       </panel>
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.7</code> <strong>Can use Boundary Value Analysis for test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.5</code> <strong>Can use Boundary Value Analysis for test case design</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
         <panel type="warning" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.7a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain boundary value analysis</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain boundary value analysis</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2286,7 +1556,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="info" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.7b</code></span></big> <span><span class="fas fa-trophy"></span> Can apply boundary value analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can apply boundary value analysis</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
@@ -2366,7 +1636,7 @@ Enter side 1:
     <p><span class="activity-desc">🅿️ Project</span></p>
     <div class="indented">
       <panel no-close="" expandable="true">
-        <span slot="header" class="card-title"><span><code>W10.8</code> <strong>Can evolve a product incrementally</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+        <span slot="header" class="card-title"><span><code>W10.6</code> <strong>Can evolve a product incrementally</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
         <div>
           <p>Covered by:</p>
           <p>
@@ -2440,216 +1710,7 @@ Enter side 1:
       <br>
       <panel type="seamless" header="##### Evidence for weekly LOs %%(for reference)%%">
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Law of Demeter</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div class="indented">
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="law-of-demeter-2">Law of Demeter</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <tip-box type="definition">
-                        <div>
-                          <p><strong>Law of Demeter (LoD)</strong>:</p>
-                          <ul>
-                            <li>An object should have limited knowledge of another object.</li>
-                            <li>An object should only interact with objects that are closely related to it.</li>
-                          </ul>
-                          <p>Also known as</p>
-                          <ul>
-                            <li>Don’t talk to strangers.</li>
-                            <li>Principle of least knowledge</li>
-                          </ul>
-                        </div>
-                      </tip-box>
-                      <p>More concretely, a method <code>m</code> of an object <code>O</code> should invoke only the methods of the following kinds of objects:</p>
-                      <ul>
-                        <li>The object <code>O</code> itself</li>
-                        <li>Objects passed as parameters of <code>m</code></li>
-                        <li>Objects created/instantiated in <code>m</code></li>
-                        <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
-                      </ul>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> The following code fragment violates LoD due to the reason: while <code>b</code> is a ‘friend’ of <code>foo</code> (because it receives it as a parameter), <code>g</code> is a ‘friend of a friend’ (which should be considered a ‘stranger’), and <code>g.doSomething()</code> is analogous to ‘talking to a stranger’.</p>
-                        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g = b.getGoo();
-    g.doSomething();
-}
-</code></pre>
-                      </tip-box>
-                      <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
-                        <p><span class="fas fa-cube"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
-                      </tip-box>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Examples for LoD">
-                              <question has-input="true">
-                                <p>Explain the Law of Demeter using code examples. You are to make up your own code examples. Take Minesweeper as the basis for your code examples.</p>
-                                <div slot="answer">
-                                  <p>Let us take the <code>Logic</code> class as an example. Assume that it has the following operation.</p>
-                                  <p><code>setMinefield(Minefiled mf):void</code></p>
-                                  <p>Consider the following that can happen inside this operation.</p>
-                                  <ul>
-                                    <li><code>mf.init();</code>: this does not violate LoD since LoD allows calling operations of parameters received.</li>
-                                    <li><code>mf.getCell(1,3).clear();</code>: //this violates LoD because <code>Logic</code> is handling <code>Cell</code> objects deep inside <code>Minefield</code>. Instead, it should be <code>mf.clearCellAt(1,3);</code></li>
-                                    <li><code>timer.start();</code>: //this does not violate LoD because <code>timer</code> appears to be an internal component (i.e. a variable) of <code>Logic</code> itself.</li>
-                                    <li><code>Cell c = new Cell();</code> <code>c.init();</code>: // this does not violate LoD because <code>c</code> was created inside the operation.</li>
-                                  </ul>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> LoD violation?">
-                              <question>
-                                <p>This violates Law of Demeter.</p>
-                                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(Bar b)</span> </span>{
-    Goo g =  <span class="hljs-keyword">new</span> Goo();
-    g.doSomething();
-}
-</code></pre>
-                                <ul radio-group="3cf8e" class="radio-list">
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> True</label></li>
-                                  <li class="radio-list-item"><label><input class="radio-list-input" name="3cf8e" type="radio"> False</label></li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>False</p>
-                                  <p>Explanation: The line <code>g.doSomething()</code> does not violate LoD because it is OK to invoke methods of objects created within a method.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Odd one out">
-                              <question>
-                                <p>Pick the odd one out.</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. Law of Demeter.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. Don’t add people to a late project.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. Don’t talk to strangers.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Principle of least knowledge.</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. Coupling.</li>
-                                </ul>
-                                <div slot="answer">
-                                  <p>(b)</p>
-                                  <p>Explanation: Law of Demeter, which aims to reduce coupling, is also known as ‘Don’t talk to strangers’ and ‘Principle of least knowledge’.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
-            <div class="indented">
-              <div>
-                <p>Identify places where LoD is followed/violated in your project.</p>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can use activity diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <div class="indented">
-            <panel minimized="">
-              <span slot="header" class="card-title">Details of the LO</span>
-              <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="activity-diagrams-2">Activity Diagrams</h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.</p>
-                      <tip-box>
-                        <p>Some examples in which a certain workflow is relevant to software project:</p>
-                        <p><span class="fas fa-cube"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
-                        <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
-                      </tip-box>
-                      <p>Understanding such workflows is important for the success of the software project. <strong>
-                          <trigger trigger="click" for="modal:modelingAd-uml">UML</trigger> <em> activity diagrams</em> (AD) can model workflows. 
-                        </strong> <span class="dimmed"><em>Flow charts</em> is another type of diagrams that can model workflows. Activity diagrams are the UML equivalent of flow charts.</span></p>
-                      <modal title="**Unified Modeling Language (UML)**" id="modal:modelingAd-uml">
-                        <div>
-                          <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                        </div>
-                      </modal>
-                      <tip-box>
-                        <p><span class="fas fa-cube"></span> An example activity diagram <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub>:</p>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg" width="430">
-                      </tip-box>
-                      <p>The most basic activity diagram is simply a linear sequence of actions.</p>
-                      <p>
-                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Linear Paths" expanded=""></panel>
-                      </p>
-                      <p>Some workflows have alternate paths where only one of the alternate paths is taken based on some condition.</p>
-                      <p>
-                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Alternative Paths" expanded=""></panel>
-                      </p>
-                      <p>In some workflows, multiple paths happen in parallel.</p>
-                      <p>
-                        <panel src="/cs2103-website\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML → Activity Diagrams → Basic Notations → Parallel Paths" expanded=""></panel>
-                      </p>
-                    </div>
-                    <div>
-                      <div>
-                        <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                          <div>
-                            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
-                              <question>
-                                <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                                <ul class="task-list">
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                                  <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
-                                </ul>
-                                <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                                <p></p>
-                                <div slot="answer">
-                                  <p>(iv)</p>
-                                  <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </panel><br><br>
-            <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
-            <div class="indented">
-              <div>
-                <p>Use activity diagram to model workflows in the project.</p>
-              </div>
-            </div>
-          </div>
-        </panel>
-        <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2711,7 +1772,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2769,7 +1830,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2812,7 +1873,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2880,7 +1941,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2926,7 +1987,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -2993,7 +2054,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain libraries</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain libraries</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3034,7 +2095,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can make use of a library</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2d</code></span></big> <span><span class="fas fa-trophy"></span> Can make use of a library</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3071,7 +2132,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain frameworks</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain frameworks</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3132,7 +2193,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4f</code></span></big> <span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2f</code></span></big> <span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3214,7 +2275,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain platforms</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.2g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain platforms</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3260,7 +2321,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.5a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the need for deliberate test case design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3397,7 +2458,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.5b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain exploratory testing and scripted testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3499,7 +2560,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.5d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain positive and negative test cases</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain positive and negative test cases</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3537,7 +2598,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.5e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain black box and glass box test case design</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3602,7 +2663,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.5f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test case design for use case based testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain test case design for use case based testing</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3738,7 +2799,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.6c</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for OOP methods</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can apply EP for OOP methods</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
@@ -3815,7 +2876,7 @@ Enter side 1:
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.8</code></span></big> Can evolve a product incrementally <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W10.6</code></span></big> Can evolve a product incrementally <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <div>
               <p>Covered by:</p>
