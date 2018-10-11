@@ -33,104 +33,9 @@
       <p><span class="activity-desc">Design</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.1</code> <strong>Can explain basic design approaches</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain top-down and bottom-up design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div>
-                <p>
-                  <panel src="/cs2103-website\book\designApproaches\multilevelDesign\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Design Approaches → Multi-Level Design → What%%"></panel>
-                </p>
-              </div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design → Design Approaches →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="top-down-and-bottom-up-design">Top-Down and Bottom-Up Design<a class="fa fa-anchor" href="#top-down-and-bottom-up-design"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>Multi-level design can be done in a top-down manner, bottom-up manner, or as a mix.</strong></p>
-                    <ul>
-                      <li>Top-down: Design the high-level design first and flesh out the lower levels later. This is especially useful when designing big and novel systems where the high-level design needs to be stable before lower levels can be designed.</li>
-                      <li>Bottom-up: Design lower level components first and put them together to create the higher-level systems later. This is not usually scalable for bigger systems. One instance where this approach might work is when designing a variations of an existing system or re-purposing existing components to build a new system.</li>
-                      <li>Mix: Design the top levels using the top-down approach but switch to a bottom-up approach when designing the bottom levels.</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which is better?">
-                            <question>
-                              <p>Top-down design is better than bottom-up design.</p>
-                              <ul radio-group="81698" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> False</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>False</p>
-                                <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain agile design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Design Approaches → Agile Design →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="agile-design">Agile Design<a class="fa fa-anchor" href="#agile-design"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong><em>Agile design</em> can be contrasted with <em>full upfront design</em> in the following way</strong>:</p>
-                    <blockquote>
-                      <p><strong>Agile designs are emergent, they’re not defined up front.</strong> Your overall system design will emerge over time, evolving to fulfill new requirements and take advantage of new technologies as appropriate. Although you will often do <strong>some initial architectural modeling at the very beginning</strong> of a project, this will be just enough to get your team going. This approach does not produce a fully documented set of models in place before you may begin coding. <sub>-- adapted from <a href="http://agilemodeling.com/essays/agileDesign.htm">agilemodeling.com</a></sub></p>
-                    </blockquote>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about agile design">
-                            <question>
-                              <p>Agile design camp expects the design to change over the product’s lifetime.</p>
-                              <ul radio-group="07214" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> True</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> False</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>True</p>
-                                <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design approach.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </panel>
-        </panel>
-        <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.2</code> <strong>Can use models to conceptualize an OO solution</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W9.1</code> <strong>Can use models to conceptualize an OO solution</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how modelling can be used before implementation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how modelling can be used before implementation</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -160,7 +65,7 @@
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can use simple class diagrams and sequence diagrams to model an OO solution</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can use simple class diagrams and sequence diagrams to model an OO solution</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div>
                 <p>
@@ -255,7 +160,7 @@
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate class diagram and sequence diagram concepts to model an OO design</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div>
                 <p>
@@ -437,60 +342,45 @@
           </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.3</code> <strong>Can use activity diagrams</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W9.2</code> <strong>Can explain basic design approaches</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can use basic-level activity diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain top-down and bottom-up design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
-              <div></div>
+              <div>
+                <p>
+                  <panel src="/cs2103-website\book\designApproaches\multilevelDesign\what\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Design → Design Approaches → Multi-Level Design → What%%"></panel>
+                </p>
+              </div>
               <p></p>
-              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+              <p><span class="dimmed"><strong><span>Design → Design Approaches →
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="activity-diagrams-basic-notations">Activity Diagrams - Basic Notations<a class="fa fa-anchor" href="#activity-diagrams-basic-notations"></a></h4>
+                  <h4 id="top-down-and-bottom-up-design">Top-Down and Bottom-Up Design<a class="fa fa-anchor" href="#top-down-and-bottom-up-design"></a></h4>
                 </div>
                 <div id="main">
                   <div>
-                    <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.
-                      Understanding such workflows is important for the success of the software project.</p>
-                    <tip-box>
-                      <p>Some examples in which a certain workflow is relevant to software project:</p>
-                      <p><span class="fas fa-cube"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
-                      <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
-                    </tip-box>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\introduction\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Introduction → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Intro" fragment="main"></panel>
-                    </p>
-                    <p></p>
-                    <p></p>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Linear Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/LinearPaths" fragment="main"></panel>
-                    </p>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Alternate Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/AlternatePaths" fragment="main"></panel>
-                    </p>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Parellel Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/ParallelPaths" fragment="main"></panel>
-                    </p>
+                    <p><strong>Multi-level design can be done in a top-down manner, bottom-up manner, or as a mix.</strong></p>
+                    <ul>
+                      <li>Top-down: Design the high-level design first and flesh out the lower levels later. This is especially useful when designing big and novel systems where the high-level design needs to be stable before lower levels can be designed.</li>
+                      <li>Bottom-up: Design lower level components first and put them together to create the higher-level systems later. This is not usually scalable for bigger systems. One instance where this approach might work is when designing a variations of an existing system or re-purposing existing components to build a new system.</li>
+                      <li>Mix: Design the top levels using the top-down approach but switch to a bottom-up approach when designing the bottom levels.</li>
+                    </ul>
                   </div>
                   <div>
                     <div>
                       <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                         <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which is better?">
                             <question>
-                              <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                              <p>Top-down design is better than bottom-up design.</p>
+                              <ul radio-group="81698" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="81698" type="radio"> False</label></li>
                               </ul>
-                              <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                              <p></p>
                               <div slot="answer">
-                                <p>(iv)</p>
-                                <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                                <p>False</p>
+                                <p>Explanation: Not necessarily. It depends on the situation. Bottom-up design may be preferable when there are lot of existing components we want to reuse.</p>
                               </div>
                             </question>
                           </panel>
@@ -501,44 +391,57 @@
                 </div>
               </div>
             </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Use activity diagram to model workflows in the project.</p>
-            </div>
           </panel>
-          <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate-level activity diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain agile design</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
-              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+              <p><span class="dimmed"><strong><span>Design Approaches → Agile Design →
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="activity-diagrams-intermediate-notations">Activity Diagrams - Intermediate Notations<a class="fa fa-anchor" href="#activity-diagrams-intermediate-notations"></a></h4>
+                  <h4 id="agile-design">Agile Design<a class="fa fa-anchor" href="#agile-design"></a></h4>
                 </div>
                 <div id="main">
                   <div>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\rakes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermediate Notation → Rakes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Rakes" fragment="main"></panel>
-                    </p>
-                    <p>
-                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\swimlanes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermedidate Notation → Swim Lanes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/SwimLanes" fragment="main"></panel>
-                    </p>
+                    <p><strong><em>Agile design</em> can be contrasted with <em>full upfront design</em> in the following way</strong>:</p>
+                    <blockquote>
+                      <p><strong>Agile designs are emergent, they’re not defined up front.</strong> Your overall system design will emerge over time, evolving to fulfill new requirements and take advantage of new technologies as appropriate. Although you will often do <strong>some initial architectural modeling at the very beginning</strong> of a project, this will be just enough to get your team going. This approach does not produce a fully documented set of models in place before you may begin coding. <sub>-- adapted from <a href="http://agilemodeling.com/essays/agileDesign.htm">agilemodeling.com</a></sub></p>
+                    </blockquote>
                   </div>
-                  <div></div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about agile design">
+                            <question>
+                              <p>Agile design camp expects the design to change over the product’s lifetime.</p>
+                              <ul radio-group="07214" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> True</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="07214" type="radio"> False</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>True</p>
+                                <p>Explanation: Yes, that is why they do not believe in spending too much time creating a detailed and full design at the very beginning. However, the architecture is expected to remain relatively stable even in the agile design approach.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </panel>
         </panel>
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can use intermediate-level design principles</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W9.3</code> <strong>Can use intermediate-level design principles</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <br>
           <p><span class="dimmed"><strong>How Polymorphism Works</strong></span></p>
           <panel type="default" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain substitutability</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain substitutability</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div>
                 <p>
@@ -575,7 +478,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="default" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain dynamic and static binding</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain dynamic and static binding</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -839,7 +742,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="default" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain how substitutability operation overriding, and dynamic binding relates to polymorphism</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div>
                 <p>
@@ -897,7 +800,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
           <br>
           <p><span class="dimmed"><strong>More Design Principles</strong></span></p>
           <panel type="default" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Liskov Substitution Principle</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3d</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Liskov Substitution Principle</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1028,7 +931,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Law of Demeter</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Law of Demeter</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1147,7 +1050,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain interface segregation principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain interface segregation principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1191,7 +1094,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain dependency inversion principle (DIP)</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain dependency inversion principle (DIP)</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1249,7 +1152,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4h</code></span></big> <span><span class="fas fa-trophy"></span> Can explain SOLID Principles</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3h</code></span></big> <span><span class="fas fa-trophy"></span> Can explain SOLID Principles</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1593,7 +1496,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain YAGNI principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3i</code></span></big> <span><span class="fas fa-trophy"></span> Can explain YAGNI principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1626,7 +1529,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4j</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRY principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3j</code></span></big> <span><span class="fas fa-trophy"></span> Can explain DRY principle</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1655,7 +1558,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
             </div>
           </panel>
           <panel type="success" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4k</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Brooks' law</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.3k</code></span></big> <span><span class="fas fa-trophy"></span> Can explain Brooks' law</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -1706,6 +1609,103 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       </panel>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
+        <panel no-close="" expandable="true">
+          <span slot="header" class="card-title"><span><code>W9.4</code> <strong>Can use activity diagrams</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4a</code></span></big> <span><span class="fas fa-trophy"></span> Can use basic-level activity diagrams</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="activity-diagrams-basic-notations">Activity Diagrams - Basic Notations<a class="fa fa-anchor" href="#activity-diagrams-basic-notations"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p><strong>Software projects often involve <em>workflows</em>.</strong> Workflows define the <tooltip content="a connected sequence of steps"></tooltip>flow in which a process or a set of tasks is executed.
+                      Understanding such workflows is important for the success of the software project.</p>
+                    <tip-box>
+                      <p>Some examples in which a certain workflow is relevant to software project:</p>
+                      <p><span class="fas fa-cube"></span> A software that automates the work of an insurance company needs to take into account the workflow of processing an insurance claim.</p>
+                      <p><span class="fas fa-cube"></span> The algorithm of a price of code represents the workflow (i.e. the execution flow) of the code.</p>
+                    </tip-box>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\introduction\what\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Introduction → What" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Intro" fragment="main"></panel>
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\linearPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Linear Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/LinearPaths" fragment="main"></panel>
+                    </p>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\alternatePaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Alternate Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/AlternatePaths" fragment="main"></panel>
+                    </p>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\parallelPaths\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Basic Notation → Parellel Paths" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/ParallelPaths" fragment="main"></panel>
+                    </p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
+                            <question>
+                              <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                              </ul>
+                              <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                              <p></p>
+                              <div slot="answer">
+                                <p>(iv)</p>
+                                <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: dashed 1px; border-color:grey">
+            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
+            <div>
+              <p>Use activity diagram to model workflows in the project.</p>
+            </div>
+          </panel>
+          <panel type="success" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W9.4b</code></span></big> <span><span class="fas fa-trophy"></span> Can use intermediate-level activity diagrams</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="activity-diagrams-intermediate-notations">Activity Diagrams - Intermediate Notations<a class="fa fa-anchor" href="#activity-diagrams-intermediate-notations"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\rakes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermediate Notation → Rakes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/Rakes" fragment="main"></panel>
+                    </p>
+                    <p>
+                      <panel type="seamless" src="/cs2103-website\book\uml\activityDiagrams\basicNotations\swimlanes\unit-inElsewhere-asFlat._include_.html#main" header="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Activity Diagrams → Intermedidate Notation → Swim Lanes" alt="<span class='glyphicon glyphicon-education' aria-hidden='true'></span> UML/AD/SwimLanes" fragment="main"></panel>
+                    </p>
+                  </div>
+                  <div></div>
                 </div>
               </div>
             </div>
@@ -3069,7 +3069,7 @@ r1.setPlayer(p2);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 10 Oct 2018 12:14:39 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Thu, 11 Oct 2018 09:33:53 GMT</small></div>
 </footer>
 </div>
 </body>
