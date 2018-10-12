@@ -173,109 +173,6 @@
             <h1 id="java">Java<a class="fa fa-anchor" href="#java"></a></h1>
           </div>
         </div>
-        <panel type="seamless" header="#### Collections" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-              <span><span class="dimmed">
-                  <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span></span></span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java Collections</span></span></span></span>
-            <p></p>
-            <div>
-              <p><span class="fas fa-paperclip"></span> Resources:</p>
-              <ul>
-                <li><a href="http://www.javatpoint.com/ArrayList-in-collection-framework">ArrayList class tutorial (from javaTpoint.com)</a></li>
-                <li><a href="http://beginnersbook.com/2013/12/hashmap-in-java-with-example/">HashMap tutorial (from beginnersbook.com)</a></li>
-              </ul>
-            </div>
-            <div></div>
-          </div>
-        </panel>
-        <panel type="seamless" header="#### Enums" expanded="">
-          <div class="indented">
-            <span class="badge badge-light">
-              <span><span class="dimmed">
-                  <font color="Black"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></font> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-                </span></span></span>
-            <span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can use Java enumerations</span></span></span></span>
-            <p></p>
-            <div>
-              <p><strong>You can define an enum type by using the <code>enum</code> keyword.</strong> Because they are constants, the names of an enum type's fields are in uppercase letters e.g., <code>FLAG_SUCCESS</code>.</p>
-              <box>
-                <p><span class="fas fa-cube"></span> Defining an enumeration to represent days of a week (code to be put in the <code>Day.java</code> file):</p>
-                <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Day {
-    SUNDAY, MONDAY, TUESDAY, WEDNESDAY,
-    THURSDAY, FRIDAY, SATURDAY
-}
-</code></pre>
-                <p>Some examples of using the <code>Day</code> enumeration defined above:</p>
-                <pre><code class="hljs java">Day today = Day.MONDAY;
-Day[] holidays = <span class="hljs-keyword">new</span> Day[]{Day.SATURDAY, Day.SUNDAY};
-
-<span class="hljs-keyword">switch</span> (today) {
-<span class="hljs-keyword">case</span> SATURDAY:
-<span class="hljs-keyword">case</span> SUNDAY:
-    System.out.println(<span class="hljs-string">"It's the weekend"</span>);
-    <span class="hljs-keyword">break</span>;
-<span class="hljs-keyword">default</span>:
-    System.out.println(<span class="hljs-string">"It's a week day"</span>);
-}
-</code></pre>
-              </box>
-              <p>Note that while enumerations are usually a simple set of fixed values, <strong>Java enumerations can have behaviors too</strong>, as explained in <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">this tutorial from <small><span style="opacity: 0.5"><span class="badge badge-secondary">-- Java Tutorial</span></span></small></a></p>
-            </div>
-            <div>
-              <div>
-                <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                  <div>
-                    <div>
-                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> show priority color">
-                        <question>
-                          <p>Define an enumeration named <code>Priority</code>. Add the missing <code>describe</code> method to the code below so that it produces the output given.</p>
-                          <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-    <span class="hljs-comment">// Add your method here</span>
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        describe(<span class="hljs-string">"Red"</span>, Priority.HIGH);
-        describe(<span class="hljs-string">"Orange"</span>, Priority.MEDIUM);
-        describe(<span class="hljs-string">"Blue"</span>, Priority.MEDIUM);
-        describe(<span class="hljs-string">"Green"</span>, Priority.LOW);
-    }
-}
-</code></pre>
-                          <p><span class="fas fa-arrow-down"></span></p>
-                          <pre class="hljs"><code>Red indicates high priority
-Orange indicates medium priority
-Blue indicates medium priority
-Green indicates low priority
-</code></pre>
-                          <div slot="hint">
-                            <p>Use a <code>switch</code> statement to select between possible values for <code>Priority</code>.</p>
-                            <pre><code class="hljs java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">describe</span><span class="hljs-params">(String color, Priority p)</span> </span>{
-        <span class="hljs-keyword">switch</span> (p) {
-            <span class="hljs-keyword">case</span> LOW:
-                System.out.println(color + <span class="hljs-string">" indicates low priority"</span>);
-                <span class="hljs-keyword">break</span>;
-            <span class="hljs-comment">// ...</span>
-        }
-    }
-</code></pre>
-                            <p>Code for the enumeration is given below:</p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Priority {
-    HIGH, MEDIUM, LOW
-}
-</code></pre>
-                          </div>
-                        </question>
-                      </panel>
-                    </div>
-                  </div>
-                </panel>
-              </div>
-            </div>
-          </div>
-        </panel>
         <panel type="seamless" header="#### Varargs " expanded="">
           <div class="indented">
             <span class="badge badge-light">
@@ -1059,7 +956,7 @@ Caused by: java.lang.IllegalAccessException: class javafx.fxml.FXMLLoader$ValueE
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Thu, 11 Oct 2018 09:33:53 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Fri, 12 Oct 2018 04:52:31 GMT</small></div>
 </footer>
 </div>
 </body>

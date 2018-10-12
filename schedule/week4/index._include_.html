@@ -1540,7 +1540,81 @@ This repo can be used to practice creating PRs.
                     <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
                   </blockquote>
                   <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
-                  <p><strong>User stories can capture non-functional requirements too</strong> because even NFRs must benefit some stakeholder.</p>
+                  <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
+                  <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:userStoriesUsage-nfr">
+                      <div>
+                      <div></div>
+                      <p></p>
+                      <p><span class="dimmed"><strong><span>Requirements → Requirements →
+                            </span></strong></span></p>
+                      <div id="title-and-body">
+                        <div>
+                          <h4 id="non-functional-requirements-2">Non-Functional Requirements</h4>
+                        </div>
+                        <div id="main">
+                          <div>
+                            <p>There are two kinds of requirements:</p>
+                            <ol>
+                              <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+                              <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
+                            </ol>
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> Some examples of non-functional requirement categories:</p>
+                              <ul>
+                                <li>Data requirements e.g. size, <tooltip content="how often do data change">volatility</tooltip>, <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                                <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+                                <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
+                              </ul>
+                              <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded="">
+                                <ul>
+                                  <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
+                                  <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
+                                  <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+                                  <li>Performance requirements: e.g. the system should respond within two seconds.</li>
+                                  <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+                                  <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+                                  <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+                                  <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+                                  </li>
+                                </ul>
+                              </panel>
+                            </tip-box>
+                            <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                            <ol>
+                              <li><strong>NFRs are easier to miss</strong> <span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span></li>
+                              <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
+                            </ol>
+                          </div>
+                          <div>
+                            <div>
+                              <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
+                                    <question>
+                                      <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
+                                      </ul>
+                                      <div slot="answer">
+                                        <p>(a)(c)(d)(f)(g)</p>
+                                        <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                              </panel>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </modal>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> An example of a NFR captured as a user story:</p>
                     <div class="table-responsive">
@@ -2514,7 +2588,7 @@ This repo can be used to practice creating PRs.
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="non-functional-requirements-2">Non-Functional Requirements</h4>
+                          <h4 id="non-functional-requirements-3">Non-Functional Requirements</h4>
                         </div>
                         <div id="main">
                           <div>
@@ -3396,11 +3470,11 @@ Enter command: exit
           </div>
         </panel>
         <panel type="default" expanded="" no-close="" epxandable="true">
-          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W4.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java enumerations</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W4.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java enumerations</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div>
             <div></div>
             <p></p>
-            <p><span class="dimmed"><strong><span>Tools → Java →
+            <p><span class="dimmed"><strong><span>C++ to Java → Miscellaneous Topics →
                   </span></strong></span></p>
             <div id="title-and-body">
               <div>
@@ -3488,7 +3562,7 @@ Green indicates low priority
           <hr style="border-top: dashed 1px; border-color:grey">
           <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
           <div>
-            <p>Any code you have written that uses Java enumerations. Suggested: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code">AddressBook-Level1: LO-Enums</a></p>
+            <p>null</p>
           </div>
         </panel>
       </panel>
@@ -5004,7 +5078,81 @@ This repo can be used to practice creating PRs.
                         <p>[User stories] strongly shift the focus from writing about features to discussing them. In fact, these discussions are more important than whatever text is written. <sub>[Mike Cohn, MountainGoat Software <a href="https://www.mountaingoatsoftware.com/agile/user-stories">🔗</a>]</sub></p>
                       </blockquote>
                       <p><strong>User stories differ from <popover content="e.g. a description of the requirements written in prose">traditional requirements specifications</popover> mainly in the level of detail.</strong> User stories should only provide enough details to make a reasonably low risk estimate of how long the user story will take to implement. When the time comes to implement the user story, the developers will meet with the customer face-to-face to work out a more detailed description of the requirements. <span class="dimmed">[<trigger for="modal:xp-user-stories" trigger="click">more...</trigger>]</span></p>
-                      <p><strong>User stories can capture non-functional requirements too</strong> because even NFRs must benefit some stakeholder.</p>
+                      <p><strong>User stories can capture <trigger trigger="click" for="modal:userStoriesUsage-nfr">non-functional requirements</trigger> too</strong> because even NFRs must benefit some stakeholder.</p>
+                      <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span>" id="modal:userStoriesUsage-nfr">
+                          <div>
+                          <div></div>
+                          <p></p>
+                          <p><span class="dimmed"><strong><span>Requirements → Requirements →
+                                </span></strong></span></p>
+                          <div id="title-and-body">
+                            <div>
+                              <h4 id="non-functional-requirements-4">Non-Functional Requirements</h4>
+                            </div>
+                            <div id="main">
+                              <div>
+                                <p>There are two kinds of requirements:</p>
+                                <ol>
+                                  <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+                                  <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
+                                </ol>
+                                <tip-box>
+                                  <p><span class="fas fa-cube"></span> Some examples of non-functional requirement categories:</p>
+                                  <ul>
+                                    <li>Data requirements e.g. size, <tooltip content="how often do data change">volatility</tooltip>, <tooltip content="saving data permanenetly">persistency</tooltip> etc.,</li>
+                                    <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+                                    <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
+                                  </ul>
+                                  <panel type="seamless" header="<span class='fas fa-cube'></span> Some concrete examples of NFRs" expanded="">
+                                    <ul>
+                                      <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
+                                      <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
+                                      <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+                                      <li>Performance requirements: e.g. the system should respond within two seconds.</li>
+                                      <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+                                      <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+                                      <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+                                      <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+                                      </li>
+                                    </ul>
+                                  </panel>
+                                </tip-box>
+                                <p>We may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+                                <ol>
+                                  <li><strong>NFRs are easier to miss</strong> <span class="dimmed"> e.g., stakeholders tend to think of functional requirements first</span></li>
+                                  <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed"> E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
+                                </ol>
+                              </div>
+                              <div>
+                                <div>
+                                  <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                                    <div>
+                                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> TEAMMATES NFRs">
+                                        <question>
+                                          <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+                                          <ul class="task-list">
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
+                                          </ul>
+                                          <div slot="answer">
+                                            <p>(a)(c)(d)(f)(g)</p>
+                                            <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p>
+                                          </div>
+                                        </question>
+                                      </panel>
+                                    </div>
+                                  </panel>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </modal>
                       <tip-box>
                         <p><span class="fas fa-cube"></span> An example of a NFR captured as a user story:</p>
                         <div class="table-responsive">
@@ -6285,14 +6433,14 @@ Enter command: exit
           </div>
         </panel>
         <panel type="seamless" expanded="">
-          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W4.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java enumerations</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <span slot="header" class="card-title"><span><span class="dimmed">For</span> <big><span class="badge badge-pill badge-light"><code>W4.6b</code></span></big> <span><span class="fas fa-trophy"></span> Can use Java enumerations</span> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
           <div class="indented">
             <panel minimized="">
               <span slot="header" class="card-title">Details of the LO</span>
               <div>
                 <div></div>
                 <p></p>
-                <p><span class="dimmed"><strong><span>Tools → Java →
+                <p><span class="dimmed"><strong><span>C++ to Java → Miscellaneous Topics →
                       </span></strong></span></p>
                 <div id="title-and-body">
                   <div>
@@ -6381,7 +6529,7 @@ Green indicates low priority
             <p><span class="dimmed"><span class="fas fa-briefcase"></span> Evidence:</span></p>
             <div class="indented">
               <div>
-                <p>Any code you have written that uses Java enumerations. Suggested: The exercise in <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1/blob/master/docs/LearningOutcomes.adoc/#use-enums-code-lo-enums-code">AddressBook-Level1: LO-Enums</a></p>
+                <p>null</p>
               </div>
             </div>
           </div>
