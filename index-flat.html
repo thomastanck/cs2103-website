@@ -315,7 +315,7 @@
                       </li>
                     </ul>
                     <h3 id="v12-demo">v1.2 Demo<a class="fa fa-anchor" href="#v12-demo"></a></h3>
-                    <p>Do an informal demo of the new feature during the tutorial. <mark>Each team member should demo their own work, using commit tagged as <code>v1.2</code> in the <code>master</code> branch</mark> <span class="dimmed"> i.e. only features included in the current release should be demoed</span>.</p>
+                    <p>Do an informal demo of the new feature during the tutorial. <mark>To save time, we recommend that one member demos all new features, using the commit tagged as <code>v1.2</code> in the <code>master</code> branch</mark> <span class="dimmed"> i.e. only features included in the current release should be demoed</span>.</p>
                   </div>
                 </div>
               </panel>
@@ -1950,23 +1950,38 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                           <div>
                             <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                               <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
-                                  <question>
-                                    <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                                    <ul class="task-list">
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
-                                    </ul>
-                                    <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                                    <p></p>
-                                    <div slot="answer">
-                                      <p>(iv)</p>
-                                      <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
-                                    </div>
-                                  </question>
-                                </panel>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
+                                    <question>
+                                      <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                                      <ul class="task-list">
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                                        <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                                      </ul>
+                                      <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                                      <p></p>
+                                      <div slot="answer">
+                                        <p>(iv)</p>
+                                        <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                                      </div>
+                                    </question>
+                                  </panel>
+                                </div>
+                                <div>
+                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
+                                    <question>
+                                      <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
+                                      <ul>
+                                        <li>First, a cashier takes the order.</li>
+                                        <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
+                                        <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
+                                        <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
+                                      </ul>
+                                    </question>
+                                  </panel>
+                                </div>
                               </div>
                             </panel>
                           </div>
@@ -3364,47 +3379,51 @@ r1.setPlayer(p2);
             <div>
               <div>
                 <p><strong>Questions to discuss during tutorial:</strong></p>
+                <p>Whole team: do this question together, using the whiteboard:</p>
+                <div class="indented-level2">
+                  <div>
+                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
+                      <question>
+                        <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
+                        <ul>
+                          <li>First, a cashier takes the order.</li>
+                          <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
+                          <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
+                          <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
+                        </ul>
+                      </question>
+                    </panel>
+                  </div>
+                </div>
+                <br>
+                <p>Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
+                <p><strong>Q1</strong></p>
                 <ol>
-                  <li>
-                    <p>What’s the use of assertions?</p>
-                  </li>
-                  <li>
-                    <p>Demonstrate an assertion failure using Intellij.</p>
-                  </li>
-                  <li>
-                    <p>Why do we need logging? What’s the purpose of logging levels? What are the available logging levels in AB4?</p>
-                  </li>
-                  <li>
-                    <p>What is <em>Liskov Substitution Principle</em>?<br>
-                      Give an example from the project where LSP is followed and explain how to change the code to break LSP.</p>
-                  </li>
-                  <li>
-                    <p>What is <em>defensive programming</em>?<br>
-                      Give an example of defensive programming from your project.</p>
-                  </li>
-                  <li>
-                    <p>Give an example of <em>static analysis</em> being used in Intellij</p>
-                  </li>
-                  <li>
-                    <p>What’s the difference between <em>validation</em> and <em>verification</em>?<br>
-                      Acceptance tests are validation tests or verification tests?</p>
-                  </li>
-                  <li>
-                    <p>What are two types of developer documentation?</p>
-                  </li>
-                  <li>
-                    <p>Given an architecture diagram for a new software, how would you go about defining the API of each component?</p>
-                  </li>
-                  <li>
-                    <p>What’s the problem with the architecture diagram on the right?<br>
-                      <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></p>
-                  </li>
-                  <li>
-                    <p>How do you ensure some clean up code is run after each JUnit test case?</p>
-                  </li>
-                  <li>
-                    <p>What’s the difference between <em>buffers</em> and <em>padding/inflating</em> estimates?</p>
-                  </li>
+                  <li>What’s the use of assertions?</li>
+                  <li>Demonstrate an assertion failure using Intellij.</li>
+                  <li>What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
+                </ol>
+                <p><strong>Q2</strong></p>
+                <ol>
+                  <li>What is <em>Liskov Substitution Principle</em>?<br>
+                    Give an example from the project where LSP is followed and explain how to change the code to break LSP.</li>
+                </ol>
+                <p><strong>Q3</strong></p>
+                <ol>
+                  <li>What is <em>defensive programming</em>?<br>
+                    Give an example of defensive programming from your project.</li>
+                </ol>
+                <p><strong>Q4</strong></p>
+                <ol>
+                  <li>What’s the difference between <em>validation</em> and <em>verification</em>?<br>
+                    Acceptance tests are validation tests or verification tests?</li>
+                  <li>Give an example of <em>static analysis</em> being used in Intellij</li>
+                </ol>
+                <p><strong>Q5</strong></p>
+                <ol>
+                  <li>Give an example in the project code that violates the <em>Law of Demeter</em>.</li>
+                  <li>What’s the problem with the architecture diagram on the right?<br>
+                    <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
                 </ol>
               </div>
               <br>
@@ -4063,23 +4082,38 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                               <div>
                                 <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                                   <div>
-                                    <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
-                                      <question>
-                                        <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
-                                        <ul class="task-list">
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
-                                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
-                                        </ul>
-                                        <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
-                                        <p></p>
-                                        <div slot="answer">
-                                          <p>(iv)</p>
-                                          <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
-                                        </div>
-                                      </question>
-                                    </panel>
+                                    <div>
+                                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which sequences are not allowed?">
+                                        <question>
+                                          <p>Which of these sequence of actions is not allowed by the given activity diagram?</p>
+                                          <ul class="task-list">
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> i. start a b c d end</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> ii. start a b c d e f g c d end</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iii. start a b c d e g f c d end</li>
+                                            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> iv. start a b c d g c d end</li>
+                                          </ul>
+                                          <img src="/cs2103-website/book/modeling/modelingBehaviors/activityDiagrams/images/sequence.png" height="190">
+                                          <p></p>
+                                          <div slot="answer">
+                                            <p>(iv)</p>
+                                            <p>Explanation: <code>-e-f-</code> and <code>-g-</code> are parallel paths. Both paths should complete before the execution reaches <code>c</code> again.</p>
+                                          </div>
+                                        </question>
+                                      </panel>
+                                    </div>
+                                    <div>
+                                      <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
+                                        <question>
+                                          <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
+                                          <ul>
+                                            <li>First, a cashier takes the order.</li>
+                                            <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
+                                            <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
+                                            <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
+                                          </ul>
+                                        </question>
+                                      </panel>
+                                    </div>
                                   </div>
                                 </panel>
                               </div>
@@ -4563,7 +4597,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Fri, 12 Oct 2018 04:52:31 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Sun, 14 Oct 2018 11:07:14 GMT</small></div>
 </footer>
 </div>
 </body>

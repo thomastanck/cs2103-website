@@ -1,0 +1,131 @@
+2018-10-03T13:54:41.779Z - info: Website generation started at 21:54:38
+2018-10-03T13:54:44.844Z - info: Building assets...
+2018-10-03T13:54:47.129Z - info: Assets built
+2018-10-03T13:54:47.130Z - info: Generating pages...
+2018-10-03T13:56:08.365Z - info: Pages built
+2018-10-03T13:56:08.462Z - info: Site data built
+2018-10-03T13:56:08.462Z - info: Website generation complete! Total build time: 89.752s
+2018-10-03T13:56:08.475Z - info: Generate Site durationMs=89765
+2018-10-03T13:56:08.510Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-03T13:56:08.511Z - info: Press CTRL+C to stop ...
+2018-10-03T14:01:42.612Z - info: [22:01:42] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:01:43.617Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:01:43.622Z - info: Rebuilding 8 pages
+2018-10-03T14:02:17.275Z - info: Pages rebuilt
+2018-10-03T14:02:17.318Z - info: Site data built
+2018-10-03T14:03:30.774Z - info: [22:03:30] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:03:31.777Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:03:31.784Z - info: Rebuilding 8 pages
+2018-10-03T14:03:57.837Z - info: Pages rebuilt
+2018-10-03T14:03:57.869Z - info: Site data built
+2018-10-03T14:05:54.034Z - info: [22:05:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:05:55.036Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\principles\openClosedPrinciple\text.md
+2018-10-03T14:05:55.045Z - info: Rebuilding 8 pages
+2018-10-03T14:06:21.685Z - info: Pages rebuilt
+2018-10-03T14:06:21.727Z - info: Site data built
+2018-10-03T14:11:08.551Z - info: [22:11:08] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:11:09.560Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:11:09.564Z - info: Rebuilding 2 pages
+2018-10-03T14:11:30.960Z - info: Pages rebuilt
+2018-10-03T14:11:30.973Z - info: Site data built
+2018-10-03T14:17:21.594Z - info: [22:17:21] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:17:22.596Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:17:22.600Z - info: Rebuilding 2 pages
+2018-10-03T14:17:42.075Z - info: Pages rebuilt
+2018-10-03T14:17:42.111Z - info: Site data built
+2018-10-03T14:18:23.217Z - info: [22:18:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:18:24.220Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-10-03T14:18:24.224Z - info: Rebuilding 2 pages
+2018-10-03T14:18:45.477Z - info: Pages rebuilt
+2018-10-03T14:18:45.493Z - info: Site data built
+2018-10-03T14:20:19.523Z - info: [22:20:19] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\oop\associations\associationClasses\text.md
+2018-10-03T14:20:20.524Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\oop\associations\associationClasses\text.md
+2018-10-03T14:20:20.525Z - info: Rebuilding 5 pages
+2018-10-03T14:20:46.381Z - info: Pages rebuilt
+2018-10-03T14:20:46.424Z - info: Site data built
+2018-10-03T14:43:18.565Z - info: Website generation started at 22:43:16
+2018-10-03T14:43:20.032Z - info: Building assets...
+2018-10-03T14:43:22.148Z - info: Assets built
+2018-10-03T14:43:22.148Z - info: Generating pages...
+2018-10-03T14:44:41.482Z - info: Pages built
+2018-10-03T14:44:41.565Z - info: Site data built
+2018-10-03T14:44:41.565Z - info: Website generation complete! Total build time: 85.474s
+2018-10-03T14:44:41.580Z - info: Generate Site durationMs=85488
+2018-10-03T14:44:41.606Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-03T14:44:41.606Z - info: Press CTRL+C to stop ...
+2018-10-03T14:47:52.975Z - info: [22:47:52] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:47:53.978Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:47:53.980Z - info: Rebuilding 5 pages
+2018-10-03T14:48:20.265Z - info: Pages rebuilt
+2018-10-03T14:48:20.290Z - info: Site data built
+2018-10-03T14:48:28.653Z - info: [22:48:28] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:48:29.653Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:48:29.659Z - info: Rebuilding 5 pages
+2018-10-03T14:48:54.973Z - info: Pages rebuilt
+2018-10-03T14:48:55.015Z - info: Site data built
+2018-10-03T14:49:13.172Z - info: [22:49:13] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:49:14.175Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:49:14.182Z - info: Rebuilding 5 pages
+2018-10-03T14:49:37.319Z - info: Pages rebuilt
+2018-10-03T14:49:37.341Z - info: Site data built
+2018-10-03T14:52:42.765Z - info: [22:52:42] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:52:43.767Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md
+2018-10-03T14:52:43.769Z - info: Rebuilding 5 pages
+2018-10-03T14:52:49.383Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header-flat.md
+2018-10-03T14:52:49.383Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\lectures.md
+2018-10-03T14:52:49.383Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\common\definitions.md
+2018-10-03T14:52:49.383Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\abstraction\what\text.md
+2018-10-03T14:52:49.384Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\cohesion\what\text.md
+2018-10-03T14:52:49.384Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\cohesion\how\text.md
+2018-10-03T14:52:49.384Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md
+2018-10-03T14:52:49.384Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-03T14:52:49.403Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\tutorials.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-constraints.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-timeline.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w03-inception.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md
+2018-10-03T14:52:49.404Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\policies.fr
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w07-v11.md
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w09-v12.md
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\participation.md
+2018-10-03T14:52:49.405Z - info: [22:52:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\oop.md
+2018-10-03T14:53:02.863Z - info: Assets built
+2018-10-03T14:53:02.869Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week1\lecture.md
+2018-10-03T14:53:02.870Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\cppToJava.md
+2018-10-03T14:53:02.870Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\tutorial-cs2103.md
+2018-10-03T14:53:02.870Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\tutorial-cs2103.md
+2018-10-03T14:53:02.870Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\testing\testAutomation\tools\text.md
+2018-10-03T14:53:02.871Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\junit\basic\text.md
+2018-10-03T14:53:02.871Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\tutorial-cs2103.md
+2018-10-03T14:53:02.871Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\tutorial-cs2103.md
+2018-10-03T14:53:02.871Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week7\tutorial-cs2103.md
+2018-10-03T14:53:02.872Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\combined\exercises\reviewCliAppCode.md
+2018-10-03T14:53:02.872Z - info: [22:53:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week12\lecture.md
+2018-10-03T14:53:03.180Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\javaTools.md
+2018-10-03T14:53:03.180Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\modeling.md
+2018-10-03T14:53:03.180Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\specifyingRequirements.md
+2018-10-03T14:53:03.180Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\errorHandling.md
+2018-10-03T14:53:03.180Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\junit.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\refactoring.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\codeQuality.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\lecture.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md
+2018-10-03T14:53:03.181Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md
+2018-10-03T14:53:03.201Z - info: [22:53:03] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\lecture.md
+2018-10-03T14:53:09.549Z - info: Pages rebuilt
+2018-10-03T14:53:09.573Z - info: Site data built
+2018-10-03T14:53:09.880Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header-flat.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\lectures.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\common\definitions.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\abstraction\what\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\cohesion\what\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\designFundamentals\cohesion\how\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\project.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\tutorials.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-constraints.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-timeline.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w03-inception.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\appendixE-gitHub.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w07-v11.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w09-v12.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\participation.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\oop.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week1\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\cppToJava.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\testing\testAutomation\tools\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\junit\basic\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week7\tutorial-cs2103.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\combined\exercises\reviewCliAppCode.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week12\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\javaTools.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\modeling.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\specifyingRequirements.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\errorHandling.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\junit.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\designApproaches.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\refactoring.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\codeQuality.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week5\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week4\lecture.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week6\lecture.md
+2018-10-03T14:53:09.895Z - info: Rebuilding 115 pages
+2018-10-03T14:53:45.686Z - info: [22:53:45] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectList.md
+2018-10-03T14:54:15.951Z - info: Pages rebuilt
+2018-10-03T14:54:15.981Z - info: Site data built
+2018-10-03T14:54:16.388Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectList.md
+2018-10-03T14:54:16.389Z - info: Rebuilding 1 pages
+2018-10-03T14:54:16.641Z - info: Pages rebuilt
+2018-10-03T14:54:16.671Z - info: Site data built

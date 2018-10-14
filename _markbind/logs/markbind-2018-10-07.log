@@ -1,0 +1,65 @@
+2018-10-07T13:55:35.612Z - info: Website generation started at 21:55:32
+2018-10-07T13:55:37.462Z - info: Building assets...
+2018-10-07T13:55:39.804Z - info: Assets built
+2018-10-07T13:55:39.805Z - info: Generating pages...
+2018-10-07T13:57:00.887Z - info: Pages built
+2018-10-07T13:57:00.983Z - info: Site data built
+2018-10-07T13:57:00.984Z - info: Website generation complete! Total build time: 88.463s
+2018-10-07T13:57:00.997Z - info: Generate Site durationMs=88476
+2018-10-07T13:57:01.028Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-07T13:57:01.028Z - info: Press CTRL+C to stop ...
+2018-10-07T14:11:01.955Z - info: [22:11:01] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:11:02.964Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:11:02.967Z - info: Rebuilding 4 pages
+2018-10-07T14:11:29.076Z - info: Pages rebuilt
+2018-10-07T14:11:29.098Z - info: Site data built
+2018-10-07T14:11:55.200Z - info: [22:11:55] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:11:56.207Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:11:56.212Z - info: Rebuilding 4 pages
+2018-10-07T14:12:21.847Z - info: Pages rebuilt
+2018-10-07T14:12:21.874Z - info: Site data built
+2018-10-07T14:13:32.614Z - info: [22:13:32] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:13:33.621Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:13:33.629Z - info: Rebuilding 4 pages
+2018-10-07T14:14:00.093Z - info: Pages rebuilt
+2018-10-07T14:14:00.122Z - info: Site data built
+2018-10-07T14:14:16.250Z - info: [22:14:16] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:14:17.253Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:14:17.262Z - info: Rebuilding 4 pages
+2018-10-07T14:14:43.572Z - info: Pages rebuilt
+2018-10-07T14:14:43.599Z - info: Site data built
+2018-10-07T14:16:39.645Z - info: [22:16:39] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:16:40.647Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:16:40.653Z - info: Rebuilding 4 pages
+2018-10-07T14:17:11.384Z - info: Pages rebuilt
+2018-10-07T14:17:11.409Z - info: Site data built
+2018-10-07T14:20:25.901Z - info: [22:20:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:20:26.905Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:20:26.910Z - info: Rebuilding 4 pages
+2018-10-07T14:20:51.589Z - info: Pages rebuilt
+2018-10-07T14:20:51.619Z - info: Site data built
+2018-10-07T14:22:36.321Z - info: [22:22:36] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:22:37.327Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\tutorial-cs2103.md
+2018-10-07T14:22:37.329Z - info: Rebuilding 4 pages
+2018-10-07T14:23:02.289Z - info: Pages rebuilt
+2018-10-07T14:23:02.310Z - info: Site data built
+2018-10-07T14:25:54.594Z - info: [22:25:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\principles.md
+2018-10-07T14:25:55.597Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\principles.md
+2018-10-07T14:25:55.607Z - info: Rebuilding 9 pages
+2018-10-07T14:26:26.423Z - info: Pages rebuilt
+2018-10-07T14:26:26.435Z - info: Site data built
+2018-10-07T14:29:43.829Z - info: [22:29:43] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\principles.md
+2018-10-07T14:29:44.836Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\evidence\principles.md
+2018-10-07T14:29:44.843Z - info: Rebuilding 9 pages
+2018-10-07T14:30:14.992Z - info: Pages rebuilt
+2018-10-07T14:30:15.006Z - info: Site data built
+2018-10-07T14:33:31.901Z - info: Website generation started at 22:33:29
+2018-10-07T14:33:34.117Z - info: Building assets...
+2018-10-07T14:33:36.462Z - info: Assets built
+2018-10-07T14:33:36.463Z - info: Generating pages...
+2018-10-07T14:34:51.686Z - info: Pages built
+2018-10-07T14:34:51.769Z - info: Site data built
+2018-10-07T14:34:51.769Z - info: Website generation complete! Total build time: 82.034s
+2018-10-07T14:34:51.770Z - info: Build success!
+2018-10-07T14:34:51.770Z - info: Generate Site durationMs=82035
+2018-10-07T14:35:43.595Z - info: Deployed!
