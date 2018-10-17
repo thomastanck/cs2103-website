@@ -407,6 +407,7 @@
     },
     {
       "headings": {
+        "ensuring-your-code-is-reposense-compatible": "Ensuring your code is RepoSense-Compatible",
         "project-mid-v13-week-10": "Project: mid-v1.3 [week 10] "
       },
       "title": "Admin: Project: mid-v1.3 [week 10]",
@@ -422,7 +423,7 @@
         "v13-product": "v1.3 Product",
         "v13-documentation": "v1.3 Documentation",
         "v13-demo": "v1.3 Demo",
-        "v13-testing": "v1.3 Testing"
+        "v13-testing-aka-practical-exam-dry-run": "v1.3 Testing (aka Practical Exam Dry Run)"
       },
       "title": "Admin: Project: v1.3 [week 11]",
       "footer": "footer.md",
@@ -529,6 +530,21 @@
       "footer": "footer.md",
       "head": "scheduleHead.md",
       "src": "admin/projectList.md"
+    },
+    {
+      "headings": {
+        "adding-author-tags-indicate-authorship": "Adding @@author tags indicate authorship",
+        "what-to-and-what-not-to-annotate": "What to and what not to annotate"
+      },
+      "src": "admin/reposenseAuthorAnnotation.md",
+      "title": ""
+    },
+    {
+      "headings": {
+        "ensuring-your-code-is-reposense-compatible": "Ensuring your code is RepoSense-Compatible"
+      },
+      "src": "admin/reposenseCompatibility.md",
+      "title": ""
     },
     {
       "headings": {

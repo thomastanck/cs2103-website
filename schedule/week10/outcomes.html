@@ -30,14 +30,95 @@
   <div class="website-content">
     <h2 id="week-10-outcomes">Week 10 - Outcomes<a class="fa fa-anchor" href="#week-10-outcomes"></a></h2>
     <div id="main">
+      <p><span class="activity-desc">Requirements</span></p>
+      <div class="indented">
+        <panel no-close="" expandable="true">
+          <span slot="header" class="card-title"><span><code>W10.1</code> <strong>Can explain object oriented domain models</strong> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+          <panel type="info" expanded="" no-close="" epxandable="true">
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain object oriented domain models</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <div>
+              <div></div>
+              <p></p>
+              <p><span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
+                    </span></strong></span></p>
+              <div id="title-and-body">
+                <div>
+                  <h4 id="object-oriented-domain-models">Object Oriented Domain Models<a class="fa fa-anchor" href="#object-oriented-domain-models"></a></h4>
+                </div>
+                <div id="main">
+                  <div>
+                    <blockquote>
+                      <p>The analysis process for identifying objects and object classes is recognized as one of the most difficult areas of object-oriented development. <sub>--<a href="http://www.software-engin.com/">Ian Sommerville, in the book <em>Software Engineering</em></a></sub></p>
+                    </blockquote>
+                    <p>Class diagrams can also be used to model objects in the <tooltip content="the relevant information that needs to be examined to understand a problem">problem domain</tooltip> (i.e. to model how objects actually interact in the real world, before emulating them in the solution). <strong>Class diagrams are used to model the problem domain are called <em>conceptual class diagrams</em> or <em>OO domain models (OODMs)</em>.</strong></p>
+                    <tip-box>
+                      <p><span class="fas fa-cube"></span> OO domain model of a snakes and ladders game is given below.</p>
+                      <p>Description: Snakes and ladders game is played by two or more players using a board and a die. The board has 100 squares marked 1 to 100. Each player owns one piece. Players take turns to throw the die and advance their piece by the number of squares they earned from the die throw. The board has a number of snakes. If a player’s piece lands on a square with a snake head, the piece is automatically moved to the square containing the snake’s tail. Similarly, a piece can automatically move from a ladder foot to the ladder top. The player whose piece is the first to reach the 100th square wins.</p>
+                      <img src="/cs2103-website/book/modeling/modelingStructures/objectOrientedDomainModels/images/diagram.png" height="420">
+                      <p></p>
+                      <p>The above OO domain model omits the ladder class for simplicity. It can be included in a similar fashion to the Snake class.</p>
+                    </tip-box>
+                    <p><strong>OODMs do not contain solution-specific classes</strong> (i.e. classes that are used in the solution domain but do not exist in the problem domain). For example, a class called DatabaseConnection could appear in a class diagram but not usually in an OO domain model because DatabaseConnection is something related to a software solution but not an entity in the problem domain.</p>
+                    <p><strong>OODMs represents the class <em>structure</em> of the problem domain</strong> and not their behavior, just like class diagrams. To show behavior, use other diagrams such as sequence diagrams.</p>
+                    <p><strong>OODM notation is similar to class diagram notation but typically omit methods and navigability.</strong></p>
+                  </div>
+                  <div>
+                    <div>
+                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> This diagram is,...">
+                            <question>
+                              <p>This diagram is,</p>
+                              <ul class="task-list">
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. A class diagram.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. An object diagram.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. An OO domain model, also known as a conceptual class diagram.</li>
+                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. Can be either a class diagram or an OO domain model.</li>
+                              </ul>
+                              <img src="/cs2103-website/book/modeling/modelingStructures/objectOrientedDomainModels/images/playerTurn.png" height="50">
+                              <p></p>
+                              <div slot="answer">
+                                <p>(a)</p>
+                                <p>Explanation: The diagram shows navigability which is not shown in an OO domain model. Hence, it has to be a class diagram.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                        <div>
+                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Difference between a class diagram and and an OO domain model?">
+                            <question>
+                              <p>What is the main difference between a class diagram and and an OO domain model?</p>
+                              <ul radio-group="88436" class="radio-list">
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> a. One is about the problem domain while the other is about the solution domain.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> b. One has more classes than the other.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> c. One shows more details than the other.</label></li>
+                                <li class="radio-list-item"><label><input class="radio-list-input" name="88436" type="radio"> d. One is a UML diagram, while the other is not a UML diagram.</label></li>
+                              </ul>
+                              <div slot="answer">
+                                <p>(a)</p>
+                                <p>Explanation: Both are UML diagrams, and use the class diagram notation. While it is true that often a class diagram may have more classes and more details, the main difference is that the OO domain model describes the problem domain while the class diagram describes the solution.</p>
+                              </div>
+                            </question>
+                          </panel>
+                        </div>
+                      </panel>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </panel>
+        </panel>
+      </div>
+      <p></p>
       <p><span class="activity-desc">Design</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W10.1</code> <strong>Can use some basic design patterns</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+          <span slot="header" class="card-title"><span><code>W10.2</code> <strong>Can use some basic design patterns</strong> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
           <br>
           <p><span class="dimmed"><strong>Introduction</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -107,7 +188,7 @@
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns format</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain design patterns format</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -157,7 +238,7 @@
           <br>
           <p><span class="dimmed"><strong>Singleton pattern</strong></span></p>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -213,7 +294,7 @@
             </div>
           </panel>
           <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2d</code></span></big> <span><span class="fas fa-trophy"></span> Can apply the Singleton design pattern</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -265,7 +346,7 @@
             </div>
           </panel>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2e</code></span></big> <span><span class="fas fa-trophy"></span> Can decide when to apply Singleton design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -304,7 +385,7 @@
           <br>
           <p><span class="dimmed"><strong>Facade pattern</strong></span></p>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2f</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Facade design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -368,7 +449,7 @@
           <br>
           <p><span class="dimmed"><strong>Command pattern</strong></span></p>
           <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.1g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the Command design pattern</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
             <div>
               <div></div>
               <p></p>
@@ -410,339 +491,6 @@
         </panel>
       </div>
       <p></p>
-      <p><span class="activity-desc">Implementation</span></p>
-      <div class="indented">
-        <panel no-close="" expandable="true">
-          <span slot="header" class="card-title"><span><code>W10.2</code> <strong>Can get reuse benefits from frameworks, libraries, and platforms</strong> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-          <br>
-          <p><span class="dimmed"><strong>Reuse</strong></span></p>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2a</code></span></big> <span><span class="fas fa-trophy"></span> Can explain software reuse</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2b</code></span></big> <span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="when">When<a class="fa fa-anchor" href="#when"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
-                    <ul>
-                      <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
-                      <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
-                      <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
-                      <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
-                      <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as fast as you need them to.</li>
-                      <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Using a cool UI framework">
-                            <question has-input="true">
-                              <p>One of your teammates is proposing to use a recently-released “cool” UI framework for your class project. List the pros and cons of this idea.</p>
-                              <div slot="answer">
-                                <p>Pros</p>
-                                <ul>
-                                  <li>The potential to create a much better product by reusing the framework.</li>
-                                  <li>Learning a new framework is good for the future job prospects.</li>
-                                </ul>
-                                <p>Cons</p>
-                                <ul>
-                                  <li>Learning curve may be steep.</li>
-                                  <li>May not be stable (it was recently released).</li>
-                                  <li>May not allow us to do exactly what we want. While frameworks allow customization, such customization can be limited.</li>
-                                  <li>Performance penalties.</li>
-                                  <li>Might interfere with learning objectives of the module.</li>
-                                </ul>
-                                <p>Note that having more cons does not mean we should not use this framework. Further investigation is required before we can make a final decision.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Have reused software. Can explain general costs and benefits of the code you have reused.</p>
-            </div>
-          </panel>
-          <br>
-          <p><span class="dimmed"><strong>Libraries</strong></span></p>
-          <panel type="danger" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2c</code></span></big> <span><span class="fas fa-trophy"></span> Can explain libraries</span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>A library is a collection of modular code that is general and can be used by other programs.</p>
-                    <tip-box>
-                      <div class="alt-java">
-                        <p><span class="fas fa-cube"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
-                        <p><span class="fas fa-cube"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
-                      </div>
-                      <div class="alt-python">
-                        <p><span class="fas fa-cube"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
-                        <p><span class="fas fa-cube"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
-                      </div>
-                    </tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Identify libraries used (or potentially usable) in your project.</p>
-            </div>
-          </panel>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2d</code></span></big> <span><span class="fas fa-trophy"></span> Can make use of a library</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>These are the typical steps required to use a library.</p>
-                    <ol>
-                      <li>Read the documentation to confirm that its functionality fits your needs</li>
-                      <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
-                      <li>Download the library and make it accessible to your project. Alternatively, you can configure your <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
-                      <li>Call the library API from your code where you need to use the library functionality.</li>
-                    </ol>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Have used libraries (or reused code from elsewhere) in your project.</p>
-            </div>
-          </panel>
-          <br>
-          <p><span class="dimmed"><strong>Frameworks</strong></span></p>
-          <panel type="warning" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2e</code></span></big> <span><span class="fas fa-trophy"></span> Can explain frameworks</span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Running example:</p>
-                      <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
-                    </tip-box>
-                    <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Running example:</p>
-                      <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
-                    </tip-box>
-                    <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Running example:</p>
-                      <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
-                    </tip-box>
-                    <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Running example:</p>
-                      <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
-                    </tip-box>
-                    <p>Some frameworks cover only a specific components or an aspect.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
-                    </tip-box>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> More examples of frameworks</p>
-                      <ul>
-                        <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
-                        <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
-                      </ul>
-                    </tip-box>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Identify frameworks used (or potentially usable) in your project.</p>
-            </div>
-          </panel>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2f</code></span></big> <span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="frameworks-vs-libraries">Frameworks vs Libraries<a class="fa fa-anchor" href="#frameworks-vs-libraries"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
-                    <ul>
-                      <li>
-                        <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
-                          <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
-                      </li>
-                      <li>
-                        <p><strong>Your code calls the library code while the framework code calls your code.</strong>
-                          <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span> In the case of libraries, your code calls libraries.</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div>
-                      <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about software frameworks">
-                            <question>
-                              <p>Choose correct statements about software frameworks.</p>
-                              <ul class="task-list">
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
-                                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
-                                <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used by frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                        <div>
-                          <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which are frameworks?">
-                            <question>
-                              <p>Which one of these are frameworks ?</p>
-                              <ul radio-group="58823" class="radio-list">
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> a. JUnit</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> b. Eclipse</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> c. Drupal</label></li>
-                                <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> d. Ruby on Rails</label></li>
-                              </ul>
-                              <div slot="answer">
-                                <p>(a)(b)(c)(d)</p>
-                                <p>Explanation: These are frameworks.</p>
-                              </div>
-                            </question>
-                          </panel>
-                        </div>
-                      </panel>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Explain the difference between libraries and frameworks using frameworks and libraries in your project as examples.</p>
-            </div>
-          </panel>
-          <br>
-          <p><span class="dimmed"><strong>Platforms</strong></span></p>
-          <panel type="info" expanded="" no-close="" epxandable="true">
-            <span slot="header" class="card-title"><span><big><span class="badge badge-pill badge-light"><code>W10.2g</code></span></big> <span><span class="fas fa-trophy"></span> Can explain platforms</span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-            <div>
-              <div></div>
-              <p></p>
-              <p><span class="dimmed"><strong><span>Implementation → Reuse → Platforms →
-                    </span></strong></span></p>
-              <div id="title-and-body">
-                <div>
-                  <h4 id="what-8">What<a class="fa fa-anchor" href="#what-8"></a></h4>
-                </div>
-                <div id="main">
-                  <div>
-                    <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a software platform is the presence of a runtime environment.</p>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
-                    </tip-box>
-                    <tip-box>
-                      <p><span class="fas fa-cube"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
-                      <ul>
-                        <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
-                        <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
-                      </ul>
-                    </tip-box>
-                    <modal title="**Enterprise Applications**" id="modal:enterprise-application">
-                      <div>
-                        <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software meant for individual use.</p>
-                      </div>
-                    </modal>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <hr style="border-top: dashed 1px; border-color:grey">
-            <p><big><span class="fas fa-briefcase"></span> Evidence:</big></p>
-            <div>
-              <p>Identify platforms used (or potentially usable) in your project.</p>
-            </div>
-          </panel>
-        </panel>
-      </div>
-      <p></p>
       <p><span class="activity-desc">Quality Assurance</span></p>
       <div class="indented">
         <panel no-close="" expandable="true">
@@ -756,7 +504,7 @@
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-9">What<a class="fa fa-anchor" href="#what-9"></a></h4>
+                  <h4 id="what-5">What<a class="fa fa-anchor" href="#what-5"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -887,7 +635,7 @@ Enter side 1:
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-10">What<a class="fa fa-anchor" href="#what-10"></a></h4>
+                  <h4 id="what-6">What<a class="fa fa-anchor" href="#what-6"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -983,7 +731,7 @@ Enter side 1:
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="when-2">When<a class="fa fa-anchor" href="#when-2"></a></h4>
+                  <h4 id="when">When<a class="fa fa-anchor" href="#when"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1154,7 +902,7 @@ Enter side 1:
                               </span></strong></span></p>
                         <div id="title-and-body">
                           <div>
-                            <h4 id="what-11">What<a class="fa fa-anchor" href="#what-11"></a></h4>
+                            <h4 id="what-7">What<a class="fa fa-anchor" href="#what-7"></a></h4>
                           </div>
                           <div id="main">
                             <div>
@@ -1259,7 +1007,7 @@ Enter side 1:
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-12">What<a class="fa fa-anchor" href="#what-12"></a></h4>
+                  <h4 id="what-8">What<a class="fa fa-anchor" href="#what-8"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1507,7 +1255,7 @@ Enter side 1:
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="what-13">What<a class="fa fa-anchor" href="#what-13"></a></h4>
+                  <h4 id="what-9">What<a class="fa fa-anchor" href="#what-9"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1552,7 +1300,7 @@ Enter side 1:
                     </span></strong></span></p>
               <div id="title-and-body">
                 <div>
-                  <h4 id="how-2">How<a class="fa fa-anchor" href="#how-2"></a></h4>
+                  <h4 id="how">How<a class="fa fa-anchor" href="#how"></a></h4>
                 </div>
                 <div id="main">
                   <div>
@@ -1640,7 +1388,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 17 Oct 2018 03:52:26 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 17 Oct 2018 15:02:47 GMT</small></div>
 </footer>
 </div>
 </body>
