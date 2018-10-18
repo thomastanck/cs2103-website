@@ -1779,3 +1779,11 @@ Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\reposense
 2018-10-17T14:54:45.820Z - info: Press CTRL+C to stop ...
 2018-10-17T15:02:43.665Z - info: Website generation started at 23:02:41
 2018-10-17T15:02:45.119Z - info: Building assets...
+2018-10-17T15:02:47.420Z - info: Assets built
+2018-10-17T15:02:47.421Z - info: Generating pages...
+2018-10-17T15:04:03.898Z - info: Pages built
+2018-10-17T15:04:03.974Z - info: Site data built
+2018-10-17T15:04:03.974Z - info: Website generation complete! Total build time: 82.968s
+2018-10-17T15:04:03.974Z - info: Build success!
+2018-10-17T15:04:03.974Z - info: Generate Site durationMs=82968
+2018-10-17T15:04:51.921Z - info: Deployed!
