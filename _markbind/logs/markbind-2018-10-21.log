@@ -1467,3 +1467,11 @@
 2018-10-21T12:22:57.559Z - info: [20:22:57] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\chapters-printable\processModels-printable.md
 2018-10-21T12:27:04.298Z - info: Website generation started at 20:26:54
 2018-10-21T12:27:23.130Z - info: Building assets...
+2018-10-21T12:27:43.179Z - info: Assets built
+2018-10-21T12:27:43.181Z - info: Generating pages...
+2018-10-21T12:29:07.177Z - info: Pages built
+2018-10-21T12:29:07.808Z - info: Site data built
+2018-10-21T12:29:07.808Z - info: Website generation complete! Total build time: 132.934s
+2018-10-21T12:29:07.808Z - info: Build success!
+2018-10-21T12:29:07.809Z - info: Generate Site durationMs=132935
+2018-10-21T12:30:27.520Z - info: Deployed!
