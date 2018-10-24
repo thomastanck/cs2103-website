@@ -48,3 +48,17 @@
 2018-10-24T12:41:38.730Z - info: Rebuilding 4 pages
 2018-10-24T12:45:29.013Z - info: Website generation started at 20:45:24
 2018-10-24T12:45:32.636Z - info: Building assets...
+2018-10-24T12:45:40.846Z - info: Assets built
+2018-10-24T12:45:40.846Z - info: Generating pages...
+2018-10-24T12:47:02.691Z - info: Pages built
+2018-10-24T12:47:02.860Z - info: Site data built
+2018-10-24T12:47:02.860Z - info: Website generation complete! Total build time: 98.687s
+2018-10-24T12:47:02.860Z - info: Build success!
+2018-10-24T12:47:02.860Z - info: Generate Site durationMs=98687
+2018-10-24T12:48:21.529Z - info: Deployed!
+2018-10-24T12:55:16.365Z - info: Website generation started at 20:55:12
+2018-10-24T12:55:18.715Z - info: Building assets...
+2018-10-24T12:55:22.514Z - info: Assets built
+2018-10-24T12:55:22.514Z - info: Generating pages...
+2018-10-24T12:56:27.804Z - info: Website generation started at 20:56:26
+2018-10-24T12:56:30.792Z - info: Building assets...
