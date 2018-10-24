@@ -20,3 +20,31 @@
 2018-10-24T03:25:21.022Z - info: Site data built
 2018-10-24T03:55:21.123Z - info: Website generation started at 11:55:17
 2018-10-24T03:55:23.721Z - info: Building assets...
+2018-10-24T03:55:31.006Z - info: Assets built
+2018-10-24T03:55:31.006Z - info: Generating pages...
+2018-10-24T03:56:50.702Z - info: Pages built
+2018-10-24T03:56:50.877Z - info: Site data built
+2018-10-24T03:56:50.878Z - info: Website generation complete! Total build time: 93.415s
+2018-10-24T03:56:50.878Z - info: Build success!
+2018-10-24T03:56:50.878Z - info: Generate Site durationMs=93416
+2018-10-24T03:58:11.625Z - info: Deployed!
+2018-10-24T12:36:54.170Z - info: Website generation started at 20:36:44
+2018-10-24T12:37:42.061Z - info: Building assets...
+2018-10-24T12:37:58.930Z - info: Assets built
+2018-10-24T12:37:58.930Z - info: Generating pages...
+2018-10-24T12:39:31.826Z - info: Pages built
+2018-10-24T12:39:32.317Z - info: Site data built
+2018-10-24T12:39:32.317Z - info: Website generation complete! Total build time: 167.637s
+2018-10-24T12:39:32.326Z - info: Generate Site durationMs=167646
+2018-10-24T12:39:33.166Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-24T12:39:33.166Z - info: Press CTRL+C to stop ...
+2018-10-24T12:40:26.493Z - info: [20:40:26] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\objectOrientedDomainModels\q-courseDomainModel.md
+2018-10-24T12:40:27.509Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\objectOrientedDomainModels\q-courseDomainModel.md
+2018-10-24T12:40:27.509Z - info: Rebuilding 4 pages
+2018-10-24T12:40:49.841Z - info: Pages rebuilt
+2018-10-24T12:40:49.859Z - info: Site data built
+2018-10-24T12:41:37.710Z - info: [20:41:37] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\objectOrientedDomainModels\q-courseDomainModel.md
+2018-10-24T12:41:38.730Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingStructures\objectOrientedDomainModels\q-courseDomainModel.md
+2018-10-24T12:41:38.730Z - info: Rebuilding 4 pages
+2018-10-24T12:45:29.013Z - info: Website generation started at 20:45:24
+2018-10-24T12:45:32.636Z - info: Building assets...
