@@ -1,0 +1,22 @@
+2018-10-24T03:13:34.773Z - info: Website generation started at 11:13:24
+2018-10-24T03:13:48.311Z - info: Building assets...
+2018-10-24T03:14:03.164Z - info: Assets built
+2018-10-24T03:14:03.164Z - info: Generating pages...
+2018-10-24T03:15:34.021Z - info: Pages built
+2018-10-24T03:15:34.491Z - info: Site data built
+2018-10-24T03:15:34.491Z - info: Website generation complete! Total build time: 129.742s
+2018-10-24T03:15:34.491Z - info: Generate Site durationMs=129742
+2018-10-24T03:15:34.886Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-24T03:15:34.886Z - info: Press CTRL+C to stop ...
+2018-10-24T03:20:00.207Z - info: [11:20:00] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-10-24T03:20:01.221Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-10-24T03:20:01.221Z - info: Rebuilding 7 pages
+2018-10-24T03:20:27.900Z - info: Pages rebuilt
+2018-10-24T03:20:27.943Z - info: Site data built
+2018-10-24T03:24:54.059Z - info: [11:24:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-10-24T03:24:55.076Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w10-mid-v13.md
+2018-10-24T03:24:55.076Z - info: Rebuilding 7 pages
+2018-10-24T03:25:20.999Z - info: Pages rebuilt
+2018-10-24T03:25:21.022Z - info: Site data built
+2018-10-24T03:55:21.123Z - info: Website generation started at 11:55:17
+2018-10-24T03:55:23.721Z - info: Building assets...
