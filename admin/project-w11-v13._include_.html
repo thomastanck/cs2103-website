@@ -243,7 +243,14 @@ method 2 ...
       </modal>
       <h3 id="v13-product">v1.3 Product</h3>
       <ul>
-        <li>As before, move the product towards v2.0.</li>
+        <li>
+          <p>As before, move the product towards v2.0.</p>
+        </li>
+        <li>
+          <p>
+            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Do a <tooltip content="resulting in a jar file on GitHub that can be downloaded by potential users">proper product release</tooltip></strong> <a href="https://nus-cs2103-AY1819S1.github.io/addressbook-level4/DeveloperGuide.html#making-a-release">as described in the Developer Guide</a>. Do some manual tests to ensure the jar file works.
+          </p>
+        </li>
       </ul>
       <h3 id="v13-documentation">v1.3 Documentation</h3>
       <tip-box>
@@ -277,9 +284,11 @@ method 2 ...
       <p><strong>Submission</strong>: Must be included in the version tagged <code>v1.3</code>.</p>
       <h3 id="v13-demo">v1.3 Demo</h3>
       <ul>
-        <li>Do a quick demo of the main features <mark>using the jar file</mark>. Objective: to ensure the jar file works.</li>
+        <li>Do a quick demo of the main features <mark>using the jar file</mark>. Objective: demonstrate that the jar file works.</li>
       </ul>
       <h3 id="v13-testing-aka-practical-exam-dry-run">v1.3 Testing (<em>aka</em> Practical Exam Dry Run)</h3>
+      <p><strong>When, where</strong>: To be done <strong>during Lecture 11</strong>. Duration: <strong>30 minutes</strong> (we'll stop the lecture for a 30 minute block for you do do the testing).</p>
+      <p><mark>The info below are from the previous semester. We'll let you know when the updated instructions are ready.</mark></p>
       <p>Your v1.3 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam Dry Run</em> as this round of testing will be similar to the graded <trigger trigger="click" for="modal:v13peDryRun-pe">Practical Exam that will be done at v1.4</trigger>.</p>
       <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project → Deliverables" id="modal:v13peDryRun-pe">
           <div>
@@ -520,12 +529,8 @@ method 2 ...
       </box>
       <p><strong>Objectives</strong>:</p>
       <ul>
-        <li><strong>To train you</strong> to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging</tooltip>, bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
+        <li><strong>To train you</strong> to do manual testing, bug reporting, bug <tooltip content="assigning of priority order">triaging,</tooltip> bug fixing, communicating with users/testers/developers, evaluating products etc.</li>
         <li><strong>To help you improve your product</strong> before the final submission.</li>
-      </ul>
-      <p><strong>When, where</strong>:</p>
-      <ul>
-        <li>To be done <strong>during Lecture 11</strong>. Duration: <strong>30 minutes</strong> (we'll stop the lecture for a 30 minute block for you do do the testing).</li>
       </ul>
       <p><strong>During the session</strong>:</p>
       <ul>
@@ -536,7 +541,7 @@ method 2 ...
           <p>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</p>
         </li>
         <li>
-          <p>Test the product based on the user guide. First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</p>
+          <p>Test the product based on the user guide (the UG is most likely accessible using the <code>help</code> command). First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</p>
         </li>
         <li>
           <p>Post bugs you find in the team's issue tracker.</p>

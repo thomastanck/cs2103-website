@@ -11,7 +11,7 @@
       <p>Consider the following scenario.</p>
       <tip-box>
         <p>SUT: <code>printLabel(fruitName String, unitPrice int)</code></p>
-        <p><strong>Selected values for</strong> <code>fruitName</code> (invalid values are marked with an ❗️ ):</p>
+        <p><strong>Selected values for</strong> <code>fruitName</code> (invalid values are <ins>underlined</ins> ):</p>
         <div class="table-responsive">
           <table class="markbind-table table table-bordered table-striped">
             <thead>
@@ -34,7 +34,7 @@
                 <td>Label format is square</td>
               </tr>
               <tr>
-                <td>❗️ Dog</td>
+                <td><ins>Dog</ins></td>
                 <td>Not a valid fruit</td>
               </tr>
             </tbody>
@@ -59,11 +59,11 @@
                 <td>Two digits</td>
               </tr>
               <tr>
-                <td>❗️ 0</td>
+                <td><ins>0</ins></td>
                 <td>Invalid because 0 is not a valid price</td>
               </tr>
               <tr>
-                <td>❗️ -1</td>
+                <td><ins>-1</ins></td>
                 <td>Invalid because negative prices are not allowed</td>
               </tr>
             </tbody>
@@ -98,20 +98,24 @@
               <tr>
                 <td style="text-align:center">3</td>
                 <td style="text-align:center">Cherry</td>
-                <td style="text-align:center">❗️ 0</td>
+                <td style="text-align:center"><ins>0</ins></td>
                 <td style="text-align:center">Error message “invalid price”</td>
               </tr>
               <tr>
                 <td style="text-align:center">4</td>
-                <td style="text-align:center">❗️ Dog</td>
-                <td style="text-align:center">❗️ -1</td>
+                <td style="text-align:center"><ins>Dog</ins></td>
+                <td style="text-align:center"><ins>-1</ins></td>
                 <td style="text-align:center">Error message “invalid fruit&quot;</td>
               </tr>
             </tbody>
           </table>
         </div>
       </tip-box>
-      <p>It looks like the test cases were created using the ‘at least once’ strategy. After running these tests can we confirm that square-format label printing is done correctly? Answer: No. Reason: <code>Cherry</code> -- the only input that can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</p>
+      <p>It looks like the test cases were created using the <em>at least once</em> strategy. After running these tests can we confirm that square-format label printing is done correctly?</p>
+      <ul>
+        <li>Answer: No.</li>
+        <li>Reason: <code>Cherry</code> -- the only input that can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</li>
+      </ul>
       <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test case. Here are the updated test cases after applying that heuristic.</p>
       <tip-box>
         <div id="heuristic-valid-test-case">
@@ -147,13 +151,13 @@
                 <tr>
                   <td style="text-align:center">3</td>
                   <td style="text-align:center">VV</td>
-                  <td style="text-align:center">❗️ 0</td>
+                  <td style="text-align:center"><ins>0</ins></td>
                   <td style="text-align:center">Error message “invalid price”</td>
                 </tr>
                 <tr>
                   <td style="text-align:center">4</td>
-                  <td style="text-align:center">❗️ Dog</td>
-                  <td style="text-align:center">❗️ -1</td>
+                  <td style="text-align:center"><ins>Dog</ins></td>
+                  <td style="text-align:center"><ins>-1</ins></td>
                   <td style="text-align:center">Error message “invalid fruit&quot;</td>
                 </tr>
               </tbody>

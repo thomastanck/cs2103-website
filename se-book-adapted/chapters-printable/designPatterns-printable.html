@@ -253,9 +253,9 @@
             <p><strong>Context</strong></p>
             <p>Most applications support storage/retrieval of information, displaying of information to the user (often via multiple UIs having different formats), and changing stored information based on external inputs.</p>
             <p><strong>Problem</strong></p>
-            <p>To reduce coupling resulting from the interlinked nature of the features described above.</p>
+            <p>The high coupling that can result from the interlinked nature of the features described above.</p>
             <p><strong>Solution</strong></p>
-            <p>To decouple data, presentation, and control logic of an application by separating them into three different components: Model, View and Controller.</p>
+            <p>Decouple data, presentation, and control logic of an application by separating them into three different components: <em>Model</em>, <em>View</em> and <em>Controller</em>.</p>
             <ul>
               <li><em>View</em>: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
               <li><em>Controller</em>: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
@@ -268,7 +268,7 @@
               <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
               <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
               <p></p>
-              <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>.</p>
+              <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>. The <code>ref</code> frame indicates that the interactions within that frame have been extracted out to another separate sequence diagram.</p>
             </tip-box>
             <p>Note that in a simple UI where there’s only one view, Controller and View can be combined as one class.</p>
             <p>There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a Web application.</p>
@@ -286,8 +286,10 @@
               </small></small></span><a class="fa fa-anchor" href="#what-6"></a></h4>
         <div class="indented-less">
           <div>
+            <p><strong>Context</strong></p>
+            <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
             <tip-box>
-              <p><span class="fas fa-cube"></span> Here is a scenario from the a student management system where the user is adding a new student to the system.</p>
+              <p><span class="fas fa-cube"></span> Consider this scenario from the a student management system where the user is adding a new student to the system.</p>
               <img src="/cs2103-website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
               <p></p>
               <p>Now, assume the system has two additional views used in parallel by different users:</p>
@@ -300,8 +302,6 @@
               <p></p>
               <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of problem addressed by the Observer pattern.</p>
             </tip-box>
-            <p><strong>Context</strong></p>
-            <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
             <p><strong>Problem</strong></p>
             <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
             <p><strong>Solution</strong></p>
@@ -310,40 +310,53 @@
             <p></p>
             <tip-box>
               <p><span class="fas fa-cube"></span> Here is the Observer pattern applied to the student management system.</p>
-              <p>During initialization of the system,</p>
+              <p><strong>During the initialization of the system,</strong></p>
               <ol>
-                <li>First, create the relevant objects.</li>
-              </ol>
-              <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
+                <li>
+                  <p>First, create the relevant objects.</p>
+                  <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
 StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
 StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
 </code></pre>
-              <ol start="2">
-                <li>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</li>
-              </ol>
-              <pre><code class="hljs java">studentList.addUi(listUi);
+                </li>
+                <li>
+                  <p>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</p>
+                  <pre><code class="hljs java">studentList.addUi(listUi);
 studentList.addUi(statusUi);
 </code></pre>
-              <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
-              <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+                </li>
+                <li>
+                  <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
     observerList.add(o);
 }
 </code></pre>
-              <p>As such, whenever the data in <code>StudentList</code> changes (e.g. when a new student is added to the <code>StudentList</code>), all interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
-              <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
+                </li>
+              </ol>
+              <p><strong>Now, whenever the data in <code>StudentList</code> changes</strong> (e.g. when a new student is added to the <code>StudentList</code>),</p>
+              <ol>
+                <li>
+                  <p>All interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">for</span>(Observer o: observerList) <span class="hljs-comment">//for each observer in the list</span>
+    <span class="hljs-comment">//for each observer in the list</span>
+    <span class="hljs-keyword">for</span>(Observer o: observerList){
         o.update();
+    }
 }
 </code></pre>
-              <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
-              <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
+                </li>
+                <li>
+                  <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
+                  <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
 }
 </code></pre>
-              <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
+                  <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
+                </li>
+              </ol>
             </tip-box>
             <p>Here is the generic description of the observer pattern:</p>
             <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
@@ -353,7 +366,9 @@ studentList.addUi(statusUi);
               <li>The <code>&lt;&lt;Observable&gt;&gt;</code> maintains a list of <code>&lt;&lt;Observer&gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt;Observer&gt;&gt;</code> to the list of <code>&lt;&lt;Observer&gt;&gt;s</code>.</li>
               <li>Whenever there is a change in the <code>&lt;&lt;Observable&gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt;Observer&gt;&gt;s</code> in the list.</li>
             </ul>
-            <p>In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
+            <box>
+              <p><span class="fas fa-cube"></span> In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
+            </box>
           </div>
         </div>
       </div>
@@ -367,7 +382,7 @@ studentList.addUi(statusUi);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Wed, 24 Oct 2018 14:15:53 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Thu, 25 Oct 2018 09:09:19 GMT</small></div>
 </footer>
 </div>
 </body>
