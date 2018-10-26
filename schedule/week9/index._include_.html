@@ -1166,7 +1166,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   <ul>
                     <li>The object <code>O</code> itself</li>
                     <li>Objects passed as parameters of <code>m</code></li>
-                    <li>Objects created/instantiated in <code>m</code></li>
+                    <li>Objects created/instantiated in <code>m</code> (directly or indirectly)</li>
                     <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
                   </ul>
                   <tip-box>
@@ -1177,9 +1177,8 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 }
 </code></pre>
                   </tip-box>
-                  <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
+                  <p><strong>LoD aims to prevent objects navigating internal structures of other objects.</strong></p>
                   <tip-box>
-                    <p><span class="fas fa-cube"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
                     <p><span class="fas fa-cube"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
                   </tip-box>
                 </div>
@@ -3875,7 +3874,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                       <ul>
                         <li>The object <code>O</code> itself</li>
                         <li>Objects passed as parameters of <code>m</code></li>
-                        <li>Objects created/instantiated in <code>m</code></li>
+                        <li>Objects created/instantiated in <code>m</code> (directly or indirectly)</li>
                         <li>Objects from the <tooltip content="objects that are held by instance variables of">direct association of</tooltip> <code>O</code></li>
                       </ul>
                       <tip-box>
@@ -3886,9 +3885,8 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
 }
 </code></pre>
                       </tip-box>
-                      <p><strong>LoD aims to reduce coupling by limiting the interaction to a closely related group of classes.</strong></p>
+                      <p><strong>LoD aims to prevent objects navigating internal structures of other objects.</strong></p>
                       <tip-box>
-                        <p><span class="fas fa-cube"></span> In the example above, <code>foo</code> is already coupled to <code>Bar</code>. Upholding LoD avoids <code>foo</code> being coupled to <code>Goo</code> as well.</p>
                         <p><span class="fas fa-cube"></span> An analogy for LoD can be drawn from Facebook. If Facebook followed LoD, you would not be allowed to see posts of friends of friends, unless they are your friends as well. If Jake is your friend and Adam is Jake’s friend, you should not be allowed to see Adam’s posts unless Adam is a friend of yours as well.</p>
                       </tip-box>
                     </div>
