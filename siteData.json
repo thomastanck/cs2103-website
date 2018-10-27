@@ -257,7 +257,10 @@
         "deliverable-product-website": "Deliverable: Product Website",
         "deliverable-project-portfolio-page-ppp": "Deliverable: Project Portfolio Page (PPP)",
         "deliverable-demo": "Deliverable: Demo",
+        "deliverable-practical-exam-dry-run": "Deliverable: Practical Exam (Dry Run)",
+        "testing-instructions-for-pe-and-pe-dry-run-2": "Testing instructions for PE and PE Dry Run",
         "deliverable-practical-exam": "Deliverable: Practical Exam",
+        "testing-instructions-for-pe-and-pe-dry-run-3": "Testing instructions for PE and PE Dry Run",
         "notes-for-those-using-ab-2-or-ab-3-for-the-project": "Notes for Those Using AB-2 or AB-3 for the Project"
       },
       "title": "Admin: Project: Deliverables",
