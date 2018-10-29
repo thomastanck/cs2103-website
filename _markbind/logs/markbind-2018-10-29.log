@@ -10,3 +10,234 @@
 2018-10-29T10:32:55.657Z - info: Press CTRL+C to stop ...
 2018-10-29T10:39:49.119Z - info: Website generation started at 18:39:41
 2018-10-29T10:39:52.704Z - info: Building assets...
+2018-10-29T10:39:57.891Z - info: Assets built
+2018-10-29T10:39:57.892Z - info: Generating pages...
+2018-10-29T10:41:27.232Z - info: Pages built
+2018-10-29T10:41:27.480Z - info: Site data built
+2018-10-29T10:41:27.481Z - info: Website generation complete! Total build time: 106.293s
+2018-10-29T10:41:27.481Z - info: Build success!
+2018-10-29T10:41:27.482Z - info: Generate Site durationMs=106294
+2018-10-29T10:43:24.871Z - info: Deployed!
+2018-10-29T11:42:54.084Z - info: Website generation started at 19:42:43
+2018-10-29T11:43:47.044Z - info: Building assets...
+2018-10-29T11:44:02.068Z - info: Assets built
+2018-10-29T11:44:02.068Z - info: Generating pages...
+2018-10-29T11:45:15.548Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week2\index.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-10-29T11:45:16.639Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week3\index.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:45:19.816Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week7\index.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:45:24.139Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week8\index.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:45:27.659Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:45:28.535Z - error: uncaughtException: Cannot read property 'toString' of null date=Mon Oct 29 2018 19:45:28 GMT+0800 (Malay Peninsula Standard Time), pid=16300, uid=null, gid=null, cwd=C:\repos\nus-cs2103-AY1819S1\cs2103-website, execPath=C:\Program Files\nodejs\node.exe, version=v8.9.4, argv=[C:\Program Files\nodejs\node.exe, C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\index.js, serve], rss=265326592, heapTotal=240029696, heapUsed=114005744, external=424359, loadavg=[0, 0, 0], uptime=7837.0356449
+TypeError: Cannot read property 'toString' of null
+    at fs.readFile (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:381:42)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
+2018-10-29T11:45:29.501Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-assessment.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-10-29T11:45:29.771Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w05-v10.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-10-29T11:45:30.434Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w07-v11.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:45:30.471Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w03-inception.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-10-29T11:45:30.650Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w06-mid-v11.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+2018-10-29T11:45:30.835Z - error:  TypeError: Cannot read property 'parent' of null
+Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w08-mid-v12.md'
+    at Function.exports.update (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:55:26)
+    at module.exports (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\parse.js:17:11)
+    at Function.exports.load (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\cheerio\lib\static.js:22:14)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:200:25)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:245:43)
+    at element.children.element.children.map.e (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:57)
+    at Array.map (<anonymous>)
+    at Parser._preprocess (C:\Users\dcsdcr\AppData\Roaming\npm\node_modules\markbind-cli\lib\markbind\lib\parser.js:230:43)
+2018-10-29T11:48:06.801Z - info: Website generation started at 19:48:02
+2018-10-29T11:48:10.287Z - info: Building assets...
+2018-10-29T11:48:14.885Z - info: Assets built
+2018-10-29T11:48:14.885Z - info: Generating pages...
+2018-10-29T11:49:46.229Z - info: Pages built
+2018-10-29T11:49:47.456Z - info: Site data built
+2018-10-29T11:49:47.457Z - info: Website generation complete! Total build time: 104.776s
+2018-10-29T11:49:47.489Z - info: Generate Site durationMs=104808
+2018-10-29T11:49:48.156Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-10-29T11:49:48.156Z - info: Press CTRL+C to stop ...
+2018-10-29T11:50:44.318Z - info: [19:50:44] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md
+2018-10-29T11:50:45.328Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-scope.md
+2018-10-29T11:50:45.328Z - info: Rebuilding 19 pages
+2018-10-29T11:51:31.469Z - info: Pages rebuilt
+2018-10-29T11:51:31.510Z - info: Site data built
+2018-10-29T11:56:25.600Z - info: Website generation started at 19:56:22
+2018-10-29T11:56:28.530Z - info: Building assets...
