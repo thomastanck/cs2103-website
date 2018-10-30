@@ -382,8 +382,8 @@ method 2 ...
                             <ul>
                               <li>
                                 <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
-                                  -- for PE Dry Run: <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a><br>
-                                  -- for PE: <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a></p>
+                                  -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a><br>
+                                  -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a></p>
                                 <ul>
                                   <li>If you cannot access it, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S1/invitation">https://github.com/orgs/nus-cs2103-AY1819S1/invitation</a> to accept the invitation.</li>
                                   <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S1/forum/issues">forum</a>.</li>
@@ -417,28 +417,31 @@ method 2 ...
                                   <li>
                                     <p><strong>What to test</strong>:</p>
                                     <ul>
-                                      <li>PE Dry Run (at v1.3): Test the product based on the user guide (the UG is most likely accessible using the <code>help</code> command). First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</li>
-                                      <li>PE (at v1.4): Test based on the Developer Guide (Appendix named <em>Instructions for Manual Testing</em>) and the User Guide. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                      <li>PE Dry Run (at <strong>v1.3</strong>):
+                                        <ul>
+                                          <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
+                                          <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
+                                        </ul>
+                                      </li>
+                                      <li>PE (at <strong>v1.4</strong>):
+                                        <ul>
+                                          <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                          <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                        </ul>
+                                      </li>
                                     </ul>
                                   </li>
                                   <li>
                                     <p><strong>What not to test</strong>:</p>
                                     <ul>
-                                      <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed"> Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
+                                      <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
                                       <li>Omit feature that existed in AB-4.</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <p><strong>Type of testing</strong>:</p>
-                                    <ul>
-                                      <li>PE Dry Run (at v1.3): Do <em>system</em> testing first <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can do <em>acceptance</em> testing as well <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
-                                      <li>PE (at v1.4): Do system testing only.</li>
                                     </ul>
                                   </li>
                                   <li>
                                     <p><strong>These are considered <em>bugs</em></strong>:</p>
                                     <ul>
-                                      <li>Behavior differs from the User Guide (or Developer Guide)</li>
+                                      <li>Behavior differs from the User Guide</li>
                                       <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
                                       <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
                                       <li>Problems in the User Guide e.g., missing/incorrect info</li>
@@ -447,8 +450,8 @@ method 2 ...
                                   <li>
                                     <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
                                     <ul>
-                                      <li>PE Dry Run (at v1.3): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a>.</li>
-                                      <li>PE (at v1.4): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a>.</li>
+                                      <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a>.</li>
+                                      <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a>.</li>
                                     </ul>
                                   </li>
                                   <li>
@@ -458,7 +461,7 @@ method 2 ...
                                       <li>Each bug should be a separate issue.</li>
                                       <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                       <li>Use a descriptive title.</li>
-                                      <li>Give a good description of the bug with steps to reproduce and screenshots.</li>
+                                      <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
                                       <li>Assign a severity to the bug report:</li>
                                     </ul>
                                   </li>
@@ -478,8 +481,8 @@ method 2 ...
                                 <ul>
                                   <li><strong>About posting <em>suggestions</em>:</strong>
                                     <ul>
-                                      <li>PE Dry Run (at v1.3): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                                      <li>PE (at v1.4): Do not post suggestions.</li>
+                                      <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+                                      <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
                                     </ul>
                                   </li>
                                 </ul>
@@ -660,8 +663,8 @@ method 2 ...
                         <ul>
                           <li>
                             <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
-                              -- for PE Dry Run: <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a><br>
-                              -- for PE: <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a></p>
+                              -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a><br>
+                              -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a></p>
                             <ul>
                               <li>If you cannot access it, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S1/invitation">https://github.com/orgs/nus-cs2103-AY1819S1/invitation</a> to accept the invitation.</li>
                               <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S1/forum/issues">forum</a>.</li>
@@ -683,7 +686,7 @@ method 2 ...
                       </div>
                       <p><strong>During the session</strong>:</p>
                       <ol>
-                        <li><strong>Take note of your team to test and your <em>Tester ID</em></strong>. Distributed via IVLE gradebook.</li>
+                        <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook.</li>
                         <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
                       </ol>
                       <div id="project-deliverables-pe-testing-intructions">
@@ -693,28 +696,31 @@ method 2 ...
                             <li>
                               <p><strong>What to test</strong>:</p>
                               <ul>
-                                <li>PE Dry Run (at v1.3): Test the product based on the user guide (the UG is most likely accessible using the <code>help</code> command). First, <em>acceptance test</em> it from the perspective of the target user profile. If there is any time left, you can switch to <em>system testing</em> mode.</li>
-                                <li>PE (at v1.4): Test based on the Developer Guide (Appendix named <em>Instructions for Manual Testing</em>) and the User Guide. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                <li>PE Dry Run (at <strong>v1.3</strong>):
+                                  <ul>
+                                    <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
+                                    <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
+                                  </ul>
+                                </li>
+                                <li>PE (at <strong>v1.4</strong>):
+                                  <ul>
+                                    <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
+                                    <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                  </ul>
+                                </li>
                               </ul>
                             </li>
                             <li>
                               <p><strong>What not to test</strong>:</p>
                               <ul>
-                                <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed"> Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
+                                <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
                                 <li>Omit feature that existed in AB-4.</li>
-                              </ul>
-                            </li>
-                            <li>
-                              <p><strong>Type of testing</strong>:</p>
-                              <ul>
-                                <li>PE Dry Run (at v1.3): Do <em>system</em> testing first <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can do <em>acceptance</em> testing as well <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
-                                <li>PE (at v1.4): Do system testing only.</li>
                               </ul>
                             </li>
                             <li>
                               <p><strong>These are considered <em>bugs</em></strong>:</p>
                               <ul>
-                                <li>Behavior differs from the User Guide (or Developer Guide)</li>
+                                <li>Behavior differs from the User Guide</li>
                                 <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
                                 <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
                                 <li>Problems in the User Guide e.g., missing/incorrect info</li>
@@ -723,8 +729,8 @@ method 2 ...
                             <li>
                               <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
                               <ul>
-                                <li>PE Dry Run (at v1.3): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a>.</li>
-                                <li>PE (at v1.4): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a>.</li>
+                                <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a>.</li>
+                                <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a>.</li>
                               </ul>
                             </li>
                             <li>
@@ -734,7 +740,7 @@ method 2 ...
                                 <li>Each bug should be a separate issue.</li>
                                 <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                 <li>Use a descriptive title.</li>
-                                <li>Give a good description of the bug with steps to reproduce and screenshots.</li>
+                                <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
                                 <li>Assign a severity to the bug report:</li>
                               </ul>
                             </li>
@@ -754,8 +760,8 @@ method 2 ...
                           <ul>
                             <li><strong>About posting <em>suggestions</em>:</strong>
                               <ul>
-                                <li>PE Dry Run (at v1.3): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                                <li>PE (at v1.4): Do not post suggestions.</li>
+                                <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
+                                <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
                               </ul>
                             </li>
                           </ul>
@@ -839,7 +845,7 @@ method 2 ...
                       </modal>
                       <p><strong>After the session</strong>:</p>
                       <ul>
-                        <li>It is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.</li>
+                        <li>We'll transfer the relevant bug reports to your repo over the weekend. Once you have received the bug reports for your product, it is up to you to decide whether you will act on reported issues before the final submission v1.4. For some issues, the correct decision could be to reject or postpone to a version beyond v1.4.</li>
                         <li>You can post in the issue thread to communicate with the tester <span class="dimmed">e.g. to ask for more info</span>, etc. However, the tester is not obliged to respond.
                           <ul>
                             <li>💡 Do not argue with the issue reporter to try to convince that person that your way is correct/better. If at all, you can gently explain the rationale for the current behavior but do not waste time getting involved in long arguments. If you think the suggestion/bug is unreasonable, just thank the reporter for their view and close the issue.</li>
@@ -4577,7 +4583,7 @@ studentList.addUi(statusUi);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Mon, 29 Oct 2018 11:56:32 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Tue, 30 Oct 2018 04:19:28 GMT</small></div>
 </footer>
 </div>
 </body>

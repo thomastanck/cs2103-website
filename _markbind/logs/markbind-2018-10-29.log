@@ -241,3 +241,11 @@ Error while preprocessing 'C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\pro
 2018-10-29T11:51:31.510Z - info: Site data built
 2018-10-29T11:56:25.600Z - info: Website generation started at 19:56:22
 2018-10-29T11:56:28.530Z - info: Building assets...
+2018-10-29T11:56:32.693Z - info: Assets built
+2018-10-29T11:56:32.694Z - info: Generating pages...
+2018-10-29T11:57:57.245Z - info: Pages built
+2018-10-29T11:57:57.449Z - info: Site data built
+2018-10-29T11:57:57.449Z - info: Website generation complete! Total build time: 94.623s
+2018-10-29T11:57:57.449Z - info: Build success!
+2018-10-29T11:57:57.450Z - info: Generate Site durationMs=94624
+2018-10-29T11:59:27.071Z - info: Deployed!
