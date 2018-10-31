@@ -585,7 +585,7 @@
     },
     {
       "headings": {
-        "ensuring-your-code-is-reposense-compatible": "Ensuring your code is RepoSense-Compatible"
+        "using-reposense": "Using RepoSense"
       },
       "src": "admin/reposenseCompatibility.md",
       "title": "",
@@ -664,6 +664,7 @@
     },
     {
       "headings": {
+        "using-reposense": "Using RepoSense",
         "tools": "Tools "
       },
       "title": "Admin: Tools",
