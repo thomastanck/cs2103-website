@@ -1,0 +1,17 @@
+2018-11-02T04:45:42.925Z - info: Website generation started at 12:45:26
+2018-11-02T04:46:41.788Z - info: Building assets...
+2018-11-02T04:47:02.928Z - info: Assets built
+2018-11-02T04:47:02.944Z - info: Generating pages...
+2018-11-02T04:48:40.841Z - info: Pages built
+2018-11-02T04:48:41.865Z - info: Site data built
+2018-11-02T04:48:41.865Z - info: Website generation complete! Total build time: 195.71s
+2018-11-02T04:48:41.874Z - info: Generate Site durationMs=195719
+2018-11-02T04:48:42.489Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-02T04:48:42.489Z - info: Press CTRL+C to stop ...
+2018-11-02T04:52:11.331Z - info: [12:52:11] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-testing.mbdf
+2018-11-02T04:52:12.334Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-testing.mbdf
+2018-11-02T04:52:12.341Z - info: Rebuilding 24 pages
+2018-11-02T04:52:53.820Z - info: Pages rebuilt
+2018-11-02T04:52:53.862Z - info: Site data built
+2018-11-02T04:56:06.210Z - info: Website generation started at 12:56:00
+2018-11-02T04:56:09.585Z - info: Building assets...
