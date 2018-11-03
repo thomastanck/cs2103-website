@@ -7255,7 +7255,7 @@ method 2 ...
                                     <li>PE (at <strong>v1.4</strong>):
                                       <ul>
                                         <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                        <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                        <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                       </ul>
                                     </li>
                                   </ul>
@@ -7286,12 +7286,15 @@ method 2 ...
                                 <li>
                                   <p><strong>Bug report format</strong>:</p>
                                   <ul>
+                                    <li>
+                                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                    </li>
                                     <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                                     <li>Each bug should be a separate issue.</li>
                                     <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                     <li>Use a descriptive title.</li>
                                     <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                                    <li>Assign a severity to the bug report:</li>
+                                    <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -7324,7 +7327,7 @@ method 2 ...
                         </div>
                         <ol>
                           <li>
-                            <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                            <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                             <ul>
                               <li>
                                 <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -7332,7 +7335,7 @@ method 2 ...
                                   <li><code>low</code>: One of these
                                     <ul>
                                       <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                                      <li>target user and value proposition is not clear from the user guide</li>
+                                      <li>target user and/or value proposition not clear from the user guide</li>
                                       <li>features don't seem to fit together for the most part</li>
                                     </ul>
                                   </li>
@@ -7347,24 +7350,23 @@ method 2 ...
                                 <ul>
                                   <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                                   <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                                  <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                                  <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                                   <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                                   <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                                 </ul>
                               </li>
                               <li>
-                                <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                                <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                                 <ul>
                                   <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                                  <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                                  <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                                   <li>
                                     <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                                   </li>
-                                  <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                                 </ul>
                               </li>
                               <li>
-                                <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                                <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                                 <ul>
                                   <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                                   <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -7419,7 +7421,7 @@ method 2 ...
                               <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                             </li>
                             <li>
-                              <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                              <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                             </li>
                             <li>
                               <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -7440,7 +7442,7 @@ method 2 ...
                             </box>
                           </div>
                           <ul>
-                            <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                            <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                           </ul>
                           <div class="indented">
                             <box>
@@ -7452,7 +7454,7 @@ method 2 ...
                             </box>
                           </div>
                           <ul>
-                            <li><strong>Suggest a severity for the bug</strong>:</li>
+                            <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                           </ul>
                           <div class="indented">
                             <div>
@@ -7468,7 +7470,7 @@ method 2 ...
                           </div>
                           <ul>
                             <li>
-                              <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                              <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                             </li>
                             <li>
                               <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -7519,8 +7521,9 @@ method 2 ...
                     </div>
                     <p><strong>During the session</strong>:</p>
                     <ol>
-                      <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook.</li>
+                      <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook and via email.</li>
                       <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
+                      <li>Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.</li>
                     </ol>
                     <div id="project-deliverables-pe-testing-intructions">
                       <box>
@@ -7538,7 +7541,7 @@ method 2 ...
                               <li>PE (at <strong>v1.4</strong>):
                                 <ul>
                                   <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                  <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                  <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                 </ul>
                               </li>
                             </ul>
@@ -7569,12 +7572,15 @@ method 2 ...
                           <li>
                             <p><strong>Bug report format</strong>:</p>
                             <ul>
+                              <li>
+                                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                              </li>
                               <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                               <li>Each bug should be a separate issue.</li>
                               <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                               <li>Use a descriptive title.</li>
                               <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                              <li>Assign a severity to the bug report:</li>
+                              <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                             </ul>
                           </li>
                         </ul>
@@ -9853,8 +9859,8 @@ compact(input);
                       <ul>
                         <li>Demo the product using the same executable you submitted, on your own laptop, using the TV.</li>
                         <li>It can be <strong>a <em>sitting down</em> demo</strong>: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
-                        <li>It will be uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-                        <li>The app should be populated with a significant amount of realistic data at the start. <span class="dimmed"> e.g at least 20 contacts</span>.</li>
+                        <li>It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
+                        <li>The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data. <span class="dimmed"> e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
                         <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
                       </ul>
                     </li>
@@ -9862,14 +9868,13 @@ compact(input);
                       <p><strong>Optimizing the time:</strong></p>
                       <ul>
                         <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br>
-                          Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br>
+                          Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] <code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code>
                           It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br>
                           Note that CS2101 demo requirements may differ. Different context → Different requirements.</li>
                         <li>Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.</li>
                         <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
-                        <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.</li>
                         <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
-                        <li>Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.</li>
+                        <li>Limit the demo to CLI inputs only. Do not explain GUI inputs because they don't earn marks.</li>
                       </ul>
                     </li>
                   </ul>
@@ -10104,8 +10109,8 @@ compact(input);
                         <ul>
                           <li>Demo the product using the same executable you submitted, on your own laptop, using the TV.</li>
                           <li>It can be <strong>a <em>sitting down</em> demo</strong>: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
-                          <li>It will be uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-                          <li>The app should be populated with a significant amount of realistic data at the start. <span class="dimmed"> e.g at least 20 contacts</span>.</li>
+                          <li>It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
+                          <li>The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data. <span class="dimmed"> e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
                           <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
                         </ul>
                       </li>
@@ -10113,14 +10118,13 @@ compact(input);
                         <p><strong>Optimizing the time:</strong></p>
                         <ul>
                           <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br>
-                            Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br>
+                            Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] <code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code>
                             It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br>
                             Note that CS2101 demo requirements may differ. Different context → Different requirements.</li>
                           <li>Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.</li>
                           <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
-                          <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.</li>
                           <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
-                          <li>Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.</li>
+                          <li>Limit the demo to CLI inputs only. Do not explain GUI inputs because they don't earn marks.</li>
                         </ul>
                       </li>
                     </ul>
@@ -10209,7 +10213,7 @@ compact(input);
                                 <li>PE (at <strong>v1.4</strong>):
                                   <ul>
                                     <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                    <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                    <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -10240,12 +10244,15 @@ compact(input);
                             <li>
                               <p><strong>Bug report format</strong>:</p>
                               <ul>
+                                <li>
+                                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                </li>
                                 <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                                 <li>Each bug should be a separate issue.</li>
                                 <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                 <li>Use a descriptive title.</li>
                                 <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                                <li>Assign a severity to the bug report:</li>
+                                <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                               </ul>
                             </li>
                           </ul>
@@ -10278,7 +10285,7 @@ compact(input);
                     </div>
                     <ol>
                       <li>
-                        <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                        <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                         <ul>
                           <li>
                             <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -10286,7 +10293,7 @@ compact(input);
                               <li><code>low</code>: One of these
                                 <ul>
                                   <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                                  <li>target user and value proposition is not clear from the user guide</li>
+                                  <li>target user and/or value proposition not clear from the user guide</li>
                                   <li>features don't seem to fit together for the most part</li>
                                 </ul>
                               </li>
@@ -10301,24 +10308,23 @@ compact(input);
                             <ul>
                               <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                               <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                              <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                              <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                               <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                               <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                             <ul>
                               <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                              <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                              <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                               <li>
                                 <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                               </li>
-                              <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                             <ul>
                               <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                               <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -10373,7 +10379,7 @@ compact(input);
                           <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                         </li>
                         <li>
-                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                         </li>
                         <li>
                           <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -10394,7 +10400,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                        <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                       </ul>
                       <div class="indented">
                         <box>
@@ -10406,7 +10412,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li><strong>Suggest a severity for the bug</strong>:</li>
+                        <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                       </ul>
                       <div class="indented">
                         <div>
@@ -10422,7 +10428,7 @@ compact(input);
                       </div>
                       <ul>
                         <li>
-                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                         </li>
                         <li>
                           <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -10664,8 +10670,8 @@ compact(input);
                     <ul>
                       <li>Demo the product using the same executable you submitted, on your own laptop, using the TV.</li>
                       <li>It can be <strong>a <em>sitting down</em> demo</strong>: You'll be demonstrating the features using the TV while sitting down. But you may stand around the TV if you prefer that way.</li>
-                      <li>It will be uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
-                      <li>The app should be populated with a significant amount of realistic data at the start. <span class="dimmed"> e.g at least 20 contacts</span>.</li>
+                      <li>It will be an uninterrupted demo: The audience members will not interrupt you during the demo. That means you should finish within the given time.</li>
+                      <li>The demo should use a sufficient amount of <tooltip content="`Mr aaa` is not a realistic person name"><em>realistic</em></tooltip> demo data. <span class="dimmed"> e.g at least 20 contacts</span>. Trying to demo a product using just 1-2 sample data creates a bad impression.</li>
                       <li><strong>Dress code</strong> : The level of formality is up to you, but it is recommended that the whole team dress at the same level.</li>
                     </ul>
                   </li>
@@ -10673,14 +10679,13 @@ compact(input);
                     <p><strong>Optimizing the time:</strong></p>
                     <ul>
                       <li>Spend as much time as possible on demonstrating the actual product. Not recommended to use slides (if you do, use them sparingly) or videos or lengthy narrations.<br>
-                        Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this]<code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code><br>
+                        Avoid skits, re-enactments, dramatizations etc. This is not a sales pitch or an informercial. While you need to show how a user use the product to get value, but you don’t need to act like an imaginary user. For example, [Instead of this] <code>Jim get’s a call from boss. &quot;Ring ring&quot;, &quot;hello&quot;, &quot;oh hi Jim, can we postpone the meeting?&quot; &quot;Sure&quot;. Jim hang up and curses the boss under his breath. Now he starts typing ..etc.</code> [do this] <code>If Jim needs to postpone the meeting, he can type …</code>
                         It’s not that dramatization is bad or we don’t like it. We simply don’t have enough time for it.<br>
                         Note that CS2101 demo requirements may differ. Different context → Different requirements.</li>
                       <li>Rehearse the steps well and ensure you can do a smooth demo. Poor quality demos can affect your grade.</li>
                       <li>Don’t waste time repeating things the target audience already knows. e.g. no need to say things like &quot;We are students from NUS, SoC&quot;.</li>
-                      <li>Bring sufficient amount of sample data and know how to load them to the system. You should not plan to type all the sample data during the demo itself. On the other hand, trying to demo a product using just 1-2 sample data creates a bad impression too.</li>
                       <li>Plan the demo to be in sync with the impression you want to create. For example, if you are trying to convince that the product is easy to use, show the easiest way to perform a task before you show the full command with all the bells and whistles.</li>
-                      <li>Limit the demo to CLI inputs only. There is no point explaining GUI inputs because they don't earn marks.</li>
+                      <li>Limit the demo to CLI inputs only. Do not explain GUI inputs because they don't earn marks.</li>
                     </ul>
                   </li>
                 </ul>
@@ -10754,7 +10759,7 @@ compact(input);
                                 <li>PE (at <strong>v1.4</strong>):
                                   <ul>
                                     <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                    <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                    <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -10785,12 +10790,15 @@ compact(input);
                             <li>
                               <p><strong>Bug report format</strong>:</p>
                               <ul>
+                                <li>
+                                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                </li>
                                 <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                                 <li>Each bug should be a separate issue.</li>
                                 <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                 <li>Use a descriptive title.</li>
                                 <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                                <li>Assign a severity to the bug report:</li>
+                                <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                               </ul>
                             </li>
                           </ul>
@@ -10823,7 +10831,7 @@ compact(input);
                     </div>
                     <ol>
                       <li>
-                        <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                        <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                         <ul>
                           <li>
                             <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -10831,7 +10839,7 @@ compact(input);
                               <li><code>low</code>: One of these
                                 <ul>
                                   <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                                  <li>target user and value proposition is not clear from the user guide</li>
+                                  <li>target user and/or value proposition not clear from the user guide</li>
                                   <li>features don't seem to fit together for the most part</li>
                                 </ul>
                               </li>
@@ -10846,24 +10854,23 @@ compact(input);
                             <ul>
                               <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                               <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                              <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                              <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                               <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                               <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                             <ul>
                               <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                              <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                              <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                               <li>
                                 <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                               </li>
-                              <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                             <ul>
                               <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                               <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -10918,7 +10925,7 @@ compact(input);
                           <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                         </li>
                         <li>
-                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                         </li>
                         <li>
                           <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -10939,7 +10946,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                        <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                       </ul>
                       <div class="indented">
                         <box>
@@ -10951,7 +10958,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li><strong>Suggest a severity for the bug</strong>:</li>
+                        <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                       </ul>
                       <div class="indented">
                         <div>
@@ -10967,7 +10974,7 @@ compact(input);
                       </div>
                       <ul>
                         <li>
-                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                         </li>
                         <li>
                           <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -11018,8 +11025,9 @@ compact(input);
                 </div>
                 <p><strong>During the session</strong>:</p>
                 <ol>
-                  <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook.</li>
+                  <li><strong>Take note of your team to test</strong>. Distributed via IVLE gradebook and via email.</li>
                   <li>Download the latest jar file from the team's GitHub page. <mark>Copy it to an empty folder</mark>.</li>
+                  <li>Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.</li>
                 </ol>
                 <div id="project-deliverables-pe-testing-intructions">
                   <box>
@@ -11037,7 +11045,7 @@ compact(input);
                           <li>PE (at <strong>v1.4</strong>):
                             <ul>
                               <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                              <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                              <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                             </ul>
                           </li>
                         </ul>
@@ -11068,12 +11076,15 @@ compact(input);
                       <li>
                         <p><strong>Bug report format</strong>:</p>
                         <ul>
+                          <li>
+                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                          </li>
                           <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                           <li>Each bug should be a separate issue.</li>
                           <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                           <li>Use a descriptive title.</li>
                           <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                          <li>Assign a severity to the bug report:</li>
+                          <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                         </ul>
                       </li>
                     </ul>
@@ -11283,7 +11294,7 @@ compact(input);
                             <li>PE (at <strong>v1.4</strong>):
                               <ul>
                                 <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                               </ul>
                             </li>
                           </ul>
@@ -11314,12 +11325,15 @@ compact(input);
                         <li>
                           <p><strong>Bug report format</strong>:</p>
                           <ul>
+                            <li>
+                              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                            </li>
                             <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                             <li>Each bug should be a separate issue.</li>
                             <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                             <li>Use a descriptive title.</li>
                             <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                            <li>Assign a severity to the bug report:</li>
+                            <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                           </ul>
                         </li>
                       </ul>
@@ -11352,7 +11366,7 @@ compact(input);
                 </div>
                 <ol>
                   <li>
-                    <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                    <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                     <ul>
                       <li>
                         <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -11360,7 +11374,7 @@ compact(input);
                           <li><code>low</code>: One of these
                             <ul>
                               <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                              <li>target user and value proposition is not clear from the user guide</li>
+                              <li>target user and/or value proposition not clear from the user guide</li>
                               <li>features don't seem to fit together for the most part</li>
                             </ul>
                           </li>
@@ -11375,24 +11389,23 @@ compact(input);
                         <ul>
                           <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                           <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                          <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                          <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                           <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                           <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                         </ul>
                       </li>
                       <li>
-                        <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                        <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                         <ul>
                           <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                          <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                          <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                           <li>
                             <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                           </li>
-                          <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                         </ul>
                       </li>
                       <li>
-                        <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                        <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                         <ul>
                           <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                           <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -11447,7 +11460,7 @@ compact(input);
                       <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                     </li>
                     <li>
-                      <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                      <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                     </li>
                     <li>
                       <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -11468,7 +11481,7 @@ compact(input);
                     </box>
                   </div>
                   <ul>
-                    <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                    <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                   </ul>
                   <div class="indented">
                     <box>
@@ -11480,7 +11493,7 @@ compact(input);
                     </box>
                   </div>
                   <ul>
-                    <li><strong>Suggest a severity for the bug</strong>:</li>
+                    <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                   </ul>
                   <div class="indented">
                     <div>
@@ -11496,7 +11509,7 @@ compact(input);
                   </div>
                   <ul>
                     <li>
-                      <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                      <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                     </li>
                     <li>
                       <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -13959,7 +13972,7 @@ compact(input);
                                 <li>PE (at <strong>v1.4</strong>):
                                   <ul>
                                     <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                    <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                    <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -13990,12 +14003,15 @@ compact(input);
                             <li>
                               <p><strong>Bug report format</strong>:</p>
                               <ul>
+                                <li>
+                                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                </li>
                                 <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                                 <li>Each bug should be a separate issue.</li>
                                 <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                 <li>Use a descriptive title.</li>
                                 <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                                <li>Assign a severity to the bug report:</li>
+                                <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                               </ul>
                             </li>
                           </ul>
@@ -14028,7 +14044,7 @@ compact(input);
                     </div>
                     <ol>
                       <li>
-                        <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                        <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                         <ul>
                           <li>
                             <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -14036,7 +14052,7 @@ compact(input);
                               <li><code>low</code>: One of these
                                 <ul>
                                   <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                                  <li>target user and value proposition is not clear from the user guide</li>
+                                  <li>target user and/or value proposition not clear from the user guide</li>
                                   <li>features don't seem to fit together for the most part</li>
                                 </ul>
                               </li>
@@ -14051,24 +14067,23 @@ compact(input);
                             <ul>
                               <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                               <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                              <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                              <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                               <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                               <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                             <ul>
                               <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                              <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                              <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                               <li>
                                 <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                               </li>
-                              <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                             </ul>
                           </li>
                           <li>
-                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                            <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                             <ul>
                               <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                               <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -14123,7 +14138,7 @@ compact(input);
                           <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                         </li>
                         <li>
-                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                          <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                         </li>
                         <li>
                           <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -14144,7 +14159,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                        <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                       </ul>
                       <div class="indented">
                         <box>
@@ -14156,7 +14171,7 @@ compact(input);
                         </box>
                       </div>
                       <ul>
-                        <li><strong>Suggest a severity for the bug</strong>:</li>
+                        <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                       </ul>
                       <div class="indented">
                         <div>
@@ -14172,7 +14187,7 @@ compact(input);
                       </div>
                       <ul>
                         <li>
-                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                          <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                         </li>
                         <li>
                           <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -16559,7 +16574,7 @@ compact(input);
                                     <li>PE (at <strong>v1.4</strong>):
                                       <ul>
                                         <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                        <li>Do <mark><em>system testing only</em></mark>. No need to do <em>acceptance testing</em>.</li>
+                                        <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
                                       </ul>
                                     </li>
                                   </ul>
@@ -16590,12 +16605,15 @@ compact(input);
                                 <li>
                                   <p><strong>Bug report format</strong>:</p>
                                   <ul>
+                                    <li>
+                                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
+                                    </li>
                                     <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
                                     <li>Each bug should be a separate issue.</li>
                                     <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
                                     <li>Use a descriptive title.</li>
                                     <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                                    <li>Assign a severity to the bug report:</li>
+                                    <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -16628,7 +16646,7 @@ compact(input);
                         </div>
                         <ol>
                           <li>
-                            <p><strong>[~40 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                            <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
                             <ul>
                               <li>
                                 <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
@@ -16636,7 +16654,7 @@ compact(input);
                                   <li><code>low</code>: One of these
                                     <ul>
                                       <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                                      <li>target user and value proposition is not clear from the user guide</li>
+                                      <li>target user and/or value proposition not clear from the user guide</li>
                                       <li>features don't seem to fit together for the most part</li>
                                     </ul>
                                   </li>
@@ -16651,24 +16669,23 @@ compact(input);
                                 <ul>
                                   <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
                                   <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                                  <li><code>high</code>: Mostly easy to follow. Only a few areas for improvements.</li>
+                                  <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
                                   <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either).</li>
                                   <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
                                 </ul>
                               </li>
                               <li>
-                                <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work on a scale of 0 to 30</p>
+                                <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                                 <ul>
                                   <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                                  <li>Count all implementation/testing/documentation work as mentioned in that person's portfolio page.</li>
+                                  <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
                                   <li>
                                     <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                                   </li>
-                                  <li>When estimating effort, ignore features that are driven by GUI inputs.</li>
                                 </ul>
                               </li>
                               <li>
-                                <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assumes AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                                <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
                                 <ul>
                                   <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                                   <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
@@ -16723,7 +16740,7 @@ compact(input);
                               <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
                             </li>
                             <li>
-                              <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag. In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
+                              <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of. Duplicates can be omitted from processing steps given below.</p>
                             </li>
                             <li>
                               <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
@@ -16744,7 +16761,7 @@ compact(input);
                             </box>
                           </div>
                           <ul>
-                            <li>If applicable, <strong>decide the type of bug</strong>:</li>
+                            <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
                           </ul>
                           <div class="indented">
                             <box>
@@ -16756,7 +16773,7 @@ compact(input);
                             </box>
                           </div>
                           <ul>
-                            <li><strong>Suggest a severity for the bug</strong>:</li>
+                            <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
                           </ul>
                           <div class="indented">
                             <div>
@@ -16772,7 +16789,7 @@ compact(input);
                           </div>
                           <ul>
                             <li>
-                              <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee and we are unable to determine a suitable assignee ourselves, we'll have no choice but to distribute the penalty for that bug (if any) among all team members.</strong></p>
+                              <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                             </li>
                             <li>
                               <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
@@ -18716,7 +18733,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Sat, 03 Nov 2018 07:01:43 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Sat, 03 Nov 2018 10:35:26 GMT</small></div>
 </footer>
 </div>
 </body>
