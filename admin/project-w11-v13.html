@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="..\markbind\css\bootstrap-glyphicons.min.css" >
     <link rel="stylesheet" href="..\markbind\css\github.min.css">
     <link rel="stylesheet" href="..\markbind\css\markbind.css">
-    <link rel="stylesheet" href="..\markbind\layouts\default\styles.css">
     <link rel="stylesheet" href="..\markbind\css\site-nav.css">
     <link rel="stylesheet" href="/cs2103-website/css/main.css">
     <link rel="stylesheet" href="/cs2103-website/css/admin.css">
@@ -569,12 +568,25 @@ method 2 ...
                             </ul>
                           </li>
                           <li>
-                            <p><strong>C. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
+                            <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
                             <ul>
-                              <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                              <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
-                              <li>
-                                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
+                              <li><code>low</code>: One of these
+                                <ul>
+                                  <li>Very small amount of content (i.e., 0.5 - 1 page).</li>
+                                  <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
+                                  <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
+                                  <li>Multiple notation errors in UML diagrams.</li>
+                                </ul>
+                              </li>
+                              <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span>.</li>
+                              <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
+                              <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.</li>
+                              <li><code>unable to judge</code>: One of these
+                                <ul>
+                                  <li>no content at all.</li>
+                                  <li>less than 0.5 pages worth of content.</li>
+                                  <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span>.</li>
+                                </ul>
                               </li>
                             </ul>
                           </li>
@@ -595,25 +607,12 @@ method 2 ...
                             </ul>
                           </li>
                           <li>
-                            <p><strong>E. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                            <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                             <ul>
-                              <li><code>low</code>: One of these
-                                <ul>
-                                  <li>Very small amount of content (i.e., 0.5 - 1 page).</li>
-                                  <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
-                                  <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
-                                  <li>Multiple notation errors in UML diagrams.</li>
-                                </ul>
-                              </li>
-                              <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span>.</li>
-                              <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
-                              <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.</li>
-                              <li><code>unable to judge</code>: One of these
-                                <ul>
-                                  <li>no content at all.</li>
-                                  <li>less than 0.5 pages worth of content.</li>
-                                  <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span>.</li>
-                                </ul>
+                              <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
+                              <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's portfolio page. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best guess judgement call based on the available info.</li>
+                              <li>
+                                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                               </li>
                             </ul>
                           </li>
@@ -956,7 +955,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Sat, 03 Nov 2018 11:27:37 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.13.0</a> at Sun, 04 Nov 2018 07:11:39 GMT</small></div>
 </footer>
 </div>
 </body>
@@ -968,5 +967,4 @@ method 2 ...
     const baseUrl = '/cs2103-website'
 </script>
 <script src="..\markbind\js\setup.js"></script>
-<script src="..\markbind\layouts\default\scripts.js"></script>
 </html>

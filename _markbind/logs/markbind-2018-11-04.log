@@ -1,0 +1,13 @@
+2018-11-04T07:07:26.964Z - info: Website generation started at 15:07:23
+2018-11-04T07:07:29.758Z - info: Building assets...
+2018-11-04T07:07:31.991Z - info: Assets built
+2018-11-04T07:07:31.991Z - info: Generating pages...
+2018-11-04T07:08:41.471Z - warn: Missing heading for keyword: project expectations
+2018-11-04T07:08:48.414Z - info: Pages built
+2018-11-04T07:08:48.508Z - info: Site data built
+2018-11-04T07:08:48.509Z - info: Website generation complete! Total build time: 85.461s
+2018-11-04T07:08:48.521Z - info: Generate Site durationMs=85473
+2018-11-04T07:08:48.549Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-04T07:08:48.549Z - info: Press CTRL+C to stop ...
+2018-11-04T07:11:35.413Z - info: Website generation started at 15:11:32
+2018-11-04T07:11:36.828Z - info: Building assets...

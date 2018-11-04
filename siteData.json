@@ -7,8 +7,7 @@
       "title": "Home",
       "footer": "footer.md",
       "head": "scheduleHead.md",
-      "src": "index.md",
-      "layout": "default"
+      "src": "index.md"
     },
     {
       "headings": {
@@ -18,8 +17,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixA-principles.md",
-      "layout": "default"
+      "src": "admin/appendixA-principles.md"
     },
     {
       "headings": {
@@ -41,8 +39,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixB-policies.md",
-      "layout": "default"
+      "src": "admin/appendixB-policies.md"
     },
     {
       "headings": {
@@ -67,8 +64,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixC-faq.md",
-      "layout": "default"
+      "src": "admin/appendixC-faq.md"
     },
     {
       "headings": {
@@ -78,8 +74,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixD-help.md",
-      "layout": "default"
+      "src": "admin/appendixD-help.md"
     },
     {
       "headings": {
@@ -99,8 +94,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixE-gitHub.md",
-      "layout": "default"
+      "src": "admin/appendixE-gitHub.md"
     },
     {
       "headings": {
@@ -110,8 +104,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/appendixF-teamworkIssues.md",
-      "layout": "default"
+      "src": "admin/appendixF-teamworkIssues.md"
     },
     {
       "headings": {
@@ -123,14 +116,12 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/exams.md",
-      "layout": "default"
+      "src": "admin/exams.md"
     },
     {
       "headings": {},
       "src": "admin/faq.md",
-      "title": "",
-      "layout": "default"
+      "title": ""
     },
     {
       "headings": {
@@ -140,8 +131,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/gradeBreakdown.md",
-      "layout": "default"
+      "src": "admin/gradeBreakdown.md"
     },
     {
       "headings": {
@@ -151,8 +141,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/index.md",
-      "layout": "default"
+      "src": "admin/index.md"
     },
     {
       "headings": {
@@ -162,8 +151,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/instructors.md",
-      "layout": "default"
+      "src": "admin/instructors.md"
     },
     {
       "headings": {
@@ -173,8 +161,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/learningOutcomes.md",
-      "layout": "default"
+      "src": "admin/learningOutcomes.md"
     },
     {
       "headings": {
@@ -184,8 +171,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/lectures.md",
-      "layout": "default"
+      "src": "admin/lectures.md"
     },
     {
       "headings": {
@@ -198,8 +184,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/moduleExpectations.md",
-      "layout": "default"
+      "src": "admin/moduleExpectations.md"
     },
     {
       "headings": {
@@ -209,8 +194,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/moduleOverview.md",
-      "layout": "default"
+      "src": "admin/moduleOverview.md"
     },
     {
       "headings": {
@@ -220,8 +204,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/participation.md",
-      "layout": "default"
+      "src": "admin/participation.md"
     },
     {
       "headings": {
@@ -231,8 +214,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/peerEvaluations.md",
-      "layout": "default"
+      "src": "admin/peerEvaluations.md"
     },
     {
       "headings": {
@@ -243,8 +225,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/programmingLanguages.md",
-      "layout": "default"
+      "src": "admin/programmingLanguages.md"
     },
     {
       "headings": {
@@ -254,8 +235,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-assessment.md",
-      "layout": "default"
+      "src": "admin/project-assessment.md"
     },
     {
       "headings": {
@@ -265,8 +245,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-constraints.md",
-      "layout": "default"
+      "src": "admin/project-constraints.md"
     },
     {
       "headings": {
@@ -288,8 +267,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-deliverables.md",
-      "layout": "default"
+      "src": "admin/project-deliverables.md"
     },
     {
       "headings": {
@@ -299,8 +277,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-overview.md",
-      "layout": "default"
+      "src": "admin/project-overview.md"
     },
     {
       "headings": {
@@ -310,19 +287,17 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-product.md",
-      "layout": "default"
+      "src": "admin/project-product.md"
     },
     {
       "headings": {
-        "project-scope": "Project: Scope  | project expectations"
+        "project-scope": "Project: Scope "
       },
       "title": "Admin: Project: Scope",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-scope.md",
-      "layout": "default"
+      "src": "admin/project-scope.md"
     },
     {
       "headings": {
@@ -332,8 +307,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-supervision.md",
-      "layout": "default"
+      "src": "admin/project-supervision.md"
     },
     {
       "headings": {
@@ -343,8 +317,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-teams.md",
-      "layout": "default"
+      "src": "admin/project-teams.md"
     },
     {
       "headings": {
@@ -354,8 +327,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-timeline.md",
-      "layout": "default"
+      "src": "admin/project-timeline.md"
     },
     {
       "headings": {
@@ -365,8 +337,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w03-inception.md",
-      "layout": "default"
+      "src": "admin/project-w03-inception.md"
     },
     {
       "headings": {
@@ -376,8 +347,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w04-mid-v10.md",
-      "layout": "default"
+      "src": "admin/project-w04-mid-v10.md"
     },
     {
       "headings": {
@@ -389,8 +359,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w05-v10.md",
-      "layout": "default"
+      "src": "admin/project-w05-v10.md"
     },
     {
       "headings": {
@@ -400,8 +369,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w06-mid-v11.md",
-      "layout": "default"
+      "src": "admin/project-w06-mid-v11.md"
     },
     {
       "headings": {
@@ -414,8 +382,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w07-v11.md",
-      "layout": "default"
+      "src": "admin/project-w07-v11.md"
     },
     {
       "headings": {
@@ -425,8 +392,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w08-mid-v12.md",
-      "layout": "default"
+      "src": "admin/project-w08-mid-v12.md"
     },
     {
       "headings": {
@@ -440,8 +406,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w09-v12.md",
-      "layout": "default"
+      "src": "admin/project-w09-v12.md"
     },
     {
       "headings": {
@@ -452,8 +417,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w10-mid-v13.md",
-      "layout": "default"
+      "src": "admin/project-w10-mid-v13.md"
     },
     {
       "headings": {
@@ -468,8 +432,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w11-v13.md",
-      "layout": "default"
+      "src": "admin/project-w11-v13.md"
     },
     {
       "headings": {
@@ -479,8 +442,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w12-mid-v14.md",
-      "layout": "default"
+      "src": "admin/project-w12-mid-v14.md"
     },
     {
       "headings": {
@@ -497,8 +459,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/project-w13-v14.md",
-      "layout": "default"
+      "src": "admin/project-w13-v14.md"
     },
     {
       "headings": {
@@ -571,8 +532,7 @@
       "title": "Project List",
       "footer": "footer.md",
       "head": "scheduleHead.md",
-      "src": "admin/projectList.md",
-      "layout": "default"
+      "src": "admin/projectList.md"
     },
     {
       "headings": {
@@ -580,16 +540,14 @@
         "what-to-and-what-not-to-annotate": "What to and what not to annotate"
       },
       "src": "admin/reposenseAuthorAnnotation.md",
-      "title": "",
-      "layout": "default"
+      "title": ""
     },
     {
       "headings": {
         "using-reposense": "Using RepoSense"
       },
       "src": "admin/reposenseCompatibility.md",
-      "title": "",
-      "layout": "default"
+      "title": ""
     },
     {
       "headings": {
@@ -648,8 +606,7 @@
       "title": "config.json File Templates for RepoSense",
       "footer": "footer.md",
       "head": "scheduleHead.md",
-      "src": "admin/reposenseConfigTemplates.md",
-      "layout": "default"
+      "src": "admin/reposenseConfigTemplates.md"
     },
     {
       "headings": {
@@ -659,8 +616,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/textbooks.md",
-      "layout": "default"
+      "src": "admin/textbooks.md"
     },
     {
       "headings": {
@@ -671,8 +627,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/tools.md",
-      "layout": "default"
+      "src": "admin/tools.md"
     },
     {
       "headings": {
@@ -684,8 +639,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/tutorials.md",
-      "layout": "default"
+      "src": "admin/tutorials.md"
     },
     {
       "headings": {
@@ -705,8 +659,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/usingThisWebsite.md",
-      "layout": "default"
+      "src": "admin/usingThisWebsite.md"
     },
     {
       "headings": {
@@ -716,8 +669,7 @@
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
       "head": "adminHead.md",
-      "src": "admin/weeklySchedule.md",
-      "layout": "default"
+      "src": "admin/weeklySchedule.md"
     },
     {
       "headings": {
@@ -725,8 +677,7 @@
       },
       "title": "About: Acknowledgements",
       "footer": "footer.md",
-      "src": "book/about/acknowledgements.md",
-      "layout": "default"
+      "src": "book/about/acknowledgements.md"
     },
     {
       "headings": {
@@ -735,8 +686,7 @@
       "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
-      "src": "se-book-adapted/index.md",
-      "layout": "default"
+      "src": "se-book-adapted/index.md"
     },
     {
       "headings": {
@@ -761,8 +711,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/architecture.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/architecture.md"
     },
     {
       "headings": {
@@ -812,8 +761,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/codeQuality.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/codeQuality.md"
     },
     {
       "headings": {
@@ -912,8 +860,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/cppToJava.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/cppToJava.md"
     },
     {
       "headings": {
@@ -925,8 +872,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/design.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/design.md"
     },
     {
       "headings": {
@@ -939,8 +885,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/designApproaches.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/designApproaches.md"
     },
     {
       "headings": {
@@ -956,8 +901,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/designFundamentals.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/designFundamentals.md"
     },
     {
       "headings": {
@@ -984,8 +928,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/designPatterns.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/designPatterns.md"
     },
     {
       "headings": {
@@ -1007,8 +950,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/documentation.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/documentation.md"
     },
     {
       "headings": {
@@ -1031,8 +973,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/errorHandling.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/errorHandling.md"
     },
     {
       "headings": {
@@ -1049,8 +990,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/gatheringRequirements.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/gatheringRequirements.md"
     },
     {
       "headings": {
@@ -1074,8 +1014,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/gitAndGithub.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/gitAndGithub.md"
     },
     {
       "headings": {
@@ -1088,8 +1027,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/ides.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/ides.md"
     },
     {
       "headings": {
@@ -1108,8 +1046,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/integration.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/integration.md"
     },
     {
       "headings": {
@@ -1126,8 +1063,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/intellij.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/intellij.md"
     },
     {
       "headings": {
@@ -1140,8 +1076,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/javaTools.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/javaTools.md"
     },
     {
       "headings": {
@@ -1153,8 +1088,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/junit.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/junit.md"
     },
     {
       "headings": {
@@ -1200,8 +1134,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/modeling.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/modeling.md"
     },
     {
       "headings": {
@@ -1244,8 +1177,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/oop.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/oop.md"
     },
     {
       "headings": {
@@ -1266,8 +1198,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/principles.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/principles.md"
     },
     {
       "headings": {
@@ -1290,8 +1221,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/processModels.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/processModels.md"
     },
     {
       "headings": {
@@ -1307,8 +1237,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/projectPlanning.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/projectPlanning.md"
     },
     {
       "headings": {
@@ -1324,8 +1253,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/qualityAssurance.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/qualityAssurance.md"
     },
     {
       "headings": {
@@ -1338,8 +1266,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/refactoring.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/refactoring.md"
     },
     {
       "headings": {
@@ -1353,8 +1280,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/requirements.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/requirements.md"
     },
     {
       "headings": {
@@ -1376,8 +1302,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/reuse.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/reuse.md"
     },
     {
       "headings": {
@@ -1400,8 +1325,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/revisionControl.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/revisionControl.md"
     },
     {
       "headings": {
@@ -1413,8 +1337,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/softwareEngineering.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/softwareEngineering.md"
     },
     {
       "headings": {
@@ -1435,8 +1358,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/specifyingRequirements.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/specifyingRequirements.md"
     },
     {
       "headings": {
@@ -1447,14 +1369,12 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/teamwork.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/teamwork.md"
     },
     {
       "headings": {},
       "src": "se-book-adapted/chapters/test.md",
-      "title": "",
-      "layout": "default"
+      "title": ""
     },
     {
       "headings": {
@@ -1483,8 +1403,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/testCaseDesign.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/testCaseDesign.md"
     },
     {
       "headings": {
@@ -1520,8 +1439,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/testing.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/testing.md"
     },
     {
       "headings": {
@@ -1576,8 +1494,7 @@
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "head": "bookHead.md",
-      "src": "se-book-adapted/chapters/uml.md",
-      "layout": "default"
+      "src": "se-book-adapted/chapters/uml.md"
     },
     {
       "headings": {
@@ -1602,8 +1519,7 @@
       },
       "title": "Definitions",
       "siteNav": "se-book-adapted-sitenav.md",
-      "src": "se-book-adapted/common/definitions.md",
-      "layout": "default"
+      "src": "se-book-adapted/common/definitions.md"
     },
     {
       "headings": {
@@ -1611,16 +1527,14 @@
       },
       "title": "Combined Exercises",
       "siteNav": "se-book-adapted-sitenav.md",
-      "src": "se-book-adapted/common/exercises.md",
-      "layout": "default"
+      "src": "se-book-adapted/common/exercises.md"
     },
     {
       "headings": {
         "combined-exercises": "Combined Exercises"
       },
       "src": "book/combined/exercises.md",
-      "title": "",
-      "layout": "default"
+      "title": ""
     }
   ]
 }
