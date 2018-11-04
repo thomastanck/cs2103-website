@@ -11,3 +11,25 @@
 2018-11-04T07:08:48.549Z - info: Press CTRL+C to stop ...
 2018-11-04T07:11:35.413Z - info: Website generation started at 15:11:32
 2018-11-04T07:11:36.828Z - info: Building assets...
+2018-11-04T07:11:39.016Z - info: Assets built
+2018-11-04T07:11:39.017Z - info: Generating pages...
+2018-11-04T07:12:51.924Z - warn: Missing heading for keyword: project expectations
+2018-11-04T07:12:59.958Z - info: Pages built
+2018-11-04T07:13:00.033Z - info: Site data built
+2018-11-04T07:13:00.033Z - info: Website generation complete! Total build time: 87.145s
+2018-11-04T07:13:00.033Z - info: Build success!
+2018-11-04T07:13:00.034Z - info: Generate Site durationMs=87145
+2018-11-04T07:13:51.088Z - info: Deployed!
+2018-11-04T07:23:23.334Z - info: Website generation started at 15:23:21
+2018-11-04T07:23:25.370Z - info: Building assets...
+2018-11-04T07:23:27.494Z - info: Assets built
+2018-11-04T07:23:27.494Z - info: Generating pages...
+2018-11-04T07:24:41.424Z - warn: Missing heading for keyword: project expectations
+2018-11-04T07:24:49.028Z - info: Pages built
+2018-11-04T07:24:49.111Z - info: Site data built
+2018-11-04T07:24:49.111Z - info: Website generation complete! Total build time: 88.068s
+2018-11-04T07:24:49.124Z - info: Generate Site durationMs=88081
+2018-11-04T07:24:49.148Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-04T07:24:49.149Z - info: Press CTRL+C to stop ...
+2018-11-04T07:28:12.325Z - info: Website generation started at 15:28:10
+2018-11-04T07:28:13.652Z - info: Building assets...
