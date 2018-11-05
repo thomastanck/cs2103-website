@@ -1,164 +1,47 @@
-2018-11-05T04:44:29.769Z - info: Website generation started at 12:44:13
-2018-11-05T04:46:08.937Z - info: Building assets...
-2018-11-05T04:46:40.826Z - info: Assets built
-2018-11-05T04:46:40.828Z - info: Generating pages...
-2018-11-05T04:48:27.062Z - info: Pages built
-2018-11-05T04:48:28.064Z - info: Site data built
-2018-11-05T04:48:28.064Z - info: Website generation complete! Total build time: 254.634s
-2018-11-05T04:48:28.114Z - info: Generate Site durationMs=254684
-2018-11-05T04:48:30.406Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T04:48:30.406Z - info: Press CTRL+C to stop ...
-2018-11-05T04:50:52.940Z - info: [12:50:52] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingASolution\basic\text.md
-2018-11-05T04:50:52.964Z - info: [12:50:52] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T04:50:53.942Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingASolution\basic\text.md
-2018-11-05T04:50:53.944Z - info: Rebuilding 6 pages
-2018-11-05T04:50:59.064Z - info: Assets built
-2018-11-05T04:51:20.171Z - info: Pages rebuilt
-2018-11-05T04:51:20.202Z - info: Site data built
-2018-11-05T04:59:08.647Z - info: [12:59:08] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\print.md
-2018-11-05T04:59:09.649Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\print.md
-2018-11-05T04:59:09.656Z - info: Rebuilding 33 pages
-2018-11-05T04:59:21.784Z - info: Pages rebuilt
-2018-11-05T04:59:21.803Z - info: Site data built
-2018-11-05T05:03:34.931Z - info: [13:03:34] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\userStories\details\text.md
-2018-11-05T05:03:35.934Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\userStories\details\text.md
-2018-11-05T05:03:35.938Z - info: Rebuilding 6 pages
-2018-11-05T05:04:06.647Z - info: Pages rebuilt
-2018-11-05T05:04:06.691Z - info: Site data built
-2018-11-05T05:05:41.901Z - info: [13:05:41] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\userStories\usage\text.md
-2018-11-05T05:05:42.905Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\specifyingRequirements\userStories\usage\text.md
-2018-11-05T05:05:42.926Z - info: Rebuilding 10 pages
-2018-11-05T05:06:21.577Z - info: Pages rebuilt
-2018-11-05T05:06:21.725Z - info: Site data built
-2018-11-05T05:12:33.515Z - info: [13:12:33] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T05:12:34.537Z - info: Assets built
-2018-11-05T05:13:27.191Z - info: Website generation started at 13:13:21
-2018-11-05T05:14:09.724Z - info: Building assets...
-2018-11-05T05:14:28.852Z - info: Assets built
-2018-11-05T05:14:28.853Z - info: Generating pages...
-2018-11-05T05:15:58.643Z - info: Pages built
-2018-11-05T05:15:59.483Z - info: Site data built
-2018-11-05T05:15:59.483Z - info: Website generation complete! Total build time: 157.79s
-2018-11-05T05:15:59.493Z - info: Generate Site durationMs=157800
-2018-11-05T05:16:00.268Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T05:16:00.268Z - info: Press CTRL+C to stop ...
-2018-11-05T05:18:29.489Z - info: [13:18:29] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T05:18:30.518Z - info: Assets built
-2018-11-05T05:21:49.367Z - info: [13:21:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:21:50.369Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:21:50.379Z - info: Rebuilding 14 pages
-2018-11-05T05:22:22.639Z - info: [13:22:22] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:22:28.639Z - info: Pages rebuilt
-2018-11-05T05:22:28.684Z - info: Site data built
-2018-11-05T05:22:28.923Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:22:28.926Z - info: Rebuilding 14 pages
-2018-11-05T05:23:10.212Z - info: Pages rebuilt
-2018-11-05T05:23:10.246Z - info: Site data built
-2018-11-05T05:24:24.102Z - info: [13:24:24] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:24:25.106Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\codeQuality\commentMinimally\intermediate\explainWhatWhyNotHow\text.md
-2018-11-05T05:24:25.111Z - info: Rebuilding 14 pages
-2018-11-05T05:25:07.020Z - info: Pages rebuilt
-2018-11-05T05:25:07.067Z - info: Site data built
-2018-11-05T05:28:37.095Z - info: [13:28:37] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T05:28:38.116Z - info: Assets built
-2018-11-05T05:34:20.958Z - info: [13:34:20] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T05:34:20.975Z - info: [13:34:20] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\integration\more\text.md
-2018-11-05T05:34:21.980Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\integration\more\text.md
-2018-11-05T05:34:21.982Z - info: Rebuilding 3 pages
-2018-11-05T05:34:21.983Z - info: Assets built
-2018-11-05T05:34:27.270Z - info: Pages rebuilt
-2018-11-05T05:34:27.296Z - info: Site data built
-2018-11-05T05:35:17.267Z - info: Website generation started at 13:35:10
-2018-11-05T05:35:56.769Z - info: Building assets...
-2018-11-05T05:36:16.479Z - info: Assets built
-2018-11-05T05:36:16.480Z - info: Generating pages...
-2018-11-05T05:37:49.680Z - info: Pages built
-2018-11-05T05:37:50.322Z - info: Site data built
-2018-11-05T05:37:50.323Z - info: Website generation complete! Total build time: 160.298s
-2018-11-05T05:37:50.332Z - info: Generate Site durationMs=160307
-2018-11-05T05:37:50.810Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T05:37:50.810Z - info: Press CTRL+C to stop ...
-2018-11-05T05:46:50.375Z - info: [13:46:50] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T05:46:51.399Z - info: Assets built
-2018-11-05T05:47:46.193Z - info: Website generation started at 13:47:42
-2018-11-05T05:48:17.017Z - info: Building assets...
-2018-11-05T05:48:37.660Z - info: Assets built
-2018-11-05T05:48:37.661Z - info: Generating pages...
-2018-11-05T05:50:18.831Z - info: Pages built
-2018-11-05T05:50:19.032Z - info: Site data built
-2018-11-05T05:50:19.033Z - info: Website generation complete! Total build time: 156.668s
-2018-11-05T05:50:19.047Z - info: Generate Site durationMs=156682
-2018-11-05T05:50:20.052Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T05:50:20.053Z - info: Press CTRL+C to stop ...
-2018-11-05T06:03:18.260Z - info: [14:03:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:03:19.287Z - info: Assets built
-2018-11-05T06:10:18.537Z - info: [14:10:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:10:19.559Z - info: Assets built
-2018-11-05T06:16:13.344Z - info: Website generation started at 14:16:08
-2018-11-05T06:16:47.656Z - info: Building assets...
-2018-11-05T06:17:02.235Z - info: Assets built
-2018-11-05T06:17:02.235Z - info: Generating pages...
-2018-11-05T06:18:43.581Z - info: Pages built
-2018-11-05T06:18:44.247Z - info: Site data built
-2018-11-05T06:18:44.247Z - info: Website generation complete! Total build time: 155.672s
-2018-11-05T06:18:44.256Z - info: Generate Site durationMs=155681
-2018-11-05T06:18:44.802Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T06:18:44.803Z - info: Press CTRL+C to stop ...
-2018-11-05T06:28:53.197Z - info: [14:28:53] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:28:54.223Z - info: Assets built
-2018-11-05T06:38:41.921Z - info: Website generation started at 14:38:33
-2018-11-05T06:38:57.182Z - info: Building assets...
-2018-11-05T06:39:24.995Z - info: Assets built
-2018-11-05T06:39:24.996Z - info: Generating pages...
-2018-11-05T06:41:11.906Z - info: Pages built
-2018-11-05T06:41:12.524Z - info: Site data built
-2018-11-05T06:41:12.524Z - info: Website generation complete! Total build time: 158.568s
-2018-11-05T06:41:12.554Z - info: Generate Site durationMs=158597
-2018-11-05T06:41:13.128Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T06:41:13.128Z - info: Press CTRL+C to stop ...
-2018-11-05T06:47:37.153Z - info: [14:47:37] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:47:38.225Z - info: Assets built
-2018-11-05T06:49:32.130Z - info: [14:49:32] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:50:20.328Z - info: Website generation started at 14:50:13
-2018-11-05T06:50:49.139Z - info: Building assets...
-2018-11-05T06:51:06.069Z - info: Assets built
-2018-11-05T06:51:06.069Z - info: Generating pages...
-2018-11-05T06:52:50.656Z - info: Pages built
-2018-11-05T06:52:51.302Z - info: Site data built
-2018-11-05T06:52:51.302Z - info: Website generation complete! Total build time: 157.447s
-2018-11-05T06:52:51.311Z - info: Generate Site durationMs=157456
-2018-11-05T06:52:51.771Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T06:52:51.772Z - info: Press CTRL+C to stop ...
-2018-11-05T06:58:13.406Z - info: [14:58:13] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\activityDiagrams\text.md
-2018-11-05T06:58:13.411Z - info: [14:58:13] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\activityDiagramsIntermediate\text.md
-2018-11-05T06:58:14.408Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\activityDiagrams\text.md,C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\modeling\modelingBehaviors\activityDiagramsIntermediate\text.md
-2018-11-05T06:58:14.415Z - info: Rebuilding 7 pages
-2018-11-05T06:58:43.594Z - info: Pages rebuilt
-2018-11-05T06:58:43.642Z - info: Site data built
-2018-11-05T06:58:49.052Z - info: [14:58:49] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T06:58:50.076Z - info: Assets built
-2018-11-05T07:11:46.691Z - info: [15:11:46] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\se-book-adapted\config.njk
-2018-11-05T07:11:47.716Z - info: Assets built
-2018-11-05T07:18:09.114Z - info: Website generation started at 15:18:02
-2018-11-05T07:18:12.166Z - info: Building assets...
-2018-11-05T07:18:17.737Z - info: Assets built
-2018-11-05T07:18:17.738Z - info: Generating pages...
-2018-11-05T07:19:58.206Z - info: Pages built
-2018-11-05T07:19:59.043Z - info: Site data built
-2018-11-05T07:19:59.043Z - info: Website generation complete! Total build time: 116.325s
-2018-11-05T07:19:59.058Z - info: Generate Site durationMs=116340
-2018-11-05T07:20:01.962Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-05T07:20:01.962Z - info: Press CTRL+C to stop ...
-2018-11-05T07:20:25.452Z - info: [15:20:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md
-2018-11-05T07:20:26.458Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md
-2018-11-05T07:20:26.461Z - info: Rebuilding 5 pages
-2018-11-05T07:20:56.680Z - info: Pages rebuilt
-2018-11-05T07:20:56.708Z - info: Site data built
-2018-11-05T07:27:54.767Z - info: [15:27:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md
-2018-11-05T07:27:55.771Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-w13-v14.md
-2018-11-05T07:27:55.775Z - info: Rebuilding 5 pages
-2018-11-05T07:28:21.952Z - info: Pages rebuilt
-2018-11-05T07:28:21.978Z - info: Site data built
-2018-11-05T07:30:48.035Z - info: [15:30:48] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\week12\tutorial-cs2103.md
-2018-11-05T07:34:26.945Z - info: Website generation started at 15:34:23
-2018-11-05T07:34:43.609Z - info: Building assets...
+2018-11-05T14:00:18.326Z - info: Website generation started at 22:00:14
+2018-11-05T14:00:22.525Z - info: Building assets...
+2018-11-05T14:00:27.320Z - info: Assets built
+2018-11-05T14:00:27.320Z - info: Generating pages...
+2018-11-05T14:02:13.327Z - info: Pages built
+2018-11-05T14:02:13.398Z - info: Site data built
+2018-11-05T14:02:13.398Z - info: Website generation complete! Total build time: 119.062s
+2018-11-05T14:02:13.429Z - info: Generate Site durationMs=119093
+2018-11-05T14:02:13.464Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-05T14:02:13.464Z - info: Press CTRL+C to stop ...
+2018-11-05T14:02:14.123Z - info: [22:02:14] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:02:15.167Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:02:15.171Z - info: Rebuilding 6 pages
+2018-11-05T14:02:57.808Z - info: Pages rebuilt
+2018-11-05T14:02:57.984Z - info: Site data built
+2018-11-05T14:04:09.860Z - info: [22:04:09] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:04:10.868Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:04:10.872Z - info: Rebuilding 6 pages
+2018-11-05T14:04:47.986Z - info: Pages rebuilt
+2018-11-05T14:04:48.030Z - info: Site data built
+2018-11-05T14:08:10.927Z - info: [22:08:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:08:11.934Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:08:11.936Z - info: Rebuilding 6 pages
+2018-11-05T14:08:48.684Z - info: Pages rebuilt
+2018-11-05T14:08:48.804Z - info: Site data built
+2018-11-05T14:10:04.044Z - info: [22:10:04] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:10:05.048Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:10:05.048Z - info: Rebuilding 6 pages
+2018-11-05T14:10:41.782Z - info: Pages rebuilt
+2018-11-05T14:10:41.794Z - info: Site data built
+2018-11-05T14:14:23.372Z - info: [22:14:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:14:24.382Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:14:24.390Z - info: Rebuilding 6 pages
+2018-11-05T14:14:59.146Z - info: Pages rebuilt
+2018-11-05T14:14:59.163Z - info: Site data built
+2018-11-05T14:15:32.956Z - info: [22:15:32] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:15:33.958Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:15:33.964Z - info: Rebuilding 6 pages
+2018-11-05T14:16:04.916Z - info: Pages rebuilt
+2018-11-05T14:16:04.948Z - info: Site data built
+2018-11-05T14:17:06.618Z - info: [22:17:06] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:17:07.620Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\exams.md
+2018-11-05T14:17:07.625Z - info: Rebuilding 6 pages
+2018-11-05T14:17:39.443Z - info: Pages rebuilt
+2018-11-05T14:17:39.481Z - info: Site data built
+2018-11-05T14:19:54.051Z - info: Website generation started at 22:19:51
+2018-11-05T14:19:55.449Z - info: Building assets...
