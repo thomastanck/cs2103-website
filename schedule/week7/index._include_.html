@@ -3247,7 +3247,7 @@ trimInput();
               <div id="main">
                 <div>
                   <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
-                  <p>👍 <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
+                  <p><span style="color:green"><span class="fas fa-check"></span></span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
                     <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
@@ -3256,14 +3256,14 @@ trimInput();
 }
 </code></pre>
                   </tip-box>
-                  <p>👍 <strong>Why</strong> : The rationale for the current implementation.</p>
+                  <p><span style="color:green"><span class="fas fa-check"></span></span> <strong>Why</strong> : The rationale for the current implementation.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
                     <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
 compact(input);
 </code></pre>
                   </tip-box>
-                  <p>👎 <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
+                  <p><span style="color:red"><span class="fas fa-times"></span></span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
                   <tip-box>
                     <p><span class="fas fa-cube"></span> Example:</p>
                     <p>

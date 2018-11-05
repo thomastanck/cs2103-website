@@ -111,6 +111,15 @@
           </ul>
         </div>
       </li>
+      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
+          <i class="dropdown-btn-icon">
+            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
+        <div class="dropdown-container">
+          <ul style="list-style-type: none; margin-left:-1em">
+            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/principles.html">Principles</a></li>
+          </ul>
+        </div>
+      </li>
       <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Tools</strong>
           <i class="dropdown-btn-icon">
             <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
@@ -121,15 +130,6 @@
             <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/gitAndGithub.html">Git and Github</a></li>
             <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/javaTools.html">Java</a></li>
             <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/junit.html">JUnit</a></li>
-          </ul>
-        </div>
-      </li>
-      <li style="margin-top: 10px"><button class="dropdown-btn"><strong>Principles</strong>
-          <i class="dropdown-btn-icon">
-            <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></button>
-        <div class="dropdown-container">
-          <ul style="list-style-type: none; margin-left:-1em">
-            <li style="margin-top: 10px"><a href="/cs2103-website/se-book-adapted/chapters/principles.html">Principles</a></li>
           </ul>
         </div>
       </li>
@@ -406,31 +406,33 @@
                   <li>Size: the estimated effort to implement the user story</li>
                   <li>Urgency: how soon the feature is needed</li>
                 </ul>
-                <panel minimized="">
-                  <span slot="header" class="card-title"><span class="fas fa-cube"></span> More examples <span class="badge badge-pill badge-secondary">tangential</span></span>
-                  <p>User stories for a travel website (credit: Mike Cohen)</p>
-                  <tip-box>
-                    <ul>
-                      <li>As a registered user, I am required to log in so that I can access the system</li>
-                      <li>As a forgetful user, I can request a password reminder so that I can log in if I forget mine</li>
-                      <li>[Epic] As a user, I can cancel a reservation
-                        <ul>
-                          <li>As a premium site member, I can cancel a reservation up to the last minute</li>
-                          <li>As a non-premium member, I can cancel up to 24 hours in advance</li>
-                          <li>As a member, I am emailed a conﬁrmation of any cancelled reservation</li>
-                        </ul>
-                      </li>
-                      <li>[Epic] As a frequent ﬂyer, I want to book a trip
-                        <ul>
-                          <li>As a frequent ﬂyer, I want to book a trip using miles</li>
-                          <li>As a frequent ﬂyer, I want to rebook a trip I take often</li>
-                          <li>As a frequent ﬂyer, I want to request an upgrade</li>
-                          <li>As a frequent ﬂyer, I want to see if my upgrade cleared</li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </tip-box>
-                </panel>
+                <span class="non-printable">
+                  <panel minimized="">
+                    <span slot="header" class="card-title"><span class="fas fa-cube"></span> More examples <span class="badge badge-pill badge-secondary">tangential</span></span>
+                    <p>User stories for a travel website (credit: Mike Cohen)</p>
+                    <tip-box>
+                      <ul>
+                        <li>As a registered user, I am required to log in so that I can access the system</li>
+                        <li>As a forgetful user, I can request a password reminder so that I can log in if I forget mine</li>
+                        <li>[Epic] As a user, I can cancel a reservation
+                          <ul>
+                            <li>As a premium site member, I can cancel a reservation up to the last minute</li>
+                            <li>As a non-premium member, I can cancel up to 24 hours in advance</li>
+                            <li>As a member, I am emailed a conﬁrmation of any cancelled reservation</li>
+                          </ul>
+                        </li>
+                        <li>[Epic] As a frequent ﬂyer, I want to book a trip
+                          <ul>
+                            <li>As a frequent ﬂyer, I want to book a trip using miles</li>
+                            <li>As a frequent ﬂyer, I want to rebook a trip I take often</li>
+                            <li>As a frequent ﬂyer, I want to request an upgrade</li>
+                            <li>As a frequent ﬂyer, I want to see if my upgrade cleared</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </tip-box>
+                  </panel>
+                </span>
               </div>
               <div>
                 <div>
@@ -594,46 +596,48 @@
                   </tip-box>
                 </div>
                 <p>While use cases can be recorded on <tooltip content="e.g. index cards or sticky notes">physical paper</tooltip> in the initial stages, an online tool is more suitable for longer-term management of user stories, especially if the team is not <tooltip content="physically in the same location">co-located</tooltip>.</p>
-                <panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples">
-                  <div>
-                    <tabs>
-                        <tab header="GitHub Project Boards">
-                        <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
-                        <p><span class="fas fa-cube"></span> Example Project Board:</p>
-                        <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800"></p>
-                        <p></p>
-                        <p></p>
-                        <p><span class="fas fa-cube"></span> Example Issue to represent a user story:</p>
-                        <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoryAsGitHubIssue.png" width="800"></p>
-                        <p></p>
-                        <p></p>
-                        <p>A video on GitHub Project Boards:</p>
-                        <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                        <tab header="Google Sheets">
-                        <p><span class="fas fa-cube"></span> Example Google Sheet for recording user stories:</p>
-                        <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
-                        <p></p>
-                        <p></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab> 
-                      <tab header="Trello">
-                        <p><span class="fas fa-cube"></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
-                        <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
-                        <p></p>
-                        <p></p>
-                        <p>
-                          <hr>
-                        </p>
-                      </tab>
-                    </tabs>
-                  </div>
-                </panel>
+                <span class="non-printable">
+                  <panel header="**Tool Examples**: How to use some example online tools to manage user stories" alt="tool examples">
+                    <div>
+                      <tabs>
+                          <tab header="GitHub Project Boards">
+                          <p>You can create issues for each of the user stories and use a GitHub <em>Project Board</em> to sort them into categories.</p>
+                          <p><span class="fas fa-cube"></span> Example Project Board:</p>
+                          <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInGitHubProjectBoards.png" width="800"></p>
+                          <p></p>
+                          <p></p>
+                          <p><span class="fas fa-cube"></span> Example Issue to represent a user story:</p>
+                          <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoryAsGitHubIssue.png" width="800"></p>
+                          <p></p>
+                          <p></p>
+                          <p>A video on GitHub Project Boards:</p>
+                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/C6MGKHkNtxU" frameborder="0" width="640" height="390" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe></div>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                          <tab header="Google Sheets">
+                          <p><span class="fas fa-cube"></span> Example Google Sheet for recording user stories:</p>
+                          <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInGoogleSheets.png" width="800"></p>
+                          <p></p>
+                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab> 
+                        <tab header="Trello">
+                          <p><span class="fas fa-cube"></span> Example <a href="https://trello.com">Trello</a> Board for recording user stories:</p>
+                          <p><img src="/cs2103-website/book/specifyingRequirements/userStories/usage/images/userStoriesInTrello.png" width="800"></p>
+                          <p></p>
+                          <p></p>
+                          <p>
+                            <hr>
+                          </p>
+                        </tab>
+                      </tabs>
+                    </div>
+                  </panel>
+                </span>
                 <modal id="modal:xp-user-stories" title=":bookmark: User stories vs traditional requirement specifications, according to XP">
                   <span>
                     <popover id="pop:xp" title="eXtreme Programming (XP)">eXtreme Programming (XP)
@@ -1563,7 +1567,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Sun, 04 Nov 2018 15:28:20 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.0</a> at Mon, 05 Nov 2018 07:34:57 GMT</small></div>
 </footer>
 </div>
 </body>

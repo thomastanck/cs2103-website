@@ -906,6 +906,7 @@
         "access-modifiers": "Access Modifiers",
         "constants": "Constants",
         "casting": "Casting",
+        "jar-files": "JAR Files",
         "miscellaneous-topics": "Miscellaneous Topics",
         "c-to-java": "C++ to Java"
       },
@@ -931,6 +932,7 @@
     },
     {
       "headings": {
+        "what": "What",
         "multi-level-design": "Multi-Level Design",
         "top-down-and-bottom-up-design": "Top-Down and Bottom-Up Design",
         "agile-design": "Agile Design",
@@ -1102,7 +1104,6 @@
         "approaches": "Approaches",
         "continuous-integration-and-continuous-deployment": "Continuous Integration and Continuous Deployment",
         "build-automation": "Build Automation",
-        "approaches-2": "Approaches",
         "integration": "Integration"
       },
       "title": "Textbook Chapter : Integration",
@@ -1183,7 +1184,8 @@
         "modeling-abstract-classes": "Modeling abstract classes",
         "modeling-interfaces": "Modeling interfaces",
         "modeling-structures": "Modeling Structures",
-        "activity-diagrams": "Activity Diagrams",
+        "activity-diagrams-basic": "Activity Diagrams - Basic",
+        "activity-diagrams-intermediate": "Activity Diagrams - Intermediate",
         "sequence-diagrams-basic": "Sequence Diagrams - Basic",
         "sequence-diagrams-intermediate": "Sequence Diagrams - Intermediate",
         "use-case-diagrams": "Use Case Diagrams",
@@ -1541,7 +1543,6 @@
         "association-classes": "Association Classes",
         "composition": "Composition",
         "aggregation": "Aggregation",
-        "inheritance": "Inheritance",
         "class-inheritance": "Class Inheritance",
         "interfaces": "Interfaces",
         "abstract-classes": "Abstract Classes",
