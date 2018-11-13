@@ -1,27 +1,10 @@
-2018-11-11T15:14:21.684Z - info: Website generation started at 23:14:21
-2018-11-11T15:14:24.959Z - info: Building assets...
-2018-11-11T15:14:27.185Z - info: Assets built
-2018-11-11T15:14:27.186Z - info: Generating pages...
-2018-11-11T15:15:47.740Z - info: Pages built
-2018-11-11T15:15:47.846Z - info: Site data built
-2018-11-11T15:15:47.846Z - info: Website generation complete! Total build time: 86.173s
-2018-11-11T15:15:47.858Z - info: Generate Site durationMs=86184
-2018-11-11T15:15:47.882Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-11T15:15:47.882Z - info: Press CTRL+C to stop ...
-2018-11-11T15:20:01.479Z - info: [23:20:01] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:20:02.482Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:20:02.488Z - info: Rebuilding 26 pages
-2018-11-11T15:20:45.853Z - info: Pages rebuilt
-2018-11-11T15:20:45.885Z - info: Site data built
-2018-11-11T15:26:43.130Z - info: [23:26:43] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:26:44.186Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:26:44.205Z - info: Rebuilding 25 pages
-2018-11-11T15:27:25.884Z - info: Pages rebuilt
-2018-11-11T15:27:25.931Z - info: Site data built
-2018-11-11T15:30:16.646Z - info: [23:30:16] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:30:17.649Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\project-deliverables.md
-2018-11-11T15:30:17.657Z - info: Rebuilding 25 pages
-2018-11-11T15:31:06.647Z - info: Pages rebuilt
-2018-11-11T15:31:06.698Z - info: Site data built
-2018-11-11T15:59:11.545Z - info: Website generation started at 23:59:08
-2018-11-11T15:59:16.393Z - info: Building assets...
+2018-11-11T09:08:27.942Z - info: Website generation started at 17:08:10
+2018-11-11T09:09:18.104Z - info: Building assets...
+2018-11-11T09:09:33.128Z - info: Assets built
+2018-11-11T09:09:33.128Z - info: Generating pages...
+2018-11-11T09:11:28.514Z - info: Pages built
+2018-11-11T09:11:29.088Z - info: Site data built
+2018-11-11T09:11:29.088Z - info: Website generation complete! Total build time: 198.82s
+2018-11-11T09:11:29.088Z - info: Build success!
+2018-11-11T09:11:29.089Z - info: Generate Site durationMs=198821
+2018-11-11T09:13:03.968Z - info: Deployed!

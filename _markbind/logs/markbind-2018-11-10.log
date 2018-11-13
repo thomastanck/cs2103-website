@@ -1,0 +1,60 @@
+2018-11-10T05:41:28.955Z - info: Website generation started at 13:41:09
+2018-11-10T05:42:25.591Z - info: Building assets...
+2018-11-10T05:42:46.353Z - info: Assets built
+2018-11-10T05:42:46.354Z - info: Generating pages...
+2018-11-10T05:44:21.637Z - info: Pages built
+2018-11-10T05:44:22.427Z - info: Site data built
+2018-11-10T05:44:22.427Z - info: Website generation complete! Total build time: 193.19s
+2018-11-10T05:44:22.441Z - info: Generate Site durationMs=193204
+2018-11-10T05:44:22.997Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-10T05:44:22.997Z - info: Press CTRL+C to stop ...
+2018-11-10T05:47:51.126Z - info: [13:47:51] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:47:52.136Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:47:52.137Z - info: Rebuilding 1 pages
+2018-11-10T05:47:52.976Z - info: Pages rebuilt
+2018-11-10T05:47:53.185Z - info: Site data built
+2018-11-10T05:55:18.222Z - info: [13:55:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:55:19.231Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:55:19.231Z - info: Rebuilding 1 pages
+2018-11-10T05:55:19.814Z - info: Pages rebuilt
+2018-11-10T05:55:19.825Z - info: Site data built
+2018-11-10T05:56:16.911Z - info: [13:56:16] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:56:17.919Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:56:17.920Z - info: Rebuilding 1 pages
+2018-11-10T05:56:18.372Z - info: Pages rebuilt
+2018-11-10T05:56:18.382Z - info: Site data built
+2018-11-10T05:57:06.581Z - info: [13:57:06] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:57:07.591Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:57:07.591Z - info: Rebuilding 1 pages
+2018-11-10T05:57:08.061Z - info: Pages rebuilt
+2018-11-10T05:57:08.075Z - info: Site data built
+2018-11-10T05:58:02.420Z - info: [13:58:02] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:58:03.421Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:58:03.422Z - info: Rebuilding 1 pages
+2018-11-10T05:58:04.679Z - info: Pages rebuilt
+2018-11-10T05:58:04.689Z - info: Site data built
+2018-11-10T05:59:05.423Z - info: [13:59:05] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:59:06.426Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T05:59:06.428Z - info: Rebuilding 1 pages
+2018-11-10T05:59:06.965Z - info: Pages rebuilt
+2018-11-10T05:59:06.973Z - info: Site data built
+2018-11-10T06:02:34.380Z - info: [14:02:34] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:02:35.400Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:02:35.400Z - info: Rebuilding 1 pages
+2018-11-10T06:02:36.060Z - info: Pages rebuilt
+2018-11-10T06:02:36.070Z - info: Site data built
+2018-11-10T06:07:18.263Z - info: [14:07:18] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:07:19.266Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:07:19.267Z - info: Rebuilding 1 pages
+2018-11-10T06:07:20.012Z - info: Pages rebuilt
+2018-11-10T06:07:20.021Z - info: Site data built
+2018-11-10T06:07:57.297Z - info: [14:07:57] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:07:58.307Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:07:58.324Z - info: Rebuilding 1 pages
+2018-11-10T06:07:58.996Z - info: Pages rebuilt
+2018-11-10T06:07:59.007Z - info: Site data built
+2018-11-10T06:24:48.313Z - info: [14:24:48] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:24:49.318Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
+2018-11-10T06:24:49.322Z - info: Rebuilding 1 pages
+2018-11-10T06:24:50.362Z - info: Pages rebuilt
+2018-11-10T06:24:50.890Z - info: Site data built
