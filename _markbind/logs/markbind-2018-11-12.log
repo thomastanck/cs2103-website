@@ -1,60 +1,6 @@
-2018-11-12T05:18:59.644Z - info: Website generation started at 13:18:44
-2018-11-12T05:19:49.950Z - info: Building assets...
-2018-11-12T05:20:12.220Z - info: Assets built
-2018-11-12T05:20:12.221Z - info: Generating pages...
-2018-11-12T05:21:56.913Z - info: Pages built
-2018-11-12T05:21:57.553Z - info: Site data built
-2018-11-12T05:21:57.553Z - info: Website generation complete! Total build time: 193.414s
-2018-11-12T05:21:57.563Z - info: Generate Site durationMs=193424
-2018-11-12T05:21:58.093Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-12T05:21:58.093Z - info: Press CTRL+C to stop ...
-2018-11-12T05:28:53.875Z - info: [13:28:53] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:28:54.896Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:28:54.896Z - info: Rebuilding 1 pages
-2018-11-12T05:28:55.706Z - info: Pages rebuilt
-2018-11-12T05:28:55.838Z - info: Site data built
-2018-11-12T05:40:10.446Z - info: [13:40:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:40:11.456Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:40:11.456Z - info: Rebuilding 1 pages
-2018-11-12T05:40:12.456Z - info: Pages rebuilt
-2018-11-12T05:40:12.536Z - info: Site data built
-2018-11-12T05:41:00.004Z - info: [13:40:59] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:01.015Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:01.015Z - info: Rebuilding 1 pages
-2018-11-12T05:41:01.681Z - info: Pages rebuilt
-2018-11-12T05:41:01.706Z - info: Site data built
-2018-11-12T05:41:34.440Z - info: [13:41:34] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:35.446Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:35.446Z - info: Rebuilding 1 pages
-2018-11-12T05:41:36.465Z - info: Pages rebuilt
-2018-11-12T05:41:36.476Z - info: Site data built
-2018-11-12T05:41:54.137Z - info: [13:41:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:55.156Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T05:41:55.156Z - info: Rebuilding 1 pages
-2018-11-12T05:41:55.635Z - info: Pages rebuilt
-2018-11-12T05:41:55.645Z - info: Site data built
-2018-11-12T06:08:10.703Z - info: [14:08:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:08:11.710Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:08:11.722Z - info: Rebuilding 1 pages
-2018-11-12T06:08:12.721Z - info: Pages rebuilt
-2018-11-12T06:08:12.846Z - info: Site data built
-2018-11-12T06:22:11.187Z - info: [14:22:11] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:22:12.202Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:22:12.232Z - info: Rebuilding 1 pages
-2018-11-12T06:22:13.086Z - info: Pages rebuilt
-2018-11-12T06:22:13.176Z - info: Site data built
-2018-11-12T06:25:10.003Z - info: [14:25:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:25:11.021Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\admin\projectGrading.md
-2018-11-12T06:25:11.037Z - info: Rebuilding 1 pages
-2018-11-12T06:25:11.931Z - info: Pages rebuilt
-2018-11-12T06:25:11.943Z - info: Site data built
-2018-11-12T07:54:31.965Z - info: Website generation started at 15:54:14
-2018-11-12T07:55:50.566Z - info: Building assets...
-2018-11-12T07:56:10.117Z - info: Assets built
-2018-11-12T07:56:10.117Z - info: Generating pages...
-2018-11-12T07:57:50.429Z - info: Pages built
-2018-11-12T07:57:51.233Z - info: Site data built
-2018-11-12T07:57:51.233Z - info: Website generation complete! Total build time: 216.375s
-2018-11-12T07:57:51.266Z - info: Generate Site durationMs=216408
-2018-11-12T07:57:52.225Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-11-12T07:57:52.225Z - info: Press CTRL+C to stop ...
+2018-11-11T16:00:54.779Z - info: Pages built
+2018-11-11T16:00:54.868Z - info: Site data built
+2018-11-11T16:00:54.869Z - info: Website generation complete! Total build time: 106.741s
+2018-11-11T16:00:54.869Z - info: Build success!
+2018-11-11T16:00:54.869Z - info: Generate Site durationMs=106741
+2018-11-11T16:02:02.162Z - info: Deployed!
