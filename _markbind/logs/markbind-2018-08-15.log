@@ -1,30 +1,20 @@
-2018-08-15T15:05:51.747Z - info: Website generation started at 23:05:48
-2018-08-15T15:05:53.074Z - info: Building assets...
-2018-08-15T15:05:54.960Z - info: Assets built
-2018-08-15T15:05:54.960Z - info: Generating pages...
-2018-08-15T15:05:55.023Z - info: Pages built
-2018-08-15T15:05:55.088Z - info: Site data built
-2018-08-15T15:05:55.088Z - info: Website generation complete! Total build time: 6.918s
-2018-08-15T15:05:55.096Z - info: Generate Site durationMs=6926
-2018-08-15T15:05:55.112Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
-2018-08-15T15:05:55.112Z - info: Press CTRL+C to stop ...
-2018-08-15T15:06:21.289Z - info: [23:06:21] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:06:22.305Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:06:22.305Z - info: Rebuilding 1 pages
-2018-08-15T15:06:22.368Z - info: Pages rebuilt
-2018-08-15T15:06:22.376Z - info: Site data built
-2018-08-15T15:06:54.760Z - info: [23:06:54] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:06:55.783Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:06:55.783Z - info: Rebuilding 1 pages
-2018-08-15T15:06:55.877Z - info: Pages rebuilt
-2018-08-15T15:06:55.877Z - info: Site data built
-2018-08-15T15:09:06.088Z - info: [23:09:06] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:09:07.104Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:09:07.104Z - info: Rebuilding 1 pages
-2018-08-15T15:09:07.119Z - info: Pages rebuilt
-2018-08-15T15:09:07.119Z - info: Site data built
-2018-08-15T15:09:26.353Z - info: [23:09:26] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:09:27.372Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\index.md
-2018-08-15T15:09:27.372Z - info: Rebuilding 1 pages
-2018-08-15T15:09:27.432Z - info: Pages rebuilt
-2018-08-15T15:09:27.440Z - info: Site data built
+2018-08-15T02:57:22.854Z - info: Website generation started at 10:56:57
+2018-08-15T02:58:05.330Z - info: Building assets...
+2018-08-15T02:58:32.026Z - info: Assets built
+2018-08-15T02:58:32.026Z - info: Generating pages...
+2018-08-15T03:00:17.252Z - info: Pages built
+2018-08-15T03:00:18.035Z - info: Site data built
+2018-08-15T03:00:18.035Z - info: Website generation complete! Total build time: 200.346s
+2018-08-15T03:00:18.053Z - info: Generate Site durationMs=200364
+2018-08-15T03:00:18.947Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-08-15T03:00:18.947Z - info: Press CTRL+C to stop ...
+2018-08-15T03:15:23.040Z - info: Website generation started at 11:15:16
+2018-08-15T03:15:56.197Z - info: Building assets...
+2018-08-15T03:16:27.717Z - info: Assets built
+2018-08-15T03:16:27.717Z - info: Generating pages...
+2018-08-15T03:18:25.351Z - info: Pages built
+2018-08-15T03:18:25.846Z - info: Site data built
+2018-08-15T03:18:25.846Z - info: Website generation complete! Total build time: 189.687s
+2018-08-15T03:18:25.846Z - info: Build success!
+2018-08-15T03:18:25.846Z - info: Generate Site durationMs=189687
+2018-08-15T03:20:04.875Z - info: Deployed!
