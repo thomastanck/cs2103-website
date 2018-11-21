@@ -934,6 +934,75 @@
     },
     {
       "headings": {
+        "java-coding-standard-basic": "Java Coding Standard (Basic)",
+        "naming": "Naming",
+        "layout": "Layout",
+        "statements": "Statements",
+        "package-and-import-statements": "Package and Import Statements",
+        "classes-and-interfaces": "Classes and Interfaces",
+        "methods": "Methods",
+        "types": "Types",
+        "variables": "Variables",
+        "loops": "Loops",
+        "conditionals": "Conditionals",
+        "comments": "Comments",
+        "references": "References",
+        "contributors": "Contributors"
+      },
+      "title": "Java Coding Standard",
+      "footer": "footer.md",
+      "head": "adminHead.md",
+      "src": "coding-standards/java/basic.mbd",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "java-coding-standard": "Java Coding Standard",
+        "naming": "Naming",
+        "layout": "Layout",
+        "statements": "Statements",
+        "package-and-import-statements": "Package and Import Statements",
+        "classes-and-interfaces": "Classes and Interfaces",
+        "methods": "Methods",
+        "types": "Types",
+        "variables": "Variables",
+        "loops": "Loops",
+        "conditionals": "Conditionals",
+        "comments": "Comments",
+        "references": "References",
+        "contributors": "Contributors"
+      },
+      "title": "Java Coding Standard",
+      "footer": "footer.md",
+      "head": "adminHead.md",
+      "src": "coding-standards/java/index.mbd",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "java-coding-standard-basic-intermediate": "Java Coding Standard (Basic + Intermediate)",
+        "naming": "Naming",
+        "layout": "Layout",
+        "statements": "Statements",
+        "package-and-import-statements": "Package and Import Statements",
+        "classes-and-interfaces": "Classes and Interfaces",
+        "methods": "Methods",
+        "types": "Types",
+        "variables": "Variables",
+        "loops": "Loops",
+        "conditionals": "Conditionals",
+        "comments": "Comments",
+        "references": "References",
+        "contributors": "Contributors"
+      },
+      "title": "Java Coding Standard",
+      "footer": "footer.md",
+      "head": "adminHead.md",
+      "src": "coding-standards/java/intermediate.mbd",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "acknowledgements": "Acknowledgements"
       },
       "title": "About: Acknowledgements",
