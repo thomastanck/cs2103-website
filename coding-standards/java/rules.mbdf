@@ -209,6 +209,8 @@ In general:
 
 - Break before an operator. This also applies to the following "*operator-like*" symbols: the dot separator `.`, the ampersand in type bounds `<T extends Foo & Bar>`, and the pipe in catch blocks `catch (FooException | BarException e)`
 
+<div class="indented-level2">
+
 ```java
 totalSum = a + b + c
           + d + e;
@@ -219,56 +221,69 @@ method(param1,
              .method2(),
        param3);
 ```
+</div>
 
 - A method or constructor name stays attached to the open parenthesis `(` that follows it.
 
-<table>
-  <tr>
-    <th align="center">Good</th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="java">
+<div class="row indented-level2">
+  <div class="col-1">
+
+{{ good }}
+  </div>
+  <div class="col">
+
+```java
 someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName(
-        int anArg, Object anotherArg);</pre>
-    </td>
-  <tr>
-    <th align="center">Bad</th>
-  </tr>
-    <td>
-      <pre lang="java">
+        int anArg, Object anotherArg);
+```
+  </div>
+</div>
+<div class="row indented-level2">
+  <div class="col-1">
+
+{{ bad }}
+  </div>
+  <div class="col">
+
+```java
 someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName
-        (int anArg, Object anotherArg);</pre>
-    </td>
-  </tr>
-</table>
+        (int anArg, Object anotherArg);
+```
+  </div>
+</div>
 
 - Prefer higher-level breaks to lower-level breaks. In the example below, the first is preferred, since the break occurs outside the parenthesized expression, which is at a higher level.
 
-<table>
-  <tr>
-    <th align="center">Good</th>
-  </tr>
-  <tr>
-    <td>
-      <pre lang="java">
-// PREFER THIS
+<div class="row indented-level2">
+  <div class="col-1">
+
+{{ good }}
+  </div>
+  <div class="col">
+
+```java
 longName1 = longName2 * (longName3 + longName4 - longName5)
-        + 4 * longname6;</pre>
-    </td>
-  <tr>
-    <th align="center">Bad</th>
-  </tr>
-    <td>
-      <pre lang="java">
-// OVER THIS
+        + 4 * longname6
+```
+  </div>
+</div>
+<div class="row indented-level2">
+  <div class="col-1">
+
+{{ bad }}
+  </div>
+  <div class="col">
+
+```java
 longName1 = longName2 * (longName3 + longName4
-        - longName5) + 4 * longname6;</pre>
-    </td>
-  </tr>
-</table>
+        - longName5) + 4 * longname6;
+```
+  </div>
+</div>
 
 - Here are two acceptable ways to format ternary expressions:
+
+<div class="indented-level2">
 
 ```java
 alpha = (aLongBooleanExpression) ? beta : gamma;
@@ -276,6 +291,7 @@ alpha = (aLongBooleanExpression)
         ? beta
         : gamma;
 ```
+</div>
 
 </div>
 
@@ -665,6 +681,7 @@ for (int i = 0; i < 10; i++) {
         sum += i * j;
     }
 }
+
 ```
   </div>
   <div class="col">

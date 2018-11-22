@@ -175,7 +175,8 @@ isSet, isVisible, isFinished, isFound, isOpen, hasData, wasOpen
           <p>Break before an operator. This also applies to the following &quot;<em>operator-like</em>&quot; symbols: the dot separator <code>.</code>, the ampersand in type bounds <code>&lt;T extends Foo &amp; Bar&gt;</code>, and the pipe in catch blocks <code>catch (FooException | BarException e)</code></p>
         </li>
       </ul>
-      <pre><code class="hljs java">totalSum = a + b + c
+      <div class="indented-level2">
+        <pre><code class="hljs java">totalSum = a + b + c
           + d + e;
 setText(<span class="hljs-string">"Long line split"</span>
          + <span class="hljs-string">"into two parts."</span>);
@@ -184,62 +185,71 @@ method(param1,
              .method2(),
        param3);
 </code></pre>
+      </div>
       <ul>
         <li>A method or constructor name stays attached to the open parenthesis <code>(</code> that follows it.</li>
       </ul>
-      <table>
-        <tr>
-          <th align="center">Good</th>
-        </tr>
-        <tr>
-          <td>
-            <pre lang="java">
-someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName(
-        int anArg, Object anotherArg);</pre>
-          </td>
-        </tr>
-        <tr>
-          <th align="center">Bad</th>
-        </tr>
-        <td>
-          <pre lang="java">
-someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName
-        (int anArg, Object anotherArg);</pre>
-        </td>
-      </table>
+      <div class="row indented-level2">
+        <div class="col-1">
+          <p>
+            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+          </p>
+        </div>
+        <div class="col">
+          <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName(
+        <span class="hljs-keyword">int</span> anArg, Object anotherArg);
+</code></pre>
+        </div>
+      </div>
+      <div class="row indented-level2">
+        <div class="col-1">
+          <p>
+            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+          </p>
+        </div>
+        <div class="col">
+          <pre><code class="hljs java">someMethodWithVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryVeryLongName
+        (<span class="hljs-keyword">int</span> anArg, Object anotherArg);
+</code></pre>
+        </div>
+      </div>
       <ul>
         <li>Prefer higher-level breaks to lower-level breaks. In the example below, the first is preferred, since the break occurs outside the parenthesized expression, which is at a higher level.</li>
       </ul>
-      <table>
-        <tr>
-          <th align="center">Good</th>
-        </tr>
-        <tr>
-          <td>
-            <pre lang="java">
-// PREFER THIS
-longName1 = longName2 * (longName3 + longName4 - longName5)
-        + 4 * longname6;</pre>
-          </td>
-        </tr>
-        <tr>
-          <th align="center">Bad</th>
-        </tr>
-        <td>
-          <pre lang="java">
-// OVER THIS
-longName1 = longName2 * (longName3 + longName4
-        - longName5) + 4 * longname6;</pre>
-        </td>
-      </table>
+      <div class="row indented-level2">
+        <div class="col-1">
+          <p>
+            <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
+          </p>
+        </div>
+        <div class="col">
+          <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4 - longName5)
+        + <span class="hljs-number">4</span> * longname6
+</code></pre>
+        </div>
+      </div>
+      <div class="row indented-level2">
+        <div class="col-1">
+          <p>
+            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+          </p>
+        </div>
+        <div class="col">
+          <pre><code class="hljs java">longName1 = longName2 * (longName3 + longName4
+        - longName5) + <span class="hljs-number">4</span> * longname6;
+</code></pre>
+        </div>
+      </div>
       <ul>
         <li>Here are two acceptable ways to format ternary expressions:</li>
       </ul>
-      <pre><code class="hljs java">alpha = (aLongBooleanExpression) ? beta : gamma;
+      <div class="indented-level2">
+        <pre><code class="hljs java">alpha = (aLongBooleanExpression) ? beta : gamma;
 alpha = (aLongBooleanExpression)
         ? beta
         : gamma;
 </code></pre>
+      </div>
     </div>
     <div class="intermediate-only">
       <p style="page-break-after: always;">&nbsp;</p>
@@ -577,6 +587,7 @@ transformation.multiply(matrix);
         sum += i * j;
     }
 }
+
 </code></pre>
         </div>
         <div class="col">
@@ -820,7 +831,7 @@ sum = <span class="hljs-number">0</span>;
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Wed, 21 Nov 2018 14:54:56 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Thu, 22 Nov 2018 10:06:52 GMT</small></div>
 </footer>
 </div>
 </body>

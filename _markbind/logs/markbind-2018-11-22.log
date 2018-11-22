@@ -1,0 +1,112 @@
+2018-11-22T08:07:09.007Z - info: Website generation started at 16:06:50
+2018-11-22T08:08:20.816Z - info: Building assets...
+2018-11-22T08:08:40.377Z - info: Assets built
+2018-11-22T08:08:40.378Z - info: Generating pages...
+2018-11-22T08:10:40.295Z - info: Pages built
+2018-11-22T08:10:41.123Z - info: Site data built
+2018-11-22T08:10:41.123Z - info: Website generation complete! Total build time: 231.081s
+2018-11-22T08:10:41.134Z - info: Generate Site durationMs=231092
+2018-11-22T08:10:42.764Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-11-22T08:10:42.764Z - info: Press CTRL+C to stop ...
+2018-11-22T08:18:26.061Z - info: [16:18:26] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:18:27.076Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:18:27.076Z - info: Rebuilding 3 pages
+2018-11-22T08:18:27.671Z - info: Pages rebuilt
+2018-11-22T08:18:27.671Z - info: Site data built
+2018-11-22T08:21:10.649Z - info: [16:21:10] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:11.652Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:11.653Z - info: Rebuilding 3 pages
+2018-11-22T08:21:11.989Z - info: Pages rebuilt
+2018-11-22T08:21:11.998Z - info: Site data built
+2018-11-22T08:21:23.277Z - info: [16:21:23] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:24.284Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:24.284Z - info: Rebuilding 3 pages
+2018-11-22T08:21:24.689Z - info: Pages rebuilt
+2018-11-22T08:21:24.694Z - info: Site data built
+2018-11-22T08:21:38.334Z - info: [16:21:38] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:39.344Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:21:39.344Z - info: Rebuilding 3 pages
+2018-11-22T08:21:39.708Z - info: Pages rebuilt
+2018-11-22T08:21:39.714Z - info: Site data built
+2018-11-22T08:22:15.409Z - info: [16:22:15] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:22:16.425Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:22:16.425Z - info: Rebuilding 3 pages
+2018-11-22T08:22:16.965Z - info: Pages rebuilt
+2018-11-22T08:22:16.968Z - info: Site data built
+2018-11-22T08:23:00.494Z - info: [16:23:00] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:23:01.502Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:23:01.503Z - info: Rebuilding 3 pages
+2018-11-22T08:23:01.905Z - info: Pages rebuilt
+2018-11-22T08:23:01.916Z - info: Site data built
+2018-11-22T08:23:13.454Z - info: [16:23:13] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:23:14.474Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:23:14.474Z - info: Rebuilding 3 pages
+2018-11-22T08:23:14.864Z - info: Pages rebuilt
+2018-11-22T08:23:14.874Z - info: Site data built
+2018-11-22T08:24:25.357Z - info: [16:24:25] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:24:26.367Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:24:26.367Z - info: Rebuilding 3 pages
+2018-11-22T08:24:26.748Z - info: Pages rebuilt
+2018-11-22T08:24:26.757Z - info: Site data built
+2018-11-22T08:25:33.557Z - info: [16:25:33] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:25:34.567Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:25:34.567Z - info: Rebuilding 3 pages
+2018-11-22T08:25:34.979Z - info: Pages rebuilt
+2018-11-22T08:25:34.990Z - info: Site data built
+2018-11-22T08:25:59.333Z - info: [16:25:59] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:26:00.353Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:26:00.353Z - info: Rebuilding 3 pages
+2018-11-22T08:26:00.903Z - info: Pages rebuilt
+2018-11-22T08:26:00.913Z - info: Site data built
+2018-11-22T08:26:43.386Z - info: [16:26:43] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:26:44.396Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:26:44.396Z - info: Rebuilding 3 pages
+2018-11-22T08:26:44.839Z - info: Pages rebuilt
+2018-11-22T08:26:44.849Z - info: Site data built
+2018-11-22T08:27:45.186Z - info: [16:27:45] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:27:46.206Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:27:46.207Z - info: Rebuilding 3 pages
+2018-11-22T08:27:46.607Z - info: Pages rebuilt
+2018-11-22T08:27:46.615Z - info: Site data built
+2018-11-22T08:28:01.696Z - info: [16:28:01] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:02.702Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:02.704Z - info: Rebuilding 3 pages
+2018-11-22T08:28:03.066Z - info: Pages rebuilt
+2018-11-22T08:28:03.076Z - info: Site data built
+2018-11-22T08:28:17.366Z - info: [16:28:17] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:18.386Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:18.386Z - info: Rebuilding 3 pages
+2018-11-22T08:28:18.835Z - info: Pages rebuilt
+2018-11-22T08:28:18.844Z - info: Site data built
+2018-11-22T08:28:37.386Z - info: [16:28:37] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:38.389Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:28:38.391Z - info: Rebuilding 3 pages
+2018-11-22T08:28:38.696Z - info: Pages rebuilt
+2018-11-22T08:28:38.706Z - info: Site data built
+2018-11-22T08:29:14.327Z - info: [16:29:14] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:15.337Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:15.337Z - info: Rebuilding 3 pages
+2018-11-22T08:29:15.726Z - info: Pages rebuilt
+2018-11-22T08:29:15.739Z - info: Site data built
+2018-11-22T08:29:20.156Z - info: [16:29:20] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:21.159Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:21.161Z - info: Rebuilding 3 pages
+2018-11-22T08:29:21.447Z - info: Pages rebuilt
+2018-11-22T08:29:21.456Z - info: Site data built
+2018-11-22T08:29:44.623Z - info: [16:29:44] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:45.626Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:45.628Z - info: Rebuilding 3 pages
+2018-11-22T08:29:46.266Z - info: Pages rebuilt
+2018-11-22T08:29:46.276Z - info: Site data built
+2018-11-22T08:29:52.696Z - info: [16:29:52] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:53.701Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:29:53.703Z - info: Rebuilding 3 pages
+2018-11-22T08:29:54.066Z - info: Pages rebuilt
+2018-11-22T08:29:54.079Z - info: Site data built
+2018-11-22T08:35:22.323Z - info: [16:35:22] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:35:23.327Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\coding-standards\java\rules.mbdf
+2018-11-22T08:35:23.328Z - info: Rebuilding 3 pages
+2018-11-22T08:35:23.725Z - info: Pages rebuilt
+2018-11-22T08:35:23.734Z - info: Site data built
+2018-11-22T10:05:51.804Z - info: Website generation started at 18:05:37
+2018-11-22T10:06:33.231Z - info: Building assets...
