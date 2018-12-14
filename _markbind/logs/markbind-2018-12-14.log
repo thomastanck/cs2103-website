@@ -1,0 +1,58 @@
+2018-12-14T03:37:11.078Z - info: Website generation started at 11:36:55
+2018-12-14T03:38:09.034Z - info: Building assets...
+2018-12-14T03:38:27.817Z - info: Assets built
+2018-12-14T03:38:27.818Z - info: Generating pages...
+2018-12-14T03:40:22.045Z - info: Pages built
+2018-12-14T03:40:22.800Z - info: Site data built
+2018-12-14T03:40:22.801Z - info: Website generation complete! Total build time: 207.119s
+2018-12-14T03:40:22.811Z - info: Generate Site durationMs=207129
+2018-12-14T03:40:23.356Z - info: Serving "C:\repos\nus-cs2103-AY1819S1\cs2103-website\_site" at http://127.0.0.1:8080
+2018-12-14T03:40:23.356Z - info: Press CTRL+C to stop ...
+2018-12-14T03:41:33.375Z - info: [11:41:33] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:41:34.387Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:41:34.387Z - info: Rebuilding 2 pages
+2018-12-14T03:41:54.601Z - info: Pages rebuilt
+2018-12-14T03:41:54.632Z - info: Site data built
+2018-12-14T03:42:28.848Z - info: [11:42:28] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:42:29.866Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:42:29.866Z - info: Rebuilding 2 pages
+2018-12-14T03:42:50.854Z - info: Pages rebuilt
+2018-12-14T03:42:50.885Z - info: Site data built
+2018-12-14T03:43:07.250Z - info: [11:43:07] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:43:08.268Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:43:08.268Z - info: Rebuilding 2 pages
+2018-12-14T03:43:28.381Z - info: Pages rebuilt
+2018-12-14T03:43:28.407Z - info: Site data built
+2018-12-14T03:43:36.557Z - info: [11:43:36] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:43:37.567Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:43:37.567Z - info: Rebuilding 2 pages
+2018-12-14T03:43:56.336Z - info: Pages rebuilt
+2018-12-14T03:43:56.358Z - info: Site data built
+2018-12-14T03:44:11.549Z - info: [11:44:11] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:44:12.565Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:44:12.565Z - info: Rebuilding 2 pages
+2018-12-14T03:44:31.460Z - info: Pages rebuilt
+2018-12-14T03:44:31.475Z - info: Site data built
+2018-12-14T03:44:43.188Z - info: [11:44:43] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:44:44.205Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:44:44.205Z - info: Rebuilding 2 pages
+2018-12-14T03:45:02.870Z - info: Pages rebuilt
+2018-12-14T03:45:02.888Z - info: Site data built
+2018-12-14T03:45:20.051Z - info: [11:45:20] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header.md
+2018-12-14T03:45:21.076Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\common\header.md
+2018-12-14T03:45:21.076Z - info: Rebuilding 59 pages
+2018-12-14T03:45:56.257Z - info: [11:45:56] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:45:56.785Z - info: [11:45:56] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:46:03.088Z - info: Pages rebuilt
+2018-12-14T03:46:03.119Z - info: Site data built
+2018-12-14T03:46:03.390Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:46:03.391Z - info: Rebuilding 2 pages
+2018-12-14T03:46:21.446Z - info: [11:46:21] Reload for file change: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:46:23.302Z - info: Pages rebuilt
+2018-12-14T03:46:23.328Z - info: Site data built
+2018-12-14T03:46:23.519Z - verbose: Rebuild affected paths: C:\repos\nus-cs2103-AY1819S1\cs2103-website\schedule\index.md
+2018-12-14T03:46:23.520Z - info: Rebuilding 2 pages
+2018-12-14T03:46:41.773Z - info: Pages rebuilt
+2018-12-14T03:46:41.795Z - info: Site data built
+2018-12-14T04:27:26.580Z - info: Website generation started at 12:27:20
+2018-12-14T04:27:47.944Z - info: Building assets...
