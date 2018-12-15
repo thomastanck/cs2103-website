@@ -2,7 +2,7 @@
   "pages": [
     {
       "headings": {
-        "full-schedule-of-module-activities": "Full Schedule of Module Activities"
+        "week-13": "Week 13"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -1027,7 +1027,6 @@
         "reading": "Reading",
         "drawing": "Drawing",
         "architecture-diagrams": "Architecture Diagrams",
-        "introduction-2": "Introduction",
         "n-tier-architectural-style": "N-tier Architectural Style",
         "client-server-architectural-style": "Client-server Architectural Style",
         "transaction-processing-architectural-style": "Transaction Processing Architectural Style",
@@ -1067,26 +1066,20 @@
         "guideline-follow-a-standard": "Guideline: Follow a Standard",
         "use-nouns-for-things-and-verbs-for-actions": "Use Nouns for Things and Verbs for Actions",
         "use-standard-words": "Use Standard Words",
-        "basic-2": "Basic",
         "use-name-to-explain": "Use Name to Explain",
         "not-too-long-not-too-short": "Not Too Long, Not Too Short",
         "avoid-misleading-names": "Avoid Misleading Names",
-        "intermediate-2": "Intermediate",
         "guideline-name-well": "Guideline: Name Well",
         "use-the-default-branch": "Use the Default Branch",
         "dont-recycle-variables-or-parameters": "Don't Recycle Variables or Parameters",
         "avoid-empty-catch-blocks": "Avoid Empty Catch Blocks",
         "delete-dead-code": "Delete Dead Code",
-        "basic-3": "Basic",
         "minimise-scope-of-variables": "Minimise Scope of Variables",
         "minimise-code-duplication": "Minimise Code Duplication",
-        "intermediate-3": "Intermediate",
         "guideline-avoid-unsafe-shortcuts": "Guideline: Avoid Unsafe Shortcuts",
         "do-not-repeat-the-obvious": "Do Not Repeat the Obvious",
         "write-to-the-reader": "Write to the Reader",
-        "basic-4": "Basic",
         "explain-what-and-why-not-how": "Explain WHAT and WHY, not HOW",
-        "intermediate-4": "Intermediate",
         "guideline-comment-minimally-but-sufficiently": "Guideline: Comment Minimally, but Sufficiently",
         "code-quality": "Code Quality"
       },
@@ -1842,7 +1835,6 @@
         "sequence-diagrams": "Sequence Diagrams",
         "objects": "Objects",
         "object-diagrams": "Object Diagrams",
-        "introduction-2": "Introduction",
         "linear-paths": "Linear Paths",
         "alternate-paths": "Alternate Paths",
         "rakes": "Rakes",

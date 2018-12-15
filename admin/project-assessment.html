@@ -107,33 +107,43 @@
   <div id="page-content">
     <div id="content-wrapper">
       <div>
-        <navbar placement="top">
-          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/cs2103-website/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/cs2103-website/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> Week 1</a></li>
+            <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> Week 2</a></li>
+            <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> Week 3</a></li>
+            <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> Week 4</a></li>
+            <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> Week 5</a></li>
+            <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> Week 6</a></li>
+            <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> Week 7</a></li>
+            <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> Week 8</a></li>
+            <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> Week 9</a></li>
+            <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> Week 10</a></li>
+            <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> Week 11</a></li>
+            <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> Week 12</a></li>
+            <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> Week 13</a></li>
           </dropdown>
-          <li><a href="/cs2103-website/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
           <li><a href="/cs2103-website/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
           <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
           <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1819s1.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
             <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
             <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
             <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
             <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
             <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
             <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
-            <li><a href="https://nus-cs2103-ay1819s1.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
           </dropdown>
           <li slot="right" class="nav-link">
             <form class="navbar-form">
@@ -193,7 +203,7 @@
                     <p><span class="dimmed"><strong><span></span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h1 id="code-quality">Code Quality<a class="fa fa-anchor" href="#code-quality"></a></h1>
+                        <p>Code Quality</p>
                       </div>
                       <div id="main">
                         <div>
@@ -201,7 +211,7 @@
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h3 id="introduction">Introduction<a class="fa fa-anchor" href="#introduction"></a></h3>
+                                  <h2 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -209,7 +219,7 @@
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="basic">Basic<a class="fa fa-anchor" href="#basic"></a></h4>
+                                        <h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -241,7 +251,7 @@
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h2 id="guideline-maximise-readability">Guideline: Maximise Readability<a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
+                                  <h2 id="guideline-maximise-readability"><span>Guideline: Maximise Readability</span><a class="fa fa-anchor" href="#guideline-maximise-readability"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -249,7 +259,7 @@
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="introduction-2">Introduction<a class="fa fa-anchor" href="#introduction-2"></a></h4>
+                                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -371,7 +381,7 @@
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="basic-2">Basic<a class="fa fa-anchor" href="#basic-2"></a></h3>
+                                        <h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -379,7 +389,7 @@
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-long-methods">Avoid Long Methods<a class="fa fa-anchor" href="#avoid-long-methods"></a></h4>
+                                              <h4 id="avoid-long-methods"><span>Avoid Long Methods</span><a class="fa fa-anchor" href="#avoid-long-methods"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -398,7 +408,7 @@
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-deep-nesting">Avoid Deep Nesting<a class="fa fa-anchor" href="#avoid-deep-nesting"></a></h4>
+                                              <h4 id="avoid-deep-nesting"><span>Avoid Deep Nesting</span><a class="fa fa-anchor" href="#avoid-deep-nesting"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -425,7 +435,7 @@
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-complicated-expressions">Avoid Complicated Expressions<a class="fa fa-anchor" href="#avoid-complicated-expressions"></a></h4>
+                                              <h4 id="avoid-complicated-expressions"><span>Avoid Complicated Expressions</span><a class="fa fa-anchor" href="#avoid-complicated-expressions"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -494,7 +504,7 @@ is_urgent = type_code == URGENT
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-magic-numbers">Avoid Magic Numbers<a class="fa fa-anchor" href="#avoid-magic-numbers"></a></h4>
+                                              <h4 id="avoid-magic-numbers"><span>Avoid Magic Numbers</span><a class="fa fa-anchor" href="#avoid-magic-numbers"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -589,7 +599,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="make-the-code-obvious">Make the Code Obvious<a class="fa fa-anchor" href="#make-the-code-obvious"></a></h4>
+                                              <h4 id="make-the-code-obvious"><span>Make the Code Obvious</span><a class="fa fa-anchor" href="#make-the-code-obvious"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -622,7 +632,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="intermediate">Intermediate<a class="fa fa-anchor" href="#intermediate"></a></h3>
+                                        <h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -630,7 +640,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="structure-code-logically">Structure Code Logically<a class="fa fa-anchor" href="#structure-code-logically"></a></h4>
+                                              <h4 id="structure-code-logically"><span>Structure Code Logically</span><a class="fa fa-anchor" href="#structure-code-logically"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -650,7 +660,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="do-not-trip-up-reader">Do Not 'Trip Up' Reader<a class="fa fa-anchor" href="#do-not-trip-up-reader"></a></h4>
+                                              <h4 id="do-not-trip-up-reader"><span>Do Not 'Trip Up' Reader</span><a class="fa fa-anchor" href="#do-not-trip-up-reader"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -676,7 +686,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="practice-kissing">Practice KISSing<a class="fa fa-anchor" href="#practice-kissing"></a></h4>
+                                              <h4 id="practice-kissing"><span>Practice KISSing</span><a class="fa fa-anchor" href="#practice-kissing"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -701,7 +711,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-premature-optimizations">Avoid Premature Optimizations<a class="fa fa-anchor" href="#avoid-premature-optimizations"></a></h4>
+                                              <h4 id="avoid-premature-optimizations"><span>Avoid Premature Optimizations</span><a class="fa fa-anchor" href="#avoid-premature-optimizations"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -730,7 +740,7 @@ MAX_SIZE = <span class="hljs-number">10</span>
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="slap-hard">SLAP Hard<a class="fa fa-anchor" href="#slap-hard"></a></h4>
+                                              <h4 id="slap-hard"><span>SLAP Hard</span><a class="fa fa-anchor" href="#slap-hard"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -767,7 +777,7 @@ displayResult();
                                                         </span></strong></span></p>
                                                   <div id="title-and-body">
                                                     <div>
-                                                      <h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4>
+                                                      <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                                                     </div>
                                                     <div id="main">
                                                       <div>
@@ -817,7 +827,7 @@ displayResult();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="advanced">Advanced<a class="fa fa-anchor" href="#advanced"></a></h3>
+                                        <h2 id="advanced"><span>Advanced</span><a class="fa fa-anchor" href="#advanced"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -825,7 +835,7 @@ displayResult();
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="make-the-happy-path-prominent">Make the Happy Path Prominent<a class="fa fa-anchor" href="#make-the-happy-path-prominent"></a></h4>
+                                              <h4 id="make-the-happy-path-prominent"><span>Make the Happy Path Prominent</span><a class="fa fa-anchor" href="#make-the-happy-path-prominent"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -897,7 +907,7 @@ exit();
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h2 id="guideline-follow-a-standard">Guideline: Follow a Standard<a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
+                                  <h2 id="guideline-follow-a-standard"><span>Guideline: Follow a Standard</span><a class="fa fa-anchor" href="#guideline-follow-a-standard"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -905,7 +915,7 @@ exit();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="introduction-3">Introduction<a class="fa fa-anchor" href="#introduction-3"></a></h4>
+                                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -954,7 +964,7 @@ exit();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="basic-3">Basic<a class="fa fa-anchor" href="#basic-3"></a></h4>
+                                        <h4 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -1027,7 +1037,7 @@ exit();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="intermediate-2">Intermediate<a class="fa fa-anchor" href="#intermediate-2"></a></h4>
+                                        <h4 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -1130,7 +1140,7 @@ exit();
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h2 id="guideline-name-well">Guideline: Name Well<a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
+                                  <h2 id="guideline-name-well"><span>Guideline: Name Well</span><a class="fa fa-anchor" href="#guideline-name-well"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -1138,7 +1148,7 @@ exit();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="introduction-4">Introduction<a class="fa fa-anchor" href="#introduction-4"></a></h4>
+                                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -1160,7 +1170,7 @@ exit();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="basic-4">Basic<a class="fa fa-anchor" href="#basic-4"></a></h3>
+                                        <h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1168,7 +1178,7 @@ exit();
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="use-nouns-for-things-and-verbs-for-actions">Use Nouns for Things and Verbs for Actions<a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions"></a></h4>
+                                              <h4 id="use-nouns-for-things-and-verbs-for-actions"><span>Use Nouns for Things and Verbs for Actions</span><a class="fa fa-anchor" href="#use-nouns-for-things-and-verbs-for-actions"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1240,7 +1250,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="use-standard-words">Use Standard Words<a class="fa fa-anchor" href="#use-standard-words"></a></h4>
+                                              <h4 id="use-standard-words"><span>Use Standard Words</span><a class="fa fa-anchor" href="#use-standard-words"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1262,7 +1272,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="intermediate-3">Intermediate<a class="fa fa-anchor" href="#intermediate-3"></a></h3>
+                                        <h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1270,7 +1280,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="use-name-to-explain">Use Name to Explain<a class="fa fa-anchor" href="#use-name-to-explain"></a></h4>
+                                              <h4 id="use-name-to-explain"><span>Use Name to Explain</span><a class="fa fa-anchor" href="#use-name-to-explain"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1372,7 +1382,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="not-too-long-not-too-short">Not Too Long, Not Too Short<a class="fa fa-anchor" href="#not-too-long-not-too-short"></a></h4>
+                                              <h4 id="not-too-long-not-too-short"><span>Not Too Long, Not Too Short</span><a class="fa fa-anchor" href="#not-too-long-not-too-short"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1391,7 +1401,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-misleading-names">Avoid Misleading Names<a class="fa fa-anchor" href="#avoid-misleading-names"></a></h4>
+                                              <h4 id="avoid-misleading-names"><span>Avoid Misleading Names</span><a class="fa fa-anchor" href="#avoid-misleading-names"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1476,7 +1486,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h2 id="guideline-avoid-unsafe-shortcuts">Guideline: Avoid Unsafe Shortcuts<a class="fa fa-anchor" href="#guideline-avoid-unsafe-shortcuts"></a></h2>
+                                  <h2 id="guideline-avoid-unsafe-shortcuts"><span>Guideline: Avoid Unsafe Shortcuts</span><a class="fa fa-anchor" href="#guideline-avoid-unsafe-shortcuts"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -1484,7 +1494,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="introduction-5">Introduction<a class="fa fa-anchor" href="#introduction-5"></a></h4>
+                                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -1503,7 +1513,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="basic-5">Basic<a class="fa fa-anchor" href="#basic-5"></a></h3>
+                                        <h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1511,7 +1521,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="use-the-default-branch">Use the Default Branch<a class="fa fa-anchor" href="#use-the-default-branch"></a></h4>
+                                              <h4 id="use-the-default-branch"><span>Use the Default Branch</span><a class="fa fa-anchor" href="#use-the-default-branch"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1546,7 +1556,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="dont-recycle-variables-or-parameters">Don't Recycle Variables or Parameters<a class="fa fa-anchor" href="#dont-recycle-variables-or-parameters"></a></h4>
+                                              <h4 id="dont-recycle-variables-or-parameters"><span>Don't Recycle Variables or Parameters</span><a class="fa fa-anchor" href="#dont-recycle-variables-or-parameters"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1588,7 +1598,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="avoid-empty-catch-blocks">Avoid Empty Catch Blocks<a class="fa fa-anchor" href="#avoid-empty-catch-blocks"></a></h4>
+                                              <h4 id="avoid-empty-catch-blocks"><span>Avoid Empty Catch Blocks</span><a class="fa fa-anchor" href="#avoid-empty-catch-blocks"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1607,7 +1617,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="delete-dead-code">Delete Dead Code<a class="fa fa-anchor" href="#delete-dead-code"></a></h4>
+                                              <h4 id="delete-dead-code"><span>Delete Dead Code</span><a class="fa fa-anchor" href="#delete-dead-code"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1629,7 +1639,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="intermediate-4">Intermediate<a class="fa fa-anchor" href="#intermediate-4"></a></h3>
+                                        <h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1637,7 +1647,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="minimise-scope-of-variables">Minimise Scope of Variables<a class="fa fa-anchor" href="#minimise-scope-of-variables"></a></h4>
+                                              <h4 id="minimise-scope-of-variables"><span>Minimise Scope of Variables</span><a class="fa fa-anchor" href="#minimise-scope-of-variables"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1664,7 +1674,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="minimise-code-duplication">Minimise Code Duplication<a class="fa fa-anchor" href="#minimise-code-duplication"></a></h4>
+                                              <h4 id="minimise-code-duplication"><span>Minimise Code Duplication</span><a class="fa fa-anchor" href="#minimise-code-duplication"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1685,7 +1695,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                                         </span></strong></span></p>
                                                   <div id="title-and-body">
                                                     <div>
-                                                      <h4 id="dry-principle">DRY Principle<a class="fa fa-anchor" href="#dry-principle"></a></h4>
+                                                      <h4 id="dry-principle"><span>DRY Principle</span><a class="fa fa-anchor" href="#dry-principle"></a></h4>
                                                     </div>
                                                     <div id="main">
                                                       <div>
@@ -1721,7 +1731,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                             <panel type="seamless" expanded="">
                               <span slot="header" class="card-title">
                                 <div>
-                                  <h2 id="guideline-comment-minimally-but-sufficiently">Guideline: Comment Minimally, but Sufficiently<a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
+                                  <h2 id="guideline-comment-minimally-but-sufficiently"><span>Guideline: Comment Minimally, but Sufficiently</span><a class="fa fa-anchor" href="#guideline-comment-minimally-but-sufficiently"></a></h2>
                                 </div>
                               </span>
                               <div>
@@ -1729,7 +1739,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h4 id="introduction-6">Introduction<a class="fa fa-anchor" href="#introduction-6"></a></h4>
+                                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                                       </div>
                                     </span>
                                     <div class="indented">
@@ -1751,7 +1761,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="basic-6">Basic<a class="fa fa-anchor" href="#basic-6"></a></h3>
+                                        <h2 id="basic"><span>Basic</span><a class="fa fa-anchor" href="#basic"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1759,7 +1769,7 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="do-not-repeat-the-obvious">Do Not Repeat the Obvious<a class="fa fa-anchor" href="#do-not-repeat-the-obvious"></a></h4>
+                                              <h4 id="do-not-repeat-the-obvious"><span>Do Not Repeat the Obvious</span><a class="fa fa-anchor" href="#do-not-repeat-the-obvious"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1787,7 +1797,7 @@ trimInput();
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="write-to-the-reader">Write to the Reader<a class="fa fa-anchor" href="#write-to-the-reader"></a></h4>
+                                              <h4 id="write-to-the-reader"><span>Write to the Reader</span><a class="fa fa-anchor" href="#write-to-the-reader"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1850,7 +1860,7 @@ trimInput();
                                   <panel type="seamless" expanded="">
                                     <span slot="header" class="card-title">
                                       <div>
-                                        <h3 id="intermediate-5">Intermediate<a class="fa fa-anchor" href="#intermediate-5"></a></h3>
+                                        <h2 id="intermediate"><span>Intermediate</span><a class="fa fa-anchor" href="#intermediate"></a></h2>
                                       </div>
                                     </span>
                                     <div>
@@ -1858,7 +1868,7 @@ trimInput();
                                         <panel type="seamless" expanded="">
                                           <span slot="header" class="card-title">
                                             <div>
-                                              <h4 id="explain-what-and-why-not-how">Explain WHAT and WHY, not HOW<a class="fa fa-anchor" href="#explain-what-and-why-not-how"></a></h4>
+                                              <h4 id="explain-what-and-why-not-how"><span>Explain WHAT and WHY, not HOW</span><a class="fa fa-anchor" href="#explain-what-and-why-not-how"></a></h4>
                                             </div>
                                           </span>
                                           <div class="indented">
@@ -1955,11 +1965,11 @@ compact(input);
                   <ul>
                     <li>
                       <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
-                        -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a><br>
-                        -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a> (will open only near the actual PE)</p>
+                        -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a><br>
+                        -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a> (will open only near the actual PE)</p>
                       <ul>
-                        <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S1/invitation">https://github.com/orgs/nus-cs2103-AY1819S1/invitation</a> to accept the invitation.</li>
-                        <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S1/forum/issues">forum</a>.</li>
+                        <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S2/invitation">https://github.com/orgs/nus-cs2103-AY1819S2/invitation</a> to accept the invitation.</li>
+                        <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>.</li>
                       </ul>
                     </li>
                     <li>
@@ -2023,8 +2033,8 @@ compact(input);
                         <li>
                           <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
                           <ul>
-                            <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe-dry-run/issues">nus-cs2103-AY1819S1/<strong>pe-dry-run</strong></a>.</li>
-                            <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S1/pe/issues">nus-cs2103-AY1819S1/<strong>pe</strong></a>.</li>
+                            <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a>.</li>
+                            <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a>.</li>
                           </ul>
                         </li>
                         <li>
@@ -2150,7 +2160,7 @@ compact(input);
                   </li>
                 </ol>
                 <h4 id="processing-pe-bug-reports">Processing PE Bug Reports:<a class="fa fa-anchor" href="#processing-pe-bug-reports"></a></h4>
-                <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S1/pe-results/issues">bug reports</a> you received.</p>
+                <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S2/pe-results/issues">bug reports</a> you received.</p>
                 <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
                 <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
                 <tip-box>
@@ -2303,7 +2313,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Fri, 14 Dec 2018 04:28:04 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Sat, 15 Dec 2018 11:31:46 GMT</small></div>
 </footer>
 </div>
 </body>

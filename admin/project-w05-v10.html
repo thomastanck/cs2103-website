@@ -107,33 +107,43 @@
   <div id="page-content">
     <div id="content-wrapper">
       <div>
-        <navbar placement="top">
-          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Aug '18</small></a>
-          <dropdown text="Nested" class="nav-link">
-            <li><a href="/cs2103-website/index.html" class="dropdown-item"> <span class="fas fa-check"></span> Nested (current format)</a></li>
-            <li><a href="/cs2103-website/index-flat.html" class="dropdown-item">&nbsp;&nbsp;&nbsp;&nbsp;Flat</a></li>
+        <navbar placement="top" type="inverse">
+          <a slot="brand" href="/cs2103-website/index.html" title="Home" class="navbar-brand">CS2103/T <small>Jan '19</small></a>
+          <dropdown text="Schedule" class="nav-link">
+            <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> Week 1</a></li>
+            <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> Week 2</a></li>
+            <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> Week 3</a></li>
+            <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> Week 4</a></li>
+            <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> Week 5</a></li>
+            <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> Week 6</a></li>
+            <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> Week 7</a></li>
+            <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> Week 8</a></li>
+            <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> Week 9</a></li>
+            <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> Week 10</a></li>
+            <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> Week 11</a></li>
+            <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> Week 12</a></li>
+            <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> Week 13</a></li>
           </dropdown>
-          <li><a href="/cs2103-website/index.html" class="nav-link"><span><strong>Schedule</strong></span></a></li>
           <li><a href="/cs2103-website/se-book-adapted/index.html" target="_blank" class="nav-link"><span><strong>Textbook</strong></span></a></li>
           <li><a href="/cs2103-website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
           <dropdown text="Links" class="nav-link">
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
-            <li><a href="https://nus-cs2103-ay1819s1.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"> <span class="fas fa-bug"></span> Report Bugs</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.slack.com" target="_blank" class="dropdown-item"><span class="fab fa-slack-hash"></span> Slack</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/forum/issues" target="_blank" class="dropdown-item"><span class="fas fa-comment"></span> Forum</a></li>
             <li><a href="/cs2103-website/admin/instructors.html" class="dropdown-item"><span class="fas fa-user-tie"></span> Instructors</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/Announcement/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Announcements</a></li>
             <li><a href="https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db" target="_blank" class="dropdown-item"><span class="fas fa-file-upload"></span> File Submissions</a></li>
             <li><a href="/cs2103-website/admin/tutorials.html" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Tutorial Schedule</a></li>
             <li><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true" target="_blank" class="dropdown-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Team IDs</a></li>
             <li><a href="/cs2103-website/coding-standards/java/intermediate.html" target="_blank" class="dropdown-item"><span class="fas fa-code"></span> Java Coding Standard</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
-            <li><a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/samplerepo-things" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> samplerepo-things</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level1" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level1</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level2" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level2</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level3" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level3</a></li>
+            <li><a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4" target="_blank" class="dropdown-item"><span class="fas fa-code-branch"></span> Addressbook-level4</a></li>
             <li><a href="/cs2103-website/admin/projectList.html" class="dropdown-item"><span class="fas fa-th-list"></span> Projects List</a></li>
             <li><a href="/cs2103-website/admin/reposenseConfigTemplates.html" class="dropdown-item"><span class="fas fa-th-list"></span> config.json templates for Reposense</a></li>
-            <li><a href="https://nus-cs2103-ay1819s1.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
+            <li><a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard" target="_blank" class="dropdown-item"><span class="fas fa-chart-area"></span> Project Code Dashboard (BETA)</a></li>
           </dropdown>
           <li slot="right" class="nav-link">
             <form class="navbar-form">
@@ -285,7 +295,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="brainstorming">Brainstorming<a class="fa fa-anchor" href="#brainstorming"></a></h4>
+                        <h4 id="brainstorming"><span>Brainstorming</span><a class="fa fa-anchor" href="#brainstorming"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -330,7 +340,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="introduction">Introduction<a class="fa fa-anchor" href="#introduction"></a></h4>
+                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -508,7 +518,7 @@
                         <ul>
                           <li>Create a GitHub organization with the following details:
                             <ul>
-                              <li><mark>Organization name : <code>CS2103-AY1819S1-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S1-W12-1</code></li>
+                              <li><mark>Organization name : <code>CS2103-AY1819S2-TEAM_ID</code></mark>. e.g.  <code>CS2103-AY1819S2-W12-1</code></li>
                               <li>Plan:  Open Source ($0/month)</li>
                             </ul>
                           </li>
@@ -524,13 +534,13 @@
                         <h2 id="repo-setup">Repo setup<a class="fa fa-anchor" href="#repo-setup"></a></h2>
                         <p>Only one team member:</p>
                         <ol>
-                          <li><strong>Fork</strong> <a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4">Address Book Level 4</a> to your team org.</li>
+                          <li><strong>Fork</strong> <a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4">Address Book Level 4</a> to your team org.</li>
                           <li><mark><strong>Rename</strong> the forked repo as <code>main</code></mark>. This repo (let's call it the <em>team repo</em>) is to be used as the repo for your project.</li>
                           <li><mark>Ensure the issue tracker of your team repo is enabled.</mark> <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.</span></li>
                           <li>Ensure your team members have the desired level of access to your team repo.</li>
-                          <li><a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
-                          <li><a href="https://nus-cs2103-ay1819s1.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available via the URL <code>https://nus-cs2103-ay1819s1-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s1-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
-                          <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1819S1/addressbook-level4">nus-cs2103-AY1819S1/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[T09-2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
+                          <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
+                          <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available via the URL <code>https://nus-cs2103-ay1819s2-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s2-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
+                          <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4">nus-cs2103-AY1819S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[T09-2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
                         </ol>
                         <p>All team members:</p>
                         <ol>
@@ -752,7 +762,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="introduction-2">Introduction<a class="fa fa-anchor" href="#introduction-2"></a></h4>
+                        <h4 id="introduction"><span>Introduction</span><a class="fa fa-anchor" href="#introduction"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -831,7 +841,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="non-functional-requirements">Non-Functional Requirements<a class="fa fa-anchor" href="#non-functional-requirements"></a></h4>
+                        <h4 id="non-functional-requirements"><span>Non-Functional Requirements</span><a class="fa fa-anchor" href="#non-functional-requirements"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -905,7 +915,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="what">What<a class="fa fa-anchor" href="#what"></a></h4>
+                        <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -935,7 +945,7 @@
                           </span></strong></span></p>
                     <div id="title-and-body">
                       <div>
-                        <h4 id="product-surveys">Product Surveys<a class="fa fa-anchor" href="#product-surveys"></a></h4>
+                        <h4 id="product-surveys"><span>Product Surveys</span><a class="fa fa-anchor" href="#product-surveys"></a></h4>
                       </div>
                       <div id="main">
                         <div>
@@ -956,7 +966,7 @@
                 <p><strong>User Guide</strong>:<br>
                   Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.</p>
                 <ul>
-                  <li>We recommend that you follow the existing <a href="https://nus-CS2103-ay1819s1.github.io/addressbook-level4/UserGuide.html">AB4 User Guide</a> in terms of structure and format.</li>
+                  <li>We recommend that you follow the existing <a href="https://nus-CS2103-ay1819s2.github.io/addressbook-level4/UserGuide.html">AB4 User Guide</a> in terms of structure and format.</li>
                   <li>As this is a very rough draft and the final version will be in a different format altogether <span class="dimmed">(i.e., in asciidoc format)</span>, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.</li>
                   <li>Do try to come up with concrete command syntax for feature that you would implement (at least for those that you will implement by v1.4).</li>
                   <li>Consider including some UI mock-ups too <span class="dimmed">(they can be hand-drawn or created using a tool such as PowerPoint or <a href="https://balsamiq.com/">Balsamiq</a>)</span>.</li>
@@ -1004,7 +1014,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Fri, 14 Dec 2018 04:28:04 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.14.1</a> at Sat, 15 Dec 2018 11:31:46 GMT</small></div>
 </footer>
 </div>
 </body>
