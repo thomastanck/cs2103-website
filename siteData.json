@@ -2,7 +2,8 @@
   "pages": [
     {
       "headings": {
-        "week-13": "Week 13"
+        "week-1-jan-14": "Week 1 [Jan 14]",
+        "week-2-jan-21": "Week 2 [Jan 21]"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -1014,7 +1015,7 @@
       "headings": {
         "software-engineering-for-self-directed-learners-cs2103t-edition-2018": "Software Engineering for Self-Directed Learners CS2103/T edition - 2018"
       },
-      "title": "Software Engineering for Self-Directed Learners [CS2103/T Version]",
+      "title": "Textbook",
       "footer": "footer.md",
       "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/index.md",

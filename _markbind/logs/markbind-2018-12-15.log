@@ -19423,3 +19423,11 @@ Missing reference in C:\repos\nus-cs2103-AY1819S1\cs2103-website\book\book\uml\c
 2018-12-15T11:18:29.518Z - info: Press CTRL+C to stop ...
 2018-12-15T11:31:37.084Z - info: Website generation started at 19:31:30
 2018-12-15T11:31:39.606Z - info: Building assets...
+2018-12-15T11:31:46.469Z - info: Assets built
+2018-12-15T11:31:46.470Z - info: Generating pages...
+2018-12-15T11:32:51.337Z - info: Pages built
+2018-12-15T11:32:51.571Z - info: Site data built
+2018-12-15T11:32:51.572Z - info: Website generation complete! Total build time: 80.859s
+2018-12-15T11:32:51.572Z - info: Build success!
+2018-12-15T11:32:51.573Z - info: Generate Site durationMs=80860
+2018-12-15T11:34:17.121Z - info: Deployed!
