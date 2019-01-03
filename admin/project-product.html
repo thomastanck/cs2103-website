@@ -39,7 +39,6 @@
         <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
-            <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
           </ul>
@@ -174,15 +173,13 @@
           <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Contstraints → More info about the 'CLI app' requirement  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectProduct-constraintCli">
               <div>
               <ul>
-                <li><strong>Constraint-CLI</strong>: Command Line Interface is the primary mode of input. The GUI should be used primarily to give visual feedback to the user rather than to collect input. Some minimal use of mouse is OK (e.g. to click the minimize button), but the primary input should be command-driven.
+                <li><strong>Recommendation-CLI-First</strong>: As per <em>Constraint-Typing-Preferred</em>, the input to the app needs to be primarily CLI. The GUI can be used to give visual feedback to the user rather than to collect input. While we don't prohibit non-CLI inputs, note that such inputs will reduce the suitability of the product to target users, which will be graded under the <em>product design</em> criterion.<br>
+                  Some suggestions:
                   <ul>
-                    <li>Mouse actions should have keyboard alternatives.</li>
-                    <li>Typing is preferred over key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.</li>
+                    <li>Give keyboard alternatives to mouse/GUI inputs, if any.</li>
+                    <li>Regular typing is usually faster than using key combinations. Design the app in a way that you can do stuff faster by typing compared to mouse actions or key combinations.</li>
                     <li>
-                      <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are preferred over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you should also provide a one-shot equivalent for regular users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span>
-                    </li>
-                    <li>
-                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> While we don't prohibit <tooltip content="i.e. no CLI equivalent">GUI-only</tooltip> features, such features will be ignored during grading.
+                      <tooltip content="typing the full command and hitting ENTER will complete the task">One-shot commands</tooltip> are faster over <tooltip content="prompting the user to input one parameter at a time">multi-step commands</tooltip>. If you provide a multi-step command to help new users, you can also provide a one-shot equivalent for regular/expert users. <span class="dimmed"> Reason: We want the user to be able to accomplish tasks faster using CLI than a GUI; having to enter commands part-by-part will slow down the user.</span>
                     </li>
                   </ul>
                 </li>
@@ -203,7 +200,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>

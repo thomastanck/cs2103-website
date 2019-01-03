@@ -39,7 +39,6 @@
         <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
-            <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
           </ul>
@@ -164,7 +163,7 @@
         <div id="main">
           <p>Note that project grading is <mark>not competitive (not bell curved)</mark>. CS2103T projects will be assessed separately from CS2103 projects. This is to account for the perceived difference in workload. Given below is the marking scheme.</p>
           <p><strong>Total</strong>: 50 marks (<span class="fas fa-user"></span> 40 individual marks + <span class="fas fa-users"></span> 10 team marks)</p>
-          <panel header="1. **Product features** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
+          <panel header="1. **Product design** %%[<span class='fas fa-users'></span> 5 marks]%%" expanded="">
             <p>Evaluates: How well do your features fit together to form a cohesive product (not how many features or how big the features are)?</p>
             <p>Based on: user guide and the product demo. The <strong>quality of the demo will be factored in</strong> as well.</p>
             <p>💡 Feature that fit well with the other features will earn more marks.</p>
@@ -1935,317 +1934,28 @@ compact(input);
               <p></p>
             </panel>
             <p></p>
-            <p><strong>B. Depth and completeness of your feature</strong></p>
+            <p><strong>B. Quality of your feature(s)</strong></p>
           </panel>
           <panel header="3. **QA** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
             <p>Evaluates: How good is your Quality Assurance?</p>
-            <p>Based on: 1. your test code 2. our own manual testing 3. your performance in the v1.4 <a href="/cs2103-website/admin/index-flat.html#deliverable-practical-exam">Practical Exam</a>, 4. bugs found during PE.</p>
-            <div class="flat">
-              <div>
-                <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-Pe">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Deliverables → Practical Exam</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
-              </div>
-            </div>
-            <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Deliverables → Practical Exam  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectAssessment-Pe">
-                <div>
-                <p><strong>Objectives:</strong></p>
-                <ul>
-                  <li>Evaluate your manual testing skills, product evaluation skills, effort estimation skills</li>
-                  <li>Peer-evaluate your product design <span class="dimmed"><span class="fas fa-users"></span></span>, implementation effort <span class="dimmed"><span class="fas fa-user"></span></span>, documentation quality <span class="dimmed"><span class="fas fa-user"></span></span></li>
-                </ul>
-                <p><strong>When, where</strong>: Week 13 lecture</p>
-                <p>
-                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>:
-                </p>
-                <ul>
-                  <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-                  <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed">Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.</span></li>
-                  <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
-                </ul>
-                <div>
-                  <p><strong>Preparation</strong>:</p>
-                  <ul>
-                    <li>
-                      <p>Ensure that <strong>you can access the relevant issue tracker</strong> given below:<br>
-                        -- for PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a><br>
-                        -- for PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a> (will open only near the actual PE)</p>
-                      <ul>
-                        <li><mark>These are private repos!</mark>. If you cannot access the relevant repo, you may not have accepted the invitation to join the GitHub org used by the module. Go to <a href="https://github.com/orgs/nus-cs2103-AY1819S2/invitation">https://github.com/orgs/nus-cs2103-AY1819S2/invitation</a> to accept the invitation.</li>
-                        <li>If you cannot find the invitation, post in our <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">forum</a>.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p>Ensure you have access to a <strong>computer that is able to run module projects</strong> <span class="dimmed"> e.g. has the right Java version</span>.</p>
-                    </li>
-                    <li>
-                      <p><strong>Have a good screen grab tool</strong> with annotation features so that you can quickly take a screenshot of a bug, annotate it, and post in the issue tracker.</p>
-                      <ul>
-                        <li>💡 You can use <kbd>Ctrl</kbd>+<kbd>V</kbd> to paste a picture from the clipboard into a text box in GitHub issue tracker.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p><strong>Charge your computer</strong> before coming to the PE session. The testing venue may not have enough charging points.</p>
-                    </li>
-                  </ul>
-                </div>
-                <p><strong>During:</strong></p>
-                <ol>
-                  <li><strong>Take note of your team to test</strong>. It will be given to you by the teaching team (distributed via IVLE gradebook).</li>
-                  <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed">(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
-                  <li><strong>[~40 minutes] Test the product and report bugs</strong> as described below:</li>
-                </ol>
-                <div class="indented-level2">
-                  <div>
-                    <box>
-                      <h5 id="testing-instructions-for-pe-and-pe-dry-run">Testing instructions for PE and PE Dry Run<a class="fa fa-anchor" href="#testing-instructions-for-pe-and-pe-dry-run"></a></h5>
-                      <ul>
-                        <li>
-                          <p><strong>What to test</strong>:</p>
-                          <ul>
-                            <li>PE Dry Run (at <strong>v1.3</strong>):
-                              <ul>
-                                <li>Test the product <mark>based on the User Guide</mark> (the UG is most likely accessible using the <code>help</code> command).</li>
-                                <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
-                              </ul>
-                            </li>
-                            <li>PE (at <strong>v1.4</strong>):
-                              <ul>
-                                <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>What not to test</strong>:</p>
-                          <ul>
-                            <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-                            <li>Omit feature that existed in AB-4.</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>These are considered <em>bugs</em></strong>:</p>
-                          <ul>
-                            <li>Behavior differs from the User Guide</li>
-                            <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
-                            <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
-                            <li>Problems in the User Guide e.g., missing/incorrect info</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>Where to report bugs</strong>: Post bug in the following issue trackers (<mark>not in the team's repo</mark>):</p>
-                          <ul>
-                            <li>PE Dry Run (at <strong>v1.3</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe-dry-run/issues">nus-cs2103-AY1819S2/<strong>pe-dry-run</strong></a>.</li>
-                            <li>PE (at <strong>v1.4</strong>): <a href="https://github.com/nus-cs2103-AY1819S2/pe/issues">nus-cs2103-AY1819S2/<strong>pe</strong></a>.</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>Bug report format</strong>:</p>
-                          <ul>
-                            <li>
-                              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Post bugs as you find them <span class="dimmed">(i.e., do not wait to post all bugs at the end)</span> because the issue tracker will close exactly at the end of the allocated time.
-                            </li>
-                            <li><mark>Do not use team ID in bug reports</mark>. <span class="dimmed">Reason: to prevent others copying your bug reports</span></li>
-                            <li>Each bug should be a separate issue.</li>
-                            <li>Write good quality bug reports; <mark>poor quality or incorrect bug reports will not earn credit</mark>.</li>
-                            <li>Use a descriptive title.</li>
-                            <li>Give a good description of the bug with <mark>steps to reproduce and screenshots</mark>.</li>
-                            <li>Assign a severity to the bug report. Bug report without a priority label are considered <code>severity.Low</code> (lower severity bugs earn lower credit):</li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <div class="indented-level4">
-                        <div>
-                          <tip-box>
-                            <p><strong>Bug Severity</strong> labels:</p>
-                            <ul>
-                              <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                              <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                              <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
-                            </ul>
-                          </tip-box>
-                        </div>
-                      </div>
-                      <ul>
-                        <li>
-                          <p><strong>About posting <em>suggestions</em>:</strong></p>
-                          <ul>
-                            <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                            <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>If the product doesn't work at all:</strong> If the product fails catastrophically <span class="dimmed">e.g., cannot even launch</span>, you can test the <em>fallback</em> team allocated to you. But in this case <mark>you must inform us immediately after the session</mark> so that we can send your bug reports to the correct team.</p>
-                        </li>
-                      </ul>
-                    </box>
-                  </div>
-                </div>
-                <ol>
-                  <li>
-                    <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
-                    <ul>
-                      <li>
-                        <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
-                        <ul>
-                          <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                          <li><code>low</code>: One of these
-                            <ul>
-                              <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                              <li>target user and/or value proposition not clear from the user guide</li>
-                              <li>features don't seem to fit together for the most part</li>
-                            </ul>
-                          </li>
-                          <li><code>medium</code>: Some features fit together but some don't.</li>
-                          <li><code>high</code>: All features fit together but the features are not very high value to the target user.</li>
-                          <li><code>excellent</code>: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
-                        <ul>
-                          <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
-                          <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
-                          <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                          <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
-                          <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either). Understandable to the target end user.</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
-                        <ul>
-                          <li><code>unable to judge</code>: One of these
-                            <ul>
-                              <li>less than 0.5 pages worth of content.</li>
-                              <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span>.</li>
-                            </ul>
-                          </li>
-                          <li><code>low</code>: One of these
-                            <ul>
-                              <li>Very small amount of content (i.e., 0.5 - 1 page).</li>
-                              <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
-                              <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
-                              <li>Multiple notation errors in UML diagrams.</li>
-                            </ul>
-                          </li>
-                          <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span>.</li>
-                          <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
-                          <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
-                        <ul>
-                          <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                          <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
-                          <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
-                          <li><code>high</code>: One of the below
-                            <ul>
-                              <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span>.</li>
-                              <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span>.</li>
-                            </ul>
-                          </li>
-                          <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span>.</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
-                        <ul>
-                          <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                          <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best-guess judgement call based on the available info.</li>
-                          <li>
-                            <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ol>
-                <h4 id="processing-pe-bug-reports%3A">Processing PE Bug Reports:<a class="fa fa-anchor" href="#processing-pe-bug-reports%3A"></a></h4>
-                <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S2/pe-results/issues">bug reports</a> you received.</p>
-                <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
-                <p>Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.</p>
-                <tip-box>
-                  <p><strong>Instructions for Reviewing Bug Reports</strong></p>
-                  <ul>
-                    <li>
-                      <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
-                    </li>
-                    <li>
-                      <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
-                    </li>
-                    <li>
-                      <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, <mark>use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of</mark>. Duplicates can be omitted from processing steps given below.</p>
-                    </li>
-                    <li>
-                      <p><strong>If a bug seems to be for a different product</strong> (i.e. wrongly assigned to your team), let us know (email prof).</p>
-                    </li>
-                    <li>
-                      <p><strong>Decide if it is a real bug and apply ONLY one of these labels</strong>.</p>
-                    </li>
-                  </ul>
-                  <div class="indented">
-                    <box>
-                      <p>Response Labels:</p>
-                      <ul>
-                        <li><code>response.Accepted</code>: You accept it as a bug.</li>
-                        <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
-                        <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
-                        <li><code>response.IssueUnclear</code>: The issue description is not clear.</li>
-                      </ul>
-                    </box>
-                  </div>
-                  <ul>
-                    <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
-                  </ul>
-                  <div class="indented">
-                    <box>
-                      <p>Bug Type Labels:</p>
-                      <ul>
-                        <li><code>type.FunctionalityBug</code> : the bug is a flaw in how the product works.</li>
-                        <li><code>type.DocumentationBug</code> : the bug is in the documentation.</li>
-                      </ul>
-                    </box>
-                  </div>
-                  <ul>
-                    <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
-                  </ul>
-                  <div class="indented">
-                    <div>
-                      <tip-box>
-                        <p><strong>Bug Severity</strong> labels:</p>
-                        <ul>
-                          <li><code>severity.Low</code> : A flaw that is unlikely to affect normal operations of the product. Appears only in very rare situations and causes a minor inconvenience only.</li>
-                          <li><code>severity.Medium</code> : A flaw that causes occasional inconvenience to some users but they can continue to use the product.</li>
-                          <li><code>severity.High</code> : A flaw that affects most users and causes major problems for users. i.e., makes the product almost unusable for most users.</li>
-                        </ul>
-                      </tip-box>
-                    </div>
-                  </div>
-                  <ul>
-                    <li>
-                      <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
-                    </li>
-                    <li>
-                      <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
-                    </li>
-                  </ul>
-                </tip-box>
-              </div>
-            </modal>
-            <p>
-              <panel src="/cs2103-website\admin\project-deliverables._include_.html#project-deliverables-practicalexam" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Deliverables → Practical Exam  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="project-deliverables-practicalexam"></panel>
-            </p>
-            <panel type="seamless" header="Expectations for writing automated tests:" expanded="">
-              <div>
-                <ul>
-                  <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
-                  <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
-                  <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                  <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
-                </ul>
-              </div>
-            </panel>
+            <p>Based on:</p>
+            <ol>
+              <li><strong>bugs you found</strong> in the v1.4 <a href="/cs2103-website/admin/project-deliverables.html#deliverable%3A-practical-exam">Practical Exam</a></li>
+              <li><strong>bugs in your work</strong> found by others during the PE</li>
+              <li><strong>testability of your feature</strong> <span class="dimmed">(you will lose marks if testers feel that your feature is hard to test manually)</span></li>
+              <li><strong>your test code</strong> <span class="dimmed">(you will lose marks if you don't meet <trigger trigger="click" for="modal:projectAssessmentQA-testingExpectations">our expectations for automated testing</trigger>)</span></li>
+              <li>our own manual testing (when necessary)</li>
+            </ol>
           </panel>
+          <modal large="" title="Our expectations for automated testing in the project" id="modal:projectAssessmentQA-testingExpectations">
+              <div>
+              <ul>
+                <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
+                <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
+                <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
+              </ul>
+            </div>
+          </modal>
           <panel header="4. **Documentation** %%[<span class='fas fa-user'></span> 10 marks]%%" expanded="">
             <p>Evaluates: How good are the sections you wrote for the user guide and the developer guide?</p>
             <p>Based on: the relevant sections of your project portfolio. Criteria considered:</p>
@@ -2271,15 +1981,15 @@ compact(input);
                 <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
                 <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
               </ul>
-              <p><strong>B. Team-based tasks</strong>:</p>
-              <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="/cs2103-website/admin/index-flat.html#scope-example-team-tasks">team-based tasks</a></span></p>
+              <p><strong>B. Team-tasks</strong>:</p>
+              <p>Evaluates: How much did you contribute to team-tasks?</p>
               <p>Based on: peer evaluations and tutor observations</p>
               <div class="flat">
                 <div>
-                  <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-exmapleTeamTasks">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope → Examples of team tasks</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+                  <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-exmapleTeamTasks">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope → Examples of team-tasks</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
                 </div>
               </div>
-              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectAssessment-exmapleTeamTasks">
+              <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team-tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectAssessment-exmapleTeamTasks">
                   <div>
                   <p>Here is a non-exhaustive list of team-tasks:</p>
                   <ol>
@@ -2293,13 +2003,13 @@ compact(input);
                     <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
                     <li>Maintaining the issue tracker</li>
                     <li>Release management</li>
-                    <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                    <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
                     <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
                   </ol>
                 </div>
               </modal>
               <p>
-                <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="example-team-tasks"></panel>
+                <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team-tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="example-team-tasks"></panel>
               </p>
             </div>
           </panel>
@@ -2314,7 +2024,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>

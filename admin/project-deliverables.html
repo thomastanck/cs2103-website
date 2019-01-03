@@ -39,7 +39,6 @@
         <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
-            <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
           </ul>
@@ -166,21 +165,21 @@
           <ul>
             <li>Product
               <ul>
-                <li><a href="#deliverable-executable">Executable</a></li>
-                <li><a href="#deliverable-source-code">Source code</a></li>
+                <li><a href="#deliverable%3A-executable">Executable</a></li>
+                <li><a href="#deliverable%3A-source-code">Source code</a></li>
               </ul>
             </li>
             <li>Documentation
               <ul>
-                <li><a href="#deliverable-user-guide-ug">User Guide</a></li>
-                <li><a href="#deliverable-developer-guide-dg">Developer Guide</a></li>
-                <li><a href="#deliverable-product-website">Product Website</a></li>
-                <li><a href="#deliverable-project-portfolio-page-ppp">Project Portfolio Page</a></li>
+                <li><a href="#deliverable%3A-user-guide-ug">User Guide</a></li>
+                <li><a href="#deliverable%3A-developer-guide-dg">Developer Guide</a></li>
+                <li><a href="#deliverable%3A-product-website">Product Website</a></li>
+                <li><a href="#deliverable%3A-project-portfolio-page-ppp">Project Portfolio Page</a></li>
               </ul>
             </li>
-            <li><a href="#deliverable-demo">Product Demo</a></li>
-            <li><a href="#deliverable-practical-exam-dry-run">Practical Exam Dry Run</a></li>
-            <li><a href="#deliverable-practical-exam">Practical Exam</a>
+            <li><a href="#deliverable%3A-demo">Product Demo</a></li>
+            <li><a href="#deliverable%3A-practical-exam-dry-run">Practical Exam Dry Run</a></li>
+            <li><a href="#deliverable%3A-practical-exam">Practical Exam</a>
               <ul>
                 <li>Peer testing results</li>
                 <li>Peer evaluation</li>
@@ -219,7 +218,7 @@
             <ul>
               <li>The Developer Guide (DG) of the product should match the proposed v2.0 of the product and should be in sync with the current version of the product.</li>
               <li>
-                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>The appendix named <em>Instructions for Manual Testing</em></strong> of the Developer Guide should include testing instructions to <strong>cover the main enhancement of each team member</strong>. There is no need to add testing instructions for existing features if you did not touch them.<br>
+                <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>The appendix named <em>Instructions for Manual Testing</em></strong> of the Developer Guide should include testing instructions to <strong>cover the features of each team member</strong>. There is no need to add testing instructions for existing features if you did not touch them.<br>
                 💡 What to include in the appendix <em>Instructions for Manual Testing</em>? This appendix is meant to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app. There is no need to give a long list of test cases including all possible variations. It is upto the tester to come up with those variations. However, if the instructions are inaccurate or deliberately misses/mis-states information to make testing harder <span class="dimmed"> i.e. annoys the tester</span>, the tester can report it as a bug <span class="dimmed"> (because flaws in developer docs are considered as bugs)</span>.
               </li>
               <li>Ensure the parted DG parts included in PPPs match the product precisely, as PPPs will be used by peer evaluators (and <mark>any inaccuracy in the content will be considered bugs</mark>).</li>
@@ -229,7 +228,37 @@
           <span id="project-deliverables-website">
             <ul>
               <li>Include an updated version of the online UG and DG that match v1.4 executable</li>
-              <li>README : <mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
+              <li>README :
+                <ul>
+                  <li><mark>Ensure the <code>Ui.png</code> matches the current product</mark></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="indented-level3" id="tips-for-product-screenshot">
+              <box>
+                <p>💡 <strong>Some common sense tips for a good product screenshot</strong></p>
+                <p><code>Ui.png</code> represents your product in its full glory.</p>
+                <ul>
+                  <li>Before taking the screenshot, populate the product with data that makes the product look good. For example, if the product is supposed to show photos, use real photos instead of dummy placeholders.</li>
+                  <li>It should show a state in which the product is well-populated <span class="dimmed">i.e., don't leave data panels largely blank</span></li>
+                  <li>Choose a state that showcase the main features of the product <span class="dimmed">i.e., the login screen is not usually a good choice</span></li>
+                  <li>Avoid annotations (arrows, callouts, explanatory text etc.); it should look like the product is being in use for real.</li>
+                </ul>
+                <panel type="seamless" header="Examples">
+                  <tabs>
+                      <tab header="Not Good">
+                      <img src="/cs2103-website/admin/images/Ui-notGood1.png" width="600"></tab>
+                      <tab header="Not Good">
+                      <img src="/cs2103-website/admin/images/Ui-notGood2.png" width="600"></tab>
+                    <tab header="Good">
+                      <img src="/cs2103-website/admin/images/Ui-good1.png" width="600"></tab>
+                      <tab header="Good">
+                      <img src="/cs2103-website/admin/images/Ui-good2.png" width="600"></tab>
+                  </tabs>
+                </panel>
+              </box>
+            </div>
+            <ul>
               <li>AboutUs : Ensure the following:
                 <ul>
                   <li>Use a suitable profile photo</li>
@@ -278,10 +307,9 @@
                     <p><strong>Summary of Contributions</strong>:</p>
                     <ul>
                       <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                      <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                      <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                       <li><strong>Other contributions:</strong>
                         <ul>
-                          <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                           <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                           <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                           <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -308,13 +336,7 @@
                     <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                   </li>
                   <li>
-                    <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                    <blockquote>
-                      <ul>
-                        <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                        <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                      </ul>
-                    </blockquote>
+                    <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                   </li>
                   <li>
                     <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -324,37 +346,43 @@
                         <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                       </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                   </li>
-                  <li>
-                    <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                    <div class="table-responsive">
-                      <table class="markbind-table table table-bordered table-striped">
-                        <thead>
-                          <tr>
-                            <th>Content</th>
-                            <th>Limit</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Overview + Summary of contributions</td>
-                            <td>0.5-1</td>
-                          </tr>
-                          <tr>
-                            <td>Contributions to the User Guide</td>
-                            <td>1-3</td>
-                          </tr>
-                          <tr>
-                            <td>Contributions to the Developer Guide</td>
-                            <td>3-6</td>
-                          </tr>
-                          <tr>
-                            <td>Total</td>
-                            <td>5-10</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><strong>Page limit</strong>:</p>
+                <div class="table-responsive">
+                  <table class="markbind-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Content</th>
+                        <th>Limit</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Overview + Summary of contributions</td>
+                        <td>0.5-1 (soft limit)</td>
+                      </tr>
+                      <tr>
+                        <td>Contributions to the User Guide</td>
+                        <td>1-3 (soft limit)</td>
+                      </tr>
+                      <tr>
+                        <td>Contributions to the Developer Guide</td>
+                        <td>3-6 (soft limit)</td>
+                      </tr>
+                      <tr>
+                        <td>Total</td>
+                        <td>5-10 <mark>(strict)</mark></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul>
+                  <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                  <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                    If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                    <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                 </ul>
               </li>
             </ul>
@@ -376,8 +404,7 @@
                   <li>It is recommended you showcase how the feature improves the user’s life rather than simply describe each feature.</li>
                   <li>No need to cover design/implementation details as the manager is not interested in those details.</li>
                   <li>Mention features you inherited from AB4 only if they are needed to explain your new features. <span class="dimmed"> Reason: existing features will not earn you marks, and the audience is already familiar with AB4 features.</span></li>
-                  <li>Each person should demo their <mark>main feature only</mark>. You are free to 'tie-in' other work under the main feature, but anything that cannot be tied-in to the main feature should be omitted from the demo (as those are not graded, showing them to the evaluators will only make the evaluation harder). For similar reasons, <mark>do not demo GUI inputs</mark> (but you can demo GUI outputs).</li>
-                  <li>We recommend each person to <mark>start by giving an overview of the main feature</mark> before going into the details. That the evaluator informed of your main feature from the very start.</li>
+                  <li>Each person should demo their features.</li>
                 </ul>
               </li>
               <li>
@@ -405,8 +432,8 @@
               <li>
                 <p><strong>Special circumstances:</strong></p>
                 <ul>
-                  <li>If your main feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.</li>
-                  <li>If you have no user visible features to show, you can still contribute to the demo by giving an overvie of the product (at the start) and/or giving a wrap of of the product (at the end).</li>
+                  <li>If a significant feature was not merged on time: inform the tutor and get permission to show the unmerged feature using your own version of the code. Obviously, unmerged features earn much less marks than a merged equivalent but something is better than nothing.</li>
+                  <li>If you have no user visible features to show, you can still contribute to the demo by giving an overview of the product (at the start) and/or giving a wrap of of the product (at the end).</li>
                   <li>If you are unable to come to the demo due to a valid reason, you can ask a team member to demo your feature. Remember to submit the evidence of your excuse <span class="dimmed">e.g., MC</span> to prof. The demo is part of module assessment and <mark>absence without a valid reason</mark> will cause you to lose marks.</li>
                 </ul>
               </li>
@@ -462,7 +489,7 @@
                 <ol>
                   <li><strong>Take note of your team to test</strong>. It will be given to you by the teaching team (distributed via IVLE gradebook).</li>
                   <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed">(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
-                  <li><strong>[~40 minutes] Test the product and report bugs</strong> as described below:</li>
+                  <li><strong>[60 minutes] Test the product and report bugs</strong> as described below:</li>
                 </ol>
                 <div class="indented-level2">
                   <div>
@@ -481,16 +508,9 @@
                             <li>PE (at <strong>v1.4</strong>):
                               <ul>
                                 <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                                <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
+                                <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
                               </ul>
                             </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p><strong>What not to test</strong>:</p>
-                          <ul>
-                            <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-                            <li>Omit feature that existed in AB-4.</li>
                           </ul>
                         </li>
                         <li>
@@ -499,6 +519,7 @@
                             <li>Behavior differs from the User Guide</li>
                             <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
                             <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                            <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
                             <li>Problems in the User Guide e.g., missing/incorrect info</li>
                           </ul>
                         </li>
@@ -541,7 +562,7 @@
                           <p><strong>About posting <em>suggestions</em>:</strong></p>
                           <ul>
                             <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                            <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
+                            <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
                           </ul>
                         </li>
                         <li>
@@ -553,76 +574,72 @@
                 </div>
                 <ol>
                   <li>
-                    <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                    <p><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</p>
                     <ul>
                       <li>
-                        <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
-                        <ul>
-                          <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                          <li><code>low</code>: One of these
-                            <ul>
-                              <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                              <li>target user and/or value proposition not clear from the user guide</li>
-                              <li>features don't seem to fit together for the most part</li>
-                            </ul>
-                          </li>
-                          <li><code>medium</code>: Some features fit together but some don't.</li>
-                          <li><code>high</code>: All features fit together but the features are not very high value to the target user.</li>
-                          <li><code>excellent</code>: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
+                        <p><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]: Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</li>
                         </ul>
                       </li>
                       <li>
-                        <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
-                        <ul>
-                          <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
-                          <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
-                          <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                          <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
-                          <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either). Understandable to the target end user.</li>
+                        <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
                         </ul>
                       </li>
                       <li>
-                        <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
-                        <ul>
-                          <li><code>unable to judge</code>: One of these
-                            <ul>
-                              <li>less than 0.5 pages worth of content.</li>
-                              <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span>.</li>
-                            </ul>
-                          </li>
-                          <li><code>low</code>: One of these
-                            <ul>
-                              <li>Very small amount of content (i.e., 0.5 - 1 page).</li>
-                              <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
-                              <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
-                              <li>Multiple notation errors in UML diagrams.</li>
-                            </ul>
-                          </li>
-                          <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span>.</li>
-                          <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
-                          <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.</li>
+                        <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML diagrams suitable</code>: The diagrams used for the right purpose</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML notation correct</code>: No more than one minor error in the UML notation</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
                         </ul>
                       </li>
                       <li>
-                        <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
-                        <ul>
-                          <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                          <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
-                          <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
-                          <li><code>high</code>: One of the below
-                            <ul>
-                              <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span>.</li>
-                              <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span>.</li>
-                            </ul>
-                          </li>
-                          <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span>.</li>
+                        <p><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                        <ul class="task-list">
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
+                          <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
                         </ul>
                       </li>
                       <li>
                         <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                         <ul>
                           <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                          <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best-guess judgement call based on the available info.</li>
+                          <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
                           <li>
                             <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                           </li>
@@ -642,7 +659,10 @@
                       <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
                     </li>
                     <li>
-                      <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
+                      <p><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</p>
+                    </li>
+                    <li>
+                      <p>You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.</p>
                     </li>
                     <li>
                       <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, <mark>use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of</mark>. Duplicates can be omitted from processing steps given below.</p>
@@ -659,21 +679,24 @@
                       <p>Response Labels:</p>
                       <ul>
                         <li><code>response.Accepted</code>: You accept it as a bug.</li>
+                        <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
                         <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
                         <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
-                        <li><code>response.IssueUnclear</code>: The issue description is not clear.</li>
+                        <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
                       </ul>
                     </box>
                   </div>
                   <ul>
-                    <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
+                    <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type.*</code> are considered <code>type.FunctionalityBug</code> by default (which are liable to a heavier penalty).</li>
                   </ul>
                   <div class="indented">
                     <box>
                       <p>Bug Type Labels:</p>
                       <ul>
-                        <li><code>type.FunctionalityBug</code> : the bug is a flaw in how the product works.</li>
-                        <li><code>type.DocumentationBug</code> : the bug is in the documentation.</li>
+                        <li><code>type.FeatureFlaw</code>: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                        <li><code>type.FunctionalityBug</code>: the bug is a flaw in how the product works.</li>
+                        <li><code>type.DocTypo</code>: A minor spelling/grammar error in the documentation. Does not affect the user.</li>
+                        <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction</span></li>
                       </ul>
                     </box>
                   </div>
@@ -697,7 +720,13 @@
                       <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                     </li>
                     <li>
+                      <p>We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.</p>
+                    </li>
+                    <li>
                       <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
+                    </li>
+                    <li>
+                      <p>We recommend choosing <code>type.*</code>, <code>severity.*</code> and assignee even for bugs you are not accepting. Reason: your <em>non-acceptance</em> may be rejected by the tutor later, in which case we need to grade it as an accepted bug.</p>
                     </li>
                   </ul>
                 </tip-box>
@@ -765,16 +794,9 @@
                       <li>PE (at <strong>v1.4</strong>):
                         <ul>
                           <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                          <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
+                          <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
                         </ul>
                       </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p><strong>What not to test</strong>:</p>
-                    <ul>
-                      <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-                      <li>Omit feature that existed in AB-4.</li>
                     </ul>
                   </li>
                   <li>
@@ -783,6 +805,7 @@
                       <li>Behavior differs from the User Guide</li>
                       <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
                       <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                      <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
                       <li>Problems in the User Guide e.g., missing/incorrect info</li>
                     </ul>
                   </li>
@@ -825,7 +848,7 @@
                     <p><strong>About posting <em>suggestions</em>:</strong></p>
                     <ul>
                       <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                      <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
+                      <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
                     </ul>
                   </li>
                   <li>
@@ -860,10 +883,9 @@
                         <p><strong>Summary of Contributions</strong>:</p>
                         <ul>
                           <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                          <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                          <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                           <li><strong>Other contributions:</strong>
                             <ul>
-                              <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                               <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                               <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                               <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -890,13 +912,7 @@
                         <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                       </li>
                       <li>
-                        <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                        <blockquote>
-                          <ul>
-                            <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                            <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                          </ul>
-                        </blockquote>
+                        <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                       </li>
                       <li>
                         <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -906,37 +922,43 @@
                             <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                           </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                       </li>
-                      <li>
-                        <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                        <div class="table-responsive">
-                          <table class="markbind-table table table-bordered table-striped">
-                            <thead>
-                              <tr>
-                                <th>Content</th>
-                                <th>Limit</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Overview + Summary of contributions</td>
-                                <td>0.5-1</td>
-                              </tr>
-                              <tr>
-                                <td>Contributions to the User Guide</td>
-                                <td>1-3</td>
-                              </tr>
-                              <tr>
-                                <td>Contributions to the Developer Guide</td>
-                                <td>3-6</td>
-                              </tr>
-                              <tr>
-                                <td>Total</td>
-                                <td>5-10</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Page limit</strong>:</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Content</th>
+                            <th>Limit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Overview + Summary of contributions</td>
+                            <td>0.5-1 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Contributions to the User Guide</td>
+                            <td>1-3 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Contributions to the Developer Guide</td>
+                            <td>3-6 (soft limit)</td>
+                          </tr>
+                          <tr>
+                            <td>Total</td>
+                            <td>5-10 <mark>(strict)</mark></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul>
+                      <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                      <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                        If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                        <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -998,7 +1020,7 @@
             <ol>
               <li><strong>Take note of your team to test</strong>. It will be given to you by the teaching team (distributed via IVLE gradebook).</li>
               <li><strong>Download from IVLE all files</strong> submitted by the team <span class="dimmed">(i.e. jar file, User Guide, Developer Guide, and Project Portfolio Pages)</span> <mark>into an empty folder</mark>.</li>
-              <li><strong>[~40 minutes] Test the product and report bugs</strong> as described below:</li>
+              <li><strong>[60 minutes] Test the product and report bugs</strong> as described below:</li>
             </ol>
             <div class="indented-level2">
               <div>
@@ -1017,16 +1039,9 @@
                         <li>PE (at <strong>v1.4</strong>):
                           <ul>
                             <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
-                            <li>Do <mark><em>system testing only</em></mark> <span class="dimmed">i.e., verify actual behavior against documented behavior</span>. Do not do <em>acceptance testing</em>.</li>
+                            <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system testing bugs can earn you more credit.</li>
                           </ul>
                         </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p><strong>What not to test</strong>:</p>
-                      <ul>
-                        <li>Omit features that are driven by GUI inputs (e.g. buttons, menus, etc.) <span class="dimmed">Reason: Only CLI-driven features can earn credit, as per given project constraints.</span> Some features might have both a GUI-driven and CLI-driven ways to invoke them, in which case test only the CLI-driven way of invoking it.</li>
-                        <li>Omit feature that existed in AB-4.</li>
                       </ul>
                     </li>
                     <li>
@@ -1035,6 +1050,7 @@
                         <li>Behavior differs from the User Guide</li>
                         <li>A legitimate user behavior is not handled <span class="dimmed">e.g. incorrect commands, extra parameters</span></li>
                         <li>Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span></li>
+                        <li>The feature does not solve the stated problem of the intended user i.e., the feature is 'incomplete'</li>
                         <li>Problems in the User Guide e.g., missing/incorrect info</li>
                       </ul>
                     </li>
@@ -1077,7 +1093,7 @@
                       <p><strong>About posting <em>suggestions</em>:</strong></p>
                       <ul>
                         <li>PE Dry Run (at <strong>v1.3</strong>): You can also post suggestions on how to improve the product. 💡 Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
-                        <li>PE (at <strong>v1.4</strong>): Do not post suggestions.</li>
+                        <li>PE (at <strong>v1.4</strong>): Do not post suggestions. But if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug.</li>
                       </ul>
                     </li>
                     <li>
@@ -1089,76 +1105,72 @@
             </div>
             <ol>
               <li>
-                <p><strong>[~50 minutes] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES.</p>
+                <p><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</p>
                 <ul>
                   <li>
-                    <p><strong>A. Cohesiveness of product features</strong> [<span class="fas fa-users"></span>]: Do the features fit together and match the stated target user and the value proposition?</p>
-                    <ul>
-                      <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                      <li><code>low</code>: One of these
-                        <ul>
-                          <li>target user is too general <span class="dimmed"> i.e. wider than AB4</span></li>
-                          <li>target user and/or value proposition not clear from the user guide</li>
-                          <li>features don't seem to fit together for the most part</li>
-                        </ul>
-                      </li>
-                      <li><code>medium</code>: Some features fit together but some don't.</li>
-                      <li><code>high</code>: All features fit together but the features are not very high value to the target user.</li>
-                      <li><code>excellent</code>: The target user is clearly defined (not too general) and almost all new features are of high-value to the target user. i.e. the product is very attractive to the target user.</li>
+                    <p><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]: Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</li>
                     </ul>
                   </li>
                   <li>
-                    <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the parts of the user guide written by the person, as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
-                    <ul>
-                      <li><code>unable to judge</code>: Less than 1 page worth of UG content written by the student.</li>
-                      <li><code>low</code>: Hard to understand, often inaccurate or missing important information.</li>
-                      <li><code>medium</code>: Needs some effort to understand; some information is missing.</li>
-                      <li><code>high</code>: Mostly easy to follow. Only a few areas need improvements.</li>
-                      <li><code>excellent</code>: Easy to follow and accurate. Just enough information, visuals, examples etc. (not too much either). Understandable to the target end user.</li>
+                    <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
                     </ul>
                   </li>
                   <li>
-                    <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate based on the developer docs cited/reproduced in the respective project portfolio page. <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
-                    <ul>
-                      <li><code>unable to judge</code>: One of these
-                        <ul>
-                          <li>less than 0.5 pages worth of content.</li>
-                          <li>other problems in the document <span class="dimmed"> e.g. looks like included wrong content</span>.</li>
-                        </ul>
-                      </li>
-                      <li><code>low</code>: One of these
-                        <ul>
-                          <li>Very small amount of content (i.e., 0.5 - 1 page).</li>
-                          <li>Hardly any use to the reader (i.e., content doesn't make much sense or redundant).</li>
-                          <li>Uses ad-hoc diagrams where UML diagrams could have been used instead.</li>
-                          <li>Multiple notation errors in UML diagrams.</li>
-                        </ul>
-                      </li>
-                      <li><code>medium</code>: <em>Some</em> diagrams, <em>some</em> descriptions, but does not help the reader that much <span class="dimmed"> e.g. overly complicated diagrams</span>.</li>
-                      <li><code>high</code>: Enough diagrams (at lest two kinds of UML diagrams used) and enough descriptions (about 2 pages worth) but explanations are not always easy to follow.</li>
-                      <li><code>excellent</code>: Easy to follow. Just enough information (not too much). Minimum repetition of content/diagrams. Good use of diagrams to complement text descriptions. Easy to understand diagrams with just enough details rather than very complicated diagrams that are hard to understand.</li>
+                    <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML diagrams suitable</code>: The diagrams used for the right purpose</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ UML notation correct</code>: No more than one minor error in the UML notation</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
                     </ul>
                   </li>
                   <li>
-                    <p><strong>D. Depth of feature</strong> [<span class="fas fa-user"></span>]: Evaluate the feature done by the student for difficulty, depth, and completeness. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
-                    <ul>
-                      <li><code>unable to judge</code>: You are unable to judge this aspect for some reason.</li>
-                      <li><code>low</code> : An easy feature <span class="dimmed"> e.g. make the existing <em>find</em> command case insensitive</span>.</li>
-                      <li><code>medium</code> : Moderately difficult feature, barely acceptable implementation <span class="dimmed"> e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
-                      <li><code>high</code>: One of the below
-                        <ul>
-                          <li>A moderately difficult feature but fully implemented <span class="dimmed"> e.g. an <em>edit</em> command that allows editing any field</span>.</li>
-                          <li>A difficult feature with a reasonable implementation but some aspects are not covered <span class="dimmed"> undo/redo command that only allows a single undo/redo</span>.</li>
-                        </ul>
-                      </li>
-                      <li><code>excellent</code>: A difficult feature, all reasonable aspects are fully implemented <span class="dimmed"> undo/redo command that allows multiple undo/redo</span>.</li>
+                    <p><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                    <ul class="task-list">
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
+                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
                     </ul>
                   </li>
                   <li>
                     <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
                     <ul>
                       <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                      <li>Consider <mark>the <em>main feature</em> only</mark>. Exclude GUI inputs, but consider GUI outputs of the feature. Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person. We understand that it is not possible to know exactly which part of the code is for the main feature; make a best-guess judgement call based on the available info.</li>
+                      <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
                       <li>
                         <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
                       </li>
@@ -1178,7 +1190,10 @@
                   <p><strong>First, don't freak out if there are lot of bug reports.</strong> Many can be duplicates and some can be <em>false positives</em>. In any case, we anticipate that all of these products will have some bugs and our penalty for bugs is not harsh. Furthermore, it depends on the severity of the bug. Some bug may not even be penalized.</p>
                 </li>
                 <li>
-                  <p><strong>Do not edit the subject or the description. Do not close bug reports.</strong> Your response (if any) should be added as a comment.</p>
+                  <p><strong>Do not edit the subject or the description.</strong> Your response (if any) should be added as a comment.</p>
+                </li>
+                <li>
+                  <p>You may (but not required to) close the bug report after you are done processing it, as a convenient means of separating the 'processed' issues from 'not yet processed' issues.</p>
                 </li>
                 <li>
                   <p><strong>If the bug is reported multiple times</strong>, mark all copies EXCEPT one as duplicates using the <code>duplicate</code> tag (if the duplicates have different severity levels, you should <mark>keep the one with the highest severity</mark>). In addition, <mark>use <a href="https://help.github.com/articles/about-duplicate-issues-and-pull-requests/">this technique</a> to indicate which issue they are duplicates of</mark>. Duplicates can be omitted from processing steps given below.</p>
@@ -1195,21 +1210,24 @@
                   <p>Response Labels:</p>
                   <ul>
                     <li><code>response.Accepted</code>: You accept it as a bug.</li>
+                    <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
                     <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
                     <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
-                    <li><code>response.IssueUnclear</code>: The issue description is not clear.</li>
+                    <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
                   </ul>
                 </box>
               </div>
               <ul>
-                <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type-</code> are considered <code>type-FunctionalityBug</code> by default (which are liable to a heavier penalty):</li>
+                <li>If applicable, <strong>decide the type of bug</strong>. Bugs without <code>type.*</code> are considered <code>type.FunctionalityBug</code> by default (which are liable to a heavier penalty).</li>
               </ul>
               <div class="indented">
                 <box>
                   <p>Bug Type Labels:</p>
                   <ul>
-                    <li><code>type.FunctionalityBug</code> : the bug is a flaw in how the product works.</li>
-                    <li><code>type.DocumentationBug</code> : the bug is in the documentation.</li>
+                    <li><code>type.FeatureFlaw</code>: some functionality missing from a feature delivered in v1.4 in a way that the feature becomes less useful to the intended target user for normal usage. i.e., the feature is not 'complete'. In other words, an acceptance testing bug that falls within the scope of v1.4 features. These issues are counted against the 'depth and completeness' of the feature.</li>
+                    <li><code>type.FunctionalityBug</code>: the bug is a flaw in how the product works.</li>
+                    <li><code>type.DocTypo</code>: A minor spelling/grammar error in the documentation. Does not affect the user.</li>
+                    <li><code>type.DocumentationBug</code>: A flaw in the documentation that can potentially affect the user <span class="dimmed">e.g., a missing step, a wrong instruction</span></li>
                   </ul>
                 </box>
               </div>
@@ -1233,7 +1251,13 @@
                   <p><strong>Decide who should fix the bug</strong>. Use the <code>Assignees</code> field to assign the issue to that person(s). There is no need to actually fix the bug though. It's simply an indication/acceptance of responsibility. <strong>If there is no assignee, we will distribute the penalty for that bug (if any) among all team members.</strong></p>
                 </li>
                 <li>
+                  <p>We recommend (but not enforce) that the feature owner should be assigned bugs related to the feature, even if the bug was caused indirectly by someone else. Reason: The feature owner should have defended the feature against bugs using automated tests and defensive coding techniques.</p>
+                </li>
+                <li>
                   <p><strong>Add an explanatory comment</strong> explaining your choice of labels and assignees.</p>
+                </li>
+                <li>
+                  <p>We recommend choosing <code>type.*</code>, <code>severity.*</code> and assignee even for bugs you are not accepting. Reason: your <em>non-acceptance</em> may be rejected by the tutor later, in which case we need to grade it as an accepted bug.</p>
                 </li>
               </ul>
             </tip-box>
@@ -1561,10 +1585,9 @@ method 2 ...
                                             <p><strong>Summary of Contributions</strong>:</p>
                                             <ul>
                                               <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                                              <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                                              <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                                               <li><strong>Other contributions:</strong>
                                                 <ul>
-                                                  <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                                                   <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                                                   <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                                                   <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -1591,13 +1614,7 @@ method 2 ...
                                             <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                                           </li>
                                           <li>
-                                            <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                                            <blockquote>
-                                              <ul>
-                                                <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                                                <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                                              </ul>
-                                            </blockquote>
+                                            <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                                           </li>
                                           <li>
                                             <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -1607,37 +1624,43 @@ method 2 ...
                                                 <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                                               </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                                           </li>
-                                          <li>
-                                            <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                                            <div class="table-responsive">
-                                              <table class="markbind-table table table-bordered table-striped">
-                                                <thead>
-                                                  <tr>
-                                                    <th>Content</th>
-                                                    <th>Limit</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                  <tr>
-                                                    <td>Overview + Summary of contributions</td>
-                                                    <td>0.5-1</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Contributions to the User Guide</td>
-                                                    <td>1-3</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Contributions to the Developer Guide</td>
-                                                    <td>3-6</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>Total</td>
-                                                    <td>5-10</td>
-                                                  </tr>
-                                                </tbody>
-                                              </table>
-                                            </div>
-                                          </li>
+                                        </ul>
+                                      </li>
+                                      <li>
+                                        <p><strong>Page limit</strong>:</p>
+                                        <div class="table-responsive">
+                                          <table class="markbind-table table table-bordered table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th>Content</th>
+                                                <th>Limit</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>Overview + Summary of contributions</td>
+                                                <td>0.5-1 (soft limit)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Contributions to the User Guide</td>
+                                                <td>1-3 (soft limit)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Contributions to the Developer Guide</td>
+                                                <td>3-6 (soft limit)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Total</td>
+                                                <td>5-10 <mark>(strict)</mark></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </div>
+                                        <ul>
+                                          <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                                          <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                                            If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                                            <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                                         </ul>
                                       </li>
                                     </ul>
@@ -1680,7 +1703,6 @@ method 2 ...
                                 <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
                                 <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                                 <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                                <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
                               </ul>
                             </div>
                           </modal>
@@ -1769,8 +1791,8 @@ method 2 ...
                   </modal>
                   <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
                       <div>
-                      <p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                      <panel header="<span class='fas fa-cube'></span> Recommended roles and responsibilities" minimized="">
+                      <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                      <panel type="seamless" header="<span class='fas fa-cube'></span> Recommended roles and responsibilities">
                         <p>This is a non-exhaustive list; you may define additional roles.</p>
                         <ul>
                           <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -1846,7 +1868,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>

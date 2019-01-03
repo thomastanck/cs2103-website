@@ -65,17 +65,30 @@
           <p>Strongly recommended: Complete your GitHub profile. In particular,</p>
           <ul>
             <li>Specify your full name.</li>
-            <li>Upload a suitable profile photo (i.e. a recent photo of your face).</li>
+            <li>Upload a profile photo that matches <trigger trigger="click" for="modal:creatingGitHubAccount-photoCriteria">our requirements</trigger>.</li>
           </ul>
           <panel type="seamless" header="%%Why am I being pushed to complete my GitHub profile?%%">
             <p>The GitHub profile is useful for the tutors and classmates to identify you. If you are reluctant to share your info in your long-term GitHub account, you can remove those details after the module is over or create a separate GitHub account just for the module.</p>
           </panel>
-          <panel src="/cs2103-website\admin\project-deliverables._include_.html#profile-photo" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Choosing a profile photo" minimized="" fragment="profile-photo"></panel>
+        </li>
+        <li>
+          <p><mark>You are discouraged from changing your GitHub username during the semester/exam/grading period</mark> as it can cause our auto-grading scripts to miss your GitHub activities. If you do change your GitHub username during that period, please let us know immediately.</p>
         </li>
       </ol>
+      <modal large="" title="Our requirements for the profile photo" id="modal:creatingGitHubAccount-photoCriteria">
+          <div>
+          <ul>
+            <li>
+              <p>The purpose of the profile photo is for the teaching team to identify you. Therefore, you should choose a recent individual photo showing your face clearly (i.e., not too small) -- somewhat similar to a passport photo. Some examples can be seen in the 'Teaching team' page. Given below are some examples of good and bad profile photos.<br>
+                <img src="/cs2103-website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+            </li>
+            <li>
+              <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you can request permission to omit your photo from the page by writing to prof.</p>
+            </li>
+          </ul>
+        </div>
+      </modal>
     </div>
-
-
     <div id="git-username">
       <h2 id="setting-git-username-to-match-github-username">Setting Git Username to Match GitHub Username</h2>
       <p>We use various tools to analyze your code. <mark>For us to be able to identify your commits, you should use the GitHub username as your Git username as well. If there is a mismatch, or if you use multiple user names for Git,</mark> our tools might miss some of your work and as a result you might not get credit for some of your work.</p>
@@ -94,7 +107,7 @@
           <p>Fork the repo to your personal GitHub account, if you haven't done so already.</p>
         </li>
         <li>
-          <p>Create a branch named after the LO ID e.g. <code>W2.2b</code>
+          <p>Create a branch named after the topic ID e.g. <code>W2.2b</code>
             <mark>Remember to switch to master branch before creating the new branch.</mark></p>
         </li>
         <li>
@@ -529,10 +542,9 @@ method 2 ...
                           <p><strong>Summary of Contributions</strong>:</p>
                           <ul>
                             <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                            <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                            <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                             <li><strong>Other contributions:</strong>
                               <ul>
-                                <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                                 <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                                 <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                                 <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -559,13 +571,7 @@ method 2 ...
                           <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                         </li>
                         <li>
-                          <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                          <blockquote>
-                            <ul>
-                              <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                              <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                            </ul>
-                          </blockquote>
+                          <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                         </li>
                         <li>
                           <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -575,37 +581,43 @@ method 2 ...
                               <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                             </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                         </li>
-                        <li>
-                          <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                          <div class="table-responsive">
-                            <table class="markbind-table table table-bordered table-striped">
-                              <thead>
-                                <tr>
-                                  <th>Content</th>
-                                  <th>Limit</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Overview + Summary of contributions</td>
-                                  <td>0.5-1</td>
-                                </tr>
-                                <tr>
-                                  <td>Contributions to the User Guide</td>
-                                  <td>1-3</td>
-                                </tr>
-                                <tr>
-                                  <td>Contributions to the Developer Guide</td>
-                                  <td>3-6</td>
-                                </tr>
-                                <tr>
-                                  <td>Total</td>
-                                  <td>5-10</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Page limit</strong>:</p>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Content</th>
+                              <th>Limit</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Overview + Summary of contributions</td>
+                              <td>0.5-1 (soft limit)</td>
+                            </tr>
+                            <tr>
+                              <td>Contributions to the User Guide</td>
+                              <td>1-3 (soft limit)</td>
+                            </tr>
+                            <tr>
+                              <td>Contributions to the Developer Guide</td>
+                              <td>3-6 (soft limit)</td>
+                            </tr>
+                            <tr>
+                              <td>Total</td>
+                              <td>5-10 <mark>(strict)</mark></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <ul>
+                        <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                        <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                          If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                          <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                       </ul>
                     </li>
                   </ul>
@@ -648,7 +660,6 @@ method 2 ...
               <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
               <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
               <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-              <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
             </ul>
           </div>
         </modal>

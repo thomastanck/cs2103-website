@@ -3243,7 +3243,7 @@ r1.setPlayer(p2);
               </ul>
               <h3 id="v1.2-product">v1.2 Product<a class="fa fa-anchor" href="#v1.2-product"></a></h3>
               <ul>
-                <li><span class="fas fa-user"></span> Merge some code into the <code>master</code> branch of your team repo.</li>
+                <li><span class="fas fa-user"></span> Merge some code into the <code>master</code> branch of your team repo. <mark>This is expected to be a user-visible enhancement.</mark></li>
               </ul>
               <h3 id="v1.2-documentation">v1.2 Documentation<a class="fa fa-anchor" href="#v1.2-documentation"></a></h3>
               <ul>
@@ -3279,66 +3279,64 @@ r1.setPlayer(p2);
       </tab>
       <tab header="<span class='fas fa-chalkboard-teacher'></span> Tutorial">
         <div>
-          <div>
-            <p><strong>Questions to discuss during tutorial:</strong></p>
-            <p>Whole team: do this question together, using the whiteboard:</p>
-            <div class="indented">
-              <div>
-                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
-                  <question>
-                    <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
-                    <ul>
-                      <li>First, a cashier takes the order.</li>
-                      <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
-                      <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
-                      <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
-                    </ul>
-                    <panel type="seamless" header="Example Activity Diagram" minimized="">
-                      <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
-                        <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
-                    </panel>
-                  </question>
-                </panel>
-              </div>
+          <p><strong>Questions to discuss during tutorial:</strong></p>
+          <p>Whole team: do this question together, using the whiteboard:</p>
+          <div class="indented">
+            <div>
+              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
+                <question>
+                  <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
+                  <ul>
+                    <li>First, a cashier takes the order.</li>
+                    <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
+                    <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
+                    <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
+                  </ul>
+                  <panel type="seamless" header="Example Activity Diagram" minimized="">
+                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
+                      <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
+                  </panel>
+                </question>
+              </panel>
             </div>
-            <br>
-            <p>Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
-            <p><strong>Q1</strong></p>
-            <ol>
-              <li>What’s the use of assertions?</li>
-              <li>Demonstrate an assertion failure using Intellij.</li>
-              <li>What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
-            </ol>
-            <p><strong>Q2</strong></p>
-            <ol>
-              <li>What is <em>Liskov Substitution Principle</em>?<br>
-                Give an example from the project where LSP is followed and explain how to change the code to break LSP.</li>
-            </ol>
-            <p><strong>Q3</strong></p>
-            <ol>
-              <li>What is <em>defensive programming</em>?<br>
-                Give an example of defensive programming from your project.</li>
-            </ol>
-            <p><strong>Q4</strong></p>
-            <ol>
-              <li>What’s the difference between <em>validation</em> and <em>verification</em>?<br>
-                Acceptance tests are validation tests or verification tests?</li>
-              <li>Give an example of <em>static analysis</em> being used in Intellij</li>
-            </ol>
-            <p><strong>Q5</strong></p>
-            <ol>
-              <li>Explain how <em>Law of Demeter</em> affects coupling<br>
-                a. Add a line to this code that violates LoD
-                <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(P p)</span></span>{
+          </div>
+          <br>
+          <p>Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
+          <p><strong>Q1</strong></p>
+          <ol>
+            <li>What’s the use of assertions?</li>
+            <li>Demonstrate an assertion failure using Intellij.</li>
+            <li>What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
+          </ol>
+          <p><strong>Q2</strong></p>
+          <ol>
+            <li>What is <em>Liskov Substitution Principle</em>?<br>
+              Give an example from the project where LSP is followed and explain how to change the code to break LSP.</li>
+          </ol>
+          <p><strong>Q3</strong></p>
+          <ol>
+            <li>What is <em>defensive programming</em>?<br>
+              Give an example of defensive programming from your project.</li>
+          </ol>
+          <p><strong>Q4</strong></p>
+          <ol>
+            <li>What’s the difference between <em>validation</em> and <em>verification</em>?<br>
+              Acceptance tests are validation tests or verification tests?</li>
+            <li>Give an example of <em>static analysis</em> being used in Intellij</li>
+          </ol>
+          <p><strong>Q5</strong></p>
+          <ol>
+            <li>Explain how <em>Law of Demeter</em> affects coupling<br>
+              a. Add a line to this code that violates LoD
+              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(P p)</span></span>{
     <span class="hljs-comment">//...</span>
 }
 </code></pre>
-              </li>
-              <li>Give an example in the project code that violates the <em>Law of Demeter</em>.</li>
-              <li>What’s the problem with the architecture diagram on the right?<br>
-                <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
-            </ol>
-          </div>
+            </li>
+            <li>Give an example in the project code that violates the <em>Law of Demeter</em>.</li>
+            <li>What’s the problem with the architecture diagram on the right?<br>
+              <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
+          </ol>
         </div>
       </tab>
       <tab header="<span class='fas fa-info-circle'></span> Admin Info">
@@ -3532,7 +3530,7 @@ r1.setPlayer(p2);
                 </ul>
                 <h3 id="v1.2-product-2">v1.2 Product<a class="fa fa-anchor" href="#v1.2-product-2"></a></h3>
                 <ul>
-                  <li><span class="fas fa-user"></span> Merge some code into the <code>master</code> branch of your team repo.</li>
+                  <li><span class="fas fa-user"></span> Merge some code into the <code>master</code> branch of your team repo. <mark>This is expected to be a user-visible enhancement.</mark></li>
                 </ul>
                 <h3 id="v1.2-documentation-2">v1.2 Documentation<a class="fa fa-anchor" href="#v1.2-documentation-2"></a></h3>
                 <ul>
@@ -3574,7 +3572,7 @@ r1.setPlayer(p2);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>

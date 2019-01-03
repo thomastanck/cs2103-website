@@ -39,7 +39,6 @@
         <div class="dropdown-container dropdown-container-open">
           <ul style="list-style-type: none; margin-left:-1em">
             <li style="margin-top: 10px"><small><a href="weeklySchedule.html">Weekly Schedule</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
-            <li style="margin-top: 10px"><small><a href="learningOutcomes.html">Learning Outcomes</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="lectures.html">Lectures</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span class="fas fa-star"></span></span></span></small></li>
             <li style="margin-top: 10px"><small><a href="tutorials.html">Tutorials</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span class="fas fa-star"></span></span></span></small></li>
           </ul>
@@ -222,15 +221,15 @@
                   <li>Good use of buffers <span class="dimmed">(opposite: everything at the last minute)</span></li>
                   <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
                 </ul>
-                <p><strong>B. Team-based tasks</strong>:</p>
-                <p>Evaluates: how much you contributed to common <span class="embedding">team-based tasks</span><span class="flat"><a href="/cs2103-website/admin/index-flat.html#scope-example-team-tasks">team-based tasks</a></span></p>
+                <p><strong>B. Team-tasks</strong>:</p>
+                <p>Evaluates: How much did you contribute to team-tasks?</p>
                 <p>Based on: peer evaluations and tutor observations</p>
                 <div class="flat">
                   <div>
-                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-exmapleTeamTasks">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope → Examples of team tasks</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
+                    <p><span class="dimmed">Relevant: [<trigger trigger="click" for="modal:projectAssessment-exmapleTeamTasks">Admin <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Project Scope → Examples of team-tasks</trigger> <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>]</span></p>
                   </div>
                 </div>
-                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectAssessment-exmapleTeamTasks">
+                <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team-tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:projectAssessment-exmapleTeamTasks">
                     <div>
                     <p>Here is a non-exhaustive list of team-tasks:</p>
                     <ol>
@@ -244,13 +243,13 @@
                       <li>Setting up the GitHub, Travis, AppVeyor, etc.</li>
                       <li>Maintaining the issue tracker</li>
                       <li>Release management</li>
-                      <li>Updating user/developer docs that are not specific to a feature <span class="dimmed"> e.g. documenting the target user profile</span></li>
+                      <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
                       <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
                     </ol>
                   </div>
                 </modal>
                 <p>
-                  <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="example-team-tasks"></panel>
+                  <panel src="/cs2103-website\admin\project-scope._include_.html#example-team-tasks" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope → Examples of team-tasks  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="example-team-tasks"></panel>
                 </p>
               </div>
             </modal>
@@ -988,7 +987,7 @@
                 <p>After the v2.0 is conceptualized, decide which features each member will do by v1.4. <span class="dimmed">We realize that it will be hard for you to estimate the effort required for each feature as you are not familiar with the code base. Nevertheless, come up with a project plan as per your best estimate; this plan can be revised at later stages. It is better to start with <em>some</em> plan rather than no plan at all. If in doubt, choose to do <em>less</em> than <em>more</em>; we don't expect you to deliver a lot of big features.</span></p>
               </li>
               <li>
-                <p>Divide each of those features into three increments, to be released at v1.1, v1.2, v1.3 (v1.4 omitted deliberately as a buffer). Ideally, each increment should deliver a end-user testable enhancement.</p>
+                <p>Divide each of those features into three increments, to be released at v1.1, v1.2, v1.3 (v1.4 omitted deliberately as a buffer). <mark>Each increment should deliver a end-user visible enhancement.</mark></p>
               </li>
               <li>
                 <p>Document the above two items somewhere e.g., in a Google doc/sheet. An example is given below:</p>
@@ -1015,7 +1014,7 @@
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>

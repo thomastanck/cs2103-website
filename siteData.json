@@ -174,17 +174,6 @@
     },
     {
       "headings": {
-        "learning-outcomes": "Learning Outcomes "
-      },
-      "title": "Admin: Learning Outcomes",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "src": "admin/learningOutcomes.md",
-      "layout": "default"
-    },
-    {
-      "headings": {
         "lectures": "Lectures "
       },
       "title": "Admin: Lectures",
@@ -323,7 +312,15 @@
     },
     {
       "headings": {
-        "project%3A-scope": "Project: Scope  | project expectations"
+        "project%3A-scope": "Project: Scope  | project expectations",
+        "project-direction": "Project Direction",
+        "individual-expectations": " Individual Expectations",
+        "%5Bindividual%5D-expectations-on-features": "[Individual] Expectations on Features",
+        "%5Bindividual%5D-expectations-on-code": "[Individual] Expectations on Code",
+        "%5Bindividual%5D-expectations-on-documentation": "[Individual] Expectations on Documentation",
+        "%5Bindividual%5D-expectations-on-testing": "[Individual] Expectations on Testing",
+        "%5Bindividual%5D-expectations-on-teamwork": "[Individual] Expectations on Teamwork",
+        "team-expectations": " Team Expectations"
       },
       "title": "Admin: Project: Scope",
       "footer": "footer.md",

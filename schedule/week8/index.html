@@ -80,7 +80,30 @@
     <h1 id="week-8-%5Bmar-11%5D">Week 8 <small><small><span class="dimmed">[Mar 11]</span></small></small><a class="fa fa-anchor" href="#week-8-%5Bmar-11%5D"></a></h1>
     <tabs>
       <tab header="<span class='fas fa-bell'></span> Notices">
-        <div></div>
+        <div>
+          <p><strong>Come prepared for the tutorial</strong>:</p>
+          <ul>
+            <li>This week's tutorial involves discussing some theory questions. There are 5 questions (listed under Tutorial 8 in the <a href="https://nus-cs2103-ay1819s1.github.io/cs2103-website/index.html">schedule page</a>). <strong>Please divide the questions among yourselves and come prepared to answer them during the tutorial.</strong> We will not be able to finish all five questions during the tutorial unless you come prepared.</li>
+          </ul>
+          <p><strong>Feedback for peers, teaching team</strong></p>
+          <ul>
+            <li>
+              <p><strong>Peer Evaluation Round 1</strong> will open on TEAMMATES. You will receive the submission link soon. <strong>If you do not submit feedback responses, you will forfeit participation marks that you earned based on feedback ratings received from others</strong>.</p>
+            </li>
+            <li>
+              <p><strong>An anonymous survey to submit feedback about the teaching team</strong> is now open on IVLE. Please take a few minutes to give feedback to your tutors. As usual, you can use the 'anonymous feedback' feature of IVLE to send us feedback any time.</p>
+            </li>
+          </ul>
+          <p><strong>Project</strong></p>
+          <ul>
+            <li>
+              <p><strong>You are expected to start proper project planning and tracking after v1.1</strong>. We have refined instructions for <a href="https://nus-cs2103-AY1819S2.github.io/cs2103-website/admin/project-w08-mid-v12.html">mid-v1.2 instructions</a> (updated last Friday). Please follow carefully.</p>
+            </li>
+            <li>
+              <p><strong>Try to achieve all milestone requirements, but do not fret if you miss a few</strong>. You will get full marks as long as you achieve about 60% of the milestone requirements on average. Yes, that's a pretty low bar, but we have set it low in order to reduce workload and stress. Ideally, you should achieve close to 80-90%.</p>
+            </li>
+          </ul>
+        </div>
       </tab>
       <tab header="<span class='fas fa-trophy'></span> Topics">
         <div>
@@ -2911,10 +2934,9 @@ method 2 ...
                                                     <p><strong>Summary of Contributions</strong>:</p>
                                                     <ul>
                                                       <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                                                      <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                                                      <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                                                       <li><strong>Other contributions:</strong>
                                                         <ul>
-                                                          <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                                                           <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                                                           <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                                                           <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -2941,13 +2963,7 @@ method 2 ...
                                                     <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                                                   </li>
                                                   <li>
-                                                    <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                                                    <blockquote>
-                                                      <ul>
-                                                        <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                                                        <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                                                      </ul>
-                                                    </blockquote>
+                                                    <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                                                   </li>
                                                   <li>
                                                     <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -2957,37 +2973,43 @@ method 2 ...
                                                         <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                                                       </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                                                   </li>
-                                                  <li>
-                                                    <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                                                    <div class="table-responsive">
-                                                      <table class="markbind-table table table-bordered table-striped">
-                                                        <thead>
-                                                          <tr>
-                                                            <th>Content</th>
-                                                            <th>Limit</th>
-                                                          </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                          <tr>
-                                                            <td>Overview + Summary of contributions</td>
-                                                            <td>0.5-1</td>
-                                                          </tr>
-                                                          <tr>
-                                                            <td>Contributions to the User Guide</td>
-                                                            <td>1-3</td>
-                                                          </tr>
-                                                          <tr>
-                                                            <td>Contributions to the Developer Guide</td>
-                                                            <td>3-6</td>
-                                                          </tr>
-                                                          <tr>
-                                                            <td>Total</td>
-                                                            <td>5-10</td>
-                                                          </tr>
-                                                        </tbody>
-                                                      </table>
-                                                    </div>
-                                                  </li>
+                                                </ul>
+                                              </li>
+                                              <li>
+                                                <p><strong>Page limit</strong>:</p>
+                                                <div class="table-responsive">
+                                                  <table class="markbind-table table table-bordered table-striped">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Content</th>
+                                                        <th>Limit</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Overview + Summary of contributions</td>
+                                                        <td>0.5-1 (soft limit)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Contributions to the User Guide</td>
+                                                        <td>1-3 (soft limit)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Contributions to the Developer Guide</td>
+                                                        <td>3-6 (soft limit)</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Total</td>
+                                                        <td>5-10 <mark>(strict)</mark></td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <ul>
+                                                  <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                                                  <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                                                    If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                                                    <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                                                 </ul>
                                               </li>
                                             </ul>
@@ -3030,7 +3052,6 @@ method 2 ...
                                         <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
                                         <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                                         <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                                        <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
                                       </ul>
                                     </div>
                                   </modal>
@@ -3119,8 +3140,8 @@ method 2 ...
                           </modal>
                           <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
                               <div>
-                              <p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                              <panel header="<span class='fas fa-cube'></span> Recommended roles and responsibilities" minimized="">
+                              <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                              <panel type="seamless" header="<span class='fas fa-cube'></span> Recommended roles and responsibilities">
                                 <p>This is a non-exhaustive list; you may define additional roles.</p>
                                 <ul>
                                   <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -3226,7 +3247,6 @@ method 2 ...
                           <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
                           <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                           <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                          <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
                         </ul>
                       </div>
                     </modal>
@@ -3418,7 +3438,7 @@ method 2 ...
                 <p><strong><big>Product:</big></strong></p>
                 <ul>
                   <li><strong>From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.3, v1.4"> milestone</tooltip>, preferably each week; only merged code is considered as contributions</strong> <span class="dimmed">
-                      <popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>
+                      <popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>
                     </span>. <br>
                     If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.</li>
                 </ul>
@@ -3429,51 +3449,49 @@ method 2 ...
       </tab>
       <tab header="<span class='fas fa-chalkboard-teacher'></span> Tutorial">
         <div>
-          <div>
-            <p><strong>Questions to discuss during tutorial:</strong> Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
-            <p><strong>Q1</strong></p>
-            <ol>
-              <li>Explain what Gradle is. How is it used in AB4?</li>
-              <li>Explain what Travis is. How is it used in AB4?</li>
-              <li>Which integration approach is used by the project?</li>
-              <li>What is test coverage? How is it used in AB4?</li>
-              <li>How to measure coverage in Intellij?</li>
-              <li>How do you ensure some clean up code is run after each JUnit test case?</li>
-              <li>What’s the difference between <em>buffers</em> and <em>padding/inflating</em> estimates?</li>
-            </ol>
-            <p><strong>Q2</strong></p>
-            <ol>
-              <li>What is abstraction? How is it used in the project?</li>
-              <li>What is coupling?
-                <ol>
-                  <li><code>Foo</code> depends on <code>Bar</code> if …?</li>
-                  <li>Give examples of different ways how a class <code>Foo</code> can be coupled to <code>Bar</code></li>
-                </ol>
-              </li>
-              <li>What is cohesion?</li>
-              <li>How does cohesion relates to coupling?</li>
-            </ol>
-            <p><strong>Q3</strong></p>
-            <ol>
-              <li>What is the Principle of SoC?</li>
-              <li>How does SoC relate to coupling and cohesion?</li>
-              <li>What is SRP?</li>
-              <li>How does SRP relate to SoC?</li>
-            </ol>
-            <p><strong>Q4</strong></p>
-            <ol>
-              <li>What is OCP?</li>
-              <li>Explain several different ways of achieving OCP</li>
-              <li>Does the project follow OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?</li>
-            </ol>
-            <p><strong>Q5</strong></p>
-            <ol>
-              <li>What is <em>unit/integration/system/acceptance</em> testing?</li>
-              <li>How is each one done in AB4?</li>
-              <li>What’s the difference between <em>unit testing</em> and <em>integration testing</em>?</li>
-              <li>What’s the difference between <em>system testing</em> and <em>acceptance testing</em>?</li>
-            </ol>
-          </div>
+          <p><strong>Questions to discuss during tutorial:</strong> Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
+          <p><strong>Q1</strong></p>
+          <ol>
+            <li>Explain what Gradle is. How is it used in AB4?</li>
+            <li>Explain what Travis is. How is it used in AB4?</li>
+            <li>Which integration approach is used by the project?</li>
+            <li>What is test coverage? How is it used in AB4?</li>
+            <li>How to measure coverage in Intellij?</li>
+            <li>How do you ensure some clean up code is run after each JUnit test case?</li>
+            <li>What’s the difference between <em>buffers</em> and <em>padding/inflating</em> estimates?</li>
+          </ol>
+          <p><strong>Q2</strong></p>
+          <ol>
+            <li>What is abstraction? How is it used in the project?</li>
+            <li>What is coupling?
+              <ol>
+                <li><code>Foo</code> depends on <code>Bar</code> if …?</li>
+                <li>Give examples of different ways how a class <code>Foo</code> can be coupled to <code>Bar</code></li>
+              </ol>
+            </li>
+            <li>What is cohesion?</li>
+            <li>How does cohesion relates to coupling?</li>
+          </ol>
+          <p><strong>Q3</strong></p>
+          <ol>
+            <li>What is the Principle of SoC?</li>
+            <li>How does SoC relate to coupling and cohesion?</li>
+            <li>What is SRP?</li>
+            <li>How does SRP relate to SoC?</li>
+          </ol>
+          <p><strong>Q4</strong></p>
+          <ol>
+            <li>What is OCP?</li>
+            <li>Explain several different ways of achieving OCP</li>
+            <li>Does the project follow OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?</li>
+          </ol>
+          <p><strong>Q5</strong></p>
+          <ol>
+            <li>What is <em>unit/integration/system/acceptance</em> testing?</li>
+            <li>How is each one done in AB4?</li>
+            <li>What’s the difference between <em>unit testing</em> and <em>integration testing</em>?</li>
+            <li>What’s the difference between <em>system testing</em> and <em>acceptance testing</em>?</li>
+          </ol>
         </div>
       </tab>
       <tab header="<span class='fas fa-info-circle'></span> Admin Info">
@@ -3824,10 +3842,9 @@ method 2 ...
                                                       <p><strong>Summary of Contributions</strong>:</p>
                                                       <ul>
                                                         <li><strong>Code contributed</strong>: Give a link to your code on <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">Project Code Dashboard</a>, which should be <code>https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard/#=undefined&amp;search=githbub_username_in_lower_case</code> (<mark>replace <code>githbub_username_in_lower_case</code> with your actual username</mark> in lower case e.g., <code>johndoe</code>). This link is also available in the <a href="/cs2103-website/admin/projectList.html">Project List Page</a> -- linked to the <span class="fas fa-code"></span> icon under your photo.</li>
-                                                        <li><strong>Main feature implemented:</strong> A summary of the main feature (the so called <em>major enhancement</em>) you implemented</li>
+                                                        <li><strong>Features implemented:</strong> A summary of the features you implemented. If you implemented multiple features, you are recommended to indicate which one is the biggest feature.</li>
                                                         <li><strong>Other contributions:</strong>
                                                           <ul>
-                                                            <li>Other <em>minor</em> enhancements you did which are not related to your <em>main</em> feature</li>
                                                             <li>Contributions to project management <span class="dimmed">e.g., setting up project tools, managing releases, managing issue tracker etc.</span></li>
                                                             <li>Evidence of helping others <span class="dimmed">e.g. responses you posted in our forum, bugs you reported in other team's products</span>,</li>
                                                             <li>Evidence of technical leadership <span class="dimmed">e.g. sharing useful information in the forum</span></li>
@@ -3854,13 +3871,7 @@ method 2 ...
                                                       <p>File name: <code>docs/team/githbub_username_in_lower_case.adoc</code> e.g., <code>docs/team/johndoe.adoc</code></p>
                                                     </li>
                                                     <li>
-                                                      <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a>, but ignore the following two lines in it.<br></p>
-                                                      <blockquote>
-                                                        <ul>
-                                                          <li><strong>Minor enhancement:</strong> added a history command that allows the user to navigate to previous commands using up/down keys.</li>
-                                                          <li><strong>Code contributed:</strong> [<a href="">Functional code</a>] [<a href="">Test code</a>] <em>{give links to collated code files}</em></li>
-                                                        </ul>
-                                                      </blockquote>
+                                                      <p><span class="fas fa-cube"></span> Follow the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">example in the AddressBook-Level4</a></p>
                                                     </li>
                                                     <li>
                                                       <p>💡 You can use the <a href="http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#include-files">Asciidoc's <code>include</code> feature</a> to include sections from the developer guide or the user guide in your PPP. Follow the example in the <a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/team/johndoe.html">sample</a>.</p>
@@ -3870,37 +3881,43 @@ method 2 ...
                                                           <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> It is assumed that all contents in the PPP were written primarily by you.
                                                         </mark> If any section is written by someone else <span class="dimmed"> e.g. someone else wrote described the feature in the User Guide but you implemented the feature</span>, clearly state that the section was written by someone else <span class="dimmed"> (e.g. <code>Start of Extract [from: User Guide] written by Jane Doe</code>)</span>. <span class="dimmed"> Reason: Your writing skills will be evaluated based on the PPP</span></p>
                                                     </li>
-                                                    <li>
-                                                      <p>Page limit: If you have more content than the limit given below, shorten (or omit some content) so that you do not exceed the page limit. Having too much content in the PPP will be viewed unfavorably during grading. Note: the <mark>page limits given below are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</p>
-                                                      <div class="table-responsive">
-                                                        <table class="markbind-table table table-bordered table-striped">
-                                                          <thead>
-                                                            <tr>
-                                                              <th>Content</th>
-                                                              <th>Limit</th>
-                                                            </tr>
-                                                          </thead>
-                                                          <tbody>
-                                                            <tr>
-                                                              <td>Overview + Summary of contributions</td>
-                                                              <td>0.5-1</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>Contributions to the User Guide</td>
-                                                              <td>1-3</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>Contributions to the Developer Guide</td>
-                                                              <td>3-6</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>Total</td>
-                                                              <td>5-10</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
-                                                      </div>
-                                                    </li>
+                                                  </ul>
+                                                </li>
+                                                <li>
+                                                  <p><strong>Page limit</strong>:</p>
+                                                  <div class="table-responsive">
+                                                    <table class="markbind-table table table-bordered table-striped">
+                                                      <thead>
+                                                        <tr>
+                                                          <th>Content</th>
+                                                          <th>Limit</th>
+                                                        </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                        <tr>
+                                                          <td>Overview + Summary of contributions</td>
+                                                          <td>0.5-1 (soft limit)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Contributions to the User Guide</td>
+                                                          <td>1-3 (soft limit)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Contributions to the Developer Guide</td>
+                                                          <td>3-6 (soft limit)</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>Total</td>
+                                                          <td>5-10 <mark>(strict)</mark></td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                  <ul>
+                                                    <li>The <mark>page limits given above are <em>after</em> converting to PDF format</mark>. The actual amount of content you require is actually less than what these numbers suggest because the HTML → PDF conversion adds a lot of spacing around content.</li>
+                                                    <li><span class="dimmed">Reason for page limit: These submissions are peer-graded (in the PE) which needs to be done in a limited time span.</span><br>
+                                                      If you have more content than the limit given above, you can give a representative samples of UG and DG that showcase your documentation skills. Those samples should be understandable on their own. For the parts left-out, you can give an abbreviated version and refer the reader to the full UG/DG for more details.<br>
+                                                      <span class="dimmed">It's similar to giving extra details as appendices; the reader will look at the UG/DG if the PPP is not enough to make a judgment. For example, when judging documentation quality, if the part in the PPP is not well-written, there is no point reading the rest in the main UG/DG. That's why you need to put the most representative part of your writings in the PPP and still give an abbreviated version of the rest in the PPP itself. Even when judging the quantity of work, the reader should be able to get a good sense of the quantity by combining what is quoted in the PPP and your abbreviated description of the missing part. There is no guarantee that the evaluator will read the full document.</span></li>
                                                   </ul>
                                                 </li>
                                               </ul>
@@ -3943,7 +3960,6 @@ method 2 ...
                                           <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
                                           <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                                           <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                                          <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
                                         </ul>
                                       </div>
                                     </modal>
@@ -4032,8 +4048,8 @@ method 2 ...
                             </modal>
                             <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Scope (extract): roles and responsibilities" id="modal:midv11-rolesAndResponsibilities">
                                 <div>
-                                <p>Roles indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                                <panel header="<span class='fas fa-cube'></span> Recommended roles and responsibilities" minimized="">
+                                <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+                                <panel type="seamless" header="<span class='fas fa-cube'></span> Recommended roles and responsibilities">
                                   <p>This is a non-exhaustive list; you may define additional roles.</p>
                                   <ul>
                                     <li><em>Team lead</em>: Responsible for overall project coordination.</li>
@@ -4139,7 +4155,6 @@ method 2 ...
                             <li>There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. The less coverage you have, the higher the risk of regression bugs, which will cost marks if not fixed before the final submission.</li>
                             <li>You <mark>must write <em>some</em> tests</mark> so that we can evaluate your ability to write tests.</li>
                             <li>How much of each type of testing should you do? We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.</li>
-                            <li>Applying <tooltip content="Test-Driven Development">TDD</tooltip> is optional. If you plan to test something, it is better to apply TDD because TDD ensures that you write functional code in a testable way. If you do it the normal way, you often find that it is hard to test the functional code because the code has low testability.</li>
                           </ul>
                         </div>
                       </modal>
@@ -4331,7 +4346,7 @@ method 2 ...
                   <p><strong><big>Product:</big></strong></p>
                   <ul>
                     <li><strong>From v1.2 onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="v1.3, v1.4"> milestone</tooltip>, preferably each week; only merged code is considered as contributions</strong> <span class="dimmed">
-                        <popover content="The ability to deliver code incrementally is an important LO of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>
+                        <popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery improves the _visibility_ of your work.">(Reason)</popover>
                       </span>. <br>
                       If an enhancement is too big to complete in one milestone, try to deliver it in smaller incremental steps e.g. deliver a basic version of the enhancement first.</li>
                   </ul>
@@ -4387,7 +4402,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Tue, 01 Jan 2019 15:05:46 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
 </footer>
 </div>
 </body>
