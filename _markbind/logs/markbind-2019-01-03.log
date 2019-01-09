@@ -4337,3 +4337,11 @@
 2019-01-03T15:47:03.244Z - info: [23:47:03] Reload for file change: C:\repos\nus-cs2103-AY1819S2\cs2103-website\book\_markbind\variables.md
 2019-01-03T15:48:52.324Z - info: Website generation started at 23:48:47
 2019-01-03T15:48:54.387Z - info: Building assets...
+2019-01-03T15:48:56.858Z - info: Assets built
+2019-01-03T15:48:56.858Z - info: Generating pages...
+2019-01-03T15:51:00.334Z - info: Pages built
+2019-01-03T15:51:00.394Z - info: Site data built
+2019-01-03T15:51:00.394Z - info: Website generation complete! Total build time: 133.237s
+2019-01-03T15:51:00.394Z - info: Build success!
+2019-01-03T15:51:00.394Z - info: Generate Site durationMs=133237
+2019-01-03T15:52:05.021Z - info: Deployed!

@@ -340,17 +340,18 @@
           <div>
           <p><strong>Objectives:</strong></p>
           <ul>
-            <li>Evaluate your manual testing skills, product evaluation skills, effort estimation skills</li>
-            <li>Peer-evaluate your product design <span class="dimmed"><span class="fas fa-users"></span></span>, implementation effort <span class="dimmed"><span class="fas fa-user"></span></span>, documentation quality <span class="dimmed"><span class="fas fa-user"></span></span></li>
+            <li>The primary objective of the PE is to <mark>increase the rigor of project assessment</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
+            <li>Note that <mark>none of the significant project grade components are calculated solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutor assessments and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.</li>
+            <li>As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.</li>
+            <li>Note that the PE is not a means of <em>pitting you against each other</em>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
           </ul>
           <p><strong>When, where</strong>: Week 13 lecture</p>
           <p>
             <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>:
           </p>
           <ul>
-            <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-            <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed">Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.</span></li>
-            <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
+            <li>Your performance in the practical exam will affect your final grade and your peers, as explained in <a href="/cs2103-website/admin/project-assessment.html"><em>Admin: Project Assessment</em></a> section.</li>
+            <li>As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.</li>
           </ul>
           <div>
             <p><strong>Preparation</strong>:</p>
@@ -466,40 +467,75 @@
             </div>
           </div>
           <ol>
-            <li>
-              <p><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</p>
+            <li><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.
               <ul>
+                <li><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]:</li>
+              </ul>
+            </li>
+          </ol>
+          <div class="indented-level2">
+            <div>
+              <p>Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+              <ul class="task-list">
+                <li class="task-list-item">
+                  <p><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</p>
+                </li>
                 <li>
-                  <p><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]: Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+                  <p>Target user:</p>
                   <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>Value to the target user:</p>
+                  <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>Feature-fit:</p>
+                  <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</li>
                   </ul>
                 </li>
-                <li>
-                  <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
-                  <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
-                  </ul>
+                <li class="task-list-item">
+                  <p><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</p>
                 </li>
-                <li>
-                  <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+              </ul>
+            </div>
+          </div>
+          <ul>
+            <li><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]:</li>
+          </ul>
+          <div class="indented-level2">
+            <div>
+              <p>Evaluate the quality of user documentation <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+              </ul>
+            </div>
+          </div>
+          <ul>
+            <li><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]:</li>
+          </ul>
+          <div class="indented-level2">
+            <div>
+              <p>Evaluate the quality of developer documentation <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+              <ul class="task-list">
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+                <li>Diagrams:
                   <ul class="task-list">
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
@@ -508,39 +544,61 @@
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
-                    <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
                   </ul>
                 </li>
-                <li>
-                  <p><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+              </ul>
+            </div>
+          </div>
+          <ul>
+            <li><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]:</li>
+          </ul>
+          <div class="indented-level2">
+            <div>
+              <p>Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+              <ul>
+                <li>Difficulty
                   <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+                  </ul>
+                </li>
+                <li>Completeness
+                  <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+                  </ul>
+                </li>
+                <li>Other
+                  <ul class="task-list">
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
                     <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
                   </ul>
                 </li>
+              </ul>
+            </div>
+          </div>
+          <ul>
+            <li><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]:</li>
+          </ul>
+          <div class="indented-level2">
+            <div>
+              <p>Evaluate the amount of work, on a scale of 0 to 30.</p>
+              <ul>
+                <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
+                <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
                 <li>
-                  <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
-                  <ul>
-                    <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                    <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
-                    <li>
-                      <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
-                    </li>
-                  </ul>
+                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. You will be asked to provide a brief justification for your effort estimates.
                 </li>
               </ul>
-            </li>
-          </ol>
+            </div>
+          </div>
           <h4 id="processing-pe-bug-reports%3A">Processing PE Bug Reports:</h4>
           <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S2/pe-results/issues">bug reports</a> you received.</p>
           <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
@@ -573,7 +631,7 @@
                 <ul>
                   <li><code>response.Accepted</code>: You accept it as a bug.</li>
                   <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
-                  <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
+                  <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB4.</li>
                   <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
                   <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
                 </ul>
@@ -594,8 +652,11 @@
               </box>
             </div>
             <ul>
-              <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
+              <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level.</li>
             </ul>
+            <p>
+              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> For all cases of downgrading severity or non-acceptance of a bug, <mark>you must add a comment justifying your stance</mark>. All such cases will be double-checked by the teaching team and indiscriminate downgrading/non-acceptance of bugs without a good justification, if deemed as a case of trying to <em>game the system</em>, may be penalized as it is unfair to the tester.
+            </p>
             <div class="indented">
               <div>
                 <tip-box>
@@ -871,17 +932,18 @@
     <span id="project-deliverables-practicalexam">
       <p><strong>Objectives:</strong></p>
       <ul>
-        <li>Evaluate your manual testing skills, product evaluation skills, effort estimation skills</li>
-        <li>Peer-evaluate your product design <span class="dimmed"><span class="fas fa-users"></span></span>, implementation effort <span class="dimmed"><span class="fas fa-user"></span></span>, documentation quality <span class="dimmed"><span class="fas fa-user"></span></span></li>
+        <li>The primary objective of the PE is to <mark>increase the rigor of project assessment</mark>. Assessing most aspects of the project involves an element subjectivity. As the project counts for 50% of the final grade, it is not prudent to rely on evaluations of tutors alone as there can be significant variations between how different tutors assess projects. That is why we collect more data points via the PE so as to minimize the chance of your project being affected by evaluator-bias.</li>
+        <li>Note that <mark>none of the significant project grade components are calculated solely based on peer ratings</mark>. Rather, PE data are mostly used to cross-validate tutor assessments and identify cases that need further investigation. When peer inputs are used for grading, usually they are combined with tutor evaluations with appropriate weight for each. In some cases ratings from team members are given a higher weight compared to ratings from other teams, if that is appropriate.</li>
+        <li>As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.</li>
+        <li>Note that the PE is not a means of <em>pitting you against each other</em>. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.</li>
       </ul>
       <p><strong>When, where</strong>: Week 13 lecture</p>
       <p>
         <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Grading</strong>:
       </p>
       <ul>
-        <li>Your performance in the practical exam will be considered for your final grade (under the <em>QA</em> category and under <em>Implementation</em> category, about 10 marks in total).</li>
-        <li>You will be graded based on your effectiveness as a tester (e.g., the percentage of the bugs you found, the nature of the bugs you found) and how far off your evaluation/estimates are from the evaluator consensus. <span class="dimmed">Explanation: we understand that you have limited expertise in this area; hence, we penalize only if your inputs don't seem to be based on a sincere effort to test/evaluate.</span></li>
-        <li>The bugs found in your product by others will affect your v1.4 marks. You will be given a chance to reject false-positive bug reports.</li>
+        <li>Your performance in the practical exam will affect your final grade and your peers, as explained in <a href="/cs2103-website/admin/project-assessment.html"><em>Admin: Project Assessment</em></a> section.</li>
+        <li>As your submissions can affect the grades of peers, note that we have put in measures to identify insincere/random evaluations and penalize accordingly.</li>
       </ul>
       <div>
         <p><strong>Preparation</strong>:</p>
@@ -997,40 +1059,75 @@
         </div>
       </div>
       <ol>
-        <li>
-          <p><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.</p>
+        <li><strong>[Remainder of the session] Evaluate the following aspects.</strong> Note down your evaluation in a hard copy (as a backup). Submit via TEAMMATES. You are recommended to complete this during the PE session but <mark>you have until the end of the day to submit (or revise) your submissions</mark>.
           <ul>
+            <li><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]:</li>
+          </ul>
+        </li>
+      </ol>
+      <div class="indented-level2">
+        <div>
+          <p>Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+          <ul class="task-list">
+            <li class="task-list-item">
+              <p><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</p>
+            </li>
             <li>
-              <p><strong>A. Product Design</strong> [<span class="fas fa-users"></span>]: Evaluate the product design <strong>based on how the product <mark>V2.0 (not V1.4)</mark> is described in the User Guide</strong>.</p>
+              <p>Target user:</p>
               <ul class="task-list">
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>unable to judge</code>: You are unable to judge this aspect for some reason e.g., UG is not available or does not have enough information.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>target user specified and appropriate</code>: The target user is clearly specified, <strong>prefers typing over other modes of input</strong>, and not too general (should be narrowed to a specific user group with certain characteristics).</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value specified and matching</code>: The value offered by the product is clearly specified and matches the target user.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Value to the target user:</p>
+              <ul class="task-list">
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: low</code>: The value to target user is low. App is not worth using.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: medium</code>: Some small group of target users might find the app worth using.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>value: high</code>: Most of the target users are likely to find the app worth using.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Feature-fit:</p>
+              <ul class="task-list">
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: low</code>: Features don't seem to fit together.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: medium</code>: Some features fit together but some don't.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>feature-fit: high</code>: All features fit together.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</li>
               </ul>
             </li>
-            <li>
-              <p><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
-              <ul class="task-list">
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
-              </ul>
+            <li class="task-list-item">
+              <p><input class="task-list-item-checkbox" type="checkbox"> <code>polished</code>: The product looks well-designed.</p>
             </li>
-            <li>
-              <p><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]: Evaluate <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li><strong>B. Quality of user docs</strong> [<span class="fas fa-user"></span>]:</li>
+      </ul>
+      <div class="indented-level2">
+        <div>
+          <p>Evaluate the quality of user documentation <strong>based on the parts of the user guide written by the person,</strong> as reproduced in the project portfolio. <mark>Evaluate from an end-user perspective.</mark></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ unable to judge</code>: Less than 1 page worth of UG content written by the student or cannot find PPP</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of visuals</code>: Uses visuals e.g., screenshots.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ good use of examples</code>: Uses examples e.g., sample inputs/outputs.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ just enough information</code>: Not too much information. All important information is given.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ easy to understand</code>: The information is easy to understand for the target audience.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>UG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li><strong>C. Quality of developer docs</strong> [<span class="fas fa-user"></span>]:</li>
+      </ul>
+      <div class="indented-level2">
+        <div>
+          <p>Evaluate the quality of developer documentation <strong>based on the developer docs cited/reproduced in the respective project portfolio page.</strong> <mark>Evaluate from the perspective of a new developer trying to understand how the features are implemented.</mark></p>
+          <ul class="task-list">
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
+            <li>Diagrams:
               <ul class="task-list">
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ unable to judge</code>: Less than 0.5 pages worth of content OR other problems in the document <span class="dimmed">e.g. looks like included wrong content</span>.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ too little</code>: 0.5 - 1 page of documentation</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 1</code>: Only one type of diagram used (types: Class Diagrams, Object Diagrams, Sequence Diagrams, Activity Diagrams, Use Case Diagrams)</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 2</code>: Two types of diagrams used</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ types of UML diagrams: 3+</code>: Three or more types of diagrams used</li>
@@ -1039,39 +1136,61 @@
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not repetitive</code>: No evidence of repeating the same diagram with minor differences</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams not too complicated</code>: Diagrams don't cram too much information into them</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ diagrams integrates with text</code>: Diagrams are well integrated into the textual explanations</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
-                <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
               </ul>
             </li>
-            <li>
-              <p><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]: Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ easy to understand</code>: The document is easy to understand/follow</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ just enough information</code>: Not too much information. All important information is given.</li>
+            <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>DG/ polished</code>: The document looks neat, well-formatted, and professional.</li>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li><strong>D. Feature Quality</strong> [<span class="fas fa-user"></span>]:</li>
+      </ul>
+      <div class="indented-level2">
+        <div>
+          <p>Evaluate <mark>the biggest feature done by the student</mark> for difficulty, completeness, and testability. Note: examples given below assume that AB4 did not have the commands <code>edit</code>, <code>undo</code>, and <code>redo</code>.</p>
+          <ul>
+            <li>Difficulty
               <ul class="task-list">
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: low</code>: <span class="dimmed">e.g. make the existing <em>find</em> command case insensitive</span>.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: medium</code>: <span class="dimmed">e.g. an <em>edit</em> command that requires the user to type <em>all</em> fields, even the ones that are not being edited</span>.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ difficulty: high</code>: e.g., <span class="dimmed">undo/redo command</span></li>
+              </ul>
+            </li>
+            <li>Completeness
+              <ul class="task-list">
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: unable to judge</code>: You are unable to judge this aspect for some reason.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: low</code>: A partial implementation of the feature. Barely useful.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: medium</code>: The feature has enough functionality to be useful for some of the users.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ completeness: high</code>: The feature has all functionality to be useful to almost all users.</li>
+              </ul>
+            </li>
+            <li>Other
+              <ul class="task-list">
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ not hard to test</code>: The feature was not too hard to test manually.</li>
                 <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> <code>Feature/ polished: high</code>: The feature looks <em>polished</em> (as if done by a professional programmer).</li>
               </ul>
             </li>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]:</li>
+      </ul>
+      <div class="indented-level2">
+        <div>
+          <p>Evaluate the amount of work, on a scale of 0 to 30.</p>
+          <ul>
+            <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
+            <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
             <li>
-              <p><strong>E. Amount of work</strong> [<span class="fas fa-user"></span>]: Evaluate the amount of work, on a scale of 0 to 30.</p>
-              <ul>
-                <li>Consider <a href="https://github.com/se-edu/addressbook-level4/pull/440/files">this PR (<code>history</code> command)</a> as 5 units of effort which means <a href="https://github.com/se-edu/addressbook-level4/pull/610/files">this PR (<code>undo/redo</code> command)</a> is about 15 points of effort. Given that 30 points matches an effort twice as that needed for the <code>undo/redo</code> feature (which was given as an example of an <code>A</code> grade project), we expect most students to be have efforts lower than 20.</li>
-                <li>Count all implementation/testing/documentation work as mentioned in that person's PPP. Also look at the actual code written by the person.</li>
-                <li>
-                  <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. If your estimate is wildly inaccurate, it means you are unable to estimate the effort required to implement a feature in a project that you are supposed to know well at this point. <mark>You will lose marks if that is the case.</mark>
-                </li>
-              </ul>
+              <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> Do not give a high value just <em>to be nice</em>. You will be asked to provide a brief justification for your effort estimates.
             </li>
           </ul>
-        </li>
-      </ol>
+        </div>
+      </div>
       <h4 id="processing-pe-bug-reports%3A-2">Processing PE Bug Reports:</h4>
       <p>There will be a review period for you to respond to the <a href="https://github.com/nus-cs2103-AY1819S2/pe-results/issues">bug reports</a> you received.</p>
       <p>Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following <strong>Wednesday midnight</strong>. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.</p>
@@ -1104,7 +1223,7 @@
             <ul>
               <li><code>response.Accepted</code>: You accept it as a bug.</li>
               <li><code>response.NotInScope</code>: It is a valid issue but not something the team should be penalized for e.g., it was not related to features delivered in v1.4.</li>
-              <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> The penalty for rejecting a bug using an unjustifiable explanation is higher than the penalty if the same bug was accepted. You can reject bugs that you inherited from AB4.</li>
+              <li><code>response.Rejected</code>: What tester treated as a bug is in fact the expected behavior. You can reject bugs that you inherited from AB4.</li>
               <li><code>response.CannotReproduce</code>: You are unable to reproduce the behavior reported in the bug after multiple tries.</li>
               <li><code>response.IssueUnclear</code>: The issue description is not clear. Don't post comments asked the tester to give more info. The tester will not be able to see those comments because the bug reports are anonymized.</li>
             </ul>
@@ -1125,8 +1244,11 @@
           </box>
         </div>
         <ul>
-          <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level, in which case add a comment justifying the change. All such changes will be double-checked by the teaching team and unreasonable lowering of severity will be penalized extra.:</li>
+          <li><strong>If you disagree with the original severity assigned to the bug</strong>, you may change it to the correct level.</li>
         </ul>
+        <p>
+          <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> For all cases of downgrading severity or non-acceptance of a bug, <mark>you must add a comment justifying your stance</mark>. All such cases will be double-checked by the teaching team and indiscriminate downgrading/non-acceptance of bugs without a good justification, if deemed as a case of trying to <em>game the system</em>, may be penalized as it is unfair to the tester.
+        </p>
         <div class="indented">
           <div>
             <tip-box>

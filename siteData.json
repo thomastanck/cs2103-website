@@ -244,7 +244,12 @@
     },
     {
       "headings": {
-        "project%3A-assessment": "Project: Assessment "
+        "project%3A-assessment": "Project: Assessment ",
+        "1.-project-assessment%3A-product-design-%5B-5-marks%5D": "1. Project Assessment: Product Design [ 5 marks]",
+        "2.-project-assessment%3A-implementation-%5B-15-marks%5D": "2. Project Assessment: Implementation [ 15 marks]",
+        "3.-project-assessment%3A-qa-%5B-10-marks%5D": "3. Project Assessment: QA [ 10 marks]",
+        "4.-project-assessment%3A-documentation-%5B-10-marks%5D": "4. Project Assessment: Documentation [ 10 marks]",
+        "5.-project-assessment%3A-project-management-%5B-5-%2B-5-%3D-10-marks%5D": "5. Project Assessment: Project Management [ 5 +  5 = 10 marks]"
       },
       "title": "Admin: Project: Assessment",
       "footer": "footer.md",
@@ -1186,6 +1191,20 @@
         "casting": "Casting",
         "jar-files": "JAR Files",
         "miscellaneous-topics": "Miscellaneous Topics",
+        "taskmanager": "TaskManager",
+        "taskmanager-level-1": "TaskManager Level 1",
+        "taskmanager-level-2": "TaskManager Level 2",
+        "taskmanager-level-3": "TaskManager Level 3",
+        "taskmanager-level-4": "TaskManager Level 4",
+        "taskmanager-level-5": "TaskManager Level 5",
+        "taskmanager-level-6": "TaskManager Level 6",
+        "taskmanager-level-7": "TaskManager Level 7",
+        "taskmanager-level-8": "TaskManager Level 8",
+        "taskmanager-level-9": "TaskManager Level 9",
+        "taskmanager-level-10": "TaskManager Level 10",
+        "taskmanager-level-11": "TaskManager Level 11",
+        "taskmanager-level-12": "TaskManager Level 12",
+        "practice-projects": "Practice Projects",
         "c%2B%2B-to-java": "C++ to Java"
       },
       "title": "Textbook Chapter : C++ to Java",

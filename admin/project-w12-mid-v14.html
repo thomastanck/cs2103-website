@@ -358,29 +358,31 @@ method 2 ...
             </div>
             <modal large="" title="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Code Quality Tips  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" id="modal:midv14_codeQualityTips">
                 <div>
-                <ul>
-                  <li>
-                    <p>Ensure your code has at least some evidence of these (see <a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
-                    <ul>
-                      <li>logging</li>
-                      <li>exceptions</li>
-                      <li>assertions</li>
-                      <li>defensive coding</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p>Ensure there are no <a href="/cs2103-website/coding-standards/java/intermediate.html">coding standard</a> violations <span class="dimmed"> e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
-                  </li>
-                  <li>
-                    <p>Ensure <a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP may be counted against your code quality.</p>
-                  </li>
-                  <li>
-                    <p>Reduce code duplications <span class="dimmed"> i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
-                  </li>
-                  <li>
-                    <p>In addition, try to apply as many of the <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger> as much as you can.</p>
-                  </li>
-                </ul>
+                <blockquote>
+                  <ul>
+                    <li>
+                      <p>At least some evidence of these (see <a href="/cs2103-website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+                      <ul>
+                        <li>logging</li>
+                        <li>exceptions</li>
+                        <li>assertions</li>
+                        <li>defensive coding</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>No <a href="/cs2103-website/coding-standards/java/intermediate.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
+                    </li>
+                    <li>
+                      <p><a href="/cs2103-website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
+                    </li>
+                    <li>
+                      <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
+                    </li>
+                    <li>
+                      <p>Evidence of applying <trigger trigger="click" for="modal:v15-codeQuality">code quality guidelines covered in the module</trigger>.</p>
+                    </li>
+                  </ul>
+                </blockquote>
                 <modal large="" title="Textbook <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Implementation →" id="modal:v15-codeQuality">
                     <div>
                     <p><span class="dimmed"><strong><span></span></strong></span></p>
@@ -2106,9 +2108,6 @@ compact(input);
                             </panel>
                           </div>
                         </div>
-                        <div>
-                          <p>null</p>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -2116,7 +2115,7 @@ compact(input);
               </div>
             </modal>
             <p>
-              <panel src="/cs2103-website\admin\project-assessment._include_.html#code-quality-tips" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Code Quality Tips  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="code-quality-tips"></panel>
+              <panel src="/cs2103-website\admin\project-assessment._include_.html#projectGrading-codeQuality-criteria" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Project Assessment → Code Quality Tips  <span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span><span class='glyphicon glyphicon-star' aria-hidden='true'></span>" class="embedding" minimized="" fragment="projectGrading-codeQuality-criteria"></panel>
             </p>
           </div>
           <p><strong><big>Documentation:</big></strong></p>
@@ -2318,7 +2317,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.15.2</a> at Thu, 03 Jan 2019 15:48:56 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Wed, 09 Jan 2019 16:10:29 GMT</small></div>
 </footer>
 </div>
 </body>
