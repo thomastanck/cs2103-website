@@ -12,9 +12,9 @@
 
 <span id="module_website">https://nus-{{ module | lower }}-{{ semester }}.github.io/{{ module | lower }}-website</span>
 
-<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSMEFXr-yL298GPeuNxkC7m87bYqi4KTWo7zZRtDXLCIIhb0osxn5aM3gVk6DCOC6pEu5nMw7Gf1YwJ/pub?embed=true</span>
+<span id="instructors_page">https://docs.google.com/document/d/e/2PACX-1vSeqPnUbHSbnl7fl2fEtSoiniiD877N38r0Sbx1acWzpBLxSNz_yNjQrPsi5AoksCqdFeaDj7TSVe_w/pub?embedded=true</span>
 
-<span id="team_IDs_page">https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdSGHg7CbuEJBQOAzjgqLtDVyYBuvuNtrWBfZxqlO_r9YFjAdgf46ogN20xYTonsVHvH83yj5Nyy5/pubhtml?gid=0&single=true</span>
+<span id="team_IDs_page">https://docs.google.com/document/d/e/2PACX-1vSKAos19KW3DdEZ1SMiKVdLTSFj-oaZG-dyAtWwYx-GyZWizZ6O3ZEpaflNkDUkEHc3IabcOoX77W4L/pub?embedded=true</span>
 
 <span id="ivle_files">https://ivle.nus.edu.sg/v1/File/Student/default.aspx?CourseID=5937af8e-eedf-4bb1-9f28-d6e021b98a19&WorkbinID=21c0ae7f-fb5e-4661-9848-95f6895614cf&FolderID=64931a8a-a309-40c6-a9eb-1182275847db</span>
 
