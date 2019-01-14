@@ -7,7 +7,7 @@
 
 * **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon. **If you do not submit feedback responses, you will forfeit participation marks that you earned based on feedback ratings received from others**.
 
-* **An anonymous survey to submit feedback about the teaching team** is now open on IVLE. Please take a few minutes to give feedback to your tutors. As usual, you can use the 'anonymous feedback' feature of IVLE to send us feedback any time.
+* **An anonymous survey to submit feedback about the teaching team** is now open on LumiNUS. Please take a few minutes to give feedback to your tutors. As usual, you can use the 'anonymous feedback' feature of LumiNUS to send us feedback any time.
 
 **Project**
 
