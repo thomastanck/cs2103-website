@@ -2,8 +2,10 @@
 
 <big>**Tutorial selection and seating arrangement**</big>
 
-* **{{ module }}** students: As you don't have a confirmed tutorial yet, attend the slot you chose in the 'Temporary Tutorial Registration' Doodle poll (to be done early in Mon-Tue of week 2). Team forming will be done in the following week. You are free to sit with anyone this week.
+* **{{ module }}** students: As you don't have a confirmed tutorial yet, attend any tutorial slot for CS2103 slot. 
 * **{{ module }}T** students: Attend the tutorial pre-allocated to you. Sit together with your team members.
+
+* Team forming will be done in the following week. You are free to sit with anyone this week.
 
 
 <br/>
