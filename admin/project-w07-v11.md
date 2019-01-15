@@ -49,13 +49,15 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.1 Documentation
 
-* Update User Guide, Developer Guide, README, and About Us pages as described earlier in <trigger trigger="click" for="modal:v11docs-midv11">mid-v1.1 progress guide</trigger>.
+* Update User Guide, README, and About Us pages as described earlier in <trigger trigger="click" for="modal:v11docs-midv11">mid-v1.1 progress guide</trigger>. 
 
   **Submission**: merge your changes to the master branch of your repo.
 
 <modal large title="Admin {{ icon_embedding }} Project: mid-v1.1" id="modal:v11docs-midv11">
   <include src="project-w06-mid-v11.md#body"/>
 </modal>
+
+Tutors will provide feedback on this version of the UG. This feedback should be used to improve your final submission. 
 
 </div>
 <div id="product">

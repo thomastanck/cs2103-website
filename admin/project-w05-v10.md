@@ -27,12 +27,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 ### v1.0 Documentation
 
-* **Developer Guide**:
-  Have a draft of the requirements of your project, as described in <trigger trigger="click" for="modal:v10-midv10">mid-v1.0 progress guide</trigger>.
 
-<modal large title="Admin » Project → mid-v1.0" id="modal:v10-midv10">
-  <include src="project-w04-mid-v10.md#body"/>
-</modal>
   
 * **User Guide**:  
   Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v2.0.

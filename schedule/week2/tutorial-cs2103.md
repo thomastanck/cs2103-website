@@ -3,9 +3,7 @@
 <big>**Tutorial selection and seating arrangement**</big>
 
 * **{{ module }}** students: As you don't have a confirmed tutorial yet, attend the slot you chose in the 'Temporary Tutorial Registration' Doodle poll (to be done early in Mon-Tue of week 2). Team forming will be done in the following week. You are free to sit with anyone this week.
-* **{{ module }}T** students:
-  * Those in Wednesday tutorials: As Wednesday is a holiday, follow instructions for {{ module }} students given above to choose another slot for this week. You can attend your normal tutorial from week 3. Sit with your team members for Tutorial 3 onwards.
-  * Those in Thursday and Friday tutorials: Attend the tutorial pre-allocated to you. Sit together with your team members.
+* **{{ module }}T** students: Attend the tutorial pre-allocated to you. Sit together with your team members.
 
 
 <br/>

@@ -50,7 +50,7 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
   * Clearly indicate which features are not implemented yet %%e.g. tag those features with a `Coming in v2.0`%%.
   * For those features already implemented, ensure their descriptions match the exact behavior of the product %%e.g. replace mockups with actual screenshots%%
  
-* **Developer Guide**: As before, update if necessary.
+* **Developer Guide**: Update your DG. Tutors will provide feedback on this version. This feedback should be used to improve your final submission. 
   
 * **AboutUs page**: Update to reflect current state of roles and responsibilities.  
 
@@ -61,6 +61,9 @@ Ensure your code is RepoSense-compatible, <trigger trigger="click" for="modal:v1
 
 * Do a quick demo of the main features ==using the jar file==. Objective: demonstrate that the jar file works.
 
+### v1.3 Code quality
+
+You will get feedback on your code quality in v1.3. Ensure that you fix the issues pointed out for your final submission. 
 
 ### v1.3 Testing (_aka_ Practical Exam Dry Run)
 

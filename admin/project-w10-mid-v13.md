@@ -29,7 +29,13 @@
 **<big>Documentation:</big>**
 
 * **User Guide**: Update where the document does not match the current product.
-* **Developer Guide**: Similar to the User Guide.
+
+* **Developer Guide**:
+  Have a draft of the requirements of your project, as described in <trigger trigger="click" for="modal:v12-v12">v1.2 progress guide</trigger>.
+
+<modal large title="Admin » Project → v1.2" id="modal:v12-v12">
+  <include src="project-w09-v12.md#body"/>
+</modal>
 
 </div>
 </div>

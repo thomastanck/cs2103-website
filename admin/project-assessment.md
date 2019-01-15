@@ -174,6 +174,8 @@ Evaluate the amount of work, on a scale of 0 to 30.
 
 **Based on:** the relevant sections of your PPP.
 
+**Feedback:** Submit your UG in v1.1 amd your DG in v 1.3 to allow the tutors to provide feedback on these documents. This will give you a chance to improve for your final submission.  
+
 **Evaluated by:** tutors, peers from own team and other teams
 
 {{ icon_info }} For reference, here are some grading instructions that will be given to peers/tutors grading this aspect:

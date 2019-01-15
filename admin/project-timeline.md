@@ -11,13 +11,13 @@ Week  | Stage     | Activities
 ------|-----------|-----------
 **3** |inception| <span id="inception-overview">Decide on a overall project direction %%(user profile, problem addressed, optimize or morph?).%%</span>
 **4** |mid-v1.0 | <span id="mid-v10-overview">Decide on requirements %%(user stories, use cases, non-functional requirements).%%</span>
-**5** |v1.0     | <span id="v10-overview">Conceptualize product and document it as a user guide(draft), draft a rough project plan.</span>
+**5** |v1.0     | <span id="v10-overview">Conceptualize product and document it as a user guide (UG)(draft), draft a rough project plan.</span>
 **6** |mid-v1.1 | <span id="mid-v11-overview">Set up project repo, start moving UG and DG to the repo, attempt to do local-impact changes to the code base.</span>
-**7** |v1.1     | <span id="v11-overview">Update UG and DG in the repo, attempt to do global-impact changes to the code base.</span>
+**7** |v1.1     | <span id="v11-overview">Update UG in the repo, attempt to do global-impact changes to the code base.</span>
 **8** |mid-v1.2 | <span id="mid-v12-overview">Adjust project schedule/rigor as needed, start proper milestone management.</span>
 **9** |v1.2     | <span id="v12-overview">Move code towards v2.0 in small steps, start documenting design/implementation details in DG.</span>
-**10**|mid-v1.3 | <span id="mid-v13-overview">Continue to enhance features. Make code RepoSense-compatible. Try doing a proper release.</span>
-**11**|v1.3     | <span id="v13-overview">Release as a jar file, release updated user guide, peer-test released products, verify code authorship.</span>
+**10**|mid-v1.3 | <span id="mid-v13-overview">Continue to enhance features. Make code RepoSense-compatible. Try doing a proper release. Update DG in the repo.</span>
+**11**|v1.3     | <span id="v13-overview">Release as a jar file, release updated user guide, finalize and release developer guide (DG), peer-test released products, verify code authorship.</span>
 **12**|mid-v1.4 | <span id="mid-v14-overview">Tweak as per peer-testing results, draft Project Portfolio Page, practice product demo.</span>
 **13**|v1.4     | <span id="v14-overview">Final tweaks to docs/product, release product, demo product, evaluate peer projects.</span>
 
