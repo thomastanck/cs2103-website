@@ -3,7 +3,7 @@
 
 Note that project grading is ==not competitive (not bell curved)==. {{ module }}T projects will be assessed separately from {{ module }} projects. This is to account for the perceived difference in workload. Given below is the marking scheme.
 
-**Total**: 50 marks ({{ icon_individual }} 40 individual marks + {{ icon_team }} 10 team marks)
+**Total**: 50 marks ({{ icon_individual }} 38 individual marks + {{ icon_team }} 12 team marks)
 
 See the sections below for details of how we assess each aspect.
 
@@ -45,7 +45,7 @@ Evaluate the product design **based on how the product ==V2.0 (not V1.4)== is de
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 2. Project Assessment: Implementation %%[{{ icon_individual }} 15 marks]%%
+#### 2. Project Assessment: Implementation %%[{{ icon_individual }} 13 marks]%%
 
 **<big>2A. Code quality</big>**
 
@@ -124,7 +124,7 @@ Evaluate the amount of work, on a scale of 0 to 30.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-#### 3. Project Assessment: QA %%[{{ icon_individual }} 10 marks]%%
+#### 3. Project Assessment: QA %%[{{ icon_team }} 2 + {{ icon_individual }} 10 = 12 marks]%%
 
 <big>**3A. System/Acceptance Testing:**</big>
 
