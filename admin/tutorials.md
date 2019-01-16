@@ -15,19 +15,19 @@
 
 | Module   | Tutorial ID %%(ID in CORS)%%| Time | Venue             | Tutors (<a href="{{ baseUrl }}/admin/instructors.html">contact details</a>)
 |----------|-----------------|------------------|-------------------|----
-| CS2103   | W10  %%(T01)%%  | **W**ed **10**00 | COM1-B103 (ALL)<sup>*</sup>   | TBD
-| CS2103T  | W12  %%(T01)%%  | **W**ed **12**00 | COM1-0210 (SR10)  | TBD
-| CS2103   | W13  %%(T02)%%  | **W**ed **13**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | W14  %%(T02)%%  | **W**ed **14**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | W16  %%(T03)%%  | **W**ed **16**00 | COM1-B103 (ALL)   | TBD
-| CS2103T  | W17  %%(T04)%%  | **W**ed **17**00 | COM1-B103 (ALL)   | TBD
-| CS2103T  | T09  %%(T06)%%  | **T**hu **09**00 | COM1-0210 (SR10)  | TBD
-| CS2103   | T10  %%(T04)%%  | **T**hu **10**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | T12  %%(T07)%%  | **T**hu **12**00 | COM1-0210 (SR10)  | TBD            
-| CS2103   | T13  %%(T06)%%  | **T**hu **13**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | T16  %%(T08)%%  | **T**hu **16**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | F10  %%(T10)%%  | **F**ri **10**00 | COM1-0210 (SR10)  | TBD
-| CS2103   | F11  %%(T09)%%  | **F**ri **11**00 | COM1-0210 (SR10)  | TBD
+| CS2103T   | W09  %%(T01)%% | **W**ed **09**00 | COM1-B103 (ALL)<sup>*</sup>   | TBD
+| CS2103T   | W10  %%(T02)%% | **W**ed **10**00 | COM1-B103 (ALL) | TBD
+| CS2103T   | W11  %%(T03)%% | **W**ed **11**00 |  COM1-0210 (SR10) | TBD
+| CS2103  | W12  %%(01)%% | **W**ed **12**00 | COM1-0210 (SR10)  | TBD
+| CS2103   | W13  %%(02)%% | **W**ed **13**00 | COM1-0210 (SR10)  | TBD
+| CS2103T  | W14  %%(T04)%% | **W**ed **14**00 | COM1-0210 (SR10)  | TBD
+| CS2103  | W15  %%(03)%% | **W**ed **15**00 | COM1-0210 (SR10)  | TBD
+| CS2103  | W16  %%(04)%% | **W**ed **16**00 | COM1-B103 (ALL)   | TBD
+| CS2103T  | W17  %%(T05)%% | **W**ed **17**00 | COM1-B103 (ALL)   | TBD
+| CS2103T   | T10  %%(T07)%%  | **T**hu **10**00 | COM1-0210 (SR10)  | TBD
+| CS2103T  | T12  %%(T06)%% | **T**hu **12**00 | COM1-0210 (SR10)  | TBD            
+| CS2103T  | F08  %%(T08)%% | **F**ri **08**00 | COM1-0210 (SR10)  | TBD
+| CS2103   | F09  %%(05)%% | **F**ri **09**00 | COM1-0210 (SR10)  | TBD
 
 %%*ALL: Active Learning Room%%
 
