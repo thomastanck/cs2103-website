@@ -9,7 +9,7 @@
         "identifying-points-in-history": "Identifying Points in History",
         "week-1-%5Bjan-14%5D": "Week 1 [Jan 14]",
         "week-2-%5Bjan-21%5D": "Week 2 [Jan 21]",
-        "what-to-and-what-not-to-annotate": "undefined | project expectations"
+        "what-to-and-what-not-to-annotate": "undefined | project expectations, project expectations, project expectations"
       },
       "title": "Home",
       "footer": "footer.md",
@@ -317,7 +317,7 @@
     },
     {
       "headings": {
-        "project%3A-scope": "Project: Scope  | project expectations",
+        "project%3A-scope": "Project: Scope  | project expectations, project expectations, project expectations",
         "project-direction": "Project Direction",
         "individual-expectations": " Individual Expectations",
         "%5Bindividual%5D-expectations-on-features": "[Individual] Expectations on Features",
