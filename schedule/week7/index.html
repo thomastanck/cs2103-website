@@ -110,18 +110,7 @@
                 </ul>
                 <p></p>
                 <ul>
-                  <li>
-                    <p><a href="#W7-4">[W7.4] CodeQuality: Readability <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></p>
-                  </li>
-                  <li>
-                    <p><a href="#W7-5">[W7.5] CodeQuality: Naming <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
-                  </li>
-                  <li>
-                    <p><a href="#W7-6">[W7.6] CodeQuality: Unsafe Practices <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
-                  </li>
-                  <li>
-                    <p><a href="#W7-7">[W7.7] CodeQuality: Code Comments <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
-                  </li>
+                  <li><a href="#W7-4">[W7.4] Project Mgt: Scheduling and Tracking <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
                 </ul>
                 <p></p>
               </div>
@@ -610,124 +599,52 @@
               <panel type="seamless" no-close="" expandable="true" expanded="">
                 <span slot="header" class="card-title">
                   <div>
-                    <p><big> <span class="dimmed">[W7.4]</span> <big><big><strong>CodeQuality: Readability</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                    <p><big> <span class="dimmed">[W7.4]</span> <big><big><strong>Project Mgt: Scheduling and Tracking</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4a]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability →
-                            </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4a]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>Milestones</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
                         <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the importance of readability</span></span></span></span></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain milestones</span></span></span></span></p>
                         <p></p>
                         <p></p>
                         <p></p>
                         <div>
-                          <blockquote>
-                            <p>Programs should be written and polished until they acquire publication quality. <sub>--<a href="https://en.wikipedia.org/wiki/Niklaus_Wirth">Niklaus Wirth</a></sub></p>
-                          </blockquote>
-                          <p><strong>Among various dimensions of code quality, such as run-time efficiency, security, and robustness, one of the most important is understandability.</strong> This is because in any non-trivial software project, code needs to be read, understood, and modified by other developers later on. Even if we do not intend to pass the code to someone else, code quality is still important because we all become 'strangers' to our own code someday.</p>
+                          <p><strong>A <em>milestone</em> is the end of a stage which indicates a significant progress.</strong> We should take into account dependencies and priorities when deciding on the features to be delivered at a certain milestone.</p>
                           <tip-box>
-                            <p><span class="fas fa-cube"></span> The two code samples given below achieve the same functionality, but one is easier to read.</p>
-                            <div class="alt-java">
-                              <div>
-                                <table>
+                            <p><span class="fas fa-cube"></span> Each intermediate product release is a milestone.</p>
+                          </tip-box>
+                          <p>In some projects, it is not practical to have a very detailed plan for the whole project due to the uncertainty and unavailability of required information. In such cases, we can use a high-level plan for the whole project and a detailed plan for the next few milestones.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Milestones for the Minesweeper project, iteration 1</p>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
                                   <tr>
-                                      <td>
-                                      <p>
-                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">subsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (!age) {
-        <span class="hljs-keyword">if</span> (!sub) {
-            <span class="hljs-keyword">if</span> (!notFullTime) {
-                subsidy = <span class="hljs-number">500</span>;
-            } <span class="hljs-keyword">else</span> {
-                subsidy = <span class="hljs-number">250</span>;
-            }
-        } <span class="hljs-keyword">else</span> {
-            subsidy = <span class="hljs-number">250</span>;
-        }
-    } <span class="hljs-keyword">else</span> {
-        subsidy = -<span class="hljs-number">1</span>;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                      <td>  <br><br></td>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculateSubsidy</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">int</span> subsidy;
-    <span class="hljs-keyword">if</span> (isSenior) {
-        subsidy = REJECT_SENIOR;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isAlreadySubsidised) {
-        subsidy = SUBSIDISED_SUBSIDY;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (isPartTime) {
-        subsidy = FULLTIME_SUBSIDY * RATIO;
-    } <span class="hljs-keyword">else</span> {
-        subsidy = FULLTIME_SUBSIDY;
-    }
-    <span class="hljs-keyword">return</span> subsidy;
-}
-</code></pre>
-                                      <p></p>
-                                    </td>
+                                    <th>Day</th>
+                                    <th>Milestones</th>
                                   </tr>
-                                </table>
-                              </div>
-                            </div>
-                            <div class="alt-python">
-                              <div>
-                                <table>
+                                </thead>
+                                <tbody>
                                   <tr>
-                                      <td>
-                                      <p>
-                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subs</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> age:
-        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> sub:
-            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> not_fulltime:
-                subsidy = <span class="hljs-number">500</span>
-            <span class="hljs-keyword">else</span>:
-                subsidy = <span class="hljs-number">250</span>
-        <span class="hljs-keyword">else</span>:
-            subsidy = <span class="hljs-number">250</span>
-    <span class="hljs-keyword">else</span>:
-        subsidy = <span class="hljs-number">-1</span>
-    <span class="hljs-keyword">return</span> subsidy
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                      <td>  <br><br></td>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">calculate_subsidy</span><span class="hljs-params">()</span>:</span>
-    <span class="hljs-keyword">if</span> is_senior:
-        <span class="hljs-keyword">return</span> REJECT_SENIOR
-    <span class="hljs-keyword">elif</span> is_already_subsidised:
-        <span class="hljs-keyword">return</span> SUBSIDISED_SUBSIDY
-    <span class="hljs-keyword">elif</span> is_parttime:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY * RATIO
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-keyword">return</span> FULLTIME_SUBSIDY
-</code></pre>
-                                      <p></p>
-                                    </td>
+                                    <td>Day 1</td>
+                                    <td>Architecture skeleton completed</td>
                                   </tr>
-                                </table>
-                              </div>
+                                  <tr>
+                                    <td>Day 3</td>
+                                    <td>‘new game’ feature implemented</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Day 4</td>
+                                    <td>‘new game’ feature tested</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                             </div>
                           </tip-box>
                         </div>
@@ -736,898 +653,295 @@
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4b]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-                            </span></strong></span> <strong><big><big><span>Avoid Long Methods</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4b]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>Buffers</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
                         <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid long methods </span></span></span></span></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain buffers</span></span></span></span></p>
                         <p></p>
                         <p></p>
                         <p></p>
                         <div>
-                          <p>Be wary when a method is longer than the computer screen, and take corrective action when it goes beyond 30 LOC (lines of code). The bigger the haystack, the harder it is to find a needle.</p>
+                          <p><strong>A <em>buffer</em> is a time set aside to absorb any unforeseen delays.</strong> It is very important to include buffers in a software project schedule because effort/time estimations for software development is notoriously hard. However, <strong>do not inflate task estimates to create hidden buffers</strong>; have explicit buffers instead. <span class="dimmed"> Reason: With explicit buffers it is easier to detect incorrect effort estimates which can serve as a feedback to improve future effort estimates.</span></p>
+                          <img src="/cs2103-website/book/projectPlanning/buffers/images/schedule.png" height="120">
                         </div>
                         <div></div>
                       </div>
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4c]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-                            </span></strong></span> <strong><big><big><span>Avoid Deep Nesting</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4c]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>Issue Trackers</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
                         <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid deep nesting </span></span></span></span></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain issue trackers</span></span></span></span></p>
                         <p></p>
                         <p></p>
                         <p></p>
                         <div>
-                          <blockquote>
-                            <p>If you need more than 3 levels of indentation, you're screwed anyway, and should fix your program. <sub>--Linux 1.3.53 CodingStyle</sub></p>
-                          </blockquote>
-                          <p>In particular, avoid <a href="https://blog.codinghorror.com/flattening-arrow-code/"><em>arrowhead</em> style code</a>.</p>
+                          <p>Keeping track of project tasks <span class="dimmed">(who is doing what, which tasks are ongoing, which tasks are done etc.)</span> is an essential part of project management. In small projects it may be possible to track tasks using simple tools as online spreadsheets or general-purpose/light-weight tasks tracking tools such as Trello. Bigger projects need more sophisticated task tracking tools.</p>
+                          <p><strong>Issue trackers (sometimes called bug trackers) are commonly used to track task assignment and progress.</strong> Most online project management software such as GitHub, SourceForge, and BitBucket come with an integrated issue tracker.</p>
+                          <div v-closeable="" alt="Jira screenshot">
+                            <tip-box>
+                              <p><span class="fas fa-cube"></span> A screenshot from the Jira Issue tracker software <span class="dimmed">(Jira is part of the BitBucket project management tool suite)</span>:</p>
+                              <img src="/cs2103-website/book/projectPlanning/issueTrackers/images/xjira.png" height="350">
+                              <p></p>
+                            </tip-box>
+                          </div>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4d]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>Work Breakdown Structure</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain work breakdown structures</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>A <em>Work Breakdown Structure (WBS)</em> depicts information about tasks and their details in terms of subtasks.</strong> When managing projects it is useful to divide the total work into smaller, well-defined units. Relatively complex tasks can be further split into subtasks. In complex projects a WBS can also include prerequisite tasks and effort estimates for each task.</p>
                           <tip-box>
-                            <p>Example:</p>
-                            <img src="/cs2103-website/book/codeQuality/maximiseReadability/basic/avoidDeepNesting/images/arrowheadStyle.png" height="250">
+                            <p><span class="fas fa-cube"></span> The high level tasks for a single iteration of a small project could look like the following:</p>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>Task ID</th>
+                                    <th>Task</th>
+                                    <th>Estimated Effort</th>
+                                    <th>Prerequisite Task</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>A</td>
+                                    <td>Analysis</td>
+                                    <td>1 man day</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr>
+                                    <td>B</td>
+                                    <td>Design</td>
+                                    <td>2 man day</td>
+                                    <td>A</td>
+                                  </tr>
+                                  <tr>
+                                    <td>C</td>
+                                    <td>Implementation</td>
+                                    <td>4.5 man day</td>
+                                    <td>B</td>
+                                  </tr>
+                                  <tr>
+                                    <td>D</td>
+                                    <td>Testing</td>
+                                    <td>1 man day</td>
+                                    <td>C</td>
+                                  </tr>
+                                  <tr>
+                                    <td>E</td>
+                                    <td>Planning for next version</td>
+                                    <td>1 man day</td>
+                                    <td>D</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </tip-box>
+                          <p><strong>The effort is traditionally measured in <em>man hour/day/month</em></strong> i.e. work that can be done by one person in one hour/day/month. The <em>Task ID</em> is a label for easy reference to a task. Simple labeling is suitable for a small project, while a more informative labeling system can be adopted for bigger projects.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> An example WBS for a project for developing a game.</p>
+                            <table class="table">
+                              <tr>
+                                <th>Task ID</th>
+                                <th>Task</th>
+                                <th>Estimated Effort</th>
+                                <th>Prerequisite Task</th>
+                              </tr>
+                              <tr>
+                                <td>A</td>
+                                <td>High level design</td>
+                                <td>1 man day</td>
+                                <td>-</td>
+                              </tr>
+                              <tr>
+                                <td>B</td>
+                                <td>
+                                  Detail design
+                                  <ol>
+                                    <li>User Interface</li>
+                                    <li>Game Logic</li>
+                                    <li>Persistency Support</li>
+                                  </ol>
+                                </td>
+                                <td>
+                                  2 man day
+                                  <ul>
+                                    <li>0.5 man day</li>
+                                    <li>1 man day</li>
+                                    <li>0.5 man day</li>
+                                  </ul>
+                                </td>
+                                <td>A</td>
+                              </tr>
+                              <tr>
+                                <td>C</td>
+                                <td>
+                                  Implementation
+                                  <ol>
+                                    <li>User Interface</li>
+                                    <li>Game Logic</li>
+                                    <li>Persistency Support</li>
+                                  </ol>
+                                </td>
+                                <td>
+                                  4.5 man day
+                                  <ul>
+                                    <li>1.5 man day</li>
+                                    <li>2 man day</li>
+                                    <li>1 man day</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>B.1</li>
+                                    <li>B.2</li>
+                                    <li>B.3</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>D</td>
+                                <td>System Testing</td>
+                                <td>1 man day</td>
+                                <td>C</td>
+                              </tr>
+                              <tr>
+                                <td>E</td>
+                                <td>Planning for next version</td>
+                                <td>1 man day</td>
+                                <td>D</td>
+                              </tr>
+                            </table>
+                          </tip-box>
+                          <p><strong>All tasks should be well-defined.</strong> In particular, it should be clear as to when the task will be considered <em>done</em>.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Some examples of ill-defined tasks and their better-defined counterparts:</p>
+                            <div class="table-responsive">
+                              <table class="markbind-table table table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
+                                    </th>
+                                    <th><span class="text-success"><span class="fas fa-thumbs-up"></span> Better </span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>more coding</td>
+                                    <td>implement component X</td>
+                                  </tr>
+                                  <tr>
+                                    <td>do research on UI testing</td>
+                                    <td>find a suitable tool for testing the UI</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </tip-box>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which one is not a well-defined task?">
+                                  <question>
+                                    <p>Which one these project tasks is not well-defined?</p>
+                                    <ul radio-group="9211e" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> a. Implement the 'delete' feature.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> b. Fix bug #12315.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> c. Do some more testing.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> d. Choose a tool to draw UML diagrams.</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="9211e" type="radio"> e. Clarify submission requirements with the customer.</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(c)</p>
+                                      <p>Explanation: ‘More testing’ is not well-defined. How much is ‘more’? ‘Test the delete functionality’ is a better-defined task.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4e]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>GANTT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain GANTT charts</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>A <em>Gantt chart</em> is a 2-D bar-chart, drawn as <em>time vs tasks</em></strong> (represented by horizontal bars).</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> A sample Gantt chart:</p>
+                            <img src="/cs2103-website/book/projectPlanning/ganttCharts/images/gantt.png" height="360">
                             <p></p>
                           </tip-box>
+                          <p>In a Gantt chart, a solid bar represents the main task, which is generally composed of a number of subtasks, shown as grey bars. The diamond shape indicates an important deadline/deliverable/milestone.</p>
                         </div>
                         <div></div>
                       </div>
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4d]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-                            </span></strong></span> <strong><big><big><span>Avoid Complicated Expressions</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4f]</span></span> <span class="dimmed"><strong><span>Project Management → Project Planning →
+                            </span></strong></span> <strong><big><big><span>PERT Charts</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
                         <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid complicated expressions </span></span></span></span></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain PERT charts</span></span></span></span></p>
                         <p></p>
                         <p></p>
                         <p></p>
                         <div>
-                          <p>Avoid complicated expressions, especially those having many negations and nested parentheses. If you must evaluate complicated expressions, have it done in steps (i.e. calculate some intermediate values first and use them to calculate the final value).</p>
-                          <div class="alt-java">
-                            <div>
-                              <tip-box>
-                                <p><span class="fas fa-cube"></span> Example:</p>
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                </p>
-                                <pre><code class="hljs java"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) || (previousSize != length)) &amp;&amp; (typeCode == URGENT);
-</code></pre>
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                </p>
-                                <pre><code class="hljs java">
-<span class="hljs-keyword">boolean</span> isWithinSizeLimit = length &lt; MAX_LENGTH;
-<span class="hljs-keyword">boolean</span> isSameSize = previousSize != length;
-<span class="hljs-keyword">boolean</span> isValidCode = isWithinSizeLimit || isSameSize;
-
-<span class="hljs-keyword">boolean</span> isUrgent = typeCode == URGENT;
-
-<span class="hljs-keyword">return</span> isValidCode &amp;&amp; isUrgent;
-</code></pre>
-                              </tip-box>
-                            </div>
-                          </div>
-                          <div class="alt-python">
-                            <div>
-                              <tip-box>
-                                <p><span class="fas fa-cube"></span> Example:</p>
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                </p>
-                                <pre><code class="hljs python"><span class="hljs-keyword">return</span> ((length &lt; MAX_LENGTH) <span class="hljs-keyword">or</span> (previous_size != length)) <span class="hljs-keyword">and</span> (type_code == URGENT)
-</code></pre>
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                </p>
-                                <pre><code class="hljs python">is_within_size_limit = length &lt; MAX_LENGTH
-is_same_size = previous_size != length
-is_valid_code = is_within_size_limit <span class="hljs-keyword">or</span> is_same_size
-
-is_urgent = type_code == URGENT
-
-<span class="hljs-keyword">return</span> is_valid_code <span class="hljs-keyword">and</span> is_urgent
-</code></pre>
-                              </tip-box>
-                            </div>
-                          </div>
-                          <blockquote>
-                            <p>The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague. <sub>-- Edsger Dijkstra</sub></p>
-                          </blockquote>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4e]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-                            </span></strong></span> <strong><big><big><span>Avoid Magic Numbers</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid magic numbers </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>When the code has a number that does not explain the meaning of the number, we call that a magic number (as in “the number appears as if by magic”). Using a <tooltip content="e.g., `PI`"><em>named constant</em></tooltip> makes the code easier to understand because the name tells us more about the meaning of the number.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Example:</p>
-                            <div class="alt-java">
-                              <div>
-                                <table>
-                                  <tr>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>;
-...
-<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>;
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                      <td>  <br><br></td>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.14236</span>;
-<span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MAX_SIZE = <span class="hljs-number">10</span>;
-...
-<span class="hljs-keyword">return</span> PI;
-...
-<span class="hljs-keyword">return</span> MAX_SIZE-<span class="hljs-number">1</span>;
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>
-                            </div>
-                            <div class="alt-python">
-                              <div>
-                                <p>Note: Python does not have a way to make a variable a constant. However, you can use a normal variable with an <code>ALL_CAPS</code> name to simulate a constant.</p>
-                                <table>
-                                  <tr>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs python"><span class="hljs-keyword">return</span> <span class="hljs-number">3.14236</span>
-...
-<span class="hljs-keyword">return</span> <span class="hljs-number">9</span>
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                      <td>  <br><br></td>
-                                      <td valign="top">
-                                      <p>
-                                        <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                      </p>
-                                      <pre><code class="hljs python">PI = <span class="hljs-number">3.14236</span>
-MAX_SIZE = <span class="hljs-number">10</span>
-...
-<span class="hljs-keyword">return</span> PI
-...
-<span class="hljs-keyword">return</span> MAX_SIZE<span class="hljs-number">-1</span>
-</code></pre>
-                                      <p></p>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>
-                            </div>
-                          </tip-box>
-                          <p>Similarly, we can have ‘magic’ values of other data types.</p>
-                          <tip-box>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-string">"Error 1432"</span>  <span class="hljs-comment">// A magic string!</span>
-</code></pre>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4f]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Basic →
-                            </span></strong></span> <strong><big><big><span>Make the Code Obvious</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the code obvious </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Make the code as explicit as possible, even if the language syntax allows them to be implicit. Here are some examples:</p>
+                          <p><strong>PERT (Program Evaluation Review Technique) chart uses a graphical technique to show the order/sequence of tasks.</strong> It is based on a simple idea of drawing a directed graph in which:</p>
                           <ul>
-                            <li>[<code>Java</code>] Use explicit type conversion instead of implicit type conversion.</li>
-                            <li>[<code>Java</code>, <code>Python</code>] Use parentheses/braces to show grouping even when they can be skipped.</li>
-                            <li>[<code>Java</code>, <code>Python</code>] Use <trigger trigger="click" for="modal:obviousCode-enums">enumerations</trigger> when a certain variable can take only a small number of finite values. For example, instead of declaring the variable 'state' as an integer and using values 0,1,2 to denote the states 'starting', 'enabled', and 'disabled' respectively, declare 'state' as type <code>SystemState</code> and define an enumeration <code>SystemState</code> that has values <code>'STARTING'</code>, <code>'ENABLED'</code>, and <code>'DISABLED'</code>.</li>
-                          </ul>
-                          <modal title="More about enumerations" id="modal:obviousCode-enums">
-                            <ul>
-                              <li><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">More about Java enumerations</a></li>
-                              <li><a href="https://docs.python.org/3/library/enum.html">More about Python enumerations</a></li>
-                            </ul>
-                          </modal>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4g]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Structure Code Logically</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: structure code logically </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Lay out the code so that it adheres to the logical structure. The code should read like a story. Just like we use section breaks, chapters and paragraphs to organize a story, use classes, methods, indentation and line spacing in your code to group related segments of the code. For example, you can use blank lines to group related statements together.
-                            Sometimes, the correctness of your code does not depend on the order in which you perform certain intermediary steps. Nevertheless, this order may affect the clarity of the story you are trying to tell. Choose the order that makes the story most readable.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4h]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Do Not 'Trip Up' Reader</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not 'trip up' reader </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Avoid things that would make the reader go ‘huh?’, such as,</p>
-                          <ul>
-                            <li>unused parameters in the method signature</li>
-                            <li>similar things look different</li>
-                            <li>different things that look similar</li>
-                            <li>multiple statements in the same line</li>
-                            <li>data flow anomalies such as, pre-assigning values to variables and modifying it without any use of the pre-assigned value</li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4i]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Practice KISSing</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: practice kissing </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>As the old adage goes, <strong>&quot;keep it simple, stupid” (KISS). Do not try to write ‘clever’ code.</strong> For example, do not dismiss the brute-force yet simple solution in favor of a complicated one because of some ‘supposed benefits’ such as 'better reusability' unless you have a strong justification.</p>
-                          <blockquote>
-                            <p>Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it. <sub>--Brian W. Kernighan </sub></p>
-                          </blockquote>
-                          <blockquote>
-                            <p>Programs must be written for people to read, and only incidentally for machines to execute. <sub>--Abelson and Sussman</sub></p>
-                          </blockquote>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4j]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Avoid Premature Optimizations</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid premature optimizations </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Optimizing code prematurely has several drawbacks</strong>:</p>
-                          <ul>
-                            <li><strong>We may not know which parts are the real performance bottlenecks</strong>. This is especially the case when the code undergoes transformations (e.g. compiling, minifying, transpiling, etc.) before it becomes an executable. Ideally, you should use a profiler tool to identify the actual bottlenecks of the code first, and optimize only those parts.</li>
-                            <li><strong>Optimizing can complicate the code</strong>, affecting correctness and understandability</li>
-                            <li><strong>Hand-optimized code can be harder for the compiler to optimize</strong> (the simpler the code, the easier for the compiler to optimize it). In many cases a compiler can do a better job of optimizing the runtime code if you don't get in the way by trying to hand-optimize the source code.</li>
-                          </ul>
-                          <p>A popular saying in the industry is <strong><em>make it work, make it right, make it fast</em></strong> which means in most cases getting the code to perform correctly should take priority over optimizing it. If the code doesn't work correctly, it has no value on matter how fast/efficient it it.</p>
-                          <blockquote>
-                            <p>Premature optimization is the root of all evil in programming. <sub>--<a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a></sub></p>
-                          </blockquote>
-                          <p>Note that <strong>there are cases where optimizing takes priority over other things</strong> <span class="dimmed">e.g. when writing code for resource-constrained environments</span>. This guideline simply a caution that you should optimize only when it is really needed.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4k]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Intermediate →
-                            </span></strong></span> <strong><big><big><span>SLAP Hard</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: SLAP hard </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Avoid varying the level of <trigger trigger="click" for="modal:slap-abstraction">abstraction</trigger> within a code fragment.
-                            Note: The <em>Productive Programmer</em> (by Neal Ford) calls this the <em>SLAP principle</em> i.e. Single Level of Abstraction Per method.</p>
-                          <tip-box>
-                            <p>Example:</p>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java">readData();
-salary = basic*rise+<span class="hljs-number">1000</span>;
-tax = (taxable?salary*<span class="hljs-number">0.07</span>:<span class="hljs-number">0</span>);
-displayResult();
-</code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java">readData();
-processData();
-displayResult();
-</code></pre>
-                          </tip-box>
-                          <modal title="" id="modal:slap-abstraction">
-                              <div>
-                              <div></div>
-                              <p></p>
-                              <p><span class="dimmed"><strong><span>Design → Design Fundamentals → Abstraction →
-                                    </span></strong></span></p>
-                              <div id="title-and-body">
-                                <div>
-                                  <h4 id="what"><span>What</span><a class="fa fa-anchor" href="#what"></a></h4>
-                                </div>
-                                <div id="main">
-                                  <div>
-                                    <tip-box type="definition">
-                                      <div>
-                                        <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
-                                      </div>
-                                    </tip-box>
-                                    <p><strong>The guiding principle of abstraction is that only details that are relevant to the current perspective or the task at hand needs to be considered.</strong> As most programs are written to solve complex problems involving large amounts of intricate details, it is impossible to deal with all these details at the same time. That is where abstraction can help.</p>
-                                    <p><strong>Ignoring lower level data items and thinking in terms of bigger entities is called <mark><em>data abstraction</em></mark>.</strong></p>
-                                    <tip-box>
-                                      <p><span class="fas fa-cube"></span> Within a certain software component, we might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p>
-                                    </tip-box>
-                                    <p><strong><mark><em>Control abstraction</em></mark> abstracts away details of the actual control flow to focus on tasks at a simplified level.</strong></p>
-                                    <tip-box>
-                                      <p><span class="fas fa-cube"></span> <code>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p>
-                                    </tip-box>
-                                    <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstractions</em>.</strong></p>
-                                    <tip-box>
-                                      <p><span class="fas fa-cube"></span> An example of different levels of data abstraction: a <code>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-                                      <p><span class="fas fa-cube"></span> An example of different levels of control abstraction: <code>execute(Game)</code> is at a higher level than <code>print(Char)</code> which is at a higher than an Assembly language instruction <code>MOV</code>.</p>
-                                    </tip-box>
-                                    <p><strong>Abstraction is a general concept that is not limited to just data or control abstractions.</strong></p>
-                                    <box>
-                                      <p><span class="fas fa-cube"></span> Some more general examples of abstraction:</p>
-                                      <ul>
-                                        <li>An OOP <em>class</em> is an abstraction over related data and behaviors.</li>
-                                        <li>An <em>architecture</em> is a higher-level abstraction of the design of a software.</li>
-                                        <li>Models (e.g., UML models) are abstractions of some aspect of reality.</li>
-                                      </ul>
-                                    </box>
-                                  </div>
-                                  <div></div>
-                                </div>
-                              </div>
-                            </div>
-                          </modal>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4l]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Readability → Advanced →
-                            </span></strong></span> <strong><big><big><span>Make the Happy Path Prominent</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: make the happy path prominent </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>The happy path (i.e. the execution path taken when everything goes well) should be clear and prominent in your code. Restructure the code to make the happy path unindented as much as possible. It is the ‘unusual’ cases that should be indented. Someone reading the code should not get distracted by alternative paths taken when error conditions happen. One technique that could help in this regard is the use of <a href="http://wiki.c2.com/?GuardClause">guard clauses</a>.</p>
-                          <tip-box>
-                            <p>Example:</p>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (!isUnusualCase) {  <span class="hljs-comment">//detecting an unusual condition</span>
-    <span class="hljs-keyword">if</span> (!isErrorCase) {
-        start();    <span class="hljs-comment">//main path</span>
-        process();
-        cleanup();
-        exit();
-    } <span class="hljs-keyword">else</span> {
-        handleError();
-    }
-} <span class="hljs-keyword">else</span> {
-    handleUnusualCase(); <span class="hljs-comment">//handling that unusual condition</span>
-}
-</code></pre>
-                            <p>In the code above,</p>
-                            <ul>
-                              <li>Unusual condition detection is separated from their handling.</li>
-                              <li>Main path is nested deeply.</li>
-                            </ul>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (isUnusualCase) { <span class="hljs-comment">//Guard Clause</span>
-    handleUnusualCase();
-    <span class="hljs-keyword">return</span>;
-}
-
-<span class="hljs-keyword">if</span> (isErrorCase) { <span class="hljs-comment">//Guard Clause</span>
-    handleError();
-    <span class="hljs-keyword">return</span>;
-}
-
-start();
-process();
-cleanup();
-exit();
-</code></pre>
-                            <p>In contrast, the above code</p>
-                            <ul>
-                              <li>deals with unusual conditions as soon as they are detected so that the reader doesn't have to remember them for long.</li>
-                              <li>keeps the main path un-indented.</li>
-                            </ul>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p><span id="W7-5"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W7.5]</span> <big><big><strong>CodeQuality: Naming</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5a]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming →
-                            </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for good names in code</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
-                          <blockquote>
-                            <p>There are only two hard things in Computer Science: cache invalidation and naming things. <sub>-- Phil Karlton</sub></p>
-                          </blockquote>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5b]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
-                            </span></strong></span> <strong><big><big><span>Use Nouns for Things and Verbs for Actions</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use nouns for things and verbs for actions </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <blockquote>
-                            <p><span class="fas fa-quote-left"></span> Every system is built from a domain-specific language designed by the programmers to describe that system. Functions are the verbs of that language, and classes are the nouns. <sub>― Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em></sub></p>
-                          </blockquote>
-                          <p><strong>Use nouns for classes/variables and verbs for methods/functions.</strong></p>
-                          <tip-box>
-                            <p>Examples:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Name for a</th>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Class</td>
-                                    <td><code>CheckLimit</code></td>
-                                    <td><code>LimitChecker</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td>method</td>
-                                    <td><code>result()</code></td>
-                                    <td><code>calculate()</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p><strong>Distinguish clearly between single-valued and multivalued variables.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Examples:</p>
-                            <div class="alt-java">
-                              <p>
-                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                              </p>
-                              <pre><code class="hljs java">Person student;
-ArrayList&lt;Person&gt; students;
-</code></pre>
-                            </div>
-                            <div class="alt-python">
-                              <p>
-                                <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                              </p>
-                              <pre><code class="hljs python">student = Person(<span class="hljs-string">'Jim'</span>)
-students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="hljs-string">'Alice'</span>)]
-</code></pre>
-                            </div>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5c]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Basic →
-                            </span></strong></span> <strong><big><big><span>Use Standard Words</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use standard words </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Use correct spelling in names. Avoid 'texting-style' spelling. <strong>Avoid foreign language words, slang, and names that are only meaningful within specific contexts/times</strong> <span class="dimmed">e.g. terms from private jokes, a TV show currently popular in your country</span></p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5d]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Use Name to Explain</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use name to explain </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A name is not just for differentiation; it should explain the named entity to the reader accurately and at a sufficient level of detail.</strong></p>
-                          <tip-box>
-                            <p>Examples:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><code>processInput()</code> (what 'process'?)</td>
-                                    <td><code>removeWhiteSpaceFromInput()</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>flag</code></td>
-                                    <td><code>isValidInput</code></td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>temp</code></td>
-                                    <td></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p><strong>If the name has multiple words, they should be in a sensible order.</strong></p>
-                          <tip-box>
-                            <p>Examples:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><code>bySizeOrder()</code></td>
-                                    <td><code>orderBySize()</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p>Imagine going to the doctor's and saying &quot;My eye1 is swollen&quot;! Don’t use numbers or case to distinguish names.</p>
-                          <tip-box>
-                            <p>Examples:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><code>value1</code>, <code>value2</code></td>
-                                    <td><code>value</code>, <code>Value</code></td>
-                                    <td><code>originalValue</code>, <code>finalValue</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5e]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Not Too Long, Not Too Short</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: not too long, not too short </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>While it is preferable not to have lengthy names, names that are 'too short' are even worse. If you must abbreviate or use acronyms, do it consistently. Explain their full meaning at an obvious location.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.5f]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Naming → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Avoid Misleading Names</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid misleading names </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Related things should be named similarly, while unrelated things should NOT.</strong></p>
-                          <tip-box>
-                            <p>Example: Consider these variables</p>
-                            <ul>
-                              <li><code>colorBlack</code> : hex value for color black</li>
-                              <li><code>colorWhite</code> : hex value for color white</li>
-                              <li><code>colorBlue</code> : number of times blue is used</li>
-                              <li><code>hexForRed</code> : : hex value for color red</li>
-                            </ul>
-                            <p>This is misleading because <code>colorBlue</code> is named similar to <code>colorWhite</code> and <code>colorBlack</code> but has a different purpose while <code>hexForRed</code> is named differently but has very similar purpose to the first two variables. The following is better:</p>
-                            <ul>
-                              <li><code>hexForBlack</code> <code>hexForWhite</code> <code>hexForRed</code></li>
-                              <li><code>blueColorCount</code></li>
-                            </ul>
-                          </tip-box>
-                          <p>Avoid misleading or ambiguous names (e.g. those with multiple meanings), similar sounding names, hard-to-pronounce ones (e.g. avoid ambiguities like &quot;is that a lowercase L, capital I or number 1?&quot;, or &quot;is that number 0 or letter O?&quot;), almost similar names.</p>
-                          <tip-box>
-                            <p>Examples:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>
-                                      <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                                    </th>
-                                    <th>
-                                      <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                    </th>
-                                    <th>Reason</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td><code>phase0</code></td>
-                                    <td><code>phaseZero</code></td>
-                                    <td>Is that zero or letter O?</td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>rwrLgtDirn</code></td>
-                                    <td><code>rowerLegitDirection</code></td>
-                                    <td>Hard to pronounce</td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>right</code> <code>left</code> <code>wrong</code></td>
-                                    <td><code>rightDirection</code> <code>leftDirection</code> <code>wrongResponse</code></td>
-                                    <td><code>right</code> is for 'correct' or 'opposite of 'left'?</td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>redBooks</code> <code>readBooks</code></td>
-                                    <td><code>redColorBooks</code> <code>booksRead</code></td>
-                                    <td><code>red</code> and <code>read</code> (past tense) sounds the same</td>
-                                  </tr>
-                                  <tr>
-                                    <td><code>FiletMignon</code></td>
-                                    <td><code>egg</code></td>
-                                    <td>If the requirement is just a name of a food, <code>egg</code> is a much easier to type/say choice than <code>FiletMignon</code></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p><span id="W7-6"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W7.6]</span> <big><big><strong>CodeQuality: Unsafe Practices</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6a]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices →
-                            </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for avoiding error-prone shortcuts</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Some such coding practices are common sources of bugs. Know them and avoid them.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6b]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                            </span></strong></span> <strong><big><big><span>Use the Default Branch</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: use the default branch </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Always include a default branch in <code>case</code> statements.</p>
-                          <p>Furthermore, use it for the intended default action and not just to execute the last option. If there is no default action, you can use the 'default' branch to detect errors (i.e. if execution reached the <code>default</code> branch, throw an exception). This also applies to the final <code>else</code> of an <code>if-else</code> construct. That is, the final <code>else</code> should mean 'everything else', and not the final option. Do not use <code>else</code> when an <code>if</code> condition can be explicitly specified, unless there is absolutely no other possibility.</p>
-                          <tip-box>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> print <span class="hljs-string">"blue"</span>;
-</code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-keyword">if</span> (red) print <span class="hljs-string">"red"</span>;
-<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (blue) print <span class="hljs-string">"blue"</span>;
-<span class="hljs-keyword">else</span> error(<span class="hljs-string">"incorrect input"</span>);
-</code></pre>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6c]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                            </span></strong></span> <strong><big><big><span>Don't Recycle Variables or Parameters</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: don't recycle variables or parameters </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <ul>
-                            <li>Use one variable for one purpose. Do not reuse a variable for a different purpose other than its intended one, just because the data type is the same.</li>
-                            <li>Do not reuse formal parameters as local variables inside the method.</li>
+                            <li>Node or vertex captures the effort estimation of a task, and</li>
+                            <li>Arrow depicts the precedence between tasks</li>
                           </ul>
                           <tip-box>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    length = length * width;
-    <span class="hljs-keyword">return</span> length;
-}
-
-</code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">computeRectangleArea</span><span class="hljs-params">(<span class="hljs-keyword">double</span> length, <span class="hljs-keyword">double</span> width)</span> </span>{
-    <span class="hljs-keyword">double</span> area;
-    area = length * width;
-    <span class="hljs-keyword">return</span> area;
-}
-</code></pre>
+                            <p><span class="fas fa-cube"></span> an example PERT chart for a simple software project</p>
+                            <p><img src="/cs2103-website/book/projectPlanning/pertCharts/images/pert.jpg" height="320"><br>
+                              <code>md</code> = man days</p>
+                          </tip-box>
+                          <p>A PERT chart can help determine the following important information:</p>
+                          <ul>
+                            <li>The order of tasks. <span class="dimmed"> In the example above, <code>Final Testing</code> cannot begin until all coding of individual subsystems have been completed.</span></li>
+                            <li>Which tasks can be done concurrently. <span class="dimmed"> In the example above, the various subsystem designs can start independently once the <code>High level design</code> is completed.</span></li>
+                            <li>The shortest possible completion time. <span class="dimmed"> In the example above, there is a path (indicated by the shaded boxes) from start to end that determines the shortest possible completion time.</span></li>
+                            <li>The Critical Path. <span class="dimmed"> In the example above, the shortest possible path is also the critical path</span>.</li>
+                          </ul>
+                          <tip-box type="definition">
+                            <p><strong>Critical path</strong> is the path in which any delay can directly affect the project duration. It is important to ensure tasks on the critical path are completed on time.</p>
                           </tip-box>
                         </div>
                         <div></div>
@@ -1635,282 +949,52 @@ students = [Person(<span class="hljs-string">'Jim'</span>), Person(<span class="
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6d]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                            </span></strong></span> <strong><big><big><span>Avoid Empty Catch Blocks</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.4g]</span></span> <span class="dimmed"><strong><span>Project Management → Teamwork →
+                            </span></strong></span> <strong><big><big><span>Team Structures</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
                         <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: avoid empty catch blocks </span></span></span></span></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain common team structures</span></span></span></span></p>
                         <p></p>
                         <p></p>
                         <p></p>
                         <div>
-                          <p>Never write an empty <code>catch</code> statement. At least give a comment to explain why the <code>catch</code> block is left empty.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6e]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Basic →
-                            </span></strong></span> <strong><big><big><span>Delete Dead Code</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: delete dead code </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>We all feel reluctant to delete code we have painstakingly written, even if we have no use for that code any more (&quot;I spent a lot of time writing that code; what if we need it again?&quot;). Consider all code as baggage you have to carry; get rid of unused code the moment it becomes redundant. If you need that code again, simply recover it from the revision control tool you are using. Deleting code you wrote previously is a sign that you are improving.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6f]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Minimise Scope of Variables</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise scope of variables </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Minimize global variables</strong>. Global variables may be the most convenient way to pass information around, but they do create implicit links between code segments that use the global variable. Avoid them as much as possible.</p>
-                          <p><strong>Define variables in the least possible scope</strong>. For example, if the variable is used only within the <code>if</code> block of the conditional statement, it should be declared inside that <code>if</code> block.</p>
-                          <blockquote>
-                            <p><strong>The most powerful technique for minimizing the scope of a local variable is to declare it where it is first used.</strong> <sub>-- <em>Effective Java</em>, by Joshua Bloch</sub></p>
-                          </blockquote>
-                          <p><span class="fas fa-paperclip"></span> Resources:</p>
-                          <ul>
-                            <li><a href="https://refactoring.com/catalog/reduceScopeOfVariable.html">Refactoring: Reduce Scope of Variable</a></li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.6g]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Error-Prone Practices → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Minimise Code Duplication</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: minimise code duplication </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Code duplication, especially when you copy-paste-modify code, often indicates a poor quality implementation.</strong> While it may not be possible to have zero duplication, always think twice before duplicating code; most often there is a better alternative.</p>
-                          <p>This guideline is closely related to the <trigger for="modal:duplication-dry" trigger="click">DRY Principle<trigger>.</trigger>
-                            </trigger>
-                          </p>
-                          <modal title="**<span class='glyphicon glyphicon-eye-open' aria-hidden='true'></span> DRY Principle**" id="modal:duplication-dry">
-                            <div>
-                              <div></div>
-                              <p></p>
-                              <p><span class="dimmed"><strong><span>Supplmentary → Principles →
-                                    </span></strong></span></p>
-                              <div id="title-and-body">
-                                <div>
-                                  <h4 id="dry-principle"><span>DRY Principle</span><a class="fa fa-anchor" href="#dry-principle"></a></h4>
-                                </div>
-                                <div id="main">
-                                  <div>
-                                    <tip-box type="definition">
-                                      <div>
-                                        <p><strong>DRY (Don't Repeat Yourself) Principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
-                                      </div>
-                                    </tip-box>
-                                    <p>This principle guards against duplication of information.</p>
-                                    <tip-box>
-                                      <p><span class="fas fa-cube"></span> The functionality implemented twice is a violation of the DRY principle even if the two implementations are different.</p>
-                                      <p><span class="fas fa-cube"></span> The value a system-wide timeout being defined in multiple places is a violation of DRY.</p>
-                                    </tip-box>
-                                  </div>
-                                  <div></div>
-                                </div>
-                              </div>
-                            </div>
-                          </modal>
+                          <p>Given below are three commonly used team structures in software development. Irrespective of the team structure, it is a good practice to assign roles and responsibilities to different team members so that someone is clearly in charge of each aspect of the project. In comparison, the ‘everybody is responsible for everything’ approach can result in more chaos and hence slower progress.</p>
+                          <img src="/cs2103-website/book/teamwork/teamStructures/images/diagram.png" height="150">
                           <p></p>
+                          <p><strong>Egoless team</strong></p>
+                          <p>In this structure, <strong>every team member is equal in terms of responsibility and accountability</strong>. When any decision is required, consensus must be reached. This team structure is also known as a <em>democratic</em> team structure. This team structure usually finds a good solution to a relatively hard problem as all team members contribute ideas.</p>
+                          <p>However, the democratic nature of the team structure bears a higher risk of falling apart due to the absence of an authority figure to manage the team and resolve conflicts.</p>
+                          <p><strong>Chief programmer team</strong></p>
+                          <p>Frederick Brooks proposed that software engineers learn from the medical surgical team in an operating room. In such a team, there is always a chief surgeon, assisted by experts in other areas. Similarly, in a chief programmer team structure, <strong>there is a single authoritative figure, the chief programmer</strong>. Major decisions, e.g. system architecture, are made solely by him/her and obeyed by all other team members. The chief programmer directs and coordinates the effort of other team members. When necessary, the chief will be assisted by domain specialists e.g. business specialists, database expert, network technology expert, etc. This allows individual group members to concentrate solely on the areas where they have sound knowledge and expertise.</p>
+                          <p>The success of such a team structure relies heavily on the chief programmer. Not only must he be a superb technical hand, he also needs good managerial skills. Under a suitably qualified leader, such a team structure is known to produce successful work. .</p>
+                          <p><strong>Strict hierarchy team</strong></p>
+                          <p>In the opposite extreme of an egoless team, a strict hierarchy team has <strong>a strictly defined organization among the team members</strong>, reminiscent of the military or bureaucratic government. Each team member only works on his assigned tasks and reports to a single “boss”.</p>
+                          <p>In a large, resource-intensive, complex project, this could be a good team structure to reduce communication overhead.</p>
                         </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p><span id="W7-7"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W7.7]</span> <big><big><strong>CodeQuality: Code Comments</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.7a]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Comments →
-                            </span></strong></span> <strong><big><big><span>Introduction</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for commenting minimally but sufficiently</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
                         <div>
-                          <blockquote>
-                            <p>Good code is its own best documentation. As you’re about to add a comment, ask yourself, ‘How can I improve the code so that this comment isn’t needed?’ Improve the code and then document it to make it even clearer. <sub>--<a href="https://en.wikipedia.org/wiki/Steve_McConnell">Steve McConnell</a>, Author of <em>Clean Code</em></sub></p>
-                          </blockquote>
-                          <p>Some think commenting heavily increases the 'code quality'. This is not so. Avoid writing comments to explain bad code. Improve the code to make it self-explanatory.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.7b]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Basic →
-                            </span></strong></span> <strong><big><big><span>Do Not Repeat the Obvious</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: do not repeat the obvious </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>If the code is self-explanatory, refrain from repeating the description in a comment just for the sake of 'good documentation'.</p>
-                          <p>
-                            <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font>
-                          </p>
-                          <pre><code class="hljs java"><span class="hljs-comment">// increment x</span>
-x++;
-
-<span class="hljs-comment">//trim the input</span>
-trimInput();
-</code></pre>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.7c]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Basic →
-                            </span></strong></span> <strong><big><big><span>Write to the Reader</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: write to the reader </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Do not write comments as if they are private notes to self. Instead, write them well enough to be understood by another programmer. One type of comments that is almost always useful is the <em>header comment</em> that you write for a class or an operation to explain its purpose.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Examples:</p>
-                            <div class="alt-java">
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
                               <div>
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
-                                </p>
-                                <pre><code class="hljs java"><span class="hljs-comment">// a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                </p>
-                                <pre><code class="hljs java"><span class="hljs-comment">/** Trims the input of leading and trailing spaces */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">trimInput</span><span class="hljs-params">()</span></span>{
-    ....
-}
-</code></pre>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which team structure is the most suitable for a school project?">
+                                  <question>
+                                    <p>Which team structure is the most suitable for a school project?</p>
+                                    <ul radio-group="8ee7d" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> a. Egoless</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> b. Chief programmer</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="8ee7d" type="radio"> c. Strict hierarchy</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)</p>
+                                      <p>Explanation: Given that students are all peers and beginners, Egoless team structure seems most suitable for a school project. However, given school projects are low-stakes, short-lived, and small, even the other two team structures can be used for them.</p>
+                                    </div>
+                                  </question>
+                                </panel>
                               </div>
-                            </div>
-                            <div class="alt-python">
-                              <div>
-                                <p>
-                                  <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: this comment will only make sense to the person who wrote it</span>
-                                </p>
-                                <pre><code class="hljs python"><span class="hljs-comment"># a quick trim function used to fix bug I detected overnight</span>
-<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-    ...
-</code></pre>
-                                <p>
-                                  <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font>
-                                </p>
-                                <pre><code class="hljs python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">trim_input</span><span class="hljs-params">()</span>:</span>
-<span class="hljs-string">"""Trim the input of leading and trailing spaces"""</span>
-    ...
-</code></pre>
-                              </div>
-                            </div>
-                          </tip-box>
+                            </panel>
+                          </div>
                         </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W7.7d]</span></span> <span class="dimmed"><strong><span>Implementation → Code Quality → Comments → Intermediate →
-                            </span></strong></span> <strong><big><big><span>Explain WHAT and WHY, not HOW</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can improve code quality using technique: explain what and why, not how </span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Comments should explain <em>what</em> and <em>why</em> aspect of the code, rather than the <em>how</em> aspect.</p>
-                          <p><span style="color:green"><span class="fas fa-check"></span></span> <strong>What</strong> : The specification of what the code <em>supposed</em> to do. The reader can compare such comments to the implementation to verify if the implementation is correct</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Example: This method is possibly buggy because the implementation does not seem to match the comment. In this case the comment could help the reader to detect the bug.</p>
-                            <pre><code class="hljs java"><span class="hljs-comment">/** Removes all spaces from the {<span class="hljs-doctag">@code</span> input} */</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">compact</span><span class="hljs-params">(String input)</span></span>{
-    input.trim();
-}
-</code></pre>
-                          </tip-box>
-                          <p><span style="color:green"><span class="fas fa-check"></span></span> <strong>Why</strong> : The rationale for the current implementation.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Example: Without this comment, the reader will not know the reason for calling this method.</p>
-                            <pre><code class="hljs java"><span class="hljs-comment">// Remove spaces to comply with IE23.5 formatting rules</span>
-compact(input);
-</code></pre>
-                          </tip-box>
-                          <p><span style="color:red"><span class="fas fa-times"></span></span> <strong>How</strong> : The explanation for how the code works. This should already be apparent from the code, if the code is self-explanatory. Adding comments to explain the same thing is redundant.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Example:</p>
-                            <p>
-                              <font color="red"><span><strong><span class="fas fa-thumbs-down"></span> Bad</strong></span></font> <span class="dimmed">Reason: Comment explains how the code works.</span>
-                            </p>
-                            <pre><code class="hljs java"><span class="hljs-comment">// return true if both left end and right end are correct or the size has not incremented</span>
-<span class="hljs-keyword">return</span> (left &amp;&amp; right) || (input.size() == size);
-</code></pre>
-                            <p>
-                              <font color="green"><span><strong><span class="fas fa-thumbs-up"></span> Good</strong></span></font> <span class="dimmed">Reason: Code refactored to be self-explanatory. Comment no longer needed.</span>
-                            </p>
-                            <pre><code class="hljs java">
-<span class="hljs-keyword">boolean</span> isSameSize = (input.size() == size) ;
-<span class="hljs-keyword">return</span> (isLeftEndCorrect &amp;&amp; isRightEndCorrect) || isSameSize;
-</code></pre>
-                          </tip-box>
-                        </div>
-                        <div></div>
                       </div>
                     </div>
                   </panel>
@@ -4753,7 +3837,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Wed, 16 Jan 2019 11:00:00 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Thu, 17 Jan 2019 09:19:37 GMT</small></div>
 </footer>
 </div>
 </body>
