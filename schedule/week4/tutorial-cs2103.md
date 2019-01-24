@@ -5,6 +5,10 @@ Therefore, we **strongly encourage you to achieve the `W4.1 Can create PRs on Gi
 
 </tip-box>
 
+<tip-box type="important"> 
 
-* As before, demo/discuss evidence of learning the topics as directed by the tutor.
+There are no tutorials this week due to CNY. <br>
+However, you are advised to set a time and meet with your team to complete the tasks for **mid-v1.0** and start working towards completing the first draft of the user guide.
+
+</tip-box>
 
