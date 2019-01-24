@@ -8,7 +8,7 @@
 
 **💰 After reaching 15 participation points**:
 
-* We encourage you to continue to do module activities (irrespective of whether they have participation points) because **every time you skip a module activity, it can potentially make the remainder of the module a harder for you** to follow, due to the highly-connect and iterative nature of this module.
+* We encourage you to continue to do module activities (irrespective of whether they have participation points) because **every time you skip a module activity, it can potentially make the remainder of the module a harder for you** to follow, due to the highly-connected and iterative nature of this module.
 
 **🆘 If you need help**
 
