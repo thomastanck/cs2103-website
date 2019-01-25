@@ -15,19 +15,19 @@
 
 | Module   | Tutorial ID %%(ID in CORS)%%| Time | Venue             | Tutors (<a href="{{ baseUrl }}/admin/instructors.html">contact details</a>)
 |----------|-----------------|------------------|-------------------|----
-| CS2103T   | W09  %%(T01)%% | **W**ed **09**00 | COM1-B103 (ALL)<sup>*</sup>   | TBD
-| CS2103T   | W10  %%(T02)%% | **W**ed **10**00 | COM1-B103 (ALL) | TBD
-| CS2103T   | W11  %%(T03)%% | **W**ed **11**00 |  COM1-0210 (SR10) | TBD
-| CS2103  | W12  %%(01)%% | **W**ed **12**00 | COM1-0210 (SR10)  | TBD
-| CS2103   | W13  %%(02)%% | **W**ed **13**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | W14  %%(T04)%% | **W**ed **14**00 | COM1-0210 (SR10)  | TBD
-| CS2103  | W15  %%(03)%% | **W**ed **15**00 | COM1-0210 (SR10)  | TBD
-| CS2103  | W16  %%(04)%% | **W**ed **16**00 | COM1-B103 (ALL)   | TBD
-| CS2103T  | W17  %%(T05)%% | **W**ed **17**00 | COM1-B103 (ALL)   | TBD
-| CS2103T   | T10  %%(T07)%%  | **T**hu **10**00 | COM1-0210 (SR10)  | TBD
-| CS2103T  | T12  %%(T06)%% | **T**hu **12**00 | COM1-0210 (SR10)  | TBD            
-| CS2103T  | F08  %%(T08)%% | **F**ri **08**00 | COM1-0210 (SR10)  | TBD
-| CS2103   | F09  %%(05)%% | **F**ri **09**00 | COM1-0210 (SR10)  | TBD
+| CS2103T   | W09  %%(T01)%% | **W**ed **09**00 | COM1-B103 (ALL)<sup>*</sup>   | Akshay, Marlene
+| CS2103T   | W10  %%(T02)%% | **W**ed **10**00 | COM1-B103 (ALL) | Yuan Chuan, Yan Bin
+| CS2103T   | W11  %%(T03)%% | **W**ed **11**00 |  COM1-0210 (SR10) | Yuan Chuan, Yash
+| CS2103  | W12  %%(01)%% | **W**ed **12**00 | COM1-0210 (SR10)  | Cancelled
+| CS2103   | W13  %%(02)%% | **W**ed **13**00 | COM1-0210 (SR10)  | Ewald, Triston
+| CS2103T  | W14  %%(T04)%% | **W**ed **14**00 | COM1-0210 (SR10)  | Yuan Chuan, Jeffry
+| CS2103  | W15  %%(03)%% | **W**ed **15**00 | COM1-0210 (SR10)  | Yan Hwa, Melodies
+| CS2103  | W16  %%(04)%% | **W**ed **16**00 | COM1-B103 (ALL)   | Rong Hua, Lester
+| CS2103T  | W17  %%(T05)%% | **W**ed **17**00 | COM1-B103 (ALL)   | Yong Soon, Sharan
+| CS2103T   | T10  %%(T07)%%  | **T**hu **10**00 | COM1-0210 (SR10)  | Cancelled
+| CS2103T  | T12  %%(T06)%% | **T**hu **12**00 | COM1-0210 (SR10)  | Quoc Bao, Hung Siang            
+| CS2103T  | F08  %%(T08)%% | **F**ri **08**00 | COM1-0210 (SR10)  | Cancelled
+| CS2103   | F09  %%(05)%% | **F**ri **09**00 | COM1-0210 (SR10)  | Cancelled
 
 %%*ALL: Active Learning Room%%
 
