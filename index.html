@@ -86,16 +86,10 @@
               <li>
                 <p>Note that <strong>module announcements will be posted in in <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">this issue tracker <strong>aka <em>forum</em></strong></a></strong>, and cross-posted on LumiNUS.</p>
                 <ul>
-                  <li>
-                    <p>Reason for using issue tracker for announcements/discussions: It allows you to post responses to announcements, and is a tool from the SE world</p>
-                  </li>
-                  <li>
-                    <p>You are encouraged to <em>watch</em> <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">that repo</a> to get alerts when new issues/comments are posted
-                      <a href="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png" target="_self"><img src="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png" alt="" class="img-fluid"></a></p>
-                  </li>
-                  <li>
-                    <p>You are encouraged to help others in the forum (e.g., share tips, help with technical problems). <mark>We consider such sharing when giving out <code>A+</code> grades and when recruiting tutors.</mark></p>
-                  </li>
+                  <li>Reason for using issue tracker for announcements/discussions: It allows you to post responses to announcements, and is a tool from the SE world</li>
+                  <li>You are encouraged to <em>watch</em> <a href="https://github.com/nus-cs2103-AY1819S2/forum/issues">that repo</a> to get alerts when new issues/comments are posted
+                    <a href="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png" target="_self"><img src="https://user-images.githubusercontent.com/1673303/44647915-0c761a80-aa12-11e8-98ac-2deb50532643.png" alt="" class="img-fluid"></a></li>
+                  <li>You are encouraged to help others in the forum (e.g., share tips, help with technical problems). <mark>We consider such sharing when giving out <code>A+</code> grades and when recruiting tutors.</mark></li>
                 </ul>
               </li>
               <li>
@@ -4807,15 +4801,58 @@ git pull origin master
         </tab>
         <tab header="<span class='fas fa-chalkboard-teacher'></span> Tutorial">
           <div>
-            <p><strong>CS2103 students only</strong>: Form teams at the beginning of the tutorial. Be sure to conform to team forming constrains.</p>
+            <h2 id="admin-matters">Admin matters<a class="fa fa-anchor" href="#admin-matters"></a></h2>
+            <p><strong>Team forming</strong>: We will form teams at the beginning of the tutorial. Be sure to arrive on time.</p>
             <p>
               <panel src="/cs2103-website\admin\project-teams._include_.html#main" header="Admin <span class='glyphicon glyphicon-log-in' aria-hidden='true'></span> Team Forming :star:" minimized="" fragment="main"></panel>
             </p>
             <p><strong>All students</strong>:</p>
             <ul>
               <li>Confirm your team ID with the tutor. It should be of the form <code>TUTORIAL_ID-TEAM_NUMBER</code> e.g. <code>W09-1</code> (<code>W</code>ed <code>09</code>00 slot, team <code>1</code>)</li>
-              <li>As before, discuss evidence of learning the weekly topics as directed by the tutor.</li>
             </ul>
+            <h2 id="suggested-tutorial-activities">Suggested tutorial activities<a class="fa fa-anchor" href="#suggested-tutorial-activities"></a></h2>
+            <h3 id="coding-standards">Coding standards<a class="fa fa-anchor" href="#coding-standards"></a></h3>
+            <p>Consider the code given below:</p>
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String descriptionPrefix = <span class="hljs-string">"description: "</span>;
+    <span class="hljs-keyword">private</span> String description;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> important;
+    List&lt;String&gt; pastDescription = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(); <span class="hljs-comment">// a list of past descriptions</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Task</span><span class="hljs-params">(String d)</span> </span>{
+      <span class="hljs-keyword">this</span>.description = d;
+      <span class="hljs-keyword">if</span> (!d.isEmpty())
+          <span class="hljs-keyword">this</span>.important = <span class="hljs-keyword">true</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getAsXML</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;task&gt;"</span>+description+<span class="hljs-string">"&lt;/task&gt;"</span>; }
+
+    <span class="hljs-comment">/**
+     * Print the description as a string.
+     */</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printingDescription</span><span class="hljs-params">()</span></span>{ System.out.println(<span class="hljs-keyword">this</span>); }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">return</span> descriptionPrefix + description; }
+}
+</code></pre>
+            <p>Identify some basic coding standard violations.</p>
+            <h3 id="refactoring">Refactoring<a class="fa fa-anchor" href="#refactoring"></a></h3>
+            <p>In Addressbook Level 1, apply the following refactorings, where applicable. Use the IDE to aid refactoring.</p>
+            <ol>
+              <li><a href="https://refactoring.com/catalog/consolidateConditionalExpression.html">Consolidate Conditional Expression</a></li>
+              <li><a href="https://refactoring.com/catalog/decomposeConditional.html">Decompose Conditional</a></li>
+              <li><a href="https://refactoring.com/catalog/inlineMethod.html">Inline Method</a></li>
+              <li><a href="https://refactoring.com/catalog/removeDoubleNegative.html">Remove Double Negative</a></li>
+              <li><a href="https://refactoring.com/catalog/replaceMagicNumberWithSymbolicConstant.html">Replace Magic Number with Symbolic Constant</a></li>
+              <li><a href="https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html">Replace Nested Conditional with Guard Clauses</a></li>
+              <li><a href="https://refactoring.com/catalog/replaceParameterWithExplicitMethods.html">Replace Parameter with Explicit Methods</a></li>
+              <li><a href="https://refactoring.com/catalog/reverseConditional.html">Reverse Conditional</a></li>
+              <li><a href="https://refactoring.com/catalog/splitLoop.html">Split Loop</a></li>
+              <li><a href="https://refactoring.com/catalog/splitTemporaryVariable.html">Split Temporary Variable</a></li>
+            </ol>
           </div>
         </tab>
         <tab header="<span class='fas fa-info-circle'></span> Admin Info">
@@ -9186,7 +9223,7 @@ compact(input);
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Fri, 25 Jan 2019 04:38:19 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Sat, 26 Jan 2019 02:16:31 GMT</small></div>
 </footer>
 </div>
 </body>
